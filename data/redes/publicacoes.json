@@ -1,0 +1,178 @@
+{
+  "redes": {
+    "kwai": {
+      "rede": "kwai",
+      "publicacoes": 82,
+      "contas_distintas": null,
+      "por_mes": {
+        "2025-01": 6,
+        "2025-02": 7,
+        "2025-03": 9,
+        "2025-04": 9,
+        "2025-05": 5,
+        "2025-06": 2,
+        "2025-07": 2,
+        "2025-08": 1,
+        "2025-09": 3,
+        "2025-10": 4,
+        "2025-11": 5,
+        "2026-01": 3,
+        "2026-02": 7,
+        "2026-03": 6,
+        "2026-04": 3,
+        "2026-05": 5,
+        "2026-07": 2,
+        "2026-08": 3
+      },
+      "visualizacoes_soma": 2043969,
+      "curtidas_soma": 107080,
+      "comentarios_soma": 2688,
+      "por_termo": [
+        {
+          "termo": "semaglutida",
+          "itens": 12,
+          "lidos": 12,
+          "no_periodo": 12,
+          "no_limite": false,
+          "mais_antigo": "2025-01-12",
+          "erro": null
+        },
+        {
+          "termo": "tirzepatida",
+          "itens": 20,
+          "lidos": 20,
+          "no_periodo": 20,
+          "no_limite": false,
+          "mais_antigo": "2025-09-04",
+          "erro": null
+        },
+        {
+          "termo": "liraglutida",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "Ozempic",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "Wegovy",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "Mounjaro",
+          "itens": 30,
+          "lidos": 30,
+          "no_periodo": 30,
+          "no_limite": true,
+          "mais_antigo": "2025-01-07",
+          "erro": null
+        },
+        {
+          "termo": "Saxenda",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "caneta emagrecedora",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "caneta para emagrecer",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "caneta do Paraguai",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "tirzepatida manipulada",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "semaglutida manipulada",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "Ozempic sem receita",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "Mounjaro sem receita",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        },
+        {
+          "termo": "retatrutida",
+          "itens": 20,
+          "lidos": 20,
+          "no_periodo": 20,
+          "no_limite": false,
+          "mais_antigo": "2025-04-20",
+          "erro": null
+        }
+      ],
+      "etapa": "publicacoes",
+      "itens_por_termo": 30,
+      "obtido_em": "2026-11-23T23:26:32Z"
+    }
+  },
+  "nota": "Só agregados. Conta, texto e link de terceiros ficam no repositório privado.",
+  "periodo": {
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23"
+  },
+  "run_id": "45288801297"
+}

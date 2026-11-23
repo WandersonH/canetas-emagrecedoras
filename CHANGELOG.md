@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Coletas pagas, etapa publicacoes (run 45288801297)
+
+**O que mudou**
+
+- Manifestos em data/manifestos/ (com o custo de cada execução) e agregados em data/redes/publicacoes.json.
+
+**Por quê**
+
+- Autorização do pesquisador em 23/11/2026 18h13: US$ 10 para coletar todas as redes, gravada em data/config/coleta.json.
+
+**O que foi executado de verdade**
+
+- Workflow 'Coletas pagas (Apify)', run 45288801297, etapa publicacoes, redes: kwai.
+- gravado data/manifestos/kwai_20261123T232632Z.json: kwai, 82 publicações no período
+
+**O que ficou pendente**
+
+- Revisão de homônimos e de contexto antes de contar menções; codificação do conteúdo.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45288801297 e os manifestos deste run.
+
 ## 23/11/2026 · Reconciliação com a Apify (run 45288538468)
 
 **O que mudou**

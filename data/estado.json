@@ -1,6 +1,6 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": 11,
+  "manifestos_lidos": 12,
   "frentes": [
     {
       "id": "youtube",
@@ -144,16 +144,17 @@
       "nome": "Kwai",
       "via": "Apify",
       "paga": true,
-      "coletas": 1,
+      "coletas": 2,
       "universo": null,
       "universo_fonte": "A busca da rede não informa o total de resultados.",
-      "lido": 10,
-      "amostra": 10,
-      "amostra_como": "publicações distintas, com data no período lido, entre até 10 itens por termo",
+      "lido": 82,
+      "amostra": 82,
+      "amostra_como": "publicações distintas, com data no período lido, entre até 30 itens por termo",
       "cobertura": "parcial",
-      "ultima_coleta": "2026-11-23T21:18:22Z",
+      "ultima_coleta": "2026-11-23T23:27:23Z",
       "runs": [
-        "45268074067"
+        "45268074067",
+        "45288801297"
       ]
     }
   ]
