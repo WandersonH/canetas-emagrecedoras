@@ -1,0 +1,48 @@
+name: Universo informado pelas plataformas
+
+# Total de posts das hashtags no Instagram (pago, etapa de teste, poucos centavos) e no TikTok (grátis, navegador sem login).
+# Disparo manual apenas.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gravacao-no-main
+  cancel-in-progress: false
+
+jobs:
+  universo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      RUN: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Testes
+        run: python -m unittest discover -s tests
+      - name: Navegador para o TikTok
+        run: pip install -q playwright && python -m playwright install --with-deps chromium
+      - name: Contagens
+        env:
+          APIFY_TOKEN_CANETAS: ${{ secrets.APIFY_TOKEN_CANETAS }}
+        run: python scripts/contagens_plataforma.py --run-id "$RUN" | tee resumo.txt
+      - name: CHANGELOG
+        if: always()
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
+            --titulo "Universo informado pelas plataformas (run $RUN)" \
+            --mudou "data/universo/contagens.json: total de posts das hashtags no Instagram e no TikTok, de todos os tempos, e a estimativa do YouTube por termo." \
+            --porque "Pedido do pesquisador em 23/11/2026 18h15: planilha com estimativa de custo para coletar todo o universo." \
+            --executado "Workflow 'Universo informado pelas plataformas', run $RUN." \
+            --pendente "X e Kwai não informam total (⛔)." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN e data/universo/contagens.json."
+      - name: Gravar no público
+        if: always()
+        run: scripts/gravar_no_main.sh "Universo informado pelas plataformas (run $RUN)" "$RUNNER_TEMP/entrada.md" data/universo data/manifestos

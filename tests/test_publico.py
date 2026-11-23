@@ -129,6 +129,19 @@ class Publico(unittest.TestCase):
             for rotulo in ("O que mudou", "Por quê", "O que foi executado de verdade", "O que ficou pendente", "Onde está a evidência"):
                 self.assertIn(f"**{rotulo}**", entrada, entrada.splitlines()[0])
 
+    def test_corpus_publico_de_terceiros_esta_anonimizado(self):
+        import json
+        caminho = RAIZ / "data" / "corpus" / "segmentos.json"
+        if not caminho.exists():
+            self.skipTest("corpus ainda não gerado")
+        for s in json.loads(caminho.read_text(encoding="utf-8")):
+            if s["f"] in ("imprensa", "checagens"):
+                continue
+            texto = re.sub(r"(?i)glp-?1|t36", "", s["t"])
+            self.assertNotRegex(texto, r"(?<![A-Za-zÀ-ú])\d|(?<![A-Za-zÀ-ú])@\w|https?://|www\.", f"segmento {s['i']} de terceiro com dado identificável")
+            self.assertIsNone(s["u"], f"segmento {s['i']} de terceiro com link")
+            self.assertRegex(s["a"] or "A0000", r"^A\d{4}$", f"segmento {s['i']} de terceiro sem código de autor")
+
     def test_workflows_so_com_disparo_manual(self):
         for caminho in (RAIZ / ".github" / "workflows").glob("*.y*ml"):
             texto = caminho.read_text(encoding="utf-8")

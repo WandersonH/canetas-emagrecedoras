@@ -212,3 +212,58 @@ import unittest.mock  # noqa: E402
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class YouTubeHistorico(unittest.TestCase):
+    def test_meses_do_mais_recente_ao_mais_antigo(self):
+        import collect_youtube_historico as h
+        m = h.meses(datetime.date(2025, 1, 10), datetime.date(2025, 3, 5))
+        self.assertEqual([x[0] for x in m], ["2025-03", "2025-02", "2025-01"])
+        self.assertEqual(m[0][1:], (datetime.date(2025, 3, 1), datetime.date(2025, 3, 5)))
+        self.assertEqual(m[2][1], datetime.date(2025, 1, 10))
+        self.assertEqual(m[1][2], datetime.date(2025, 2, 28))
+
+    def test_cota_esgotada_interrompe(self):
+        import io
+        import urllib.error
+        import collect_youtube_historico as h
+        def leitor(url):
+            raise urllib.error.HTTPError(url, 403, "x", {}, io.BytesIO(b'{"error":{"errors":[{"reason":"quotaExceeded"}]}}'))
+        with self.assertRaises(h.CotaEsgotada):
+            h.buscar_mes("k", "Ozempic", INICIO, FIM, 1, leitor=leitor)
+
+    def test_uma_pagina_marca_limite(self):
+        import collect_youtube_historico as h
+        r = h.buscar_mes("k", "Ozempic", INICIO, FIM, 1, leitor=lambda url: {"pageInfo": {"totalResults": 800}, "items": [{"id": {"videoId": "a"}}], "nextPageToken": "p"})
+        self.assertEqual((r["estimativa"], r["ids"], r["no_limite"]), (800, ["a"], True))
+
+
+class Corpus(unittest.TestCase):
+    def test_idioma(self):
+        import build_corpus as bc
+        self.assertEqual(bc.idioma("Como tomar Ozempic sem efeito colateral e o que fazer"), "pt")
+        self.assertEqual(bc.idioma("What to know about Ozempic and weight loss in your body"), "en")
+        self.assertEqual(bc.idioma("Cómo es el tratamiento con la semaglutida para la obesidad"), "es")
+        self.assertEqual(bc.idioma("Mounjaro Ozempic"), "pt")
+
+    def test_publico_anonimiza_terceiros_e_mantem_imprensa(self):
+        import build_corpus as bc
+        cod = {"perfil_x": "A0001"}
+        t = {"fonte": "tiktok", "texto": "perdi 10kg @amiga www.loja.com", "autor": "Perfil_X", "url": None, "veiculo": None}
+        p = bc.publico(t, cod)
+        self.assertEqual((p["autor"], p["url"]), ("A0001", None))
+        self.assertNotRegex(p["texto"], r"\\d|@|loja")
+        n = bc.publico({"fonte": "imprensa", "texto": "Anvisa aprova 5 canetas", "autor": "G1", "url": "https://g1", "veiculo": "G1"}, cod)
+        self.assertEqual((n["texto"], n["autor"], n["url"]), ("Anvisa aprova 5 canetas", "G1", "https://g1"))
+
+    def test_grafia_disfarcada(self):
+        import build_corpus as bc
+        self.assertEqual(bc.sem_disfarce("Mounj@ro e tirzep@tida, 0zempic, Ozemp1c"), "Mounjaro e tirzepatida, 0zempic, Ozempic")
+        self.assertEqual(bc.sem_disfarce("GLP-1 e 15 mg"), "GLP-1 e 15 mg")
+
+    def test_amostra_estratificada(self):
+        import random
+        import build_corpus as bc
+        a = bc.amostra_estratificada({"youtube": 800, "imprensa": 200}, 100, random.Random(1))
+        self.assertEqual((len(a["youtube"]), len(a["imprensa"])), (80, 20))
+        self.assertEqual(bc.amostra_estratificada({"x": 5}, 100, random.Random(1)), {"x": [0, 1, 2, 3, 4]})

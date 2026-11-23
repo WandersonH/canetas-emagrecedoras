@@ -1,0 +1,66 @@
+name: YouTube histórico
+
+# Busca mês a mês, retomando de onde parou. Uma execução por dia gasta a cota diária da chave (10.000 unidades).
+# Disparo manual apenas.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gravacao-no-main
+  cancel-in-progress: false
+
+jobs:
+  historico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      RUN: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Testes
+        run: python -m unittest discover -s tests
+      - name: Repositório privado
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: git clone -q --depth 1 "https://x-access-token:${TOKEN}@github.com/WandersonH/canetas-emagrecedoras-secret.git" "$RUNNER_TEMP/privado"
+      - name: Coleta
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python scripts/collect_youtube_historico.py --privado "$RUNNER_TEMP/privado" --run-id "$RUN" | tee resumo.txt
+      - name: CHANGELOG
+        if: always()
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          linha=$(grep '^gravado' resumo.txt || echo "sem resultado; ver o log")
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
+            --titulo "YouTube histórico (run $RUN)" \
+            --mudou "data/youtube/historico.json: estimativa e vídeos lidos por termo e mês; manifesto do run." \
+            --porque "Pedido do pesquisador em 23/11/2026 18h28: carga histórica do YouTube, pronta para sexta-feira 27/11." \
+            --executado "Workflow 'YouTube histórico', run $RUN: $linha" \
+            --pendente "Seguir rodando um por dia até completar todos os pares termo × mês." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN e data/youtube/historico.json."
+          python scripts/changelog_auto.py --arquivo "$RUNNER_TEMP/privado/CHANGELOG.md" \
+            --titulo "YouTube histórico (run $RUN)" --mudou "bruto/youtube_historico/, historico/ e terceiros/youtube/historico_videos.csv." \
+            --porque "Carga histórica; texto e autor de terceiros só aqui." --executado "Run $RUN do repositório público: $linha" \
+            --pendente "Continuar até completar." --evidencia "https://github.com/$REPO/actions/runs/$RUN."
+      - name: Gravar no privado
+        if: always()
+        run: |
+          cd "$RUNNER_TEMP/privado"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "YouTube histórico (run $RUN)"
+          for t in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main || exit 1; sleep $((t * 10)); done
+          exit 1
+      - name: Gravar no público
+        if: always()
+        run: scripts/gravar_no_main.sh "YouTube histórico (run $RUN)" "$RUNNER_TEMP/entrada.md" data/youtube data/manifestos

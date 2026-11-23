@@ -27,6 +27,19 @@
 .ce-barra{cursor:pointer}.ce-barra:hover{opacity:.75}.ce-barra.on{fill:#9c2b20}
 .ce-noticias{list-style:none;margin:8px 0 0;padding:0;max-height:520px;overflow:auto}.ce-noticias li{border-top:1px solid #edf1f5;padding:8px 0;font-size:12.5px;line-height:1.45}.ce-noticias small{display:block;color:#6b7a8c;font-size:11px}
 .ce-duas{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:17px}.ce-duas .card{margin-top:0}
+.ce-leitor{position:fixed;inset:0;background:rgba(23,34,56,.45);z-index:9999;display:flex;justify-content:center;align-items:flex-start;overflow:auto;padding:40px 12px}.ce-leitor[hidden]{display:none}
+.ce-leitor-caixa{background:#fffdf8;max-width:860px;width:100%;padding:22px 24px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.ce-fecha{position:absolute;top:12px;right:14px;background:none;border:1px solid #c9d2dc;padding:3px 9px;cursor:pointer;font-size:12px}
+.ce-seg{border-top:1px solid #e6e1d6;padding:9px 0}.ce-seg p{margin:4px 0 0;font-size:13.5px;line-height:1.5;color:#273447}.ce-seg small{color:#6b7a8c;font-size:11px}
+.ce-filtros{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 4px;font-size:12px}.ce-filtros input{border:1px solid #d9e3ec;padding:6px 9px;font:inherit;min-width:220px}
+.ce-filtros button{border:1px solid #d9e3ec;background:#fff;padding:5px 10px;font-size:11.5px;cursor:pointer}.ce-filtros button.on{background:#165ebd;border-color:#165ebd;color:#fff}
+.ce-abre{background:none;border:0;border-bottom:1px dotted currentColor;padding:0;font:inherit;color:#165ebd;cursor:pointer}
+.ce-forma{display:inline-block;border:1px solid #d9e3ec;background:#fff;padding:3px 8px;margin:0 5px 5px 0;font-size:12px;cursor:pointer}.ce-forma:hover{background:#f2f7fd}.ce-forma small{color:#6b7a8c;margin-left:4px}
+.ce-classes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:15px;margin-top:10px}.ce-classes .card{margin-top:0}
+.ce-pct{height:6px;background:#edf1f5;margin:6px 0 10px}.ce-pct i{display:block;height:6px}
+.ce-rede{width:100%;height:auto;display:block;background:#fbfdff;border:1px solid #edf1f5}.ce-rede circle{cursor:pointer}.ce-rede text{font:10px system-ui,sans-serif;fill:#273447;pointer-events:none}
+.ce-emojis{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin-top:10px}.ce-emojis button{border:1px solid #d9e3ec;background:#fff;padding:8px 4px;cursor:pointer;text-align:center}.ce-emojis b{display:block;font-size:24px;line-height:1.2}.ce-emojis small{display:block;color:#6b7a8c;font-size:10.5px}
+.ce-downloads a{display:inline-block;margin:0 14px 6px 0;font-size:12.5px}
 @media(max-width:700px){.ce-marcos li{grid-template-columns:1fr}}
 </style>
 </head>
@@ -111,10 +124,14 @@
 
 <section class="panel" id="redes" aria-label="Redes e análise de texto">
   <div class="paper-ribbon"><span id="rib-redes"></span><span>REDES E ANÁLISE DE TEXTO</span></div>
-  <div class="intro"><div class="eyebrow">Gephi · IRaMuTeQ · emojis</div><h1>Quem fala com quem e o que se diz</h1><p>Redes com comunidades, classes de texto, similitude e mapa de emojis. Cada nó e cada palavra abrem o texto que os originou.</p></div>
-  <div class="card"><div class="eyebrow">Redes</div><h2 class="tk-h2">Redes de interação</h2><div class="ce-vazio"><b>⛔ Sem dado.</b> As redes são geradas depois da coleta, em GEXF, com ForceAtlas 2, comunidades de Louvain e índice E-I.</div></div>
-  <div class="card"><div class="eyebrow">IRaMuTeQ</div><h2 class="tk-h2">Classes de texto e similitude</h2><div class="ce-vazio"><b>⛔ Sem dado.</b> A classificação hierárquica descendente de Reinert e a análise de similitude são feitas sobre o corpus coletado.</div></div>
-  <div class="card"><div class="eyebrow">Emojis</div><h2 class="tk-h2">Mapa de emojis</h2><div class="ce-vazio"><b>⛔ Sem dado.</b> O mapa conta os emojis das publicações e dos comentários.</div></div>
+  <div class="intro"><div class="eyebrow">IRaMuTeQ · Gephi · emojis</div><h1>Quem fala com quem e o que se diz</h1><p>Classes de texto (CHD de Reinert), similitude, redes para o Gephi e mapa de emojis. Cada forma, nó, classe e emoji abre os segmentos do corpus que os originaram.</p></div>
+  <div class="card"><div class="eyebrow">Corpus</div><h2 class="tk-h2">O que entrou na análise</h2><div id="cp-resumo"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div><div class="ce-downloads" id="cp-downloads"></div></div>
+  <div class="card"><div class="eyebrow">IRaMuTeQ · CHD de Reinert</div><h2 class="tk-h2">Classes de texto</h2><p class="ce-nota" id="chd-nota"></p><div class="ce-classes" id="chd-classes"></div></div>
+  <div class="card"><div class="eyebrow">IRaMuTeQ · análise de similitude</div><h2 class="tk-h2">Árvore de similitude</h2><p class="ce-nota" id="sim-nota"></p><div id="sim-grafo"></div></div>
+  <div class="card"><div class="eyebrow">Gephi · rede de palavras</div><h2 class="tk-h2">Palavras que aparecem juntas</h2><p class="ce-nota" id="rp-nota"></p><div id="rp-grafo"></div></div>
+  <div class="card"><div class="eyebrow">Gephi · rede de fontes e termos</div><h2 class="tk-h2">Quem publicou sobre cada termo</h2><p class="ce-nota" id="rf-nota"></p><div id="rf-grafo"></div></div>
+  <div class="card"><div class="eyebrow">Gephi · estatísticas</div><h2 class="tk-h2">Medidas das redes</h2><p class="ce-nota" id="re-nota"></p><div class="tablewrap"><table class="datatable" id="re-tabela"></table></div></div>
+  <div class="card"><div class="eyebrow">Emojis</div><h2 class="tk-h2">Mapa de emojis</h2><p class="ce-nota" id="em-nota"></p><div class="ce-emojis" id="em-grade"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
 </section>
 
 <section class="panel" id="dados" aria-label="Dados públicos">
@@ -140,6 +157,7 @@
   <div class="card"><div class="eyebrow">Referências</div><h2 class="tk-h2">Referências do livro de códigos</h2><div id="met-refs"></div></div>
 </section>
 </main></div>
+<div class="ce-leitor" id="ce-leitor" hidden></div>
 
 <script>
 (function(){
@@ -275,7 +293,7 @@
     if(!a){return;}
     por("yt-resumo",'<p class="ce-nota">Coleta de '+val(dataBR(a.obtido_em))+(vazio(a.run_id)?"":" (run "+esc(a.run_id)+")")+". Vídeos distintos: <b>"+num(a.videos_distintos)+"</b> · canais distintos: <b>"+num(a.canais_distintos)+"</b> · soma de visualizações dos vídeos lidos: <b>"+num(a.visualizacoes_soma)+'</b>. Títulos e canais são de terceiros e ficam fora desta página.</p><div class="tablewrap"><table class="datatable"><thead><tr><th>Termo</th><th class="ce-num">Estimativa do YouTube</th><th class="ce-num">Lidos</th><th class="ce-num">Distintos</th><th>Primeiro mês alcançado</th><th>Parou por</th></tr></thead><tbody>'+(a.por_termo||[]).map(function(t){
       var meses=Object.keys(t.por_mes||{}).sort();
-      return "<tr><td><b>"+esc(t.termo)+'</b></td><td class="ce-num">'+num(t.universo_estimado)+'</td><td class="ce-num">'+num(t.lido)+'</td><td class="ce-num">'+num(t.distintos)+"</td><td>"+val(meses[0])+"</td><td>"+(t.parou_por==="limite"?'<span class="ce-sit pend">limite</span>':'<span class="ce-sit ok">fim dos resultados</span>')+"</td></tr>";
+      return "<tr><td><b>"+esc(t.termo)+'</b></td><td class="ce-num">'+num(t.universo_estimado)+'</td><td class="ce-num">'+num(t.lido)+'</td><td class="ce-num">'+botao(num(t.distintos),"termo","youtube|"+t.termo)+"</td><td>"+val(meses[0])+"</td><td>"+(t.parou_por==="limite"?'<span class="ce-sit pend">limite</span>':'<span class="ce-sit ok">fim dos resultados</span>')+"</td></tr>";
     }).join("")+'</tbody></table></div><p class="ce-nota">A busca devolve os vídeos mais recentes primeiro. Quando para no limite, a amostra do termo não alcança o início do período lido: veja o primeiro mês alcançado. A estimativa é a que o próprio YouTube informa e é aproximada.</p>');
   }
 
@@ -318,12 +336,89 @@
     por("ck-lista",xs.length?'<div class="tablewrap"><table class="datatable"><thead><tr><th>Data</th><th>Agência</th><th>Rótulo da agência</th><th>Checagem</th></tr></thead><tbody>'+xs.map(function(x){return "<tr><td>"+val(dataBR(x.data))+"</td><td>"+val(x.agencia)+"</td><td>"+val(x.rotulo)+"</td><td>"+link(x.link,x.titulo||x.alegacao||x.link)+"</td></tr>";}).join("")+"</tbody></table></div>":'<div class="ce-vazio"><b>⛔ Nenhuma checagem no período.</b></div>');
   }
 
+  var SEG=null,SEG_P=null,FONTE_NOME={youtube:"YouTube",tiktok:"TikTok",instagram:"Instagram",x:"X",kwai:"Kwai",imprensa:"Imprensa",checagens:"Checagens"};
+  function segmentos(){if(!SEG_P){SEG_P=fetch("./data/corpus/segmentos.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(x){SEG=x;return x;});}return SEG_P;}
+  var LEITOR={itens:[],fonte:null,busca:"",limite:100};
+  function desenhaLeitor(){
+    var xs=LEITOR.itens.filter(function(s){return (!LEITOR.fonte||s.f===LEITOR.fonte)&&(!LEITOR.busca||s.t.toLowerCase().indexOf(LEITOR.busca)>=0);});
+    var fontes={};LEITOR.itens.forEach(function(s){fontes[s.f]=(fontes[s.f]||0)+1;});
+    por("ce-leitor-filtros",'<input type="search" id="ce-busca" placeholder="buscar no texto" value="'+esc(LEITOR.busca)+'"> <button data-f="" class="'+(LEITOR.fonte?"":"on")+'">todas ('+num(LEITOR.itens.length)+")</button>"+Object.keys(fontes).map(function(f){return '<button data-f="'+f+'" class="'+(LEITOR.fonte===f?"on":"")+'">'+esc(FONTE_NOME[f]||f)+" ("+num(fontes[f])+")</button>";}).join(""));
+    por("ce-leitor-lista",'<p class="ce-nota">'+num(xs.length)+" segmentos"+(xs.length>LEITOR.limite?", mostrando "+num(LEITOR.limite):"")+".</p>"+xs.slice(0,LEITOR.limite).map(function(s){
+      return '<div class="ce-seg"><small>'+esc(FONTE_NOME[s.f]||s.f)+" · "+val(dataBR(s.d))+" · "+(s.u?link(s.u,s.a||"fonte"):val(s.a))+(s.k?" · termos: "+esc(s.k.split("|").join(", ")):"")+(s.c>0?" · classe "+s.c:"")+"</small><p>"+esc(s.t)+"</p></div>";
+    }).join("")+(xs.length>LEITOR.limite?'<button class="ce-abre" id="ce-mais">mostrar mais</button>':""));
+  }
+  function abrirSegmentos(titulo,nota,filtro){
+    var P=$("ce-leitor");P.hidden=false;
+    P.innerHTML='<div class="ce-leitor-caixa" role="dialog" aria-label="Corpus"><button class="ce-fecha" type="button">Fechar ✕</button><div class="eyebrow">Corpus</div><h2 class="tk-h2" style="margin:4px 0 6px">'+esc(titulo)+'</h2><p class="ce-nota">'+(nota||"")+' Texto de terceiros anonimizado: sem perfil, link, telefone e números; autor como código.</p><div class="ce-filtros" id="ce-leitor-filtros"></div><div id="ce-leitor-lista"><p class="ce-nota">Lendo o corpus…</p></div></div>';
+    segmentos().then(function(todos){LEITOR={itens:Array.isArray(filtro)?filtro.map(function(i){return todos[i];}).filter(Boolean):todos.filter(filtro),fonte:null,busca:"",limite:100};desenhaLeitor();})
+      .catch(function(){por("ce-leitor-lista",'<div class="ce-vazio"><b>⛔ Corpus não encontrado.</b></div>');});
+  }
+  document.addEventListener("click",function(ev){
+    var P=$("ce-leitor"),t=ev.target;
+    if(t.classList&&t.classList.contains("ce-fecha")||t===P){P.hidden=true;return;}
+    if(t.id==="ce-mais"){LEITOR.limite+=200;desenhaLeitor();return;}
+    if(t.closest&&t.closest("#ce-leitor-filtros")&&t.dataset&&t.dataset.f!==undefined){LEITOR.fonte=t.dataset.f||null;LEITOR.limite=100;desenhaLeitor();return;}
+    var a=t.closest&&t.closest("[data-abre]");if(a){ev.preventDefault();ABRIR[a.dataset.abre](a.dataset.v,a);}
+  });
+  document.addEventListener("input",function(ev){if(ev.target.id==="ce-busca"){LEITOR.busca=ev.target.value.toLowerCase();LEITOR.limite=100;desenhaLeitor();var b=$("ce-busca");b.focus();b.setSelectionRange(b.value.length,b.value.length);}});
+  document.addEventListener("keydown",function(ev){if(ev.key==="Escape"){$("ce-leitor").hidden=true;}});
+  var ABRIR={},CHD=null,DES=null,EMO=null;
+  function botao(rotulo,chave,v){return '<button class="ce-abre" data-abre="'+chave+'" data-v="'+esc(v)+'">'+rotulo+"</button>";}
+  ABRIR.fonte=function(f){abrirSegmentos("Segmentos de "+(FONTE_NOME[f]||f),"",function(s){return s.f===f;});};
+  ABRIR.termo=function(v){var p=v.split("|");abrirSegmentos("Segmentos de "+(FONTE_NOME[p[0]]||p[0])+" com o termo "+p[1],"",function(s){return s.f===p[0]&&(s.k||"").split("|").indexOf(p[1])>=0;});};
+  ABRIR.classe=function(v){var c=CHD.classes.filter(function(x){return String(x.classe)===v;})[0];abrirSegmentos("Classe "+v+" da CHD",num(c.segmentos)+" segmentos ("+esc(c.pct)+"%).",c.segmentos_da_classe);};
+  ABRIR.forma=function(v){var p=v.split("|"),c=CHD.classes.filter(function(x){return String(x.classe)===p[0];})[0];abrirSegmentos("Forma “"+p[1]+"” na classe "+p[0],"Forma lematizada pelo dicionário do IRaMuTeQ.",c.segmentos_por_forma[p[1]]||[]);};
+  ABRIR.sim=function(v){abrirSegmentos("Forma “"+v+"” na similitude","Até 400 segmentos com a forma lematizada.",(CHD.similitude.segmentos_por_forma||{})[v]||[]);};
+  ABRIR.no=function(v,el){var g=DES[el.dataset.g],n=g.nos.filter(function(x){return x.id===v;})[0];abrirSegmentos(n.rotulo,"Até 400 segmentos ligados a este nó.",n.seg||[]);};
+  ABRIR.emoji=function(v){var e=EMO.emojis.filter(function(x){return x.emoji===v;})[0];abrirSegmentos("Emoji "+v,num(e.n)+" ocorrências em "+num(e.segmentos)+" segmentos.",e.seg||[]);};
+  var GRUPO_CORES=["#165ebd","#15909f","#d7a14a","#9c2b20","#5b6b7c","#7a4fb3","#2f8f4e","#c2577a","#8a6d1f","#3d7ea6"];
+  function grafo(g,chave,rotulos){
+    if(!g||!g.nos||!g.nos.length){return '<div class="ce-vazio"><b>⛔ Sem dado.</b></div>';}
+    var xs=g.nos.map(function(n){return n.x;}),ys=g.nos.map(function(n){return n.y;});
+    var x0=Math.min.apply(null,xs),x1=Math.max.apply(null,xs),y0=Math.min.apply(null,ys),y1=Math.max.apply(null,ys);
+    var L=900,A=560,m=30,pos={},maxn=Math.max.apply(null,g.nos.map(function(n){return n.n||n.freq||1;}));
+    g.nos.forEach(function(n){pos[n.id]=[m+(n.x-x0)/((x1-x0)||1)*(L-2*m),m+(n.y-y0)/((y1-y0)||1)*(A-2*m)];});
+    var h='<svg class="ce-rede" viewBox="0 0 '+L+" "+A+'" role="img" aria-label="rede">';
+    (g.arestas||[]).forEach(function(a){var p=pos[a[0]],q=pos[a[1]];if(p&&q){h+='<line x1="'+p[0].toFixed(1)+'" y1="'+p[1].toFixed(1)+'" x2="'+q[0].toFixed(1)+'" y2="'+q[1].toFixed(1)+'" stroke="#c9d2dc" stroke-width="0.7"/>';}});
+    g.nos.forEach(function(n){var p=pos[n.id],r=3+9*Math.sqrt((n.n||n.freq||1)/maxn),cor=GRUPO_CORES[(n.grupo||0)%GRUPO_CORES.length];
+      h+='<g data-abre="'+chave+'" data-v="'+esc(n.id)+'" data-g="'+(rotulos||"")+'"><circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="'+r.toFixed(1)+'" fill="'+cor+'" fill-opacity=".8"><title>'+esc(n.rotulo||n.id)+": "+esc(n.n||n.freq)+"</title></circle>"+(r>5.5?'<text x="'+(p[0]+r+2).toFixed(1)+'" y="'+(p[1]+3).toFixed(1)+'">'+esc(String(n.rotulo||n.id).slice(0,22))+"</text>":"")+"</g>";});
+    return h+"</svg>";
+  }
+  function analises(chd,des,est,emo){
+    if(chd){CHD=chd;
+      var am=chd.amostra||{},pf=am.por_fonte||{};
+      por("cp-resumo",'<p class="ce-nota">Período '+esc(chd.periodo.inicio)+" a "+esc(chd.periodo.fim)+". Textos lidos: <b>"+num(chd.textos_lidos)+"</b>; fora por idioma (inglês ou espanhol): <b>"+num(chd.fora_por_idioma.total)+"</b>; no corpus: <b>"+num(chd.textos)+"</b>. Segmentos: universo "+num(am.universo_segmentos)+", analisados "+num(am.analisados)+" ("+esc(am.como)+'). Dicionário: '+esc(chd.lematizacao.dicionario)+" ("+num(chd.lematizacao.formas_no_dicionario)+' formas).</p><div class="tablewrap"><table class="datatable" style="min-width:0"><thead><tr><th>Fonte</th><th class="ce-num">Textos no corpus</th><th class="ce-num">Segmentos</th><th class="ce-num">Na análise</th></tr></thead><tbody>'+Object.keys(chd.textos_por_fonte).map(function(f){var x=pf[f]||{};return "<tr><td>"+esc(FONTE_NOME[f]||f)+'</td><td class="ce-num">'+num(chd.textos_por_fonte[f])+'</td><td class="ce-num">'+num(x.universo)+'</td><td class="ce-num">'+botao(num(x.analisados),"fonte",f)+"</td></tr>";}).join("")+"</tbody></table></div>");
+      por("cp-downloads",'<a href="./data/corpus/canetas_iramuteq.txt" download>Corpus para o IRaMuTeQ (.txt)</a><a href="./data/corpus/similitude.gexf" download>Similitude (.gexf)</a><a href="./data/redes/palavras.gexf" download>Rede de palavras (.gexf)</a><a href="./data/redes/fontes_termos.gexf" download>Rede de fontes e termos (.gexf)</a><a href="./data/redes/estatisticas_redes.csv" download>Estatísticas (.csv)</a><a href="./data/redes/comunidades_redes.csv" download>Comunidades (.csv)</a><a href="./data/redes/centralidades_redes.csv" download>Centralidades (.csv)</a>');
+      var esc_=chd.escolha_classes||{};
+      por("chd-nota",esc(chd.metodo)+" Classes terminais escolhidas: "+val(esc_.classes_terminais)+". Classificados: "+esc(chd.pct_classificados)+"% dos segmentos"+(chd.aproveitamento&&chd.aproveitamento.atinge_minimo===false?" ⛔ abaixo de 75%":"")+". Formas ativas: "+num(chd.formas_ativas)+".");
+      por("chd-classes",chd.classes.map(function(c,i){var cor=GRUPO_CORES[i%GRUPO_CORES.length];var vars=Object.keys(c.variaveis).filter(function(k){return c.variaveis[k].chi2>=3.84;}).map(function(k){return esc(FONTE_NOME[k.split(":")[1]]||k)+" (χ² "+esc(c.variaveis[k].chi2)+")";});
+        return '<div class="card"><div class="eyebrow">Classe '+c.classe+" · nome: "+val(c.nome)+'</div><h2 class="tk-h2" style="font-size:16px">'+botao(num(c.segmentos)+" segmentos · "+esc(c.pct)+"%","classe",String(c.classe))+'</h2><div class="ce-pct"><i style="width:'+c.pct+"%;background:"+cor+'"></i></div><div>'+c.formas.slice(0,18).map(function(f){return '<span class="ce-forma" data-abre="forma" data-v="'+c.classe+"|"+esc(f[0])+'">'+esc(f[0])+"<small>χ² "+esc(f[1])+"</small></span>";}).join("")+'</div><p class="ce-nota">Fontes associadas: '+(vars.join(", ")||"nenhuma com χ² ≥ 3,84")+"</p></div>";}).join(""));
+      var sim=chd.similitude||{};
+      por("sim-nota",sim.erro?"⛔ "+esc(sim.erro):esc(sim.indice||"")+" · "+num(sim.formas)+" formas mais frequentes, frequência mínima "+num(sim.frequencia_minima_das_formas)+". Cor = comunidade. Clique numa forma para ler os segmentos.");
+      if(sim.nos){$("sim-grafo").innerHTML=grafo({nos:sim.nos.map(function(n){return {id:n.id,rotulo:n.id,n:n.freq,grupo:n.grupo,x:n.x,y:n.y};}),arestas:sim.arestas},"sim");}
+    }
+    if(des){DES=des;
+      por("rp-nota",des.palavras?"Mostrando "+num(des.palavras.nos.length)+" de "+num(des.palavras.total_nos)+" palavras (as mais frequentes), "+num(des.palavras.comunidades)+" comunidades. Formas lematizadas pelo dicionário do IRaMuTeQ. O arquivo completo abre no Gephi.":"");
+      $("rp-grafo").innerHTML=grafo(des.palavras,"no","palavras");
+      por("rf-nota",des.fontes_termos?"Mostrando "+num(des.fontes_termos.nos.length)+" de "+num(des.fontes_termos.total_nos)+" nós. "+esc(des.nota):"");
+      $("rf-grafo").innerHTML=grafo(des.fontes_termos,"no","fontes_termos");
+    }
+    if(est){
+      por("re-nota",esc(est.nota));
+      por("re-tabela","<thead><tr><th>Rede</th><th class=\"ce-num\">Nós</th><th class=\"ce-num\">Arestas</th><th class=\"ce-num\">Densidade</th><th class=\"ce-num\">Grau médio</th><th class=\"ce-num\">Modularidade Q</th><th class=\"ce-num\">Comunidades ≥1%</th><th class=\"ce-num\">Maior comunidade</th><th class=\"ce-num\">E-I</th><th class=\"ce-num\">Diâmetro</th></tr></thead><tbody>"+(est.redes||[]).map(function(r){return "<tr><td><b>"+esc(r.rede.replace(/_/g," "))+'</b></td><td class="ce-num">'+num(r.nos)+'</td><td class="ce-num">'+num(r.arestas)+'</td><td class="ce-num">'+val(r.densidade)+'</td><td class="ce-num">'+val(r.grau_medio)+'</td><td class="ce-num">'+val(r.modularidade_q)+'</td><td class="ce-num">'+val(r.comunidades_1pct_ou_mais)+'</td><td class="ce-num">'+val(r.pct_maior)+'%</td><td class="ce-num">'+val(r.ei_duas_maiores)+'</td><td class="ce-num">'+val(r.diametro_maior_componente)+"</td></tr>";}).join("")+"</tbody>");
+    }
+    if(emo){EMO=emo;
+      por("em-nota",esc(emo.nota)+" Ocorrências: "+num(emo.ocorrencias)+".");
+      por("em-grade",(emo.emojis||[]).map(function(e){return '<button data-abre="emoji" data-v="'+esc(e.emoji)+'"><b>'+esc(e.emoji)+"</b><small>"+num(e.n)+" usos</small><small>sentimento "+(e.sentimento===null||e.sentimento===undefined?"⛔":esc(e.sentimento))+"</small></button>";}).join("")||'<div class="ce-vazio"><b>⛔ Sem emojis.</b></div>');
+    }
+  }
+
   function referencias(p){
     por("met-refs",'<ul class="ce-lista">'+(p.referencias||[]).map(function(r){return "<li>"+esc(r.citacao)+'<br><span class="ce-nota">Uso: '+esc(r.uso)+".</span></li>";}).join("")+"</ul>");
   }
 
-  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens")])
-    .then(function(r){recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);})
+  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis")])
+    .then(function(r){analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);})
     .catch(function(){por("aviso",'<p class="ce-erro">Esta página lê arquivos de dados e não conseguiu abri-los. Abra pelo endereço publicado do projeto.</p>');});
 })();
 </script>

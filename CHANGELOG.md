@@ -2,6 +2,33 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · IRaMuTeQ, Gephi, emojis e corpus interativo; carga histórica do YouTube e universo das plataformas
+
+**O que mudou**
+
+- Análises de texto e redes: scripts/build_corpus.py, chd_reinert.py, similitude.py, redes.py, estatisticas_redes.py, resumo_redes.py e texto_base.py; dicionário do IRaMuTeQ em data/config/lexique_pt.txt (142.622 linhas, sem alteração, GPL v2) e Emoji Sentiment Ranking em data/config/emoji_sentiment_ranking_v1.csv. Workflow 'Análises'.
+- index.html, caderno 09: corpus, classes da CHD, árvore de similitude, rede de palavras, rede de fontes e termos, medidas das redes (Louvain, E-I) e mapa de emojis. Cada classe, forma, nó, emoji e contagem abre os segmentos do corpus, com filtro por fonte e busca.
+- Carga histórica do YouTube mês a mês (scripts/collect_youtube_historico.py, workflow 'YouTube histórico'), que retoma de onde parou a cada dia.
+- Universo informado pelas plataformas (scripts/contagens_plataforma.py, workflow 'Universo informado pelas plataformas'): total de posts das hashtags no Instagram e no TikTok.
+
+**Por quê**
+
+- Pedidos do pesquisador em 23/11/2026: análises dos três painéis de referência para pesquisadores de comunicação, com corpus interativo e normalização pelo dicionário do IRaMuTeQ (18h23); carga histórica do YouTube (18h28), pronta para sexta-feira 27/11 (18h36); planilha de estimativa do universo (18h15).
+
+**O que foi executado de verdade**
+
+- python3 scripts/build_corpus.py com o que estava coletado: 7.008 textos lidos, 583 fora por idioma (inglês ou espanhol), 6.425 no corpus, 6.542 segmentos, 8 classes, 75,4% classificados, 2.684 formas ativas.
+- python3 scripts/estatisticas_redes.py: 2 redes, 17 comunidades com 1% ou mais dos nós. python3 -m unittest discover -s tests: 100 testes, 1 pulado. Página aberta em Chrome sem interface: classes, formas, nós e emojis clicáveis.
+
+**O que ficou pendente**
+
+- Rodar 'Análises' depois das coletas pagas e de cada dia da carga histórica.
+- Nomes das classes da CHD e conferência no IRaMuTeQ, pelo pesquisador.
+
+**Onde está a evidência**
+
+- data/corpus/chd.json, data/redes/estatisticas.json e tests/.
+
 ## 23/11/2026 · Coletas pagas, etapa teste (run 45268074067)
 
 **O que mudou**

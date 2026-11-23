@@ -1,0 +1,68 @@
+name: Análises (IRaMuTeQ, Gephi, emojis)
+
+# Monta o corpus com tudo o que já foi coletado (público e privado), roda a CHD de Reinert, a similitude, as redes
+# para o Gephi com Louvain e E-I e o mapa de emojis. Texto de terceiros vai ao público anonimizado.
+# Disparo manual apenas.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gravacao-no-main
+  cancel-in-progress: false
+
+jobs:
+  analises:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      RUN: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependências
+        run: pip install -q numpy scipy networkx emoji
+      - name: Testes
+        run: python -m unittest discover -s tests
+      - name: Repositório privado
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: git clone -q --depth 1 "https://x-access-token:${TOKEN}@github.com/WandersonH/canetas-emagrecedoras-secret.git" "$RUNNER_TEMP/privado"
+      - name: Corpus, CHD, similitude, redes e emojis
+        run: |
+          python scripts/build_corpus.py --privado "$RUNNER_TEMP/privado" | tee resumo.txt
+          python scripts/estatisticas_redes.py | tee -a resumo.txt
+          python scripts/resumo_redes.py | tee -a resumo.txt
+      - name: CHANGELOG
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          linha=$(grep '^gravado data/corpus' resumo.txt || echo "ver o log")
+          redes=$(grep 'redes,' resumo.txt | tail -1 || true)
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
+            --titulo "Análises de texto e redes (run $RUN)" \
+            --mudou "data/corpus (corpus para o IRaMuTeQ, segmentos, CHD, similitude), data/redes (GEXF, desenhos, estatísticas) e data/emojis.json." \
+            --porque "Análises de IRaMuTeQ e Gephi com corpus interativo, pedido do pesquisador em 23/11/2026 18h23, normalizadas pelo dicionário do IRaMuTeQ." \
+            --executado "Workflow 'Análises', run $RUN: $linha. $redes" \
+            --pendente "Nomes das classes da CHD (dados pelo pesquisador) e conferência no IRaMuTeQ com o corpus exportado." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN e data/corpus/chd.json."
+          python scripts/changelog_auto.py --arquivo "$RUNNER_TEMP/privado/CHANGELOG.md" \
+            --titulo "Códigos de autor e corpus original (run $RUN)" --mudou "codigos/autores.json e terceiros/corpus_iramuteq_original.txt." \
+            --porque "A tabela autor → código e o texto sem anonimização ficam só aqui." --executado "Run $RUN do repositório público." \
+            --pendente "Nenhuma." --evidencia "https://github.com/$REPO/actions/runs/$RUN."
+      - name: Gravar no privado
+        run: |
+          cd "$RUNNER_TEMP/privado"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "Códigos de autor e corpus original (run $RUN)"
+          for t in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main || exit 1; sleep $((t * 10)); done
+          exit 1
+      - name: Gravar no público
+        run: scripts/gravar_no_main.sh "Análises de texto e redes (run $RUN)" "$RUNNER_TEMP/entrada.md" data/corpus data/redes data/emojis.json

@@ -1,0 +1,41 @@
+caso,rede,medida,posicao,no,valor,comunidade
+redes,fontes_termos,grau ponderado,1,Ozempic,960.0,1
+redes,fontes_termos,grau ponderado,2,tirzepatida,900.0,2
+redes,fontes_termos,grau ponderado,3,caneta emagrecedora,899.0,3
+redes,fontes_termos,grau ponderado,4,semaglutida,877.0,2
+redes,fontes_termos,grau ponderado,5,Mounjaro,845.0,1
+redes,fontes_termos,PageRank,1,caneta emagrecedora,0.049205,3
+redes,fontes_termos,PageRank,2,Ozempic,0.045283,1
+redes,fontes_termos,PageRank,3,tirzepatida,0.044738,2
+redes,fontes_termos,PageRank,4,Mounjaro,0.043694,1
+redes,fontes_termos,PageRank,5,semaglutida,0.039862,2
+redes,fontes_termos,intermediação (betweenness),1,caneta emagrecedora,0.197628,3
+redes,fontes_termos,intermediação (betweenness),2,Mounjaro,0.171059,1
+redes,fontes_termos,intermediação (betweenness),3,caneta do Paraguai,0.163794,6
+redes,fontes_termos,intermediação (betweenness),4,caneta para emagrecer,0.155676,4
+redes,fontes_termos,intermediação (betweenness),5,tirzepatida,0.154229,2
+redes,fontes_termos,autovetor (eigenvector),1,Ozempic,0.339648,1
+redes,fontes_termos,autovetor (eigenvector),2,G1,0.328197,2
+redes,fontes_termos,autovetor (eigenvector),3,semaglutida,0.29605,2
+redes,fontes_termos,autovetor (eigenvector),4,Mounjaro,0.287899,1
+redes,fontes_termos,autovetor (eigenvector),5,CNN Brasil,0.285323,1
+redes,palavras,grau ponderado,1,caneta,9932.0,2
+redes,palavras,grau ponderado,2,mounjaro,6708.0,1
+redes,palavras,grau ponderado,3,ozempic,6431.0,1
+redes,palavras,grau ponderado,4,anvisa,4673.0,3
+redes,palavras,grau ponderado,5,novo,4012.0,1
+redes,palavras,PageRank,1,caneta,0.06267,2
+redes,palavras,PageRank,2,mounjaro,0.045047,1
+redes,palavras,PageRank,3,ozempic,0.041356,1
+redes,palavras,PageRank,4,anvisa,0.026297,3
+redes,palavras,PageRank,5,novo,0.023482,1
+redes,palavras,intermediação (betweenness),1,caneta,0.22706,2
+redes,palavras,intermediação (betweenness),2,mounjaro,0.19198,1
+redes,palavras,intermediação (betweenness),3,ozempic,0.134945,1
+redes,palavras,intermediação (betweenness),4,tirzepatida,0.059183,4
+redes,palavras,intermediação (betweenness),5,novo,0.041118,1
+redes,palavras,autovetor (eigenvector),1,caneta,0.475986,2
+redes,palavras,autovetor (eigenvector),2,anvisa,0.289556,3
+redes,palavras,autovetor (eigenvector),3,ozempic,0.28577,1
+redes,palavras,autovetor (eigenvector),4,mounjaro,0.263436,1
+redes,palavras,autovetor (eigenvector),5,novo,0.248048,1

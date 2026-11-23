@@ -128,3 +128,11 @@ class Configuracao(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Universo(unittest.TestCase):
+    def test_instagram_le_postscount_por_hashtag(self):
+        import contagens_plataforma as cp
+        itens = [{"name": "mounjaro", "postsCount": 123456}, {"url": "https://www.instagram.com/explore/tags/retatrutida/", "postsCount": "789"}]
+        saida, run = cp.instagram(["mounjaro", "retatrutida", "inexistente"], lambda a, e, c: ({"id": "r"}, itens))
+        self.assertEqual([x["total_posts"] for x in saida], [123456, 789, None])

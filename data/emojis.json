@@ -1,0 +1,1579 @@
+{
+  "nota": "Emojis dos textos do corpus. Sentimento: Emoji Sentiment Ranking v1.0 (Kralj Novak et al., 2015); fora do ranking fica ⛔.",
+  "ocorrencias": 551,
+  "emojis": [
+    {
+      "emoji": "💉",
+      "n": 99,
+      "segmentos": 98,
+      "sentimento": 0.375,
+      "nome": "seringa",
+      "seg": [
+        4,
+        14,
+        16,
+        77,
+        108,
+        110,
+        132,
+        133,
+        229,
+        236,
+        261,
+        262,
+        276,
+        313,
+        317,
+        332,
+        355,
+        376,
+        379,
+        395,
+        398,
+        433,
+        457,
+        465,
+        523,
+        559,
+        579,
+        580,
+        582,
+        587,
+        592,
+        605,
+        615,
+        630,
+        635,
+        683,
+        697,
+        713,
+        737,
+        744,
+        747,
+        771,
+        793,
+        796,
+        822,
+        848,
+        852,
+        880,
+        885,
+        907,
+        909,
+        959,
+        983,
+        985,
+        986,
+        988,
+        990,
+        991,
+        1046,
+        1084,
+        1096,
+        1102,
+        1103,
+        1131,
+        1176,
+        1185,
+        1189,
+        1221,
+        1224,
+        1225,
+        1256,
+        1294,
+        1313,
+        1340,
+        1349,
+        1424,
+        1453,
+        1495,
+        1548,
+        1601,
+        1636,
+        1646,
+        1664,
+        1715,
+        1724,
+        1733,
+        1758,
+        1930,
+        1995,
+        2113,
+        2166,
+        2300,
+        2388,
+        2395,
+        2432,
+        2446,
+        2570,
+        2574
+      ]
+    },
+    {
+      "emoji": "😱",
+      "n": 32,
+      "segmentos": 32,
+      "sentimento": 0.19,
+      "nome": "rosto gritando de medo",
+      "seg": [
+        141,
+        195,
+        205,
+        206,
+        271,
+        289,
+        307,
+        317,
+        318,
+        332,
+        347,
+        363,
+        376,
+        383,
+        659,
+        775,
+        817,
+        852,
+        880,
+        1131,
+        1336,
+        1513,
+        1601,
+        1605,
+        1609,
+        1615,
+        1616,
+        1733,
+        1954,
+        2025,
+        2365,
+        2570
+      ]
+    },
+    {
+      "emoji": "⚠️",
+      "n": 23,
+      "segmentos": 23,
+      "sentimento": null,
+      "nome": "aviso",
+      "seg": [
+        603,
+        1062,
+        1117,
+        1185,
+        1260,
+        1451,
+        1509,
+        1565,
+        1603,
+        1646,
+        1724,
+        1828,
+        1839,
+        2068,
+        2196,
+        2344,
+        2388,
+        2413,
+        2419,
+        2422,
+        2427,
+        2433,
+        2446
+      ]
+    },
+    {
+      "emoji": "🇵🇾",
+      "n": 23,
+      "segmentos": 19,
+      "sentimento": null,
+      "nome": "bandeira paraguai",
+      "seg": [
+        1495,
+        1505,
+        1512,
+        1513,
+        1526,
+        1538,
+        1609,
+        1612,
+        1618,
+        1628,
+        1632,
+        1636,
+        1657,
+        1672,
+        1692,
+        1695,
+        1707,
+        2068,
+        2112
+      ]
+    },
+    {
+      "emoji": "🚨",
+      "n": 22,
+      "segmentos": 22,
+      "sentimento": 0.673,
+      "nome": "sirene",
+      "seg": [
+        218,
+        234,
+        289,
+        407,
+        515,
+        521,
+        643,
+        880,
+        1104,
+        1116,
+        1225,
+        1267,
+        1428,
+        1476,
+        1753,
+        1828,
+        1839,
+        1973,
+        1986,
+        2023,
+        2165,
+        2399
+      ]
+    },
+    {
+      "emoji": "✨",
+      "n": 18,
+      "segmentos": 14,
+      "sentimento": 0.353,
+      "nome": "brilhos",
+      "seg": [
+        747,
+        790,
+        986,
+        1177,
+        1281,
+        1538,
+        1758,
+        2127,
+        2166,
+        2425,
+        2427,
+        2462,
+        2570,
+        2573
+      ]
+    },
+    {
+      "emoji": "💊",
+      "n": 17,
+      "segmentos": 17,
+      "sentimento": 0.455,
+      "nome": "comprimido",
+      "seg": [
+        2,
+        92,
+        96,
+        99,
+        122,
+        409,
+        503,
+        707,
+        708,
+        720,
+        1096,
+        1278,
+        1558,
+        1954,
+        2106,
+        2569,
+        4467
+      ]
+    },
+    {
+      "emoji": "😳",
+      "n": 17,
+      "segmentos": 17,
+      "sentimento": 0.018,
+      "nome": "rosto ruborizado",
+      "seg": [
+        215,
+        311,
+        355,
+        392,
+        690,
+        781,
+        834,
+        909,
+        1076,
+        1087,
+        1099,
+        1308,
+        1368,
+        1369,
+        1604,
+        1616,
+        2420
+      ]
+    },
+    {
+      "emoji": "🔥",
+      "n": 15,
+      "segmentos": 14,
+      "sentimento": 0.14,
+      "nome": "fogo",
+      "seg": [
+        77,
+        317,
+        528,
+        848,
+        990,
+        1173,
+        1513,
+        1602,
+        1609,
+        2028,
+        2309,
+        2319,
+        2570,
+        2573
+      ]
+    },
+    {
+      "emoji": "👀",
+      "n": 10,
+      "segmentos": 10,
+      "sentimento": 0.063,
+      "nome": "olhos",
+      "seg": [
+        143,
+        431,
+        750,
+        986,
+        1616,
+        2252,
+        2276,
+        2300,
+        2343,
+        2573
+      ]
+    },
+    {
+      "emoji": "®",
+      "n": 10,
+      "segmentos": 6,
+      "sentimento": 0.285,
+      "nome": "símbolo de registrado",
+      "seg": [
+        961,
+        1903,
+        2596,
+        3953,
+        4163,
+        4438
+      ]
+    },
+    {
+      "emoji": "😂",
+      "n": 9,
+      "segmentos": 8,
+      "sentimento": 0.221,
+      "nome": "rosto chorando de rir",
+      "seg": [
+        219,
+        619,
+        792,
+        829,
+        885,
+        1079,
+        1612,
+        2044
+      ]
+    },
+    {
+      "emoji": "😅",
+      "n": 8,
+      "segmentos": 5,
+      "sentimento": 0.18,
+      "nome": "rosto risonho com gota de suor",
+      "seg": [
+        792,
+        838,
+        1456,
+        2106,
+        2387
+      ]
+    },
+    {
+      "emoji": "✅",
+      "n": 7,
+      "segmentos": 5,
+      "sentimento": 0.431,
+      "nome": "marca de seleção branca",
+      "seg": [
+        2032,
+        2033,
+        2091,
+        2417,
+        2418
+      ]
+    },
+    {
+      "emoji": "📲",
+      "n": 7,
+      "segmentos": 7,
+      "sentimento": 0.256,
+      "nome": "telefone celular com seta",
+      "seg": [
+        2252,
+        2276,
+        2419,
+        2524,
+        2530,
+        4953,
+        5032
+      ]
+    },
+    {
+      "emoji": "🧠",
+      "n": 6,
+      "segmentos": 6,
+      "sentimento": null,
+      "nome": "cérebro",
+      "seg": [
+        120,
+        134,
+        457,
+        1048,
+        1084,
+        1255
+      ]
+    },
+    {
+      "emoji": "❤️",
+      "n": 6,
+      "segmentos": 6,
+      "sentimento": null,
+      "nome": "coração vermelho",
+      "seg": [
+        376,
+        503,
+        793,
+        1236,
+        1641,
+        2459
+      ]
+    },
+    {
+      "emoji": "🤔",
+      "n": 6,
+      "segmentos": 6,
+      "sentimento": null,
+      "nome": "rosto pensativo",
+      "seg": [
+        394,
+        587,
+        1221,
+        1664,
+        1963,
+        1995
+      ]
+    },
+    {
+      "emoji": "❌",
+      "n": 6,
+      "segmentos": 2,
+      "sentimento": 0.286,
+      "nome": "xis",
+      "seg": [
+        1883,
+        2400
+      ]
+    },
+    {
+      "emoji": "➡️",
+      "n": 6,
+      "segmentos": 3,
+      "sentimento": null,
+      "nome": "seta para a direita",
+      "seg": [
+        2022,
+        2407,
+        2411
+      ]
+    },
+    {
+      "emoji": "💪",
+      "n": 5,
+      "segmentos": 5,
+      "sentimento": 0.556,
+      "nome": "bíceps",
+      "seg": [
+        55,
+        2045,
+        2440,
+        2571,
+        2573
+      ]
+    },
+    {
+      "emoji": "⚖️",
+      "n": 5,
+      "segmentos": 5,
+      "sentimento": null,
+      "nome": "balança",
+      "seg": [
+        71,
+        213,
+        376,
+        591,
+        2570
+      ]
+    },
+    {
+      "emoji": "⭐",
+      "n": 5,
+      "segmentos": 1,
+      "sentimento": 0.591,
+      "nome": "estrela branca média",
+      "seg": [
+        415
+      ]
+    },
+    {
+      "emoji": "‼️",
+      "n": 5,
+      "segmentos": 5,
+      "sentimento": null,
+      "nome": "dupla exclamação",
+      "seg": [
+        473,
+        911,
+        1807,
+        2006,
+        2084
+      ]
+    },
+    {
+      "emoji": "🤯",
+      "n": 5,
+      "segmentos": 5,
+      "sentimento": null,
+      "nome": "cabeça explodindo",
+      "seg": [
+        530,
+        882,
+        1037,
+        2011,
+        2433
+      ]
+    },
+    {
+      "emoji": "🦎",
+      "n": 5,
+      "segmentos": 5,
+      "sentimento": null,
+      "nome": "lagartixa",
+      "seg": [
+        868,
+        1150,
+        1299,
+        2421,
+        2432
+      ]
+    },
+    {
+      "emoji": "🍽️",
+      "n": 5,
+      "segmentos": 5,
+      "sentimento": null,
+      "nome": "prato com talheres",
+      "seg": [
+        1453,
+        2011,
+        2255,
+        2426,
+        5032
+      ]
+    },
+    {
+      "emoji": "📌",
+      "n": 5,
+      "segmentos": 3,
+      "sentimento": -0.571,
+      "nome": "tacha",
+      "seg": [
+        2417,
+        2430,
+        2447
+      ]
+    },
+    {
+      "emoji": "🔸",
+      "n": 5,
+      "segmentos": 1,
+      "sentimento": 0.286,
+      "nome": "losango laranja pequeno",
+      "seg": [
+        2427
+      ]
+    },
+    {
+      "emoji": "✔️",
+      "n": 5,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "marca de seleção",
+      "seg": [
+        2429
+      ]
+    },
+    {
+      "emoji": "🧬",
+      "n": 4,
+      "segmentos": 4,
+      "sentimento": null,
+      "nome": "dna",
+      "seg": [
+        4,
+        2216,
+        2299,
+        2309
+      ]
+    },
+    {
+      "emoji": "🫪",
+      "n": 4,
+      "segmentos": 4,
+      "sentimento": null,
+      "nome": "rosto distorcido",
+      "seg": [
+        629,
+        1249,
+        2032,
+        2033
+      ]
+    },
+    {
+      "emoji": "⁉️",
+      "n": 4,
+      "segmentos": 4,
+      "sentimento": null,
+      "nome": "exclamação com interrogação",
+      "seg": [
+        741,
+        858,
+        967,
+        977
+      ]
+    },
+    {
+      "emoji": "🔬",
+      "n": 3,
+      "segmentos": 3,
+      "sentimento": 1.0,
+      "nome": "microscópio",
+      "seg": [
+        136,
+        628,
+        2423
+      ]
+    },
+    {
+      "emoji": "🤣",
+      "n": 3,
+      "segmentos": 3,
+      "sentimento": null,
+      "nome": "rolando no chão de rir",
+      "seg": [
+        238,
+        562,
+        2026
+      ]
+    },
+    {
+      "emoji": "😬",
+      "n": 3,
+      "segmentos": 3,
+      "sentimento": 0.196,
+      "nome": "rosto expressando desagrado",
+      "seg": [
+        327,
+        1602,
+        2348
+      ]
+    },
+    {
+      "emoji": "🫣",
+      "n": 3,
+      "segmentos": 3,
+      "sentimento": null,
+      "nome": "rosto com olho espiando",
+      "seg": [
+        327,
+        855,
+        1249
+      ]
+    },
+    {
+      "emoji": "🤗",
+      "n": 3,
+      "segmentos": 2,
+      "sentimento": null,
+      "nome": "rosto abraçando",
+      "seg": [
+        913,
+        1162
+      ]
+    },
+    {
+      "emoji": "🧪",
+      "n": 3,
+      "segmentos": 3,
+      "sentimento": null,
+      "nome": "tubo de ensaio",
+      "seg": [
+        1349,
+        2230,
+        2234
+      ]
+    },
+    {
+      "emoji": "😹",
+      "n": 3,
+      "segmentos": 1,
+      "sentimento": 0.142,
+      "nome": "rosto de gato com lágrimas de alegria",
+      "seg": [
+        1406
+      ]
+    },
+    {
+      "emoji": "™",
+      "n": 3,
+      "segmentos": 3,
+      "sentimento": null,
+      "nome": "símbolo de marca registrada",
+      "seg": [
+        1610,
+        1613,
+        1614
+      ]
+    },
+    {
+      "emoji": "🚀",
+      "n": 3,
+      "segmentos": 3,
+      "sentimento": 0.525,
+      "nome": "foguete",
+      "seg": [
+        2441,
+        2571,
+        2573
+      ]
+    },
+    {
+      "emoji": "🙏",
+      "n": 3,
+      "segmentos": 3,
+      "sentimento": 0.418,
+      "nome": "mãos juntas",
+      "seg": [
+        2451,
+        2461,
+        2480
+      ]
+    },
+    {
+      "emoji": "💁🏼‍♀️",
+      "n": 3,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "mulher com a palma virada para cima pele morena clara",
+      "seg": [
+        2568
+      ]
+    },
+    {
+      "emoji": "👁️",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": null,
+      "nome": "olho",
+      "seg": [
+        28,
+        804
+      ]
+    },
+    {
+      "emoji": "😯",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.129,
+      "nome": "rosto surpreso",
+      "seg": [
+        108,
+        1946
+      ]
+    },
+    {
+      "emoji": "💪🏽",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": null,
+      "nome": "bíceps pele morena",
+      "seg": [
+        226,
+        1340
+      ]
+    },
+    {
+      "emoji": "👇",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.255,
+      "nome": "dorso da mão com indicador apontando para baixo",
+      "seg": [
+        430,
+        2439
+      ]
+    },
+    {
+      "emoji": "💜",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.656,
+      "nome": "coração roxo",
+      "seg": [
+        576,
+        2424
+      ]
+    },
+    {
+      "emoji": "💡",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.75,
+      "nome": "lâmpada",
+      "seg": [
+        777,
+        2426
+      ]
+    },
+    {
+      "emoji": "🤡",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": null,
+      "nome": "rosto de palhaço",
+      "seg": [
+        838,
+        1367
+      ]
+    },
+    {
+      "emoji": "🎉",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.74,
+      "nome": "cone de festa",
+      "seg": [
+        985,
+        991
+      ]
+    },
+    {
+      "emoji": "🧐",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": null,
+      "nome": "rosto com monóculo",
+      "seg": [
+        997,
+        1714
+      ]
+    },
+    {
+      "emoji": "🤩",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": null,
+      "nome": "rosto com olhar maravilhado",
+      "seg": [
+        1001,
+        2127
+      ]
+    },
+    {
+      "emoji": "🖊️",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": null,
+      "nome": "caneta",
+      "seg": [
+        1110,
+        1175
+      ]
+    },
+    {
+      "emoji": "⏳",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.0,
+      "nome": "ampulheta contando o tempo",
+      "seg": [
+        1224,
+        2573
+      ]
+    },
+    {
+      "emoji": "💚",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.659,
+      "nome": "coração verde",
+      "seg": [
+        1418,
+        1947
+      ]
+    },
+    {
+      "emoji": "🍃",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.381,
+      "nome": "folha ao vento",
+      "seg": [
+        1962,
+        2006
+      ]
+    },
+    {
+      "emoji": "🌿",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.389,
+      "nome": "erva",
+      "seg": [
+        2006,
+        2459
+      ]
+    },
+    {
+      "emoji": "🍳",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.03,
+      "nome": "ovo frito",
+      "seg": [
+        2025,
+        2044
+      ]
+    },
+    {
+      "emoji": "😍",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.678,
+      "nome": "rosto sorridente com olhos de coração",
+      "seg": [
+        2066,
+        2570
+      ]
+    },
+    {
+      "emoji": "🏆",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.737,
+      "nome": "troféu",
+      "seg": [
+        2091,
+        2570
+      ]
+    },
+    {
+      "emoji": "📚",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.345,
+      "nome": "livros",
+      "seg": [
+        2309,
+        2433
+      ]
+    },
+    {
+      "emoji": "💬",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": 0.4,
+      "nome": "balão de diálogo",
+      "seg": [
+        2431,
+        2433
+      ]
+    },
+    {
+      "emoji": "✝️",
+      "n": 2,
+      "segmentos": 2,
+      "sentimento": null,
+      "nome": "cruz latina",
+      "seg": [
+        2448,
+        2459
+      ]
+    },
+    {
+      "emoji": "🏖️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "praia e guarda-sol",
+      "seg": [
+        195
+      ]
+    },
+    {
+      "emoji": "🏋🏽‍♀️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "mulher levantando peso pele morena",
+      "seg": [
+        226
+      ]
+    },
+    {
+      "emoji": "🏃",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.415,
+      "nome": "pessoa correndo",
+      "seg": [
+        226
+      ]
+    },
+    {
+      "emoji": "🌲",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.435,
+      "nome": "conífera",
+      "seg": [
+        248
+      ]
+    },
+    {
+      "emoji": "🏋🏻‍♀️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "mulher levantando peso pele clara",
+      "seg": [
+        276
+      ]
+    },
+    {
+      "emoji": "🔴",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.422,
+      "nome": "círculo vermelho",
+      "seg": [
+        307
+      ]
+    },
+    {
+      "emoji": "😵",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.087,
+      "nome": "rosto atordoado",
+      "seg": [
+        385
+      ]
+    },
+    {
+      "emoji": "👨🏻‍⚕️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "homem profissional da saúde pele clara",
+      "seg": [
+        433
+      ]
+    },
+    {
+      "emoji": "🙄",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "rosto com olhos revirados",
+      "seg": [
+        704
+      ]
+    },
+    {
+      "emoji": "😩",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": -0.368,
+      "nome": "rosto desolado",
+      "seg": [
+        713
+      ]
+    },
+    {
+      "emoji": "🚽",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 1.0,
+      "nome": "vaso sanitário",
+      "seg": [
+        713
+      ]
+    },
+    {
+      "emoji": "🇨🇳",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "bandeira china",
+      "seg": [
+        781
+      ]
+    },
+    {
+      "emoji": "🗓️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "calendário espiral",
+      "seg": [
+        790
+      ]
+    },
+    {
+      "emoji": "😁",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.45,
+      "nome": "rosto contente com olhos sorridentes",
+      "seg": [
+        792
+      ]
+    },
+    {
+      "emoji": "💃",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.736,
+      "nome": "mulher dançando",
+      "seg": [
+        848
+      ]
+    },
+    {
+      "emoji": "😴",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": -0.081,
+      "nome": "rosto dormindo",
+      "seg": [
+        983
+      ]
+    },
+    {
+      "emoji": "👇🏾",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "dorso da mão com indicador apontando para baixo pele morena escura",
+      "seg": [
+        985
+      ]
+    },
+    {
+      "emoji": "💼",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.643,
+      "nome": "maleta",
+      "seg": [
+        986
+      ]
+    },
+    {
+      "emoji": "🕰️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "relógio de mesa",
+      "seg": [
+        997
+      ]
+    },
+    {
+      "emoji": "💣",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.008,
+      "nome": "bomba",
+      "seg": [
+        997
+      ]
+    },
+    {
+      "emoji": "🩷",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "coração rosa",
+      "seg": [
+        1001
+      ]
+    },
+    {
+      "emoji": "🖊",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "caneta",
+      "seg": [
+        1013
+      ]
+    },
+    {
+      "emoji": "🍉",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.61,
+      "nome": "melancia",
+      "seg": [
+        1060
+      ]
+    },
+    {
+      "emoji": "🐿️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "esquilo",
+      "seg": [
+        1064
+      ]
+    },
+    {
+      "emoji": "🧁",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "cupcake",
+      "seg": [
+        1095
+      ]
+    },
+    {
+      "emoji": "🍩",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.393,
+      "nome": "donut",
+      "seg": [
+        1095
+      ]
+    },
+    {
+      "emoji": "🍰",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.464,
+      "nome": "pão de ló de morango",
+      "seg": [
+        1095
+      ]
+    },
+    {
+      "emoji": "🍯",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.053,
+      "nome": "pote de mel",
+      "seg": [
+        1095
+      ]
+    },
+    {
+      "emoji": "🍫",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.158,
+      "nome": "chocolate",
+      "seg": [
+        1095
+      ]
+    },
+    {
+      "emoji": "😮",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.278,
+      "nome": "rosto com boca aberta",
+      "seg": [
+        1109
+      ]
+    },
+    {
+      "emoji": "😰",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": -0.02,
+      "nome": "rosto ansioso com gota de suor",
+      "seg": [
+        1174
+      ]
+    },
+    {
+      "emoji": "📉",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.5,
+      "nome": "gráfico caindo",
+      "seg": [
+        1189
+      ]
+    },
+    {
+      "emoji": "👊",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.229,
+      "nome": "soco",
+      "seg": [
+        1236
+      ]
+    },
+    {
+      "emoji": "🎙️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "microfone de estúdio",
+      "seg": [
+        1350
+      ]
+    },
+    {
+      "emoji": "📦",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.25,
+      "nome": "pacote",
+      "seg": [
+        1505
+      ]
+    },
+    {
+      "emoji": "🎩",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.4,
+      "nome": "cartola",
+      "seg": [
+        1605
+      ]
+    },
+    {
+      "emoji": "🍴",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.554,
+      "nome": "garfo e faca",
+      "seg": [
+        1612
+      ]
+    },
+    {
+      "emoji": "💸",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.167,
+      "nome": "dinheiro voando",
+      "seg": [
+        1672
+      ]
+    },
+    {
+      "emoji": "🇧🇷",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "bandeira brasil",
+      "seg": [
+        1708
+      ]
+    },
+    {
+      "emoji": "🫶🏼",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "mãos de coração pele morena clara",
+      "seg": [
+        1732
+      ]
+    },
+    {
+      "emoji": "😃",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.558,
+      "nome": "rosto risonho com olhos bem abertos",
+      "seg": [
+        1732
+      ]
+    },
+    {
+      "emoji": "😲",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": -0.07,
+      "nome": "rosto espantado",
+      "seg": [
+        1944
+      ]
+    },
+    {
+      "emoji": "📈",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.5,
+      "nome": "gráfico subindo",
+      "seg": [
+        1970
+      ]
+    },
+    {
+      "emoji": "✍️",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "escrevendo à mão",
+      "seg": [
+        2006
+      ]
+    },
+    {
+      "emoji": "🇵🇹",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "bandeira portugal",
+      "seg": [
+        2022
+      ]
+    },
+    {
+      "emoji": "💀",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": -0.208,
+      "nome": "caveira",
+      "seg": [
+        2026
+      ]
+    },
+    {
+      "emoji": "🍷",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.401,
+      "nome": "vinho",
+      "seg": [
+        2029
+      ]
+    },
+    {
+      "emoji": "🧡",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "coração laranja",
+      "seg": [
+        2046
+      ]
+    },
+    {
+      "emoji": "😄",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.422,
+      "nome": "rosto risonho com olhos sorridentes",
+      "seg": [
+        2380
+      ]
+    },
+    {
+      "emoji": "🤍",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "coração branco",
+      "seg": [
+        2394
+      ]
+    },
+    {
+      "emoji": "🤳",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "selfie",
+      "seg": [
+        2398
+      ]
+    },
+    {
+      "emoji": "🦋",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "borboleta",
+      "seg": [
+        2401
+      ]
+    },
+    {
+      "emoji": "💾",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "disquete",
+      "seg": [
+        2419
+      ]
+    },
+    {
+      "emoji": "🌎",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": 0.341,
+      "nome": "globo mostrando as américas",
+      "seg": [
+        2423
+      ]
+    },
+    {
+      "emoji": "🥗",
+      "n": 1,
+      "segmentos": 1,
+      "sentimento": null,
+      "nome": "salada verde",
+      "seg": [
+        2428
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "nota": "Medidas do painel Statistics do Gephi. Modularidade por Louvain (resolução 1,0, semente 42). E-I entre as duas maiores comunidades: −1 = duas bolhas sem contato; +1 = só contato cruzado.",
+  "redes": [
+    {
+      "rede": "fontes_termos",
+      "nos": "2072",
+      "arestas": "3350",
+      "densidade": "0.001561",
+      "grau_medio": "3.234",
+      "componentes": "1",
+      "pct_nos_maior_componente": "100.0",
+      "clustering_medio": "0.0",
+      "modularidade_q": "0.4099",
+      "comunidades": "10",
+      "comunidades_1pct_ou_mais": "10",
+      "pct_maior": "21.77",
+      "pct_segunda": "12.31",
+      "pct_terceira": "10.62",
+      "ei_duas_maiores": "-0.5031",
+      "diametro_maior_componente": "4",
+      "caminho_medio_maior_componente": "3.641"
+    },
+    {
+      "rede": "palavras",
+      "nos": "668",
+      "arestas": "8155",
+      "densidade": "0.036606",
+      "grau_medio": "24.416",
+      "componentes": "2",
+      "pct_nos_maior_componente": "99.85",
+      "clustering_medio": "0.7502",
+      "modularidade_q": "0.2484",
+      "comunidades": "8",
+      "comunidades_1pct_ou_mais": "7",
+      "pct_maior": "35.93",
+      "pct_segunda": "24.4",
+      "pct_terceira": "13.32",
+      "ei_duas_maiores": "-0.3841",
+      "diametro_maior_componente": "4",
+      "caminho_medio_maior_componente": "2.074"
+    }
+  ],
+  "comunidades": [
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "1",
+      "nos": "451",
+      "pct_nos": "21.77",
+      "pct_peso_interno": "21.9",
+      "nos_de_maior_grau": "Ozempic | Mounjaro | Wegovy | CNN Brasil | O GLOBO"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "2",
+      "nos": "255",
+      "pct_nos": "12.31",
+      "pct_peso_interno": "12.45",
+      "nos_de_maior_grau": "tirzepatida | semaglutida | G1 | Assine Abril | VEJA"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "3",
+      "nos": "220",
+      "pct_nos": "10.62",
+      "pct_peso_interno": "5.2",
+      "nos_de_maior_grau": "caneta emagrecedora | Terra | NeoFeed | youtube A0040 | Globo"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "4",
+      "nos": "206",
+      "pct_nos": "9.94",
+      "pct_peso_interno": "3.14",
+      "nos_de_maior_grau": "caneta para emagrecer | youtube A0074 | Tribuna Online | O POVO | Facebook"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "5",
+      "nos": "206",
+      "pct_nos": "9.94",
+      "pct_peso_interno": "3.23",
+      "nos_de_maior_grau": "Mounjaro sem receita | Ozempic sem receita | youtube A0059 | youtube A0255 | youtube A0773"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "6",
+      "nos": "198",
+      "pct_nos": "9.56",
+      "pct_peso_interno": "3.21",
+      "nos_de_maior_grau": "caneta do Paraguai | youtube A0065 | youtube A0100 | youtube A0380 | youtube A0887"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "7",
+      "nos": "145",
+      "pct_nos": "7.0",
+      "pct_peso_interno": "3.09",
+      "nos_de_maior_grau": "retatrutida | youtube A0084 | Diário do Nordeste | youtube A0828 | youtube A1386"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "8",
+      "nos": "139",
+      "pct_nos": "6.71",
+      "pct_peso_interno": "3.52",
+      "nos_de_maior_grau": "tirzepatida manipulada | ICTQ | semaglutida manipulada | UOL Notícias | ClickPB"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "9",
+      "nos": "126",
+      "pct_nos": "6.08",
+      "pct_peso_interno": "2.48",
+      "nos_de_maior_grau": "liraglutida | Agência Brasil | JOTA Info | Portal Drauzio Varella | youtube A0057"
+    },
+    {
+      "caso": "redes",
+      "rede": "fontes_termos",
+      "comunidade": "10",
+      "nos": "126",
+      "pct_nos": "6.08",
+      "pct_peso_interno": "2.17",
+      "nos_de_maior_grau": "Saxenda | Rádio Itatiaia | Correio Braziliense | youtube A0089 | youtube A0641"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "1",
+      "nos": "240",
+      "pct_nos": "35.93",
+      "pct_peso_interno": "18.59",
+      "nos_de_maior_grau": "mounjaro | ozempic | novo | wegovy | peso"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "2",
+      "nos": "163",
+      "pct_nos": "24.4",
+      "pct_peso_interno": "10.72",
+      "nos_de_maior_grau": "caneta | emagrecedora | emagrecedoras | paraguai | emagrecer"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "3",
+      "nos": "89",
+      "pct_nos": "13.32",
+      "pct_peso_interno": "9.59",
+      "nos_de_maior_grau": "anvisa | semaglutida | aprovar | medicamento | obesidade"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "4",
+      "nos": "70",
+      "pct_nos": "10.48",
+      "pct_peso_interno": "2.78",
+      "nos_de_maior_grau": "tirzepatida | manipular | apreender | justica | ilegal"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "5",
+      "nos": "47",
+      "pct_nos": "7.04",
+      "pct_peso_interno": "4.47",
+      "nos_de_maior_grau": "dia | rocar | novembro | santo | joao"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "6",
+      "nos": "33",
+      "pct_nos": "4.94",
+      "pct_peso_interno": "1.57",
+      "nos_de_maior_grau": "risco | uso | alerta | visao | doenca"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "7",
+      "nos": "25",
+      "pct_nos": "3.74",
+      "pct_peso_interno": "0.62",
+      "nos_de_maior_grau": "sus | saude | oferecer | publico | inclusao"
+    }
+  ]
+}
