@@ -72,7 +72,7 @@ jobs:
             case "$linha" in gravado*) args+=(--executado "$linha");; esac
           done < resumo.txt
           [ ${#args[@]} -eq 0 ] && args=(--executado "Nenhum coletor gravou resultado; ver o log do run.")
-          python scripts/changelog_auto.py \
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
             --titulo "Coletas grátis (run $RUN)" \
             --mudou "Manifestos em data/manifestos/, resultados públicos em data/youtube, data/trends, data/imprensa e data/checagens, e data/estado.json." \
             --porque "Coletas grátis pedidas pelo pesquisador em 23/11/2026, no período lido de data/config/projeto.json." \
@@ -107,11 +107,4 @@ jobs:
 
       - name: Gravar no público (só com os testes passando)
         if: always() && steps.testes_depois.outcome == 'success'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data CHANGELOG.md
-          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
-          git commit -q -m "Coletas grátis (run $RUN)"
-          for t in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main || exit 1; sleep $((t * 10)); done
-          exit 1
+        run: scripts/gravar_no_main.sh "Coletas grátis (run $RUN)" "$RUNNER_TEMP/entrada.md" data/manifestos data/youtube data/trends data/imprensa data/checagens

@@ -1,21 +1,23 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": 3,
+  "manifestos_lidos": 4,
   "frentes": [
     {
       "id": "youtube",
       "nome": "YouTube",
       "via": "YouTube Data API",
       "paga": false,
-      "coletas": null,
+      "coletas": 1,
       "universo": null,
-      "universo_fonte": null,
-      "lido": null,
-      "amostra": null,
-      "amostra_como": null,
-      "cobertura": null,
-      "ultima_coleta": null,
-      "runs": []
+      "universo_fonte": "O YouTube informa só uma estimativa por termo (pageInfo.totalResults), registrada em data/youtube/agregado.json; os termos se sobrepõem e a soma não é universo.",
+      "lido": 3311,
+      "amostra": 3001,
+      "amostra_como": "vídeos distintos da busca por data, até 5 páginas de 50 por termo",
+      "cobertura": "parcial",
+      "ultima_coleta": "2026-11-23T20:56:10Z",
+      "runs": [
+        "45261726207"
+      ]
     },
     {
       "id": "trends",

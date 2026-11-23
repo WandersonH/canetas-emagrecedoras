@@ -120,6 +120,15 @@ class Publico(unittest.TestCase):
                 if "secrets." in linha:
                     self.assertRegex(linha.strip(), r"^[A-Z_]+: \$\{\{ secrets\.[A-Z_]+ \}\}$", f"{caminho.name}:{numero}")
 
+    def test_changelog_sem_marca_de_conflito_e_com_as_cinco_secoes(self):
+        texto = (RAIZ / "CHANGELOG.md").read_text(encoding="utf-8")
+        self.assertNotRegex(texto, r"(?m)^(<<<<<<<|=======|>>>>>>>)", "conflito de merge não resolvido no CHANGELOG")
+        entradas = re.split(r"(?m)^## ", texto)[1:]
+        self.assertTrue(entradas)
+        for entrada in entradas:
+            for rotulo in ("O que mudou", "Por quê", "O que foi executado de verdade", "O que ficou pendente", "Onde está a evidência"):
+                self.assertIn(f"**{rotulo}**", entrada, entrada.splitlines()[0])
+
     def test_workflows_so_com_disparo_manual(self):
         for caminho in (RAIZ / ".github" / "workflows").glob("*.y*ml"):
             texto = caminho.read_text(encoding="utf-8")

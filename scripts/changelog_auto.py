@@ -44,17 +44,31 @@ def inserir(texto_atual: str, nova: str) -> str:
 
 def main(argumentos: list[str] | None = None) -> int:
     leitor = argparse.ArgumentParser(description="Acrescenta uma entrada ao CHANGELOG.md.")
-    leitor.add_argument("--titulo", required=True)
+    leitor.add_argument("--titulo")
+    leitor.add_argument("--saida", help="grava só a entrada neste arquivo, sem mexer no CHANGELOG")
+    leitor.add_argument("--inserir-de", help="insere no CHANGELOG uma entrada já gravada com --saida")
     leitor.add_argument("--data", default=None, help="dd/mm/aaaa; padrão: hoje em Brasília")
     for chave, _ in SECOES:
         leitor.add_argument(f"--{chave}", action="append", default=[])
     leitor.add_argument("--arquivo", default=str(comum.RAIZ / "CHANGELOG.md"))
     opcoes = leitor.parse_args(argumentos)
-    data = opcoes.data or (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=3)).strftime("%d/%m/%Y")
-    partes = {chave: getattr(opcoes, chave) for chave, _ in SECOES}
     caminho = pathlib.Path(opcoes.arquivo)
     atual = caminho.read_text(encoding="utf-8") if caminho.exists() else "# CHANGELOG\n\n"
-    caminho.write_text(inserir(atual, entrada(opcoes.titulo, data, partes)), encoding="utf-8")
+    if opcoes.inserir_de:
+        pronta = pathlib.Path(opcoes.inserir_de).read_text(encoding="utf-8")
+        caminho.write_text(inserir(atual, pronta), encoding="utf-8")
+        print(f"entrada inserida em {caminho.name}")
+        return 0
+    if not opcoes.titulo:
+        leitor.error("--titulo é obrigatório")
+    data = opcoes.data or (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=3)).strftime("%d/%m/%Y")
+    partes = {chave: getattr(opcoes, chave) for chave, _ in SECOES}
+    nova = entrada(opcoes.titulo, data, partes)
+    if opcoes.saida:
+        pathlib.Path(opcoes.saida).write_text(nova, encoding="utf-8")
+        print(f"entrada gravada em {opcoes.saida}: {opcoes.titulo}")
+        return 0
+    caminho.write_text(inserir(atual, nova), encoding="utf-8")
     print(f"entrada acrescentada em {caminho.name}: {opcoes.titulo}")
     return 0
 

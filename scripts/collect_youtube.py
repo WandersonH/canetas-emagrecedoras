@@ -15,6 +15,8 @@ para o repositório privado. No público ficam só agregados (contagens por term
 
 Uso:
     python scripts/collect_youtube.py --privado /caminho/do/privado --run-id 123
+Reconstrução sem nova consulta à API, a partir do bruto já guardado no privado:
+    python scripts/collect_youtube.py --privado /caminho/do/privado --run-id 123 --do-bruto bruto/youtube/<carimbo>
 """
 from __future__ import annotations
 
@@ -124,12 +126,66 @@ def agregar(buscas: list[dict], videos: list[dict], inicio, fim) -> dict:
     }
 
 
+def ler_bruto(pasta: pathlib.Path) -> tuple[list[dict], list[dict]]:
+    """Refaz as buscas e os detalhes a partir dos arquivos guardados, sem chamar a API."""
+    buscas = []
+    for caminho in sorted(pasta.glob("busca_*.json")):
+        dado = json.loads(caminho.read_text(encoding="utf-8"))
+        paginas = dado["paginas"]
+        ids = [i["id"]["videoId"] for p in paginas for i in p.get("items", []) if (i.get("id") or {}).get("videoId")]
+        ultimo_token = paginas[-1].get("nextPageToken") if paginas else None
+        buscas.append({"termo": dado["termo"], "universo_estimado": (paginas[0].get("pageInfo") or {}).get("totalResults") if paginas else None,
+                       "lido": len(ids), "ids": ids, "paginas": len(paginas),
+                       "parou_por": "limite" if ultimo_token and len(paginas) >= MAX_PAGINAS else "fim_dos_resultados"})
+    videos = json.loads((pasta / "videos.json").read_text(encoding="utf-8"))
+    return buscas, videos
+
+
+def reconstruir(privado: pathlib.Path, pasta: pathlib.Path, run_id: str | None) -> int:
+    buscas, videos = ler_bruto(pasta)
+    carimbo = pasta.name  # AAAAMMDDTHHMMSSZ do início da coleta original
+    iniciado = f"{carimbo[0:4]}-{carimbo[4:6]}-{carimbo[6:8]}T{carimbo[9:11]}:{carimbo[11:13]}:{carimbo[13:15]}Z"
+    inicio, fim = rede.periodo_lido(hoje=datetime.date.fromisoformat(iniciado[:10]))
+    manifesto = rede.Manifesto("youtube", {"termos": [b["termo"] for b in buscas], "inicio": inicio.isoformat(),
+                                           "fim": fim.isoformat(), "ordem": "date", "regiao": "BR", "idioma": "pt",
+                                           "max_paginas_por_termo": MAX_PAGINAS, "por_pagina": POR_PAGINA,
+                                           "reconstrucao": f"Refeito do bruto guardado no privado ({pasta.relative_to(privado)}), sem nova consulta à API; a gravação pública do run original falhou."},
+                               run_id)
+    manifesto.dados["iniciado_em"] = iniciado
+    for caminho in sorted(pasta.glob("*.json")):
+        manifesto.arquivo(caminho, privado, privado=True)
+    for tabela in sorted((privado / "terceiros" / "youtube").glob(f"videos_{carimbo}.csv")):
+        manifesto.arquivo(tabela, privado, privado=True)
+    return publicar(manifesto, buscas, videos, inicio, fim, run_id, iniciado)
+
+
+def publicar(manifesto, buscas, videos, inicio, fim, run_id, obtido_em) -> int:
+    agregado = agregar(buscas, videos, inicio, fim)
+    agregado.update({"obtido_em": obtido_em, "run_id": run_id})
+    destino = comum.RAIZ / "data" / "youtube" / "agregado.json"
+    comum.gravar(destino, agregado)
+    manifesto.arquivo(destino, comum.RAIZ)
+    lido = sum(b["lido"] for b in buscas) if buscas else None
+    manifesto.dados.update({
+        "universo": {"valor": None, "fonte": "O YouTube informa só uma estimativa por termo (pageInfo.totalResults), registrada em data/youtube/agregado.json; os termos se sobrepõem e a soma não é universo."},
+        "lido": lido,
+        "amostra": {"n": agregado["videos_distintos"] if buscas else None,
+                    "como": f"vídeos distintos da busca por data, até {MAX_PAGINAS} páginas de {POR_PAGINA} por termo"},
+        "parou_por": "limite" if any(b["parou_por"] == "limite" for b in buscas) else ("fim_dos_resultados" if buscas else None),
+    })
+    print(f"gravado {manifesto.gravar().relative_to(comum.RAIZ)}: {agregado['videos_distintos']} vídeos distintos")
+    return 0 if buscas else 1
+
+
 def main(argumentos=None) -> int:
     leitor = argparse.ArgumentParser(description="Coleta de vídeos do YouTube por termo.")
     leitor.add_argument("--privado", required=True)
     leitor.add_argument("--run-id", default=None)
+    leitor.add_argument("--do-bruto", default=None, help="pasta do bruto no privado; não consulta a API")
     opcoes = leitor.parse_args(argumentos)
     privado = pathlib.Path(opcoes.privado)
+    if opcoes.do_bruto:
+        return reconstruir(privado, privado / opcoes.do_bruto, opcoes.run_id)
     chave = os.environ.get("YOUTUBE_API_KEY", "")
     inicio, fim = rede.periodo_lido()
     termos = rede.termos_de_busca()
@@ -181,21 +237,7 @@ def main(argumentos=None) -> int:
                                s.get("channelId"), s.get("channelTitle"), s.get("title"), e.get("viewCount"),
                                e.get("likeCount"), e.get("commentCount"), (v.get("contentDetails") or {}).get("duration")])
     manifesto.arquivo(tabela, privado, privado=True)
-    agregado = agregar(buscas, videos, inicio, fim)
-    agregado.update({"obtido_em": manifesto.dados["iniciado_em"], "run_id": opcoes.run_id})
-    destino = comum.RAIZ / "data" / "youtube" / "agregado.json"
-    comum.gravar(destino, agregado)
-    manifesto.arquivo(destino, comum.RAIZ)
-    lido = sum(b["lido"] for b in buscas) if buscas else None
-    manifesto.dados.update({
-        "universo": {"valor": None, "fonte": "O YouTube informa só uma estimativa por termo (pageInfo.totalResults), registrada em data/youtube/agregado.json; os termos se sobrepõem e a soma não é universo."},
-        "lido": lido,
-        "amostra": {"n": agregado["videos_distintos"] if buscas else None,
-                    "como": f"vídeos distintos da busca por data, até {MAX_PAGINAS} páginas de {POR_PAGINA} por termo"},
-        "parou_por": "limite" if any(b["parou_por"] == "limite" for b in buscas) else ("fim_dos_resultados" if buscas else None),
-    })
-    print(f"gravado {manifesto.gravar().relative_to(comum.RAIZ)}: {agregado['videos_distintos']} vídeos distintos")
-    return 0 if buscas else 1
+    return publicar(manifesto, buscas, videos, inicio, fim, opcoes.run_id, manifesto.dados["iniciado_em"])
 
 
 if __name__ == "__main__":

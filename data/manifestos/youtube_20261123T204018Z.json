@@ -1,0 +1,158 @@
+{
+  "frente": "youtube",
+  "etapa": "gratis",
+  "run_id": "45261726207",
+  "iniciado_em": "2026-11-23T20:40:18Z",
+  "terminado_em": "2026-11-23T20:56:10Z",
+  "consulta": {
+    "termos": [
+      "semaglutida",
+      "tirzepatida",
+      "liraglutida",
+      "Ozempic",
+      "Wegovy",
+      "Mounjaro",
+      "Saxenda",
+      "caneta emagrecedora",
+      "caneta para emagrecer",
+      "caneta do Paraguai",
+      "tirzepatida manipulada",
+      "semaglutida manipulada",
+      "Ozempic sem receita",
+      "Mounjaro sem receita",
+      "retatrutida"
+    ],
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23",
+    "ordem": "date",
+    "regiao": "BR",
+    "idioma": "pt",
+    "max_paginas_por_termo": 5,
+    "por_pagina": 50,
+    "reconstrucao": "Refeito do bruto guardado no privado (bruto/youtube/20261123T204018Z), sem nova consulta à API; a gravação pública do run original falhou."
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "O YouTube informa só uma estimativa por termo (pageInfo.totalResults), registrada em data/youtube/agregado.json; os termos se sobrepõem e a soma não é universo."
+  },
+  "lido": 3311,
+  "amostra": {
+    "n": 3001,
+    "como": "vídeos distintos da busca por data, até 5 páginas de 50 por termo"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/youtube/agregado.json",
+      "sha256": "cbcd5b4f75eb2509c6de884812953161a908d7503f8f93bd9d27a978167ea81b",
+      "bytes": 7390,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_00.json",
+      "sha256": "9cb25d873f44f9b7e7b7fd4a71811413ee9ba740a16fdfbe0dd865f487ff882c",
+      "bytes": 269348,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_01.json",
+      "sha256": "c6d5fc6a3f32445812b3b0361f2415f3d67e7d11a7e08af03dda967c928718f4",
+      "bytes": 266204,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_02.json",
+      "sha256": "0c934973fda519904182bc7b2844e65f397892f56cad2e4348a48d2b109d2922",
+      "bytes": 215073,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_03.json",
+      "sha256": "b48c6671f8d1a1532602f54672f3947033934435c833e28986a78920b19103a5",
+      "bytes": 274722,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_04.json",
+      "sha256": "503f7e0167a501d07710bdefb364efcfb42b6f380e1a7c9531cf0161cf8761bc",
+      "bytes": 270778,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_05.json",
+      "sha256": "7404c67aaee3925192a49f004bdb08baf4cc80069242aeba16fe50886d720dfa",
+      "bytes": 268983,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_06.json",
+      "sha256": "7a07e57575adaf658db762dd2e8c977e545ec9090dd5b5e96fef3ac70caa595f",
+      "bytes": 264499,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_07.json",
+      "sha256": "2803a91a54da2d63f4b13c7471ac1db9127ec00cda461636acbf8d9892c993a6",
+      "bytes": 271613,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_08.json",
+      "sha256": "c92f411178b63620139f009560b78db33cbb2cc6a56f7f012cecefa7ef27eccd",
+      "bytes": 270255,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_09.json",
+      "sha256": "df355df49e4aaf9742c01e6497b17ec7a6a85662e5c1a2ec5b9ce5f96950d51d",
+      "bytes": 266305,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_10.json",
+      "sha256": "e01fac236f88bf31c7c25ac50193782149343da94d91635bad3e9c75f5a99c03",
+      "bytes": 228954,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_11.json",
+      "sha256": "94357d9f68387e4438ca62d31a2c869d426c88551131886e95cf00a37097238e",
+      "bytes": 53686,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_12.json",
+      "sha256": "09cd8b152e7308ba8f2aefc3902d88e93d7a450f014f995043c2d58ec8db19b1",
+      "bytes": 126824,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_13.json",
+      "sha256": "a173f3285568f629a1380000b7bccfbaef009527e57fba9ef2c17877d40d0978",
+      "bytes": 225539,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/busca_14.json",
+      "sha256": "ee7c8034b450e1ab6a24cd0ce5b6d66a6b561d9da587ac8bc13239bf523f360b",
+      "bytes": 270405,
+      "linhas": null
+    },
+    {
+      "caminho": "bruto/youtube/20261123T204018Z/videos.json",
+      "sha256": "d8f5ceda473a5bae3c7451921c61ead7284a1415d95c03da8c677080bf4b61d0",
+      "bytes": 9678716,
+      "linhas": null
+    },
+    {
+      "caminho": "terceiros/youtube/videos_20261123T204018Z.csv",
+      "sha256": "309a660677154cccad7698bc2fac5f44aee2401d7dec10341808caa8397fc683",
+      "bytes": 539106,
+      "linhas": 3003
+    }
+  ],
+  "bloqueios": []
+}

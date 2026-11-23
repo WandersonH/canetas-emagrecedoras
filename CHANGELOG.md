@@ -28,6 +28,31 @@ Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que fi
 
 - https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45264522808 e os manifestos deste run em data/manifestos/.
 
+## 23/11/2026 · YouTube refeito do bruto do run 45261726207 e gravação sem conflito
+
+**O que mudou**
+
+- data/youtube/agregado.json e data/manifestos/youtube_20261123T204018Z.json, refeitos do bruto guardado no privado, sem nova consulta à API.
+- scripts/gravar_no_main.sh: os workflows passam a partir do main mais recente, regenerar data/estado.json e inserir a entrada de CHANGELOG antes do commit. scripts/changelog_auto.py ganha --saida e --inserir-de. scripts/collect_youtube.py ganha --do-bruto.
+
+**Por quê**
+
+- O run 45261726207 coletou as quatro frentes, gravou o bruto no privado e falhou ao gravar no público: o CHANGELOG mudou no main durante a coleta (commit cb155b7) e o rebase deu conflito. Refazer pela API gastaria de novo cerca de 7.500 unidades da cota diária de 10.000.
+
+**O que foi executado de verdade**
+
+- python3 scripts/collect_youtube.py --privado <privado> --run-id 45261726207 --do-bruto bruto/youtube/20261123T204018Z: 3.001 vídeos distintos, 1.871 canais, 15 termos, igual ao log do run.
+- python3 scripts/build_estado.py: 9 frentes, 1 com coleta. python3 -m unittest discover -s tests: todos passaram, 1 pulado.
+
+**O que ficou pendente**
+
+- Trends, imprensa e checagens do run 45261726207 não foram gravados no público; serão coletados de novo.
+- A amostra do YouTube por termo são os 250 vídeos mais recentes; nos termos grandes ela só alcança semanas antes da coleta. Cobrir o período inteiro pede busca fatiada por mês, que passa da cota de um dia.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45261726207 e, no privado, bruto/youtube/20261123T204018Z/.
+
 ## 23/11/2026 · Sondagem de fontes públicas (run 45261842688)
 
 **O que mudou**
@@ -53,6 +78,7 @@ Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que fi
 **Onde está a evidência**
 
 - https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45261842688 e data/fontes/sondagem.json.
+
 
 ## 23/11/2026 · Sondagem: leitura de índice com endereço absoluto e cópia das páginas
 

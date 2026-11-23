@@ -45,7 +45,7 @@ jobs:
           while IFS= read -r linha; do
             [ -n "$linha" ] && case "$linha" in gravado*) ;; *) args+=(--executado "Resultado: $linha");; esac
           done <<< "$RESUMO"
-          python scripts/changelog_auto.py \
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
             --titulo "Sondagem de fontes públicas (run $RUN)" \
             --mudou "data/fontes/sondagem.json: o que cada fonte de dados públicos oferece, com HTTP, tamanho e SHA-256 da página lida; cópia das páginas em data/fontes/paginas/." \
             --porque "Validar se as fontes de dados públicos existem e o que publicam, antes de escrever os coletores." \
@@ -55,15 +55,4 @@ jobs:
             --evidencia "https://github.com/$REPO/actions/runs/$RUN e data/fontes/sondagem.json."
 
       - name: Gravar no repositório
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/fontes CHANGELOG.md
-          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
-          git commit -q -m "Sondagem de fontes públicas (run ${{ github.run_id }})"
-          for t in 1 2 3; do
-            git push -q origin HEAD:main && exit 0
-            git pull -q --rebase origin main || exit 1
-            sleep $((t * 10))
-          done
-          exit 1
+        run: scripts/gravar_no_main.sh "Sondagem de fontes públicas (run ${{ github.run_id }})" "$RUNNER_TEMP/entrada.md" data/fontes
