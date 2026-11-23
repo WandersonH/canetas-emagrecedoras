@@ -2,6 +2,30 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Página mostra YouTube, Trends, imprensa e checagens
+
+**O que mudou**
+
+- index.html: cartão do YouTube por termo no Panorama; séries do Trends por grupo; notícias por mês com clique que abre as manchetes do mês; veículos e termos da imprensa; tabela de checagens. Tudo lido de data/youtube, data/trends, data/imprensa e data/checagens.
+- tests/test_publico.py: CHANGELOG sem marca de conflito e com as cinco seções em toda entrada.
+
+**Por quê**
+
+- As coletas dos runs 45261726207 (YouTube) e 45264522808 (Trends, imprensa, checagens) estavam gravadas, mas a página ainda mostrava ⛔ nesses cadernos.
+
+**O que foi executado de verdade**
+
+- python3 -m unittest discover -s tests: 79 testes, 1 pulado. Página aberta em Chrome sem interface nos cadernos Panorama e Trends: séries, barras e listas renderizadas a partir dos arquivos.
+
+**O que ficou pendente**
+
+- Ativar o GitHub Pages para a página ficar no ar.
+- Cobertura do YouTube no período inteiro (busca por mês) e checagens das agências brasileiras, que a API trouxe pouco.
+
+**Onde está a evidência**
+
+- data/youtube/agregado.json, data/trends/ultimo.json, data/imprensa/resultados.json, data/checagens/checagens.json.
+
 ## 23/11/2026 · Coletas grátis (run 45264522808)
 
 **O que mudou**
