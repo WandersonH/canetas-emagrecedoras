@@ -1,7 +1,8 @@
 {
   "nota": "Gerado por scripts/sondar_fontes.py. Diz o que cada fonte oferece; não traz número do estudo.",
-  "obtido_em": "2026-11-23T20:39:07Z",
-  "run_id": "45261554611",
+  "obtido_em": "2026-11-23T20:50:59Z",
+  "run_id": "45261842688",
+  "paginas_lidas": "data/fontes/paginas/ (cópia de cada página lida, para conferência)",
   "fontes": [
     {
       "id": "anvisa_dados",
@@ -13,9 +14,1095 @@
       "erro": null,
       "bytes": 46454,
       "sha256": "7487846576db6b1522b1848e6688c2d267a5ff749b756986a459c8891c6b8cf5",
-      "arquivos": 0,
-      "pastas": 0,
-      "itens": []
+      "arquivos": 152,
+      "pastas": 3,
+      "itens": [
+        {
+          "nome": "CONSULTAS",
+          "url": "https://dados.anvisa.gov.br/dados/CONSULTAS/",
+          "pasta": true,
+          "data": "2026-04-27 18:42",
+          "tamanho": null
+        },
+        {
+          "nome": "SNGPC",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/",
+          "pasta": true,
+          "data": "2026-04-27 18:42",
+          "tamanho": null
+        },
+        {
+          "nome": "tmp",
+          "url": "https://dados.anvisa.gov.br/dados/tmp/",
+          "pasta": true,
+          "data": "2026-11-23 19:21",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_AGROTOXICO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_AGROTOXICO.CSV",
+          "pasta": false,
+          "data": "2023-11-07 15:14",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ALIMENTO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ALIMENTO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:27",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_ALIMENTO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_ALIMENTO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_COSMETICO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_COSMETICO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_EMPRESA.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_EMPRESA.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_INSUMO_FARMACEUTICO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_INSUMO_FARMACEUTICO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_MEDICAMENTO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_MEDICAMENTO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_PROD_SAUDE_IN_VITRO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_PROD_SAUDE_IN_VITRO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_PRODUTO_SAUDE(CORRELATOS).CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_PRODUTO_SAUDE%28CORRELATOS%29.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_SANEANTE.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_SANEANTE.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_TABACO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_TABACO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_ANDAMENTO_TOXICOLOGIA.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_ANDAMENTO_TOXICOLOGIA.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_AUTORIZACAO_EMPRESA.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_AUTORIZACAO_EMPRESA.CSV",
+          "pasta": false,
+          "data": "2023-11-07 15:14",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_COSMETICO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_COSMETICO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:27",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_EMPRESA.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_EMPRESA.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_INSUMO_FARMACEUTICO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_INSUMO_FARMACEUTICO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:27",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_MEDICAMENTO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_MEDICAMENTO.csv",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_PROD_SAUDE_IN_VITRO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_PROD_SAUDE_IN_VITRO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:27",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_PRODUTO_SAUDE(CORRELATOS).CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_PRODUTO_SAUDE%28CORRELATOS%29.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_PRODUTO_SAUDE.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_PRODUTO_SAUDE.CSV",
+          "pasta": false,
+          "data": "2023-10-25 07:59",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_SANEANTE.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_SANEANTE.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_TABACO.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_TABACO.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:27",
+          "tamanho": null
+        },
+        {
+          "nome": "CICLO_ANALISE_PETICOES_TOXICOLOGIA.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/CICLO_ANALISE_PETICOES_TOXICOLOGIA.CSV",
+          "pasta": false,
+          "data": "2026-11-23 12:27",
+          "tamanho": null
+        },
+        {
+          "nome": "CONSULTA_SITUCAO_FILA.csv",
+          "url": "https://dados.anvisa.gov.br/dados/CONSULTA_SITUCAO_FILA.csv",
+          "pasta": false,
+          "data": "2026-11-23 12:28",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_ALIMENTO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_ALIMENTO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_BALANCO_EMBRIAO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_BALANCO_EMBRIAO.csv",
+          "pasta": false,
+          "data": "2026-11-23 04:05",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_CICLO_ANALISE_PEI.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_CICLO_ANALISE_PEI.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_CONSULTAS_PUBLICAS.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_CONSULTAS_PUBLICAS.csv",
+          "pasta": false,
+          "data": "2021-05-14 17:43",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_CPC.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_CPC.csv",
+          "pasta": false,
+          "data": "2021-08-20 19:43",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_HEMOVIGILANCIA.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_HEMOVIGILANCIA.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:04",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_INSPECAO_NAVIO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_INSPECAO_NAVIO.csv",
+          "pasta": false,
+          "data": "2026-11-23 04:10",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_MEDICAMENTOS.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_MEDICAMENTOS.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_PROCEDIMENTO_CELULA_EMBRIAO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_PROCEDIMENTO_CELULA_EMBRIAO.csv",
+          "pasta": false,
+          "data": "2026-11-23 04:05",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_PRODUTO_FUMIGENO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_PRODUTO_FUMIGENO.csv",
+          "pasta": false,
+          "data": "2026-10-13 19:34",
+          "tamanho": null
+        },
+        {
+          "nome": "DADOS_ABERTOS_TECNOVIGILANCIA.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_TECNOVIGILANCIA.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:04",
+          "tamanho": null
+        },
+        {
+          "nome": "DadosAbertos_BancoTecidos_BP.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DadosAbertos_BancoTecidos_BP.csv",
+          "pasta": false,
+          "data": "2021-09-30 20:44",
+          "tamanho": null
+        },
+        {
+          "nome": "DadosAbertos_BancoTecidos_BTC.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DadosAbertos_BancoTecidos_BTC.csv",
+          "pasta": false,
+          "data": "2021-09-30 20:45",
+          "tamanho": null
+        },
+        {
+          "nome": "DadosAbertos_BancoTecidos_BTME.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DadosAbertos_BancoTecidos_BTME.csv",
+          "pasta": false,
+          "data": "2021-09-30 20:47",
+          "tamanho": null
+        },
+        {
+          "nome": "DadosAbertos_BancoTecidos_BTOC.csv",
+          "url": "https://dados.anvisa.gov.br/dados/DadosAbertos_BancoTecidos_BTOC.csv",
+          "pasta": false,
+          "data": "2021-09-30 20:48",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionario_Dados_Configuracoes_Filas_Analise_Anvisa.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Dicionario_Dados_Configuracoes_Filas_Analise_Anvisa.pdf",
+          "pasta": false,
+          "data": "2023-03-03 17:58",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionario_Dados_Produtos_Fumigenos.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Dicionario_Dados_Produtos_Fumigenos.pdf",
+          "pasta": false,
+          "data": "2022-09-21 18:07",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionario_de_Dados_Painel_SNGPC_Venda_de_Industrializados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Dicionario_de_Dados_Painel_SNGPC_Venda_de_Industrializados.pdf",
+          "pasta": false,
+          "data": "2026-02-13 12:47",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionario_de_Dados_Painel_SNGPC_Venda_de_Manipulados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Dicionario_de_Dados_Painel_SNGPC_Venda_de_Manipulados.pdf",
+          "pasta": false,
+          "data": "2026-02-13 12:47",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionário Consumidor - com tab de-para.docx",
+          "url": "https://dados.anvisa.gov.br/dados/Dicion%C3%A1rio%20Consumidor%20-%20com%20tab%20de-para.docx",
+          "pasta": false,
+          "data": "2019-08-08 16:28",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionário Consumidor.docx",
+          "url": "https://dados.anvisa.gov.br/dados/Dicion%C3%A1rio%20Consumidor.docx",
+          "pasta": false,
+          "data": "2019-08-06 20:31",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionário Governo - com tab de-para.docx",
+          "url": "https://dados.anvisa.gov.br/dados/Dicion%C3%A1rio%20Governo%20-%20com%20tab%20de-para.docx",
+          "pasta": false,
+          "data": "2019-08-08 16:30",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionário Governo.docx",
+          "url": "https://dados.anvisa.gov.br/dados/Dicion%C3%A1rio%20Governo.docx",
+          "pasta": false,
+          "data": "2019-08-06 20:31",
+          "tamanho": null
+        },
+        {
+          "nome": "Dicionário.docx",
+          "url": "https://dados.anvisa.gov.br/dados/Dicion%C3%A1rio.docx",
+          "pasta": false,
+          "data": "2018-11-05 17:37",
+          "tamanho": null
+        },
+        {
+          "nome": "DicionárioDados_Monografia_Agrotóxicos.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Dicion%C3%A1rioDados_Monografia_Agrot%C3%B3xicos.pdf",
+          "pasta": false,
+          "data": "2020-09-01 20:22",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_AGROTOXICOS.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_AGROTOXICOS.pdf",
+          "pasta": false,
+          "data": "2020-09-04 18:14",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_ALIMENTOS.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_ALIMENTOS.pdf",
+          "pasta": false,
+          "data": "2020-09-04 18:09",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_AUTORIZACAO_FUNCIONAMENTO_EMPRESAS.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_AUTORIZACAO_FUNCIONAMENTO_EMPRESAS.pdf",
+          "pasta": false,
+          "data": "2020-09-04 18:14",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Ciclo_de_Vida_de_Analise_de_Processo_Eletronicos_de_Importacao_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Ciclo_de_Vida_de_Analise_de_Processo_Eletronicos_de_Importacao_V1.pdf",
+          "pasta": false,
+          "data": "2021-05-21 18:16",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_COSMETICOS.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_COSMETICOS.pdf",
+          "pasta": false,
+          "data": "2023-11-21 12:51",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_CPC.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_CPC.pdf",
+          "pasta": false,
+          "data": "2021-09-01 12:22",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_DIAGNOSTICO_IN_VITRO.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_DIAGNOSTICO_IN_VITRO.pdf",
+          "pasta": false,
+          "data": "2023-11-29 18:36",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Embrioes_v1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Embrioes_v1.pdf",
+          "pasta": false,
+          "data": "2021-09-30 21:07",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fabricantes_IFA.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fabricantes_IFA.pdf",
+          "pasta": false,
+          "data": "2023-11-23 17:35",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Farmacovigilancia.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Farmacovigilancia.pdf",
+          "pasta": false,
+          "data": "2021-09-30 21:15",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Analise_Alimento_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Analise_Alimento_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Analise_Cosmetico_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Analise_Cosmetico_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Analise_Derivado_Tabaco_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Analise_Derivado_Tabaco_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Analise_Insumos_Farmaceuticos_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Analise_Insumos_Farmaceuticos_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Diagnostico_Vitro_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Diagnostico_Vitro_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Medicamentos_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Medicamentos_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Peticoes_Empresas_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Peticoes_Empresas_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Produtos_para_Saude_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Produtos_para_Saude_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Saneantes_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Saneantes_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Fila_Toxicologia_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Fila_Toxicologia_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-29 19:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_INSUMO_FARMACEUTICO.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_INSUMO_FARMACEUTICO.pdf",
+          "pasta": false,
+          "data": "2023-11-22 13:56",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_MEDICAMENTOS.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_MEDICAMENTOS.pdf",
+          "pasta": false,
+          "data": "2023-11-21 12:57",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Navios_Cruzeiro.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Navios_Cruzeiro.pdf",
+          "pasta": false,
+          "data": "2021-09-13 22:13",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_PRODUTO_SAUDE.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_PRODUTO_SAUDE.pdf",
+          "pasta": false,
+          "data": "2023-11-22 14:07",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_PRODUTOS_PARA_SAUDE.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_PRODUTOS_PARA_SAUDE.pdf",
+          "pasta": false,
+          "data": "2020-09-04 18:13",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Registros_Validos_Alimentos_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Registros_Validos_Alimentos_V1.pdf",
+          "pasta": false,
+          "data": "2021-05-21 18:27",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Registros_Validos_Alimentos_V2.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Registros_Validos_Alimentos_V2.pdf",
+          "pasta": false,
+          "data": "2021-10-29 14:10",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Registros_Validos_Cosmetico_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Registros_Validos_Cosmetico_V1.pdf",
+          "pasta": false,
+          "data": "2021-05-21 18:40",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Registros_Validos_Fumigenos_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Registros_Validos_Fumigenos_V1.pdf",
+          "pasta": false,
+          "data": "2021-05-21 18:46",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Registros_Validos_Medicamento_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Registros_Validos_Medicamento_V1.pdf",
+          "pasta": false,
+          "data": "2021-05-21 18:59",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Registros_Validos_Saneantes_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Registros_Validos_Saneantes_V1.pdf",
+          "pasta": false,
+          "data": "2021-05-21 18:34",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Regularizados_Produto_Cannabis_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Regularizados_Produto_Cannabis_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-27 19:42",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Relacionadas_Empresas.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Relacionadas_Empresas.pdf",
+          "pasta": false,
+          "data": "2023-11-29 18:12",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_SANEANTES.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_SANEANTES.pdf",
+          "pasta": false,
+          "data": "2023-11-21 12:58",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_TABACO.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_TABACO.pdf",
+          "pasta": false,
+          "data": "2023-11-22 14:27",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_Tecidos.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Tecidos.pdf",
+          "pasta": false,
+          "data": "2021-09-30 21:16",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Dados_TOXICOLOGIA.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_TOXICOLOGIA.pdf",
+          "pasta": false,
+          "data": "2023-11-22 13:37",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_de_Nucleo_Segurança_Paciente_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Nucleo_Seguran%C3%A7a_Paciente_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-28 12:35",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentacao_e_Dicionario_Restricao_Medicamento_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_Restricao_Medicamento_V1.pdf",
+          "pasta": false,
+          "data": "2023-12-27 19:48",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentaçao_e_Dicionario_de_Dados_Hemovigilancia_v1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documenta%C3%A7ao_e_Dicionario_de_Dados_Hemovigilancia_v1.pdf",
+          "pasta": false,
+          "data": "2021-05-21 18:19",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentação e Dicionário de Dados de Consultas Publicas_V1.0.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documenta%C3%A7%C3%A3o%20e%20Dicion%C3%A1rio%20de%20Dados%20de%20Consultas%20Publicas_V1.0.pdf",
+          "pasta": false,
+          "data": "2020-12-31 19:20",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentação e Dicionário de Dados Tecnovigilância_V1.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documenta%C3%A7%C3%A3o%20e%20Dicion%C3%A1rio%20de%20Dados%20Tecnovigil%C3%A2ncia_V1.pdf",
+          "pasta": false,
+          "data": "2020-12-29 11:40",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentação_e_Dicionário_de_Dados_Hemovigilância_v1.0.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documenta%C3%A7%C3%A3o_e_Dicion%C3%A1rio_de_Dados_Hemovigil%C3%A2ncia_v1.0.pdf",
+          "pasta": false,
+          "data": "2020-12-31 13:10",
+          "tamanho": null
+        },
+        {
+          "nome": "Documentação_e_Dicionário_de_Dados_Produto_para_Saúde_V1.0.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Documenta%C3%A7%C3%A3o_e_Dicion%C3%A1rio_de_Dados_Produto_para_Sa%C3%BAde_V1.0.pdf",
+          "pasta": false,
+          "data": "2020-12-30 18:10",
+          "tamanho": null
+        },
+        {
+          "nome": "dummy.txt",
+          "url": "https://dados.anvisa.gov.br/dados/dummy.txt",
+          "pasta": false,
+          "data": "2026-10-13 19:10",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_ALIMENTO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_ALIMENTO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_ASSUNTO_SITUACAO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_ASSUNTO_SITUACAO.csv",
+          "pasta": false,
+          "data": "2026-11-23 04:03",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_COSMETICO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_COSMETICO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_DERIVADOS DO TABACO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_DERIVADOS%20DO%20TABACO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_DISPOSITIVOS MÉDICOS PARA DIAGNÓSTICO IN VITRO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_DISPOSITIVOS%20M%C3%89DICOS%20PARA%20DIAGN%C3%93STICO%20IN%20VITRO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_DISPOSITIVOS MÉDICOS.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_DISPOSITIVOS%20M%C3%89DICOS.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_EMPRESAS.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_EMPRESAS.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_INSUMO FARMACEUTICO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_INSUMO%20FARMACEUTICO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_MEDICAMENTO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_MEDICAMENTO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_PORTOS, AEROPORTOS E FRONTEIRA.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_PORTOS%2C%20AEROPORTOS%20E%20FRONTEIRA.csv",
+          "pasta": false,
+          "data": "2024-09-09 14:06",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_PORTOS, AEROPORTOS, FRONTEIRAS E RECINTOS ALFANDEG.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_PORTOS%2C%20AEROPORTOS%2C%20FRONTEIRAS%20E%20RECINTOS%20ALFANDEG.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_PRODUTOS PARA DIAGNOSTICO DE USO IN VITRO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_PRODUTOS%20PARA%20DIAGNOSTICO%20DE%20USO%20IN%20VITRO.csv",
+          "pasta": false,
+          "data": "2026-01-06 16:14",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_PRODUTOS PARA SAUDE (CORRELATOS).csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_PRODUTOS%20PARA%20SAUDE%20%28CORRELATOS%29.csv",
+          "pasta": false,
+          "data": "2026-01-06 16:14",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_SANEANTES.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_SANEANTES.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "FILA_ANALISE_TOXICOLOGIA.csv",
+          "url": "https://dados.anvisa.gov.br/dados/FILA_ANALISE_TOXICOLOGIA.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "Leia_me.txt",
+          "url": "https://dados.anvisa.gov.br/dados/Leia_me.txt",
+          "pasta": false,
+          "data": "2025-10-10 13:00",
+          "tamanho": null
+        },
+        {
+          "nome": "notivisa2_nsp_da.csv",
+          "url": "https://dados.anvisa.gov.br/dados/notivisa2_nsp_da.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:21",
+          "tamanho": null
+        },
+        {
+          "nome": "Painel_SNGPC_Venda_de_Industrializados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Painel_SNGPC_Venda_de_Industrializados.pdf",
+          "pasta": false,
+          "data": "2020-09-27 01:40",
+          "tamanho": null
+        },
+        {
+          "nome": "Painel_SNGPC_Venda_de_Manipulados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Painel_SNGPC_Venda_de_Manipulados.pdf",
+          "pasta": false,
+          "data": "2020-09-27 01:40",
+          "tamanho": null
+        },
+        {
+          "nome": "Plano_de_Dados_Abertos_Anvisa_2023-2025.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/Plano_de_Dados_Abertos_Anvisa_2023-2025.pdf",
+          "pasta": false,
+          "data": "2023-09-26 17:21",
+          "tamanho": null
+        },
+        {
+          "nome": "readme.txt",
+          "url": "https://dados.anvisa.gov.br/dados/readme.txt",
+          "pasta": false,
+          "data": "2025-04-25 16:07",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DA_PRODUTO_CANNABIS.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DA_PRODUTO_CANNABIS.CSV",
+          "pasta": false,
+          "data": "2026-11-23 09:09",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DA_PRODUTO_SANEANTE.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DA_PRODUTO_SANEANTE.CSV",
+          "pasta": false,
+          "data": "2026-11-23 14:54",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO - Dicionario de Dados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO%20-%20Dicionario%20de%20Dados.pdf",
+          "pasta": false,
+          "data": "2017-07-19 13:18",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2012.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2012.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2013.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2013.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2014.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2014.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2015.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2015.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2016.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2016.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2017.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2017.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2018.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2018.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2019.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2019.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2020.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2020.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2021.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2021.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2022.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2022.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2023.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2023.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_DOC_PROTOCOLO_2024.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_DOC_PROTOCOLO_2024.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_EXPORT_IFA.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_EXPORT_IFA.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:04",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_FABRICANTE_MEDICAMENTO_IFA.CSV",
+          "url": "https://dados.anvisa.gov.br/dados/TA_FABRICANTE_MEDICAMENTO_IFA.CSV",
+          "pasta": false,
+          "data": "2026-11-23 08:29",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_MONOGRAFIA_AGROTOXICO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_MONOGRAFIA_AGROTOXICO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_NUCLEO_SEGURANCA.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_NUCLEO_SEGURANCA.csv",
+          "pasta": false,
+          "data": "2026-11-23 03:47",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_ORCAMENTO - Dicionario de Dados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/TA_ORCAMENTO%20-%20Dicionario%20de%20Dados.pdf",
+          "pasta": false,
+          "data": "2017-07-19 13:18",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_ORCAMENTO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_ORCAMENTO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:04",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PAF - Dicionario de Dados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PAF%20-%20Dicionario%20de%20Dados.pdf",
+          "pasta": false,
+          "data": "2017-07-19 13:18",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PAF.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PAF.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PE_PAS.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PE_PAS.csv",
+          "pasta": false,
+          "data": "2022-09-13 22:41",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PRECO_MEDICAMENTO - Dicionario de Dados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PRECO_MEDICAMENTO%20-%20Dicionario%20de%20Dados.pdf",
+          "pasta": false,
+          "data": "2023-06-22 17:00",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PRECO_MEDICAMENTO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PRECO_MEDICAMENTO.csv",
+          "pasta": false,
+          "data": "2026-10-09 15:43",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PRECO_MEDICAMENTO_GOV - Dicionario de Dados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PRECO_MEDICAMENTO_GOV%20-%20Dicionario%20de%20Dados.pdf",
+          "pasta": false,
+          "data": "2023-06-22 17:00",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PRECO_MEDICAMENTO_GOV.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PRECO_MEDICAMENTO_GOV.csv",
+          "pasta": false,
+          "data": "2026-10-09 15:43",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PRECOS_MEDICAMENTOS - Dicionario de Dados.pdf",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PRECOS_MEDICAMENTOS%20-%20Dicionario%20de%20Dados.pdf",
+          "pasta": false,
+          "data": "2017-07-19 13:18",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PRECOS_MEDICAMENTOS.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PRECOS_MEDICAMENTOS.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:04",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PRODUTO_SAUDE_MODELO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_MODELO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:21",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_PRODUTO_SAUDE_SITE.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:04",
+          "tamanho": null
+        },
+        {
+          "nome": "TA_RESTRICAO_MEDICAMENTO.csv",
+          "url": "https://dados.anvisa.gov.br/dados/TA_RESTRICAO_MEDICAMENTO.csv",
+          "pasta": false,
+          "data": "2026-11-23 19:05",
+          "tamanho": null
+        },
+        {
+          "nome": "VigiMed_Medicamentos.csv",
+          "url": "https://dados.anvisa.gov.br/dados/VigiMed_Medicamentos.csv",
+          "pasta": false,
+          "data": "2026-10-05 06:20",
+          "tamanho": null
+        },
+        {
+          "nome": "VigiMed_Notificacoes.csv",
+          "url": "https://dados.anvisa.gov.br/dados/VigiMed_Notificacoes.csv",
+          "pasta": false,
+          "data": "2026-10-05 05:51",
+          "tamanho": null
+        },
+        {
+          "nome": "VigiMed_Reacoes.csv",
+          "url": "https://dados.anvisa.gov.br/dados/VigiMed_Reacoes.csv",
+          "pasta": false,
+          "data": "2026-10-05 06:37",
+          "tamanho": null
+        }
+      ]
     },
     {
       "id": "sngpc_industrializados",
@@ -27,14 +1114,877 @@
       "erro": null,
       "bytes": 33154,
       "sha256": "f11c5149eca147f567586c950ada68f7ff8c296d39488c1d1131276931bfecc1",
-      "arquivos": 0,
-      "pastas": 0,
-      "itens": [],
+      "arquivos": 106,
+      "pastas": 2,
+      "itens": [
+        {
+          "nome": "acesso_temporario",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/acesso_temporario/",
+          "pasta": true,
+          "data": "2024-01-09 19:23",
+          "tamanho": null
+        },
+        {
+          "nome": "tmp",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/tmp/",
+          "pasta": true,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "dummy.out",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/dummy.out",
+          "pasta": false,
+          "data": "2026-11-22 15:51",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201401.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201401.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:40",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201402.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201402.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:53",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201403.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201403.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:59",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201404.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201404.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:43",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201405.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201405.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:56",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201406.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201406.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:04",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201407.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201407.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:36",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201408.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201408.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:55",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201409.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201409.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:03",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201410.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201410.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201411.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201411.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:59",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201412.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201412.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:00",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201501.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201501.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:06",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201502.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201502.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:13",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201503.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201503.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:24",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201504.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201504.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:06",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201505.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201505.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:23",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201506.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201506.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:30",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201507.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201507.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:13",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201508.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201508.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:23",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201509.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201509.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:27",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201510.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201510.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:07",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201511.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201511.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:22",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201512.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201512.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201601.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201601.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:04",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201602.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201602.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:10",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201603.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201603.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:32",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201604.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201604.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:05",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201605.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201605.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:15",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201606.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201606.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:35",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201607.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201607.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:07",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201608.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201608.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:25",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201609.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201609.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:35",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201610.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201610.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:05",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201611.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201611.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:18",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201612.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201612.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:32",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201701.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201701.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:27",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201702.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201702.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:28",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201703.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201703.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:30",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201704.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201704.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:27",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201705.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201705.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:29",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201706.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201706.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:55",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201707.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201707.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:28",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201708.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201708.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:30",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201709.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201709.csv",
+          "pasta": false,
+          "data": "2026-02-14 00:04",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201710.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201710.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:27",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201711.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201711.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:29",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201712.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201712.csv",
+          "pasta": false,
+          "data": "2026-02-13 23:31",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201801.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201801.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:06",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201802.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201802.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:07",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201803.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201803.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:09",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201804.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201804.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:07",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201805.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201805.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:08",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201806.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201806.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:09",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201807.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201807.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:06",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201808.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201808.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:08",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201809.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201809.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:09",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201810.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201810.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:07",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201811.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201811.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:08",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201812.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201812.csv",
+          "pasta": false,
+          "data": "2026-03-25 06:09",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201901.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201901.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:32",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201902.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201902.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:38",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201903.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201903.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:42",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201904.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201904.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:34",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201905.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201905.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:41",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201906.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201906.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:44",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201907.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201907.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:36",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201908.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201908.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:40",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201909.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201909.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:43",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201910.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201910.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:32",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201911.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201911.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:39",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_201912.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_201912.csv",
+          "pasta": false,
+          "data": "2026-02-14 01:43",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202001.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202001.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:25",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202002.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202002.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202003.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202003.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:27",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202004.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202004.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:25",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202005.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202005.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:25",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202006.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202006.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202007.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202007.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:25",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202008.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202008.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202009.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202009.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202010.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202010.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:25",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202011.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202011.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202012.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202012.csv",
+          "pasta": false,
+          "data": "2026-06-14 16:27",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202101.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202101.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202102.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202102.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202103.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202103.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202104.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202104.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:51",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202105.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202105.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202106.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202106.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202107.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202107.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:51",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202108.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202108.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202109.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202109.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202110.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202110.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:51",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202601.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202601.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202602.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202602.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202603.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202603.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202604.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202604.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202605.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202605.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202606.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202606.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202607.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202607.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202608.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202608.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202609.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202609.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202610.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202610.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:25",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Industrializados_202611.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/EDA_Industrializados_202611.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:26",
+          "tamanho": null
+        }
+      ],
       "meses": {
-        "quantidade": null,
-        "primeiro": null,
-        "ultimo": null,
-        "lista": []
+        "quantidade": 105,
+        "primeiro": "201401",
+        "ultimo": "202611",
+        "lista": [
+          "201401",
+          "201402",
+          "201403",
+          "201404",
+          "201405",
+          "201406",
+          "201407",
+          "201408",
+          "201409",
+          "201410",
+          "201411",
+          "201412",
+          "201501",
+          "201502",
+          "201503",
+          "201504",
+          "201505",
+          "201506",
+          "201507",
+          "201508",
+          "201509",
+          "201510",
+          "201511",
+          "201512",
+          "201601",
+          "201602",
+          "201603",
+          "201604",
+          "201605",
+          "201606",
+          "201607",
+          "201608",
+          "201609",
+          "201610",
+          "201611",
+          "201612",
+          "201701",
+          "201702",
+          "201703",
+          "201704",
+          "201705",
+          "201706",
+          "201707",
+          "201708",
+          "201709",
+          "201710",
+          "201711",
+          "201712",
+          "201801",
+          "201802",
+          "201803",
+          "201804",
+          "201805",
+          "201806",
+          "201807",
+          "201808",
+          "201809",
+          "201810",
+          "201811",
+          "201812",
+          "201901",
+          "201902",
+          "201903",
+          "201904",
+          "201905",
+          "201906",
+          "201907",
+          "201908",
+          "201909",
+          "201910",
+          "201911",
+          "201912",
+          "202001",
+          "202002",
+          "202003",
+          "202004",
+          "202005",
+          "202006",
+          "202007",
+          "202008",
+          "202009",
+          "202010",
+          "202011",
+          "202012",
+          "202101",
+          "202102",
+          "202103",
+          "202104",
+          "202105",
+          "202106",
+          "202107",
+          "202108",
+          "202109",
+          "202110",
+          "202601",
+          "202602",
+          "202603",
+          "202604",
+          "202605",
+          "202606",
+          "202607",
+          "202608",
+          "202609",
+          "202610",
+          "202611"
+        ]
       }
     },
     {
@@ -47,14 +1997,863 @@
       "erro": null,
       "bytes": 30957,
       "sha256": "9f5634614b3e2a3e9e01b9ffab77878a1411fa4275f8a67bb20e112598c0c21a",
-      "arquivos": 0,
-      "pastas": 0,
-      "itens": [],
+      "arquivos": 105,
+      "pastas": 1,
+      "itens": [
+        {
+          "nome": "tmp",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/tmp/",
+          "pasta": true,
+          "data": "2026-11-22 15:52",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201401.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201401.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201402.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201402.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201403.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201403.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201404.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201404.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201405.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201405.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201406.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201406.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201407.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201407.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201408.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201408.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201409.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201409.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201410.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201410.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201411.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201411.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201412.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201412.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201501.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201501.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201502.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201502.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201503.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201503.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201504.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201504.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201505.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201505.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201506.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201506.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201507.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201507.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201508.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201508.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201509.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201509.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201510.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201510.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201511.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201511.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201512.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201512.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201601.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201601.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201602.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201602.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201603.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201603.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201604.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201604.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201605.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201605.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201606.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201606.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201607.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201607.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201608.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201608.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201609.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201609.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201610.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201610.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201611.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201611.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201612.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201612.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201701.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201701.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201702.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201702.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201703.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201703.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201704.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201704.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201705.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201705.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201706.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201706.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201707.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201707.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201708.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201708.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201709.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201709.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201710.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201710.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201711.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201711.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201712.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201712.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201801.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201801.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201802.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201802.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201803.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201803.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201804.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201804.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201805.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201805.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201806.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201806.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201807.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201807.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201808.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201808.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201809.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201809.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:16",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201810.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201810.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201811.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201811.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201812.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201812.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201901.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201901.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201902.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201902.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201903.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201903.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201904.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201904.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201905.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201905.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201906.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201906.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201907.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201907.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201908.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201908.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201909.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201909.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201910.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201910.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201911.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201911.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_201912.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_201912.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202001.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202001.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202002.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202002.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202003.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202003.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202004.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202004.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202005.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202005.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202006.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202006.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202007.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202007.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202008.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202008.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202009.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202009.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202010.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202010.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202011.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202011.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202012.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202012.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202101.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202101.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202102.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202102.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202103.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202103.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202104.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202104.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202105.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202105.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202106.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202106.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202107.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202107.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202108.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202108.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202109.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202109.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202110.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202110.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202601.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202601.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202602.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202602.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202603.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202603.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202604.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202604.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202605.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202605.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202606.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202606.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202607.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202607.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202608.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202608.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202609.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202609.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202610.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202610.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        },
+        {
+          "nome": "EDA_Manipulados_202611.csv",
+          "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/EDA_Manipulados_202611.csv",
+          "pasta": false,
+          "data": "2026-11-22 15:17",
+          "tamanho": null
+        }
+      ],
       "meses": {
-        "quantidade": null,
-        "primeiro": null,
-        "ultimo": null,
-        "lista": []
+        "quantidade": 105,
+        "primeiro": "201401",
+        "ultimo": "202611",
+        "lista": [
+          "201401",
+          "201402",
+          "201403",
+          "201404",
+          "201405",
+          "201406",
+          "201407",
+          "201408",
+          "201409",
+          "201410",
+          "201411",
+          "201412",
+          "201501",
+          "201502",
+          "201503",
+          "201504",
+          "201505",
+          "201506",
+          "201507",
+          "201508",
+          "201509",
+          "201510",
+          "201511",
+          "201512",
+          "201601",
+          "201602",
+          "201603",
+          "201604",
+          "201605",
+          "201606",
+          "201607",
+          "201608",
+          "201609",
+          "201610",
+          "201611",
+          "201612",
+          "201701",
+          "201702",
+          "201703",
+          "201704",
+          "201705",
+          "201706",
+          "201707",
+          "201708",
+          "201709",
+          "201710",
+          "201711",
+          "201712",
+          "201801",
+          "201802",
+          "201803",
+          "201804",
+          "201805",
+          "201806",
+          "201807",
+          "201808",
+          "201809",
+          "201810",
+          "201811",
+          "201812",
+          "201901",
+          "201902",
+          "201903",
+          "201904",
+          "201905",
+          "201906",
+          "201907",
+          "201908",
+          "201909",
+          "201910",
+          "201911",
+          "201912",
+          "202001",
+          "202002",
+          "202003",
+          "202004",
+          "202005",
+          "202006",
+          "202007",
+          "202008",
+          "202009",
+          "202010",
+          "202011",
+          "202012",
+          "202101",
+          "202102",
+          "202103",
+          "202104",
+          "202105",
+          "202106",
+          "202107",
+          "202108",
+          "202109",
+          "202110",
+          "202601",
+          "202602",
+          "202603",
+          "202604",
+          "202605",
+          "202606",
+          "202607",
+          "202608",
+          "202609",
+          "202610",
+          "202611"
+        ]
       }
     },
     {
