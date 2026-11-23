@@ -17,5 +17,7 @@ jobs:
           python-version: "3.12"
       - name: Resumo das coletas em dia
         run: python scripts/build_estado.py && git diff --exit-code -- data/estado.json
+      - name: Dependências
+        run: pip install -q numpy scipy networkx emoji
       - name: Testes
         run: python -m unittest discover -s tests -v

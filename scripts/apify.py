@@ -39,11 +39,21 @@ def baixar_itens(token: str, dataset: str, pagina: int = 500) -> list:
         inicio += pagina
 
 
-def rodar(token: str, ator: str, entrada: dict, teto_usd: float) -> tuple[dict, list]:
-    """Roda o ator com teto de cobrança e devolve (execução, itens)."""
-    run = api("POST", f"/acts/{ator}/runs?waitForFinish=300&maxTotalChargeUsd={teto_usd}", token, entrada)["data"]
+ESPERA_MAXIMA_S = 900
+
+
+def rodar(token: str, ator: str, entrada: dict, teto_usd: float, espera_maxima_s: int = ESPERA_MAXIMA_S) -> tuple[dict, list]:
+    """Roda o ator com teto de cobrança e devolve (execução, itens).
+    Se a execução passar de espera_maxima_s, é abortada e o que ela já coletou é aproveitado."""
+    run = api("POST", f"/acts/{ator}/runs?waitForFinish=60&maxTotalChargeUsd={teto_usd}", token, entrada)["data"]
+    inicio = time.monotonic()
     while run.get("status") in ("READY", "RUNNING"):
-        run = api("GET", f"/actor-runs/{run['id']}?waitForFinish=300", token)["data"]
+        if time.monotonic() - inicio > espera_maxima_s:
+            api("POST", f"/actor-runs/{run['id']}/abort", token)
+            time.sleep(10)
+            run = api("GET", f"/actor-runs/{run['id']}", token)["data"]
+            break
+        run = api("GET", f"/actor-runs/{run['id']}?waitForFinish=60", token)["data"]
     for espera in (5, 10, 20):  # a cobrança aparece na execução alguns segundos depois de terminar
         if run.get("usageTotalUsd") or run.get("chargedEventCounts"):
             break

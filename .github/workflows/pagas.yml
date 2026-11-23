@@ -10,6 +10,9 @@ on:
       etapa:
         description: "teste ou publicacoes"
         default: "teste"
+      termos:
+        description: "Opcional: só estes termos, separados por vírgula (para completar uma coleta interrompida)"
+        default: ""
       redes:
         description: "Redes separadas por espaço"
         default: "tiktok instagram x kwai"
@@ -24,10 +27,11 @@ concurrency:
 jobs:
   coletar:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 330
     env:
       ETAPA: ${{ inputs.etapa }}
       REDES: ${{ inputs.redes }}
+      TERMOS: ${{ inputs.termos }}
       RUN: ${{ github.run_id }}
     steps:
       - uses: actions/checkout@v4
@@ -35,6 +39,8 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Dependências
+        run: pip install -q numpy scipy networkx emoji
       - name: Testes
         run: python -m unittest discover -s tests
 
@@ -48,7 +54,7 @@ jobs:
       - name: Coleta
         env:
           APIFY_TOKEN_CANETAS: ${{ secrets.APIFY_TOKEN_CANETAS }}
-        run: python scripts/collect_redes.py --etapa "$ETAPA" --privado "$RUNNER_TEMP/privado" --run-id "$RUN" --redes $REDES | tee resumo.txt
+        run: python -u scripts/collect_redes.py --etapa "$ETAPA" --privado "$RUNNER_TEMP/privado" --run-id "$RUN" --redes $REDES ${TERMOS:+--termos "$TERMOS"} | tee resumo.txt
 
       - name: Resumo e CHANGELOG
         if: always()

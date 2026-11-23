@@ -1,0 +1,77 @@
+name: Reconciliar Apify
+
+# Recupera execuções da Apify feitas e pagas que ficaram sem manifesto (workflow interrompido).
+# Lista as execuções dos atores (não consulta saldo), aborta as que ainda rodam, baixa os itens e grava manifesto e bruto.
+# Disparo manual apenas.
+on:
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Início em UTC (2026-11-23T21:19:00Z)"
+        required: true
+      etapa:
+        description: "Etapa a que o gasto pertence"
+        default: "publicacoes"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gravacao-no-main
+  cancel-in-progress: false
+
+jobs:
+  reconciliar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      RUN: ${{ github.run_id }}
+      DESDE: ${{ inputs.desde }}
+      ETAPA: ${{ inputs.etapa }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependências
+        run: pip install -q numpy scipy networkx emoji
+      - name: Repositório privado
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: git clone -q --depth 1 "https://x-access-token:${TOKEN}@github.com/WandersonH/canetas-emagrecedoras-secret.git" "$RUNNER_TEMP/privado"
+      - name: Reconciliar
+        env:
+          APIFY_TOKEN_CANETAS: ${{ secrets.APIFY_TOKEN_CANETAS }}
+        run: python -u scripts/reconciliar_apify.py --desde "$DESDE" --etapa "$ETAPA" --privado "$RUNNER_TEMP/privado" --run-id "$RUN" | tee resumo.txt
+      - name: CHANGELOG
+        if: always()
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          args=()
+          while IFS= read -r linha; do case "$linha" in gravado*|total*) args+=(--executado "$linha");; esac; done < resumo.txt
+          [ ${#args[@]} -eq 0 ] && args=(--executado "nada reconciliado; ver o log")
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
+            --titulo "Reconciliação com a Apify (run $RUN)" \
+            --mudou "Manifestos das execuções pagas que ficaram sem registro, com o custo de cada uma." \
+            --porque "Um workflow de coleta paga foi interrompido e o gasto precisa entrar na trava antes de qualquer nova execução." \
+            --executado "Workflow 'Reconciliar Apify', run $RUN, desde $DESDE, etapa $ETAPA." "${args[@]}" \
+            --pendente "Completar os termos que não chegaram a rodar." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN."
+          python scripts/changelog_auto.py --arquivo "$RUNNER_TEMP/privado/CHANGELOG.md" --titulo "Reconciliação com a Apify (run $RUN)" \
+            --mudou "Bruto e tabela das execuções reconciliadas." --porque "Execuções pagas sem registro." \
+            --executado "Run $RUN do repositório público." --pendente "Nenhuma." --evidencia "https://github.com/$REPO/actions/runs/$RUN."
+      - name: Gravar no privado
+        if: always()
+        run: |
+          cd "$RUNNER_TEMP/privado"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "Reconciliação com a Apify (run $RUN)"
+          for t in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main || exit 1; sleep $((t * 10)); done
+          exit 1
+      - name: Gravar no público
+        if: always()
+        run: scripts/gravar_no_main.sh "Reconciliação com a Apify (run $RUN)" "$RUNNER_TEMP/entrada.md" data/manifestos

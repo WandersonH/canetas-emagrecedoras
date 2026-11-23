@@ -22,6 +22,8 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Dependências
+        run: pip install -q numpy scipy networkx emoji
       - name: Testes
         run: python -m unittest discover -s tests
 

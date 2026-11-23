@@ -136,3 +136,13 @@ class Universo(unittest.TestCase):
         itens = [{"name": "mounjaro", "postsCount": 123456}, {"url": "https://www.instagram.com/explore/tags/retatrutida/", "postsCount": "789"}]
         saida, run = cp.instagram(["mounjaro", "retatrutida", "inexistente"], lambda a, e, c: ({"id": "r"}, itens))
         self.assertEqual([x["total_posts"] for x in saida], [123456, 789, None])
+
+
+class Reconciliar(unittest.TestCase):
+    def test_termo_pela_entrada(self):
+        import reconciliar_apify as ra
+        termos = ["caneta do Paraguai", "Mounjaro"]
+        self.assertEqual(ra.termo_da_entrada("x", {"searchTerms": ['"caneta do Paraguai" lang:pt since:2025-01-01']}, termos), "caneta do Paraguai")
+        self.assertEqual(ra.termo_da_entrada("instagram", {"hashtags": ["canetadoparaguai"]}, termos), "caneta do Paraguai")
+        self.assertEqual(ra.termo_da_entrada("tiktok", {"keywords": ["Mounjaro"]}, termos), "Mounjaro")
+        self.assertEqual(ra.termo_da_entrada("kwai", {"searchTerms": ["Mounjaro"]}, termos), "Mounjaro")

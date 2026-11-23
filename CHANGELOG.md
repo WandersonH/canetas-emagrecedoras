@@ -2,6 +2,30 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Coleta paga interrompida: reconciliação e proteção contra execução travada
+
+**O que mudou**
+
+- scripts/reconciliar_apify.py e workflow 'Reconciliar Apify': recuperam execuções pagas sem manifesto, com custo, bruto e tabela.
+- scripts/apify.py: cada execução tem espera máxima de 15 minutos; passado isso, é abortada e o que já coletou é aproveitado. Workflow pago com tempo limite de 330 minutos, saída sem buffer e opção de rodar só alguns termos.
+- Todos os workflows instalam numpy, scipy, networkx e emoji antes dos testes.
+
+**Por quê**
+
+- O run 45268576129 (etapa publicacoes) passou de 2 horas e foi cancelado com uma execução do X presa. TikTok e Instagram terminaram e o bruto foi para o privado, mas o commit público falhou porque os testes novos pedem numpy, e os manifestos com o custo se perderam. Sem reconciliar, a trava de gasto não enxerga esse dinheiro.
+
+**O que foi executado de verdade**
+
+- python3 -m unittest discover -s tests: todos passaram, 1 pulado.
+
+**O que ficou pendente**
+
+- Rodar 'Reconciliar Apify' desde 2026-11-23T21:19:00Z e completar X e Kwai com o que sobrar do teto da etapa.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45268576129 e, no privado, bruto/tiktok e bruto/instagram desse run.
+
 ## 23/11/2026 · IRaMuTeQ, Gephi, emojis e corpus interativo; carga histórica do YouTube e universo das plataformas
 
 **O que mudou**

@@ -208,6 +208,7 @@ def main(argumentos=None) -> int:
     leitor.add_argument("--privado", required=True)
     leitor.add_argument("--run-id", default=None)
     leitor.add_argument("--redes", nargs="*", default=list(REDES))
+    leitor.add_argument("--termos", default="", help="só estes termos, separados por vírgula")
     opcoes = leitor.parse_args(argumentos)
     privado = pathlib.Path(opcoes.privado)
     coleta = comum.config("coleta")
@@ -215,6 +216,9 @@ def main(argumentos=None) -> int:
     token = os.environ.get(apify_cfg["segredo"], "").strip()
     inicio, fim = rede.periodo_lido()
     termos = coleta["termos_teste"] if opcoes.etapa == "teste" else [t["termo"] for t in rede.termos_de_busca()]
+    if opcoes.termos:
+        pedidos = [t.strip() for t in opcoes.termos.split(",") if t.strip()]
+        termos = [t for t in termos if t in pedidos] or pedidos
     executar = lambda ator, ent, teto: apify.rodar(token, ator, ent, teto)  # noqa: E731
     agregados, falhas = {}, 0
     for rede_id in opcoes.redes:
