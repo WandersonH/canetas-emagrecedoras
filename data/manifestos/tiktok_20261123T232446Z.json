@@ -1,0 +1,192 @@
+{
+  "frente": "tiktok",
+  "etapa": "publicacoes",
+  "run_id": "45288538468",
+  "iniciado_em": "2026-11-23T23:24:46Z",
+  "terminado_em": "2026-11-23T23:25:01Z",
+  "consulta": {
+    "ator": "apidojo~tiktok-scraper",
+    "reconciliacao": "execuções desde 2026-11-23T21:19:00Z sem manifesto",
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23",
+    "execucoes": [
+      {
+        "run": "YeGXz8rAsRgtobcmJ",
+        "termo": "semaglutida",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:20:20.738Z",
+        "fim": "2026-11-23T21:20:32.987Z",
+        "itens": 24,
+        "no_periodo": 17,
+        "custo_usd": 0.00713
+      },
+      {
+        "run": "cEIjbCRxF1Hqqeze3",
+        "termo": "tirzepatida",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:20:33.785Z",
+        "fim": "2026-11-23T21:20:52.302Z",
+        "itens": 19,
+        "no_periodo": 17,
+        "custo_usd": 0.00564
+      },
+      {
+        "run": "Cfng091rlnI1tJsXK",
+        "termo": "liraglutida",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:20:52.965Z",
+        "fim": "2026-11-23T21:21:43.899Z",
+        "itens": 42,
+        "no_periodo": 22,
+        "custo_usd": 0.01247
+      },
+      {
+        "run": "fILyeYS7FkBEfpHLB",
+        "termo": "Ozempic",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:21:44.725Z",
+        "fim": "2026-11-23T21:22:00.565Z",
+        "itens": 87,
+        "no_periodo": 76,
+        "custo_usd": 0.02584
+      },
+      {
+        "run": "QdPK648dHS5lieTMG",
+        "termo": "Wegovy",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:22:01.441Z",
+        "fim": "2026-11-23T21:22:09.946Z",
+        "itens": 32,
+        "no_periodo": 30,
+        "custo_usd": 0.0095
+      },
+      {
+        "run": "xH79vzxiKNuawytTy",
+        "termo": "Mounjaro",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:22:10.648Z",
+        "fim": "2026-11-23T21:22:16.644Z",
+        "itens": 22,
+        "no_periodo": 18,
+        "custo_usd": 0.00653
+      },
+      {
+        "run": "AzXDF3VAeaG4fRoXB",
+        "termo": "Saxenda",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:22:17.326Z",
+        "fim": "2026-11-23T21:22:49.464Z",
+        "itens": 40,
+        "no_periodo": 9,
+        "custo_usd": 0.01188
+      },
+      {
+        "run": "0efgdA9VH4aOPersh",
+        "termo": "caneta emagrecedora",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:22:50.280Z",
+        "fim": "2026-11-23T21:23:12.831Z",
+        "itens": 101,
+        "no_periodo": 98,
+        "custo_usd": 0.03
+      },
+      {
+        "run": "YEIoGW3tH31eGYoKh",
+        "termo": "caneta para emagrecer",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:23:13.646Z",
+        "fim": "2026-11-23T21:23:41.113Z",
+        "itens": 68,
+        "no_periodo": 59,
+        "custo_usd": 0.0202
+      },
+      {
+        "run": "Ed4MkXYjGEKuwm5JN",
+        "termo": "caneta do Paraguai",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:23:41.914Z",
+        "fim": "2026-11-23T21:24:42.426Z",
+        "itens": 149,
+        "no_periodo": 146,
+        "custo_usd": 0.04425
+      },
+      {
+        "run": "V6L8R9ALzNUZ4lHRc",
+        "termo": "tirzepatida manipulada",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:24:43.314Z",
+        "fim": "2026-11-23T21:24:59.030Z",
+        "itens": 43,
+        "no_periodo": 42,
+        "custo_usd": 0.01277
+      },
+      {
+        "run": "TcO64JtQbbwbCi5hW",
+        "termo": "semaglutida manipulada",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:24:59.793Z",
+        "fim": "2026-11-23T21:25:21.486Z",
+        "itens": 93,
+        "no_periodo": 68,
+        "custo_usd": 0.02762
+      },
+      {
+        "run": "smoEet9naSep0zOS8",
+        "termo": "Ozempic sem receita",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:25:22.355Z",
+        "fim": "2026-11-23T21:25:49.260Z",
+        "itens": 78,
+        "no_periodo": 66,
+        "custo_usd": 0.02317
+      },
+      {
+        "run": "ojskBiiGRKJ2YrARg",
+        "termo": "Mounjaro sem receita",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:25:50.118Z",
+        "fim": "2026-11-23T21:25:57.054Z",
+        "itens": 26,
+        "no_periodo": 26,
+        "custo_usd": 0.00772
+      },
+      {
+        "run": "jpQhRhL4riGwC0qdC",
+        "termo": "retatrutida",
+        "status": "SUCCEEDED",
+        "inicio": "2026-11-23T21:25:57.768Z",
+        "fim": "2026-11-23T21:26:41.059Z",
+        "itens": 1,
+        "no_periodo": 0,
+        "custo_usd": 0.0003
+      }
+    ]
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "A busca da rede não informa o total de resultados."
+  },
+  "lido": 825,
+  "amostra": {
+    "n": 603,
+    "como": "publicações distintas, com data no período lido, das execuções reconciliadas"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0.24502,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "bruto/tiktok/publicacoes_reconciliado_20261123T232446Z.json",
+      "sha256": "a2006cc719733fde7f31e8221d8b76d6f5f17274569baeb76140552ee16746d6",
+      "bytes": 4010634,
+      "linhas": null
+    },
+    {
+      "caminho": "terceiros/tiktok/publicacoes_reconciliado_20261123T232446Z.csv",
+      "sha256": "986a2f6e6fecea4c314951f2550b85192689f8d424e07ee6b18573467af0b07c",
+      "bytes": 231658,
+      "linhas": 604
+    }
+  ],
+  "bloqueios": []
+}

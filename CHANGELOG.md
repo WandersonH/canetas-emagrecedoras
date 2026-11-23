@@ -2,6 +2,32 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Reconciliação com a Apify (run 45288538468)
+
+**O que mudou**
+
+- Manifestos das execuções pagas que ficaram sem registro, com o custo de cada uma.
+
+**Por quê**
+
+- Um workflow de coleta paga foi interrompido e o gasto precisa entrar na trava antes de qualquer nova execução.
+
+**O que foi executado de verdade**
+
+- Workflow 'Reconciliar Apify', run 45288538468, desde 2026-11-23T21:19:00Z, etapa publicacoes.
+- gravado data/manifestos/tiktok_20261123T232446Z.json: tiktok, 15 execuções, 603 publicações no período
+- gravado data/manifestos/instagram_20261123T232502Z.json: instagram, 15 execuções, 512 publicações no período
+- gravado data/manifestos/x_20261123T232517Z.json: x, 15 execuções, 3386 publicações no período
+- total reconciliado: US$ 2.1525
+
+**O que ficou pendente**
+
+- Completar os termos que não chegaram a rodar.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45288538468.
+
 ## 23/11/2026 · Coleta paga interrompida: reconciliação e proteção contra execução travada
 
 **O que mudou**

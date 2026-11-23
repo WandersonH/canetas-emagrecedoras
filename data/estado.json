@@ -1,6 +1,6 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": 8,
+  "manifestos_lidos": 11,
   "frentes": [
     {
       "id": "youtube",
@@ -90,16 +90,17 @@
       "nome": "TikTok",
       "via": "Apify",
       "paga": true,
-      "coletas": 1,
+      "coletas": 2,
       "universo": null,
       "universo_fonte": "A busca da rede não informa o total de resultados.",
-      "lido": 30,
-      "amostra": 30,
-      "amostra_como": "publicações distintas, com data no período lido, entre até 15 itens por termo",
+      "lido": 825,
+      "amostra": 603,
+      "amostra_como": "publicações distintas, com data no período lido, das execuções reconciliadas",
       "cobertura": "parcial",
-      "ultima_coleta": "2026-11-23T21:17:24Z",
+      "ultima_coleta": "2026-11-23T23:25:01Z",
       "runs": [
-        "45268074067"
+        "45268074067",
+        "45288538468"
       ]
     },
     {
@@ -107,16 +108,17 @@
       "nome": "Instagram",
       "via": "Apify",
       "paga": true,
-      "coletas": 1,
+      "coletas": 2,
       "universo": null,
       "universo_fonte": "A busca da rede não informa o total de resultados.",
-      "lido": 30,
-      "amostra": 30,
-      "amostra_como": "publicações distintas, com data no período lido, entre até 15 itens por termo",
+      "lido": 590,
+      "amostra": 512,
+      "amostra_como": "publicações distintas, com data no período lido, das execuções reconciliadas",
       "cobertura": "parcial",
-      "ultima_coleta": "2026-11-23T21:17:46Z",
+      "ultima_coleta": "2026-11-23T23:25:17Z",
       "runs": [
-        "45268074067"
+        "45268074067",
+        "45288538468"
       ]
     },
     {
@@ -124,16 +126,17 @@
       "nome": "X",
       "via": "Apify",
       "paga": true,
-      "coletas": 1,
+      "coletas": 2,
       "universo": null,
       "universo_fonte": "A busca da rede não informa o total de resultados.",
-      "lido": 30,
-      "amostra": 30,
-      "amostra_como": "publicações distintas, com data no período lido, entre até 15 itens por termo",
+      "lido": 3670,
+      "amostra": 3386,
+      "amostra_como": "publicações distintas, com data no período lido, das execuções reconciliadas",
       "cobertura": "parcial",
-      "ultima_coleta": "2026-11-23T21:18:13Z",
+      "ultima_coleta": "2026-11-23T23:25:38Z",
       "runs": [
-        "45268074067"
+        "45268074067",
+        "45288538468"
       ]
     },
     {
