@@ -1,0 +1,89 @@
+{
+  "obtido_em": "2026-11-23T21:06:21Z",
+  "run_id": "45264522808",
+  "periodo": {
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23"
+  },
+  "nota": "Rótulo e texto são das agências. Quem fez a alegação é omitido.",
+  "checagens": [
+    {
+      "alegacao": "How Do I Protect My Muscle Mass on Ozempic or Other GLP-1 Medications?",
+      "agencia": "FitChef",
+      "site": "fitchef.com",
+      "rotulo": "True",
+      "titulo": "How Do I Protect Muscle on Ozempic? What Trials in People Dieting ...",
+      "data": "2026-05-22",
+      "idioma": "en",
+      "link": "https://fitchef.com/claims/glp1-muscle-protection/",
+      "termos": [
+        "Ozempic"
+      ]
+    },
+    {
+      "alegacao": "Australia’s therapeutic goods regulator has approved a new weight loss treatment.",
+      "agencia": "AAP",
+      "site": "aap.com.au",
+      "rotulo": "False. No such medication has been approved or endorsed by the regulator, and a video purporting to show its effects has been manipulated using AI.",
+      "titulo": "Claims Ozempic-style weight loss liquid is TGA approved are light ...",
+      "data": "2025-08-29",
+      "idioma": "en",
+      "link": "https://www.aap.com.au/factcheck/claims-ozempic-style-weight-loss-liquid-is-tga-approved-are-light-on-truth/",
+      "termos": [
+        "Ozempic"
+      ]
+    },
+    {
+      "alegacao": "Pharmaceutical companies behind weight loss and diabetes medication such as Ozempic are facing a lawsuit that could potentially pay out more than $2 billion.",
+      "agencia": "Snopes",
+      "site": "snopes.com",
+      "rotulo": "Mostly True",
+      "titulo": "Ozempic, other weight-loss drug makers face lawsuits. Here's what ...",
+      "data": "2025-08-20",
+      "idioma": "en",
+      "link": "https://www.snopes.com/fact-check/ozempic-2-billion-lawsuit/",
+      "termos": [
+        "Ozempic"
+      ]
+    },
+    {
+      "alegacao": "study concluded that ozempic causes blindness",
+      "agencia": "Lead Stories",
+      "site": "leadstories.com",
+      "rotulo": "Not Causation",
+      "titulo": "Fact Check: January 2025 Study Did NOT Conclude Ozempic ...",
+      "data": "2025-02-12",
+      "idioma": "en",
+      "link": "https://leadstories.com/hoax-alert/2025/02/fact-check-january-2025-study-did-not-conclude-ozempic-caused-blindness.html",
+      "termos": [
+        "Ozempic"
+      ]
+    },
+    {
+      "alegacao": "Denmark announced 500% tariff on Ozempic exports to US",
+      "agencia": "USA Today",
+      "site": "usatoday.com",
+      "rotulo": "False",
+      "titulo": "Denmark imposing '500% tariffs' on Ozempic exports to US? No ...",
+      "data": "2025-02-05",
+      "idioma": "en",
+      "link": "https://www.usatoday.com/story/news/factcheck/2025/02/05/denmark-tariffs-ozempic-exports-us-fact-check/78208289007/",
+      "termos": [
+        "Ozempic"
+      ]
+    },
+    {
+      "alegacao": "Denmark announced an export tariff on Ozempic to the US, discount for Canada, in response to Trump's Greenland threats",
+      "agencia": "Lead Stories",
+      "site": "leadstories.com",
+      "rotulo": "Didn't Happen",
+      "titulo": "Fact Check: Denmark Did NOT Announce 500% Export Tariff On ...",
+      "data": "2025-02-01",
+      "idioma": "en",
+      "link": "https://leadstories.com/hoax-alert/2025/01/fact-check-denmark-did-not-announce-500-percent-export-tariff-on-ozempic-to-us.html",
+      "termos": [
+        "Ozempic"
+      ]
+    }
+  ]
+}

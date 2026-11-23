@@ -1,0 +1,51 @@
+{
+  "frente": "checagens",
+  "etapa": "gratis",
+  "run_id": "45264522808",
+  "iniciado_em": "2026-11-23T21:06:21Z",
+  "terminado_em": "2026-11-23T21:06:26Z",
+  "consulta": {
+    "termos": [
+      "semaglutida",
+      "tirzepatida",
+      "liraglutida",
+      "Ozempic",
+      "Wegovy",
+      "Mounjaro",
+      "Saxenda",
+      "caneta emagrecedora",
+      "caneta para emagrecer",
+      "caneta do Paraguai",
+      "tirzepatida manipulada",
+      "semaglutida manipulada",
+      "Ozempic sem receita",
+      "Mounjaro sem receita",
+      "retatrutida"
+    ],
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23",
+    "idioma": "pt",
+    "max_paginas_por_termo": 3
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "A Fact Check Tools API não informa quantas checagens existem."
+  },
+  "lido": 6,
+  "amostra": {
+    "n": 6,
+    "como": "checagens distintas (link da agência) com data dentro do período lido"
+  },
+  "parou_por": "fim_dos_resultados",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/checagens/checagens.json",
+      "sha256": "8582c61283fdd0f2ba8299bee784d742209055273d1ca5688ce2826e41e36c67",
+      "bytes": 3413,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}

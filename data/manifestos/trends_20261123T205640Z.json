@@ -1,0 +1,123 @@
+{
+  "frente": "trends",
+  "etapa": "gratis",
+  "run_id": "45264522808",
+  "iniciado_em": "2026-11-23T20:56:40Z",
+  "terminado_em": "2026-11-23T20:58:34Z",
+  "consulta": {
+    "grupos": [
+      {
+        "nome": "marcas",
+        "termos": [
+          "Ozempic",
+          "Wegovy",
+          "Mounjaro",
+          "Saxenda"
+        ]
+      },
+      {
+        "nome": "substancias",
+        "termos": [
+          "semaglutida",
+          "tirzepatida",
+          "liraglutida"
+        ]
+      },
+      {
+        "nome": "nomes_populares",
+        "termos": [
+          "caneta emagrecedora",
+          "caneta para emagrecer",
+          "Ozempic"
+        ]
+      },
+      {
+        "nome": "venda_irregular",
+        "termos": [
+          "caneta do Paraguai",
+          "retatrutida",
+          "tirzepatida manipulada",
+          "Mounjaro"
+        ]
+      }
+    ],
+    "periodo": "2025-01-01 2026-11-23",
+    "geo": "BR",
+    "aviso": "Índice de 0 a 100 relativo dentro de cada grupo; não é volume."
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "O Google Trends dá índice relativo de 0 a 100, sem total de buscas."
+  },
+  "lido": 400,
+  "amostra": {
+    "n": 4,
+    "como": "grupos de termos com série semanal no Brasil (índice 0-100)"
+  },
+  "parou_por": "data_inicial",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/trends/20261123T205640Z/marcas__serie.csv",
+      "sha256": "ddd158e269f3f85b22c1a6564be2c2d726aa3b8cc3250a857d1e34da947974fb",
+      "bytes": 5526,
+      "linhas": 101
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/marcas__uf.csv",
+      "sha256": "6b23d4b033c9499528286ed57a35ecabcbef764f9767df65eb258e642e6b2032",
+      "bytes": 784,
+      "linhas": 28
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/marcas__relacionados.csv",
+      "sha256": "fb4cbba0dea9aeb5d8bec0ec2cc70af62a8e73ca86271bb947f6b8d6fd30f702",
+      "bytes": 10374,
+      "linhas": 180
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/substancias__serie.csv",
+      "sha256": "9c35f89ac11ece705524be878ff811d534cc9fb69ee00b882ea73b31fb6f80cd",
+      "bytes": 5251,
+      "linhas": 101
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/substancias__uf.csv",
+      "sha256": "56e92dfecebb91b9ba86d3152d68ee3a579284cd0c571d44f05acd2c809073a2",
+      "bytes": 714,
+      "linhas": 28
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/nomes_populares__serie.csv",
+      "sha256": "501424bd6b422a54b02d99402e80fa80b7167a189083f0eb1ca01fb3f1acf505",
+      "bytes": 5221,
+      "linhas": 101
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/nomes_populares__uf.csv",
+      "sha256": "92cb5c65a707dd5ad8e30452562afdad952c2623592bb30b68c1cc184801c9f2",
+      "bytes": 726,
+      "linhas": 28
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/venda_irregular__serie.csv",
+      "sha256": "f96b5e0f79685d1fd7183af551b3290a263143620cefd776364626a22ba3d84e",
+      "bytes": 5398,
+      "linhas": 101
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/venda_irregular__uf.csv",
+      "sha256": "48c648ef33b28de5b7a2d5cada0f3d06159121228f376919cf449e97fedd7dd3",
+      "bytes": 768,
+      "linhas": 28
+    },
+    {
+      "caminho": "data/trends/20261123T205640Z/venda_irregular__relacionados.csv",
+      "sha256": "a18d4ad43a344e7c558ebf9e1b1fde5bfac8a146d8612cb069fe345b725d8de8",
+      "bytes": 5470,
+      "linhas": 88
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}

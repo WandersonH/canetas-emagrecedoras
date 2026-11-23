@@ -1,0 +1,68 @@
+{
+  "obtido_em": "2026-11-23T20:56:40Z",
+  "run_id": "45264522808",
+  "periodo": "2025-01-01 2026-11-23",
+  "pasta": "data/trends/20261123T205640Z",
+  "grupos": [
+    {
+      "nome": "marcas",
+      "termos": [
+        "Ozempic",
+        "Wegovy",
+        "Mounjaro",
+        "Saxenda"
+      ],
+      "serie": "marcas__serie.csv",
+      "uf": "marcas__uf.csv",
+      "relacionados": "marcas__relacionados.csv",
+      "pontos": 100,
+      "ufs": 27,
+      "linhas_relacionadas": 179,
+      "situacao": "ok"
+    },
+    {
+      "nome": "substancias",
+      "termos": [
+        "semaglutida",
+        "tirzepatida",
+        "liraglutida"
+      ],
+      "serie": "substancias__serie.csv",
+      "uf": "substancias__uf.csv",
+      "relacionados": null,
+      "pontos": 100,
+      "ufs": 27,
+      "situacao": "ok"
+    },
+    {
+      "nome": "nomes_populares",
+      "termos": [
+        "caneta emagrecedora",
+        "caneta para emagrecer",
+        "Ozempic"
+      ],
+      "serie": "nomes_populares__serie.csv",
+      "uf": "nomes_populares__uf.csv",
+      "relacionados": null,
+      "pontos": 100,
+      "ufs": 27,
+      "situacao": "ok"
+    },
+    {
+      "nome": "venda_irregular",
+      "termos": [
+        "caneta do Paraguai",
+        "retatrutida",
+        "tirzepatida manipulada",
+        "Mounjaro"
+      ],
+      "serie": "venda_irregular__serie.csv",
+      "uf": "venda_irregular__uf.csv",
+      "relacionados": "venda_irregular__relacionados.csv",
+      "pontos": 100,
+      "ufs": 27,
+      "linhas_relacionadas": 87,
+      "situacao": "ok"
+    }
+  ]
+}

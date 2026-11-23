@@ -1,6 +1,6 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": null,
+  "manifestos_lidos": 3,
   "frentes": [
     {
       "id": "youtube",
@@ -22,45 +22,51 @@
       "nome": "Google Trends",
       "via": "consulta pública",
       "paga": false,
-      "coletas": null,
+      "coletas": 1,
       "universo": null,
-      "universo_fonte": null,
-      "lido": null,
-      "amostra": null,
-      "amostra_como": null,
-      "cobertura": null,
-      "ultima_coleta": null,
-      "runs": []
+      "universo_fonte": "O Google Trends dá índice relativo de 0 a 100, sem total de buscas.",
+      "lido": 400,
+      "amostra": 4,
+      "amostra_como": "grupos de termos com série semanal no Brasil (índice 0-100)",
+      "cobertura": "completa",
+      "ultima_coleta": "2026-11-23T20:58:34Z",
+      "runs": [
+        "45264522808"
+      ]
     },
     {
       "id": "imprensa",
       "nome": "Imprensa",
       "via": "Google Notícias (RSS)",
       "paga": false,
-      "coletas": null,
+      "coletas": 1,
       "universo": null,
-      "universo_fonte": null,
-      "lido": null,
-      "amostra": null,
-      "amostra_como": null,
-      "cobertura": null,
-      "ultima_coleta": null,
-      "runs": []
+      "universo_fonte": "O Google Notícias não informa o total de resultados.",
+      "lido": 5316,
+      "amostra": 3970,
+      "amostra_como": "notícias distintas (link) do RSS, por termo e mês, até 100 por consulta",
+      "cobertura": "parcial",
+      "ultima_coleta": "2026-11-23T21:06:20Z",
+      "runs": [
+        "45264522808"
+      ]
     },
     {
       "id": "checagens",
       "nome": "Checagens",
       "via": "Google Fact Check Tools API",
       "paga": false,
-      "coletas": null,
+      "coletas": 1,
       "universo": null,
-      "universo_fonte": null,
-      "lido": null,
-      "amostra": null,
-      "amostra_como": null,
-      "cobertura": null,
-      "ultima_coleta": null,
-      "runs": []
+      "universo_fonte": "A Fact Check Tools API não informa quantas checagens existem.",
+      "lido": 6,
+      "amostra": 6,
+      "amostra_como": "checagens distintas (link da agência) com data dentro do período lido",
+      "cobertura": "parcial",
+      "ultima_coleta": "2026-11-23T21:06:26Z",
+      "runs": [
+        "45264522808"
+      ]
     },
     {
       "id": "dados_publicos",
