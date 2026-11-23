@@ -2,6 +2,32 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Primeiro run dos testes no GitHub
+
+**O que mudou**
+
+- Só este registro. Nenhum arquivo de código, de configuração ou de dados mudou.
+
+**Por quê**
+
+A entrada anterior deixou pendente a execução do workflow `Testes` no GitHub. Ela foi feita e fica registrada com o ID do run.
+
+**O que foi executado de verdade**
+
+- Workflow `Testes`, disparo manual, run `45259548892`, no commit `4348505`: concluído com sucesso. Os passos "Resumo das coletas em dia" e "Testes" passaram.
+- Nenhuma coleta foi executada. Nenhum gasto foi feito.
+
+**O que ficou pendente**
+
+- Publicar a página: ativar o GitHub Pages no repositório (ramo `main`, pasta raiz). A sessão que montou a estrutura não tem permissão para isso.
+- Preencher os topics dos dois repositórios, pelo mesmo motivo.
+- Não foi possível conferir daqui quais segredos estão cadastrados. A conferência acontece no primeiro workflow que usar cada um.
+- Seguem valendo as pendências da entrada abaixo.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45259548892
+
 ## 23/11/2026 · Estrutura inicial, com tudo em ⛔
 
 **O que mudou**
