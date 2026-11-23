@@ -18,6 +18,7 @@ import html
 import pathlib
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -53,8 +54,10 @@ def ler_indice(pagina: str, base: str) -> list[dict]:
     """Arquivos e pastas de uma listagem de diretório. Ignora a pasta de cima e os links de ordenação."""
     itens = []
     for href, texto, resto in _ANCORA.findall(pagina):
-        if href.startswith(("?", "#", "/")) or href in ("../", "./") or "://" in href and not href.startswith(base):
-            continue
+        href = html.unescape(href)
+        url = urllib.parse.urljoin(base, href)
+        if href.startswith(("?", "#")) or not url.startswith(base) or url.rstrip("/") == base.rstrip("/"):
+            continue  # ordenação, âncora, pasta de cima ou link para fora da pasta
         nome = _limpar(texto)
         if not nome or nome.lower() in ("parent directory", "diretório pai", "..", "name", "nome"):
             continue
@@ -63,7 +66,7 @@ def ler_indice(pagina: str, base: str) -> list[dict]:
         tamanho = _TAMANHO.search(cauda)
         itens.append({
             "nome": nome,
-            "url": urllib.parse.urljoin(base, href),
+            "url": url,
             "pasta": href.endswith("/"),
             "data": data.group(1) if data else None,
             "tamanho": tamanho.group(1) if tamanho and not href.endswith("/") else None,
@@ -95,9 +98,20 @@ def meses_publicados(itens: list[dict]) -> dict:
     return {"quantidade": len(meses), "primeiro": meses[0], "ultimo": meses[-1], "lista": meses}
 
 
-def baixar(url: str, tempo: int = 60) -> dict:
-    """Lê uma página. Nunca levanta exceção: o erro vai para o resultado."""
-    pedido = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Accept": "text/html,*/*"})
+def baixar(url: str, tempo: int = 60, tentativas: int = 3) -> dict:
+    """Lê uma página, com novas tentativas. Nunca levanta exceção: o erro vai para o resultado."""
+    resultado = {}
+    for tentativa in range(tentativas):
+        resultado = _baixar_uma_vez(url, tempo)
+        if resultado["http"] == 200 or (resultado["http"] and resultado["http"] < 500 and resultado["http"] != 429):
+            return resultado
+        time.sleep(5 * (tentativa + 1))
+    return resultado
+
+
+def _baixar_uma_vez(url: str, tempo: int) -> dict:
+    pedido = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Accept": "text/html,*/*",
+                                                  "Accept-Language": "pt-BR,pt;q=0.9"})
     try:
         with urllib.request.urlopen(pedido, timeout=tempo) as resposta:
             corpo = resposta.read()
@@ -108,13 +122,16 @@ def baixar(url: str, tempo: int = 60) -> dict:
         return {"http": None, "tipo": None, "corpo": b"", "erro": f"{type(erro).__name__}: {erro}"[:300]}
 
 
-def sondar(fonte: dict, leitor=baixar) -> dict:
+def sondar(fonte: dict, leitor=baixar, pasta_paginas: pathlib.Path | None = None) -> dict:
     resposta = leitor(fonte["url"])
     corpo = resposta["corpo"]
     texto = corpo.decode("utf-8", errors="replace")
     itens = []
     if resposta["http"] == 200 and corpo:
         itens = ler_indice(texto, fonte["url"]) if fonte["tipo"] == "indice" else ler_pagina(texto, fonte["url"])
+    if corpo and pasta_paginas is not None:
+        pasta_paginas.mkdir(parents=True, exist_ok=True)
+        (pasta_paginas / f"{fonte['id']}.html").write_bytes(corpo)
     resultado = {
         "id": fonte["id"], "nome": fonte["nome"], "url": fonte["url"], "frente": fonte["frente"],
         "http": resposta["http"], "tipo_conteudo": resposta["tipo"], "erro": resposta["erro"],
@@ -129,13 +146,15 @@ def sondar(fonte: dict, leitor=baixar) -> dict:
     return resultado
 
 
-def montar(run_id: str | None, leitor=baixar, agora: datetime.datetime | None = None) -> dict:
+def montar(run_id: str | None, leitor=baixar, agora: datetime.datetime | None = None,
+           pasta_paginas: pathlib.Path | None = None) -> dict:
     agora = agora or datetime.datetime.now(datetime.timezone.utc)
     return {
         "nota": "Gerado por scripts/sondar_fontes.py. Diz o que cada fonte oferece; não traz número do estudo.",
         "obtido_em": agora.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "run_id": run_id,
-        "fontes": [sondar(fonte, leitor) for fonte in FONTES],
+        "paginas_lidas": "data/fontes/paginas/ (cópia de cada página lida, para conferência)" if pasta_paginas else None,
+        "fontes": [sondar(fonte, leitor, pasta_paginas) for fonte in FONTES],
     }
 
 
@@ -157,7 +176,7 @@ def main(argumentos: list[str] | None = None) -> int:
     leitor_args = argparse.ArgumentParser(description="Sonda as fontes de dados públicos.")
     leitor_args.add_argument("--run-id", default=None)
     opcoes = leitor_args.parse_args(argumentos)
-    sondagem = montar(opcoes.run_id)
+    sondagem = montar(opcoes.run_id, pasta_paginas=comum.RAIZ / "data" / "fontes" / "paginas")
     destino = comum.RAIZ / "data" / "fontes" / "sondagem.json"
     comum.gravar(destino, sondagem)
     for linha in resumo(sondagem):

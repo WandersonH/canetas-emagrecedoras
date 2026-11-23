@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Sondagem: leitura de índice com endereço absoluto e cópia das páginas
+
+**O que mudou**
+
+- scripts/sondar_fontes.py passa a reconhecer links com endereço absoluto dentro da pasta, tenta de novo em erro de rede e guarda cópia de cada página lida em data/fontes/paginas/.
+
+**Por quê**
+
+- O run 45261554611 leu as três páginas da Anvisa com HTTP 200 (46.454, 33.154 e 30.957 bytes) e listou 0 arquivos: o índice usa endereço absoluto, que a primeira versão descartava. A página da CMED fechou a conexão (Connection reset by peer) e não havia nova tentativa.
+
+**O que foi executado de verdade**
+
+- python3 -m unittest discover -s tests: 78 testes, 1 pulado, com um caso novo de índice com endereço absoluto.
+
+**O que ficou pendente**
+
+- Rodar a sondagem de novo e conferir a lista de arquivos de cada fonte.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45261554611 e data/fontes/sondagem.json desse run.
+
 ## 23/11/2026 · Sondagem de fontes públicas (run 45261554611)
 
 **O que mudou**

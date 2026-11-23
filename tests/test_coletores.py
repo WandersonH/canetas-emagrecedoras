@@ -173,6 +173,12 @@ class Sondagem(unittest.TestCase):
         self.assertEqual(sondar_fontes.meses_publicados(itens), {"quantidade": 2, "primeiro": "202104", "ultimo": "202512", "lista": ["202104", "202512"]})
         self.assertEqual(sondar_fontes.meses_publicados([]), {"quantidade": None, "primeiro": None, "ultimo": None, "lista": []})
 
+    def test_le_indice_com_endereco_absoluto(self):
+        pagina = '<a href="/dados/">Diretório pai</a><a href="/dados/VigiMed_Notificacoes.csv">VigiMed_Notificacoes.csv</a> 2026-11-01 03:00 2.1G<a href="/outra/x.csv">x.csv</a><a href="/dados/SNGPC/">SNGPC/</a>'
+        itens = sondar_fontes.ler_indice(pagina, "https://dados.exemplo/dados/")
+        self.assertEqual([i["nome"] for i in itens], ["VigiMed_Notificacoes.csv", "SNGPC/"])
+        self.assertEqual(itens[0]["url"], "https://dados.exemplo/dados/VigiMed_Notificacoes.csv")
+
     def test_le_pagina_e_ignora_links_comuns(self):
         pagina = '<a href="/arquivos/lista_pmc_202611.xlsx">Lista PMC</a><a href="/sobre">Sobre</a><a href="/arquivos/lista_pmc_202611.xlsx">repetido</a>'
         itens = sondar_fontes.ler_pagina(pagina, "https://www.gov.br/anvisa/precos")

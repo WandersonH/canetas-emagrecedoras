@@ -47,7 +47,7 @@ jobs:
           done <<< "$RESUMO"
           python scripts/changelog_auto.py \
             --titulo "Sondagem de fontes públicas (run $RUN)" \
-            --mudou "data/fontes/sondagem.json: o que cada fonte de dados públicos oferece, com HTTP, tamanho e SHA-256 da página lida." \
+            --mudou "data/fontes/sondagem.json: o que cada fonte de dados públicos oferece, com HTTP, tamanho e SHA-256 da página lida; cópia das páginas em data/fontes/paginas/." \
             --porque "Validar se as fontes de dados públicos existem e o que publicam, antes de escrever os coletores." \
             --executado "Workflow 'Sondagem de fontes públicas', disparo manual, run $RUN, comando: python scripts/sondar_fontes.py --run-id $RUN." \
             "${args[@]}" \
@@ -58,7 +58,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/fontes/sondagem.json CHANGELOG.md
+          git add data/fontes CHANGELOG.md
           if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
           git commit -q -m "Sondagem de fontes públicas (run ${{ github.run_id }})"
           for t in 1 2 3; do
