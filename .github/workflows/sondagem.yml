@@ -1,0 +1,69 @@
+name: Sondagem de fontes públicas
+
+# Lê o índice de cada fonte de dados públicos e grava o que ela oferece em data/fontes/sondagem.json.
+# Não baixa os arquivos de dados e não gera número do estudo. Sem custo.
+# Disparo manual apenas.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gravacao-no-main
+  cancel-in-progress: false
+
+jobs:
+  sondagem:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Testes
+        run: python -m unittest discover -s tests
+
+      - name: Sondar as fontes
+        id: sondar
+        run: |
+          python scripts/sondar_fontes.py --run-id "${{ github.run_id }}" | tee resumo.txt
+          {
+            echo "resumo<<FIM"
+            cat resumo.txt
+            echo "FIM"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: CHANGELOG no mesmo commit
+        env:
+          RESUMO: ${{ steps.sondar.outputs.resumo }}
+          RUN: ${{ github.run_id }}
+          REPO: ${{ github.repository }}
+        run: |
+          args=()
+          while IFS= read -r linha; do
+            [ -n "$linha" ] && case "$linha" in gravado*) ;; *) args+=(--executado "Resultado: $linha");; esac
+          done <<< "$RESUMO"
+          python scripts/changelog_auto.py \
+            --titulo "Sondagem de fontes públicas (run $RUN)" \
+            --mudou "data/fontes/sondagem.json: o que cada fonte de dados públicos oferece, com HTTP, tamanho e SHA-256 da página lida." \
+            --porque "Validar se as fontes de dados públicos existem e o que publicam, antes de escrever os coletores." \
+            --executado "Workflow 'Sondagem de fontes públicas', disparo manual, run $RUN, comando: python scripts/sondar_fontes.py --run-id $RUN." \
+            "${args[@]}" \
+            --pendente "Baixar e ler os arquivos de cada fonte com manifesto; a sondagem só lista o que existe." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN e data/fontes/sondagem.json."
+
+      - name: Gravar no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/fontes/sondagem.json CHANGELOG.md
+          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
+          git commit -q -m "Sondagem de fontes públicas (run ${{ github.run_id }})"
+          for t in 1 2 3; do
+            git push -q origin HEAD:main && exit 0
+            git pull -q --rebase origin main || exit 1
+            sleep $((t * 10))
+          done
+          exit 1

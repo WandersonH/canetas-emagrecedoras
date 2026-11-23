@@ -2,6 +2,37 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Layout do Atlas, coletores grátis, sondagem de fontes e teto de teste
+
+**O que mudou**
+
+- index.html refeito no padrão do Atlas (assets/atlas.css, marca e ícones), pedido do pesquisador: mesmo layout, conteúdo próprio.
+- Coletores grátis: scripts/collect_youtube.py, collect_trends.py, collect_imprensa.py e collect_checagens.py, com scripts/rede.py (rede e manifesto) e data/config/trends.json.
+- Workflows de disparo manual: 'Coletas grátis' (gratuitas.yml), 'Sondagem de fontes públicas' (sondagem.yml) e 'Verificar segredos' (verificar.yml).
+- scripts/sondar_fontes.py (o que cada fonte de dados públicos oferece) e scripts/changelog_auto.py (entrada de CHANGELOG nos commits de workflow).
+- data/config/projeto.json: período lido de 01/01/2025 até a data de cada coleta. data/config/coleta.json: frente de checagens e teto de US$ 3 na etapa de teste da Apify, com a frase de autorização.
+
+**Por quê**
+
+- Pedido do pesquisador em 23/11/2026 17h30: usar o layout do Atlas, coletar já YouTube, Trends, checagens e imprensa, e usar US$ 3 para teste (US$ 10 anunciados). O período amplo cobre todos os marcos candidatos; o marco escolhido depois divide o período sem nova coleta.
+
+**O que foi executado de verdade**
+
+- python3 scripts/build_estado.py: 9 frentes, 0 com coleta.
+- python3 -m unittest discover -s tests: 77 testes, 1 pulado (a trava com teto zero não se aplica mais; a trava segue testada pelos casos sintéticos).
+- Página aberta em Chrome sem interface: dados carregados, frentes em ⛔.
+- Nenhuma coleta e nenhum gasto neste commit.
+
+**O que ficou pendente**
+
+- Rodar os três workflows e registrar os runs.
+- Ativar o GitHub Pages e preencher os topics (depende do dono do repositório).
+- Mostrar o custo estimado por rede antes de qualquer coleta paga; o teto de US$ 3 não autoriza rede específica.
+
+**Onde está a evidência**
+
+- Testes em tests/test_coletores.py, tests/test_publico.py e demais arquivos de tests/.
+
 ## 23/11/2026 · Primeiro run dos testes no GitHub
 
 **O que mudou**

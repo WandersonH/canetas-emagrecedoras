@@ -5,7 +5,10 @@
   "pergunta": null,
   "hipoteses": null,
   "desenho": {
-    "unidades_de_coleta": ["termos de busca", "perfis confirmados"],
+    "unidades_de_coleta": [
+      "termos de busca",
+      "perfis confirmados"
+    ],
     "decisao": "Wanderson Honorio, 23/11/2026 (chat): a coleta parte de termos de busca e também de uma lista de perfis confirmados."
   },
   "marco": {
@@ -94,8 +97,19 @@
   },
   "janelas": {
     "criterio": "data de publicação do item",
-    "base": { "inicio": null, "fim": null },
-    "nucleo": { "inicio": null, "fim": null }
+    "periodo_lido": {
+      "inicio": "01/01/2025",
+      "fim": null,
+      "decisao": "Coletas grátis pedidas pelo pesquisador em 23/11/2026 (chat) antes da escolha do marco. Período amplo, de 01/01/2025 até a data de cada coleta, que cobre todos os marcos candidatos; o marco escolhido depois divide este período em linha de base e núcleo, sem nova coleta."
+    },
+    "base": {
+      "inicio": null,
+      "fim": null
+    },
+    "nucleo": {
+      "inicio": null,
+      "fim": null
+    }
   },
   "referencias": [
     {

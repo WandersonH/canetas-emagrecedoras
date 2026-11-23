@@ -1,0 +1,13 @@
+{
+  "nota": "Grupos do Google Trends. Valores de 0 a 100 são relativos dentro de cada consulta (grupo e período): só compare termos do mesmo grupo. No máximo 5 termos por grupo.",
+  "geo": "BR",
+  "pausa_segundos": 5,
+  "grupos": [
+    { "nome": "marcas", "termos": ["Ozempic", "Wegovy", "Mounjaro", "Saxenda"] },
+    { "nome": "substancias", "termos": ["semaglutida", "tirzepatida", "liraglutida"] },
+    { "nome": "nomes_populares", "termos": ["caneta emagrecedora", "caneta para emagrecer", "Ozempic"] },
+    { "nome": "venda_irregular", "termos": ["caneta do Paraguai", "retatrutida", "tirzepatida manipulada", "Mounjaro"] }
+  ],
+  "relacionados": ["marcas", "venda_irregular"],
+  "ancora": "Ozempic e Mounjaro entram como referência nos grupos de nomes populares e de venda irregular, para mostrar a escala relativa dos termos menores."
+}

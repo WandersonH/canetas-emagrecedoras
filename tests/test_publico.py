@@ -82,7 +82,9 @@ class Publico(unittest.TestCase):
     def test_pagina_nao_tem_numero_escrito_a_mao(self):
         leitor = TextoVisivel()
         leitor.feed((RAIZ / "index.html").read_text(encoding="utf-8"))
-        visivel = " ".join(leitor.partes).replace("GLP-1", "")
+        visivel = " ".join(leitor.partes)
+        for nome_com_numero in ("GLP-1", "ForceAtlas 2"):  # nomes próprios, não dados
+            visivel = visivel.replace(nome_com_numero, "")
         self.assertNotRegex(visivel, r"\d", "número fixo no HTML: todo número deve vir dos arquivos de dados")
 
     def test_pagina_le_os_arquivos_que_existem(self):
@@ -94,9 +96,16 @@ class Publico(unittest.TestCase):
 
     def test_cada_aba_do_menu_tem_secao(self):
         pagina = (RAIZ / "index.html").read_text(encoding="utf-8")
-        botoes = re.findall(r'<button type="button" data-aba="(\w+)"', pagina)
-        secoes = re.findall(r'<section data-aba="(\w+)"', pagina)
+        botoes = re.findall(r'<button class="navbutton[^"]*" data-tab="(\w+)"', pagina)
+        secoes = re.findall(r'<section class="panel[^"]*" id="(\w+)"', pagina)
+        self.assertTrue(botoes)
         self.assertEqual(botoes, secoes)
+
+    def test_pagina_usa_a_folha_de_estilo_do_projeto(self):
+        pagina = (RAIZ / "index.html").read_text(encoding="utf-8")
+        self.assertIn('href="./assets/atlas.css"', pagina)
+        for arquivo in ("atlas.css", "marca.jpg", "favicon.ico"):
+            self.assertTrue((RAIZ / "assets" / arquivo).exists(), arquivo)
 
     def test_sem_dado_de_terceiros_no_publico(self):
         proibidas = {"autor", "autor_nome", "autor_canal", "username", "ownerusername"}
@@ -104,6 +113,12 @@ class Publico(unittest.TestCase):
             cabecalho = caminho.read_text(encoding="utf-8", errors="replace").splitlines()[:1]
             colunas = {c.strip().lower() for c in (cabecalho[0].split(",") if cabecalho else [])}
             self.assertFalse(colunas & proibidas, f"{caminho.relative_to(RAIZ)} tem coluna de autor")
+
+    def test_segredo_so_entra_por_variavel_de_ambiente(self):
+        for caminho in (RAIZ / ".github" / "workflows").glob("*.y*ml"):
+            for numero, linha in enumerate(caminho.read_text(encoding="utf-8").splitlines(), 1):
+                if "secrets." in linha:
+                    self.assertRegex(linha.strip(), r"^[A-Z_]+: \$\{\{ secrets\.[A-Z_]+ \}\}$", f"{caminho.name}:{numero}")
 
     def test_workflows_so_com_disparo_manual(self):
         for caminho in (RAIZ / ".github" / "workflows").glob("*.y*ml"):

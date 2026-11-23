@@ -1,0 +1,57 @@
+name: Verificar segredos
+
+# Confere se cada segredo está cadastrado e funciona, sem gravar nada e sem mostrar valores.
+# YOUTUBE_API_KEY: uma consulta de 1 unidade de cota (categorias de vídeo do Brasil).
+# ODI_INTERNO_TOKEN: leitura do repositório privado e permissão de escrita (push em modo de teste, que não grava).
+# APIFY_TOKEN_CANETAS: só a presença. Nenhuma chamada à Apify, nenhuma consulta de saldo ou de limites.
+# Disparo manual apenas.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: YOUTUBE_API_KEY responde
+        env:
+          CHAVE: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          if [ -z "$CHAVE" ]; then echo "::error::YOUTUBE_API_KEY não está cadastrado"; exit 1; fi
+          codigo=$(curl -sS -o resposta.json -w '%{http_code}' "https://www.googleapis.com/youtube/v3/videoCategories?part=id&regionCode=BR&key=${CHAVE}" || echo 000)
+          echo "HTTP ${codigo}"
+          if [ "$codigo" != "200" ]; then
+            python3 -c "import json; e=json.load(open('resposta.json')).get('error',{}); print('motivo:', e.get('status'), '·', (e.get('errors') or [{}])[0].get('reason'))" 2>/dev/null || true
+            echo "::error::YOUTUBE_API_KEY cadastrado, mas a API não aceitou a chave"; exit 1
+          fi
+
+      - name: ODI_INTERNO_TOKEN lê o repositório privado
+        if: always()
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then echo "::error::ODI_INTERNO_TOKEN não está cadastrado"; exit 1; fi
+          git clone -q --depth 1 "https://x-access-token:${TOKEN}@github.com/WandersonH/canetas-emagrecedoras-secret.git" "$RUNNER_TEMP/privado" \
+            || { echo "::error::o token não lê canetas-emagrecedoras-secret"; exit 1; }
+          echo "leitura ok"
+
+      - name: ODI_INTERNO_TOKEN escreve no repositório privado (teste sem gravar)
+        if: always()
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: |
+          if [ ! -d "$RUNNER_TEMP/privado/.git" ]; then echo "::error::sem clone do privado, escrita não testada"; exit 1; fi
+          cd "$RUNNER_TEMP/privado"
+          git push --dry-run -q origin HEAD:refs/heads/verificacao-de-escrita \
+            || { echo "::error::o token lê, mas não tem permissão de escrita (Contents: Read and write)"; exit 1; }
+          echo "escrita ok (modo de teste, nada foi gravado)"
+
+      - name: APIFY_TOKEN_CANETAS cadastrado (só necessário antes da etapa paga)
+        if: always()
+        env:
+          TOKEN: ${{ secrets.APIFY_TOKEN_CANETAS }}
+        run: |
+          if [ -z "$TOKEN" ]; then echo "::error::APIFY_TOKEN_CANETAS não está cadastrado"; exit 1; fi
+          echo "cadastrado (a validade só é conferida na primeira coleta paga autorizada)"
