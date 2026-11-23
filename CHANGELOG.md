@@ -2,6 +2,32 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Sondagem de fontes públicas (run 45261554611)
+
+**O que mudou**
+
+- data/fontes/sondagem.json: o que cada fonte de dados públicos oferece, com HTTP, tamanho e SHA-256 da página lida.
+
+**Por quê**
+
+- Validar se as fontes de dados públicos existem e o que publicam, antes de escrever os coletores.
+
+**O que foi executado de verdade**
+
+- Workflow 'Sondagem de fontes públicas', disparo manual, run 45261554611, comando: python scripts/sondar_fontes.py --run-id 45261554611.
+- Resultado: anvisa_dados: HTTP 200, 0 arquivos, 0 pastas
+- Resultado: sngpc_industrializados: HTTP 200, 0 arquivos, 0 pastas
+- Resultado: sngpc_manipulados: HTTP 200, 0 arquivos, 0 pastas
+- Resultado: cmed_precos: sem acesso (URLError: <urlopen error [Errno 104] Connection reset by peer>)
+
+**O que ficou pendente**
+
+- Baixar e ler os arquivos de cada fonte com manifesto; a sondagem só lista o que existe.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45261554611 e data/fontes/sondagem.json.
+
 ## 23/11/2026 · Layout do Atlas, coletores grátis, sondagem de fontes e teto de teste
 
 **O que mudou**

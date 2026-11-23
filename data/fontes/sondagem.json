@@ -1,0 +1,75 @@
+{
+  "nota": "Gerado por scripts/sondar_fontes.py. Diz o que cada fonte oferece; não traz número do estudo.",
+  "obtido_em": "2026-11-23T20:39:07Z",
+  "run_id": "45261554611",
+  "fontes": [
+    {
+      "id": "anvisa_dados",
+      "nome": "Anvisa, portal de dados abertos (pasta principal)",
+      "url": "https://dados.anvisa.gov.br/dados/",
+      "frente": "anvisa_vigimed",
+      "http": 200,
+      "tipo_conteudo": "text/html;charset=utf-8",
+      "erro": null,
+      "bytes": 46454,
+      "sha256": "7487846576db6b1522b1848e6688c2d267a5ff749b756986a459c8891c6b8cf5",
+      "arquivos": 0,
+      "pastas": 0,
+      "itens": []
+    },
+    {
+      "id": "sngpc_industrializados",
+      "nome": "Anvisa, SNGPC, vendas de industrializados",
+      "url": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/",
+      "frente": "anvisa_sngpc",
+      "http": 200,
+      "tipo_conteudo": "text/html;charset=utf-8",
+      "erro": null,
+      "bytes": 33154,
+      "sha256": "f11c5149eca147f567586c950ada68f7ff8c296d39488c1d1131276931bfecc1",
+      "arquivos": 0,
+      "pastas": 0,
+      "itens": [],
+      "meses": {
+        "quantidade": null,
+        "primeiro": null,
+        "ultimo": null,
+        "lista": []
+      }
+    },
+    {
+      "id": "sngpc_manipulados",
+      "nome": "Anvisa, SNGPC, vendas de manipulados",
+      "url": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/",
+      "frente": "anvisa_sngpc",
+      "http": 200,
+      "tipo_conteudo": "text/html;charset=utf-8",
+      "erro": null,
+      "bytes": 30957,
+      "sha256": "9f5634614b3e2a3e9e01b9ffab77878a1411fa4275f8a67bb20e112598c0c21a",
+      "arquivos": 0,
+      "pastas": 0,
+      "itens": [],
+      "meses": {
+        "quantidade": null,
+        "primeiro": null,
+        "ultimo": null,
+        "lista": []
+      }
+    },
+    {
+      "id": "cmed_precos",
+      "nome": "CMED, página das listas de preços",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos",
+      "frente": "cmed_precos",
+      "http": null,
+      "tipo_conteudo": null,
+      "erro": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "bytes": null,
+      "sha256": null,
+      "arquivos": null,
+      "pastas": null,
+      "itens": []
+    }
+  ]
+}
