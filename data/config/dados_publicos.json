@@ -1,0 +1,102 @@
+{
+  "nota": "Frentes de dados públicos oficiais. Nenhum número foi lido ainda: 'valor' fica null até a coleta baixar o arquivo e gravar o manifesto. 'situacao' diz o que já foi conferido sobre a existência da fonte.",
+  "conferido_em": "23/11/2026",
+  "frentes": [
+    {
+      "id": "anvisa_registro",
+      "fonte": "Anvisa, consulta de medicamentos registrados",
+      "o_que_traz": "Marcas, detentores e datas de registro por princípio ativo. Alimenta a família de marcas dos termos.",
+      "url": "https://consultas.anvisa.gov.br/#/medicamentos/",
+      "situacao": "a fonte existe; formato de leitura a validar",
+      "valor": null
+    },
+    {
+      "id": "anvisa_vigimed",
+      "fonte": "Anvisa, notificações de farmacovigilância (VigiMed)",
+      "o_que_traz": "Notificações de eventos adversos por substância e por ano.",
+      "url": "https://dados.anvisa.gov.br/dados/Documentacao_e_Dicionario_de_Dados_Farmacovigilancia.pdf",
+      "situacao": "há base aberta com dicionário de dados; recorte por substância a validar",
+      "valor": null
+    },
+    {
+      "id": "anvisa_sngpc",
+      "fonte": "Anvisa, vendas em farmácias (SNGPC)",
+      "o_que_traz": "Vendas de medicamentos industrializados e manipulados por mês e por estado.",
+      "url": "https://dados.anvisa.gov.br/dados/Painel_SNGPC_Venda_de_Industrializados.pdf",
+      "situacao": "a base aberta existe; não foi conferido se os meses a partir de 2025 já estão publicados",
+      "valor": null
+    },
+    {
+      "id": "anvisa_proibicoes",
+      "fonte": "Anvisa, atos de proibição e apreensão no Diário Oficial da União",
+      "o_que_traz": "Produtos proibidos por data do ato.",
+      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-09/anvisa-proibe-caneta-emagrecedora-vinda-do-paraguai",
+      "situacao": "atos noticiados; leitura direta do Diário Oficial a validar",
+      "valor": null
+    },
+    {
+      "id": "cmed_precos",
+      "fonte": "CMED, lista de preços de medicamentos",
+      "o_que_traz": "Preço máximo ao consumidor por apresentação, mês a mês.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos",
+      "situacao": "lista mensal publicada; formato do arquivo a validar",
+      "valor": null
+    },
+    {
+      "id": "conitec",
+      "fonte": "Conitec e Ministério da Saúde",
+      "o_que_traz": "Pedidos e decisões sobre incorporação ao SUS, em linha do tempo.",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/setembro/ministerio-da-saude-protocola-na-conitec-pedido-de-analise-para-incorporacao-de-canetas-emagrecedoras-no-sus",
+      "situacao": "documentos públicos; leitura a validar",
+      "valor": null
+    },
+    {
+      "id": "vigitel",
+      "fonte": "Ministério da Saúde, Vigitel",
+      "o_que_traz": "Frequência de obesidade e excesso de peso nas capitais, como contexto.",
+      "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigitel/vigitel-brasil-2006-2024.pdf/@@download/file",
+      "situacao": "série publicada; leitura das tabelas a validar",
+      "valor": null
+    },
+    {
+      "id": "comexstat",
+      "fonte": "Comex Stat, importações",
+      "o_que_traz": "Importações por código de mercadoria.",
+      "url": null,
+      "situacao": "não verificado",
+      "valor": null
+    },
+    {
+      "id": "consumidor",
+      "fonte": "consumidor.gov.br e Procons",
+      "o_que_traz": "Reclamações de consumo.",
+      "url": null,
+      "situacao": "não verificado",
+      "valor": null
+    },
+    {
+      "id": "camara",
+      "fonte": "Câmara dos Deputados, dados abertos",
+      "o_que_traz": "Proposições sobre o tema.",
+      "url": null,
+      "situacao": "não verificado",
+      "valor": null
+    },
+    {
+      "id": "datasus",
+      "fonte": "DataSUS",
+      "o_que_traz": "Internações e procedimentos ligados à obesidade.",
+      "url": null,
+      "situacao": "não verificado",
+      "valor": null
+    },
+    {
+      "id": "receita_apreensoes",
+      "fonte": "Receita Federal, apreensões",
+      "o_que_traz": "Apreensões de canetas sem registro.",
+      "url": null,
+      "situacao": "não verificado",
+      "valor": null
+    }
+  ]
+}

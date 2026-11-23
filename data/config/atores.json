@@ -1,0 +1,12 @@
+{
+  "nota": "Perfis monitorados. Só entra aqui perfil confirmado pelo pesquisador, com a fonte onde o endereço foi conferido. Endereço provável sem fonte é candidato e fica no repositório privado até a confirmação.",
+  "levantamento": null,
+  "confirmados": [],
+  "campos_de_cada_perfil": {
+    "id": "identificador curto, sem espaço",
+    "nome": "nome público do perfil",
+    "tipo": "um dos tipos de perfil do livro de códigos",
+    "redes": "endereço por rede, cada um com a fonte e a data em que foi conferido",
+    "confirmado": "quem confirmou, quando e onde"
+  }
+}

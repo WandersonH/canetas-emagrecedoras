@@ -1,0 +1,166 @@
+{
+  "nota": "Livro de códigos. 'origem' diz de onde vem cada eixo: das referências listadas em projeto.json (resumidas com palavras próprias) ou de proposta ainda a validar com o pesquisador. 'operacao' (exemplos e casos-limite de cada código) fica null, e aparece como ⛔, até ser fechada.",
+  "eixos": [
+    {
+      "id": "tipo_de_caneta",
+      "titulo": "Tipo de caneta",
+      "pergunta": "De qual produto ou substância a publicação fala?",
+      "origem": "proposta a validar com o pesquisador",
+      "codigos": [
+        {
+          "codigo": "semaglutida",
+          "definicao": "Fala de semaglutida ou de uma marca de semaglutida."
+        },
+        {
+          "codigo": "tirzepatida",
+          "definicao": "Fala de tirzepatida ou de uma marca de tirzepatida."
+        },
+        {
+          "codigo": "liraglutida",
+          "definicao": "Fala de liraglutida ou de uma marca de liraglutida."
+        },
+        {
+          "codigo": "outra substância",
+          "definicao": "Fala de outra substância da classe."
+        },
+        {
+          "codigo": "sem registro",
+          "definicao": "Fala de produto sem registro na Anvisa."
+        },
+        {
+          "codigo": "genérico",
+          "definicao": "Fala das canetas em geral, sem nomear produto."
+        }
+      ],
+      "operacao": null
+    },
+    {
+      "id": "tipo_de_perfil",
+      "titulo": "Tipo de perfil",
+      "pergunta": "Quem publica?",
+      "origem": "tipos da referência, com acréscimos propostos a validar",
+      "codigos": [
+        {
+          "codigo": "influenciador",
+          "definicao": "Perfil pessoal sem formação declarada em saúde."
+        },
+        {
+          "codigo": "médico",
+          "definicao": "Perfil que se apresenta como médico."
+        },
+        {
+          "codigo": "nutricionista",
+          "definicao": "Perfil que se apresenta como nutricionista."
+        },
+        {
+          "codigo": "outro profissional",
+          "definicao": "Outro profissional, como educador físico ou farmacêutico."
+        },
+        {
+          "codigo": "veículo jornalístico",
+          "definicao": "Perfil de veículo de imprensa."
+        },
+        {
+          "codigo": "revendedor",
+          "definicao": "Perfil que oferece o produto para venda."
+        },
+        {
+          "codigo": "órgão público ou laboratório",
+          "definicao": "Perfil institucional de órgão público ou de fabricante."
+        },
+        {
+          "codigo": "político",
+          "definicao": "Perfil de pessoa com mandato ou candidatura."
+        }
+      ],
+      "operacao": null
+    },
+    {
+      "id": "tipo_de_conteudo",
+      "titulo": "Tipo de conteúdo",
+      "pergunta": "Como a informação é apresentada?",
+      "origem": "categorias da referência",
+      "codigos": [
+        {
+          "codigo": "conteúdo enganoso",
+          "definicao": "Parte de algo verdadeiro, mas distorce ou tira de contexto e leva a entender errado a eficácia, a segurança ou a indicação."
+        },
+        {
+          "codigo": "simplificação excessiva",
+          "definicao": "Não traz falsidade explícita, mas reduz o tratamento a uma explicação linear e omite condições médicas relevantes."
+        },
+        {
+          "codigo": "correto com evidência",
+          "definicao": "Apoia-se em referência clínica ou dado científico e é compatível com o consenso biomédico."
+        },
+        {
+          "codigo": "correto com simplificação",
+          "definicao": "Factualmente correto, mas sem ressalvas ou nuances importantes."
+        },
+        {
+          "codigo": "relato pessoal",
+          "definicao": "A experiência de quem publica é o principal argumento."
+        },
+        {
+          "codigo": "promocional ou sem alegação",
+          "definicao": "Publicitário, motivacional ou performático, sem afirmação verificável sobre o medicamento."
+        },
+        {
+          "codigo": "humor ou entretenimento",
+          "definicao": "Humor ou sátira sobre o tema, sem pretensão de informar."
+        }
+      ],
+      "operacao": null
+    },
+    {
+      "id": "qualidade_da_informacao",
+      "titulo": "Qualidade da informação",
+      "pergunta": "A publicação cumpre os quatro critérios de referência? Cada critério vale um ponto.",
+      "origem": "critérios da referência",
+      "codigos": [
+        {
+          "codigo": "autoria",
+          "definicao": "Autor profissional identificado com qualificação, ou veículo com responsabilidade editorial."
+        },
+        {
+          "codigo": "atribuição",
+          "definicao": "Cita de forma explícita um estudo, uma diretriz, uma organização ou outra fonte identificável."
+        },
+        {
+          "codigo": "divulgação de interesses",
+          "definicao": "Declara patrocínio, oferta comercial, vínculo institucional ou conflito de interesse."
+        },
+        {
+          "codigo": "atualidade",
+          "definicao": "A data de publicação pode ser rastreada."
+        }
+      ],
+      "operacao": null
+    },
+    {
+      "id": "venda_irregular",
+      "titulo": "Venda irregular",
+      "pergunta": "A publicação oferece, anuncia ou indica onde comprar de forma irregular?",
+      "origem": "proposta a validar com o pesquisador",
+      "codigos": [
+        {
+          "codigo": "oferta sem receita",
+          "definicao": "Oferece produto registrado sem exigir receita."
+        },
+        {
+          "codigo": "produto sem registro",
+          "definicao": "Anuncia produto sem registro na Anvisa."
+        },
+        {
+          "codigo": "manipulado",
+          "definicao": "Anuncia versão manipulada."
+        },
+        {
+          "codigo": "suspeita de golpe",
+          "definicao": "Pede pagamento adiantado ou usa identidade de terceiro."
+        }
+      ],
+      "operacao": null
+    }
+  ]
+}

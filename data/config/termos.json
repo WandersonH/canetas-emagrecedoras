@@ -1,0 +1,79 @@
+{
+  "nota": "Termos do estudo em quatro famílias. 'busca: true' é consulta feita nas redes, na imprensa e no Trends. 'busca: false' é só dicionário: serve para reconhecer o termo num texto já coletado. 'homonimo: true' obriga revisão de contexto antes de contar.",
+  "decisao": "Wanderson Honorio, 23/11/2026 (chat): lista ampla mais termos de venda irregular.",
+  "familias": {
+    "substancias": {
+      "titulo": "Substâncias",
+      "fonte": "Substâncias alcançadas pela regra de retenção de receita da Anvisa, conforme noticiado em 23/06/2025.",
+      "url": "https://canaltech.com.br/saude/receita-de-caneta-emagrecedora-deve-ser-retida-na-compra-a-partir-de-hoje-23/",
+      "itens": [
+        { "termo": "semaglutida", "busca": true },
+        { "termo": "tirzepatida", "busca": true },
+        { "termo": "liraglutida", "busca": true },
+        { "termo": "dulaglutida", "busca": false },
+        { "termo": "exenatida", "busca": false },
+        { "termo": "lixisenatida", "busca": false }
+      ]
+    },
+    "marcas": {
+      "titulo": "Marcas registradas",
+      "fonte": "Lista de medicamentos registrados na Anvisa publicada pela CNN Brasil em 29/07/2026. Lista e grafia a reconferir no cadastro da Anvisa na primeira coleta de dados públicos.",
+      "url": "https://www.cnnbrasil.com.br/saude/diabetes-e-emagrecimento-brasil-tem-21-canetas-registradas-veja-quais/",
+      "itens": [
+        { "termo": "Ozempic", "substancia": "semaglutida", "busca": true },
+        { "termo": "Wegovy", "substancia": "semaglutida", "busca": true },
+        { "termo": "Mounjaro", "substancia": "tirzepatida", "busca": true },
+        { "termo": "Saxenda", "substancia": "liraglutida", "busca": true },
+        { "termo": "Rybelsus", "substancia": "semaglutida", "busca": false },
+        { "termo": "Povitztra", "substancia": "semaglutida", "busca": false },
+        { "termo": "Extensior", "substancia": "semaglutida", "busca": false },
+        { "termo": "Ozivy", "substancia": "semaglutida", "busca": false },
+        { "termo": "Owozy", "substancia": "semaglutida", "busca": false },
+        { "termo": "Seemasun", "substancia": "semaglutida", "busca": false },
+        { "termo": "Zempneo", "substancia": "semaglutida", "busca": false },
+        { "termo": "Semavy", "substancia": "semaglutida", "busca": false },
+        { "termo": "Orsema", "substancia": "semaglutida", "busca": false },
+        { "termo": "Victoza", "substancia": "liraglutida", "busca": false },
+        { "termo": "Lirux", "substancia": "liraglutida", "busca": false },
+        { "termo": "Olire", "substancia": "liraglutida", "busca": false },
+        { "termo": "Liraclick", "substancia": "liraglutida", "busca": false },
+        { "termo": "Xultophy", "substancia": "liraglutida com insulina", "busca": false },
+        { "termo": "Trulicity", "substancia": "dulaglutida", "busca": false },
+        { "termo": "Soliqua", "substancia": "lixisenatida com insulina", "busca": false }
+      ],
+      "a_conferir": {
+        "nota": "Marcas citadas na imprensa fora da lista de 29/07/2026. Só entram depois de conferidas no cadastro da Anvisa.",
+        "itens": ["Semaclique", "Yluméc", "Aribet", "Lyrza", "Wylovol", "Embeltah", "Poviztra"]
+      }
+    },
+    "nomes_populares": {
+      "titulo": "Nomes populares",
+      "fonte": "Expressões indicadas pelo pesquisador.",
+      "url": null,
+      "itens": [
+        { "termo": "caneta emagrecedora", "busca": true },
+        { "termo": "caneta para emagrecer", "busca": true }
+      ]
+    },
+    "venda_irregular": {
+      "titulo": "Venda irregular",
+      "fonte": "Produtos e expressões citados em atos e notas da Anvisa noticiados em 21/01/2026 e 16/09/2026.",
+      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-09/anvisa-proibe-caneta-emagrecedora-vinda-do-paraguai",
+      "regra": "Registrar e contar. Link de venda, endereço de loja e perfil de vendedor nunca vão para a página pública.",
+      "itens": [
+        { "termo": "caneta do Paraguai", "busca": true },
+        { "termo": "tirzepatida manipulada", "busca": true },
+        { "termo": "semaglutida manipulada", "busca": true },
+        { "termo": "Ozempic sem receita", "busca": true },
+        { "termo": "Mounjaro sem receita", "busca": true },
+        { "termo": "retatrutida", "busca": true },
+        { "termo": "Synedica", "busca": false },
+        { "termo": "Tirzec", "busca": false },
+        { "termo": "Lipoless", "busca": false },
+        { "termo": "T.G.", "busca": false, "homonimo": true },
+        { "termo": "TG", "busca": false, "homonimo": true },
+        { "termo": "T36", "busca": false, "homonimo": true }
+      ]
+    }
+  }
+}

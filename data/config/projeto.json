@@ -1,0 +1,110 @@
+{
+  "nota": "Identidade e recorte do estudo. Campo sem valor fica null e aparece como ⛔ na página: nunca zero, nunca texto provisório.",
+  "nome": "Canetas emagrecedoras",
+  "subtitulo": "Agonistas de GLP-1 nas redes, na imprensa e nas buscas no Brasil",
+  "pergunta": null,
+  "hipoteses": null,
+  "desenho": {
+    "unidades_de_coleta": ["termos de busca", "perfis confirmados"],
+    "decisao": "Wanderson Honorio, 23/11/2026 (chat): a coleta parte de termos de busca e também de uma lista de perfis confirmados."
+  },
+  "marco": {
+    "escolhido": null,
+    "nota": "Marcos candidatos, cada um com data e fonte. Nenhum foi escolhido: a escolha é do pesquisador e define as janelas.",
+    "levantado_em": "23/11/2026",
+    "candidatos": [
+      {
+        "data": "16/04/2025",
+        "descricao": "A diretoria da Anvisa aprova a retenção de receita para os agonistas de GLP-1.",
+        "fonte": "Conselho Federal de Farmácia",
+        "url": "https://site.cff.org.br/noticia/Noticias-gerais/16/04/2025/anvisa-torna-obrigatoria-a-retencao-de-receita-para-compra-de-canetas-emagrecedoras",
+        "situacao": "conferido em fonte"
+      },
+      {
+        "data": "09/06/2025",
+        "descricao": "A Anvisa aprova a tirzepatida (Mounjaro) para obesidade; a venda no país tinha começado em maio de 2025.",
+        "fonte": "Band Jornalismo (Estadão Conteúdo)",
+        "url": "https://www.band.com.br/noticias/anvisa-aprova-mounjaro-para-tratamento-de-obesidade-e-sobrepeso-com-comorbidades-202506090930",
+        "situacao": "conferido em fonte"
+      },
+      {
+        "data": "23/06/2025",
+        "descricao": "A retenção de receita passa a valer nas farmácias.",
+        "fonte": "Agência Brasil",
+        "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2025-06/receitas-de-canetas-emagrecedoras-serao-retidas-partir-desta-segunda/",
+        "situacao": "conferido em fonte"
+      },
+      {
+        "data": "20/08/2025",
+        "descricao": "A Conitec nega a incorporação de semaglutida e liraglutida ao SUS.",
+        "fonte": "Conselho Federal de Farmácia",
+        "url": "https://site.cff.org.br/noticia/Noticias-gerais/21/08/2025/conitec-rejeita-inclusao-de-medicamentos-contra-diabetes-e-obesidade-no-sus",
+        "situacao": "conferido em fonte"
+      },
+      {
+        "data": "21/01/2026",
+        "descricao": "A Anvisa proíbe e manda apreender canetas sem registro conhecidas como canetas do Paraguai.",
+        "fonte": "Sindpd (com base em nota da Anvisa)",
+        "url": "https://sindpd.org.br/2026/01/21/anvisa-proibe-venda-canetas-emagrecedoras/",
+        "situacao": "número do ato a conferir no Diário Oficial da União"
+      },
+      {
+        "data": "20/03/2026",
+        "descricao": "Termina a patente da semaglutida no Brasil.",
+        "fonte": "Metro 1 (decisão do STJ)",
+        "url": "https://www.metro1.com.br/noticias/saude/174932,stj-decide-que-patente-de-semaglutida-vencera-em-2026",
+        "situacao": "conferido em fonte"
+      },
+      {
+        "data": "27/04/2026",
+        "descricao": "A Anvisa apresenta um plano de farmacovigilância ativa para os agonistas de GLP-1.",
+        "fonte": "Anvisa",
+        "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-apresenta-plano-de-monitoramento-ativo-para-canetas-glp-1/resolveuid/5849d230b32b451fa654975ce29cf744",
+        "situacao": "a data é a do documento; a data do anúncio está a conferir"
+      },
+      {
+        "data": "29/07/2026",
+        "descricao": "A Anvisa registra cinco novas canetas de semaglutida.",
+        "fonte": "Agência Gov",
+        "url": "https://agenciagov.ebc.com.br/noticias/202607/anvisa-registra-cinco-novas-canetas-de-semaglutida",
+        "situacao": "conferido em fonte"
+      },
+      {
+        "data": "17/08/2026",
+        "descricao": "Registro dos primeiros genéricos de semaglutida.",
+        "fonte": "Blog Voy Saúde",
+        "url": "https://www.voysaude.com.br/blog/semaglutida-generica-guia-completo-2026",
+        "situacao": "fonte secundária; a conferir no Diário Oficial da União"
+      },
+      {
+        "data": "16/09/2026",
+        "descricao": "A Anvisa proíbe mais uma caneta sem registro vinda do Paraguai.",
+        "fonte": "Agência Brasil",
+        "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-09/anvisa-proibe-caneta-emagrecedora-vinda-do-paraguai",
+        "situacao": "conferido em fonte"
+      },
+      {
+        "data": "24/09/2026",
+        "descricao": "O Ministério da Saúde pede à Conitec a análise de semaglutida e liraglutida para o SUS.",
+        "fonte": "Ministério da Saúde",
+        "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/setembro/ministerio-da-saude-protocola-na-conitec-pedido-de-analise-para-incorporacao-de-canetas-emagrecedoras-no-sus",
+        "situacao": "conferido em fonte"
+      }
+    ]
+  },
+  "janelas": {
+    "criterio": "data de publicação do item",
+    "base": { "inicio": null, "fim": null },
+    "nucleo": { "inicio": null, "fim": null }
+  },
+  "referencias": [
+    {
+      "uso": "categorias de tipo de conteúdo e eixos de análise do livro de códigos",
+      "citacao": "FERNANDES, Carla Montuori; FREITAS, Bianca G. de; BOMFIM, Eliza Maria da Cunha. Engajamento digital e desinformação em saúde: uma análise comparativa entre influenciadores leigos e fontes especializadas no TikTok. In: Congresso Brasileiro de Ciências da Comunicação, 49., 2026, Brasília. Intercom, 2026."
+    },
+    {
+      "uso": "quatro critérios de qualidade da informação em saúde (autoria, atribuição, divulgação de interesses, atualidade)",
+      "citacao": "SILBERG, William M.; LUNDBERG, George D.; MUSACCHIO, Robert A. Assessing, controlling, and assuring the quality of medical information on the Internet. JAMA, v. 277, n. 15, p. 1244-1245, 1997."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+name: Testes
+
+# Disparo manual apenas. Nenhum workflow deste repositório roda sozinho.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Resumo das coletas em dia
+        run: python scripts/build_estado.py && git diff --exit-code -- data/estado.json
+      - name: Testes
+        run: python -m unittest discover -s tests -v
