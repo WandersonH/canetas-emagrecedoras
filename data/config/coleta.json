@@ -34,37 +34,70 @@
   },
   "apify": {
     "segredo": "APIFY_TOKEN_CANETAS",
-    "teto_usd": 3,
-    "autorizacao": "Wanderson Honorio, 23/11/2026 17h30 (chat): \"temos 3 dolares no momento pra teste e vamos ter 10\". Teto de US$ 3 para a etapa de teste; o restante (US$ 10 anunciados) só entra com nova frase.",
+    "teto_usd": 10,
+    "autorizacao": "Wanderson Honorio, 23/11/2026 18h13 (chat): \"voce tem 10 dolars pra coletar todas as redes e caso precise transquever algo que necessite ser pago\". Teto total de US$ 10 para TikTok, Instagram, X e Kwai, incluindo transcrição paga se for necessária. Substitui o teto de US$ 3 de 17h30.",
     "etapas": {
-      "teste": 3,
-      "publicacoes": 0,
-      "comentarios": 0,
-      "terceiros": 0,
-      "reserva": 0
+      "teste": 1.0,
+      "publicacoes": 5.0,
+      "comentarios": 2.5,
+      "transcricao": 0.5,
+      "reserva": 1.0
     },
-    "regra": "O coletor soma o custo dos manifestos da etapa e não roda se o gasto já feito mais o previsto passar do teto da etapa, se o teto total for zero ou se a frase de autorização estiver vazia."
+    "regra": "O coletor soma o custo dos manifestos da etapa e não roda se o gasto já feito mais o previsto passar do teto da etapa, se o teto total for zero ou se a frase de autorização estiver vazia.",
+    "divisao": "Divisão das etapas proposta pelo Claude dentro do teto autorizado; pode ser refeita pelo pesquisador."
   },
   "pagas": {
     "tiktok": {
       "nome": "TikTok",
       "via": "Apify",
-      "ator": null
+      "ator": "apidojo~tiktok-scraper",
+      "preco": {
+        "item": 0.0004,
+        "consulta": 0.006,
+        "fonte": "referência de preço de 19/10/2026 usada em outro projeto do pesquisador; o custo real de cada execução vai para o manifesto"
+      },
+      "busca": "palavra-chave, ordem de relevância da plataforma, sem filtro de data; corte pela data de publicação depois",
+      "itens_teste": 15,
+      "itens_por_termo": 200
     },
     "instagram": {
       "nome": "Instagram",
       "via": "Apify",
-      "ator": null
+      "ator": "apify~instagram-hashtag-scraper",
+      "preco": {
+        "item": 0.0026,
+        "consulta": 0.0,
+        "fonte": "loja Apify, 18/10/2026: US$ 0,0026 por resultado (plano gratuito)"
+      },
+      "busca": "hashtag formada pelo termo sem espaços nem acentos (Mounjaro → #mounjaro); posts recentes da hashtag; corte pela data de publicação depois",
+      "itens_teste": 15,
+      "itens_por_termo": 40
     },
     "x": {
       "nome": "X",
       "via": "Apify",
-      "ator": null
+      "ator": "xquik~x-tweet-scraper",
+      "preco": {
+        "item": 0.00015,
+        "consulta": 0.0,
+        "fonte": "README do ator: US$ 0,00015 por linha"
+      },
+      "busca": "busca do X com o termo entre aspas, lang:pt, since:<início do período>, sem republicações, ordem Top",
+      "itens_teste": 15,
+      "itens_por_termo": 500
     },
     "kwai": {
       "nome": "Kwai",
       "via": "Apify",
-      "ator": null
+      "ator": "unfenced-group~kwai-scraper",
+      "preco": {
+        "item": 0.002,
+        "consulta": 0.0,
+        "fonte": "página do ator, 17/10/2026: US$ 1,99 por 1.000 itens com detalhe"
+      },
+      "busca": "palavra-chave com postedAfter = início do período",
+      "itens_teste": 10,
+      "itens_por_termo": 30
     }
   },
   "redes_decisao": "Wanderson Honorio, 23/11/2026 (chat): YouTube, TikTok, Instagram, X e Kwai, além de imprensa, Google Trends e dados públicos.",
@@ -85,5 +118,10 @@
       "todo número trocado por [n], o que cobre dose, peso, idade, preço e data"
     ],
     "limite_conhecido": "Nome de pessoa escrito por extenso dentro do texto não é detectado de forma automática. Uma frase longa e incomum ainda pode ser localizada pela busca da própria plataforma."
-  }
+  },
+  "termos_teste": [
+    "Mounjaro",
+    "caneta do Paraguai"
+  ],
+  "transcricao": "Whisper rodando no próprio GitHub Actions, sem custo. A etapa paga de transcrição só é usada se o Whisper não der conta."
 }

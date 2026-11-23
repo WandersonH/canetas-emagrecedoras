@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Autorização de US$ 10 e coletor das redes pagas
+
+**O que mudou**
+
+- data/config/coleta.json: teto total de US$ 10 com a frase do pesquisador; etapas teste 1,0, publicações 5,0, comentários 2,5, transcrição 0,5 e reserva 1,0; ator, preço de referência e itens por termo de cada rede; termos do teste (Mounjaro e caneta do Paraguai).
+- scripts/collect_redes.py e scripts/apify.py: busca por termo no TikTok, Instagram (hashtag), X e Kwai, com trava de gasto antes de cada rede e teto em cada execução. Workflow 'Coletas pagas (Apify)'. Testes em tests/test_redes.py.
+
+**Por quê**
+
+- Pedido do pesquisador em 23/11/2026 18h13: US$ 10 para coletar todas as redes, incluindo transcrição paga se for necessária. A transcrição usa Whisper no próprio GitHub Actions, sem custo; a etapa paga fica de reserva.
+
+**O que foi executado de verdade**
+
+- python3 -m unittest discover -s tests: 91 testes, 1 pulado. Previsão pelos preços de referência: teste US$ 0,15; publicações US$ 4,88. Nenhuma execução paga neste commit.
+
+**O que ficou pendente**
+
+- Rodar a etapa de teste e comparar o custo real com a previsão antes da etapa de publicações.
+
+**Onde está a evidência**
+
+- data/config/coleta.json e tests/test_redes.py.
+
 ## 23/11/2026 · Página mostra YouTube, Trends, imprensa e checagens
 
 **O que mudou**

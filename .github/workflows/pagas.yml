@@ -1,0 +1,94 @@
+name: Coletas pagas (Apify)
+
+# TikTok, Instagram, X e Kwai por termo, pela Apify. Antes de cada rede o coletor chama a trava de gasto
+# (scripts/autorizacao.py), que soma os custos dos manifestos da etapa e compara com o teto de data/config/coleta.json.
+# Nenhuma consulta de saldo ou de limites da conta. Bruto e texto de terceiros vão só para o privado.
+# Disparo manual apenas.
+on:
+  workflow_dispatch:
+    inputs:
+      etapa:
+        description: "teste ou publicacoes"
+        default: "teste"
+      redes:
+        description: "Redes separadas por espaço"
+        default: "tiktok instagram x kwai"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gravacao-no-main
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      ETAPA: ${{ inputs.etapa }}
+      REDES: ${{ inputs.redes }}
+      RUN: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Testes
+        run: python -m unittest discover -s tests
+
+      - name: Repositório privado
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then echo "::error::ODI_INTERNO_TOKEN ausente"; exit 1; fi
+          git clone -q --depth 1 "https://x-access-token:${TOKEN}@github.com/WandersonH/canetas-emagrecedoras-secret.git" "$RUNNER_TEMP/privado"
+
+      - name: Coleta
+        env:
+          APIFY_TOKEN_CANETAS: ${{ secrets.APIFY_TOKEN_CANETAS }}
+        run: python scripts/collect_redes.py --etapa "$ETAPA" --privado "$RUNNER_TEMP/privado" --run-id "$RUN" --redes $REDES | tee resumo.txt
+
+      - name: Resumo e CHANGELOG
+        if: always()
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          python scripts/build_estado.py
+          args=()
+          while IFS= read -r linha; do
+            case "$linha" in gravado*|BLOQUEADO*) args+=(--executado "$linha");; esac
+          done < resumo.txt
+          [ ${#args[@]} -eq 0 ] && args=(--executado "Nenhuma rede gravou resultado; ver o log do run.")
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
+            --titulo "Coletas pagas, etapa $ETAPA (run $RUN)" \
+            --mudou "Manifestos em data/manifestos/ (com o custo de cada execução) e agregados em data/redes/$ETAPA.json." \
+            --porque "Autorização do pesquisador em 23/11/2026 18h13: US\$ 10 para coletar todas as redes, gravada em data/config/coleta.json." \
+            --executado "Workflow 'Coletas pagas (Apify)', run $RUN, etapa $ETAPA, redes: $REDES." \
+            "${args[@]}" \
+            --pendente "Revisão de homônimos e de contexto antes de contar menções; codificação do conteúdo." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN e os manifestos deste run."
+          python scripts/changelog_auto.py --arquivo "$RUNNER_TEMP/privado/CHANGELOG.md" \
+            --titulo "Bruto das coletas pagas, etapa $ETAPA (run $RUN)" \
+            --mudou "Bruto em bruto/<rede>/ e tabela de publicações de terceiros em terceiros/<rede>/." \
+            --porque "Texto e autor de terceiros ficam só neste repositório." \
+            --executado "Workflow 'Coletas pagas (Apify)' do repositório público, run $RUN." \
+            --pendente "Revisão de homônimos e de contexto." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN."
+
+      - name: Gravar no privado
+        if: always()
+        run: |
+          cd "$RUNNER_TEMP/privado"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
+          git commit -q -m "Bruto das coletas pagas, etapa $ETAPA (run $RUN)"
+          for t in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main || exit 1; sleep $((t * 10)); done
+          exit 1
+
+      - name: Gravar no público
+        if: always()
+        run: scripts/gravar_no_main.sh "Coletas pagas, etapa $ETAPA (run $RUN)" "$RUNNER_TEMP/entrada.md" data/manifestos data/redes

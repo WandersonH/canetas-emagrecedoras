@@ -71,7 +71,7 @@ class Coleta(unittest.TestCase):
             self.assertEqual(apify["autorizacao"].strip(), "", "frase de autorização sem teto")
 
     def test_etapas_esperadas(self):
-        self.assertEqual(set(self.coleta["apify"]["etapas"]), {"teste", "publicacoes", "comentarios", "terceiros", "reserva"})
+        self.assertEqual(set(self.coleta["apify"]["etapas"]), {"teste", "publicacoes", "comentarios", "transcricao", "reserva"})
 
     def test_segredo_e_so_o_nome(self):
         nomes = [self.coleta["apify"]["segredo"], self.coleta["privado"]["segredo"]]
