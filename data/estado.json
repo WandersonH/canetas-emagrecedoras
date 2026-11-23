@@ -1,6 +1,6 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": 4,
+  "manifestos_lidos": 8,
   "frentes": [
     {
       "id": "youtube",
@@ -90,60 +90,68 @@
       "nome": "TikTok",
       "via": "Apify",
       "paga": true,
-      "coletas": null,
+      "coletas": 1,
       "universo": null,
-      "universo_fonte": null,
-      "lido": null,
-      "amostra": null,
-      "amostra_como": null,
-      "cobertura": null,
-      "ultima_coleta": null,
-      "runs": []
+      "universo_fonte": "A busca da rede não informa o total de resultados.",
+      "lido": 30,
+      "amostra": 30,
+      "amostra_como": "publicações distintas, com data no período lido, entre até 15 itens por termo",
+      "cobertura": "parcial",
+      "ultima_coleta": "2026-11-23T21:17:24Z",
+      "runs": [
+        "45268074067"
+      ]
     },
     {
       "id": "instagram",
       "nome": "Instagram",
       "via": "Apify",
       "paga": true,
-      "coletas": null,
+      "coletas": 1,
       "universo": null,
-      "universo_fonte": null,
-      "lido": null,
-      "amostra": null,
-      "amostra_como": null,
-      "cobertura": null,
-      "ultima_coleta": null,
-      "runs": []
+      "universo_fonte": "A busca da rede não informa o total de resultados.",
+      "lido": 30,
+      "amostra": 30,
+      "amostra_como": "publicações distintas, com data no período lido, entre até 15 itens por termo",
+      "cobertura": "parcial",
+      "ultima_coleta": "2026-11-23T21:17:46Z",
+      "runs": [
+        "45268074067"
+      ]
     },
     {
       "id": "x",
       "nome": "X",
       "via": "Apify",
       "paga": true,
-      "coletas": null,
+      "coletas": 1,
       "universo": null,
-      "universo_fonte": null,
-      "lido": null,
-      "amostra": null,
-      "amostra_como": null,
-      "cobertura": null,
-      "ultima_coleta": null,
-      "runs": []
+      "universo_fonte": "A busca da rede não informa o total de resultados.",
+      "lido": 30,
+      "amostra": 30,
+      "amostra_como": "publicações distintas, com data no período lido, entre até 15 itens por termo",
+      "cobertura": "parcial",
+      "ultima_coleta": "2026-11-23T21:18:13Z",
+      "runs": [
+        "45268074067"
+      ]
     },
     {
       "id": "kwai",
       "nome": "Kwai",
       "via": "Apify",
       "paga": true,
-      "coletas": null,
+      "coletas": 1,
       "universo": null,
-      "universo_fonte": null,
-      "lido": null,
-      "amostra": null,
-      "amostra_como": null,
-      "cobertura": null,
-      "ultima_coleta": null,
-      "runs": []
+      "universo_fonte": "A busca da rede não informa o total de resultados.",
+      "lido": 10,
+      "amostra": 10,
+      "amostra_como": "publicações distintas, com data no período lido, entre até 10 itens por termo",
+      "cobertura": "parcial",
+      "ultima_coleta": "2026-11-23T21:18:22Z",
+      "runs": [
+        "45268074067"
+      ]
     }
   ]
 }

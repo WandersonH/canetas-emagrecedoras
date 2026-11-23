@@ -1,0 +1,120 @@
+{
+  "frente": "tiktok",
+  "etapa": "teste",
+  "run_id": "45268074067",
+  "iniciado_em": "2026-11-23T21:17:10Z",
+  "terminado_em": "2026-11-23T21:17:24Z",
+  "consulta": {
+    "termos": [
+      "Mounjaro",
+      "caneta do Paraguai"
+    ],
+    "ator": "apidojo~tiktok-scraper",
+    "busca": "palavra-chave, ordem de relevância da plataforma, sem filtro de data; corte pela data de publicação depois",
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23",
+    "itens_por_termo": 15,
+    "previsto_usd": 0.024,
+    "por_termo": [
+      {
+        "termo": "Mounjaro",
+        "itens": 15,
+        "lidos": 15,
+        "no_periodo": 15,
+        "no_limite": true,
+        "mais_antigo": "2025-12-07",
+        "erro": null,
+        "run": "3S93ReyGdDAD9T5HB",
+        "custo_usd": 0.012,
+        "chaves": [
+          "bookmarks",
+          "channel",
+          "collabInfo",
+          "comments",
+          "emails",
+          "hashtags",
+          "id",
+          "inputSource",
+          "isPinned",
+          "likes",
+          "links",
+          "locationCreated",
+          "phones",
+          "poi",
+          "postPage",
+          "shares",
+          "song",
+          "subtitleInformation",
+          "title",
+          "uploadedAt",
+          "uploadedAtFormatted",
+          "video",
+          "views"
+        ]
+      },
+      {
+        "termo": "caneta do Paraguai",
+        "itens": 15,
+        "lidos": 15,
+        "no_periodo": 15,
+        "no_limite": true,
+        "mais_antigo": "2026-01-21",
+        "erro": null,
+        "run": "JTdqgou7Nh0K7clQk",
+        "custo_usd": 0.012,
+        "chaves": [
+          "bookmarks",
+          "channel",
+          "collabInfo",
+          "comments",
+          "emails",
+          "hashtags",
+          "id",
+          "inputSource",
+          "isPinned",
+          "likes",
+          "links",
+          "locationCreated",
+          "phones",
+          "poi",
+          "postPage",
+          "shares",
+          "song",
+          "subtitleInformation",
+          "title",
+          "uploadedAt",
+          "uploadedAtFormatted",
+          "video",
+          "views"
+        ]
+      }
+    ]
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "A busca da rede não informa o total de resultados."
+  },
+  "lido": 30,
+  "amostra": {
+    "n": 30,
+    "como": "publicações distintas, com data no período lido, entre até 15 itens por termo"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0.024,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "bruto/tiktok/teste_20261123T211710Z.json",
+      "sha256": "e66b120cfeb60a11508370d1121a481920a906fe3cd743048ab66ff9b4e9f892",
+      "bytes": 177108,
+      "linhas": null
+    },
+    {
+      "caminho": "terceiros/tiktok/teste_20261123T211710Z.csv",
+      "sha256": "843bf6c365bbf1fd2da6d48150da2c9477f7f98152af00e3f89b5070a1f413a5",
+      "bytes": 9952,
+      "linhas": 31
+    }
+  ],
+  "bloqueios": []
+}

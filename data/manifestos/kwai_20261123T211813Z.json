@@ -1,0 +1,103 @@
+{
+  "frente": "kwai",
+  "etapa": "teste",
+  "run_id": "45268074067",
+  "iniciado_em": "2026-11-23T21:18:13Z",
+  "terminado_em": "2026-11-23T21:18:22Z",
+  "consulta": {
+    "termos": [
+      "Mounjaro",
+      "caneta do Paraguai"
+    ],
+    "ator": "unfenced-group~kwai-scraper",
+    "busca": "palavra-chave com postedAfter = início do período",
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23",
+    "itens_por_termo": 10,
+    "previsto_usd": 0.04,
+    "por_termo": [
+      {
+        "termo": "Mounjaro",
+        "itens": 10,
+        "lidos": 10,
+        "no_periodo": 10,
+        "no_limite": true,
+        "mais_antigo": "2025-01-20",
+        "erro": null,
+        "run": "wPRxuh3bCzMsWK21I",
+        "custo_usd": 0.02,
+        "chaves": [
+          "authorAvatar",
+          "authorBio",
+          "authorId",
+          "authorKwaiId",
+          "authorName",
+          "authorUrl",
+          "authorVerified",
+          "caption",
+          "commentCount",
+          "coverUrl",
+          "createTime",
+          "duration",
+          "firstFrameUrl",
+          "hashtags",
+          "height",
+          "likeCount",
+          "musicArtist",
+          "musicId",
+          "musicName",
+          "musicUrl",
+          "recordType",
+          "shareCount",
+          "sourceKeyword",
+          "tags",
+          "url",
+          "videoId",
+          "videoUrl",
+          "videoUrlVariants",
+          "viewCount",
+          "width"
+        ]
+      },
+      {
+        "termo": "caneta do Paraguai",
+        "itens": 0,
+        "lidos": 0,
+        "no_periodo": 0,
+        "no_limite": false,
+        "mais_antigo": null,
+        "erro": null,
+        "run": "HAeH7oL841ST8lAEL",
+        "custo_usd": 0.0,
+        "chaves": null
+      }
+    ]
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "A busca da rede não informa o total de resultados."
+  },
+  "lido": 10,
+  "amostra": {
+    "n": 10,
+    "como": "publicações distintas, com data no período lido, entre até 10 itens por termo"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0.02,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "bruto/kwai/teste_20261123T211813Z.json",
+      "sha256": "1b8da74db1676a174de5bf48a514cf29b24fd5690be3d7779beb85abce5179af",
+      "bytes": 22046,
+      "linhas": null
+    },
+    {
+      "caminho": "terceiros/kwai/teste_20261123T211813Z.csv",
+      "sha256": "13d4d54a65e5cb537c77d720dec73666e1ccdfc211e9f50d1d967218bdf18d0c",
+      "bytes": 2579,
+      "linhas": 11
+    }
+  ],
+  "bloqueios": []
+}

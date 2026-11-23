@@ -1,0 +1,164 @@
+{
+  "redes": {
+    "tiktok": {
+      "rede": "tiktok",
+      "publicacoes": 30,
+      "contas_distintas": 29,
+      "por_mes": {
+        "2025-12": 1,
+        "2026-01": 5,
+        "2026-03": 3,
+        "2026-04": 2,
+        "2026-05": 2,
+        "2026-06": 2,
+        "2026-07": 4,
+        "2026-08": 2,
+        "2026-09": 1,
+        "2026-10": 2,
+        "2026-11": 6
+      },
+      "visualizacoes_soma": 15225027,
+      "curtidas_soma": 381928,
+      "comentarios_soma": 9327,
+      "por_termo": [
+        {
+          "termo": "Mounjaro",
+          "itens": 15,
+          "lidos": 15,
+          "no_periodo": 15,
+          "no_limite": true,
+          "mais_antigo": "2025-12-07",
+          "erro": null
+        },
+        {
+          "termo": "caneta do Paraguai",
+          "itens": 15,
+          "lidos": 15,
+          "no_periodo": 15,
+          "no_limite": true,
+          "mais_antigo": "2026-01-21",
+          "erro": null
+        }
+      ],
+      "etapa": "teste",
+      "itens_por_termo": 15,
+      "obtido_em": "2026-11-23T21:17:10Z"
+    },
+    "instagram": {
+      "rede": "instagram",
+      "publicacoes": 30,
+      "contas_distintas": 27,
+      "por_mes": {
+        "2026-09": 1,
+        "2026-10": 4,
+        "2026-11": 25
+      },
+      "visualizacoes_soma": 9046166,
+      "curtidas_soma": 290812,
+      "comentarios_soma": 4923,
+      "por_termo": [
+        {
+          "termo": "Mounjaro",
+          "itens": 15,
+          "lidos": 15,
+          "no_periodo": 15,
+          "no_limite": true,
+          "mais_antigo": "2026-09-21",
+          "erro": null
+        },
+        {
+          "termo": "caneta do Paraguai",
+          "itens": 15,
+          "lidos": 15,
+          "no_periodo": 15,
+          "no_limite": true,
+          "mais_antigo": "2026-11-16",
+          "erro": null
+        }
+      ],
+      "etapa": "teste",
+      "itens_por_termo": 15,
+      "obtido_em": "2026-11-23T21:17:24Z"
+    },
+    "x": {
+      "rede": "x",
+      "publicacoes": 30,
+      "contas_distintas": 30,
+      "por_mes": {
+        "2026-08": 2,
+        "2026-09": 3,
+        "2026-10": 4,
+        "2026-11": 21
+      },
+      "visualizacoes_soma": 13061377,
+      "curtidas_soma": 68604,
+      "comentarios_soma": 1469,
+      "por_termo": [
+        {
+          "termo": "Mounjaro",
+          "itens": 15,
+          "lidos": 15,
+          "no_periodo": 15,
+          "no_limite": true,
+          "mais_antigo": "2026-08-26",
+          "erro": null
+        },
+        {
+          "termo": "caneta do Paraguai",
+          "itens": 15,
+          "lidos": 15,
+          "no_periodo": 15,
+          "no_limite": true,
+          "mais_antigo": "2026-08-29",
+          "erro": null
+        }
+      ],
+      "etapa": "teste",
+      "itens_por_termo": 15,
+      "obtido_em": "2026-11-23T21:17:46Z"
+    },
+    "kwai": {
+      "rede": "kwai",
+      "publicacoes": 10,
+      "contas_distintas": null,
+      "por_mes": {
+        "2025-01": 3,
+        "2025-02": 2,
+        "2025-03": 2,
+        "2025-04": 3
+      },
+      "visualizacoes_soma": 301536,
+      "curtidas_soma": 19758,
+      "comentarios_soma": 633,
+      "por_termo": [
+        {
+          "termo": "Mounjaro",
+          "itens": 10,
+          "lidos": 10,
+          "no_periodo": 10,
+          "no_limite": true,
+          "mais_antigo": "2025-01-20",
+          "erro": null
+        },
+        {
+          "termo": "caneta do Paraguai",
+          "itens": 0,
+          "lidos": 0,
+          "no_periodo": 0,
+          "no_limite": false,
+          "mais_antigo": null,
+          "erro": null
+        }
+      ],
+      "etapa": "teste",
+      "itens_por_termo": 10,
+      "obtido_em": "2026-11-23T21:18:13Z"
+    }
+  },
+  "nota": "Só agregados. Conta, texto e link de terceiros ficam no repositório privado.",
+  "periodo": {
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23"
+  },
+  "run_id": "45268074067"
+}

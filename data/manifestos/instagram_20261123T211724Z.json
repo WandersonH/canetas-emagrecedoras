@@ -1,0 +1,134 @@
+{
+  "frente": "instagram",
+  "etapa": "teste",
+  "run_id": "45268074067",
+  "iniciado_em": "2026-11-23T21:17:24Z",
+  "terminado_em": "2026-11-23T21:17:46Z",
+  "consulta": {
+    "termos": [
+      "Mounjaro",
+      "caneta do Paraguai"
+    ],
+    "ator": "apify~instagram-hashtag-scraper",
+    "busca": "hashtag formada pelo termo sem espaços nem acentos (Mounjaro → #mounjaro); posts recentes da hashtag; corte pela data de publicação depois",
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23",
+    "itens_por_termo": 15,
+    "previsto_usd": 0.078,
+    "por_termo": [
+      {
+        "termo": "Mounjaro",
+        "itens": 15,
+        "lidos": 15,
+        "no_periodo": 15,
+        "no_limite": true,
+        "mais_antigo": "2026-09-21",
+        "erro": null,
+        "run": "88V2DumguboicPJ4Y",
+        "custo_usd": 0.039,
+        "chaves": [
+          "caption",
+          "childPosts",
+          "commentsCount",
+          "dimensionsHeight",
+          "dimensionsWidth",
+          "displayUrl",
+          "fbLikeCount",
+          "fbPlayCount",
+          "firstComment",
+          "hashtags",
+          "id",
+          "images",
+          "inputUrl",
+          "isPinned",
+          "latestComments",
+          "likesCount",
+          "locationId",
+          "locationName",
+          "mentions",
+          "musicInfo",
+          "ownerFullName",
+          "ownerId",
+          "ownerUsername",
+          "paidPartnership",
+          "productType",
+          "shortCode",
+          "timestamp",
+          "type",
+          "url",
+          "videoDuration",
+          "videoPlayCount"
+        ]
+      },
+      {
+        "termo": "caneta do Paraguai",
+        "itens": 15,
+        "lidos": 15,
+        "no_periodo": 15,
+        "no_limite": true,
+        "mais_antigo": "2026-11-16",
+        "erro": null,
+        "run": "UizYJKveF4NN7coCI",
+        "custo_usd": 0.039,
+        "chaves": [
+          "caption",
+          "childPosts",
+          "commentsCount",
+          "dimensionsHeight",
+          "dimensionsWidth",
+          "displayUrl",
+          "fbLikeCount",
+          "fbPlayCount",
+          "firstComment",
+          "hashtags",
+          "id",
+          "images",
+          "inputUrl",
+          "isPinned",
+          "latestComments",
+          "likesCount",
+          "mentions",
+          "musicInfo",
+          "ownerFullName",
+          "ownerId",
+          "ownerUsername",
+          "paidPartnership",
+          "productType",
+          "shortCode",
+          "timestamp",
+          "type",
+          "url",
+          "videoDuration",
+          "videoPlayCount"
+        ]
+      }
+    ]
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "A busca da rede não informa o total de resultados."
+  },
+  "lido": 30,
+  "amostra": {
+    "n": 30,
+    "como": "publicações distintas, com data no período lido, entre até 15 itens por termo"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0.078,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "bruto/instagram/teste_20261123T211724Z.json",
+      "sha256": "70ca22259cdb17742af13457ae5b65c5b2e470df91bd535e3a905cd139078a67",
+      "bytes": 183543,
+      "linhas": null
+    },
+    {
+      "caminho": "terceiros/instagram/teste_20261123T211724Z.csv",
+      "sha256": "f9533102160d805a506ac7cebb576c08e3de6650da3fbe09447a4595eaf73696",
+      "bytes": 44974,
+      "linhas": 31
+    }
+  ],
+  "bloqueios": []
+}

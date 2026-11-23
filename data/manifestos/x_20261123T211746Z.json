@@ -1,0 +1,131 @@
+{
+  "frente": "x",
+  "etapa": "teste",
+  "run_id": "45268074067",
+  "iniciado_em": "2026-11-23T21:17:46Z",
+  "terminado_em": "2026-11-23T21:18:13Z",
+  "consulta": {
+    "termos": [
+      "Mounjaro",
+      "caneta do Paraguai"
+    ],
+    "ator": "xquik~x-tweet-scraper",
+    "busca": "busca do X com o termo entre aspas, lang:pt, since:<início do período>, sem republicações, ordem Top",
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23",
+    "itens_por_termo": 15,
+    "previsto_usd": 0.0045,
+    "por_termo": [
+      {
+        "termo": "Mounjaro",
+        "itens": 15,
+        "lidos": 15,
+        "no_periodo": 15,
+        "no_limite": true,
+        "mais_antigo": "2026-08-26",
+        "erro": null,
+        "run": "jlDWxNZ5970HTSkOD",
+        "custo_usd": 0.00225,
+        "chaves": [
+          "author",
+          "bookmarkCount",
+          "conversationId",
+          "createdAt",
+          "displayTextRange",
+          "edit",
+          "entities",
+          "id",
+          "input",
+          "isNoteTweet",
+          "isPinned",
+          "isQuoteStatus",
+          "isReply",
+          "isRetweet",
+          "isTranslatable",
+          "lang",
+          "likeCount",
+          "media",
+          "possiblySensitive",
+          "quoteCount",
+          "replyCount",
+          "retweetCount",
+          "text",
+          "textHighlights",
+          "type",
+          "url",
+          "viewCount",
+          "viewState"
+        ]
+      },
+      {
+        "termo": "caneta do Paraguai",
+        "itens": 15,
+        "lidos": 15,
+        "no_periodo": 15,
+        "no_limite": true,
+        "mais_antigo": "2026-08-29",
+        "erro": null,
+        "run": "bQKgstfA4YSvabu7B",
+        "custo_usd": 0.00225,
+        "chaves": [
+          "author",
+          "bookmarkCount",
+          "conversationId",
+          "createdAt",
+          "displayTextRange",
+          "edit",
+          "entities",
+          "id",
+          "inReplyToId",
+          "inReplyToUserId",
+          "inReplyToUsername",
+          "input",
+          "isNoteTweet",
+          "isPinned",
+          "isQuoteStatus",
+          "isReply",
+          "isRetweet",
+          "isTranslatable",
+          "lang",
+          "likeCount",
+          "quoteCount",
+          "replyCount",
+          "retweetCount",
+          "text",
+          "textHighlights",
+          "type",
+          "url",
+          "viewCount",
+          "viewState"
+        ]
+      }
+    ]
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "A busca da rede não informa o total de resultados."
+  },
+  "lido": 30,
+  "amostra": {
+    "n": 30,
+    "como": "publicações distintas, com data no período lido, entre até 15 itens por termo"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0.0045,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "bruto/x/teste_20261123T211746Z.json",
+      "sha256": "26b59ab0cc9eac31d87b61f77621cf1431e05bbc301b7aadd1989ee27dc38e8a",
+      "bytes": 133250,
+      "linhas": null
+    },
+    {
+      "caminho": "terceiros/x/teste_20261123T211746Z.csv",
+      "sha256": "f80a472c5c8c2c880570f5bcb6e48d1239bad41e3b58b37c52a4d6baff6e7dac",
+      "bytes": 10874,
+      "linhas": 31
+    }
+  ],
+  "bloqueios": []
+}

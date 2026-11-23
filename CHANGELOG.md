@@ -2,6 +2,32 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Coletas pagas, etapa teste (run 45268074067)
+
+**O que mudou**
+
+- Manifestos em data/manifestos/ (com o custo de cada execução) e agregados em data/redes/teste.json.
+
+**Por quê**
+
+- Autorização do pesquisador em 23/11/2026 18h13: US$ 10 para coletar todas as redes, gravada em data/config/coleta.json.
+
+**O que foi executado de verdade**
+
+- Workflow 'Coletas pagas (Apify)', run 45268074067, etapa teste, redes: tiktok instagram x kwai.
+- gravado data/manifestos/tiktok_20261123T211710Z.json: tiktok, 30 publicações no período
+- gravado data/manifestos/instagram_20261123T211724Z.json: instagram, 30 publicações no período
+- gravado data/manifestos/x_20261123T211746Z.json: x, 30 publicações no período
+- gravado data/manifestos/kwai_20261123T211813Z.json: kwai, 10 publicações no período
+
+**O que ficou pendente**
+
+- Revisão de homônimos e de contexto antes de contar menções; codificação do conteúdo.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45268074067 e os manifestos deste run.
+
 ## 23/11/2026 · Autorização de US$ 10 e coletor das redes pagas
 
 **O que mudou**
