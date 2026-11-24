@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Transcrição: ffmpeg instalado no runner
+
+**O que mudou**
+
+- .github/workflows/transcricao.yml instala o ffmpeg antes da transcrição.
+
+**Por quê**
+
+- No run 45309396335 os 80 vídeos do TikTok e do Kwai falharam com "No such file or directory: 'ffmpeg'": a imagem atual do runner não traz o ffmpeg.
+
+**O que foi executado de verdade**
+
+- `python -m unittest discover -s tests`. A transcrição roda de novo no workflow.
+
+**O que ficou pendente**
+
+- Conferir quantos vídeos foram transcritos.
+
+**Onde está a evidência**
+
+- data/manifestos/transcricao_20261124T020246Z.json e transcricao_20261124T020513Z.json (campo consulta.falhas).
+
 ## 24/11/2026 · Recuperação dos comentários pagos que não chegaram ao privado
 
 **O que mudou**
