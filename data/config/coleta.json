@@ -123,5 +123,33 @@
     "Mounjaro",
     "caneta do Paraguai"
   ],
-  "transcricao": "Whisper rodando no próprio GitHub Actions, sem custo. A etapa paga de transcrição só é usada se o Whisper não der conta."
+  "transcricao": "Whisper rodando no próprio GitHub Actions, sem custo. A etapa paga de transcrição só é usada se o Whisper não der conta.",
+  "comentarios": {
+    "nota": "Comentários das publicações já coletadas com mais comentários informados (amostra intencional). YouTube pela Data API, sem custo; as demais pela Apify, etapa 'comentarios'. Preços de referência das páginas dos atores na loja Apify, conferidos em 24/11/2026; o custo real de cada execução vai para o manifesto.",
+    "youtube": {
+      "publicacoes": 300,
+      "por_publicacao": 100
+    },
+    "tiktok": {
+      "ator": "clockworks~tiktok-comments-scraper",
+      "preco_item": 0.001,
+      "preco_fonte": "loja Apify, 24/11/2026: a partir de US$ 0,50 por 1.000 comentários; usado US$ 1,00 por 1.000, o preço citado para o plano gratuito",
+      "publicacoes": 40,
+      "por_publicacao": 25
+    },
+    "instagram": {
+      "ator": "apify~instagram-comment-scraper",
+      "preco_item": 0.0023,
+      "preco_fonte": "loja Apify, 24/11/2026: US$ 2,30 por 1.000 resultados",
+      "publicacoes": 15,
+      "por_publicacao": 20
+    },
+    "x": {
+      "ator": "xquik~x-tweet-scraper",
+      "preco_item": 0.00015,
+      "preco_fonte": "README do ator: US$ 0,00015 por linha",
+      "publicacoes": 40,
+      "por_publicacao": 25
+    }
+  }
 }

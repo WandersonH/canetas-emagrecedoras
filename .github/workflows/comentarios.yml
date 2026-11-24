@@ -1,0 +1,92 @@
+name: Comentários (YouTube e Apify)
+
+# Comentários das publicações já coletadas com mais comentários informados. YouTube pela Data API (cota diária);
+# TikTok, Instagram e X pela Apify, etapa "comentarios", com a trava de gasto (scripts/autorizacao.py).
+# Texto e autor só no privado; no público, contagens (o texto entra anonimizado no corpus). Disparo manual apenas.
+on:
+  workflow_dispatch:
+    inputs:
+      redes:
+        description: "Redes separadas por espaço"
+        default: "youtube tiktok instagram x"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gravacao-no-main
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      REDES: ${{ inputs.redes }}
+      RUN: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependências
+        run: pip install -q numpy scipy networkx emoji
+      - name: Testes
+        run: python -m unittest discover -s tests
+
+      - name: Repositório privado
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then echo "::error::ODI_INTERNO_TOKEN ausente"; exit 1; fi
+          git clone -q --depth 1 "https://x-access-token:${TOKEN}@github.com/WandersonH/canetas-emagrecedoras-secret.git" "$RUNNER_TEMP/privado"
+
+      - name: Coleta
+        env:
+          APIFY_TOKEN_CANETAS: ${{ secrets.APIFY_TOKEN_CANETAS }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python -u scripts/collect_comentarios.py --privado "$RUNNER_TEMP/privado" --run-id "$RUN" --redes $REDES | tee resumo.txt
+
+      - name: Resumo e CHANGELOG
+        if: always()
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          python scripts/build_estado.py
+          args=()
+          while IFS= read -r linha; do
+            case "$linha" in gravado*|BLOQUEADO*|ERRO*) args+=(--executado "$linha");; esac
+          done < resumo.txt
+          [ ${#args[@]} -eq 0 ] && args=(--executado "Nenhuma rede gravou resultado; ver o log do run.")
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
+            --titulo "Comentários (run $RUN)" \
+            --mudou "Manifestos em data/manifestos/ (com o custo de cada execução paga) e contagens em data/comentarios/resumo.json." \
+            --porque "Decisão do pesquisador em 23/11/2026: comentários no público como texto anonimizado inteiro; autorização de gasto de 23/11/2026 18h13." \
+            --executado "Workflow 'Comentários (YouTube e Apify)', run $RUN, redes: $REDES." \
+            "${args[@]}" \
+            --pendente "Rodar as análises para levar os comentários anonimizados ao corpus." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN e os manifestos deste run."
+          python scripts/changelog_auto.py --arquivo "$RUNNER_TEMP/privado/CHANGELOG.md" \
+            --titulo "Comentários de terceiros (run $RUN)" \
+            --mudou "Bruto em bruto/comentarios/<rede>/ e tabela com texto e autor em terceiros/comentarios/<rede>/." \
+            --porque "Texto e autor de terceiros ficam só neste repositório." \
+            --executado "Workflow 'Comentários (YouTube e Apify)' do repositório público, run $RUN." \
+            --pendente "Nenhuma." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN."
+
+      - name: Gravar no privado
+        if: always()
+        run: |
+          cd "$RUNNER_TEMP/privado"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
+          git commit -q -m "Comentários de terceiros (run $RUN)"
+          for t in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main || exit 1; sleep $((t * 10)); done
+          exit 1
+
+      - name: Gravar no público
+        if: always()
+        run: scripts/gravar_no_main.sh "Comentários (run $RUN)" "$RUNNER_TEMP/entrada.md" data/manifestos data/comentarios

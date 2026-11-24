@@ -2,6 +2,35 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Coletores de dados públicos da Anvisa, checagens das agências e comentários
+
+**O que mudou**
+
+- scripts/collect_anvisa.py: registro de medicamentos, preços da CMED, VigiMed (notificações, medicamentos e reações) e SNGPC (industrializados e manipulados, meses publicados desde o início do período). Cada arquivo é lido inteiro, em fluxo; ficam as linhas que citam substância ou marca de data/config/termos.json. Universo = linhas do arquivo, contadas na leitura. Linhas com dado de paciente (VigiMed, SNGPC) só no privado; no público, contagens, com "<5" para contagem pequena.
+- scripts/collect_checagens_agencias.py: Google Notícias restrito ao site de cada agência brasileira (Lupa, Aos Fatos, Estadão Verifica, Fato ou Fake, AFP Checamos, Comprova, UOL Confere, Boatos.org, E-farsas), dois grupos de termos, período lido. Saída em data/checagens/agencias.json.
+- scripts/collect_comentarios.py: comentários das publicações já coletadas com mais comentários informados. YouTube pela Data API; TikTok, Instagram e X pela Apify na etapa "comentarios", com a trava de gasto. Texto e autor só no privado; no público, contagens em data/comentarios/resumo.json.
+- data/config/coleta.json: bloco "comentarios" com atores, preços de referência e quantas publicações entram por rede.
+- scripts/build_corpus.py e index.html: comentários e checagens das agências entram no corpus, com os textos de terceiros anonimizados.
+- scripts/gravar_no_main.sh: só adiciona ao commit as pastas que existem.
+- Workflows manuais dados_publicos.yml e comentarios.yml. Testes novos: test_anvisa, test_checagens_agencias, test_comentarios.
+
+**Por quê**
+
+- Pedido do pesquisador em 23/11/2026 22h26: "monte de coisa sem coletar ainda prossiga". A Fact Check Tools API trouxe só 6 checagens, todas em inglês.
+
+**O que foi executado de verdade**
+
+- `python scripts/build_estado.py` e `python -m unittest discover -s tests` (119 testes, 1 pulado) antes do commit. Os coletores ainda não rodaram com dados reais: a sandbox não alcança a Anvisa; a execução vai pelos workflows.
+
+**O que ficou pendente**
+
+- Rodar os dois workflows e conferir as colunas usadas pelos agregados da Anvisa (campo colunas_usadas) com o dicionário de dados.
+- Comentários do YouTube dependem da cota diária, que se renova às 05h (Brasília).
+
+**Onde está a evidência**
+
+- Este commit, os testes novos e, depois, os runs dos workflows.
+
 ## 23/11/2026 · Análises de texto e redes (run 45303707816)
 
 **O que mudou**

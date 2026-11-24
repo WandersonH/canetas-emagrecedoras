@@ -336,7 +336,7 @@
     por("ck-lista",xs.length?'<div class="tablewrap"><table class="datatable"><thead><tr><th>Data</th><th>Agência</th><th>Rótulo da agência</th><th>Checagem</th></tr></thead><tbody>'+xs.map(function(x){return "<tr><td>"+val(dataBR(x.data))+"</td><td>"+val(x.agencia)+"</td><td>"+val(x.rotulo)+"</td><td>"+link(x.link,x.titulo||x.alegacao||x.link)+"</td></tr>";}).join("")+"</tbody></table></div>":'<div class="ce-vazio"><b>⛔ Nenhuma checagem no período.</b></div>');
   }
 
-  var SEG=null,SEG_P=null,FONTE_NOME={youtube:"YouTube",tiktok:"TikTok",instagram:"Instagram",x:"X",kwai:"Kwai",imprensa:"Imprensa",checagens:"Checagens"};
+  var SEG=null,SEG_P=null,FONTE_NOME={youtube:"YouTube",tiktok:"TikTok",instagram:"Instagram",x:"X",kwai:"Kwai",comentario_youtube:"Comentários do YouTube",comentario_tiktok:"Comentários do TikTok",comentario_instagram:"Comentários do Instagram",comentario_x:"Respostas no X",imprensa:"Imprensa",checagens:"Checagens"};
   function segmentos(){if(!SEG_P){SEG_P=fetch("./data/corpus/segmentos.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(x){SEG=x;return x;});}return SEG_P;}
   var LEITOR={itens:[],fonte:null,busca:"",limite:100};
   function desenhaLeitor(){

@@ -21,7 +21,9 @@ for tentativa in 1 2 3 4; do
   python scripts/build_estado.py
   python scripts/changelog_auto.py --inserir-de "$entrada"
   python -m unittest discover -s tests
-  git add -A -- "$@" data/estado.json CHANGELOG.md
+  existentes=()
+  for pasta in "$@"; do [ -e "$pasta" ] && existentes+=("$pasta"); done
+  git add -A -- "${existentes[@]}" data/estado.json CHANGELOG.md
   if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
   git commit -q -m "$mensagem"
   if git push -q origin HEAD:main; then echo "gravado na tentativa $tentativa"; exit 0; fi

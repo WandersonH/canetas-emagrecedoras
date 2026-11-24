@@ -42,7 +42,8 @@ import redes  # noqa: E402
 PALAVRAS_SEGMENTO = 40
 MAX_SEGMENTOS = 12000
 SEMENTE = 2026
-FONTES = ("youtube", "tiktok", "instagram", "x", "kwai", "imprensa", "checagens")
+FONTES = ("youtube", "tiktok", "instagram", "x", "kwai", "comentario_youtube", "comentario_tiktok", "comentario_instagram",
+          "comentario_x", "imprensa", "checagens")
 csv.field_size_limit(10 ** 8)
 
 
@@ -113,6 +114,15 @@ def textos(privado: pathlib.Path, inicio: str, fim: str) -> list[dict]:
     if imp.exists():
         for n in comum.carregar(imp)["noticias"]:
             add("imprensa", n["link"], n.get("data"), n.get("titulo"), n.get("veiculo"), n.get("termos") or [], n["link"], n.get("veiculo"))
+    for rede_id in ("youtube", "tiktok", "instagram", "x"):  # comentários: texto e autor só no privado
+        for caminho in sorted(glob.glob(str(privado / "terceiros" / "comentarios" / rede_id / "*.csv"))):
+            for r in ler_csv(caminho):
+                add(f"comentario_{rede_id}", r["comentario_id"], r.get("publicado_em"), r.get("texto"), r.get("autor"), [])
+    ag = comum.RAIZ / "data" / "checagens" / "agencias.json"
+    if ag.exists():
+        for c in comum.carregar(ag)["checagens"]:
+            add("checagens", c["link"], c.get("data"), c.get("titulo"), c.get("agencia"), c.get("grupos") or [], c["link"],
+                c.get("agencia"))
     chk = comum.RAIZ / "data" / "checagens" / "checagens.json"
     if chk.exists():
         for c in comum.carregar(chk)["checagens"]:
