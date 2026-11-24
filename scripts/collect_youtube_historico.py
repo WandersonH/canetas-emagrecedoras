@@ -124,8 +124,9 @@ def main(argumentos=None) -> int:
     for mes, de, ate in ([] if esgotou else meses(inicio, fim)):
         for termo in termos:
             chave_estado = f"{termo}|{mes}"
-            # o mês corrente é sempre refeito, porque ainda está em andamento
-            if chave_estado in estado["feitos"] and mes != fim.strftime("%Y-%m"):
+            # o mês corrente só é refeito quando todos os outros já estão feitos, para não gastar cota antes da hora
+            pendentes_antigos = any(f"{t}|{m}" not in estado["feitos"] for m, _, _ in meses(inicio, fim) if m != fim.strftime("%Y-%m") for t in termos)
+            if chave_estado in estado["feitos"] and (mes != fim.strftime("%Y-%m") or pendentes_antigos):
                 continue
             try:
                 r = buscar_mes(chave, termo, de, ate, opcoes.paginas)

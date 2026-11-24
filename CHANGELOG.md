@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Carga histórica do YouTube: mês corrente refeito só no fim
+
+**O que mudou**
+
+- scripts/collect_youtube_historico.py: o mês em andamento só é buscado de novo quando todos os meses anteriores estiverem feitos.
+
+**Por quê**
+
+- O run 45301471096 mostrou o ritmo real: 53 de 345 pares termo × mês feitos, cota diária de cerca de 100 buscas. Refazer o mês corrente todo dia gastaria 15 buscas por dia e empurraria o fim da carga para depois de sexta 27/11.
+
+**O que foi executado de verdade**
+
+- Run 45301471096: 53 pares recuperados do bruto, 4 buscas novas, cota esgotada, 1.744 vídeos distintos. python3 -m unittest discover -s tests: todos passaram, 1 pulado.
+
+**O que ficou pendente**
+
+- Faltam 292 pares: cerca de 3 runs, um por dia, de terça 24 a quinta 26/11; sexta fica de folga.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45301471096 e data/youtube/historico.json.
+
 ## 23/11/2026 · YouTube histórico (run 45301471096)
 
 **O que mudou**
