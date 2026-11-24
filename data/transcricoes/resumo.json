@@ -2,25 +2,29 @@
   "redes": {
     "tiktok": {
       "videos_no_periodo": 603,
-      "tentados": 60,
-      "transcritos": 59,
+      "tentados": 300,
+      "transcritos": 298,
+      "transcritos_no_total": 340,
+      "palavras_no_total": 52374,
       "falhas_por_motivo": {
-        "RuntimeError": 1
+        "RuntimeError": 2
       },
-      "palavras": 5590,
-      "segundos": 4716,
-      "obtido_em": "2026-11-24T02:13:32Z",
-      "run_id": "45310677443"
+      "palavras": 46784,
+      "segundos": 24406,
+      "obtido_em": "2026-11-24T02:38:48Z",
+      "run_id": "45313803598"
     },
     "kwai": {
       "videos_no_periodo": 82,
-      "tentados": 20,
-      "transcritos": 20,
+      "tentados": 65,
+      "transcritos": 65,
+      "transcritos_no_total": 82,
+      "palavras_no_total": 10782,
       "falhas_por_motivo": {},
-      "palavras": 4225,
-      "segundos": 1557,
-      "obtido_em": "2026-11-24T02:30:21Z",
-      "run_id": "45310677443"
+      "palavras": 6557,
+      "segundos": 2928,
+      "obtido_em": "2026-11-24T03:47:11Z",
+      "run_id": "45313803598"
     },
     "youtube": {
       "videos_no_periodo": 3372,
