@@ -1,0 +1,21 @@
+{
+  "nota": "Pré-codificação dos comentários por dicionário aberto: indica candidatos, não decide. Expressões aplicadas ao texto em minúsculas e sem acento; um comentário pode ter várias marcas. A validação é humana. Relato de uso, peso, doença ou efeito colateral aparece só em percentuais e no texto anonimizado.",
+  "redes": {
+    "youtube": {
+      "comentarios": 21326,
+      "tom_classificados": 21326
+    },
+    "tiktok": {
+      "comentarios": 443,
+      "tom_classificados": 443
+    },
+    "instagram": {
+      "comentarios": 284,
+      "tom_classificados": 284
+    },
+    "x": {
+      "comentarios": 990,
+      "tom_classificados": 990
+    }
+  }
+}

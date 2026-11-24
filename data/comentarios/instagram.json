@@ -1,0 +1,713 @@
+{
+  "rede": "instagram",
+  "comentarios": 284,
+  "autores_distintos": 277,
+  "publicacoes": 15,
+  "periodo": [
+    "2026-08-15",
+    "2026-11-24"
+  ],
+  "tom": {
+    "modelo": "pysentimiento/bertweet-pt-sentiment",
+    "classificados": 284,
+    "distribuicao": {
+      "neutro": 167,
+      "positivo": 90,
+      "negativo": 27
+    },
+    "por_mes": {
+      "2026-08": {
+        "neutro": 17,
+        "positivo": 7,
+        "negativo": 2
+      },
+      "2026-09": {
+        "positivo": 8,
+        "neutro": 27,
+        "negativo": 2
+      },
+      "2026-10": {
+        "neutro": 36,
+        "negativo": 12,
+        "positivo": 28
+      },
+      "2026-11": {
+        "positivo": 47,
+        "neutro": 87,
+        "negativo": 11
+      }
+    }
+  },
+  "marcas": [
+    {
+      "id": "efeito_colateral",
+      "rotulo": "efeito colateral",
+      "n": 0,
+      "pct": 0.0,
+      "curtidas_medianas": null
+    },
+    {
+      "id": "resultado",
+      "rotulo": "resultado e perda de peso",
+      "n": 4,
+      "pct": 1.4,
+      "curtidas_medianas": 26
+    },
+    {
+      "id": "preco",
+      "rotulo": "preço e acesso",
+      "n": 2,
+      "pct": 0.7,
+      "curtidas_medianas": 118
+    },
+    {
+      "id": "receita_medico",
+      "rotulo": "receita e acompanhamento médico",
+      "n": 11,
+      "pct": 3.9,
+      "curtidas_medianas": 0
+    },
+    {
+      "id": "risco_medo",
+      "rotulo": "risco e medo",
+      "n": 0,
+      "pct": 0.0,
+      "curtidas_medianas": null
+    },
+    {
+      "id": "desconfianca",
+      "rotulo": "desconfiança e desinformação",
+      "n": 0,
+      "pct": 0.0,
+      "curtidas_medianas": null
+    },
+    {
+      "id": "venda",
+      "rotulo": "venda e indicação de compra",
+      "n": 0,
+      "pct": 0.0,
+      "curtidas_medianas": null
+    },
+    {
+      "id": "corpo_estetica",
+      "rotulo": "corpo e aparência",
+      "n": 3,
+      "pct": 1.1,
+      "curtidas_medianas": 0
+    },
+    {
+      "id": "alternativas",
+      "rotulo": "alternativas (dieta, exercício, natural)",
+      "n": 4,
+      "pct": 1.4,
+      "curtidas_medianas": 1
+    },
+    {
+      "id": "fe_religiao",
+      "rotulo": "fé e religião",
+      "n": 3,
+      "pct": 1.1,
+      "curtidas_medianas": 1
+    },
+    {
+      "id": "apoio_criador",
+      "rotulo": "elogio ou agradecimento a quem publicou",
+      "n": 3,
+      "pct": 1.1,
+      "curtidas_medianas": 0
+    }
+  ],
+  "aderencia": {
+    "comentarios_que_citam_o_tema": 25,
+    "pct": 8.8,
+    "comentarios_em_publicacao_que_cita_o_tema": 135
+  },
+  "por_dia": {
+    "2026-08-15": 5,
+    "2026-08-16": 6,
+    "2026-08-17": 1,
+    "2026-08-22": 2,
+    "2026-08-24": 1,
+    "2026-08-26": 1,
+    "2026-08-27": 1,
+    "2026-08-31": 9,
+    "2026-09-01": 3,
+    "2026-09-02": 4,
+    "2026-09-03": 1,
+    "2026-09-04": 1,
+    "2026-09-05": 3,
+    "2026-09-06": 2,
+    "2026-09-07": 1,
+    "2026-09-10": 2,
+    "2026-09-14": 1,
+    "2026-09-15": 3,
+    "2026-09-17": 1,
+    "2026-09-19": 1,
+    "2026-09-21": 1,
+    "2026-09-22": 1,
+    "2026-09-25": 2,
+    "2026-09-26": 3,
+    "2026-09-28": 4,
+    "2026-09-30": 3,
+    "2026-10-01": 1,
+    "2026-10-02": 2,
+    "2026-10-05": 1,
+    "2026-10-07": 1,
+    "2026-10-08": 6,
+    "2026-10-09": 14,
+    "2026-10-11": 2,
+    "2026-10-12": 2,
+    "2026-10-13": 3,
+    "2026-10-14": 1,
+    "2026-10-16": 1,
+    "2026-10-19": 1,
+    "2026-10-24": 11,
+    "2026-10-25": 11,
+    "2026-10-26": 4,
+    "2026-10-27": 4,
+    "2026-10-28": 5,
+    "2026-10-29": 2,
+    "2026-10-30": 4,
+    "2026-11-01": 1,
+    "2026-11-02": 2,
+    "2026-11-03": 1,
+    "2026-11-05": 3,
+    "2026-11-07": 4,
+    "2026-11-08": 1,
+    "2026-11-09": 3,
+    "2026-11-10": 1,
+    "2026-11-11": 2,
+    "2026-11-12": 4,
+    "2026-11-13": 4,
+    "2026-11-14": 2,
+    "2026-11-15": 5,
+    "2026-11-16": 4,
+    "2026-11-17": 5,
+    "2026-11-18": 7,
+    "2026-11-19": 8,
+    "2026-11-20": 14,
+    "2026-11-21": 17,
+    "2026-11-22": 7,
+    "2026-11-23": 31,
+    "2026-11-24": 19
+  },
+  "nuvem": [
+    {
+      "forma": "protocolo",
+      "n": 19
+    },
+    {
+      "forma": "listar",
+      "n": 19
+    },
+    {
+      "forma": "fibra",
+      "n": 19
+    },
+    {
+      "forma": "semana",
+      "n": 17
+    },
+    {
+      "forma": "suplemento",
+      "n": 17
+    },
+    {
+      "forma": "risada",
+      "n": 16
+    },
+    {
+      "forma": "receita",
+      "n": 13
+    },
+    {
+      "forma": "tomar",
+      "n": 11
+    },
+    {
+      "forma": "querer",
+      "n": 8
+    },
+    {
+      "forma": "so",
+      "n": 8
+    },
+    {
+      "forma": "bom",
+      "n": 8
+    },
+    {
+      "forma": "estar",
+      "n": 8
+    },
+    {
+      "forma": "lula",
+      "n": 7
+    },
+    {
+      "forma": "picanha",
+      "n": 7
+    },
+    {
+      "forma": "comer",
+      "n": 6
+    },
+    {
+      "forma": "caneta",
+      "n": 6
+    },
+    {
+      "forma": "ficar",
+      "n": 6
+    },
+    {
+      "forma": "precisar",
+      "n": 5
+    },
+    {
+      "forma": "prometer",
+      "n": 5
+    },
+    {
+      "forma": "emagrecer",
+      "n": 5
+    },
+    {
+      "forma": "passar",
+      "n": 5
+    },
+    {
+      "forma": "dormir",
+      "n": 5
+    },
+    {
+      "forma": "agua",
+      "n": 5
+    }
+  ],
+  "rede_palavras": {
+    "nos": [
+      {
+        "id": "agua",
+        "rotulo": "agua",
+        "tipo": "palavra",
+        "n": 5,
+        "grupo": 1,
+        "x": 3.4149,
+        "y": 0.5339,
+        "seg": [
+          16,
+          33,
+          41,
+          45,
+          114
+        ]
+      },
+      {
+        "id": "tomar",
+        "rotulo": "tomar",
+        "tipo": "palavra",
+        "n": 11,
+        "grupo": 1,
+        "x": 2.15,
+        "y": 0.7311,
+        "seg": [
+          16,
+          17,
+          41,
+          43,
+          44,
+          46,
+          48,
+          61,
+          67,
+          114,
+          234
+        ]
+      },
+      {
+        "id": "picanha",
+        "rotulo": "picanha",
+        "tipo": "palavra",
+        "n": 7,
+        "grupo": 0,
+        "x": 0.5394,
+        "y": 1.645,
+        "seg": [
+          71,
+          75,
+          77,
+          80,
+          81,
+          85,
+          87
+        ]
+      },
+      {
+        "id": "prometer",
+        "rotulo": "prometer",
+        "tipo": "palavra",
+        "n": 5,
+        "grupo": 0,
+        "x": 0.8196,
+        "y": 1.14,
+        "seg": [
+          71,
+          75,
+          81,
+          85,
+          112
+        ]
+      },
+      {
+        "id": "caneta",
+        "rotulo": "caneta",
+        "tipo": "palavra",
+        "n": 6,
+        "grupo": 2,
+        "x": 1.4563,
+        "y": 0.6653,
+        "seg": [
+          75,
+          85,
+          106,
+          112,
+          130,
+          135
+        ]
+      },
+      {
+        "id": "emagrecer",
+        "rotulo": "emagrecer",
+        "tipo": "palavra",
+        "n": 5,
+        "grupo": 2,
+        "x": 2.0,
+        "y": 0.261,
+        "seg": [
+          15,
+          75,
+          80,
+          112,
+          130
+        ]
+      },
+      {
+        "id": "risada",
+        "rotulo": "risada",
+        "tipo": "palavra",
+        "n": 16,
+        "grupo": 0,
+        "x": 0.1847,
+        "y": 1.2887,
+        "seg": [
+          18,
+          28,
+          37,
+          81,
+          85,
+          87,
+          107,
+          109,
+          112,
+          113,
+          126,
+          129,
+          132,
+          133,
+          134,
+          271
+        ]
+      }
+    ],
+    "arestas": [
+      [
+        "picanha",
+        "prometer",
+        4
+      ],
+      [
+        "agua",
+        "tomar",
+        3
+      ],
+      [
+        "picanha",
+        "risada",
+        3
+      ],
+      [
+        "prometer",
+        "caneta",
+        3
+      ],
+      [
+        "prometer",
+        "risada",
+        3
+      ],
+      [
+        "caneta",
+        "emagrecer",
+        3
+      ]
+    ],
+    "total_nos": 23,
+    "total_arestas": 6,
+    "comunidades": 3,
+    "desenho": "os 110 nós mais frequentes; cada um com as suas 4 ligações mais fortes"
+  },
+  "mencoes": {
+    "nos": [
+      {
+        "id": "A23201",
+        "rotulo": "A23201",
+        "tipo": "comentarista",
+        "n": 0,
+        "grupo": 1,
+        "x": 2.15,
+        "y": 0.4369
+      },
+      {
+        "id": "M0001",
+        "rotulo": "M0001",
+        "tipo": "marcada",
+        "n": 1,
+        "grupo": 1,
+        "x": 2.9059,
+        "y": 0.319
+      },
+      {
+        "id": "C01468",
+        "rotulo": "C01468",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 0.1073,
+        "y": 1.5104
+      },
+      {
+        "id": "M0002",
+        "rotulo": "M0002",
+        "tipo": "marcada",
+        "n": 13,
+        "grupo": 0,
+        "x": 0.999,
+        "y": 0.995
+      },
+      {
+        "id": "C01469",
+        "rotulo": "C01469",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 1.9922,
+        "y": 1.2217
+      },
+      {
+        "id": "A23140",
+        "rotulo": "A23140",
+        "tipo": "comentarista",
+        "n": 0,
+        "grupo": 2,
+        "x": 3.8119,
+        "y": 0.319
+      },
+      {
+        "id": "A3315",
+        "rotulo": "A3315",
+        "tipo": "comentarista",
+        "n": 1,
+        "grupo": 2,
+        "x": 3.0559,
+        "y": 0.4369
+      },
+      {
+        "id": "C01479",
+        "rotulo": "C01479",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 1.319,
+        "y": 0.0761
+      },
+      {
+        "id": "C01481",
+        "rotulo": "C01481",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 0.8431,
+        "y": 0.0
+      },
+      {
+        "id": "C01482",
+        "rotulo": "C01482",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 1.7432,
+        "y": 1.647
+      },
+      {
+        "id": "C01483",
+        "rotulo": "C01483",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 0.4122,
+        "y": 0.2228
+      },
+      {
+        "id": "C01484",
+        "rotulo": "C01484",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 0.4697,
+        "y": 1.9146
+      },
+      {
+        "id": "C01491",
+        "rotulo": "C01491",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 0.046,
+        "y": 0.5608
+      },
+      {
+        "id": "C01495",
+        "rotulo": "C01495",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 1.7478,
+        "y": 0.2975
+      },
+      {
+        "id": "C01510",
+        "rotulo": "C01510",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 1.35,
+        "y": 1.9988
+      },
+      {
+        "id": "C01512",
+        "rotulo": "C01512",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 0.1083,
+        "y": 1.0331
+      },
+      {
+        "id": "C01537",
+        "rotulo": "C01537",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 1.9382,
+        "y": 0.7418
+      },
+      {
+        "id": "C01553",
+        "rotulo": "C01553",
+        "tipo": "marcada",
+        "n": 0,
+        "grupo": 0,
+        "x": 0.9242,
+        "y": 1.7805
+      }
+    ],
+    "arestas": [
+      [
+        "A23201",
+        "M0001",
+        1
+      ],
+      [
+        "C01468",
+        "M0002",
+        1
+      ],
+      [
+        "M0002",
+        "C01469",
+        1
+      ],
+      [
+        "M0002",
+        "C01479",
+        1
+      ],
+      [
+        "M0002",
+        "C01481",
+        1
+      ],
+      [
+        "M0002",
+        "C01482",
+        1
+      ],
+      [
+        "M0002",
+        "C01483",
+        1
+      ],
+      [
+        "M0002",
+        "C01484",
+        1
+      ],
+      [
+        "M0002",
+        "C01491",
+        1
+      ],
+      [
+        "M0002",
+        "C01495",
+        1
+      ],
+      [
+        "M0002",
+        "C01510",
+        1
+      ],
+      [
+        "M0002",
+        "C01512",
+        1
+      ],
+      [
+        "M0002",
+        "C01537",
+        1
+      ],
+      [
+        "M0002",
+        "C01553",
+        1
+      ],
+      [
+        "A23140",
+        "A3315",
+        1
+      ]
+    ],
+    "total_nos": 18,
+    "total_arestas": 15,
+    "comunidades": 3,
+    "desenho": "os 300 nós mais frequentes"
+  },
+  "mencoes_total": 15,
+  "chd": null,
+  "fora_por_idioma": {
+    "es": 4,
+    "en": 10
+  }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3">
+<graph defaultedgetype="undirected">
+<attributes class="node"><attribute id="0" title="tipo" type="string"/><attribute id="1" title="peso" type="double"/><attribute id="2" title="comunidade" type="string"/></attributes>
+<nodes>
+<node id="A23201" label="A23201"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="0"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="M0001" label="M0001"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="1"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="C01468" label="C01468"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="M0002" label="M0002"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="13"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01469" label="C01469"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="A23140" label="A23140"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="0"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="A3315" label="A3315"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="1"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="C01479" label="C01479"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01481" label="C01481"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01482" label="C01482"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01483" label="C01483"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01484" label="C01484"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01491" label="C01491"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01495" label="C01495"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01510" label="C01510"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01512" label="C01512"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01537" label="C01537"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="C01553" label="C01553"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
+</nodes><edges>
+<edge id="0" source="A23201" target="M0001" weight="1"/>
+<edge id="1" source="C01468" target="M0002" weight="1"/>
+<edge id="2" source="C01469" target="M0002" weight="1"/>
+<edge id="3" source="A23140" target="A3315" weight="1"/>
+<edge id="4" source="C01479" target="M0002" weight="1"/>
+<edge id="5" source="C01481" target="M0002" weight="1"/>
+<edge id="6" source="C01482" target="M0002" weight="1"/>
+<edge id="7" source="C01483" target="M0002" weight="1"/>
+<edge id="8" source="C01484" target="M0002" weight="1"/>
+<edge id="9" source="C01491" target="M0002" weight="1"/>
+<edge id="10" source="C01495" target="M0002" weight="1"/>
+<edge id="11" source="C01510" target="M0002" weight="1"/>
+<edge id="12" source="C01512" target="M0002" weight="1"/>
+<edge id="13" source="C01537" target="M0002" weight="1"/>
+<edge id="14" source="C01553" target="M0002" weight="1"/>
+</edges>
+</graph>
+</gexf>

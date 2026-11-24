@@ -1,24 +1,119 @@
 caso,rede,comunidade,nos,pct_nos,pct_peso_interno,nos_de_maior_grau
-redes,fontes_termos,1,806,3.23,6.12,Mounjaro | VEJA | UOL | kwai (sem autor informado) | Instagram
-redes,fontes_termos,2,798,3.2,7.28,caneta emagrecedora | Metrópoles | Terra | NeoFeed | UOL Notícias
-redes,fontes_termos,3,685,2.75,7.69,Ozempic | CNN Brasil | O GLOBO | Exame | Valor Econômico
-redes,fontes_termos,4,601,2.41,6.89,tirzepatida | G1 | Campo Grande News | Panorama Farmacêutico | x A3655
-redes,fontes_termos,5,577,2.31,5.34,liraglutida | Saxenda | x A3601 | x A3460 | JOTA Info
-redes,fontes_termos,6,564,2.26,4.08,caneta para emagrecer | youtube A1410 | youtube A0259 | youtube A0781 | youtube A1047
-redes,fontes_termos,7,431,1.73,4.46,Wegovy | Estadão | x A2882 | x A3373 | Olhar Digital
-redes,fontes_termos,8,420,1.68,5.51,semaglutida | Assine Abril | Folha de S.Paulo | InfoMoney | Agência Brasil
-redes,fontes_termos,9,377,1.51,2.76,caneta do Paraguai | youtube A0282 | youtube A0488 | youtube A0132 | youtube A1051
-redes,fontes_termos,10,369,1.48,3.6,retatrutida | youtube A0254 | youtube A0223 | youtube A0448 | x A5420
-redes,fontes_termos,11,329,1.32,2.23,Mounjaro sem receita | Ozempic sem receita | youtube A0602 | youtube A1923 | youtube A0723
-redes,hashtags,1,92,28.05,25.86,#emagrecimento | #mounjaro | #tirzepatida | #ozempic | #semaglutida
-redes,hashtags,2,75,22.87,6.81,#perdadepeso | #retatrutida | #dieta | #nutrição | #emagrecer
-redes,hashtags,3,70,21.34,5.46,#obesidade | #saúde | #anvisa | #diabetes | #endocrinologia
-redes,hashtags,4,51,15.55,2.39,#viral | #paraguai | #brasil | #monjaro | #fyp
-redes,hashtags,5,38,11.59,2.8,#saude | #shorts | #bemestar | #medicina | #nutricao
-redes,palavras,1,630,32.14,14.54,caneta | medicamento | mounjaro | ozempic | tirzepatida
-redes,palavras,2,565,28.83,17.75,estar | perder | tomar | so | dia
-redes,palavras,3,372,18.98,10.73,medico | video | tratamento | saude | emagrecimento
-redes,palavras,4,163,8.32,1.8,peso | efeito | perda | colateral | glp
-redes,palavras,5,81,4.13,1.07,doenca | melhorar | dica | oferecer | condicao
-redes,palavras,6,71,3.62,1.91,emagrecer | corpo | dieta | ajudar | seguir
-redes,palavras,7,41,2.09,0.26,po | sie | nie | ze | und
+redes,comentarios_instagram_mencoes,1,14,77.78,86.67,M0002 | C01491 | C01537 | C01510 | C01484
+redes,comentarios_instagram_mencoes,2,2,11.11,6.67,M0001 | A23201
+redes,comentarios_instagram_mencoes,3,2,11.11,6.67,A3315 | A23140
+redes,comentarios_instagram_palavras,1,3,13.04,52.63,prometer | picanha | risada
+redes,comentarios_instagram_palavras,2,2,8.7,15.79,tomar | agua
+redes,comentarios_instagram_palavras,3,2,8.7,15.79,caneta | emagrecer
+redes,comentarios_instagram_palavras,4,1,4.35,0.0,precisar
+redes,comentarios_instagram_palavras,5,1,4.35,0.0,lula
+redes,comentarios_instagram_palavras,6,1,4.35,0.0,protocolo
+redes,comentarios_instagram_palavras,7,1,4.35,0.0,comer
+redes,comentarios_instagram_palavras,8,1,4.35,0.0,querer
+redes,comentarios_instagram_palavras,9,1,4.35,0.0,listar
+redes,comentarios_instagram_palavras,10,1,4.35,0.0,fibra
+redes,comentarios_instagram_palavras,11,1,4.35,0.0,so
+redes,comentarios_instagram_palavras,12,1,4.35,0.0,semana
+redes,comentarios_instagram_palavras,13,1,4.35,0.0,ficar
+redes,comentarios_instagram_palavras,14,1,4.35,0.0,passar
+redes,comentarios_instagram_palavras,15,1,4.35,0.0,dormir
+redes,comentarios_instagram_palavras,16,1,4.35,0.0,suplemento
+redes,comentarios_instagram_palavras,17,1,4.35,0.0,receita
+redes,comentarios_instagram_palavras,18,1,4.35,0.0,bom
+redes,comentarios_instagram_palavras,19,1,4.35,0.0,estar
+redes,comentarios_tiktok_palavras,1,14,24.14,32.57,so | gente | comprar | saber | medico
+redes,comentarios_tiktok_palavras,2,11,18.97,36.0,tomar | estar | dose | dor | risada
+redes,comentarios_tiktok_palavras,3,4,6.9,5.14,paraguai | brasil | querer | anvisa
+redes,comentarios_tiktok_palavras,4,3,5.17,3.43,mes | usar | caneta
+redes,comentarios_tiktok_palavras,5,2,3.45,1.71,falar | dar
+redes,comentarios_tiktok_palavras,6,2,3.45,1.71,governo | imposto
+redes,comentarios_tiktok_palavras,7,2,3.45,1.71,to | nie
+redes,comentarios_tiktok_palavras,8,1,1.72,0.0,voltar
+redes,comentarios_tiktok_palavras,9,1,1.72,0.0,melhor
+redes,comentarios_tiktok_palavras,10,1,1.72,0.0,perder
+redes,comentarios_tiktok_palavras,11,1,1.72,0.0,levar
+redes,comentarios_tiktok_palavras,12,1,1.72,0.0,uso
+redes,comentarios_tiktok_palavras,13,1,1.72,0.0,ne
+redes,comentarios_tiktok_palavras,14,1,1.72,0.0,emagrecer
+redes,comentarios_tiktok_palavras,15,1,1.72,0.0,dinheiro
+redes,comentarios_tiktok_palavras,16,1,1.72,0.0,proibir
+redes,comentarios_tiktok_palavras,17,1,1.72,0.0,causar
+redes,comentarios_tiktok_palavras,18,1,1.72,0.0,saude
+redes,comentarios_tiktok_palavras,19,1,1.72,0.0,ozempic
+redes,comentarios_tiktok_palavras,20,1,1.72,0.0,ver
+redes,comentarios_tiktok_palavras,21,1,1.72,0.0,vir
+redes,comentarios_tiktok_palavras,22,1,1.72,0.0,tg
+redes,comentarios_tiktok_palavras,23,1,1.72,0.0,visao
+redes,comentarios_tiktok_palavras,24,1,1.72,0.0,forma
+redes,comentarios_tiktok_palavras,25,1,1.72,0.0,morar
+redes,comentarios_tiktok_palavras,26,1,1.72,0.0,caro
+redes,comentarios_tiktok_palavras,27,1,1.72,0.0,deixar
+redes,comentarios_x_mencoes,1,274,29.53,27.3,A4175 | A23498 | A23534 | A23451 | A23505
+redes,comentarios_x_mencoes,2,193,20.8,22.49,A4193 | A23255 | A23226 | A23250 | A23294
+redes,comentarios_x_mencoes,3,151,16.27,20.42,A4056 | A23795 | A23797 | A23794 | A23759
+redes,comentarios_x_mencoes,4,115,12.39,8.2,A5309 | A3601 | A23388 | A23394 | A23345
+redes,comentarios_x_mencoes,5,93,10.02,6.56,A3976 | A23673 | A23709 | A23699 | A23751
+redes,comentarios_x_mencoes,6,78,8.41,12.22,A4558 | A23867 | A23869 | A23906 | M0121
+redes,comentarios_x_palavras,1,43,13.92,14.66,so | cocaina | falar | usar | ficar
+redes,comentarios_x_palavras,2,37,11.97,5.88,estar | cara | dinheiro | bom | politico
+redes,comentarios_x_palavras,3,37,11.97,8.22,vc | risada | pq | saber | dar
+redes,comentarios_x_palavras,4,27,8.74,7.24,querer | sus | bolsonaro | familia | flavio
+redes,comentarios_x_palavras,5,18,5.83,3.3,ano | emagrecer | ozempic | dia | deputado
+redes,comentarios_x_palavras,6,18,5.83,2.62,brasil | eua | governo | pais | carro
+redes,comentarios_x_palavras,7,17,5.5,13.61,lula | campanha | direito | fonte | confiavel
+redes,comentarios_x_palavras,8,10,3.24,1.54,danilo | concordar | gentili | minimo | mbl
+redes,comentarios_x_palavras,9,5,1.62,0.55,caso | lesao | corporal | prova | claro
+redes,comentarios_youtube_mencoes,1,2,4.76,4.55,M0001 | C00045
+redes,comentarios_youtube_mencoes,2,2,4.76,4.55,M0002 | A5684
+redes,comentarios_youtube_mencoes,3,2,4.76,4.55,M0003 | A8834
+redes,comentarios_youtube_mencoes,4,2,4.76,4.55,A1726 | M0004
+redes,comentarios_youtube_mencoes,5,2,4.76,4.55,M0005 | A2635
+redes,comentarios_youtube_mencoes,6,2,4.76,4.55,A17244 | M0006
+redes,comentarios_youtube_mencoes,7,2,4.76,4.55,A6209 | M0007
+redes,comentarios_youtube_mencoes,8,2,4.76,4.55,C00311 | M0008
+redes,comentarios_youtube_mencoes,9,2,4.76,4.55,A17341 | M0009
+redes,comentarios_youtube_mencoes,10,2,4.76,4.55,M0010 | A18456
+redes,comentarios_youtube_mencoes,11,2,4.76,4.55,M0011 | A1074
+redes,comentarios_youtube_mencoes,12,2,4.76,9.09,A10145 | M0012
+redes,comentarios_youtube_mencoes,13,2,4.76,4.55,M0013 | A14002
+redes,comentarios_youtube_mencoes,14,2,4.76,4.55,A15694 | M0014
+redes,comentarios_youtube_mencoes,15,2,4.76,4.55,M0015 | A22723
+redes,comentarios_youtube_mencoes,16,2,4.76,4.55,A7572 | M0016
+redes,comentarios_youtube_mencoes,17,2,4.76,4.55,M0017 | A17781
+redes,comentarios_youtube_mencoes,18,2,4.76,4.55,M0018 | A5993
+redes,comentarios_youtube_mencoes,19,2,4.76,4.55,C00980 | M0019
+redes,comentarios_youtube_mencoes,20,2,4.76,4.55,A2112 | M0020
+redes,comentarios_youtube_mencoes,21,2,4.76,4.55,A15079 | M0021
+redes,comentarios_youtube_palavras,1,206,34.92,11.1,so | ficar | medico | querer | caneta
+redes,comentarios_youtube_palavras,2,168,28.47,17.5,estar | tomar | perder | kg | mes
+redes,comentarios_youtube_palavras,3,135,22.88,7.48,ano | vida | tratamento | uso | conseguir
+redes,comentarios_youtube_palavras,4,81,13.73,2.21,dar | video | bom | melhor | vc
+redes,fontes_termos,1,806,13.05,6.12,Mounjaro | VEJA | UOL | kwai (sem autor informado) | Instagram
+redes,fontes_termos,2,798,12.93,7.28,caneta emagrecedora | Metrópoles | Terra | NeoFeed | UOL Notícias
+redes,fontes_termos,3,685,11.09,7.69,Ozempic | CNN Brasil | O GLOBO | Exame | Valor Econômico
+redes,fontes_termos,4,586,9.49,6.79,tirzepatida | G1 | Campo Grande News | Panorama Farmacêutico | x A3655
+redes,fontes_termos,5,577,9.35,5.31,liraglutida | Saxenda | x A3601 | Agência Brasil | JOTA Info
+redes,fontes_termos,6,565,9.15,4.09,caneta para emagrecer | youtube A1410 | youtube A0259 | youtube A0781 | youtube A1047
+redes,fontes_termos,7,434,7.03,5.48,semaglutida | Assine Abril | Estadão | Folha de S.Paulo | Afya | Home
+redes,fontes_termos,8,432,7.0,4.52,Wegovy | InfoMoney | x A2882 | x A3373 | x A3460
+redes,fontes_termos,9,377,6.11,2.76,caneta do Paraguai | youtube A0282 | youtube A0488 | youtube A0132 | youtube A0189
+redes,fontes_termos,10,368,5.96,3.6,retatrutida | youtube A0254 | youtube A0223 | youtube A0448 | x A5420
+redes,fontes_termos,11,329,5.33,2.23,Mounjaro sem receita | Ozempic sem receita | youtube A0602 | youtube A1923 | youtube A1104
+redes,fontes_termos,12,211,3.42,2.05,tirzepatida manipulada | ICTQ | semaglutida manipulada | ClickPB | youtube A0167
+redes,hashtags,1,103,31.4,21.08,#emagrecimento | #mounjaro | #tirzepatida | #obesidade | #perdadepeso
+redes,hashtags,2,89,27.13,9.0,#saude | #shorts | #canetaemagrecedora | #saúde | #bemestar
+redes,hashtags,3,69,21.04,8.36,#ozempic | #semaglutida | #glp1 | #wegovy | #canetasemagrecedoras
+redes,hashtags,4,59,17.99,4.37,#dieta | #emagrecer | #fitness | #vidasaudavel | #academia
+redes,hashtags,5,6,1.83,0.14,#toguro | #peptídeos | #mansaomaromba | #slimex | #cimed
+redes,palavras,1,670,34.18,16.4,caneta | medicamento | mounjaro | ozempic | tirzepatida
+redes,palavras,2,566,28.88,19.62,estar | peso | perder | tomar | so
+redes,palavras,3,477,24.34,11.45,medico | video | tratamento | saude | emagrecimento
+redes,palavras,4,100,5.1,1.03,efeito | colateral | glp | reduzir | aumentar
+redes,palavras,5,71,3.62,1.86,emagrecer | corpo | ajudar | seguir | vir
+redes,palavras,6,37,1.89,0.25,sie | nie | ze | und | ich
+corpus,similitude,1,34,34.0,36.2,caneta | emagrecedora | emagrecedoras | anvisa | emagrecer
+corpus,similitude,2,33,33.0,26.43,estar | tomar | dose | sentir | mes
+corpus,similitude,3,14,14.0,8.65,medico | video | acompanhamento | canal | explicar
+corpus,similitude,4,13,13.0,16.16,perder | mounjaro | peso | ozempic | kg
+corpus,similitude,5,4,4.0,2.99,tratamento | obesidade | diabetes | paciente
+corpus,similitude,6,2,2.0,2.16,efeito | colateral
