@@ -24,7 +24,7 @@ _MARCADOR = 0xE000  # início da área de uso privado do Unicode
 _LIMITE = 6400  # tamanho dessa área
 
 # Qualquer domínio: rótulo de duas letras ou mais e terminação minúscula de 2 a 6 letras
-# (linktr.ee, wa.me, loja.com.br). "acabou.Agora" fica, porque a terminação começa com maiúscula.
+# (agregador de links, atalho de mensagem, loja.com.br). "acabou.Agora" fica, porque a terminação começa com maiúscula.
 _LINK = re.compile(r"(?i:\b(?:https?://|www\.)\S+)|(?i:\b[\w-]{2,}(?:\.[\w-]+)*)\.[a-z]{2,6}(?!\w)(?:/\S*)?")
 _EMAIL = re.compile(r"(?i)\b[\w.+-]+@[\w-]+(?:\.[\w-]+)+\b")
 _PERFIL = re.compile(r"(?<![\w@])@[\w.]{2,}")

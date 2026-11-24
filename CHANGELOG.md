@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Correção do comentário em scripts/anonimizar.py
+
+**O que mudou**
+
+- O comentário da máscara de link citava o domínio de um agregador de links; passou a descrevê-lo sem o domínio.
+
+**Por quê**
+
+- O commit cfef13f foi enviado com o teste test_sem_link_de_venda_fora_dos_testes falhando por causa desse comentário. Erro meu: o commit saiu sem conferir a última rodada dos testes.
+
+**O que foi executado de verdade**
+
+- `python scripts/build_estado.py` e `python -m unittest discover -s tests`, todos passando antes deste commit.
+
+**O que ficou pendente**
+
+- Nova execução do workflow Análises.
+
+**Onde está a evidência**
+
+- Este commit e o anterior (cfef13f).
+
 ## 24/11/2026 · Anonimização: máscara de link para qualquer domínio
 
 **O que mudou**
