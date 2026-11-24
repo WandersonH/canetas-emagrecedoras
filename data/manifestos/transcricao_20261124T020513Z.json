@@ -1,0 +1,117 @@
+{
+  "frente": "transcricao",
+  "etapa": "gratis",
+  "run_id": "45309396335",
+  "iniciado_em": "2026-11-24T02:05:13Z",
+  "terminado_em": "2026-11-24T02:05:59Z",
+  "consulta": {
+    "rede": "kwai",
+    "modelo": "faster-whisper small (int8, CPU)",
+    "idioma": "pt",
+    "como_escolhe": "os 20 vídeos do período com mais visualizações",
+    "duracao_maxima_s": 600,
+    "falhas": [
+      {
+        "item_id": "5225451580078018751",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5255006453285320656",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5254724974897206406",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5214192576507006020",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5203496531221354691",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5208844550624571019",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5230236650166550135",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5251065796430203852",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5237273527135909143",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5204340955368454173",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5201244728379546533",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5224888625697900674",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5206592750142713780",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5207437176973717242",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5233332872727384181",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5228547801363930832",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5259510046812444429",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5221229451520014979",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5233051398086312567",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      },
+      {
+        "item_id": "5251910228329846203",
+        "motivo": "FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'"
+      }
+    ]
+  },
+  "universo": {
+    "valor": 82,
+    "fonte": "vídeos da rede já coletados no período lido (repositório privado)"
+  },
+  "lido": 20,
+  "amostra": {
+    "n": 0,
+    "como": "vídeos transcritos entre os mais vistos do período"
+  },
+  "parou_por": "lista_inteira",
+  "custo_usd": 0,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "terceiros/transcricoes/kwai/transcricoes_20261124T020513Z.csv",
+      "sha256": "031caedacb09efbf09d8b87c93ed8e646d36214ca413bcf3988abc2e948d29f9",
+      "bytes": 63,
+      "linhas": 1
+    }
+  ],
+  "bloqueios": []
+}
