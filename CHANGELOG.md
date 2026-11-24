@@ -2,6 +2,34 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Dados públicos e checagens das agências (run 45306221540)
+
+**O que mudou**
+
+- Manifestos em data/manifestos/, resultados em data/dados_publicos/ e data/checagens/agencias.json.
+
+**Por quê**
+
+- Frentes de dados públicos e checagens brasileiras pendentes; pedido do pesquisador em 23/11/2026 para prosseguir com o que faltava coletar.
+
+**O que foi executado de verdade**
+
+- Workflow 'Dados públicos e checagens das agências', run 45306221540, frentes: registro cmed vigimed sngpc agencias.
+- gravado data/manifestos/checagens_agencias_20261124T013613Z.json: 461 checagens de agências brasileiras
+- gravado data/manifestos/dados_publicos_20261124T013646Z.json: registro, 214 de 229708 linhas
+- gravado data/manifestos/dados_publicos_20261124T013700Z.json: cmed, 131 de 80072 linhas
+- gravado data/manifestos/dados_publicos_20261124T013719Z.json: vigimed, 4040 notificações
+- gravado data/manifestos/dados_publicos_20261124T013847Z.json: sngpc industrializados, 4221125 linhas
+- gravado data/manifestos/dados_publicos_20261124T015535Z.json: sngpc manipulados, 91056 linhas
+
+**O que ficou pendente**
+
+- Conferir as colunas usadas em cada agregado (campo colunas_usadas) com o dicionário de dados da Anvisa.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45306221540 e os manifestos deste run.
+
 ## 23/11/2026 · Transcrição (run 45306501163)
 
 **O que mudou**

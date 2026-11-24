@@ -1,0 +1,41 @@
+{
+  "frente": "dados_publicos",
+  "etapa": "gratis",
+  "run_id": "45306221540",
+  "iniciado_em": "2026-11-24T01:55:35Z",
+  "terminado_em": "2026-11-24T01:58:07Z",
+  "consulta": {
+    "subfrente": "sngpc_manipulados",
+    "fonte": "https://dados.anvisa.gov.br/dados/SNGPC/Manipulados/",
+    "filtro": "linha que cita substância ou marca",
+    "meses_desde": "202501"
+  },
+  "universo": {
+    "valor": 4460483,
+    "fonte": "linhas dos arquivos mensais do SNGPC (manipulados) publicados a partir de 202501, contadas na leitura"
+  },
+  "lido": 4460483,
+  "amostra": {
+    "n": 91056,
+    "como": "linhas que citam substância ou marca"
+  },
+  "parou_por": "arquivo_inteiro",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/dados_publicos/sngpc_manipulados.json",
+      "sha256": "e2b4c93d54fc4ee14ca320cca05c0a5f0112aa380249def2e20eb6ac41a4912f",
+      "bytes": 7909,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [
+    {
+      "caminho": "dados_publicos/sngpc_manipulados/linhas.csv",
+      "sha256": "fe6db4f9f824a79419ae615cd4c3bed454798e07a59253e44b6936dca484b103",
+      "bytes": 8304527,
+      "linhas": 91057
+    }
+  ],
+  "bloqueios": []
+}

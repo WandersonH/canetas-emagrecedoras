@@ -1,0 +1,475 @@
+{
+  "obtido_em": "2026-11-24T01:55:35Z",
+  "run_id": "45306221540",
+  "nota": "Vendas registradas no SNGPC, como a Anvisa publica. Contagem menor que 5 aparece como '<5'. As linhas ficam só no repositório privado.",
+  "tipo": "manipulados",
+  "meses": [
+    {
+      "mes": "202601",
+      "linhas_no_arquivo": 404312,
+      "linhas_que_citam": 9440
+    },
+    {
+      "mes": "202602",
+      "linhas_no_arquivo": 400610,
+      "linhas_que_citam": 9437
+    },
+    {
+      "mes": "202603",
+      "linhas_no_arquivo": 442846,
+      "linhas_que_citam": 6850
+    },
+    {
+      "mes": "202604",
+      "linhas_no_arquivo": 429121,
+      "linhas_que_citam": 8185
+    },
+    {
+      "mes": "202605",
+      "linhas_no_arquivo": 434238,
+      "linhas_que_citam": 10329
+    },
+    {
+      "mes": "202606",
+      "linhas_no_arquivo": 438266,
+      "linhas_que_citam": 13490
+    },
+    {
+      "mes": "202607",
+      "linhas_no_arquivo": 455368,
+      "linhas_que_citam": 8668
+    },
+    {
+      "mes": "202608",
+      "linhas_no_arquivo": 439776,
+      "linhas_que_citam": 9096
+    },
+    {
+      "mes": "202609",
+      "linhas_no_arquivo": 430291,
+      "linhas_que_citam": 7813
+    },
+    {
+      "mes": "202610",
+      "linhas_no_arquivo": 413241,
+      "linhas_que_citam": 6360
+    },
+    {
+      "mes": "202611",
+      "linhas_no_arquivo": 172414,
+      "linhas_que_citam": 1388
+    }
+  ],
+  "colunas": [
+    "NU_ANO_VENDA",
+    "NU_MES_VENDA",
+    "SG_UF_VENDA",
+    "NO_MUNICIPIO_VENDA",
+    "DS_DCB",
+    "NO_PRINCIPIO_ATIVO",
+    "QT_ATIVO_POR_UNID_FARMACOTEC",
+    "DS_UNIDADE_MEDIDA_PRINCIPIO_ATIVO",
+    "QT_UNIDADE_FARMACOTECNICA",
+    "DS_TIPO_UNIDADE_FARMACOTECNICA",
+    "NO_CONSELHO_PRESCRITOR",
+    "SG_UF_CONSELHO_PRESCRITOR",
+    "TP_RECEITUARIO",
+    "CO_CID10",
+    "SG_SEXO",
+    "NU_IDADE",
+    "NU_UNIDADE_IDADE"
+  ],
+  "por_mes_e_substancia": [
+    {
+      "mes": "2026-01",
+      "substancia": "semaglutida",
+      "linhas": 485,
+      "quantidade": 485
+    },
+    {
+      "mes": "2026-01",
+      "substancia": "tirzepatida",
+      "linhas": 8955,
+      "quantidade": 8955
+    },
+    {
+      "mes": "2026-02",
+      "substancia": "semaglutida",
+      "linhas": 836,
+      "quantidade": 836
+    },
+    {
+      "mes": "2026-02",
+      "substancia": "tirzepatida",
+      "linhas": 8601,
+      "quantidade": 8601
+    },
+    {
+      "mes": "2026-03",
+      "substancia": "semaglutida",
+      "linhas": 654,
+      "quantidade": 654
+    },
+    {
+      "mes": "2026-03",
+      "substancia": "tirzepatida",
+      "linhas": 6196,
+      "quantidade": 6196
+    },
+    {
+      "mes": "2026-04",
+      "substancia": "semaglutida",
+      "linhas": 725,
+      "quantidade": 725
+    },
+    {
+      "mes": "2026-04",
+      "substancia": "tirzepatida",
+      "linhas": 7460,
+      "quantidade": 7460
+    },
+    {
+      "mes": "2026-05",
+      "substancia": "semaglutida",
+      "linhas": 774,
+      "quantidade": 774
+    },
+    {
+      "mes": "2026-05",
+      "substancia": "tirzepatida",
+      "linhas": 9555,
+      "quantidade": 9555
+    },
+    {
+      "mes": "2026-06",
+      "substancia": "semaglutida",
+      "linhas": 624,
+      "quantidade": 624
+    },
+    {
+      "mes": "2026-06",
+      "substancia": "tirzepatida",
+      "linhas": 12866,
+      "quantidade": 12866
+    },
+    {
+      "mes": "2026-07",
+      "substancia": "semaglutida",
+      "linhas": 631,
+      "quantidade": 631
+    },
+    {
+      "mes": "2026-07",
+      "substancia": "tirzepatida",
+      "linhas": 8037,
+      "quantidade": 8037
+    },
+    {
+      "mes": "2026-08",
+      "substancia": "semaglutida",
+      "linhas": 468,
+      "quantidade": 468
+    },
+    {
+      "mes": "2026-08",
+      "substancia": "tirzepatida",
+      "linhas": 8628,
+      "quantidade": 8628
+    },
+    {
+      "mes": "2026-09",
+      "substancia": "semaglutida",
+      "linhas": 336,
+      "quantidade": 336
+    },
+    {
+      "mes": "2026-09",
+      "substancia": "tirzepatida",
+      "linhas": 7477,
+      "quantidade": 7477
+    },
+    {
+      "mes": "2026-10",
+      "substancia": "semaglutida",
+      "linhas": 132,
+      "quantidade": 132
+    },
+    {
+      "mes": "2026-10",
+      "substancia": "tirzepatida",
+      "linhas": 6228,
+      "quantidade": 6228
+    },
+    {
+      "mes": "2026-11",
+      "substancia": "semaglutida",
+      "linhas": 133,
+      "quantidade": 133
+    },
+    {
+      "mes": "2026-11",
+      "substancia": "tirzepatida",
+      "linhas": 1255,
+      "quantidade": 1255
+    }
+  ],
+  "quantidade_por_uf": [
+    {
+      "uf": "SP",
+      "quantidade": 35340
+    },
+    {
+      "uf": "GO",
+      "quantidade": 20426
+    },
+    {
+      "uf": "SC",
+      "quantidade": 13523
+    },
+    {
+      "uf": "PR",
+      "quantidade": 8477
+    },
+    {
+      "uf": "TO",
+      "quantidade": 6762
+    },
+    {
+      "uf": "DF",
+      "quantidade": 2360
+    },
+    {
+      "uf": "MG",
+      "quantidade": 2198
+    },
+    {
+      "uf": "RJ",
+      "quantidade": 1928
+    },
+    {
+      "uf": "BA",
+      "quantidade": 14
+    },
+    {
+      "uf": "RS",
+      "quantidade": 12
+    },
+    {
+      "uf": "RO",
+      "quantidade": 5
+    },
+    {
+      "uf": "SE",
+      "quantidade": 2
+    },
+    {
+      "uf": "ES",
+      "quantidade": 2
+    },
+    {
+      "uf": "RN",
+      "quantidade": 2
+    },
+    {
+      "uf": "PI",
+      "quantidade": 2
+    },
+    {
+      "uf": "MT",
+      "quantidade": 1
+    },
+    {
+      "uf": "PA",
+      "quantidade": 1
+    },
+    {
+      "uf": "CE",
+      "quantidade": 1
+    }
+  ],
+  "por_sexo": [
+    {
+      "valor": "2",
+      "n": 53244
+    },
+    {
+      "valor": "1",
+      "n": 33507
+    },
+    {
+      "valor": "não informado",
+      "n": 4305
+    }
+  ],
+  "por_idade": [
+    {
+      "valor": "não informado",
+      "n": 4305
+    },
+    {
+      "valor": "36",
+      "n": 2770
+    },
+    {
+      "valor": "38",
+      "n": 2661
+    },
+    {
+      "valor": "42",
+      "n": 2538
+    },
+    {
+      "valor": "40",
+      "n": 2442
+    },
+    {
+      "valor": "39",
+      "n": 2415
+    },
+    {
+      "valor": "37",
+      "n": 2409
+    },
+    {
+      "valor": "45",
+      "n": 2386
+    },
+    {
+      "valor": "41",
+      "n": 2378
+    },
+    {
+      "valor": "35",
+      "n": 2242
+    },
+    {
+      "valor": "47",
+      "n": 2235
+    },
+    {
+      "valor": "44",
+      "n": 2212
+    },
+    {
+      "valor": "46",
+      "n": 2197
+    },
+    {
+      "valor": "26",
+      "n": 2177
+    },
+    {
+      "valor": "43",
+      "n": 2158
+    },
+    {
+      "valor": "27",
+      "n": 2090
+    },
+    {
+      "valor": "30",
+      "n": 2066
+    },
+    {
+      "valor": "31",
+      "n": 1983
+    },
+    {
+      "valor": "48",
+      "n": 1951
+    },
+    {
+      "valor": "33",
+      "n": 1937
+    },
+    {
+      "valor": "34",
+      "n": 1909
+    },
+    {
+      "valor": "28",
+      "n": 1843
+    },
+    {
+      "valor": "32",
+      "n": 1796
+    },
+    {
+      "valor": "29",
+      "n": 1731
+    },
+    {
+      "valor": "49",
+      "n": 1713
+    },
+    {
+      "valor": "50",
+      "n": 1667
+    },
+    {
+      "valor": "51",
+      "n": 1595
+    },
+    {
+      "valor": "55",
+      "n": 1593
+    },
+    {
+      "valor": "56",
+      "n": 1416
+    },
+    {
+      "valor": "52",
+      "n": 1397
+    },
+    {
+      "valor": "25",
+      "n": 1379
+    },
+    {
+      "valor": "53",
+      "n": 1304
+    },
+    {
+      "valor": "54",
+      "n": 1212
+    },
+    {
+      "valor": "57",
+      "n": 1185
+    },
+    {
+      "valor": "0",
+      "n": 1174
+    },
+    {
+      "valor": "58",
+      "n": 1167
+    },
+    {
+      "valor": "60",
+      "n": 1082
+    },
+    {
+      "valor": "61",
+      "n": 1031
+    },
+    {
+      "valor": "59",
+      "n": 989
+    },
+    {
+      "valor": "62",
+      "n": 971
+    }
+  ],
+  "colunas_usadas": {
+    "ano": "NU_ANO_VENDA",
+    "mes": "NU_MES_VENDA",
+    "quantidade": null,
+    "principio_ativo": "NO_PRINCIPIO_ATIVO",
+    "uf": "SG_UF_VENDA",
+    "sexo": "SG_SEXO",
+    "idade": "NU_IDADE"
+  }
+}

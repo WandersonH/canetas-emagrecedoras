@@ -1,0 +1,57 @@
+{
+  "frente": "dados_publicos",
+  "etapa": "gratis",
+  "run_id": "45306221540",
+  "iniciado_em": "2026-11-24T01:37:19Z",
+  "terminado_em": "2026-11-24T01:38:47Z",
+  "consulta": {
+    "subfrente": "vigimed",
+    "fonte": "https://dados.anvisa.gov.br/dados/",
+    "arquivos": [
+      "VigiMed_Medicamentos.csv",
+      "VigiMed_Notificacoes.csv",
+      "VigiMed_Reacoes.csv"
+    ],
+    "filtro": "notificação com medicamento que cita substância ou marca"
+  },
+  "universo": {
+    "valor": 711105,
+    "fonte": "linhas de VigiMed_Medicamentos.csv (um medicamento por linha), contadas na leitura"
+  },
+  "lido": 711105,
+  "amostra": {
+    "n": 4040,
+    "como": "notificações com ao menos um medicamento que cita substância ou marca"
+  },
+  "parou_por": "arquivo_inteiro",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/dados_publicos/vigimed.json",
+      "sha256": "3cfb936685ce7f36a8eaedfd80c4db7461eaf6d0f2cdbead727d225fbb8fa2e6",
+      "bytes": 14876,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [
+    {
+      "caminho": "dados_publicos/vigimed/medicamentos.csv",
+      "sha256": "af948217887c84d9e59a2b49d9583fd06a768e35a436b0c01c15a917f87571d7",
+      "bytes": 1425340,
+      "linhas": 5764
+    },
+    {
+      "caminho": "dados_publicos/vigimed/notificacoes.csv",
+      "sha256": "99a5b7a9e7d46c56ec0c176e17eacf8f503395e01a95fadb9e191c56dbba35d1",
+      "bytes": 2385101,
+      "linhas": 4031
+    },
+    {
+      "caminho": "dados_publicos/vigimed/reacoes.csv",
+      "sha256": "5ba73b45abedadcb2cb2021a06a709e6fc5aba0c7a2edc7e640b67e5e38611fa",
+      "bytes": 3864969,
+      "linhas": 15302
+    }
+  ],
+  "bloqueios": []
+}

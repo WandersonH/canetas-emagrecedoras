@@ -1,0 +1,3745 @@
+{
+  "obtido_em": "2026-11-24T01:36:46Z",
+  "run_id": "45306221540",
+  "nota": "Dados de empresas e produtos, como a Anvisa publica. Filtro por substância e marca.",
+  "arquivos": [
+    {
+      "arquivo": "DADOS_ABERTOS_MEDICAMENTOS.csv",
+      "url": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_MEDICAMENTOS.csv",
+      "colunas": [
+        "TIPO_PRODUTO",
+        "NOME_PRODUTO",
+        "DATA_FINALIZACAO_PROCESSO",
+        "CATEGORIA_REGULATORIA",
+        "NUMERO_REGISTRO_PRODUTO",
+        "DATA_VENCIMENTO_REGISTRO",
+        "NUMERO_PROCESSO",
+        "CLASSE_TERAPEUTICA",
+        "EMPRESA_DETENTORA_REGISTRO",
+        "SITUACAO_REGISTRO",
+        "PRINCIPIO_ATIVO"
+      ],
+      "linhas_no_arquivo": 229708,
+      "linhas_que_citam": 214,
+      "por_substancia": [
+        {
+          "valor": "semaglutida",
+          "n": 107
+        },
+        {
+          "valor": "liraglutida",
+          "n": 37
+        },
+        {
+          "valor": "Mounjaro",
+          "n": 30
+        },
+        {
+          "valor": "tirzepatida",
+          "n": 30
+        },
+        {
+          "valor": "Rybelsus",
+          "n": 27
+        },
+        {
+          "valor": "lixisenatida",
+          "n": 22
+        },
+        {
+          "valor": "Wegovy",
+          "n": 18
+        },
+        {
+          "valor": "Soliqua",
+          "n": 12
+        },
+        {
+          "valor": "exenatida",
+          "n": 10
+        },
+        {
+          "valor": "Trulicity",
+          "n": 8
+        },
+        {
+          "valor": "dulaglutida",
+          "n": 8
+        },
+        {
+          "valor": "Ozempic",
+          "n": 6
+        },
+        {
+          "valor": "Extensior",
+          "n": 6
+        },
+        {
+          "valor": "Victoza",
+          "n": 5
+        },
+        {
+          "valor": "Lirux",
+          "n": 5
+        },
+        {
+          "valor": "Ozivy",
+          "n": "<5"
+        },
+        {
+          "valor": "Olire",
+          "n": "<5"
+        },
+        {
+          "valor": "Saxenda",
+          "n": "<5"
+        },
+        {
+          "valor": "Liraclick",
+          "n": "<5"
+        },
+        {
+          "valor": "Xultophy",
+          "n": "<5"
+        },
+        {
+          "valor": "Zempneo",
+          "n": "<5"
+        },
+        {
+          "valor": "Orsema",
+          "n": "<5"
+        },
+        {
+          "valor": "Seemasun",
+          "n": "<5"
+        },
+        {
+          "valor": "Owozy",
+          "n": "<5"
+        },
+        {
+          "valor": "Semavy",
+          "n": "<5"
+        }
+      ],
+      "por_principio_ativo": [
+        {
+          "valor": "semaglutida",
+          "n": 101
+        },
+        {
+          "valor": "liraglutida",
+          "n": 34
+        },
+        {
+          "valor": "tirzepatida",
+          "n": 30
+        },
+        {
+          "valor": "insulina glargina, lixisenatida",
+          "n": 12
+        },
+        {
+          "valor": "lixisenatida",
+          "n": 10
+        },
+        {
+          "valor": "exenatida",
+          "n": 10
+        },
+        {
+          "valor": "dulaglutida",
+          "n": 8
+        },
+        {
+          "valor": "insulina icodeca, semaglutida",
+          "n": 6
+        },
+        {
+          "valor": "insulina degludeca, liraglutida",
+          "n": "<5"
+        }
+      ],
+      "por_situacao": [
+        {
+          "valor": "Ativo",
+          "n": 186
+        },
+        {
+          "valor": "Inativo",
+          "n": 28
+        }
+      ],
+      "linhas": [
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "17/07/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "113001164",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351187254201619",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OLIRE",
+          "DATA_FINALIZACAO_PROCESSO": "24/12/2024",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351448",
+          "DATA_VENCIMENTO_REGISTRO": "122034",
+          "NUMERO_PROCESSO": "25351370849202211",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Olire",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SAXENDA",
+          "DATA_FINALIZACAO_PROCESSO": "29/02/2016",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660032",
+          "DATA_VENCIMENTO_REGISTRO": "022036",
+          "NUMERO_PROCESSO": "25351358815201494",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Saxenda",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "VICTOZA",
+          "DATA_FINALIZACAO_PROCESSO": "29/03/2010",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660028",
+          "DATA_VENCIMENTO_REGISTRO": "042030",
+          "NUMERO_PROCESSO": "25351765063200844",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Victoza",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRUX",
+          "DATA_FINALIZACAO_PROCESSO": "24/12/2024",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351447",
+          "DATA_VENCIMENTO_REGISTRO": "122034",
+          "NUMERO_PROCESSO": "25351350685202205",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Lirux",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "ZEMPNEO",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "155840721",
+          "DATA_VENCIMENTO_REGISTRO": "072036",
+          "NUMERO_PROCESSO": "25351875512202378",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "05161069000110 - BRAINFARMA INDÚSTRIA QUÍMICA E FARMACÊUTICA S.A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Zempneo",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEVEMA",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "105730209",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351456573202411",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "60659463002992 - ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "ARIBET",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "174650026",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351440192202410",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "09058502000148 - FARMA VISION IMPORTAÇÃO E EXPORTAÇÃO DE MEDICAMENTOS LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OLIRE",
+          "DATA_FINALIZACAO_PROCESSO": "24/12/2024",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351448",
+          "DATA_VENCIMENTO_REGISTRO": "122034",
+          "NUMERO_PROCESSO": "25351370849202211",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Olire",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZEMPIC",
+          "DATA_FINALIZACAO_PROCESSO": "06/08/2018",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660036",
+          "DATA_VENCIMENTO_REGISTRO": "082028",
+          "NUMERO_PROCESSO": "25351658916201751",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozempic",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "EXTENSIOR",
+          "DATA_FINALIZACAO_PROCESSO": "14/10/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660043",
+          "DATA_VENCIMENTO_REGISTRO": "102034",
+          "NUMERO_PROCESSO": "25351359096202446",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Extensior",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "EXTENSIOR",
+          "DATA_FINALIZACAO_PROCESSO": "14/10/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660043",
+          "DATA_VENCIMENTO_REGISTRO": "102034",
+          "NUMERO_PROCESSO": "25351359096202446",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Extensior",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "08/09/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351482",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351037360202655",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "08/09/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351483",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351037361202608",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2019",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "183260393",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351411883201949",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "24/08/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "105831067",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351128361202616",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "TRULICITY",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2015",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "112600190",
+          "DATA_VENCIMENTO_REGISTRO": "092035",
+          "NUMERO_PROCESSO": "25351243091201487",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "dulaglutida",
+          "_substancias": [
+            "Trulicity",
+            "dulaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRACLICK",
+          "DATA_FINALIZACAO_PROCESSO": "01/06/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "105831062",
+          "DATA_VENCIMENTO_REGISTRO": "062036",
+          "NUMERO_PROCESSO": "25351457977202421",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Liraclick",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "ORSEMA",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "123520303",
+          "DATA_VENCIMENTO_REGISTRO": "072036",
+          "NUMERO_PROCESSO": "25351875524202301",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "73663650000190 - RANBAXY FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Orsema",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2013",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "113001143",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351737635201168",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "17/02/2020",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "183260431",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351627183201974",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "17/08/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351478",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351126507202681",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "TRULICITY",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2015",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "112600190",
+          "DATA_VENCIMENTO_REGISTRO": "092035",
+          "NUMERO_PROCESSO": "25351243091201487",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "dulaglutida",
+          "_substancias": [
+            "Trulicity",
+            "dulaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRACLICK",
+          "DATA_FINALIZACAO_PROCESSO": "01/06/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "105831062",
+          "DATA_VENCIMENTO_REGISTRO": "062036",
+          "NUMERO_PROCESSO": "25351457977202421",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Liraclick",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYETTA",
+          "DATA_FINALIZACAO_PROCESSO": "21/02/2007",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600182",
+          "DATA_VENCIMENTO_REGISTRO": "022017",
+          "NUMERO_PROCESSO": "25351276624200560",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYRZA",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "174650028",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351456567202463",
+          "CLASSE_TERAPEUTICA": "",
+          "EMPRESA_DETENTORA_REGISTRO": "09058502000148 - FARMA VISION IMPORTAÇÃO E EXPORTAÇÃO DE MEDICAMENTOS LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "POVIZTRA",
+          "DATA_FINALIZACAO_PROCESSO": "12/08/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660042",
+          "DATA_VENCIMENTO_REGISTRO": "082034",
+          "NUMERO_PROCESSO": "25351359093202411",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEEMASUN",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "146820128",
+          "DATA_VENCIMENTO_REGISTRO": "072036",
+          "NUMERO_PROCESSO": "25351760443202307",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "05035244000123 - SUN FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Seemasun",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYETTA",
+          "DATA_FINALIZACAO_PROCESSO": "21/02/2007",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600182",
+          "DATA_VENCIMENTO_REGISTRO": "022017",
+          "NUMERO_PROCESSO": "25351276624200560",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMACLIQUE",
+          "DATA_FINALIZACAO_PROCESSO": "17/08/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "105831066",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351122821202694",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYETTA",
+          "DATA_FINALIZACAO_PROCESSO": "17/05/2017",
+          "CATEGORIA_REGULATORIA": "",
+          "NUMERO_REGISTRO_PRODUTO": "116180260",
+          "DATA_VENCIMENTO_REGISTRO": "062019",
+          "NUMERO_PROCESSO": "25351012414201703",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "60318797000100 - ASTRAZENECA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WYLOVOL",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "174650027",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351440194202417",
+          "CLASSE_TERAPEUTICA": "",
+          "EMPRESA_DETENTORA_REGISTRO": "09058502000148 - FARMA VISION IMPORTAÇÃO E EXPORTAÇÃO DE MEDICAMENTOS LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "08/09/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351482",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351037360202655",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "08/09/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351482",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351037360202655",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "17/07/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "113001164",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351187254201619",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "24/08/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "105831067",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351128361202616",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "POVIZTRA",
+          "DATA_FINALIZACAO_PROCESSO": "12/08/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660042",
+          "DATA_VENCIMENTO_REGISTRO": "082034",
+          "NUMERO_PROCESSO": "25351359093202411",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "KYINSU",
+          "DATA_FINALIZACAO_PROCESSO": "28/09/2026",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660046",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351047567202557",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina icodeca, semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "POVIZTRA",
+          "DATA_FINALIZACAO_PROCESSO": "12/08/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660042",
+          "DATA_VENCIMENTO_REGISTRO": "082034",
+          "NUMERO_PROCESSO": "25351359093202411",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2019",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "183260393",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351411883201949",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO MULTIDOSE",
+          "DATA_FINALIZACAO_PROCESSO": "18/03/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600208",
+          "DATA_VENCIMENTO_REGISTRO": "032036",
+          "NUMERO_PROCESSO": "25351066367202412",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "VICTOZA",
+          "DATA_FINALIZACAO_PROCESSO": "29/03/2010",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660028",
+          "DATA_VENCIMENTO_REGISTRO": "042030",
+          "NUMERO_PROCESSO": "25351765063200844",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Victoza",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO MULTIDOSE",
+          "DATA_FINALIZACAO_PROCESSO": "18/03/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600208",
+          "DATA_VENCIMENTO_REGISTRO": "032036",
+          "NUMERO_PROCESSO": "25351066367202412",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OWOZY",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "139000010",
+          "DATA_VENCIMENTO_REGISTRO": "072029",
+          "NUMERO_PROCESSO": "25351490762202331",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "31203582000137 - ÁVITA CARE IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Owozy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "XULTOPHY",
+          "DATA_FINALIZACAO_PROCESSO": "03/04/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660033",
+          "DATA_VENCIMENTO_REGISTRO": "042027",
+          "NUMERO_PROCESSO": "25351692770201528",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina degludeca, liraglutida",
+          "_substancias": [
+            "Xultophy",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "YLUMÉC",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "102351480",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351140215202651",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "10/11/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "139000014",
+          "DATA_VENCIMENTO_REGISTRO": "112036",
+          "NUMERO_PROCESSO": "25351152233202685",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "31203582000137 - ÁVITA CARE IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "KYINSU",
+          "DATA_FINALIZACAO_PROCESSO": "28/09/2026",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660046",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351047567202557",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina icodeca, semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZIVY",
+          "DATA_FINALIZACAO_PROCESSO": "26/05/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351473",
+          "DATA_VENCIMENTO_REGISTRO": "052036",
+          "NUMERO_PROCESSO": "25351813190202373",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozivy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRUX",
+          "DATA_FINALIZACAO_PROCESSO": "24/12/2024",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351447",
+          "DATA_VENCIMENTO_REGISTRO": "122034",
+          "NUMERO_PROCESSO": "25351350685202205",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Lirux",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMACLIQUE",
+          "DATA_FINALIZACAO_PROCESSO": "17/08/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "105831066",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351122821202694",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMACLIQUE",
+          "DATA_FINALIZACAO_PROCESSO": "17/08/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "105831066",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351122821202694",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "ARIBET",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "174650026",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351440192202410",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "09058502000148 - FARMA VISION IMPORTAÇÃO E EXPORTAÇÃO DE MEDICAMENTOS LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LORYVIA",
+          "DATA_FINALIZACAO_PROCESSO": "10/11/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "139000015",
+          "DATA_VENCIMENTO_REGISTRO": "112036",
+          "NUMERO_PROCESSO": "25351156425202661",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "31203582000137 - ÁVITA CARE IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2019",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "183260393",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351411883201949",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "XULTOPHY",
+          "DATA_FINALIZACAO_PROCESSO": "03/04/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660033",
+          "DATA_VENCIMENTO_REGISTRO": "042027",
+          "NUMERO_PROCESSO": "25351692770201528",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina degludeca, liraglutida",
+          "_substancias": [
+            "Xultophy",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRUX",
+          "DATA_FINALIZACAO_PROCESSO": "24/12/2024",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351447",
+          "DATA_VENCIMENTO_REGISTRO": "122034",
+          "NUMERO_PROCESSO": "25351350685202205",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Lirux",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "10/11/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "139000014",
+          "DATA_VENCIMENTO_REGISTRO": "112036",
+          "NUMERO_PROCESSO": "25351152233202685",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "31203582000137 - ÁVITA CARE IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "08/09/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351483",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351037361202608",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYDUREON",
+          "DATA_FINALIZACAO_PROCESSO": "23/01/2017",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "116180256",
+          "DATA_VENCIMENTO_REGISTRO": "012022",
+          "NUMERO_PROCESSO": "25351313973201495",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "60318797000100 - ASTRAZENECA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "08/09/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351483",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351037361202608",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "POVIZTRA",
+          "DATA_FINALIZACAO_PROCESSO": "12/08/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660042",
+          "DATA_VENCIMENTO_REGISTRO": "082034",
+          "NUMERO_PROCESSO": "25351359093202411",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO MULTIDOSE",
+          "DATA_FINALIZACAO_PROCESSO": "18/03/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600208",
+          "DATA_VENCIMENTO_REGISTRO": "032036",
+          "NUMERO_PROCESSO": "25351066367202412",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZEMPIC",
+          "DATA_FINALIZACAO_PROCESSO": "06/08/2018",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660036",
+          "DATA_VENCIMENTO_REGISTRO": "082028",
+          "NUMERO_PROCESSO": "25351658916201751",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozempic",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LORYVIA",
+          "DATA_FINALIZACAO_PROCESSO": "10/11/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "139000015",
+          "DATA_VENCIMENTO_REGISTRO": "112036",
+          "NUMERO_PROCESSO": "25351156425202661",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "31203582000137 - ÁVITA CARE IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZIVY",
+          "DATA_FINALIZACAO_PROCESSO": "26/05/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351473",
+          "DATA_VENCIMENTO_REGISTRO": "052036",
+          "NUMERO_PROCESSO": "25351813190202373",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozivy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "POVIZTRA",
+          "DATA_FINALIZACAO_PROCESSO": "12/08/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660042",
+          "DATA_VENCIMENTO_REGISTRO": "082034",
+          "NUMERO_PROCESSO": "25351359093202411",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2019",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "183260393",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351411883201949",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "EXTENSIOR",
+          "DATA_FINALIZACAO_PROCESSO": "14/10/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660043",
+          "DATA_VENCIMENTO_REGISTRO": "102034",
+          "NUMERO_PROCESSO": "25351359096202446",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Extensior",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "KYINSU",
+          "DATA_FINALIZACAO_PROCESSO": "28/09/2026",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660046",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351047567202557",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina icodeca, semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "TRULICITY",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2015",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "112600190",
+          "DATA_VENCIMENTO_REGISTRO": "092035",
+          "NUMERO_PROCESSO": "25351243091201487",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "dulaglutida",
+          "_substancias": [
+            "Trulicity",
+            "dulaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYDUREON",
+          "DATA_FINALIZACAO_PROCESSO": "23/01/2017",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "116180256",
+          "DATA_VENCIMENTO_REGISTRO": "012022",
+          "NUMERO_PROCESSO": "25351313973201495",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "60318797000100 - ASTRAZENECA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "EMBELTAH",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "151430112",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351854888202349",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "03978166000175 - DR. REDDYS FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "08/09/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351483",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351037361202608",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "17/02/2020",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "183260431",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351627183201974",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "17/07/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "113001164",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351187254201619",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZEMPIC",
+          "DATA_FINALIZACAO_PROCESSO": "06/08/2018",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660036",
+          "DATA_VENCIMENTO_REGISTRO": "082028",
+          "NUMERO_PROCESSO": "25351658916201751",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozempic",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "KYINSU",
+          "DATA_FINALIZACAO_PROCESSO": "28/09/2026",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660046",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351047567202557",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina icodeca, semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZEMPIC",
+          "DATA_FINALIZACAO_PROCESSO": "06/08/2018",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660036",
+          "DATA_VENCIMENTO_REGISTRO": "082028",
+          "NUMERO_PROCESSO": "25351658916201751",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozempic",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "VICTOZA",
+          "DATA_FINALIZACAO_PROCESSO": "29/03/2010",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660028",
+          "DATA_VENCIMENTO_REGISTRO": "042030",
+          "NUMERO_PROCESSO": "25351765063200844",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Victoza",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "17/02/2020",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "183260431",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351627183201974",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYRZA",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "174650028",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351456567202463",
+          "CLASSE_TERAPEUTICA": "",
+          "EMPRESA_DETENTORA_REGISTRO": "09058502000148 - FARMA VISION IMPORTAÇÃO E EXPORTAÇÃO DE MEDICAMENTOS LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "24/08/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "105831067",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351128361202616",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SAXENDA",
+          "DATA_FINALIZACAO_PROCESSO": "29/02/2016",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660032",
+          "DATA_VENCIMENTO_REGISTRO": "022036",
+          "NUMERO_PROCESSO": "25351358815201494",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Saxenda",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "XULTOPHY",
+          "DATA_FINALIZACAO_PROCESSO": "03/04/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660033",
+          "DATA_VENCIMENTO_REGISTRO": "042027",
+          "NUMERO_PROCESSO": "25351692770201528",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina degludeca, liraglutida",
+          "_substancias": [
+            "Xultophy",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYETTA",
+          "DATA_FINALIZACAO_PROCESSO": "17/05/2017",
+          "CATEGORIA_REGULATORIA": "",
+          "NUMERO_REGISTRO_PRODUTO": "116180260",
+          "DATA_VENCIMENTO_REGISTRO": "062019",
+          "NUMERO_PROCESSO": "25351012414201703",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "60318797000100 - ASTRAZENECA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "VICTOZA",
+          "DATA_FINALIZACAO_PROCESSO": "29/03/2010",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660028",
+          "DATA_VENCIMENTO_REGISTRO": "042030",
+          "NUMERO_PROCESSO": "25351765063200844",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Victoza",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "17/07/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "113001164",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351187254201619",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2019",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "183260393",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351411883201949",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "KYINSU",
+          "DATA_FINALIZACAO_PROCESSO": "28/09/2026",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660046",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351047567202557",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina icodeca, semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2019",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "183260393",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351411883201949",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "24/08/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "105831067",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351128361202616",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAVY",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "178171007",
+          "DATA_VENCIMENTO_REGISTRO": "072036",
+          "NUMERO_PROCESSO": "25351875515202310",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "61082426000207 - COSMED INDUSTRIA DE COSMETICOS E MEDICAMENTOS S.A.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Semavy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZEMPIC",
+          "DATA_FINALIZACAO_PROCESSO": "06/08/2018",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660036",
+          "DATA_VENCIMENTO_REGISTRO": "082028",
+          "NUMERO_PROCESSO": "25351658916201751",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozempic",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "TRULICITY",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2015",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "112600190",
+          "DATA_VENCIMENTO_REGISTRO": "092035",
+          "NUMERO_PROCESSO": "25351243091201487",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "dulaglutida",
+          "_substancias": [
+            "Trulicity",
+            "dulaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SAXENDA",
+          "DATA_FINALIZACAO_PROCESSO": "29/02/2016",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660032",
+          "DATA_VENCIMENTO_REGISTRO": "022036",
+          "NUMERO_PROCESSO": "25351358815201494",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Saxenda",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2013",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "113001143",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351737635201168",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "ORSEMA",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "123520303",
+          "DATA_VENCIMENTO_REGISTRO": "072036",
+          "NUMERO_PROCESSO": "25351875524202301",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "73663650000190 - RANBAXY FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Orsema",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "ZEMPNEO",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "155840721",
+          "DATA_VENCIMENTO_REGISTRO": "072036",
+          "NUMERO_PROCESSO": "25351875512202378",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "05161069000110 - BRAINFARMA INDÚSTRIA QUÍMICA E FARMACÊUTICA S.A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Zempneo",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "YLUMÉC",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "102351480",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351140215202651",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "TRULICITY",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2015",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "112600190",
+          "DATA_VENCIMENTO_REGISTRO": "092035",
+          "NUMERO_PROCESSO": "25351243091201487",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "dulaglutida",
+          "_substancias": [
+            "Trulicity",
+            "dulaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "YLUMÉC",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "102351480",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351140215202651",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "YLUMÉC",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "102351480",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351140215202651",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "17/02/2020",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "183260431",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351627183201974",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAVY",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "178171007",
+          "DATA_VENCIMENTO_REGISTRO": "072036",
+          "NUMERO_PROCESSO": "25351875515202310",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "61082426000207 - COSMED INDUSTRIA DE COSMETICOS E MEDICAMENTOS S.A.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Semavy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRUX",
+          "DATA_FINALIZACAO_PROCESSO": "24/12/2024",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351447",
+          "DATA_VENCIMENTO_REGISTRO": "122034",
+          "NUMERO_PROCESSO": "25351350685202205",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Lirux",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "17/07/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "113001164",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351187254201619",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "EXTENSIOR",
+          "DATA_FINALIZACAO_PROCESSO": "14/10/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660043",
+          "DATA_VENCIMENTO_REGISTRO": "102034",
+          "NUMERO_PROCESSO": "25351359096202446",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Extensior",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYDUREON",
+          "DATA_FINALIZACAO_PROCESSO": "23/01/2017",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "116180256",
+          "DATA_VENCIMENTO_REGISTRO": "012022",
+          "NUMERO_PROCESSO": "25351313973201495",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "60318797000100 - ASTRAZENECA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZEMPIC",
+          "DATA_FINALIZACAO_PROCESSO": "06/08/2018",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660036",
+          "DATA_VENCIMENTO_REGISTRO": "082028",
+          "NUMERO_PROCESSO": "25351658916201751",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozempic",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYETTA",
+          "DATA_FINALIZACAO_PROCESSO": "20/06/2014",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "101800405",
+          "DATA_VENCIMENTO_REGISTRO": "062019",
+          "NUMERO_PROCESSO": "25351197584201300",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "56998982000107 - BRISTOL-MYERS SQUIBB FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "RYBELSUS",
+          "DATA_FINALIZACAO_PROCESSO": "26/10/2020",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660037",
+          "DATA_VENCIMENTO_REGISTRO": "102030",
+          "NUMERO_PROCESSO": "25351690887201983",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Rybelsus",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "EXTENSIOR",
+          "DATA_FINALIZACAO_PROCESSO": "14/10/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660043",
+          "DATA_VENCIMENTO_REGISTRO": "102034",
+          "NUMERO_PROCESSO": "25351359096202446",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Extensior",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMACLIQUE",
+          "DATA_FINALIZACAO_PROCESSO": "17/08/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "105831066",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351122821202694",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2013",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "113001143",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351737635201168",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZIVY",
+          "DATA_FINALIZACAO_PROCESSO": "26/05/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351473",
+          "DATA_VENCIMENTO_REGISTRO": "052036",
+          "NUMERO_PROCESSO": "25351813190202373",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozivy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "17/02/2020",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "183260431",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351627183201974",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "10588595001092 - SANOFI MEDLEY FARMACÊUTICA LTDA.",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "EXTENSIOR",
+          "DATA_FINALIZACAO_PROCESSO": "14/10/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660043",
+          "DATA_VENCIMENTO_REGISTRO": "102034",
+          "NUMERO_PROCESSO": "25351359096202446",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Extensior",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "TRULICITY",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2015",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "112600190",
+          "DATA_VENCIMENTO_REGISTRO": "092035",
+          "NUMERO_PROCESSO": "25351243091201487",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "dulaglutida",
+          "_substancias": [
+            "Trulicity",
+            "dulaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO MULTIDOSE",
+          "DATA_FINALIZACAO_PROCESSO": "18/03/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600208",
+          "DATA_VENCIMENTO_REGISTRO": "032036",
+          "NUMERO_PROCESSO": "25351066367202412",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "EMBELTAH",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "151430112",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351854888202349",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "03978166000175 - DR. REDDYS FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "VICTOZA",
+          "DATA_FINALIZACAO_PROCESSO": "29/03/2010",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660028",
+          "DATA_VENCIMENTO_REGISTRO": "042030",
+          "NUMERO_PROCESSO": "25351765063200844",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Victoza",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "TRULICITY",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2015",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "112600190",
+          "DATA_VENCIMENTO_REGISTRO": "092035",
+          "NUMERO_PROCESSO": "25351243091201487",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "dulaglutida",
+          "_substancias": [
+            "Trulicity",
+            "dulaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2013",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "113001143",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351737635201168",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WYLOVOL",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "174650027",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351440194202417",
+          "CLASSE_TERAPEUTICA": "",
+          "EMPRESA_DETENTORA_REGISTRO": "09058502000148 - FARMA VISION IMPORTAÇÃO E EXPORTAÇÃO DE MEDICAMENTOS LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "KYINSU",
+          "DATA_FINALIZACAO_PROCESSO": "28/09/2026",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660046",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351047567202557",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "insulina icodeca, semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "TRULICITY",
+          "DATA_FINALIZACAO_PROCESSO": "31/08/2015",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "112600190",
+          "DATA_VENCIMENTO_REGISTRO": "092035",
+          "NUMERO_PROCESSO": "25351243091201487",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "dulaglutida",
+          "_substancias": [
+            "Trulicity",
+            "dulaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SOLIQUA",
+          "DATA_FINALIZACAO_PROCESSO": "17/07/2017",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "113001164",
+          "DATA_VENCIMENTO_REGISTRO": "072027",
+          "NUMERO_PROCESSO": "25351187254201619",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "insulina glargina, lixisenatida",
+          "_substancias": [
+            "Soliqua",
+            "lixisenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO MULTIDOSE",
+          "DATA_FINALIZACAO_PROCESSO": "18/03/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600208",
+          "DATA_VENCIMENTO_REGISTRO": "032036",
+          "NUMERO_PROCESSO": "25351066367202412",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO",
+          "DATA_FINALIZACAO_PROCESSO": "25/09/2023",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600202",
+          "DATA_VENCIMENTO_REGISTRO": "092033",
+          "NUMERO_PROCESSO": "25351880657202129",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "17/08/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351478",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351126507202681",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYRZA",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "174650028",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351456567202463",
+          "CLASSE_TERAPEUTICA": "",
+          "EMPRESA_DETENTORA_REGISTRO": "09058502000148 - FARMA VISION IMPORTAÇÃO E EXPORTAÇÃO DE MEDICAMENTOS LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEEMASUN",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "146820128",
+          "DATA_VENCIMENTO_REGISTRO": "072036",
+          "NUMERO_PROCESSO": "25351760443202307",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "05035244000123 - SUN FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Seemasun",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRACLICK",
+          "DATA_FINALIZACAO_PROCESSO": "01/06/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "105831062",
+          "DATA_VENCIMENTO_REGISTRO": "062036",
+          "NUMERO_PROCESSO": "25351457977202421",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "45992062000165 - GERMED FARMACEUTICA LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Liraclick",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYETTA",
+          "DATA_FINALIZACAO_PROCESSO": "20/06/2014",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "101800405",
+          "DATA_VENCIMENTO_REGISTRO": "062019",
+          "NUMERO_PROCESSO": "25351197584201300",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "56998982000107 - BRISTOL-MYERS SQUIBB FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "08/09/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351483",
+          "DATA_VENCIMENTO_REGISTRO": "092036",
+          "NUMERO_PROCESSO": "25351037361202608",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "WEGOVY",
+          "DATA_FINALIZACAO_PROCESSO": "02/01/2023",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660039",
+          "DATA_VENCIMENTO_REGISTRO": "012033",
+          "NUMERO_PROCESSO": "25351164882202114",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Wegovy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LIRUX",
+          "DATA_FINALIZACAO_PROCESSO": "24/12/2024",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351447",
+          "DATA_VENCIMENTO_REGISTRO": "122034",
+          "NUMERO_PROCESSO": "25351350685202205",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Lirux",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEVEMA",
+          "DATA_FINALIZACAO_PROCESSO": "29/10/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "105730209",
+          "DATA_VENCIMENTO_REGISTRO": "102036",
+          "NUMERO_PROCESSO": "25351456573202411",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "60659463002992 - ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "BYDUREON",
+          "DATA_FINALIZACAO_PROCESSO": "23/01/2017",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "116180256",
+          "DATA_VENCIMENTO_REGISTRO": "012022",
+          "NUMERO_PROCESSO": "25351313973201495",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "60318797000100 - ASTRAZENECA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "exenatida",
+          "_substancias": [
+            "exenatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OLIRE",
+          "DATA_FINALIZACAO_PROCESSO": "24/12/2024",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351448",
+          "DATA_VENCIMENTO_REGISTRO": "122034",
+          "NUMERO_PROCESSO": "25351370849202211",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "liraglutida",
+          "_substancias": [
+            "Olire",
+            "liraglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "MOUNJARO MULTIDOSE",
+          "DATA_FINALIZACAO_PROCESSO": "18/03/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "112600208",
+          "DATA_VENCIMENTO_REGISTRO": "032036",
+          "NUMERO_PROCESSO": "25351066367202412",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "43940618000144 - ELI LILLY DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "tirzepatida",
+          "_substancias": [
+            "Mounjaro",
+            "tirzepatida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "17/08/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351478",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351126507202681",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "POVIZTRA",
+          "DATA_FINALIZACAO_PROCESSO": "12/08/2024",
+          "CATEGORIA_REGULATORIA": "Biológico",
+          "NUMERO_REGISTRO_PRODUTO": "117660042",
+          "DATA_VENCIMENTO_REGISTRO": "082034",
+          "NUMERO_PROCESSO": "25351359093202411",
+          "CLASSE_TERAPEUTICA": "OUTROS HORMONIOS E MODULADORES DO METABOLISMO E DA DIGESTAO",
+          "EMPRESA_DETENTORA_REGISTRO": "82277955000155 - NOVO NORDISK FARMACÊUTICA DO BRASIL LTDA",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "SEMAGLUTIDA",
+          "DATA_FINALIZACAO_PROCESSO": "17/08/2026",
+          "CATEGORIA_REGULATORIA": "Genérico",
+          "NUMERO_REGISTRO_PRODUTO": "102351478",
+          "DATA_VENCIMENTO_REGISTRO": "082036",
+          "NUMERO_PROCESSO": "25351126507202681",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OZIVY",
+          "DATA_FINALIZACAO_PROCESSO": "26/05/2026",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "102351473",
+          "DATA_VENCIMENTO_REGISTRO": "052036",
+          "NUMERO_PROCESSO": "25351813190202373",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Ozivy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "OWOZY",
+          "DATA_FINALIZACAO_PROCESSO": "29/07/2026",
+          "CATEGORIA_REGULATORIA": "Similar",
+          "NUMERO_REGISTRO_PRODUTO": "139000010",
+          "DATA_VENCIMENTO_REGISTRO": "072029",
+          "NUMERO_PROCESSO": "25351490762202331",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "31203582000137 - ÁVITA CARE IMPORTAÇÃO E DISTRIBUIÇÃO DE PRODUTOS LTDA.",
+          "SITUACAO_REGISTRO": "Ativo",
+          "PRINCIPIO_ATIVO": "semaglutida",
+          "_substancias": [
+            "Owozy",
+            "semaglutida"
+          ]
+        },
+        {
+          "TIPO_PRODUTO": "MEDICAMENTO",
+          "NOME_PRODUTO": "LYXUMIA",
+          "DATA_FINALIZACAO_PROCESSO": "16/09/2013",
+          "CATEGORIA_REGULATORIA": "Novo",
+          "NUMERO_REGISTRO_PRODUTO": "113001143",
+          "DATA_VENCIMENTO_REGISTRO": "092028",
+          "NUMERO_PROCESSO": "25351737635201168",
+          "CLASSE_TERAPEUTICA": "ANTIDIABETICOS",
+          "EMPRESA_DETENTORA_REGISTRO": "02685377000157 - SANOFI-AVENTIS FARMACÊUTICA LTDA",
+          "SITUACAO_REGISTRO": "Inativo",
+          "PRINCIPIO_ATIVO": "lixisenatida",
+          "_substancias": [
+            "lixisenatida"
+          ]
+        }
+      ]
+    }
+  ]
+}

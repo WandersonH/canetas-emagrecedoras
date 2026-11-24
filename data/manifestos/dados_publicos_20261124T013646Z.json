@@ -1,0 +1,36 @@
+{
+  "frente": "dados_publicos",
+  "etapa": "gratis",
+  "run_id": "45306221540",
+  "iniciado_em": "2026-11-24T01:36:46Z",
+  "terminado_em": "2026-11-24T01:37:00Z",
+  "consulta": {
+    "subfrente": "registro",
+    "fonte": "https://dados.anvisa.gov.br/dados/",
+    "arquivos": [
+      "DADOS_ABERTOS_MEDICAMENTOS.csv"
+    ],
+    "filtro": "linha que cita substância ou marca de data/config/termos.json"
+  },
+  "universo": {
+    "valor": 229708,
+    "fonte": "linhas dos arquivos da Anvisa, contadas na leitura"
+  },
+  "lido": 229708,
+  "amostra": {
+    "n": 214,
+    "como": "linhas que citam substância ou marca"
+  },
+  "parou_por": "arquivo_inteiro",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/dados_publicos/registro.json",
+      "sha256": "928d896dea6c381de07ed23cb247e6dcb3427ff595e996c38d95d5ea402d467a",
+      "bytes": 145930,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}

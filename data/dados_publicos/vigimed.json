@@ -1,0 +1,885 @@
+{
+  "obtido_em": "2026-11-24T01:37:19Z",
+  "run_id": "45306221540",
+  "nota": "Notificações espontâneas de suspeita de evento adverso. Notificação não prova que o medicamento causou o evento. Contagem menor que 5 aparece como '<5'. As linhas por paciente ficam só no repositório privado.",
+  "arquivos": [
+    {
+      "arquivo": "VigiMed_Medicamentos.csv",
+      "colunas": [
+        "IDENTIFICACAO_NOTIFICACAO",
+        "RELACAO_MEDICAMENTO_EVENTO",
+        "NOME_MEDICAMENTO_WHODRUG",
+        "PRINCIPIOS_ATIVOS_WHODRUG",
+        "CODIGO_ATC",
+        "DETENTOR_REGISTRO",
+        "CONCENTRACAO",
+        "COMPONENTE_SUSPEITO",
+        "ACAO_ADOTADA",
+        "PROBLEMAS_ADICIONAIS_RELCIONADOS_MEDICAMENTO",
+        "INDICACAO_MEDDRA",
+        "INDICACAO_RELATADA_NOTIFICADOR_INICIAL",
+        "DOSE",
+        "FREQUENCIA_DOSE",
+        "POSOLOGIA",
+        "DURACAO",
+        "INICIO_ADMINISTRACAO",
+        "FIM_ADMINISTRACAO",
+        "FORMA_FARMACEUTICA",
+        "VIA_ADMINISTRACAO",
+        "VIA_ADMINISTRACAO_MAE_PAI",
+        "NUMELO_LOTE"
+      ],
+      "linhas_no_arquivo": 711105,
+      "linhas_que_citam": 5763,
+      "relacao_com_o_evento": [
+        {
+          "valor": "Suspeito",
+          "n": 5548
+        },
+        {
+          "valor": "Concomitante",
+          "n": 194
+        },
+        {
+          "valor": "Interação",
+          "n": 16
+        },
+        {
+          "valor": "Medicamento não administrado",
+          "n": 5
+        }
+      ]
+    },
+    {
+      "arquivo": "VigiMed_Notificacoes.csv",
+      "colunas": [
+        "UF",
+        "TIPO_ENTRADA_VIGIMED",
+        "RECEBIDO_DE",
+        "IDENTIFICACAO_NOTIFICACAO",
+        "DATA_INCLUSAO_SISTEMA",
+        "DATA_ULTIMA_ATUALIZACAO",
+        "DATA_NOTIFICACAO",
+        "TIPO_NOTIFICACAO",
+        "NOTIFICACAO_PARENT_CHILD",
+        "DATA_NASCIMENTO",
+        "IDADE_MOMENTO_REACAO",
+        "GRUPO_IDADE",
+        "IDADE_GESTACIONAL_MOMENTO_REACAO",
+        "SEXO",
+        "GESTANTE",
+        "LACTANTE",
+        "PESO_KG",
+        "ALTURA_CM",
+        "REACAO_EVENTO_ADVERSO_MEDDRA",
+        "GRAVE",
+        "GRAVIDADE",
+        "DESFECHO",
+        "DATA_INICIO_HORA",
+        "DATA_FINAL_HORA",
+        "DURACAO",
+        "RELACAO_MEDICAMENTO_EVENTO",
+        "NOME_MEDICAMENTO_WHODRUG",
+        "ACAO_ADOTADA",
+        "NOTIFICADOR"
+      ],
+      "linhas_no_arquivo": 396495,
+      "linhas_que_citam": 4030
+    },
+    {
+      "arquivo": "VigiMed_Reacoes.csv",
+      "colunas": [
+        "IDENTIFICACAO_NOTIFICACAO",
+        "REACAO_EVTO_ADVERSO_MEDDRA_LLT",
+        "PT",
+        "HLT",
+        "HLGT",
+        "SOC",
+        "DATA_INICIO_HORA",
+        "DATA_FINAL_HORA",
+        "DURACAO",
+        "GRAVE",
+        "GRAVIDADE",
+        "DESFECHO"
+      ],
+      "linhas_no_arquivo": 1114975,
+      "linhas_que_citam": 15301
+    }
+  ],
+  "notificacoes": 4040,
+  "por_substancia": [
+    {
+      "valor": "semaglutida",
+      "n": 2256
+    },
+    {
+      "valor": "tirzepatida",
+      "n": 968
+    },
+    {
+      "valor": "Mounjaro",
+      "n": 843
+    },
+    {
+      "valor": "Wegovy",
+      "n": 814
+    },
+    {
+      "valor": "Ozempic",
+      "n": 789
+    },
+    {
+      "valor": "liraglutida",
+      "n": 778
+    },
+    {
+      "valor": "Rybelsus",
+      "n": 510
+    },
+    {
+      "valor": "Saxenda",
+      "n": 371
+    },
+    {
+      "valor": "Xultophy",
+      "n": 250
+    },
+    {
+      "valor": "Victoza",
+      "n": 101
+    },
+    {
+      "valor": "dulaglutida",
+      "n": 66
+    },
+    {
+      "valor": "Trulicity",
+      "n": 65
+    },
+    {
+      "valor": "lixisenatida",
+      "n": 8
+    },
+    {
+      "valor": "Soliqua",
+      "n": 7
+    },
+    {
+      "valor": "Extensior",
+      "n": 7
+    },
+    {
+      "valor": "Ozivy",
+      "n": 7
+    },
+    {
+      "valor": "Olire",
+      "n": "<5"
+    }
+  ],
+  "por_ano": [
+    {
+      "valor": "2019",
+      "n": 5
+    },
+    {
+      "valor": "2020",
+      "n": "<5"
+    },
+    {
+      "valor": "2021",
+      "n": 11
+    },
+    {
+      "valor": "2022",
+      "n": 11
+    },
+    {
+      "valor": "2023",
+      "n": 8
+    },
+    {
+      "valor": "2024",
+      "n": 10
+    },
+    {
+      "valor": "2025",
+      "n": 18
+    },
+    {
+      "valor": "2026",
+      "n": 78
+    },
+    {
+      "valor": "não informado",
+      "n": 3886
+    }
+  ],
+  "por_uf": [
+    {
+      "valor": "SP",
+      "n": 3092
+    },
+    {
+      "valor": "Não informado",
+      "n": 454
+    },
+    {
+      "valor": "PR",
+      "n": 353
+    },
+    {
+      "valor": "RJ",
+      "n": 24
+    },
+    {
+      "valor": "MG",
+      "n": 17
+    },
+    {
+      "valor": "DF",
+      "n": 11
+    },
+    {
+      "valor": "RS",
+      "n": 10
+    },
+    {
+      "valor": "SC",
+      "n": 10
+    },
+    {
+      "valor": "BA",
+      "n": 9
+    },
+    {
+      "valor": "ES",
+      "n": 9
+    },
+    {
+      "valor": "CE",
+      "n": 8
+    },
+    {
+      "valor": "GO",
+      "n": 8
+    },
+    {
+      "valor": "MS",
+      "n": 6
+    },
+    {
+      "valor": "Mal Formatado",
+      "n": "<5"
+    },
+    {
+      "valor": "MA",
+      "n": "<5"
+    },
+    {
+      "valor": "AL",
+      "n": "<5"
+    },
+    {
+      "valor": "RO",
+      "n": "<5"
+    },
+    {
+      "valor": "MT",
+      "n": "<5"
+    },
+    {
+      "valor": "PE",
+      "n": "<5"
+    },
+    {
+      "valor": "AC",
+      "n": "<5"
+    },
+    {
+      "valor": "PI",
+      "n": "<5"
+    },
+    {
+      "valor": "AM",
+      "n": "<5"
+    }
+  ],
+  "por_sexo": [
+    {
+      "valor": "Feminino",
+      "n": 2900
+    },
+    {
+      "valor": "Masculino",
+      "n": 1034
+    },
+    {
+      "valor": "Não Informado",
+      "n": 92
+    },
+    {
+      "valor": "Desconhecido",
+      "n": "<5"
+    }
+  ],
+  "por_faixa_etaria": [
+    {
+      "valor": "None",
+      "n": 3190
+    },
+    {
+      "valor": "Adulto",
+      "n": 601
+    },
+    {
+      "valor": "Idoso",
+      "n": 230
+    },
+    {
+      "valor": "Adolescente",
+      "n": 6
+    },
+    {
+      "valor": "Neonato",
+      "n": "<5"
+    },
+    {
+      "valor": "Feto",
+      "n": "<5"
+    }
+  ],
+  "por_gravidade": [
+    {
+      "valor": "Sim",
+      "n": 3589
+    },
+    {
+      "valor": "Não",
+      "n": 402
+    },
+    {
+      "valor": "Non",
+      "n": 20
+    },
+    {
+      "valor": "|||",
+      "n": 8
+    },
+    {
+      "valor": "|",
+      "n": 5
+    },
+    {
+      "valor": "||",
+      "n": "<5"
+    },
+    {
+      "valor": "|Nã",
+      "n": "<5"
+    },
+    {
+      "valor": "|Si",
+      "n": "<5"
+    }
+  ],
+  "por_quem_notificou": [
+    {
+      "valor": "Consumidor ou outro não profissional de saúde",
+      "n": 2456
+    },
+    {
+      "valor": "Médico",
+      "n": 1032
+    },
+    {
+      "valor": "Farmacêutico",
+      "n": 369
+    },
+    {
+      "valor": "Outro profissional de saúde",
+      "n": 145
+    },
+    {
+      "valor": "None",
+      "n": 24
+    },
+    {
+      "valor": "Advogado",
+      "n": "<5"
+    }
+  ],
+  "por_ano_e_substancia": [
+    {
+      "ano": "2019",
+      "substancia": "Ozempic",
+      "n": "<5"
+    },
+    {
+      "ano": "2019",
+      "substancia": "Saxenda",
+      "n": "<5"
+    },
+    {
+      "ano": "2019",
+      "substancia": "Trulicity",
+      "n": "<5"
+    },
+    {
+      "ano": "2019",
+      "substancia": "dulaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2019",
+      "substancia": "liraglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2019",
+      "substancia": "semaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2020",
+      "substancia": "Ozempic",
+      "n": "<5"
+    },
+    {
+      "ano": "2020",
+      "substancia": "Trulicity",
+      "n": "<5"
+    },
+    {
+      "ano": "2020",
+      "substancia": "Victoza",
+      "n": "<5"
+    },
+    {
+      "ano": "2020",
+      "substancia": "dulaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2020",
+      "substancia": "liraglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2020",
+      "substancia": "semaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "Ozempic",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "Saxenda",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "Soliqua",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "Trulicity",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "Victoza",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "Xultophy",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "dulaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "liraglutida",
+      "n": 7
+    },
+    {
+      "ano": "2021",
+      "substancia": "lixisenatida",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
+      "substancia": "semaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2022",
+      "substancia": "Ozempic",
+      "n": 7
+    },
+    {
+      "ano": "2022",
+      "substancia": "Saxenda",
+      "n": "<5"
+    },
+    {
+      "ano": "2022",
+      "substancia": "liraglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2022",
+      "substancia": "semaglutida",
+      "n": 9
+    },
+    {
+      "ano": "2023",
+      "substancia": "Ozempic",
+      "n": "<5"
+    },
+    {
+      "ano": "2023",
+      "substancia": "Rybelsus",
+      "n": "<5"
+    },
+    {
+      "ano": "2023",
+      "substancia": "Saxenda",
+      "n": "<5"
+    },
+    {
+      "ano": "2023",
+      "substancia": "Xultophy",
+      "n": "<5"
+    },
+    {
+      "ano": "2023",
+      "substancia": "liraglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2023",
+      "substancia": "semaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2023",
+      "substancia": "tirzepatida",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "Ozempic",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "Rybelsus",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "Saxenda",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "Victoza",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "liraglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "semaglutida",
+      "n": 6
+    },
+    {
+      "ano": "2024",
+      "substancia": "tirzepatida",
+      "n": "<5"
+    },
+    {
+      "ano": "2025",
+      "substancia": "Mounjaro",
+      "n": 10
+    },
+    {
+      "ano": "2025",
+      "substancia": "Ozempic",
+      "n": "<5"
+    },
+    {
+      "ano": "2025",
+      "substancia": "Rybelsus",
+      "n": "<5"
+    },
+    {
+      "ano": "2025",
+      "substancia": "Wegovy",
+      "n": "<5"
+    },
+    {
+      "ano": "2025",
+      "substancia": "Xultophy",
+      "n": "<5"
+    },
+    {
+      "ano": "2025",
+      "substancia": "liraglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2025",
+      "substancia": "semaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2025",
+      "substancia": "tirzepatida",
+      "n": 12
+    },
+    {
+      "ano": "2026",
+      "substancia": "Mounjaro",
+      "n": 9
+    },
+    {
+      "ano": "2026",
+      "substancia": "Ozempic",
+      "n": "<5"
+    },
+    {
+      "ano": "2026",
+      "substancia": "Wegovy",
+      "n": 36
+    },
+    {
+      "ano": "2026",
+      "substancia": "Xultophy",
+      "n": "<5"
+    },
+    {
+      "ano": "2026",
+      "substancia": "liraglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2026",
+      "substancia": "semaglutida",
+      "n": 38
+    },
+    {
+      "ano": "2026",
+      "substancia": "tirzepatida",
+      "n": 39
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Extensior",
+      "n": 7
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Mounjaro",
+      "n": 824
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Olire",
+      "n": "<5"
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Ozempic",
+      "n": 770
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Ozivy",
+      "n": 7
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Rybelsus",
+      "n": 504
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Saxenda",
+      "n": 359
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Soliqua",
+      "n": 6
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Trulicity",
+      "n": 61
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Victoza",
+      "n": 97
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Wegovy",
+      "n": 777
+    },
+    {
+      "ano": "não informado",
+      "substancia": "Xultophy",
+      "n": 245
+    },
+    {
+      "ano": "não informado",
+      "substancia": "dulaglutida",
+      "n": 62
+    },
+    {
+      "ano": "não informado",
+      "substancia": "liraglutida",
+      "n": 752
+    },
+    {
+      "ano": "não informado",
+      "substancia": "lixisenatida",
+      "n": 7
+    },
+    {
+      "ano": "não informado",
+      "substancia": "semaglutida",
+      "n": 2186
+    },
+    {
+      "ano": "não informado",
+      "substancia": "tirzepatida",
+      "n": 915
+    }
+  ],
+  "colunas_usadas": {
+    "por_ano": "DATA_NOTIFICACAO",
+    "por_uf": "UF",
+    "por_sexo": "SEXO",
+    "por_faixa_etaria": "GRUPO_IDADE",
+    "por_gravidade": "GRAVE",
+    "por_quem_notificou": "NOTIFICADOR"
+  },
+  "reacoes_mais_notificadas": [
+    {
+      "valor": "Náusea",
+      "n": 688
+    },
+    {
+      "valor": "Uso não descrito em bula (off label)",
+      "n": 650
+    },
+    {
+      "valor": "Vômito",
+      "n": 518
+    },
+    {
+      "valor": "Diarreia",
+      "n": 400
+    },
+    {
+      "valor": "Mal-estar",
+      "n": 331
+    },
+    {
+      "valor": "Cefaleia",
+      "n": 258
+    },
+    {
+      "valor": "Constipação",
+      "n": 252
+    },
+    {
+      "valor": "Dor abdominal",
+      "n": 235
+    },
+    {
+      "valor": "Astenia",
+      "n": 198
+    },
+    {
+      "valor": "Tontura",
+      "n": 193
+    },
+    {
+      "valor": "Uso de produto em indicação não aprovada",
+      "n": 189
+    },
+    {
+      "valor": "Técnica incorreta no processo de utilização de produto",
+      "n": 167
+    },
+    {
+      "valor": "Pancreatite",
+      "n": 166
+    },
+    {
+      "valor": "Medicamento ineficaz",
+      "n": 163
+    },
+    {
+      "valor": "Dor abdominal superior",
+      "n": 132
+    },
+    {
+      "valor": "Desidratação",
+      "n": 127
+    },
+    {
+      "valor": "Cirurgia",
+      "n": 127
+    },
+    {
+      "valor": "Apetite diminuído",
+      "n": 122
+    },
+    {
+      "valor": "Glicemia aumentada",
+      "n": 121
+    },
+    {
+      "valor": "Fadiga",
+      "n": 120
+    },
+    {
+      "valor": "Posologia inadequada de administração de produto",
+      "n": 117
+    },
+    {
+      "valor": "Hipoglicemia",
+      "n": 111
+    },
+    {
+      "valor": "Distensão abdominal",
+      "n": 107
+    },
+    {
+      "valor": "Peso aumentado",
+      "n": 105
+    },
+    {
+      "valor": "Síncope",
+      "n": 103
+    }
+  ],
+  "coluna_da_reacao": "PT"
+}

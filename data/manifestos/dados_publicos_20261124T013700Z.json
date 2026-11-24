@@ -1,0 +1,37 @@
+{
+  "frente": "dados_publicos",
+  "etapa": "gratis",
+  "run_id": "45306221540",
+  "iniciado_em": "2026-11-24T01:37:00Z",
+  "terminado_em": "2026-11-24T01:37:19Z",
+  "consulta": {
+    "subfrente": "cmed",
+    "fonte": "https://dados.anvisa.gov.br/dados/",
+    "arquivos": [
+      "TA_PRECO_MEDICAMENTO.csv",
+      "TA_PRECOS_MEDICAMENTOS.csv"
+    ],
+    "filtro": "linha que cita substância ou marca de data/config/termos.json"
+  },
+  "universo": {
+    "valor": 80072,
+    "fonte": "linhas dos arquivos da Anvisa, contadas na leitura"
+  },
+  "lido": 80072,
+  "amostra": {
+    "n": 131,
+    "como": "linhas que citam substância ou marca"
+  },
+  "parou_por": "arquivo_inteiro",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/dados_publicos/cmed.json",
+      "sha256": "2d9b4702036b30f1f6b4b277eff546d00900639fbd9d825acbe6b27daefd0120",
+      "bytes": 325434,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}

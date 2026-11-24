@@ -1,0 +1,91 @@
+{
+  "frente": "checagens_agencias",
+  "etapa": "gratis",
+  "run_id": "45306221540",
+  "iniciado_em": "2026-11-24T01:36:13Z",
+  "terminado_em": "2026-11-24T01:36:46Z",
+  "consulta": {
+    "fonte": "https://news.google.com/rss/search",
+    "agencias": [
+      [
+        "Agência Lupa",
+        "site:lupa.uol.com.br"
+      ],
+      [
+        "Agência Lupa",
+        "site:lupa.news"
+      ],
+      [
+        "Aos Fatos",
+        "site:aosfatos.org"
+      ],
+      [
+        "Estadão Verifica",
+        "\"Estadão Verifica\" site:estadao.com.br"
+      ],
+      [
+        "Fato ou Fake (g1)",
+        "\"Fato ou Fake\" site:g1.globo.com"
+      ],
+      [
+        "AFP Checamos",
+        "site:checamos.afp.com"
+      ],
+      [
+        "Projeto Comprova",
+        "site:projetocomprova.com.br"
+      ],
+      [
+        "UOL Confere",
+        "\"UOL Confere\" site:uol.com.br"
+      ],
+      [
+        "Boatos.org",
+        "site:boatos.org"
+      ],
+      [
+        "E-farsas",
+        "site:e-farsas.com"
+      ]
+    ],
+    "grupos": {
+      "substancias": [
+        "semaglutida",
+        "tirzepatida",
+        "liraglutida",
+        "retatrutida"
+      ],
+      "marcas_e_nomes": [
+        "Ozempic",
+        "Wegovy",
+        "Mounjaro",
+        "Saxenda",
+        "caneta emagrecedora",
+        "canetas emagrecedoras"
+      ]
+    },
+    "inicio": "2025-01-01",
+    "fim": "2026-11-24"
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "O Google Notícias não informa o total de resultados."
+  },
+  "lido": 561,
+  "amostra": {
+    "n": 461,
+    "como": "links distintos das agências, com data no período lido"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/checagens/agencias.json",
+      "sha256": "cef7a7f90abefee09fc0cc7a6d799237185d6488cb6d9daa2ba9fd0152f98c4c",
+      "bytes": 381188,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}
