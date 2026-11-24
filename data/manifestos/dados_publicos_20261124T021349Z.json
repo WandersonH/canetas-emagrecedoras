@@ -1,0 +1,41 @@
+{
+  "frente": "dados_publicos",
+  "etapa": "gratis",
+  "run_id": "45310587332",
+  "iniciado_em": "2026-11-24T02:13:49Z",
+  "terminado_em": "2026-11-24T02:31:02Z",
+  "consulta": {
+    "subfrente": "sngpc_industrializados",
+    "fonte": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/",
+    "filtro": "linha que cita substância ou marca",
+    "meses_desde": "202501"
+  },
+  "universo": {
+    "valor": 87296485,
+    "fonte": "linhas dos arquivos mensais do SNGPC (industrializados) publicados a partir de 202501, contadas na leitura"
+  },
+  "lido": 87296485,
+  "amostra": {
+    "n": 4221125,
+    "como": "linhas que citam substância ou marca"
+  },
+  "parou_por": "arquivo_inteiro",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/dados_publicos/sngpc_industrializados.json",
+      "sha256": "b7013c7b0c588a3f2cac98ff33a1ecb4ef4311355f5af7b34643ef8fb829ae14",
+      "bytes": 12809,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/linhas.csv",
+      "sha256": "01634e52b88f022a415f7c8e208228f8c1a9e61bba8ec1ce4363b493ee00775b",
+      "bytes": 623767649,
+      "linhas": 4221126
+    }
+  ],
+  "bloqueios": []
+}

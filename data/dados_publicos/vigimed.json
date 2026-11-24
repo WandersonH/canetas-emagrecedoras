@@ -1,6 +1,6 @@
 {
-  "obtido_em": "2026-11-24T01:37:19Z",
-  "run_id": "45306221540",
+  "obtido_em": "2026-11-24T02:12:15Z",
+  "run_id": "45310587332",
   "nota": "Notificações espontâneas de suspeita de evento adverso. Notificação não prova que o medicamento causou o evento. Contagem menor que 5 aparece como '<5'. As linhas por paciente ficam só no repositório privado.",
   "arquivos": [
     {
@@ -117,64 +117,24 @@
       "n": 968
     },
     {
-      "valor": "Mounjaro",
-      "n": 843
-    },
-    {
-      "valor": "Wegovy",
-      "n": 814
-    },
-    {
-      "valor": "Ozempic",
-      "n": 789
-    },
-    {
       "valor": "liraglutida",
       "n": 778
     },
     {
-      "valor": "Rybelsus",
-      "n": 510
-    },
-    {
-      "valor": "Saxenda",
-      "n": 371
-    },
-    {
-      "valor": "Xultophy",
+      "valor": "liraglutida com insulina",
       "n": 250
-    },
-    {
-      "valor": "Victoza",
-      "n": 101
     },
     {
       "valor": "dulaglutida",
       "n": 66
     },
     {
-      "valor": "Trulicity",
-      "n": 65
-    },
-    {
       "valor": "lixisenatida",
       "n": 8
     },
     {
-      "valor": "Soliqua",
+      "valor": "lixisenatida com insulina",
       "n": 7
-    },
-    {
-      "valor": "Extensior",
-      "n": 7
-    },
-    {
-      "valor": "Ozivy",
-      "n": 7
-    },
-    {
-      "valor": "Olire",
-      "n": "<5"
     }
   ],
   "por_ano": [
@@ -184,35 +144,31 @@
     },
     {
       "valor": "2020",
-      "n": "<5"
+      "n": 5
     },
     {
       "valor": "2021",
-      "n": 11
+      "n": 329
     },
     {
       "valor": "2022",
-      "n": 11
+      "n": 237
     },
     {
       "valor": "2023",
-      "n": 8
+      "n": 288
     },
     {
       "valor": "2024",
-      "n": 10
+      "n": 504
     },
     {
       "valor": "2025",
-      "n": 18
+      "n": 1402
     },
     {
       "valor": "2026",
-      "n": 78
-    },
-    {
-      "valor": "não informado",
-      "n": 3886
+      "n": 1260
     }
   ],
   "por_uf": [
@@ -412,21 +368,6 @@
   "por_ano_e_substancia": [
     {
       "ano": "2019",
-      "substancia": "Ozempic",
-      "n": "<5"
-    },
-    {
-      "ano": "2019",
-      "substancia": "Saxenda",
-      "n": "<5"
-    },
-    {
-      "ano": "2019",
-      "substancia": "Trulicity",
-      "n": "<5"
-    },
-    {
-      "ano": "2019",
       "substancia": "dulaglutida",
       "n": "<5"
     },
@@ -442,21 +383,6 @@
     },
     {
       "ano": "2020",
-      "substancia": "Ozempic",
-      "n": "<5"
-    },
-    {
-      "ano": "2020",
-      "substancia": "Trulicity",
-      "n": "<5"
-    },
-    {
-      "ano": "2020",
-      "substancia": "Victoza",
-      "n": "<5"
-    },
-    {
-      "ano": "2020",
       "substancia": "dulaglutida",
       "n": "<5"
     },
@@ -467,312 +393,202 @@
     },
     {
       "ano": "2020",
-      "substancia": "semaglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2021",
-      "substancia": "Ozempic",
-      "n": "<5"
-    },
-    {
-      "ano": "2021",
-      "substancia": "Saxenda",
-      "n": "<5"
-    },
-    {
-      "ano": "2021",
-      "substancia": "Soliqua",
-      "n": "<5"
-    },
-    {
-      "ano": "2021",
-      "substancia": "Trulicity",
-      "n": "<5"
-    },
-    {
-      "ano": "2021",
-      "substancia": "Victoza",
-      "n": "<5"
-    },
-    {
-      "ano": "2021",
-      "substancia": "Xultophy",
-      "n": "<5"
-    },
-    {
-      "ano": "2021",
-      "substancia": "dulaglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2021",
-      "substancia": "liraglutida",
-      "n": 7
-    },
-    {
-      "ano": "2021",
       "substancia": "lixisenatida",
       "n": "<5"
     },
     {
+      "ano": "2020",
+      "substancia": "lixisenatida com insulina",
+      "n": "<5"
+    },
+    {
+      "ano": "2020",
+      "substancia": "semaglutida",
+      "n": "<5"
+    },
+    {
       "ano": "2021",
-      "substancia": "semaglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2022",
-      "substancia": "Ozempic",
-      "n": 7
-    },
-    {
-      "ano": "2022",
-      "substancia": "Saxenda",
-      "n": "<5"
-    },
-    {
-      "ano": "2022",
-      "substancia": "liraglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2022",
-      "substancia": "semaglutida",
-      "n": 9
-    },
-    {
-      "ano": "2023",
-      "substancia": "Ozempic",
-      "n": "<5"
-    },
-    {
-      "ano": "2023",
-      "substancia": "Rybelsus",
-      "n": "<5"
-    },
-    {
-      "ano": "2023",
-      "substancia": "Saxenda",
-      "n": "<5"
-    },
-    {
-      "ano": "2023",
-      "substancia": "Xultophy",
-      "n": "<5"
-    },
-    {
-      "ano": "2023",
-      "substancia": "liraglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2023",
-      "substancia": "semaglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2023",
-      "substancia": "tirzepatida",
-      "n": "<5"
-    },
-    {
-      "ano": "2024",
-      "substancia": "Ozempic",
-      "n": "<5"
-    },
-    {
-      "ano": "2024",
-      "substancia": "Rybelsus",
-      "n": "<5"
-    },
-    {
-      "ano": "2024",
-      "substancia": "Saxenda",
-      "n": "<5"
-    },
-    {
-      "ano": "2024",
-      "substancia": "Victoza",
-      "n": "<5"
-    },
-    {
-      "ano": "2024",
-      "substancia": "liraglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2024",
-      "substancia": "semaglutida",
-      "n": 6
-    },
-    {
-      "ano": "2024",
-      "substancia": "tirzepatida",
-      "n": "<5"
-    },
-    {
-      "ano": "2025",
-      "substancia": "Mounjaro",
-      "n": 10
-    },
-    {
-      "ano": "2025",
-      "substancia": "Ozempic",
-      "n": "<5"
-    },
-    {
-      "ano": "2025",
-      "substancia": "Rybelsus",
-      "n": "<5"
-    },
-    {
-      "ano": "2025",
-      "substancia": "Wegovy",
-      "n": "<5"
-    },
-    {
-      "ano": "2025",
-      "substancia": "Xultophy",
-      "n": "<5"
-    },
-    {
-      "ano": "2025",
-      "substancia": "liraglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2025",
-      "substancia": "semaglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2025",
-      "substancia": "tirzepatida",
-      "n": 12
-    },
-    {
-      "ano": "2026",
-      "substancia": "Mounjaro",
-      "n": 9
-    },
-    {
-      "ano": "2026",
-      "substancia": "Ozempic",
-      "n": "<5"
-    },
-    {
-      "ano": "2026",
-      "substancia": "Wegovy",
-      "n": 36
-    },
-    {
-      "ano": "2026",
-      "substancia": "Xultophy",
-      "n": "<5"
-    },
-    {
-      "ano": "2026",
-      "substancia": "liraglutida",
-      "n": "<5"
-    },
-    {
-      "ano": "2026",
-      "substancia": "semaglutida",
-      "n": 38
-    },
-    {
-      "ano": "2026",
-      "substancia": "tirzepatida",
-      "n": 39
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Extensior",
-      "n": 7
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Mounjaro",
-      "n": 824
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Olire",
-      "n": "<5"
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Ozempic",
-      "n": 770
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Ozivy",
-      "n": 7
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Rybelsus",
-      "n": 504
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Saxenda",
-      "n": 359
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Soliqua",
-      "n": 6
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Trulicity",
-      "n": 61
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Victoza",
-      "n": 97
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Wegovy",
-      "n": 777
-    },
-    {
-      "ano": "não informado",
-      "substancia": "Xultophy",
-      "n": 245
-    },
-    {
-      "ano": "não informado",
       "substancia": "dulaglutida",
+      "n": 17
+    },
+    {
+      "ano": "2021",
+      "substancia": "liraglutida",
+      "n": 180
+    },
+    {
+      "ano": "2021",
+      "substancia": "liraglutida com insulina",
       "n": 62
     },
     {
-      "ano": "não informado",
-      "substancia": "liraglutida",
-      "n": 752
-    },
-    {
-      "ano": "não informado",
+      "ano": "2021",
       "substancia": "lixisenatida",
-      "n": 7
+      "n": "<5"
     },
     {
-      "ano": "não informado",
+      "ano": "2021",
+      "substancia": "lixisenatida com insulina",
+      "n": "<5"
+    },
+    {
+      "ano": "2021",
       "substancia": "semaglutida",
-      "n": 2186
+      "n": 130
     },
     {
-      "ano": "não informado",
+      "ano": "2022",
+      "substancia": "dulaglutida",
+      "n": 18
+    },
+    {
+      "ano": "2022",
+      "substancia": "liraglutida",
+      "n": 122
+    },
+    {
+      "ano": "2022",
+      "substancia": "liraglutida com insulina",
+      "n": 46
+    },
+    {
+      "ano": "2022",
+      "substancia": "lixisenatida",
+      "n": "<5"
+    },
+    {
+      "ano": "2022",
+      "substancia": "lixisenatida com insulina",
+      "n": "<5"
+    },
+    {
+      "ano": "2022",
+      "substancia": "semaglutida",
+      "n": 97
+    },
+    {
+      "ano": "2022",
       "substancia": "tirzepatida",
-      "n": 915
+      "n": "<5"
+    },
+    {
+      "ano": "2023",
+      "substancia": "dulaglutida",
+      "n": 14
+    },
+    {
+      "ano": "2023",
+      "substancia": "liraglutida",
+      "n": 111
+    },
+    {
+      "ano": "2023",
+      "substancia": "liraglutida com insulina",
+      "n": 15
+    },
+    {
+      "ano": "2023",
+      "substancia": "lixisenatida",
+      "n": "<5"
+    },
+    {
+      "ano": "2023",
+      "substancia": "semaglutida",
+      "n": 166
+    },
+    {
+      "ano": "2023",
+      "substancia": "tirzepatida",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "dulaglutida",
+      "n": 9
+    },
+    {
+      "ano": "2024",
+      "substancia": "liraglutida",
+      "n": 141
+    },
+    {
+      "ano": "2024",
+      "substancia": "liraglutida com insulina",
+      "n": 26
+    },
+    {
+      "ano": "2024",
+      "substancia": "lixisenatida",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "lixisenatida com insulina",
+      "n": "<5"
+    },
+    {
+      "ano": "2024",
+      "substancia": "semaglutida",
+      "n": 326
+    },
+    {
+      "ano": "2024",
+      "substancia": "tirzepatida",
+      "n": 31
+    },
+    {
+      "ano": "2025",
+      "substancia": "dulaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2025",
+      "substancia": "liraglutida",
+      "n": 167
+    },
+    {
+      "ano": "2025",
+      "substancia": "liraglutida com insulina",
+      "n": 79
+    },
+    {
+      "ano": "2025",
+      "substancia": "semaglutida",
+      "n": 925
+    },
+    {
+      "ano": "2025",
+      "substancia": "tirzepatida",
+      "n": 321
+    },
+    {
+      "ano": "2026",
+      "substancia": "dulaglutida",
+      "n": "<5"
+    },
+    {
+      "ano": "2026",
+      "substancia": "liraglutida",
+      "n": 48
+    },
+    {
+      "ano": "2026",
+      "substancia": "liraglutida com insulina",
+      "n": 22
+    },
+    {
+      "ano": "2026",
+      "substancia": "semaglutida",
+      "n": 605
+    },
+    {
+      "ano": "2026",
+      "substancia": "tirzepatida",
+      "n": 614
     }
   ],
   "colunas_usadas": {
-    "por_ano": "DATA_NOTIFICACAO",
+    "por_ano": "DATA_NOTIFICACAO , senão DATA_INCLUSAO_SISTEMA",
     "por_uf": "UF",
     "por_sexo": "SEXO",
     "por_faixa_etaria": "GRUPO_IDADE",

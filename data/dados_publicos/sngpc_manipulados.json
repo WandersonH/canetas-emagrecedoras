@@ -1,6 +1,6 @@
 {
-  "obtido_em": "2026-11-24T01:55:35Z",
-  "run_id": "45306221540",
+  "obtido_em": "2026-11-24T02:31:03Z",
+  "run_id": "45310587332",
   "nota": "Vendas registradas no SNGPC, como a Anvisa publica. Contagem menor que 5 aparece como '<5'. As linhas ficam só no repositório privado.",
   "tipo": "manipulados",
   "meses": [
@@ -84,207 +84,207 @@
       "mes": "2026-01",
       "substancia": "semaglutida",
       "linhas": 485,
-      "quantidade": 485
+      "quantidade": 14252.0
     },
     {
       "mes": "2026-01",
       "substancia": "tirzepatida",
       "linhas": 8955,
-      "quantidade": 8955
+      "quantidade": 110169.6
     },
     {
       "mes": "2026-02",
       "substancia": "semaglutida",
       "linhas": 836,
-      "quantidade": 836
+      "quantidade": 12754.0
     },
     {
       "mes": "2026-02",
       "substancia": "tirzepatida",
       "linhas": 8601,
-      "quantidade": 8601
+      "quantidade": 77281.4
     },
     {
       "mes": "2026-03",
       "substancia": "semaglutida",
       "linhas": 654,
-      "quantidade": 654
+      "quantidade": 16760.0
     },
     {
       "mes": "2026-03",
       "substancia": "tirzepatida",
       "linhas": 6196,
-      "quantidade": 6196
+      "quantidade": 54653.6
     },
     {
       "mes": "2026-04",
       "substancia": "semaglutida",
       "linhas": 725,
-      "quantidade": 725
+      "quantidade": 15014.0
     },
     {
       "mes": "2026-04",
       "substancia": "tirzepatida",
       "linhas": 7460,
-      "quantidade": 7460
+      "quantidade": 151501.4
     },
     {
       "mes": "2026-05",
       "substancia": "semaglutida",
       "linhas": 774,
-      "quantidade": 774
+      "quantidade": 16378.0
     },
     {
       "mes": "2026-05",
       "substancia": "tirzepatida",
       "linhas": 9555,
-      "quantidade": 9555
+      "quantidade": 95201.7
     },
     {
       "mes": "2026-06",
       "substancia": "semaglutida",
       "linhas": 624,
-      "quantidade": 624
+      "quantidade": 14364.0
     },
     {
       "mes": "2026-06",
       "substancia": "tirzepatida",
       "linhas": 12866,
-      "quantidade": 12866
+      "quantidade": 380321.16
     },
     {
       "mes": "2026-07",
       "substancia": "semaglutida",
       "linhas": 631,
-      "quantidade": 631
+      "quantidade": 13819.0
     },
     {
       "mes": "2026-07",
       "substancia": "tirzepatida",
       "linhas": 8037,
-      "quantidade": 8037
+      "quantidade": 414296.1
     },
     {
       "mes": "2026-08",
       "substancia": "semaglutida",
       "linhas": 468,
-      "quantidade": 468
+      "quantidade": 4364.0
     },
     {
       "mes": "2026-08",
       "substancia": "tirzepatida",
       "linhas": 8628,
-      "quantidade": 8628
+      "quantidade": 291701.4
     },
     {
       "mes": "2026-09",
       "substancia": "semaglutida",
       "linhas": 336,
-      "quantidade": 336
+      "quantidade": 3140.0
     },
     {
       "mes": "2026-09",
       "substancia": "tirzepatida",
       "linhas": 7477,
-      "quantidade": 7477
+      "quantidade": 474016.4
     },
     {
       "mes": "2026-10",
       "substancia": "semaglutida",
       "linhas": 132,
-      "quantidade": 132
+      "quantidade": 847.0
     },
     {
       "mes": "2026-10",
       "substancia": "tirzepatida",
       "linhas": 6228,
-      "quantidade": 6228
+      "quantidade": 360308.4
     },
     {
       "mes": "2026-11",
       "substancia": "semaglutida",
       "linhas": 133,
-      "quantidade": 133
+      "quantidade": 910.0
     },
     {
       "mes": "2026-11",
       "substancia": "tirzepatida",
       "linhas": 1255,
-      "quantidade": 1255
+      "quantidade": 88880.2
     }
   ],
   "quantidade_por_uf": [
     {
       "uf": "SP",
-      "quantidade": 35340
-    },
-    {
-      "uf": "GO",
-      "quantidade": 20426
-    },
-    {
-      "uf": "SC",
-      "quantidade": 13523
-    },
-    {
-      "uf": "PR",
-      "quantidade": 8477
-    },
-    {
-      "uf": "TO",
-      "quantidade": 6762
-    },
-    {
-      "uf": "DF",
-      "quantidade": 2360
+      "quantidade": 1604841.36
     },
     {
       "uf": "MG",
-      "quantidade": 2198
+      "quantidade": 669530.0
+    },
+    {
+      "uf": "PR",
+      "quantidade": 119531.0
+    },
+    {
+      "uf": "GO",
+      "quantidade": 86342.0
+    },
+    {
+      "uf": "SC",
+      "quantidade": 72184.0
     },
     {
       "uf": "RJ",
-      "quantidade": 1928
+      "quantidade": 32091.0
+    },
+    {
+      "uf": "TO",
+      "quantidade": 17454.0
+    },
+    {
+      "uf": "DF",
+      "quantidade": 7095.0
     },
     {
       "uf": "BA",
-      "quantidade": 14
+      "quantidade": 930.0
     },
     {
       "uf": "RS",
-      "quantidade": 12
+      "quantidade": 360.0
     },
     {
       "uf": "RO",
-      "quantidade": 5
-    },
-    {
-      "uf": "SE",
-      "quantidade": 2
-    },
-    {
-      "uf": "ES",
-      "quantidade": 2
-    },
-    {
-      "uf": "RN",
-      "quantidade": 2
+      "quantidade": 155.0
     },
     {
       "uf": "PI",
-      "quantidade": 2
+      "quantidade": 90.0
+    },
+    {
+      "uf": "SE",
+      "quantidade": 60.0
+    },
+    {
+      "uf": "ES",
+      "quantidade": 60.0
     },
     {
       "uf": "MT",
-      "quantidade": 1
+      "quantidade": 60.0
     },
     {
-      "uf": "PA",
-      "quantidade": 1
+      "uf": "RN",
+      "quantidade": 60.0
     },
     {
       "uf": "CE",
-      "quantidade": 1
+      "quantidade": 60.0
+    },
+    {
+      "uf": "PA",
+      "quantidade": 30.0
     }
   ],
   "por_sexo": [
@@ -466,7 +466,7 @@
   "colunas_usadas": {
     "ano": "NU_ANO_VENDA",
     "mes": "NU_MES_VENDA",
-    "quantidade": null,
+    "quantidade": "QT_UNIDADE_FARMACOTECNICA",
     "principio_ativo": "NO_PRINCIPIO_ATIVO",
     "uf": "SG_UF_VENDA",
     "sexo": "SG_SEXO",

@@ -1,6 +1,6 @@
 {
-  "obtido_em": "2026-11-24T01:38:47Z",
-  "run_id": "45306221540",
+  "obtido_em": "2026-11-24T02:13:49Z",
+  "run_id": "45310587332",
   "nota": "Vendas registradas no SNGPC, como a Anvisa publica. Contagem menor que 5 aparece como '<5'. As linhas ficam só no repositório privado.",
   "tipo": "industrializados",
   "meses": [
@@ -82,445 +82,445 @@
       "mes": "2026-01",
       "substancia": "dulaglutida",
       "linhas": 2570,
-      "quantidade": 2570
+      "quantidade": 5331.0
     },
     {
       "mes": "2026-01",
       "substancia": "liraglutida",
       "linhas": 26187,
-      "quantidade": 26187
+      "quantidade": 53941.0
     },
     {
       "mes": "2026-01",
       "substancia": "lixisenatida",
       "linhas": 774,
-      "quantidade": 774
+      "quantidade": 1503.0
     },
     {
       "mes": "2026-01",
       "substancia": "semaglutida",
       "linhas": 156759,
-      "quantidade": 156759
+      "quantidade": 334175.0
     },
     {
       "mes": "2026-01",
       "substancia": "tirzepatida",
       "linhas": 133092,
-      "quantidade": 133092
+      "quantidade": 369155.0
     },
     {
       "mes": "2026-02",
       "substancia": "dulaglutida",
       "linhas": 2263,
-      "quantidade": 2263
+      "quantidade": 4470.0
     },
     {
       "mes": "2026-02",
       "substancia": "liraglutida",
       "linhas": 23292,
-      "quantidade": 23292
+      "quantidade": 48331.0
     },
     {
       "mes": "2026-02",
       "substancia": "lixisenatida",
       "linhas": 742,
-      "quantidade": 742
+      "quantidade": 1450.0
     },
     {
       "mes": "2026-02",
       "substancia": "semaglutida",
       "linhas": 141695,
-      "quantidade": 141695
+      "quantidade": 294223.0
     },
     {
       "mes": "2026-02",
       "substancia": "tirzepatida",
       "linhas": 131561,
-      "quantidade": 131561
+      "quantidade": 361595.0
     },
     {
       "mes": "2026-03",
       "substancia": "dulaglutida",
       "linhas": 2401,
-      "quantidade": 2401
+      "quantidade": 5249.0
     },
     {
       "mes": "2026-03",
       "substancia": "liraglutida",
       "linhas": 25765,
-      "quantidade": 25765
+      "quantidade": 57545.0
     },
     {
       "mes": "2026-03",
       "substancia": "lixisenatida",
       "linhas": 767,
-      "quantidade": 767
+      "quantidade": 1615.0
     },
     {
       "mes": "2026-03",
       "substancia": "semaglutida",
       "linhas": 175319,
-      "quantidade": 175319
+      "quantidade": 395628.0
     },
     {
       "mes": "2026-03",
       "substancia": "tirzepatida",
       "linhas": 146897,
-      "quantidade": 146897
+      "quantidade": 414989.0
     },
     {
       "mes": "2026-04",
       "substancia": "dulaglutida",
       "linhas": 1969,
-      "quantidade": 1969
+      "quantidade": 3863.0
     },
     {
       "mes": "2026-04",
       "substancia": "liraglutida",
       "linhas": 25565,
-      "quantidade": 25565
+      "quantidade": 52777.0
     },
     {
       "mes": "2026-04",
       "substancia": "lixisenatida",
       "linhas": 687,
-      "quantidade": 687
+      "quantidade": 1258.0
     },
     {
       "mes": "2026-04",
       "substancia": "semaglutida",
       "linhas": 172835,
-      "quantidade": 172835
+      "quantidade": 366078.0
     },
     {
       "mes": "2026-04",
       "substancia": "tirzepatida",
       "linhas": 147103,
-      "quantidade": 147103
+      "quantidade": 389556.0
     },
     {
       "mes": "2026-05",
       "substancia": "dulaglutida",
       "linhas": 2013,
-      "quantidade": 2013
+      "quantidade": 3958.0
     },
     {
       "mes": "2026-05",
       "substancia": "liraglutida",
       "linhas": 27732,
-      "quantidade": 27732
+      "quantidade": 59279.0
     },
     {
       "mes": "2026-05",
       "substancia": "lixisenatida",
       "linhas": 759,
-      "quantidade": 759
+      "quantidade": 1477.0
     },
     {
       "mes": "2026-05",
       "substancia": "semaglutida",
       "linhas": 196356,
-      "quantidade": 196356
+      "quantidade": 444792.0
     },
     {
       "mes": "2026-05",
       "substancia": "tirzepatida",
       "linhas": 156357,
-      "quantidade": 156357
+      "quantidade": 418049.0
     },
     {
       "mes": "2026-06",
       "substancia": "dulaglutida",
       "linhas": 1837,
-      "quantidade": 1837
+      "quantidade": 3588.0
     },
     {
       "mes": "2026-06",
       "substancia": "liraglutida",
       "linhas": 27081,
-      "quantidade": 27081
+      "quantidade": 57780.0
     },
     {
       "mes": "2026-06",
       "substancia": "lixisenatida",
       "linhas": 676,
-      "quantidade": 676
+      "quantidade": 1337.0
     },
     {
       "mes": "2026-06",
       "substancia": "semaglutida",
       "linhas": 202035,
-      "quantidade": 202035
+      "quantidade": 448726.0
     },
     {
       "mes": "2026-06",
       "substancia": "tirzepatida",
       "linhas": 166678,
-      "quantidade": 166678
+      "quantidade": 465837.0
     },
     {
       "mes": "2026-07",
       "substancia": "dulaglutida",
       "linhas": 1711,
-      "quantidade": 1711
+      "quantidade": 3461.0
     },
     {
       "mes": "2026-07",
       "substancia": "liraglutida",
       "linhas": 29417,
-      "quantidade": 29417
+      "quantidade": 63322.0
     },
     {
       "mes": "2026-07",
       "substancia": "lixisenatida",
       "linhas": 719,
-      "quantidade": 719
+      "quantidade": 1450.0
     },
     {
       "mes": "2026-07",
       "substancia": "semaglutida",
       "linhas": 240667,
-      "quantidade": 240667
+      "quantidade": 605743.0
     },
     {
       "mes": "2026-07",
       "substancia": "tirzepatida",
       "linhas": 174509,
-      "quantidade": 174509
+      "quantidade": 488109.0
     },
     {
       "mes": "2026-08",
       "substancia": "dulaglutida",
       "linhas": 1622,
-      "quantidade": 1622
+      "quantidade": 3318.0
     },
     {
       "mes": "2026-08",
       "substancia": "liraglutida",
       "linhas": 29005,
-      "quantidade": 29005
+      "quantidade": 60929.0
     },
     {
       "mes": "2026-08",
       "substancia": "lixisenatida",
       "linhas": 660,
-      "quantidade": 660
+      "quantidade": 1319.0
     },
     {
       "mes": "2026-08",
       "substancia": "semaglutida",
       "linhas": 258166,
-      "quantidade": 258166
+      "quantidade": 683724.0
     },
     {
       "mes": "2026-08",
       "substancia": "tirzepatida",
       "linhas": 173853,
-      "quantidade": 173853
+      "quantidade": 490414.0
     },
     {
       "mes": "2026-09",
       "substancia": "dulaglutida",
       "linhas": 1433,
-      "quantidade": 1433
+      "quantidade": 2873.0
     },
     {
       "mes": "2026-09",
       "substancia": "liraglutida",
       "linhas": 28327,
-      "quantidade": 28327
+      "quantidade": 58198.0
     },
     {
       "mes": "2026-09",
       "substancia": "lixisenatida",
       "linhas": 627,
-      "quantidade": 627
+      "quantidade": 1258.0
     },
     {
       "mes": "2026-09",
       "substancia": "semaglutida",
       "linhas": 261567,
-      "quantidade": 261567
+      "quantidade": 754789.0
     },
     {
       "mes": "2026-09",
       "substancia": "tirzepatida",
       "linhas": 169795,
-      "quantidade": 169795
+      "quantidade": 469250.0
     },
     {
       "mes": "2026-10",
       "substancia": "dulaglutida",
       "linhas": 1307,
-      "quantidade": 1307
+      "quantidade": 2702.0
     },
     {
       "mes": "2026-10",
       "substancia": "liraglutida",
       "linhas": 27623,
-      "quantidade": 27623
+      "quantidade": 58032.0
     },
     {
       "mes": "2026-10",
       "substancia": "lixisenatida",
       "linhas": 640,
-      "quantidade": 640
+      "quantidade": 1260.0
     },
     {
       "mes": "2026-10",
       "substancia": "semaglutida",
       "linhas": 265703,
-      "quantidade": 265703
+      "quantidade": 821398.0
     },
     {
       "mes": "2026-10",
       "substancia": "tirzepatida",
       "linhas": 168963,
-      "quantidade": 168963
+      "quantidade": 470132.0
     },
     {
       "mes": "2026-11",
       "substancia": "dulaglutida",
       "linhas": 680,
-      "quantidade": 680
+      "quantidade": 1281.0
     },
     {
       "mes": "2026-11",
       "substancia": "liraglutida",
       "linhas": 15688,
-      "quantidade": 15688
+      "quantidade": 28580.0
     },
     {
       "mes": "2026-11",
       "substancia": "lixisenatida",
       "linhas": 378,
-      "quantidade": 378
+      "quantidade": 685.0
     },
     {
       "mes": "2026-11",
       "substancia": "semaglutida",
       "linhas": 164782,
-      "quantidade": 164782
+      "quantidade": 468399.0
     },
     {
       "mes": "2026-11",
       "substancia": "tirzepatida",
       "linhas": 103516,
-      "quantidade": 103516
+      "quantidade": 245449.0
     }
   ],
   "quantidade_por_uf": [
     {
       "uf": "SP",
-      "quantidade": 1168920
+      "quantidade": 3692974.0
     },
     {
       "uf": "MG",
-      "quantidade": 519314
-    },
-    {
-      "uf": "RS",
-      "quantidade": 373047
-    },
-    {
-      "uf": "SC",
-      "quantidade": 301840
+      "quantidade": 1212552.0
     },
     {
       "uf": "RJ",
-      "quantidade": 288004
+      "quantidade": 1098668.0
+    },
+    {
+      "uf": "RS",
+      "quantidade": 769956.0
     },
     {
       "uf": "PR",
-      "quantidade": 255565
+      "quantidade": 555315.0
+    },
+    {
+      "uf": "SC",
+      "quantidade": 528866.0
     },
     {
       "uf": "BA",
-      "quantidade": 177086
-    },
-    {
-      "uf": "GO",
-      "quantidade": 135825
-    },
-    {
-      "uf": "PE",
-      "quantidade": 131124
-    },
-    {
-      "uf": "CE",
-      "quantidade": 109100
-    },
-    {
-      "uf": "ES",
-      "quantidade": 107078
+      "quantidade": 370235.0
     },
     {
       "uf": "DF",
-      "quantidade": 83294
+      "quantidade": 359361.0
+    },
+    {
+      "uf": "GO",
+      "quantidade": 314103.0
+    },
+    {
+      "uf": "PE",
+      "quantidade": 298584.0
+    },
+    {
+      "uf": "CE",
+      "quantidade": 280973.0
+    },
+    {
+      "uf": "ES",
+      "quantidade": 268325.0
     },
     {
       "uf": "PA",
-      "quantidade": 81247
-    },
-    {
-      "uf": "MT",
-      "quantidade": 67612
+      "quantidade": 161829.0
     },
     {
       "uf": "RN",
-      "quantidade": 58979
+      "quantidade": 135520.0
     },
     {
       "uf": "PB",
-      "quantidade": 56211
+      "quantidade": 128086.0
+    },
+    {
+      "uf": "MT",
+      "quantidade": 110977.0
     },
     {
       "uf": "MA",
-      "quantidade": 47771
-    },
-    {
-      "uf": "MS",
-      "quantidade": 44545
+      "quantidade": 88156.0
     },
     {
       "uf": "SE",
-      "quantidade": 42075
+      "quantidade": 87156.0
+    },
+    {
+      "uf": "MS",
+      "quantidade": 79917.0
     },
     {
       "uf": "AL",
-      "quantidade": 36803
+      "quantidade": 76027.0
     },
     {
       "uf": "PI",
-      "quantidade": 32816
-    },
-    {
-      "uf": "RO",
-      "quantidade": 26661
+      "quantidade": 72562.0
     },
     {
       "uf": "TO",
-      "quantidade": 25712
+      "quantidade": 41462.0
+    },
+    {
+      "uf": "RO",
+      "quantidade": 38430.0
     },
     {
       "uf": "AM",
-      "quantidade": 19571
+      "quantidade": 38084.0
     },
     {
       "uf": "AP",
-      "quantidade": 13246
+      "quantidade": 19880.0
     },
     {
       "uf": "AC",
-      "quantidade": 10245
+      "quantidade": 14813.0
     },
     {
       "uf": "RR",
-      "quantidade": 7426
+      "quantidade": 10809.0
     },
     {
       "uf": "",
-      "quantidade": 8
+      "quantidade": 10.0
     }
   ],
   "por_sexo": [
@@ -702,7 +702,7 @@
   "colunas_usadas": {
     "ano": "NU_ANO_VENDA",
     "mes": "NU_MES_VENDA",
-    "quantidade": null,
+    "quantidade": "QT_VENDIDA",
     "principio_ativo": "DS_PRINCIPIO_ATIVO",
     "uf": "SG_UF_VENDA",
     "sexo": "SG_SEXO",
