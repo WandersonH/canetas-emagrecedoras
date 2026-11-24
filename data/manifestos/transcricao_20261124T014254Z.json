@@ -1,0 +1,157 @@
+{
+  "frente": "transcricao",
+  "etapa": "gratis",
+  "run_id": "45306501163",
+  "iniciado_em": "2026-11-24T01:42:54Z",
+  "terminado_em": "2026-11-24T01:43:12Z",
+  "consulta": {
+    "rede": "youtube",
+    "modelo": "faster-whisper small (int8, CPU)",
+    "idioma": "pt",
+    "como_escolhe": "os 30 vídeos do período com mais visualizações",
+    "duracao_maxima_s": 600,
+    "falhas": [
+      {
+        "item_id": "yxcCo5GERrs",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "f7ArNSVxHC4",
+        "motivo": "RuntimeError: ERROR: [youtube] f7ArNSVxHC4: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "0LApH5CjL3s",
+        "motivo": "RuntimeError: ERROR: [youtube] 0LApH5CjL3s: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "z-FcyZxIerQ",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "3zDpnkUog2M",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "J7sZDaJQSck",
+        "motivo": "RuntimeError: ERROR: [youtube] J7sZDaJQSck: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "vdAXTHIlXn0",
+        "motivo": "RuntimeError: ERROR: [youtube] vdAXTHIlXn0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "1-FJxXz2GWk",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "8F0AgO2QQSo",
+        "motivo": "RuntimeError: ERROR: [youtube] 8F0AgO2QQSo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "CHVxAQ8BL2o",
+        "motivo": "RuntimeError: ERROR: [youtube] CHVxAQ8BL2o: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "dvvNB57SgjA",
+        "motivo": "RuntimeError: ERROR: [youtube] dvvNB57SgjA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "curhvrvS4rM",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "gCWIdJOk1q8",
+        "motivo": "RuntimeError: ERROR: [youtube] gCWIdJOk1q8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "p7zT5UMaT6Y",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "KWPjnpGnMCU",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "B8Oq4X3r5Yw",
+        "motivo": "RuntimeError: ERROR: [youtube] B8Oq4X3r5Yw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "xcZAbRWEEYY",
+        "motivo": "RuntimeError: ERROR: [youtube] xcZAbRWEEYY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "5hDrk98YWzA",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "Dbm1ZEmVpA0",
+        "motivo": "RuntimeError: ERROR: [youtube] Dbm1ZEmVpA0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "ysXSgvYLy0w",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "6Ue0Dip6gVs",
+        "motivo": "RuntimeError: ERROR: [youtube] 6Ue0Dip6gVs: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "5fKQ2ZBfwM4",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "c0s947gP8CU",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "ZlMB-8HkCJc",
+        "motivo": "RuntimeError: ERROR: [youtube] ZlMB-8HkCJc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "jwALFGMpbTo",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "Dt_peyQiBz4",
+        "motivo": "RuntimeError: ERROR: [youtube] Dt_peyQiBz4: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "Mo54WEkDtxs",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "Xj_YP9nX_AQ",
+        "motivo": "RuntimeError: ERROR: [youtube] Xj_YP9nX_AQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      },
+      {
+        "item_id": "-bCS2bbM5q8",
+        "motivo": "duração acima do limite"
+      },
+      {
+        "item_id": "PojQgzOkTgg",
+        "motivo": "RuntimeError: ERROR: [youtube] PojQgzOkTgg: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.c"
+      }
+    ]
+  },
+  "universo": {
+    "valor": 3372,
+    "fonte": "vídeos da rede já coletados no período lido (repositório privado)"
+  },
+  "lido": 30,
+  "amostra": {
+    "n": 0,
+    "como": "vídeos transcritos entre os mais vistos do período"
+  },
+  "parou_por": "lista_inteira",
+  "custo_usd": 0,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "terceiros/transcricoes/youtube/transcricoes_20261124T014254Z.csv",
+      "sha256": "031caedacb09efbf09d8b87c93ed8e646d36214ca413bcf3988abc2e948d29f9",
+      "bytes": 63,
+      "linhas": 1
+    }
+  ],
+  "bloqueios": []
+}

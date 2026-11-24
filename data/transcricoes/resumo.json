@@ -1,0 +1,43 @@
+{
+  "redes": {
+    "tiktok": {
+      "videos_no_periodo": 603,
+      "tentados": 60,
+      "transcritos": 0,
+      "falhas_por_motivo": {
+        "TypeError": 59,
+        "RuntimeError": 1
+      },
+      "palavras": 0,
+      "segundos": 0,
+      "obtido_em": "2026-11-24T01:38:51Z",
+      "run_id": "45306501163"
+    },
+    "kwai": {
+      "videos_no_periodo": 82,
+      "tentados": 20,
+      "transcritos": 0,
+      "falhas_por_motivo": {
+        "TypeError": 20
+      },
+      "palavras": 0,
+      "segundos": 0,
+      "obtido_em": "2026-11-24T01:41:54Z",
+      "run_id": "45306501163"
+    },
+    "youtube": {
+      "videos_no_periodo": 3372,
+      "tentados": 30,
+      "transcritos": 0,
+      "falhas_por_motivo": {
+        "duração acima do limite": 14,
+        "RuntimeError": 16
+      },
+      "palavras": 0,
+      "segundos": 0,
+      "obtido_em": "2026-11-24T01:42:54Z",
+      "run_id": "45306501163"
+    }
+  },
+  "nota": "Só contagens. As transcrições ficam no repositório privado e entram anonimizadas no corpus."
+}

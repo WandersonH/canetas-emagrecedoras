@@ -1,0 +1,277 @@
+{
+  "frente": "transcricao",
+  "etapa": "gratis",
+  "run_id": "45306501163",
+  "iniciado_em": "2026-11-24T01:38:51Z",
+  "terminado_em": "2026-11-24T01:41:54Z",
+  "consulta": {
+    "rede": "tiktok",
+    "modelo": "faster-whisper small (int8, CPU)",
+    "idioma": "pt",
+    "como_escolhe": "os 60 vídeos do período com mais visualizações",
+    "duracao_maxima_s": 600,
+    "falhas": [
+      {
+        "item_id": "7694446266675236126",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7510572934117805318",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7515606398642752814",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7670952252680506647",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7683314574757498126",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7706344244713180447",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7686970396360396046",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7472843511671377195",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7697391336206470431",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7593092937400044803",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7597549192784973076",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7559628334368345362",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7698510593854131474",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7462775686864833838",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7470665711157906706",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7461406112504417582",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7611216862562880789",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7696533280597888269",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7495883318001405215",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7599451064903011585",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7518138349702384918",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7472203142134795550",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7613772870325406997",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7501130224034204971",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7573808395870915852",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7660533656645029151",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7630769042403659029",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7706717452196908309",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7632626326976924935",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7541206267251952910",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7545875719776193805",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7646960912410119441",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7474315716393520390",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7487978744318086430",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7514394430439263506",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7493905815502458167",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7469091088196816170",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7502617337200151850",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7475516519858883845",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7710758286269648158",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7648397516127407382",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7706612875313368351",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7543003356642561294",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7623897871888157965",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7623897871888157965: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7575532469743635732",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7567158801422421250",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7467024175929085226",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7587301868099915016",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7512519866293718294",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7525823815247465733",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7499294178694761770",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7673724610046840084",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7590146163878268190",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7579708025171217682",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7649481627395018015",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7693689767451528500",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7631558444222270740",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7497267197929164054",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7704728123601997076",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      },
+      {
+        "item_id": "7473200854699412782",
+        "motivo": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+      }
+    ]
+  },
+  "universo": {
+    "valor": 603,
+    "fonte": "vídeos da rede já coletados no período lido (repositório privado)"
+  },
+  "lido": 60,
+  "amostra": {
+    "n": 0,
+    "como": "vídeos transcritos entre os mais vistos do período"
+  },
+  "parou_por": "lista_inteira",
+  "custo_usd": 0,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "terceiros/transcricoes/tiktok/transcricoes_20261124T013851Z.csv",
+      "sha256": "031caedacb09efbf09d8b87c93ed8e646d36214ca413bcf3988abc2e948d29f9",
+      "bytes": 63,
+      "linhas": 1
+    }
+  ],
+  "bloqueios": []
+}
