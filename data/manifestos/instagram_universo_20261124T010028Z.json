@@ -1,0 +1,41 @@
+{
+  "frente": "instagram_universo",
+  "etapa": "teste",
+  "run_id": "45301606392",
+  "iniciado_em": "2026-11-24T01:00:28Z",
+  "terminado_em": "2026-11-24T01:00:36Z",
+  "consulta": {
+    "hashtags": [
+      "semaglutida",
+      "tirzepatida",
+      "liraglutida",
+      "ozempic",
+      "wegovy",
+      "mounjaro",
+      "saxenda",
+      "canetaemagrecedora",
+      "canetaparaemagrecer",
+      "canetadoparaguai",
+      "tirzepatidamanipulada",
+      "semaglutidamanipulada",
+      "ozempicsemreceita",
+      "mounjarosemreceita",
+      "retatrutida"
+    ],
+    "ator": "apify~instagram-scraper"
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "contagem de universo, não amostra"
+  },
+  "lido": 8,
+  "amostra": {
+    "n": 8,
+    "como": "hashtags com total informado"
+  },
+  "parou_por": "fim_dos_resultados",
+  "custo_usd": 0.039,
+  "arquivos": [],
+  "arquivos_privados": [],
+  "bloqueios": []
+}

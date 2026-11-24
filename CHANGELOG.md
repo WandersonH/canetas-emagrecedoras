@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Universo informado pelas plataformas (run 45301606392)
+
+**O que mudou**
+
+- data/universo/contagens.json: total de posts das hashtags no Instagram e no TikTok, de todos os tempos, e a estimativa do YouTube por termo.
+
+**Por quê**
+
+- Pedido do pesquisador em 23/11/2026 18h15: planilha com estimativa de custo para coletar todo o universo.
+
+**O que foi executado de verdade**
+
+- Workflow 'Universo informado pelas plataformas', run 45301606392.
+
+**O que ficou pendente**
+
+- X e Kwai não informam total (⛔).
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45301606392 e data/universo/contagens.json.
+
 ## 24/11/2026 · Carga histórica do YouTube: mês corrente refeito só no fim
 
 **O que mudou**

@@ -1,0 +1,332 @@
+{
+  "nota": "Totais de hashtag são de todos os tempos e só contam quem usou a hashtag. Busca por frase não tem total publicado, exceto a estimativa do YouTube.",
+  "termos": [
+    {
+      "termo": "semaglutida",
+      "hashtag": "semaglutida"
+    },
+    {
+      "termo": "tirzepatida",
+      "hashtag": "tirzepatida"
+    },
+    {
+      "termo": "liraglutida",
+      "hashtag": "liraglutida"
+    },
+    {
+      "termo": "Ozempic",
+      "hashtag": "ozempic"
+    },
+    {
+      "termo": "Wegovy",
+      "hashtag": "wegovy"
+    },
+    {
+      "termo": "Mounjaro",
+      "hashtag": "mounjaro"
+    },
+    {
+      "termo": "Saxenda",
+      "hashtag": "saxenda"
+    },
+    {
+      "termo": "caneta emagrecedora",
+      "hashtag": "canetaemagrecedora"
+    },
+    {
+      "termo": "caneta para emagrecer",
+      "hashtag": "canetaparaemagrecer"
+    },
+    {
+      "termo": "caneta do Paraguai",
+      "hashtag": "canetadoparaguai"
+    },
+    {
+      "termo": "tirzepatida manipulada",
+      "hashtag": "tirzepatidamanipulada"
+    },
+    {
+      "termo": "semaglutida manipulada",
+      "hashtag": "semaglutidamanipulada"
+    },
+    {
+      "termo": "Ozempic sem receita",
+      "hashtag": "ozempicsemreceita"
+    },
+    {
+      "termo": "Mounjaro sem receita",
+      "hashtag": "mounjarosemreceita"
+    },
+    {
+      "termo": "retatrutida",
+      "hashtag": "retatrutida"
+    }
+  ],
+  "x": {
+    "total": null,
+    "fonte": "o X não informa total de publicações por termo"
+  },
+  "kwai": {
+    "total": null,
+    "fonte": "o Kwai não informa total de publicações por termo"
+  },
+  "youtube": {
+    "obtido_em": "2026-11-23T20:40:18Z",
+    "run_id": "45261726207",
+    "por_termo": [
+      {
+        "termo": "semaglutida",
+        "total_estimado": 261348
+      },
+      {
+        "termo": "tirzepatida",
+        "total_estimado": 196713
+      },
+      {
+        "termo": "liraglutida",
+        "total_estimado": 22506
+      },
+      {
+        "termo": "Ozempic",
+        "total_estimado": 927792
+      },
+      {
+        "termo": "Wegovy",
+        "total_estimado": 193831
+      },
+      {
+        "termo": "Mounjaro",
+        "total_estimado": 494889
+      },
+      {
+        "termo": "Saxenda",
+        "total_estimado": 52581
+      },
+      {
+        "termo": "caneta emagrecedora",
+        "total_estimado": 51428
+      },
+      {
+        "termo": "caneta para emagrecer",
+        "total_estimado": 779159
+      },
+      {
+        "termo": "caneta do Paraguai",
+        "total_estimado": 921992
+      },
+      {
+        "termo": "tirzepatida manipulada",
+        "total_estimado": 121624
+      },
+      {
+        "termo": "semaglutida manipulada",
+        "total_estimado": 44643
+      },
+      {
+        "termo": "Ozempic sem receita",
+        "total_estimado": 535682
+      },
+      {
+        "termo": "Mounjaro sem receita",
+        "total_estimado": 476860
+      },
+      {
+        "termo": "retatrutida",
+        "total_estimado": 32874
+      }
+    ],
+    "fonte": "YouTube Data API, pageInfo.totalResults (estimativa arredondada) no período lido"
+  },
+  "instagram": {
+    "obtido_em": "2026-11-24T01:00:28Z",
+    "run_id": "45301606392",
+    "por_hashtag": [
+      {
+        "hashtag": "semaglutida",
+        "total_posts": null,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "tirzepatida",
+        "total_posts": 6108,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "liraglutida",
+        "total_posts": 1109000,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "ozempic",
+        "total_posts": 40868000,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "wegovy",
+        "total_posts": null,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "mounjaro",
+        "total_posts": 28368000,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "saxenda",
+        "total_posts": 11018000,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "canetaemagrecedora",
+        "total_posts": 1063000,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "canetaparaemagrecer",
+        "total_posts": 469,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "canetadoparaguai",
+        "total_posts": null,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "tirzepatidamanipulada",
+        "total_posts": null,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "semaglutidamanipulada",
+        "total_posts": null,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "ozempicsemreceita",
+        "total_posts": null,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "mounjarosemreceita",
+        "total_posts": null,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      },
+      {
+        "hashtag": "retatrutida",
+        "total_posts": 281,
+        "fonte": "Instagram, página da hashtag (postsCount), todos os tempos"
+      }
+    ]
+  },
+  "tiktok": {
+    "obtido_em": "2026-11-24T01:01:28Z",
+    "run_id": "45301606392",
+    "por_hashtag": [
+      {
+        "hashtag": "semaglutida",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "tirzepatida",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "liraglutida",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "ozempic",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "wegovy",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "mounjaro",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "saxenda",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "canetaemagrecedora",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "canetaparaemagrecer",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "canetadoparaguai",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "tirzepatidamanipulada",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "semaglutidamanipulada",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "ozempicsemreceita",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "mounjarosemreceita",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      },
+      {
+        "hashtag": "retatrutida",
+        "total_videos": null,
+        "total_visualizacoes": null,
+        "fonte": "TikTok, página pública da hashtag (challengeInfo.stats), todos os tempos",
+        "erro": "página sem dados da hashtag (inexistente ou bloqueio)"
+      }
+    ]
+  }
+}
