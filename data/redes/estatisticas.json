@@ -3,41 +3,60 @@
   "redes": [
     {
       "rede": "fontes_termos",
-      "nos": "6314",
-      "arestas": "7051",
-      "densidade": "0.000354",
-      "grau_medio": "2.233",
-      "componentes": "1247",
-      "pct_nos_maior_componente": "80.16",
+      "nos": "6661",
+      "arestas": "7497",
+      "densidade": "0.000338",
+      "grau_medio": "2.251",
+      "componentes": "1437",
+      "pct_nos_maior_componente": "78.38",
       "clustering_medio": "0.0",
-      "modularidade_q": "0.5328",
-      "comunidades": "1258",
+      "modularidade_q": "0.4656",
+      "comunidades": "1448",
       "comunidades_1pct_ou_mais": "12",
-      "pct_maior": "10.5",
-      "pct_segunda": "9.34",
-      "pct_terceira": "8.76",
-      "ei_duas_maiores": "-0.8917",
+      "pct_maior": "10.22",
+      "pct_segunda": "9.02",
+      "pct_terceira": "8.93",
+      "ei_duas_maiores": "-0.7932",
       "diametro_maior_componente": "",
       "caminho_medio_maior_componente": ""
     },
     {
-      "rede": "palavras",
-      "nos": "1978",
-      "arestas": "62931",
-      "densidade": "0.032186",
-      "grau_medio": "63.631",
-      "componentes": "8",
-      "pct_nos_maior_componente": "99.65",
-      "clustering_medio": "0.7111",
-      "modularidade_q": "0.214",
-      "comunidades": "14",
-      "comunidades_1pct_ou_mais": "6",
-      "pct_maior": "28.16",
-      "pct_segunda": "20.83",
-      "pct_terceira": "18.66",
-      "ei_duas_maiores": "-0.4996",
+      "rede": "hashtags",
+      "nos": "176",
+      "arestas": "2628",
+      "densidade": "0.170649",
+      "grau_medio": "29.864",
+      "componentes": "1",
+      "pct_nos_maior_componente": "100.0",
+      "clustering_medio": "0.6462",
+      "modularidade_q": "0.1289",
+      "comunidades": "7",
+      "comunidades_1pct_ou_mais": "7",
+      "pct_maior": "36.36",
+      "pct_segunda": "19.32",
+      "pct_terceira": "13.64",
+      "ei_duas_maiores": "-0.3223",
       "diametro_maior_componente": "5",
-      "caminho_medio_maior_componente": "2.134"
+      "caminho_medio_maior_componente": "1.928"
+    },
+    {
+      "rede": "palavras",
+      "nos": "1994",
+      "arestas": "62120",
+      "densidade": "0.031263",
+      "grau_medio": "62.307",
+      "componentes": "11",
+      "pct_nos_maior_componente": "99.5",
+      "clustering_medio": "0.7209",
+      "modularidade_q": "0.21",
+      "comunidades": "15",
+      "comunidades_1pct_ou_mais": "5",
+      "pct_maior": "34.95",
+      "pct_segunda": "27.88",
+      "pct_terceira": "17.65",
+      "ei_duas_maiores": "-0.4351",
+      "diametro_maior_componente": "5",
+      "caminho_medio_maior_componente": "2.135"
     }
   ],
   "comunidades": [
@@ -45,163 +64,217 @@
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "1",
-      "nos": "663",
-      "pct_nos": "10.5",
-      "pct_peso_interno": "5.95",
-      "nos_de_maior_grau": "Mounjaro | UOL | Poder360 | kwai ? | Migalhas"
+      "nos": "681",
+      "pct_nos": "10.22",
+      "pct_peso_interno": "5.97",
+      "nos_de_maior_grau": "Mounjaro | VEJA | UOL | Poder360 | kwai (sem autor informado)"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "2",
-      "nos": "590",
-      "pct_nos": "9.34",
-      "pct_peso_interno": "6.14",
-      "nos_de_maior_grau": "caneta emagrecedora | youtube A0179 | NeoFeed | Terra | Globo"
+      "nos": "601",
+      "pct_nos": "9.02",
+      "pct_peso_interno": "6.78",
+      "nos_de_maior_grau": "caneta emagrecedora | Metrópoles | Folha de S.Paulo | Terra | NeoFeed"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "3",
-      "nos": "553",
-      "pct_nos": "8.76",
-      "pct_peso_interno": "6.9",
-      "nos_de_maior_grau": "Ozempic | CNN Brasil | O GLOBO | Exame | BBC"
+      "nos": "595",
+      "pct_nos": "8.93",
+      "pct_peso_interno": "7.99",
+      "nos_de_maior_grau": "Ozempic | CNN Brasil | O GLOBO | Exame | Valor Econômico"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "4",
-      "nos": "533",
-      "pct_nos": "8.44",
-      "pct_peso_interno": "6.41",
+      "nos": "525",
+      "pct_nos": "7.88",
+      "pct_peso_interno": "5.65",
       "nos_de_maior_grau": "liraglutida | Saxenda | x A2654 | x A2513 | JOTA Info"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "5",
-      "nos": "447",
-      "pct_nos": "7.08",
-      "pct_peso_interno": "6.09",
-      "nos_de_maior_grau": "tirzepatida | G1 | Campo Grande News | x A2708 | youtube A0266"
+      "nos": "491",
+      "pct_nos": "7.37",
+      "pct_peso_interno": "6.38",
+      "nos_de_maior_grau": "tirzepatida | G1 | Campo Grande News | Panorama Farmacêutico | x A2708"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "6",
-      "nos": "413",
-      "pct_nos": "6.54",
-      "pct_peso_interno": "3.72",
-      "nos_de_maior_grau": "caneta para emagrecer | youtube A0259 | Tribuna Online | O POVO | Facebook"
+      "nos": "415",
+      "pct_nos": "6.23",
+      "pct_peso_interno": "3.31",
+      "nos_de_maior_grau": "caneta para emagrecer | youtube A0259 | O POVO | Facebook | Portal UAI"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "7",
-      "nos": "362",
-      "pct_nos": "5.73",
-      "pct_peso_interno": "3.22",
-      "nos_de_maior_grau": "caneta do Paraguai | youtube A0645 | youtube A0282 | youtube A0189 | youtube A0488"
+      "nos": "393",
+      "pct_nos": "5.9",
+      "pct_peso_interno": "4.73",
+      "nos_de_maior_grau": "Wegovy | Estadão | x A1935 | x A2426 | Olhar Digital"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "8",
-      "nos": "357",
-      "pct_nos": "5.65",
-      "pct_peso_interno": "5.52",
-      "nos_de_maior_grau": "Wegovy | Estadão | Metrópoles | InfoMoney | Valor Econômico"
+      "nos": "359",
+      "pct_nos": "5.39",
+      "pct_peso_interno": "2.86",
+      "nos_de_maior_grau": "caneta do Paraguai | youtube A0645 | youtube A0282 | youtube A0189 | youtube A0488"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "9",
       "nos": "338",
-      "pct_nos": "5.35",
-      "pct_peso_interno": "2.92",
-      "nos_de_maior_grau": "Mounjaro sem receita | Ozempic sem receita | youtube A0812 | youtube A0602 | youtube A0631"
+      "pct_nos": "5.07",
+      "pct_peso_interno": "5.25",
+      "nos_de_maior_grau": "semaglutida | Assine Abril | InfoMoney | Agência Brasil | Afya | Home"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "10",
-      "nos": "318",
-      "pct_nos": "5.04",
-      "pct_peso_interno": "5.44",
-      "nos_de_maior_grau": "semaglutida | Assine Abril | VEJA | Folha de S.Paulo | Agência Brasil"
+      "nos": "337",
+      "pct_nos": "5.06",
+      "pct_peso_interno": "2.6",
+      "nos_de_maior_grau": "Mounjaro sem receita | Ozempic sem receita | youtube A0812 | youtube A0602 | youtube A0631"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "11",
-      "nos": "253",
-      "pct_nos": "4.01",
-      "pct_peso_interno": "3.05",
+      "nos": "258",
+      "pct_nos": "3.87",
+      "pct_peso_interno": "2.72",
       "nos_de_maior_grau": "retatrutida | youtube A0254 | x A4473 | youtube A0235 | youtube A0223"
     },
     {
       "caso": "redes",
       "rede": "fontes_termos",
       "comunidade": "12",
-      "nos": "234",
-      "pct_nos": "3.71",
-      "pct_peso_interno": "2.87",
-      "nos_de_maior_grau": "tirzepatida manipulada | ICTQ | semaglutida manipulada | UOL Notícias | ClickPB"
+      "nos": "228",
+      "pct_nos": "3.42",
+      "pct_peso_interno": "2.5",
+      "nos_de_maior_grau": "tirzepatida manipulada | ICTQ | semaglutida manipulada | ClickPB | Consultor Jurídico"
+    },
+    {
+      "caso": "redes",
+      "rede": "hashtags",
+      "comunidade": "1",
+      "nos": "64",
+      "pct_nos": "36.36",
+      "pct_peso_interno": "8.33",
+      "nos_de_maior_grau": "#shorts | #saude | #canetasemagrecedoras | #anvisa | #diabetes"
+    },
+    {
+      "caso": "redes",
+      "rede": "hashtags",
+      "comunidade": "2",
+      "nos": "34",
+      "pct_nos": "19.32",
+      "pct_peso_interno": "15.71",
+      "nos_de_maior_grau": "#emagrecimento | #mounjaro | #tirzepatida | #ozempic | #wegovy"
+    },
+    {
+      "caso": "redes",
+      "rede": "hashtags",
+      "comunidade": "3",
+      "nos": "24",
+      "pct_nos": "13.64",
+      "pct_peso_interno": "1.89",
+      "nos_de_maior_grau": "#dieta | #emagrecer | #fitness | #academia | #musculação"
+    },
+    {
+      "caso": "redes",
+      "rede": "hashtags",
+      "comunidade": "4",
+      "nos": "22",
+      "pct_nos": "12.5",
+      "pct_peso_interno": "8.05",
+      "nos_de_maior_grau": "#semaglutida | #canetaemagrecedora | #glp1 | #obesidade | #perdadepeso"
+    },
+    {
+      "caso": "redes",
+      "rede": "hashtags",
+      "comunidade": "5",
+      "nos": "18",
+      "pct_nos": "10.23",
+      "pct_peso_interno": "1.85",
+      "nos_de_maior_grau": "#retatrutida | #metabolismo | #ciencia | #vidasaudavel | #saudemetabolica"
+    },
+    {
+      "caso": "redes",
+      "rede": "hashtags",
+      "comunidade": "6",
+      "nos": "12",
+      "pct_nos": "6.82",
+      "pct_peso_interno": "1.45",
+      "nos_de_maior_grau": "#nutrição | #endocrinologia | #monjaro | #emagrecimentosaudável | #nutricionista"
+    },
+    {
+      "caso": "redes",
+      "rede": "hashtags",
+      "comunidade": "7",
+      "nos": "2",
+      "pct_nos": "1.14",
+      "pct_peso_interno": "0.03",
+      "nos_de_maior_grau": "#flaviomiliciano | #abreosigiloflávio"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "1",
-      "nos": "557",
-      "pct_nos": "28.16",
-      "pct_peso_interno": "16.6",
-      "nos_de_maior_grau": "caneta | ozempic | medicamento | semaglutida | anvisa"
+      "nos": "697",
+      "pct_nos": "34.95",
+      "pct_peso_interno": "20.76",
+      "nos_de_maior_grau": "caneta | medicamento | ozempic | semaglutida | tirzepatida"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "2",
-      "nos": "412",
-      "pct_nos": "20.83",
-      "pct_peso_interno": "10.73",
-      "nos_de_maior_grau": "peso | emagrecer | perda | efeito | estudo"
+      "nos": "556",
+      "pct_nos": "27.88",
+      "pct_peso_interno": "16.15",
+      "nos_de_maior_grau": "mounjaro | emagrecer | emagrecimento | estar | so"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "3",
-      "nos": "369",
-      "pct_nos": "18.66",
-      "pct_peso_interno": "9.41",
-      "nos_de_maior_grau": "medico | tratamento | saude | uso | emagrecimento"
+      "nos": "352",
+      "pct_nos": "17.65",
+      "pct_peso_interno": "6.51",
+      "nos_de_maior_grau": "medico | tratamento | saude | uso | video"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "4",
-      "nos": "298",
-      "pct_nos": "15.07",
-      "pct_peso_interno": "3.67",
-      "nos_de_maior_grau": "mounjaro | so | dia | estar | usar"
+      "nos": "315",
+      "pct_nos": "15.8",
+      "pct_peso_interno": "5.25",
+      "nos_de_maior_grau": "peso | perda | efeito | risco | estudo"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "5",
-      "nos": "246",
-      "pct_nos": "12.44",
-      "pct_peso_interno": "2.3",
-      "nos_de_maior_grau": "tirzepatida | paraguai | receita | produto | comprar"
-    },
-    {
-      "caso": "redes",
-      "rede": "palavras",
-      "comunidade": "6",
-      "nos": "73",
-      "pct_nos": "3.69",
-      "pct_peso_interno": "0.92",
-      "nos_de_maior_grau": "risco | caso | alerta | doenca | visao"
+      "nos": "64",
+      "pct_nos": "3.21",
+      "pct_peso_interno": "0.38",
+      "nos_de_maior_grau": "grande | rio | santo | novembro | rocar"
     }
   ]
 }

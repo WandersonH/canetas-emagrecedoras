@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Análises de texto e redes (run 45334249207)
+
+**O que mudou**
+
+- data/corpus (corpus para o IRaMuTeQ, segmentos, CHD, similitude), data/redes (GEXF, desenhos, estatísticas) e data/emojis.json.
+
+**Por quê**
+
+- Análises de IRaMuTeQ e Gephi com corpus interativo, pedido do pesquisador em 23/11/2026 18h23, normalizadas pelo dicionário do IRaMuTeQ.
+
+**O que foi executado de verdade**
+
+- Workflow 'Análises', run 45334249207: gravado data/corpus: 14254 textos, 19353 segmentos, 11999 na CHD, 80.4% classificados, 9 classes, 3000 formas. 3 redes, 24 comunidades ≥1%, 60 centralidades, 0 erros
+
+**O que ficou pendente**
+
+- Nomes das classes da CHD (dados pelo pesquisador) e conferência no IRaMuTeQ com o corpus exportado.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45334249207 e data/corpus/chd.json.
+
 ## 24/11/2026 · Dados públicos e checagens das agências (run 45331564217)
 
 **O que mudou**

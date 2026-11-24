@@ -1,19 +1,25 @@
 caso,rede,comunidade,nos,pct_nos,pct_peso_interno,nos_de_maior_grau
-redes,fontes_termos,1,663,10.5,5.95,Mounjaro | UOL | Poder360 | kwai ? | Migalhas
-redes,fontes_termos,2,590,9.34,6.14,caneta emagrecedora | youtube A0179 | NeoFeed | Terra | Globo
-redes,fontes_termos,3,553,8.76,6.9,Ozempic | CNN Brasil | O GLOBO | Exame | BBC
-redes,fontes_termos,4,533,8.44,6.41,liraglutida | Saxenda | x A2654 | x A2513 | JOTA Info
-redes,fontes_termos,5,447,7.08,6.09,tirzepatida | G1 | Campo Grande News | x A2708 | youtube A0266
-redes,fontes_termos,6,413,6.54,3.72,caneta para emagrecer | youtube A0259 | Tribuna Online | O POVO | Facebook
-redes,fontes_termos,7,362,5.73,3.22,caneta do Paraguai | youtube A0645 | youtube A0282 | youtube A0189 | youtube A0488
-redes,fontes_termos,8,357,5.65,5.52,Wegovy | Estadão | Metrópoles | InfoMoney | Valor Econômico
-redes,fontes_termos,9,338,5.35,2.92,Mounjaro sem receita | Ozempic sem receita | youtube A0812 | youtube A0602 | youtube A0631
-redes,fontes_termos,10,318,5.04,5.44,semaglutida | Assine Abril | VEJA | Folha de S.Paulo | Agência Brasil
-redes,fontes_termos,11,253,4.01,3.05,retatrutida | youtube A0254 | x A4473 | youtube A0235 | youtube A0223
-redes,fontes_termos,12,234,3.71,2.87,tirzepatida manipulada | ICTQ | semaglutida manipulada | UOL Notícias | ClickPB
-redes,palavras,1,557,28.16,16.6,caneta | ozempic | medicamento | semaglutida | anvisa
-redes,palavras,2,412,20.83,10.73,peso | emagrecer | perda | efeito | estudo
-redes,palavras,3,369,18.66,9.41,medico | tratamento | saude | uso | emagrecimento
-redes,palavras,4,298,15.07,3.67,mounjaro | so | dia | estar | usar
-redes,palavras,5,246,12.44,2.3,tirzepatida | paraguai | receita | produto | comprar
-redes,palavras,6,73,3.69,0.92,risco | caso | alerta | doenca | visao
+redes,fontes_termos,1,681,10.22,5.97,Mounjaro | VEJA | UOL | Poder360 | kwai (sem autor informado)
+redes,fontes_termos,2,601,9.02,6.78,caneta emagrecedora | Metrópoles | Folha de S.Paulo | Terra | NeoFeed
+redes,fontes_termos,3,595,8.93,7.99,Ozempic | CNN Brasil | O GLOBO | Exame | Valor Econômico
+redes,fontes_termos,4,525,7.88,5.65,liraglutida | Saxenda | x A2654 | x A2513 | JOTA Info
+redes,fontes_termos,5,491,7.37,6.38,tirzepatida | G1 | Campo Grande News | Panorama Farmacêutico | x A2708
+redes,fontes_termos,6,415,6.23,3.31,caneta para emagrecer | youtube A0259 | O POVO | Facebook | Portal UAI
+redes,fontes_termos,7,393,5.9,4.73,Wegovy | Estadão | x A1935 | x A2426 | Olhar Digital
+redes,fontes_termos,8,359,5.39,2.86,caneta do Paraguai | youtube A0645 | youtube A0282 | youtube A0189 | youtube A0488
+redes,fontes_termos,9,338,5.07,5.25,semaglutida | Assine Abril | InfoMoney | Agência Brasil | Afya | Home
+redes,fontes_termos,10,337,5.06,2.6,Mounjaro sem receita | Ozempic sem receita | youtube A0812 | youtube A0602 | youtube A0631
+redes,fontes_termos,11,258,3.87,2.72,retatrutida | youtube A0254 | x A4473 | youtube A0235 | youtube A0223
+redes,fontes_termos,12,228,3.42,2.5,tirzepatida manipulada | ICTQ | semaglutida manipulada | ClickPB | Consultor Jurídico
+redes,hashtags,1,64,36.36,8.33,#shorts | #saude | #canetasemagrecedoras | #anvisa | #diabetes
+redes,hashtags,2,34,19.32,15.71,#emagrecimento | #mounjaro | #tirzepatida | #ozempic | #wegovy
+redes,hashtags,3,24,13.64,1.89,#dieta | #emagrecer | #fitness | #academia | #musculação
+redes,hashtags,4,22,12.5,8.05,#semaglutida | #canetaemagrecedora | #glp1 | #obesidade | #perdadepeso
+redes,hashtags,5,18,10.23,1.85,#retatrutida | #metabolismo | #ciencia | #vidasaudavel | #saudemetabolica
+redes,hashtags,6,12,6.82,1.45,#nutrição | #endocrinologia | #monjaro | #emagrecimentosaudável | #nutricionista
+redes,hashtags,7,2,1.14,0.03,#flaviomiliciano | #abreosigiloflávio
+redes,palavras,1,697,34.95,20.76,caneta | medicamento | ozempic | semaglutida | tirzepatida
+redes,palavras,2,556,27.88,16.15,mounjaro | emagrecer | emagrecimento | estar | so
+redes,palavras,3,352,17.65,6.51,medico | tratamento | saude | uso | video
+redes,palavras,4,315,15.8,5.25,peso | perda | efeito | risco | estudo
+redes,palavras,5,64,3.21,0.38,grande | rio | santo | novembro | rocar
