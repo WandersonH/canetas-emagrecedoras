@@ -27,7 +27,8 @@ _LIMITE = 6400  # tamanho dessa área
 # (agregador de links, atalho de mensagem, loja.com.br). "acabou.Agora" fica, porque a terminação começa com maiúscula.
 _LINK = re.compile(r"(?i:\b(?:https?://|www\.)\S+)|(?i:\b[\w-]{2,}(?:\.[\w-]+)*)\.[a-z]{2,6}(?!\w)(?:/\S*)?")
 _EMAIL = re.compile(r"(?i)\b[\w.+-]+@[\w-]+(?:\.[\w-]+)+\b")
-_PERFIL = re.compile(r"(?<![\w@])@[\w.]{2,}")
+# arroba depois de dígito ("10@fulano") também é perfil; depois de letra é disfarce de palavra ("Mounj@ro")
+_PERFIL = re.compile(r"(?<![^\W\d_@])(?<!@)@[\w.]{2,}")
 _TELEFONE = re.compile(
     r"(?<!\w)(?:\+?55[\s.-]?)?\(?\d{2}\)?[\s.-]?9?\d{4}[\s.-]?\d{4}(?!\w)"  # com DDD
     r"|(?<!\w)9\d{4}[\s.-]?\d{4}(?!\w)"  # celular sem DDD

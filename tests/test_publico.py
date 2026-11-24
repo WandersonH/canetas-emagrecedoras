@@ -140,7 +140,7 @@ class Publico(unittest.TestCase):
             texto = re.sub(r"(?i)glp-?1|t36", "", s["t"])
             self.assertNotRegex(texto, r"(?<![A-Za-zÀ-ú])\d|(?<![A-Za-zÀ-ú])@\w|https?://|www\.", f"segmento {s['i']} de terceiro com dado identificável")
             self.assertIsNone(s["u"], f"segmento {s['i']} de terceiro com link")
-            self.assertRegex(s["a"] or "A0000", r"^A\d{4}$", f"segmento {s['i']} de terceiro sem código de autor")
+            self.assertRegex(s["a"] or "A0000", r"^A\d{4,}$", f"segmento {s['i']} de terceiro sem código de autor")
 
     def test_workflows_so_com_disparo_manual(self):
         for caminho in (RAIZ / ".github" / "workflows").glob("*.y*ml"):

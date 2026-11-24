@@ -2,6 +2,31 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Anonimização de perfil colado em número; códigos de autor acima de 9.999
+
+**O que mudou**
+
+- scripts/anonimizar.py: arroba depois de dígito ("10@fulano") passa a ser mascarada como perfil; arroba depois de letra continua como disfarce de palavra ("Mounj@ro"). Teste novo em tests/test_anonimizar.py.
+- tests/test_publico.py: o código de autor aceita quatro dígitos ou mais (A10000 em diante), porque os comentários do YouTube passaram de 9.999 autores. Os códigos já dados não mudam.
+
+**Por quê**
+
+- O run 45354837008 (Análises) parou no teste do corpus público: um comentário trazia nota colada em arroba, que a máscara de perfil não pegava. O teste segurou a publicação; o público não mudou.
+- Com os 24.854 comentários do YouTube (run 45354189151), o corpus passou a ter autor com código de cinco dígitos.
+
+**O que foi executado de verdade**
+
+- Corpus montado localmente com clone novo do privado: 35.859 textos, 47.533 segmentos, 12.000 na CHD, 75,0% classificados, 9 classes; `python -m unittest tests.test_publico` passou com o corpus inteiro. Saídas locais descartadas.
+- Run 45354189151 (comentários do YouTube): 24.854 comentários lidos de 300 vídeos, que informam 140.455 comentários. Run 45354486107 (carga histórica do YouTube): 158 de 825 pares termo × mês feitos, cota do dia esgotada.
+
+**O que ficou pendente**
+
+- Nova execução de Análises.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45354837008, data/comentarios/resumo.json e data/youtube/historico.json.
+
 ## 24/11/2026 · YouTube histórico (run 45354486107)
 
 **O que mudou**

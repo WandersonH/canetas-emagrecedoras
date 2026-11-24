@@ -42,6 +42,12 @@ class Texto(unittest.TestCase):
         self.assertEqual(saida, "que se f****da")
         self.assertEqual(anonimizar.tem_resto_identificavel(saida), [])
 
+    def test_perfil_colado_em_numero_some(self):
+        saida = anonimizar.anonimizar_texto("nota 10@fulano gostei")
+        self.assertNotIn("fulano", saida)
+        self.assertEqual(anonimizar.tem_resto_identificavel(saida), [])
+        self.assertEqual(anonimizar.anonimizar_texto("comprei Mounj@ro"), "comprei Mounj@ro")
+
     def test_telefone_some(self):
         for texto in ("me chama (00) 90000-0000", "zap 00 900000000", "+55 00 90000-0000", "liga 90000-0000", "fixo (00) 3000-0000"):
             with self.subTest(texto=texto):
