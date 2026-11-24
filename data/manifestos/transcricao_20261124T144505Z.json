@@ -1,0 +1,151 @@
+{
+  "frente": "transcricao",
+  "etapa": "gratis",
+  "run_id": "45417327341",
+  "iniciado_em": "2026-11-24T14:45:05Z",
+  "terminado_em": "2026-11-24T15:06:48Z",
+  "consulta": {
+    "rede": "semente",
+    "modelo": "faster-whisper small (int8, CPU)",
+    "idioma": "pt",
+    "como_escolhe": "os 115 endereços da planilha-semente JAMA ainda sem transcrição",
+    "duracao_maxima_s": 600,
+    "ja_transcritos_antes": 0,
+    "falhas": [
+      {
+        "item_id": "7301050199793765637",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7301050199793765637: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7527695528935869701",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7527695528935869701: You do not have permission to view this post. Log into an account that has access. Use --cookies-from-browser or --cookies for the authentication. Se"
+      },
+      {
+        "item_id": "7594489568586370322",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7594489568586370322: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7601308491160096020",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7601308491160096020: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7603838390840184085",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7603838390840184085: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7617978990518897941",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7617978990518897941: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7623577786376080660",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7623577786376080660: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7633425255112985876",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7633425255112985876: You do not have permission to view this post. Log into an account that has access. Use --cookies-from-browser or --cookies for the authentication. Se"
+      },
+      {
+        "item_id": "7637244478092315925",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7637244478092315925: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7459164221532654853",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7459164221532654853: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7470162423727656198",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7470162423727656198: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7555655214901103884",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7555655214901103884: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7561490509361958155",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7561490509361958155: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7574770897983261970",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7574770897983261970: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7579277118127738130",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7579277118127738130: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7581985405294202133",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7581985405294202133: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7636206722083785992",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7636206722083785992: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7608032882245897492",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7608032882245897492: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7622462440269221137",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7622462440269221137: No video formats found!; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confir"
+      },
+      {
+        "item_id": "7561809353422966024",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7561809353422966024: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7523672036099525921",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7523672036099525921: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7601915628433231125",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7601915628433231125: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7586868383434460436",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7586868383434460436: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7623800757053132039",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7623800757053132039: Video not available, status code 10231; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue t"
+      },
+      {
+        "item_id": "7603055814399642900",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7603055814399642900: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7410377619318869254",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7410377619318869254: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      },
+      {
+        "item_id": "7529125881013390625",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7529125881013390625: Your IP address is blocked from accessing this post"
+      },
+      {
+        "item_id": "7551504885712211256",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7551504885712211256: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      }
+    ]
+  },
+  "universo": {
+    "valor": 115,
+    "fonte": "vídeos da rede já coletados no período lido (repositório privado)"
+  },
+  "lido": 115,
+  "amostra": {
+    "n": 87,
+    "como": "vídeos transcritos entre os mais vistos do período"
+  },
+  "parou_por": "lista_inteira",
+  "custo_usd": 0,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "terceiros/transcricoes/semente/transcricoes_20261124T144505Z.csv",
+      "sha256": "9255efe6bd4c2cd9513ef54dca340a7ae5c2f039783d62c48bf858d0b4b30c6e",
+      "bytes": 86887,
+      "linhas": 88
+    }
+  ],
+  "bloqueios": [],
+  "transcritos_no_total": 87
+}

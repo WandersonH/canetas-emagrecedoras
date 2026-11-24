@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Transcrição (run 45417327341)
+
+**O que mudou**
+
+- Manifestos em data/manifestos/ e contagens em data/transcricoes/resumo.json.
+
+**Por quê**
+
+- Transcrição pedida pelo pesquisador em 23/11/2026; feita sem custo no runner.
+
+**O que foi executado de verdade**
+
+- Workflow 'Transcrição (Whisper)', run 45417327341, redes: semente.
+- gravado data/manifestos/transcricao_20261124T144505Z.json: semente, 87 de 115 vídeos transcritos
+
+**O que ficou pendente**
+
+- Rodar as análises para levar as transcrições anonimizadas ao corpus.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45417327341 e os manifestos deste run.
+
 ## 24/11/2026 · Cadernos de comentários por rede, medidas do Gephi em cada rede e painel de qualidade (JAMA)
 
 **O que mudou**

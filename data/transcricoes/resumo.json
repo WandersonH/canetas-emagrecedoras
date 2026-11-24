@@ -38,6 +38,20 @@
       "segundos": 0,
       "obtido_em": "2026-11-24T01:42:54Z",
       "run_id": "45306501163"
+    },
+    "semente": {
+      "videos_no_periodo": 115,
+      "tentados": 115,
+      "transcritos": 87,
+      "transcritos_no_total": 87,
+      "palavras_no_total": 14208,
+      "falhas_por_motivo": {
+        "RuntimeError": 28
+      },
+      "palavras": 14208,
+      "segundos": 8678,
+      "obtido_em": "2026-11-24T14:45:05Z",
+      "run_id": "45417327341"
     }
   },
   "nota": "Só contagens. As transcrições ficam no repositório privado e entram anonimizadas no corpus."
