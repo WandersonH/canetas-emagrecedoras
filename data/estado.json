@@ -1,6 +1,6 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": 48,
+  "manifestos_lidos": 49,
   "frentes": [
     {
       "id": "youtube",

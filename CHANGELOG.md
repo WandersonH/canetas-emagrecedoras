@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Análises de texto e redes (run 45410063227)
+
+**O que mudou**
+
+- data/corpus (corpus para o IRaMuTeQ, segmentos, CHD, similitude), data/redes (GEXF, desenhos, estatísticas) data/emojis.json e data/venda (triagem de venda irregular, só contagens).
+
+**Por quê**
+
+- Análises de IRaMuTeQ e Gephi com corpus interativo, pedido do pesquisador em 23/11/2026 18h23, normalizadas pelo dicionário do IRaMuTeQ.
+
+**O que foi executado de verdade**
+
+- Workflow 'Análises', run 45410063227: gravado data/corpus: 35859 textos, 47533 segmentos, 12000 na CHD, 75.0% classificados, 9 classes, 3000 formas. 3 redes, 23 comunidades ≥1%, 60 centralidades, 0 erros. gravado data/manifestos/venda_irregular_20261124T141140Z.json: venda irregular, 458 candidatos em 36666 textos
+
+**O que ficou pendente**
+
+- Nomes das classes da CHD (dados pelo pesquisador) e conferência no IRaMuTeQ com o corpus exportado.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45410063227 e data/corpus/chd.json.
+
 ## 24/11/2026 · Venda irregular: triagem automática e caderno com números
 
 **O que mudou**

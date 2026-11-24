@@ -29,13 +29,13 @@
       "componentes": "1",
       "pct_nos_maior_componente": "100.0",
       "clustering_medio": "0.6784",
-      "modularidade_q": "0.1371",
+      "modularidade_q": "0.14",
       "comunidades": "6",
-      "comunidades_1pct_ou_mais": "6",
-      "pct_maior": "24.09",
-      "pct_segunda": "21.04",
-      "pct_terceira": "19.82",
-      "ei_duas_maiores": "-0.413",
+      "comunidades_1pct_ou_mais": "5",
+      "pct_maior": "28.05",
+      "pct_segunda": "22.87",
+      "pct_terceira": "21.34",
+      "ei_duas_maiores": "-0.4416",
       "diametro_maior_componente": "5",
       "caminho_medio_maior_componente": "1.928"
     },
@@ -48,13 +48,13 @@
       "componentes": "20",
       "pct_nos_maior_componente": "99.03",
       "clustering_medio": "0.7426",
-      "modularidade_q": "0.237",
-      "comunidades": "25",
-      "comunidades_1pct_ou_mais": "5",
-      "pct_maior": "34.18",
-      "pct_segunda": "27.7",
-      "pct_terceira": "18.57",
-      "ei_duas_maiores": "-0.5424",
+      "modularidade_q": "0.2337",
+      "comunidades": "27",
+      "comunidades_1pct_ou_mais": "7",
+      "pct_maior": "32.14",
+      "pct_segunda": "28.83",
+      "pct_terceira": "18.98",
+      "ei_duas_maiores": "-0.5551",
       "diametro_maior_componente": "5",
       "caminho_medio_maior_componente": "2.196"
     }
@@ -157,106 +157,115 @@
       "nos": "329",
       "pct_nos": "1.32",
       "pct_peso_interno": "2.23",
-      "nos_de_maior_grau": "Mounjaro sem receita | Ozempic sem receita | youtube A0602 | youtube A1923 | youtube A1104"
+      "nos_de_maior_grau": "Mounjaro sem receita | Ozempic sem receita | youtube A0602 | youtube A1923 | youtube A0723"
     },
     {
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": "1",
-      "nos": "79",
-      "pct_nos": "24.09",
-      "pct_peso_interno": "22.24",
+      "nos": "92",
+      "pct_nos": "28.05",
+      "pct_peso_interno": "25.86",
       "nos_de_maior_grau": "#emagrecimento | #mounjaro | #tirzepatida | #ozempic | #semaglutida"
     },
     {
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": "2",
-      "nos": "69",
-      "pct_nos": "21.04",
-      "pct_peso_interno": "5.36",
-      "nos_de_maior_grau": "#saude | #shorts | #bemestar | #medicina | #viral"
+      "nos": "75",
+      "pct_nos": "22.87",
+      "pct_peso_interno": "6.81",
+      "nos_de_maior_grau": "#perdadepeso | #retatrutida | #dieta | #nutrição | #emagrecer"
     },
     {
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": "3",
-      "nos": "65",
-      "pct_nos": "19.82",
-      "pct_peso_interno": "4.52",
-      "nos_de_maior_grau": "#dieta | #nutrição | #emagrecer | #fitness | #vidasaudavel"
+      "nos": "70",
+      "pct_nos": "21.34",
+      "pct_peso_interno": "5.46",
+      "nos_de_maior_grau": "#obesidade | #saúde | #anvisa | #diabetes | #endocrinologia"
     },
     {
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": "4",
-      "nos": "55",
-      "pct_nos": "16.77",
-      "pct_peso_interno": "4.07",
-      "nos_de_maior_grau": "#obesidade | #perdadepeso | #retatrutida | #emagrecimentosaudavel | #endocrinologia"
+      "nos": "51",
+      "pct_nos": "15.55",
+      "pct_peso_interno": "2.39",
+      "nos_de_maior_grau": "#viral | #paraguai | #brasil | #monjaro | #fyp"
     },
     {
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": "5",
-      "nos": "55",
-      "pct_nos": "16.77",
-      "pct_peso_interno": "3.81",
-      "nos_de_maior_grau": "#saúde | #canetasemagrecedoras | #anvisa | #diabetes | #medicamentos"
-    },
-    {
-      "caso": "redes",
-      "rede": "hashtags",
-      "comunidade": "6",
-      "nos": "5",
-      "pct_nos": "1.52",
-      "pct_peso_interno": "0.14",
-      "nos_de_maior_grau": "#toguro | #mansaomaromba | #slimex | #cimed | #shapeinexplicavel"
+      "nos": "38",
+      "pct_nos": "11.59",
+      "pct_peso_interno": "2.8",
+      "nos_de_maior_grau": "#saude | #shorts | #bemestar | #medicina | #nutricao"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "1",
-      "nos": "670",
-      "pct_nos": "34.18",
-      "pct_peso_interno": "16.41",
-      "nos_de_maior_grau": "caneta | medicamento | mounjaro | tratamento | ozempic"
+      "nos": "630",
+      "pct_nos": "32.14",
+      "pct_peso_interno": "14.54",
+      "nos_de_maior_grau": "caneta | medicamento | mounjaro | ozempic | tirzepatida"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "2",
-      "nos": "543",
-      "pct_nos": "27.7",
-      "pct_peso_interno": "17.58",
+      "nos": "565",
+      "pct_nos": "28.83",
+      "pct_peso_interno": "17.75",
       "nos_de_maior_grau": "estar | perder | tomar | so | dia"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "3",
-      "nos": "364",
-      "pct_nos": "18.57",
-      "pct_peso_interno": "8.71",
-      "nos_de_maior_grau": "medico | video | saude | acompanhamento | precisar"
+      "nos": "372",
+      "pct_nos": "18.98",
+      "pct_peso_interno": "10.73",
+      "nos_de_maior_grau": "medico | video | tratamento | saude | emagrecimento"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "4",
-      "nos": "320",
-      "pct_nos": "16.33",
-      "pct_peso_interno": "6.87",
-      "nos_de_maior_grau": "peso | emagrecer | efeito | emagrecimento | perda"
+      "nos": "163",
+      "pct_nos": "8.32",
+      "pct_peso_interno": "1.8",
+      "nos_de_maior_grau": "peso | efeito | perda | colateral | glp"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": "5",
-      "nos": "37",
-      "pct_nos": "1.89",
-      "pct_peso_interno": "0.25",
-      "nos_de_maior_grau": "sie | nie | ze | und | ich"
+      "nos": "81",
+      "pct_nos": "4.13",
+      "pct_peso_interno": "1.07",
+      "nos_de_maior_grau": "doenca | melhorar | dica | oferecer | condicao"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "6",
+      "nos": "71",
+      "pct_nos": "3.62",
+      "pct_peso_interno": "1.91",
+      "nos_de_maior_grau": "emagrecer | corpo | dieta | ajudar | seguir"
+    },
+    {
+      "caso": "redes",
+      "rede": "palavras",
+      "comunidade": "7",
+      "nos": "41",
+      "pct_nos": "2.09",
+      "pct_peso_interno": "0.26",
+      "nos_de_maior_grau": "po | sie | nie | ze | und"
     }
   ]
 }

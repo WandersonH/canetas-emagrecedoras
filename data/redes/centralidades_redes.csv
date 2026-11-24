@@ -23,14 +23,14 @@ redes,hashtags,grau ponderado,1,#emagrecimento,4562.0,1
 redes,hashtags,grau ponderado,2,#mounjaro,4145.0,1
 redes,hashtags,grau ponderado,3,#tirzepatida,2992.0,1
 redes,hashtags,grau ponderado,4,#ozempic,2854.0,1
-redes,hashtags,grau ponderado,5,#obesidade,2117.0,4
+redes,hashtags,grau ponderado,5,#obesidade,2117.0,3
 redes,hashtags,PageRank,1,#emagrecimento,0.064584,1
 redes,hashtags,PageRank,2,#mounjaro,0.059465,1
 redes,hashtags,PageRank,3,#tirzepatida,0.042473,1
 redes,hashtags,PageRank,4,#ozempic,0.041322,1
-redes,hashtags,PageRank,5,#shorts,0.029941,2
+redes,hashtags,PageRank,5,#shorts,0.029941,5
 redes,hashtags,intermediação (betweenness),1,#mounjaro,0.098338,1
-redes,hashtags,intermediação (betweenness),2,#shorts,0.091767,2
+redes,hashtags,intermediação (betweenness),2,#shorts,0.091767,5
 redes,hashtags,intermediação (betweenness),3,#ozempic,0.085029,1
 redes,hashtags,intermediação (betweenness),4,#emagrecimento,0.069704,1
 redes,hashtags,intermediação (betweenness),5,#tirzepatida,0.054442,1
@@ -38,7 +38,7 @@ redes,hashtags,autovetor (eigenvector),1,#emagrecimento,0.45108,1
 redes,hashtags,autovetor (eigenvector),2,#mounjaro,0.445736,1
 redes,hashtags,autovetor (eigenvector),3,#tirzepatida,0.362182,1
 redes,hashtags,autovetor (eigenvector),4,#ozempic,0.311595,1
-redes,hashtags,autovetor (eigenvector),5,#obesidade,0.229308,4
+redes,hashtags,autovetor (eigenvector),5,#obesidade,0.229308,3
 redes,palavras,grau ponderado,1,caneta,17878.0,1
 redes,palavras,grau ponderado,2,estar,12541.0,2
 redes,palavras,grau ponderado,3,medicamento,11532.0,1

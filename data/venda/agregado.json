@@ -1,0 +1,806 @@
+{
+  "obtido_em": "2026-11-24T14:11:40Z",
+  "run_id": "45410063227",
+  "periodo": {
+    "inicio": "2022-05-13",
+    "fim": "2026-11-24"
+  },
+  "nota": "Triagem automática por palavras e sinais de venda (data/config/venda_irregular.json). São candidatos: a revisão de contexto de cada um está pendente. Link de venda, endereço de loja e perfil de vendedor ficam fora desta página.",
+  "textos_examinados_por_fonte": {
+    "youtube": 6753,
+    "tiktok": 443,
+    "instagram": 492,
+    "x": 3384,
+    "kwai": 52,
+    "comentario_youtube": 23219,
+    "comentario_tiktok": 923,
+    "comentario_instagram": 116,
+    "comentario_x": 949,
+    "transcricao_tiktok": 268,
+    "transcricao_kwai": 67
+  },
+  "textos_examinados": 36666,
+  "candidatos": 458,
+  "por_tipo_e_fonte": [
+    {
+      "tipo": "manipulado",
+      "fonte": "comentario_youtube",
+      "n": 4
+    },
+    {
+      "tipo": "manipulado",
+      "fonte": "instagram",
+      "n": 5
+    },
+    {
+      "tipo": "manipulado",
+      "fonte": "tiktok",
+      "n": 1
+    },
+    {
+      "tipo": "manipulado",
+      "fonte": "transcricao_kwai",
+      "n": 1
+    },
+    {
+      "tipo": "manipulado",
+      "fonte": "transcricao_tiktok",
+      "n": 2
+    },
+    {
+      "tipo": "manipulado",
+      "fonte": "x",
+      "n": 1
+    },
+    {
+      "tipo": "manipulado",
+      "fonte": "youtube",
+      "n": 25
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "fonte": "comentario_tiktok",
+      "n": 1
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "fonte": "comentario_x",
+      "n": 2
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "fonte": "comentario_youtube",
+      "n": 87
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "fonte": "instagram",
+      "n": 5
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "fonte": "tiktok",
+      "n": 15
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "fonte": "transcricao_tiktok",
+      "n": 14
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "fonte": "x",
+      "n": 31
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "fonte": "youtube",
+      "n": 110
+    },
+    {
+      "tipo": "oferta sem receita",
+      "fonte": "comentario_youtube",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "fonte": "instagram",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "fonte": "tiktok",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "fonte": "transcricao_tiktok",
+      "n": 3
+    },
+    {
+      "tipo": "oferta sem receita",
+      "fonte": "x",
+      "n": 2
+    },
+    {
+      "tipo": "oferta sem receita",
+      "fonte": "youtube",
+      "n": 11
+    },
+    {
+      "tipo": "produto sem registro",
+      "fonte": "comentario_youtube",
+      "n": 22
+    },
+    {
+      "tipo": "produto sem registro",
+      "fonte": "instagram",
+      "n": 6
+    },
+    {
+      "tipo": "produto sem registro",
+      "fonte": "kwai",
+      "n": 1
+    },
+    {
+      "tipo": "produto sem registro",
+      "fonte": "tiktok",
+      "n": 5
+    },
+    {
+      "tipo": "produto sem registro",
+      "fonte": "transcricao_kwai",
+      "n": 2
+    },
+    {
+      "tipo": "produto sem registro",
+      "fonte": "transcricao_tiktok",
+      "n": 4
+    },
+    {
+      "tipo": "produto sem registro",
+      "fonte": "x",
+      "n": 11
+    },
+    {
+      "tipo": "produto sem registro",
+      "fonte": "youtube",
+      "n": 136
+    }
+  ],
+  "por_tipo_e_mes": [
+    {
+      "tipo": "manipulado",
+      "mes": "2025-01",
+      "n": 1
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2025-03",
+      "n": 1
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2025-07",
+      "n": 1
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2025-11",
+      "n": 2
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2025-12",
+      "n": 2
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-02",
+      "n": 1
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-03",
+      "n": 4
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-04",
+      "n": 4
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-05",
+      "n": 3
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-06",
+      "n": 2
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-08",
+      "n": 3
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-09",
+      "n": 4
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-10",
+      "n": 2
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2026-11",
+      "n": 9
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-01",
+      "n": 1
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-02",
+      "n": 3
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-03",
+      "n": 2
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-04",
+      "n": 1
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-07",
+      "n": 4
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-08",
+      "n": 2
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-09",
+      "n": 1
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-10",
+      "n": 2
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-11",
+      "n": 6
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-12",
+      "n": 10
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-01",
+      "n": 18
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-02",
+      "n": 11
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-03",
+      "n": 13
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-04",
+      "n": 11
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-05",
+      "n": 11
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-06",
+      "n": 21
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-07",
+      "n": 25
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-08",
+      "n": 20
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-09",
+      "n": 24
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-10",
+      "n": 19
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2026-11",
+      "n": 60
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2025-04",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2025-07",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2025-12",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2026-02",
+      "n": 2
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2026-04",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2026-05",
+      "n": 4
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2026-06",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2026-07",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2026-09",
+      "n": 2
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2026-10",
+      "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2026-11",
+      "n": 4
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2025-02",
+      "n": 1
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2025-07",
+      "n": 2
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2025-10",
+      "n": 1
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2025-11",
+      "n": 1
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2025-12",
+      "n": 4
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-01",
+      "n": 5
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-02",
+      "n": 16
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-03",
+      "n": 22
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-04",
+      "n": 20
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-05",
+      "n": 16
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-06",
+      "n": 10
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-07",
+      "n": 21
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-08",
+      "n": 17
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-09",
+      "n": 18
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-10",
+      "n": 15
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2026-11",
+      "n": 18
+    }
+  ],
+  "sinais": [
+    {
+      "grupo": "oferta",
+      "sinal": "link",
+      "n": 180
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "paraguai",
+      "n": 174
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "whatsapp",
+      "n": 98
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "retatrutida",
+      "n": 87
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "falsificado",
+      "n": 45
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "link de WhatsApp",
+      "n": 45
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "falsificacao",
+      "n": 45
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "falsificados",
+      "n": 43
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "golpe",
+      "n": 41
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "falsificadas",
+      "n": 41
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "falsificada",
+      "n": 37
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "preço em reais",
+      "n": 34
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "vendo",
+      "n": 30
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "telefone",
+      "n": 26
+    },
+    {
+      "grupo": "sem_receita",
+      "sinal": "sem receita",
+      "n": 26
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "lipoless",
+      "n": 21
+    },
+    {
+      "grupo": "manipulado",
+      "sinal": "manipulada",
+      "n": 20
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "tg",
+      "n": 18
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "tirzec",
+      "n": 18
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "pix",
+      "n": 18
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "a venda",
+      "n": 16
+    },
+    {
+      "grupo": "manipulado",
+      "sinal": "manipulados",
+      "n": 15
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "caneta do paraguai",
+      "n": 14
+    },
+    {
+      "grupo": "manipulado",
+      "sinal": "manipulacao",
+      "n": 14
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "t36",
+      "n": 13
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "golpes",
+      "n": 12
+    },
+    {
+      "grupo": "sem_receita",
+      "sinal": "sem prescricao",
+      "n": 11
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "whats",
+      "n": 11
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "canetas do paraguai",
+      "n": 11
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "sem registro",
+      "n": 10
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "estoque",
+      "n": 10
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "gluconex",
+      "n": 9
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "fraude",
+      "n": 9
+    },
+    {
+      "grupo": "manipulado",
+      "sinal": "manipuladas",
+      "n": 9
+    },
+    {
+      "grupo": "manipulado",
+      "sinal": "farmacia de manipulacao",
+      "n": 8
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "encomenda",
+      "n": 8
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "frete",
+      "n": 8
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "canetas falsas",
+      "n": 7
+    },
+    {
+      "grupo": "manipulado",
+      "sinal": "manipulado",
+      "n": 7
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "link na bio",
+      "n": 7
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "importados",
+      "n": 6
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "estelionat",
+      "n": 6
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "pirata",
+      "n": 5
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "caneta falsa",
+      "n": 5
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "no direct",
+      "n": 5
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "importada",
+      "n": 4
+    },
+    {
+      "grupo": "sem_receita",
+      "sinal": "sem medico",
+      "n": 4
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "ozempic falso",
+      "n": 3
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "me chama",
+      "n": 3
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "synedica",
+      "n": 3
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "produto falso",
+      "n": 3
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "importado",
+      "n": 2
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "fraudes",
+      "n": 2
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "t.g.",
+      "n": 2
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "zap",
+      "n": 2
+    },
+    {
+      "grupo": "produto_sem_registro",
+      "sinal": "importadas",
+      "n": 2
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "chama no zap",
+      "n": 1
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "chama no direct",
+      "n": 1
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "entrego",
+      "n": 1
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "entregamos",
+      "n": 1
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "vendemos",
+      "n": 1
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "envio para todo",
+      "n": 1
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "pronta entrega",
+      "n": 1
+    },
+    {
+      "grupo": "sem_receita",
+      "sinal": "nao precisa de receita",
+      "n": 1
+    }
+  ],
+  "revisados": 0
+}
