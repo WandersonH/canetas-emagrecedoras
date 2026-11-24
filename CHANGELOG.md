@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · YouTube histórico (run 45288852742)
+
+**O que mudou**
+
+- data/youtube/historico.json: estimativa e vídeos lidos por termo e mês; manifesto do run.
+
+**Por quê**
+
+- Pedido do pesquisador em 23/11/2026 18h28: carga histórica do YouTube, pronta para sexta-feira 27/11.
+
+**O que foi executado de verdade**
+
+- Workflow 'YouTube histórico', run 45288852742: sem resultado; ver o log
+
+**O que ficou pendente**
+
+- Seguir rodando um por dia até completar todos os pares termo × mês.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45288852742 e data/youtube/historico.json.
+
 ## 24/11/2026 · Kwai coletado; carga histórica do YouTube retomável
 
 **O que mudou**
