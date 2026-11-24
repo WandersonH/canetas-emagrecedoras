@@ -1,0 +1,2508 @@
+{
+  "obtido_em": "2026-11-24T00:59:04Z",
+  "run_id": "45301471096",
+  "periodo": {
+    "inicio": "2025-01-01",
+    "fim": "2026-11-24"
+  },
+  "progresso": {
+    "feitos": 53,
+    "total": 345,
+    "esgotou_cota_neste_run": true
+  },
+  "videos_distintos": 1744,
+  "canais_distintos": 1256,
+  "nota": "Estimativa = total que o YouTube informa para o termo naquele mês (aproximado). Lidos = até 50 vídeos por termo e mês.",
+  "por_termo": [
+    {
+      "termo": "semaglutida",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": true,
+          "estimativa": 234141,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 233517,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 128463,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 120295,
+          "lidos": 50,
+          "no_limite": true
+        }
+      ]
+    },
+    {
+      "termo": "tirzepatida",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 189936,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 122568,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 94890,
+          "lidos": 50,
+          "no_limite": true
+        }
+      ]
+    },
+    {
+      "termo": "liraglutida",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": true,
+          "estimativa": 2065,
+          "lidos": 9,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 3569,
+          "lidos": 11,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 1090,
+          "lidos": 11,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 4510,
+          "lidos": 12,
+          "no_limite": false
+        }
+      ]
+    },
+    {
+      "termo": "Ozempic",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": true,
+          "estimativa": 923122,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 923164,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 774443,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 306151,
+          "lidos": 50,
+          "no_limite": true
+        }
+      ]
+    },
+    {
+      "termo": "Wegovy",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": true,
+          "estimativa": 125108,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": true,
+          "estimativa": 190941,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 192192,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 124965,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 99191,
+          "lidos": 50,
+          "no_limite": true
+        }
+      ]
+    },
+    {
+      "termo": "Mounjaro",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 492948,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 348576,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 188106,
+          "lidos": 50,
+          "no_limite": true
+        }
+      ]
+    },
+    {
+      "termo": "Saxenda",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 23557,
+          "lidos": 44,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 4951,
+          "lidos": 43,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 10404,
+          "lidos": 43,
+          "no_limite": false
+        }
+      ]
+    },
+    {
+      "termo": "caneta emagrecedora",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 45670,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 7788,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 38881,
+          "lidos": 50,
+          "no_limite": true
+        }
+      ]
+    },
+    {
+      "termo": "caneta para emagrecer",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": true,
+          "estimativa": 101844,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 85704,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 6774,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 19611,
+          "lidos": 50,
+          "no_limite": true
+        }
+      ]
+    },
+    {
+      "termo": "caneta do Paraguai",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": true,
+          "estimativa": 60418,
+          "lidos": 38,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 75825,
+          "lidos": 46,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 3697,
+          "lidos": 27,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 140,
+          "lidos": 33,
+          "no_limite": false
+        }
+      ]
+    },
+    {
+      "termo": "tirzepatida manipulada",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 1888,
+          "lidos": 33,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 125,
+          "lidos": 23,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 58,
+          "lidos": 19,
+          "no_limite": false
+        }
+      ]
+    },
+    {
+      "termo": "semaglutida manipulada",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": true,
+          "estimativa": 320,
+          "lidos": 8,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 303,
+          "lidos": 3,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 101,
+          "lidos": 5,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 35,
+          "lidos": 2,
+          "no_limite": false
+        }
+      ]
+    },
+    {
+      "termo": "Ozempic sem receita",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 1087,
+          "lidos": 10,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 555,
+          "lidos": 5,
+          "no_limite": false
+        }
+      ]
+    },
+    {
+      "termo": "Mounjaro sem receita",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": true,
+          "estimativa": 58880,
+          "lidos": 15,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 52248,
+          "lidos": 16,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 4186,
+          "lidos": 13,
+          "no_limite": false
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 3463,
+          "lidos": 10,
+          "no_limite": false
+        }
+      ]
+    },
+    {
+      "termo": "retatrutida",
+      "meses": [
+        {
+          "mes": "2025-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2025-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2026-09",
+          "feito": true,
+          "estimativa": 31271,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-10",
+          "feito": true,
+          "estimativa": 26091,
+          "lidos": 50,
+          "no_limite": true
+        },
+        {
+          "mes": "2026-11",
+          "feito": true,
+          "estimativa": 32772,
+          "lidos": 50,
+          "no_limite": true
+        }
+      ]
+    }
+  ]
+}
