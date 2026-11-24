@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Anonimização: máscara de link para qualquer domínio
+
+**O que mudou**
+
+- scripts/anonimizar.py: a máscara de link passa a pegar qualquer domínio com terminação minúscula de 2 a 6 letras (por exemplo o de um agregador de links), e não só uma lista fixa de terminações. O mesmo padrão acusa link que sobrar em tem_resto_identificavel.
+- tests/test_anonimizar.py: casos com agregador de links e com terminação .ee; caso de frase sem espaço depois do ponto ("acabou.Agora"), que deve ficar igual.
+
+**Por quê**
+
+- O run 45302552462 (Análises) parou no teste test_sem_link_de_venda_fora_dos_testes: o corpus público trazia o domínio de um agregador de links vindo de texto de terceiros. Nada foi gravado no público; o teste segurou a publicação.
+
+**O que foi executado de verdade**
+
+- `python -m unittest discover -s tests` local antes do commit. Depois, nova execução do workflow Análises.
+
+**O que ficou pendente**
+
+- Confirmar a nova execução de Análises com o corpus que inclui as coletas pagas e a carga histórica do YouTube.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45302552462 (falha no passo Gravar no público) e os testes deste commit.
+
 ## 23/11/2026 · Universo informado pelas plataformas (run 45301606392)
 
 **O que mudou**

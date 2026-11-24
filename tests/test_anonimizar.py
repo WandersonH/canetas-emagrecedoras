@@ -25,13 +25,17 @@ class Texto(unittest.TestCase):
 
     def test_link_some_inclusive_sem_protocolo(self):
         for texto in ("compre em https://loja.exemplo.com/caneta?x=1 agora", "chama no www.exemplo.com.br/promo",
-                      "site exemplo-ficticio.shop tem", "link wa.me/5500900000000 aqui"):
+                      "site exemplo-ficticio.shop tem", "link wa.me/5500900000000 aqui",
+                      "tudo no linktr.ee/exemplo", "pede no exemplo.ee"):
             with self.subTest(texto=texto):
                 saida = anonimizar.anonimizar_texto(texto)
                 self.assertIn("[link]", saida)
                 self.assertNotIn("exemplo", saida)
                 self.assertNotIn("ficticio", saida)
                 self.assertNotIn("wa.me", saida)
+
+    def test_frase_sem_espaco_depois_do_ponto_fica(self):
+        self.assertEqual(anonimizar.anonimizar_texto("acabou.Agora tomo de novo"), "acabou.Agora tomo de novo")
 
     def test_telefone_some(self):
         for texto in ("me chama (00) 90000-0000", "zap 00 900000000", "+55 00 90000-0000", "liga 90000-0000", "fixo (00) 3000-0000"):

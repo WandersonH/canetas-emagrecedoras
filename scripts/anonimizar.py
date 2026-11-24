@@ -23,7 +23,9 @@ PRESERVAR = ("GLP-1", "GLP1", "T36")
 _MARCADOR = 0xE000  # início da área de uso privado do Unicode
 _LIMITE = 6400  # tamanho dessa área
 
-_LINK = re.compile(r"(?i)\b(?:https?://|www\.)\S+|\b[\w-]+(?:\.[\w-]+)*\.(?:com|net|org|shop|store|app|io|me|ly|br)(?:\.br)?(?:/\S*)?")
+# Qualquer domínio: rótulo de duas letras ou mais e terminação minúscula de 2 a 6 letras
+# (linktr.ee, wa.me, loja.com.br). "acabou.Agora" fica, porque a terminação começa com maiúscula.
+_LINK = re.compile(r"(?i:\b(?:https?://|www\.)\S+)|(?i:\b[\w-]{2,}(?:\.[\w-]+)*)\.[a-z]{2,6}(?!\w)(?:/\S*)?")
 _EMAIL = re.compile(r"(?i)\b[\w.+-]+@[\w-]+(?:\.[\w-]+)+\b")
 _PERFIL = re.compile(r"(?<![\w@])@[\w.]{2,}")
 _TELEFONE = re.compile(
@@ -78,7 +80,7 @@ def tem_resto_identificavel(texto: str) -> list[str]:
         restos.append("número")
     if _PERFIL.search(texto):
         restos.append("perfil")
-    if re.search(r"(?i)https?://|www\.", texto):
+    if _LINK.search(texto):
         restos.append("link")
     if _EMAIL.search(texto):
         restos.append("e-mail")
