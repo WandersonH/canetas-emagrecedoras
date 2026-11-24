@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Anonimização: arrobas de palavrão disfarçado viram asteriscos
+
+**O que mudou**
+
+- scripts/anonimizar.py: sequência de duas ou mais arrobas dentro de uma palavra (palavrão disfarçado) vira asteriscos do mesmo tamanho. Teste novo em tests/test_anonimizar.py.
+
+**Por quê**
+
+- O run 45317416916 (Análises) parou no teste do corpus público: um comentário com palavrão escrito com arrobas deixava "@" seguido de letra, que o teste trata como possível perfil. O teste segurou a publicação; nada foi gravado no público.
+
+**O que foi executado de verdade**
+
+- Corpus montado localmente com um clone novo do privado: 12.969 textos, 17.134 segmentos, 11.999 na CHD, 66,9% classificados, 8 classes; `python -m unittest tests.test_publico` passou. As saídas locais foram descartadas; o corpus publicado é o do workflow.
+
+**O que ficou pendente**
+
+- Nova execução de Análises.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45317416916 e este commit.
+
 ## 24/11/2026 · Dados públicos e checagens das agências (run 45317038053)
 
 **O que mudou**

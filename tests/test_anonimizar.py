@@ -37,6 +37,11 @@ class Texto(unittest.TestCase):
     def test_frase_sem_espaco_depois_do_ponto_fica(self):
         self.assertEqual(anonimizar.anonimizar_texto("acabou.Agora tomo de novo"), "acabou.Agora tomo de novo")
 
+    def test_arrobas_de_censura_viram_asteriscos(self):
+        saida = anonimizar.anonimizar_texto("que se f@@@@da")
+        self.assertEqual(saida, "que se f****da")
+        self.assertEqual(anonimizar.tem_resto_identificavel(saida), [])
+
     def test_telefone_some(self):
         for texto in ("me chama (00) 90000-0000", "zap 00 900000000", "+55 00 90000-0000", "liga 90000-0000", "fixo (00) 3000-0000"):
             with self.subTest(texto=texto):

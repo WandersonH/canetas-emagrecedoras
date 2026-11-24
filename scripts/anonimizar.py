@@ -34,6 +34,8 @@ _TELEFONE = re.compile(
 )
 _NUMERO = re.compile(r"\d+(?:[.,:/]\d+)*")
 _ESPACO = re.compile(r"[ \t]{2,}")
+# palavrão disfarçado com arrobas ("f@@@@da"): vira asteriscos, para não parecer perfil nem sobrar arroba solta
+_CENSURA = re.compile(r"@{2,}")
 
 
 def anonimizar_texto(texto: str) -> str:
@@ -50,6 +52,7 @@ def anonimizar_texto(texto: str) -> str:
     saida = "".join(letra for letra in texto if not _MARCADOR <= ord(letra) < _MARCADOR + _LIMITE)
     saida = _EMAIL.sub("[e-mail]", saida)
     saida = _LINK.sub("[link]", saida)
+    saida = _CENSURA.sub(lambda m: "*" * len(m.group(0)), saida)
     saida = _PERFIL.sub("[perfil]", saida)
     saida = _TELEFONE.sub("[telefone]", saida)
     padrao_preservar = re.compile("|".join(re.escape(termo) for termo in PRESERVAR), re.IGNORECASE)
