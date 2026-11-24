@@ -1,121 +1,763 @@
 {
-  "obtido_em": "2026-11-24T02:58:33Z",
-  "run_id": "45313922869",
+  "obtido_em": "2026-11-24T03:05:53Z",
+  "run_id": "45317038053",
   "periodo": {
     "inicio": "2025-01-01",
     "fim": "2026-11-24"
   },
-  "nota": "Proposições apresentadas no período cuja busca por palavra-chave da Câmara devolve o termo.",
-  "consultas": [
+  "nota": "Proposições apresentadas no período cuja ementa ou indexação cita os termos.",
+  "arquivos": [
     {
-      "termo": "semaglutida",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
+      "ano": 2025,
+      "url": "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-2025.csv",
+      "linhas_no_arquivo": 113415,
+      "linhas_que_citam": 20,
+      "colunas": [
+        "id",
+        "uri",
+        "siglaTipo",
+        "numero",
+        "ano",
+        "codTipo",
+        "descricaoTipo",
+        "ementa",
+        "ementaDetalhada",
+        "keywords",
+        "dataApresentacao",
+        "uriOrgaoNumerador",
+        "uriPropAnterior",
+        "uriPropPrincipal",
+        "uriPropPosterior",
+        "urlInteiroTeor",
+        "urnFinal",
+        "ultimoStatus_dataHora",
+        "ultimoStatus_sequencia",
+        "ultimoStatus_uriRelator",
+        "ultimoStatus_idOrgao",
+        "ultimoStatus_siglaOrgao",
+        "ultimoStatus_uriOrgao",
+        "ultimoStatus_regime",
+        "ultimoStatus_descricaoTramitacao",
+        "ultimoStatus_idTipoTramitacao",
+        "ultimoStatus_descricaoSituacao",
+        "ultimoStatus_idSituacao",
+        "ultimoStatus_despacho",
+        "ultimoStatus_apreciacao",
+        "ultimoStatus_url"
+      ]
     },
     {
-      "termo": "tirzepatida",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "liraglutida",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "dulaglutida",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "exenatida",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "lixisenatida",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "Ozempic",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "Wegovy",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "Mounjaro",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "Saxenda",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "caneta emagrecedora",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "caneta para emagrecer",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "caneta do Paraguai",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "tirzepatida manipulada",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "semaglutida manipulada",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "Ozempic sem receita",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "Mounjaro sem receita",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
-    },
-    {
-      "termo": "retatrutida",
-      "total_informado": null,
-      "lidos": null,
-      "parou_por": null
+      "ano": 2026,
+      "url": "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-2026.csv",
+      "linhas_no_arquivo": 59612,
+      "linhas_que_citam": 34,
+      "colunas": [
+        "id",
+        "uri",
+        "siglaTipo",
+        "numero",
+        "ano",
+        "codTipo",
+        "descricaoTipo",
+        "ementa",
+        "ementaDetalhada",
+        "keywords",
+        "dataApresentacao",
+        "uriOrgaoNumerador",
+        "uriPropAnterior",
+        "uriPropPrincipal",
+        "uriPropPosterior",
+        "urlInteiroTeor",
+        "urnFinal",
+        "ultimoStatus_dataHora",
+        "ultimoStatus_sequencia",
+        "ultimoStatus_uriRelator",
+        "ultimoStatus_idOrgao",
+        "ultimoStatus_siglaOrgao",
+        "ultimoStatus_uriOrgao",
+        "ultimoStatus_regime",
+        "ultimoStatus_descricaoTramitacao",
+        "ultimoStatus_idTipoTramitacao",
+        "ultimoStatus_descricaoSituacao",
+        "ultimoStatus_idSituacao",
+        "ultimoStatus_despacho",
+        "ultimoStatus_apreciacao",
+        "ultimoStatus_url"
+      ]
     }
   ],
-  "por_tipo": {},
-  "proposicoes": []
+  "por_tipo": {
+    "PL": 15,
+    "SBT": 4,
+    "RIC": 12,
+    "INC": 10,
+    "SIT": 1,
+    "REQ": 8,
+    "não informado": 1,
+    "PDL": 3
+  },
+  "proposicoes": [
+    {
+      "id": "2646115",
+      "tipo": "INC",
+      "numero": "1573",
+      "ano": "2026",
+      "apresentada_em": "2026-09-04",
+      "ementa": "Sugere à Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde – CONITEC a avaliação e recomendação da incorporação da tirzepatida ao SUS para tratamento de adultos com obesidade grave e doenças crônicas associadas",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2646115"
+    },
+    {
+      "id": "2646129",
+      "tipo": "INC",
+      "numero": "1574",
+      "ano": "2026",
+      "apresentada_em": "2026-09-04",
+      "ementa": "Sugere ao Ministério da Saúde apoio técnico e institucional ao Projeto de Lei nº 5.301/2026, que institui o Programa Nacional de Atenção Integral à Obesidade no âmbito do Sistema Único de Saúde – SUS, a elaboração do protocolo nacional previsto na proposição e a adoção das providências necessárias à avaliação e eventual incorporação da tirzepatida ao SUS, em consonância com a Indicação nº 1.573/2026",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2646129"
+    },
+    {
+      "id": "2646131",
+      "tipo": "INC",
+      "numero": "1575",
+      "ano": "2026",
+      "apresentada_em": "2026-09-04",
+      "ementa": "Sugere à Presidência da República, por intermédio da Secretaria-Geral da Presidência da República, a adoção das providências necessárias à articulação dos órgãos do Poder Executivo Federal para o apoio e implementação do Programa Nacional de Atenção Integral à Obesidade previsto no Projeto de Lei nº 5.301/2026 e para o prosseguimento das medidas destinadas à avaliação e eventual incorporação da tirzepatida ao Sistema Único de Saúde – SUS, objeto da Indicação nº 1.573/2026.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2646131"
+    },
+    {
+      "id": "2644730",
+      "tipo": "REQ",
+      "numero": "195",
+      "ano": "2026",
+      "apresentada_em": "2026-08-27",
+      "ementa": "Requer aditamento ao Requerimento nº 186/2026 CSAUDE e ao Requerimento nº 193/2026 CSAUDE, para inclusão de convidados na audiência pública para debater os aspectos científicos, regulatórios, tecnológicos e sanitários relacionados aos medicamentos à base de tirzepatida comercializados no Brasil e no exterior, bem como seus impactos sobre o acesso da população aos tratamentos para obesidade e diabetes mellitus tipo 2.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2644730"
+    },
+    {
+      "id": "2644173",
+      "tipo": "PL",
+      "numero": "5126",
+      "ano": "2026",
+      "apresentada_em": "2026-08-19",
+      "ementa": "Institui o Protocolo Nacional de Dispensação, Autorização e Acompanhamento do uso do medicamento Tirzepatida no Tratamento da Obesidade no âmbito do Sistema Único de Saúde – SUS e dá outras providências.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2644173"
+    },
+    {
+      "id": "2643016",
+      "tipo": "REQ",
+      "numero": "193",
+      "ano": "2026",
+      "apresentada_em": "2026-08-11",
+      "ementa": "Requer aditamento ao Requerimento nº 186, de 2026, dos Srs. Deputados Diego Garcia (União-PR) e Fausto Pinato (União-SP), para incluir, na audiência pública proposta, um representante do Conselho Federal de Medicina (CFM), a fim de debater “os aspectos científicos, regulatórios, tecnológicos e sanitários relacionados aos medicamentos à base de tirzepatida comercializados no Brasil e no exterior, bem como seus impactos sobre o acesso da população aos tratamentos para obesidade e diabetes mellitus tipo 2”.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2643016"
+    },
+    {
+      "id": "2640691",
+      "tipo": "PL",
+      "numero": "4016",
+      "ano": "2026",
+      "apresentada_em": "2026-07-17",
+      "ementa": "Altera a Lei nº 5.991, de 17 de dezembro de 1973, para estabelecer critérios de retenção de receita e de informação sobre riscos na dispensação de medicamentos agonistas do receptor de GLP-1 e de outras substâncias sob regime de monitoramento especial determinado pela autoridade sanitária federal.",
+      "termos": [
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2640691"
+    },
+    {
+      "id": "2640710",
+      "tipo": "PL",
+      "numero": "4035",
+      "ano": "2026",
+      "apresentada_em": "2026-07-17",
+      "ementa": "Altera a Lei nº 6.437, de 20 de agosto de 1977, para dispor sobre a infração sanitária decorrente da manipulação, fabricação, fracionamento, comercialização ou exposição à venda de medicamentos agonistas do receptor de GLP-1 (glucagon-like peptide-1) em desacordo com as normas sanitárias vigentes.",
+      "termos": [
+        "glp-1",
+        "semaglutida",
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2640710"
+    },
+    {
+      "id": "2639158",
+      "tipo": "REQ",
+      "numero": "186",
+      "ano": "2026",
+      "apresentada_em": "2026-07-13",
+      "ementa": "Requer a realização de Audiência Pública Conjunta da Comissão de Saúde e da Comissão de Ciência, Tecnologia e Inovação para debater os aspectos científicos, regulatórios, tecnológicos e sanitários relacionados aos medicamentos à base de tirzepatida comercializados no Brasil e no exterior, bem como seus impactos sobre o acesso da população aos tratamentos para obesidade e diabetes mellitus tipo 2.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2639158"
+    },
+    {
+      "id": "2639160",
+      "tipo": "REQ",
+      "numero": "187",
+      "ano": "2026",
+      "apresentada_em": "2026-07-13",
+      "ementa": "Requer a realização de missão oficial da Comissão de Saúde e da Comissão de Ciência, Tecnologia e Inovação à República do Paraguai, com a finalidade de promover intercâmbio institucional e realizar visitas técnicas a órgãos reguladores, instituições de pesquisa, laboratórios oficiais e estabelecimentos farmacêuticos produtores de medicamentos à base de tirzepatida.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2639160"
+    },
+    {
+      "id": "2637303",
+      "tipo": "PDL",
+      "numero": "766",
+      "ano": "2026",
+      "apresentada_em": "2026-07-06",
+      "ementa": "Susta os efeitos da Resolução-RE nº 1.519, de 13 de abril de 2026, da Agência Nacional de Vigilância Sanitária (Anvisa), na parte em que proíbe a importação e o uso, por pessoa física, para uso próprio e mediante prescrição médica, de medicamentos à base dos princípios ativos tirzepatida e semaglutida, respeitado o limite quantitativo compatível com o tratamento, independentemente da denominação comercial do produto.",
+      "termos": [
+        "tirzepatida",
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2637303"
+    },
+    {
+      "id": "2637404",
+      "tipo": "INC",
+      "numero": "1317",
+      "ano": "2026",
+      "apresentada_em": "2026-07-06",
+      "ementa": "Sugere à Agência Nacional de Vigilância Sanitária (Anvisa) a revisão da Resolução-RE nº 1.519, de 13 de abril de 2026, de modo a excepcionar da proibição nela contida a importação e o uso, por pessoa física, para uso próprio e mediante prescrição médica, de medicamentos à base de tirzepatida e semaglutida, respeitado limite quantitativo compatível com o tratamento.",
+      "termos": [
+        "tirzepatida",
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2637404"
+    },
+    {
+      "id": "2637086",
+      "tipo": "RIC",
+      "numero": "2119",
+      "ano": "2026",
+      "apresentada_em": "2026-07-03",
+      "ementa": "Requer ao Senhor Ministro de Estado da Saúde informações complementares acerca das Resoluções da Agência Nacional de Vigilância Sanitária (ANVISA) que restringiram a importação, comercialização e uso de medicamentos contendo tirzepatida oriundos do Paraguai, bem como o encaminhamento dos documentos técnicos e administrativos que fundamentaram sua edição.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2637086"
+    },
+    {
+      "id": "2636282",
+      "tipo": "RIC",
+      "numero": "2071",
+      "ano": "2026",
+      "apresentada_em": "2026-07-01",
+      "ementa": "Requer do Excelentíssimo Ministro da Saúde, informações sobre o projeto-piloto Real-Bari, de uso da semaglutida no tratamento da obesidade grave no âmbito do SUS.",
+      "termos": [
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2636282"
+    },
+    {
+      "id": "2627881",
+      "tipo": "PDL",
+      "numero": "479",
+      "ano": "2026",
+      "apresentada_em": "2026-05-26",
+      "ementa": "Susta os efeitos das Resoluções da Agência Nacional de Vigilância Sanitária que proibiram a importação, ingresso, transporte, posse ou uso, por pessoa física, de medicamentos contendo Susta os efeitos das Resoluções da Agência Nacional de Vigilância Sanitária que proibiram a importação, ingresso, transporte, posse ou uso, por pessoa física, de medicamentos contendo tirzepatida regularmente adquiridos no exterior para uso próprio.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2627881"
+    },
+    {
+      "id": "2626333",
+      "tipo": "PL",
+      "numero": "2513",
+      "ano": "2026",
+      "apresentada_em": "2026-05-20",
+      "ementa": "Dispõe sobre a Política Nacional de Acesso ao Tratamento Farmacológico Antiobesidade no âmbito do Sistema Único de Saúde — SUS.",
+      "termos": [
+        "caneta emagrecedora"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2626333"
+    },
+    {
+      "id": "2626404",
+      "tipo": "RIC",
+      "numero": "1420",
+      "ano": "2026",
+      "apresentada_em": "2026-05-20",
+      "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública acerca das ações de investigação e repressão ao crime organizado envolvido na produção, falsificação e comercialização ilegal de medicamentos agonistas do receptor GLP-1 no território nacional.",
+      "termos": [
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2626404"
+    },
+    {
+      "id": "2626405",
+      "tipo": "RIC",
+      "numero": "1421",
+      "ano": "2026",
+      "apresentada_em": "2026-05-20",
+      "ementa": "Requer informações ao Ministro de Estado da Saúde acerca dos impactos sanitários e epidemiológicos decorrentes do uso de medicamentos agonistas do receptor GLP-1, em especial de preparações magistrais de origem irregular, sobre os usuários do Sistema Único de Saúde e da saúde suplementar.",
+      "termos": [
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2626405"
+    },
+    {
+      "id": "2623472",
+      "tipo": "RIC",
+      "numero": "1247",
+      "ano": "2026",
+      "apresentada_em": "2026-05-11",
+      "ementa": "Requer informações ao Senhor Ministro de Estado da Saúde acerca dos fundamentos técnicos, sanitários, sociais e econômicos das medidas restritivas relacionadas ao ingresso, no território nacional, de medicamentos contendo tirzepatida adquiridos no exterior para uso pessoal.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2623472"
+    },
+    {
+      "id": "2623218",
+      "tipo": "PDL",
+      "numero": "384",
+      "ano": "2026",
+      "apresentada_em": "2026-05-08",
+      "ementa": "Susta os efeitos das Resoluções da Agência Nacional de Vigilância Sanitária que proibiram a importação, comercialização e uso de medicamentos à base de tirzepatida.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2623218"
+    },
+    {
+      "id": "2618273",
+      "tipo": "INC",
+      "numero": "618",
+      "ano": "2026",
+      "apresentada_em": "2026-04-24",
+      "ementa": "Sugere ao Excelentíssimo Senhor Ministro de Estado da Justiça e Segurança Pública a adoção de providências para apurar possíveis distorções concorrenciais e impactos econômicos decorrentes de atos regulatórios da Agência Nacional de Vigilância Sanitária relacionados à restrição de medicamentos à base de tirzepatida.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2618273"
+    },
+    {
+      "id": "2618274",
+      "tipo": "INC",
+      "numero": "619",
+      "ano": "2026",
+      "apresentada_em": "2026-04-24",
+      "ementa": "Sugere ao Excelentíssimo Senhor Ministro da Saúde a adoção de providências para apurar possíveis distorções concorrenciais e impactos econômicos decorrentes de atos regulatórios da Agência Nacional de Vigilância Sanitária relacionados à restrição de medicamentos à base de tirzepatida.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2618274"
+    },
+    {
+      "id": "2618275",
+      "tipo": "RIC",
+      "numero": "998",
+      "ano": "2026",
+      "apresentada_em": "2026-04-24",
+      "ementa": "Requeiro sejam solicitadas informações ao Ministro da Saúde acerca das decisões administrativas da ANVISA que culminaram na proibição da comercialização, importação e uso, no Brasil, de medicamentos à base de tirzepatida.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2618275"
+    },
+    {
+      "id": "medicamentos da classe dos agonistas de GLP-1 e correlatos, inclusive a tirzepatida, para o tratamento da obesidade/Doença Crônica Baseada em Adiposidade (DCBA) e do Diabetes Mellitus tipo 2, com critérios de elegibilidade, protocolos e monitoramento.\"",
+      "tipo": "",
+      "numero": "2026-02-23T13:55:55",
+      "ano": "https://dadosabertos.camara.leg.br/api/v2/orgaos/180",
+      "apresentada_em": "2026-04-17",
+      "ementa": "",
+      "termos": [],
+      "link": "https://www.camara.leg.br/propostas-legislativas/medicamentos da classe dos agonistas de GLP-1 e correlatos, inclusive a tirzepatida, para o tratamento da obesidade/Doença Crônica Baseada em Adiposidade (DCBA) e do Diabetes Mellitus tipo 2, com critérios de elegibilidade, protocolos e monitoramento.\""
+    },
+    {
+      "id": "2615414",
+      "tipo": "REQ",
+      "numero": "104",
+      "ano": "2026",
+      "apresentada_em": "2026-04-13",
+      "ementa": "Requer aditamento ao Requerimento nº 78/2026, para inclusão de convidados em audiência pública destinada a debater os impactos relacionados aos medicamentos à base de GLP-1.",
+      "termos": [
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2615414"
+    },
+    {
+      "id": "2613855",
+      "tipo": "RIC",
+      "numero": "788",
+      "ano": "2026",
+      "apresentada_em": "2026-04-07",
+      "ementa": "Requer informações ao Ministério da Saúde acerca do monitoramento de eventos adversos graves, impactos assistenciais no SUS e das estratégias de farmacovigilância relacionadas ao uso de medicamentos agonistas do receptor GLP-1 (“canetas emagrecedoras”).",
+      "termos": [
+        "glp-1",
+        "canetas emagrecedoras"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2613855"
+    },
+    {
+      "id": "2609740",
+      "tipo": "REQ",
+      "numero": "78",
+      "ano": "2026",
+      "apresentada_em": "2026-03-17",
+      "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Saúde (CSAÚDE), para debater as consequências dos furtos e roubos de medicamentos injetáveis à base de GLP-1, conhecidos como “canetas emagrecedoras”,  bem como discutir a crescente incidência de falsificação e comercialização irregular desses medicamentos e seus impactos sobre a saúde pública.",
+      "termos": [
+        "glp-1",
+        "canetas emagrecedoras"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2609740"
+    },
+    {
+      "id": "2603253",
+      "tipo": "PL",
+      "numero": "590",
+      "ano": "2026",
+      "apresentada_em": "2026-02-19",
+      "ementa": "Inclui no Programa Farmácia Popular do Brasil os medicamentos Mounjaro e Zepbound (à base de tirzepatida), bem como outros medicamentos agonistas do receptor de GLP-1 com eficácia comprovada no tratamento da obesidade, da Doença Crônica Baseada em Adiposidade (DCBA), do sobrepeso com risco metabólico e do Diabetes Mellitus tipo 2, e dá outras providências.",
+      "termos": [
+        "tirzepatida",
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2603253"
+    },
+    {
+      "id": "2603282",
+      "tipo": "INC",
+      "numero": "98",
+      "ano": "2026",
+      "apresentada_em": "2026-02-19",
+      "ementa": "Sugere ao ministro de Estado da Saúde a inclusão no Programa Farmácia Popular do Brasil dos medicamentos Mounjaro e Zepbound (à base de tirzepatida), bem como outros medicamentos agonistas do receptor de GLP-1",
+      "termos": [
+        "tirzepatida",
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2603282"
+    },
+    {
+      "id": "2602192",
+      "tipo": "PL",
+      "numero": "445",
+      "ano": "2026",
+      "apresentada_em": "2026-02-10",
+      "ementa": "Institui a Política Nacional de Ampliação do Tratamento Farmacológico da Obesidade no âmbito do Sistema Único de Saúde (SUS), com a incorporação, a oferta e a distribuição de medicamentos injetáveis para controle crônico do peso corporal, popularmente conhecidos como “canetas emagrecedoras”, abrangendo todas as classes terapêuticas e marcas com registro sanitário vigente no País, como estratégia prioritária e complementar à cirurgia bariátrica, e dá outras providências.",
+      "termos": [
+        "canetas emagrecedoras",
+        "caneta emagrecedora"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2602192"
+    },
+    {
+      "id": "2602335",
+      "tipo": "RIC",
+      "numero": "187",
+      "ano": "2026",
+      "apresentada_em": "2026-02-10",
+      "ementa": "Requer do Ministro de Estado da Saúde informações ao Ministério da Saúde sobre a crescente falsificação e comercialização irregular de canetas emagrecedoras, bem como do aumento de casos de pancreatite e outros eventos adversos associados ao seu uso.",
+      "termos": [
+        "canetas emagrecedoras"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2602335"
+    },
+    {
+      "id": "2601223",
+      "tipo": "REQ",
+      "numero": "284",
+      "ano": "2026",
+      "apresentada_em": "2026-02-05",
+      "ementa": "Requer urgência para a tramitação do projeto de lei nº 68, de 2026, que \"Declara de interesse público os medicamentos Mounjaro e Zepbound, para fins do disposto no art. 71 da Lei n° 9.279, de 14 de maio de 1996, alterado pela Lei nº 14.200, de 2 de setembro de 2021\".",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2601223"
+    },
+    {
+      "id": "2600127",
+      "tipo": "PL",
+      "numero": "68",
+      "ano": "2026",
+      "apresentada_em": "2026-02-02",
+      "ementa": "Declara de interesse público os medicamentos Mounjaro e Zepbound, para fins do disposto no art. 71 da Lei n° 9.279, de 14 de maio de 1996, alterado pela Lei nº 14.200, de 2 de setembro de 2021.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2600127"
+    },
+    {
+      "id": "2600139",
+      "tipo": "INC",
+      "numero": "21",
+      "ano": "2026",
+      "apresentada_em": "2026-02-02",
+      "ementa": "Sugere a declaração de interesse público dos medicamentos Mounjaro e Zepbound, para quebra de patente nos termos do disposto no art. 71 da Lei n° 9.279, de 14 de maio de 1996, alterado pela Lei nº 14.200, de 2 de setembro de 2021.",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2600139"
+    },
+    {
+      "id": "2589289",
+      "tipo": "RIC",
+      "numero": "7990",
+      "ano": "2025",
+      "apresentada_em": "2025-11-27",
+      "ementa": "Requer informações ao Exmo. Sr. Ministro de Estado da Saúde, Alexandre Padilha, acerca dos critérios técnicos, jurídicos e econômicos adotados pela Fiocruz/Farmanguinhos na celebração de parceria com o laboratório EMS para produção de canetas emagrecedoras, em detrimento de propostas mais vantajosas e de ritos mais transparentes, bem como sobre o conflito com a decisão de rejeição da CONITEC.",
+      "termos": [
+        "canetas emagrecedoras"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2589289"
+    },
+    {
+      "id": "2583075",
+      "tipo": "RIC",
+      "numero": "7595",
+      "ano": "2025",
+      "apresentada_em": "2025-11-10",
+      "ementa": "Requer informações ao Exmo. Sr. Ministro de Estado da Saúde, Alexandre Padilha, acerca dos critérios técnicos, jurídicos e econômicos adotados pela Fiocruz/Farmanguinhos na celebração de parceria com o laboratório EMS para produção de canetas emagrecedoras, em detrimento de propostas mais vantajosas e de ritos mais transparentes, bem como sobre o conflito com a decisão de rejeição da CONITEC.",
+      "termos": [
+        "canetas emagrecedoras"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2583075"
+    },
+    {
+      "id": "2584014",
+      "tipo": "REQ",
+      "numero": "407",
+      "ano": "2025",
+      "apresentada_em": "2025-11-10",
+      "ementa": "Requer informações ao Exmo. Sr. Ministro de Estado da Saúde, Alexandre Padilha, acerca dos critérios técnicos, jurídicos e econômicos adotados pela Fiocruz/Farmanguinhos na celebração de parceria com o laboratório EMS para produção de canetas emagrecedoras, em detrimento de propostas mais vantajosas e de ritos mais transparentes, bem como sobre o conflito com a decisão de rejeição da CONITEC.",
+      "termos": [
+        "canetas emagrecedoras"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2584014"
+    },
+    {
+      "id": "2580830",
+      "tipo": "PL",
+      "numero": "5603",
+      "ano": "2025",
+      "apresentada_em": "2025-11-04",
+      "ementa": "Dispõe sobre a obrigatoriedade de instalação de coletores apropriados para materiais perfurocortantes e canetas de insulina em estabelecimentos públicos, privados, condomínios, estabelecimentos de saúde e farmácias, e dá outras providências.",
+      "termos": [
+        "caneta emagrecedora"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2580830"
+    },
+    {
+      "id": "2581484",
+      "tipo": "SIT",
+      "numero": "121",
+      "ano": "2025",
+      "apresentada_em": "2025-11-04",
+      "ementa": "Solicita informações ao Egrégio Tribunal de Contas da União (TCU) acerca do real regime jurídico e dos aspectos contábeis, financeiros e orçamentários, bem como avaliação dos critérios de transparência, legalidade, eficiência e do processo de escolha e da celebração de negócio celebrado entre a Fundação Oswaldo Cruz (Fiocruz), entidade vinculada ao Ministério da Saúde, e a pessoa jurídica EMS S.A. para aquisição de “canetas emagrecedoras.",
+      "termos": [
+        "canetas emagrecedoras"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2581484"
+    },
+    {
+      "id": "2579894",
+      "tipo": "RIC",
+      "numero": "7233",
+      "ano": "2025",
+      "apresentada_em": "2025-11-03",
+      "ementa": "Solicita informações ao Ministério da Saúde acerca dos critérios técnicos, administrativos e econômicos adotados pela Fundação Oswaldo Cruz (Fiocruz), por meio de sua unidade Farmanguinhos, na celebração de parceria com o laboratório EMS para produção de caneta emagrecedora, em detrimento de proposta mais vantajosa apresentada por outro laboratório.",
+      "termos": [
+        "caneta emagrecedora"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2579894"
+    },
+    {
+      "id": "2573722",
+      "tipo": "INC",
+      "numero": "2673",
+      "ano": "2025",
+      "apresentada_em": "2025-10-21",
+      "ementa": "Sugere ao Ministério da Saúde a organização de ações de incentivo à investigação de clínicas que façam aplicação de medicamentos emagrecedores como Semaglutida e Tirzepatida sem prescrição médica.",
+      "termos": [
+        "semaglutida",
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2573722"
+    },
+    {
+      "id": "2573726",
+      "tipo": "INC",
+      "numero": "2674",
+      "ano": "2025",
+      "apresentada_em": "2025-10-21",
+      "ementa": "Sugere ao Ministério da Saúde a organização de ações de incentivo à investigação de fornecedores ilegais de medicamentos emagrecedores como Semaglutida e Tirzepatida sem prescrição médica.",
+      "termos": [
+        "semaglutida",
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2573726"
+    },
+    {
+      "id": "2573082",
+      "tipo": "SBT",
+      "numero": "3",
+      "ano": "0",
+      "apresentada_em": "2025-10-16",
+      "ementa": "Dispõe sobre a disponibilização da Liraglutida e da Semaglutida pelo Sistema Único de Saúde (SUS).",
+      "termos": [
+        "liraglutida",
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2573082"
+    },
+    {
+      "id": "2562372",
+      "tipo": "SBT",
+      "numero": "2",
+      "ano": "0",
+      "apresentada_em": "2025-09-18",
+      "ementa": "Dispõe sobre a disponibilização da Liraglutida e da Semaglutida pelo Sistema Único de Saúde (SUS).",
+      "termos": [
+        "liraglutida",
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2562372"
+    },
+    {
+      "id": "2560619",
+      "tipo": "RIC",
+      "numero": "6115",
+      "ano": "2025",
+      "apresentada_em": "2025-09-11",
+      "ementa": "Solicita informações ao Ministro de Estado da Saúde, Alexandre Padilha, acerca da negativa de incorporação de medicamentos contra a obesidade no SUS, da tramitação em regime de urgência para a liberação do genérico da LIRAGLUTIDA produzido pela EMS.",
+      "termos": [
+        "liraglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2560619"
+    },
+    {
+      "id": "2559816",
+      "tipo": "PL",
+      "numero": "4519",
+      "ano": "2025",
+      "apresentada_em": "2025-09-10",
+      "ementa": "Dispõe sobre a inclusão dos medicamentos análogos ao GLP-1, conhecidos popularmente como caneta emagrecedora, no âmbito do Sistema Único de Saúde (SUS), para tratamento da obesidade e doenças correlatas, e dá outras providências.",
+      "termos": [
+        "glp-1",
+        "caneta emagrecedora"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2559816"
+    },
+    {
+      "id": "2539299",
+      "tipo": "PL",
+      "numero": "3687",
+      "ano": "2025",
+      "apresentada_em": "2025-08-04",
+      "ementa": "Dispõe sobre a inclusão dos medicamentos Liraglutida e Simaglutida na Relação Nacional de Medicamentos Essenciais (RENAME) e a disponibilização deles pelo Sistema Único de Saúde (SUS)",
+      "termos": [
+        "liraglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2539299"
+    },
+    {
+      "id": "2539146",
+      "tipo": "SBT",
+      "numero": "1",
+      "ano": "0",
+      "apresentada_em": "2025-07-30",
+      "ementa": "Cria o Programa Nacional de Assistência a Pacientes com obesidade grau 3 e obesidade mórbida – foco em reeducação alimentar e tratamento medicamentoso com inibidores de GLP-1",
+      "termos": [
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2539146"
+    },
+    {
+      "id": "2532608",
+      "tipo": "SBT",
+      "numero": "1",
+      "ano": "0",
+      "apresentada_em": "2025-07-08",
+      "ementa": "Dispõe sobre a inclusão do medicamento tirzepatida na Relação Nacional de Medicamentos Essenciais (RENAME), distribuídos de forma gratuita pelo Sistema Único de Saúde (SUS).",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2532608"
+    },
+    {
+      "id": "2532644",
+      "tipo": "PL",
+      "numero": "3276",
+      "ano": "2025",
+      "apresentada_em": "2025-07-08",
+      "ementa": "\"Institui o Programa Mounjaro de Prevenção e Tratamento da Obesidade e do Diabetes Tipo 2, com oferta gratuita de tratamento farmacológico e acompanhamento multiprofissional no âmbito do Sistema Único de Saúde (SUS).\"",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2532644"
+    },
+    {
+      "id": "2498615",
+      "tipo": "PL",
+      "numero": "1771",
+      "ano": "2025",
+      "apresentada_em": "2025-04-22",
+      "ementa": "Dispõe sobre a disponibilização dos medicamentos Liraglutida e Semaglutida pelo Sistema Único de Saúde.",
+      "termos": [
+        "liraglutida",
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2498615"
+    },
+    {
+      "id": "2498722",
+      "tipo": "PL",
+      "numero": "1774",
+      "ano": "2025",
+      "apresentada_em": "2025-04-22",
+      "ementa": "Institui a Política Nacional de Acesso Excepcional a Medicamentos Inovadores para o Tratamento da Obesidade Grave e do Diabetes Mellitus Tipo 2, com base em evidências científicas e recomendações regulatórias, e dá outras providências.",
+      "termos": [
+        "semaglutida",
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2498722"
+    },
+    {
+      "id": "2484589",
+      "tipo": "PL",
+      "numero": "565",
+      "ano": "2025",
+      "apresentada_em": "2025-02-19",
+      "ementa": "Dispõe sobre a obrigatoriedade de disponibilização de medicamentos agonistas do receptor do GLP-1 e agonistas duais de GIP-GLP-1 pelo Sistema Único Saúde (SUS).",
+      "termos": [
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2484589"
+    },
+    {
+      "id": "2483435",
+      "tipo": "PL",
+      "numero": "354",
+      "ano": "2025",
+      "apresentada_em": "2025-02-10",
+      "ementa": "Cria o Programa Nacional de Assistência a Pacientes com obesidade grau 3 e obesidade mórbida – foco em reeducação alimentar e tratamento medicamentoso com inibidores de GLP-1",
+      "termos": [
+        "glp-1"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2483435"
+    }
+  ]
 }
