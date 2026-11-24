@@ -129,7 +129,9 @@
     "duracao_maxima_s": 600,
     "tiktok": 300,
     "kwai": 82,
-    "youtube": 30
+    "youtube": 30,
+    "semente": 120,
+    "semente_nota": "Fala completa dos vídeos da planilha-semente JAMA (TikTok), pedida pelo pesquisador em 24/11/2026: a planilha só traz um trecho da transcrição. Fica no privado e não entra no corpus geral."
   },
   "comentarios": {
     "nota": "Comentários das publicações já coletadas com mais comentários informados (amostra intencional). YouTube pela Data API, sem custo; as demais pela Apify, etapa 'comentarios'. Preços de referência das páginas dos atores na loja Apify, conferidos em 24/11/2026; o custo real de cada execução vai para o manifesto.",

@@ -20,6 +20,7 @@ import csv
 import glob
 import json
 import pathlib
+import re
 import subprocess
 import sys
 import tempfile
@@ -43,6 +44,8 @@ def configuracao(coleta: dict) -> dict:
 def videos(privado: pathlib.Path, rede_id: str, inicio: str, fim: str) -> list[dict]:
     """Vídeos da rede no período, sem repetição, do mais visto ao menos visto."""
     por_id: dict[str, dict] = {}
+    if rede_id == "semente":  # vídeos da planilha-semente JAMA, para a fala completa; sem filtro de data
+        return videos_semente(privado)
     if rede_id == "youtube":
         for caminho in sorted(glob.glob(str(privado / "terceiros" / "youtube" / "*.csv"))):
             for r in collect_comentarios.ler_csv(caminho):
@@ -68,6 +71,28 @@ def videos(privado: pathlib.Path, rede_id: str, inicio: str, fim: str) -> list[d
     if rede_id == "youtube":
         lista = [v for v in lista if collect_comentarios._portugues(v["titulo"])]
     return sorted(lista, key=lambda v: (-(v["vistas"] or 0), v["item_id"]))
+
+
+def videos_semente(privado: pathlib.Path) -> list[dict]:
+    """Endereços da planilha-semente (codificação manual JAMA), um por vídeo, na ordem da planilha."""
+    import openpyxl
+    cfg = comum.config("jama")
+    ws = openpyxl.load_workbook(privado / cfg["semente"], read_only=True, data_only=True)[cfg["aba"]]
+    rows = list(ws.iter_rows(values_only=True))
+    cab = [str(c).strip() if c is not None else "" for c in rows[0]]
+    saida, vistos = [], set()
+    for r in rows[1:]:
+        d = dict(zip(cab, r))
+        url = str(d.get("URL") or "").strip()
+        if not url.startswith("https://") or url in vistos:
+            continue
+        vistos.add(url)
+        achado = re.search(r"/video/(\d+)", url)
+        item = str(d.get("ID do vídeo") or "").strip() or (achado.group(1) if achado else f"semente_linha_{d.get('Nº')}")
+        conta = re.search(r"tiktok\.com/@([^/?]+)", url)
+        saida.append({"item_id": item, "conta": conta.group(1) if conta else "", "data": str(d.get("Data") or "")[:10],
+                      "vistas": None, "duracao_s": None, "pagina": url, "arquivo": None, "titulo": ""})
+    return saida
 
 
 def ja_transcritos(privado: pathlib.Path, rede_id: str) -> set[str]:
@@ -162,7 +187,8 @@ def main(argumentos=None) -> int:
         feitos = ja_transcritos(privado, rede_id)
         alvo = [v for v in todos if v["item_id"] not in feitos][: int(cfg.get(rede_id) or 0)]
         manifesto = rede.Manifesto("transcricao", {"rede": rede_id, "modelo": f"faster-whisper {cfg['modelo']} (int8, CPU)",
-                                                   "idioma": "pt", "como_escolhe": f"os {len(alvo)} vídeos do período com mais visualizações",
+                                                   "idioma": "pt", "como_escolhe": (f"os {len(alvo)} endereços da planilha-semente JAMA ainda sem transcrição" if rede_id == "semente"
+                                                                   else f"os {len(alvo)} vídeos do período com mais visualizações"),
                                                    "duracao_maxima_s": cfg["duracao_maxima_s"],
                                                    "ja_transcritos_antes": len(feitos)}, opcoes.run_id)
         linhas, falhas, parou = [], [], "lista_inteira"

@@ -142,6 +142,53 @@ class Publico(unittest.TestCase):
             self.assertIsNone(s["u"], f"segmento {s['i']} de terceiro com link")
             self.assertRegex(s["a"] or "A0000", r"^A\d{4,}$", f"segmento {s['i']} de terceiro sem código de autor")
 
+    def test_json_publico_e_json_valido(self):
+        """NaN e Infinity quebram a leitura no navegador: medida indefinida tem de sair como null (⛔)."""
+        import json
+
+        def recusa(c):
+            raise ValueError(c)
+        for caminho in (RAIZ / "data").rglob("*.json"):
+            try:
+                json.loads(caminho.read_text(encoding="utf-8"), parse_constant=recusa)
+            except ValueError as erro:
+                self.fail(f"{caminho.relative_to(RAIZ)} não é JSON válido: {erro}")
+
+    def test_corpus_de_comentarios_esta_anonimizado(self):
+        import json
+        arquivos = sorted((RAIZ / "data" / "comentarios").glob("*_corpus.json"))
+        if not arquivos:
+            self.skipTest("cadernos de comentários ainda não gerados")
+        for caminho in arquivos:
+            for c in json.loads(caminho.read_text(encoding="utf-8")):
+                texto = re.sub(r"(?i)glp-?1|t36", "", c["t"])
+                self.assertNotRegex(texto, r"(?<![A-Za-zÀ-ú])\d|(?<![A-Za-zÀ-ú])@\w|https?://|www\.", f"{caminho.name} item {c['i']} com dado identificável")
+                self.assertRegex(c["a"] or "A0000", r"^[AC]\d{4,}$", f"{caminho.name} item {c['i']} sem código de autor")
+                self.assertRegex(c["p"], r"^P\d{3,}$", f"{caminho.name} item {c['i']} com identificador da publicação")
+                self.assertEqual(set(c), {"i", "a", "d", "k", "c", "s", "p", "t"}, f"{caminho.name}: campo inesperado")
+
+    def test_redes_de_comentarios_so_com_codigos(self):
+        import json
+        for caminho in sorted((RAIZ / "data" / "comentarios").glob("*.json")):
+            if caminho.name.endswith("_corpus.json") or caminho.name in ("resumo.json", "analise.json"):
+                continue
+            m = json.loads(caminho.read_text(encoding="utf-8")).get("mencoes") or {}
+            for n in m.get("nos", []):
+                self.assertRegex(n["id"], r"^[ACM]\d{4,}$", f"{caminho.name}: nó de menção sem código")
+                self.assertEqual(n["id"], n["rotulo"], f"{caminho.name}: rótulo de menção diferente do código")
+
+    def test_jama_publico_so_tem_agregados(self):
+        import json
+        caminho = RAIZ / "data" / "jama" / "manual.json"
+        if not caminho.exists():
+            self.skipTest("agregados JAMA ainda não gerados")
+        texto = caminho.read_text(encoding="utf-8")
+        self.assertNotRegex(texto, r"https?://|tiktok\.com|@\w", "agregado JAMA com link ou perfil")
+        dado = json.loads(texto)
+        self.assertNotIn("videos_lista", dado)
+        for g in dado["por_tipo_de_perfil"] + dado["por_tipo_de_caneta"]:
+            self.assertEqual(set(g) - {"grupo", "videos", "pontuacao_media", "autoria", "atribuicao", "divulgacao", "atualidade"}, set())
+
     def test_workflows_so_com_disparo_manual(self):
         for caminho in (RAIZ / ".github" / "workflows").glob("*.y*ml"):
             texto = caminho.read_text(encoding="utf-8")

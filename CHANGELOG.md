@@ -2,6 +2,63 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Cadernos de comentários por rede, medidas do Gephi em cada rede e painel de qualidade (JAMA)
+
+**O que mudou**
+
+- Comentários: a página virou um caderno por rede (YouTube, TikTok, Instagram, X e Kwai), escolhido por botões. Cada caderno tem: universo e amostra, tom, nuvem de palavras, % de comentários com cada marca do dicionário aberto (`data/config/livro_comentarios.json`), aderência ao tema, série diária com os marcos, classes da CHD, rede de palavras, rede de quem marca quem, leitor do corpus anonimizado e método com downloads. As tabelas de contagem da coleta e da transcrição ficam no fim de cada caderno, separadas por rede.
+- Novo `scripts/analise_comentarios.py`, que grava:
+  - `data/comentarios/<rede>.json` com os agregados;
+  - `data/comentarios/<rede>_corpus.json` com o texto anonimizado, autor como código A ou C e publicação como código P;
+  - os GEXF `data/redes/comentarios_<rede>_{palavras,mencoes}.gexf`.
+  Comentário em inglês ou espanhol fica fora pelo mesmo filtro de idioma do corpus geral. O tom usa o modelo de sentimento em português, com cache em `terceiros/comentarios/sentimento.csv` no privado.
+- Redes e análise de texto: embaixo de cada rede (similitude, palavras, fontes e termos, hashtags e as redes dos comentários) entram as medidas do painel Statistics do Gephi, as comunidades Louvain e as 5 maiores centralidades por medida. `estatisticas_redes.py` passa a incluir a similitude; `resumo_redes.py` leva as centralidades e converte NaN em null.
+- Novo caderno "Qualidade da informação (JAMA)". `scripts/resumo_jama.py` lê a planilha-semente no privado e grava só agregados em `data/jama/manual.json`:
+  - % por critério e distribuição da pontuação;
+  - resultado por tipo de perfil e por substância (agrupamento dos rótulos em `data/config/jama.json`);
+  - situação e protocolo.
+  A comparação com modelos de IA fica ⛔ até chegar a planilha do outro pesquisador.
+- Transcrição: a rede "semente" transcreve com Whisper a fala completa dos endereços da planilha JAMA (`collect_transcricoes.py`, limite em `coleta.json`). Fica no privado e fora do corpus geral.
+- Anonimização: menção com @ seguida de uma só letra também vira [perfil].
+- Panorama: o período e o marco saíram do título e foram para uma nota abaixo do texto de abertura.
+- Workflow Análises: instala torch CPU, transformers e openpyxl, roda `analise_comentarios.py --tom` e `resumo_jama.py`, grava `data/comentarios` e `data/jama`; limite de tempo de 120 minutos.
+- Testes novos:
+  - todo JSON público precisa ser válido, sem NaN;
+  - corpus de comentários anonimizado, com códigos e sem campos extras;
+  - redes de menção só com códigos;
+  - agregado JAMA sem link nem perfil;
+  - `tests/test_jama.py`.
+
+**Por quê**
+
+- Pedido do pesquisador em 24/11/2026, 11h12: página de comentários no formato do Atlas, separada por rede, com as contagens no fim, e as medidas de rede que faltavam na página de análise de texto.
+- Pedido do pesquisador em 24/11/2026, 11h27 e 11h33: painel da metodologia JAMA. Na escolha das 11h35 ele decidiu ficar só com a codificação manual e os agregados mais a planilha do outro pesquisador, sem IA até ela chegar com a validação dele.
+- Pedido do pesquisador em 24/11/2026, 11h37: tirar o período do título do Panorama.
+- O `estatisticas.json` tinha um NaN (assortatividade indefinida) e o navegador não lia o arquivo, o que deixava as medidas sem aparecer.
+
+**O que foi executado de verdade**
+
+- Local, com um clone novo do repositório privado:
+  - `analise_comentarios.py` deu YouTube 21.326 comentários em português (2.473 em inglês e 1.045 em espanhol fora), TikTok 443, Instagram 284 e X 990;
+  - `estatisticas_redes.py` deu 11 redes e 0 erros;
+  - `resumo_jama.py` deu 115 vídeos (117 linhas), média 1,52 e 2 na coleta do projeto.
+- Página conferida no navegador (playwright) nos cadernos de YouTube, TikTok, Instagram e Kwai, no leitor, na página de redes e no caderno JAMA, sem erro de console.
+- As saídas locais foram descartadas. O `estatisticas.json` publicado foi refeito por `resumo_redes.py` a partir dos CSVs já publicados.
+- `python scripts/build_estado.py` e `python -m unittest discover -s tests`: 139 testes OK.
+
+**O que ficou pendente**
+
+- Disparar Análises para gravar os cadernos, o tom e as medidas com os dados do privado.
+- Disparar Transcrição com a rede "semente".
+- Planilha por vídeo do outro pesquisador, com o rótulo de cada modelo e a validação dele.
+- As sete categorias de tipo de conteúdo na codificação manual.
+- Kappa entre codificadores.
+- Revisão do agrupamento dos tipos de perfil em `data/config/jama.json`.
+
+**Onde está a evidência**
+
+- Este commit e os runs de Análises e Transcrição disparados em seguida.
+
 ## 24/11/2026 · Análises de texto e redes (run 45410063227)
 
 **O que mudou**

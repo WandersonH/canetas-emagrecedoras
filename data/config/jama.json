@@ -1,0 +1,37 @@
+{
+  "nota": "Critérios de qualidade da informação em saúde (Silberg et al., 1997, JAMA), na forma aplicada a vídeos por Zhang et al. (2020): um ponto por critério presente, de 0 a 4.",
+  "semente": "semente/Analise_JAMA_consolidada_117_videos.xlsx",
+  "aba": "Análise JAMA",
+  "criterios": [
+    {"id": "autoria", "rotulo": "Autoria", "coluna": "Autoria (0/1)"},
+    {"id": "atribuicao", "rotulo": "Atribuição", "coluna": "Atribuição (0/1)"},
+    {"id": "divulgacao", "rotulo": "Divulgação de interesses", "coluna": "Disclosure (0/1)"},
+    {"id": "atualidade", "rotulo": "Atualidade", "coluna": "Atualidade (0/1)"}
+  ],
+  "coluna_pontuacao": "JAMA Score (0–4)",
+  "unidade": "endereço distinto do vídeo; linha repetida com o mesmo endereço conta uma vez",
+  "tipo_de_perfil": {
+    "nota": "Rótulos da planilha agrupados nos códigos de tipo de perfil do livro de códigos. Decisão de agrupamento registrada aqui para revisão do pesquisador.",
+    "grupos": {
+      "influenciador": ["Influenciador", "Influenciador/relato pessoal", "Influenciador/creator", "Perfil de curiosidades/fofoca"],
+      "médico": ["Médico", "Médica"],
+      "nutricionista": ["Nutricionista"],
+      "outro profissional": ["Farmacêutica", "Personal", "Atleta /Professor"],
+      "veículo jornalístico": ["Veículo jornalístico"],
+      "revendedor": ["Perfil comercial/farmácia", "Revendedora de canetas do Paraguai"],
+      "político": ["Político"]
+    }
+  },
+  "tipo_de_caneta": {
+    "grupos": {
+      "tirzepatida": ["Mounjaro/Tirzepatida", "Mounjaro"],
+      "semaglutida": ["Ozempic/Semaglutida", "Ozempic", "Wegovy"],
+      "outra ou não especificada": ["Outros"]
+    }
+  },
+  "ia": {
+    "situacao": "⛔ aguardando a planilha por vídeo do pesquisador que avalia os modelos, com o rótulo de cada modelo e a validação dele",
+    "decisao": "24/11/2026, pelo pesquisador, por chat: a comparação com modelos de linguagem entra quando chegar a planilha do outro pesquisador; até lá a página mostra só a codificação manual, sem classificação por IA.",
+    "comparacao_prevista": "concordância de cada modelo com a codificação manual por critério JAMA e pelas sete categorias de tipo de conteúdo (kappa de Cohen e porcentagem de acordo)"
+  }
+}

@@ -16,7 +16,7 @@ concurrency:
 jobs:
   analises:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     env:
       RUN: ${{ github.run_id }}
     steps:
@@ -25,7 +25,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Dependências
-        run: pip install -q numpy scipy networkx emoji
+        run: |
+          pip install -q numpy scipy networkx emoji openpyxl
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q transformers
       - name: Testes
         run: python -m unittest discover -s tests
       - name: Repositório privado
@@ -35,6 +38,8 @@ jobs:
       - name: Corpus, CHD, similitude, redes e emojis
         run: |
           python scripts/build_corpus.py --privado "$RUNNER_TEMP/privado" | tee resumo.txt
+          python -u scripts/analise_comentarios.py --privado "$RUNNER_TEMP/privado" --tom | tee -a resumo.txt
+          python scripts/resumo_jama.py --privado "$RUNNER_TEMP/privado" | tee -a resumo.txt
           python scripts/estatisticas_redes.py | tee -a resumo.txt
           python scripts/resumo_redes.py | tee -a resumo.txt
           python scripts/venda_irregular.py --privado "$RUNNER_TEMP/privado" --run-id "$RUN" | tee -a resumo.txt
@@ -45,15 +50,17 @@ jobs:
           linha=$(grep '^gravado data/corpus' resumo.txt || echo "ver o log")
           redes=$(grep 'redes,' resumo.txt | tail -1 || true)
           venda=$(grep 'venda irregular,' resumo.txt | tail -1 || true)
+          coment=$(grep '^comentarios ' resumo.txt | tr '\n' ' ' || true)
+          jama=$(grep '^jama:' resumo.txt | tail -1 || true)
           python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
             --titulo "Análises de texto e redes (run $RUN)" \
-            --mudou "data/corpus (corpus para o IRaMuTeQ, segmentos, CHD, similitude), data/redes (GEXF, desenhos, estatísticas) data/emojis.json e data/venda (triagem de venda irregular, só contagens)." \
+            --mudou "data/corpus (corpus para o IRaMuTeQ, segmentos, CHD, similitude), data/redes (GEXF, desenhos, estatísticas) data/emojis.json, data/venda (triagem de venda irregular, só contagens), data/comentarios (cadernos por rede, corpus anonimizado) e data/jama (agregados da codificação manual JAMA)." \
             --porque "Análises de IRaMuTeQ e Gephi com corpus interativo, pedido do pesquisador em 23/11/2026 18h23, normalizadas pelo dicionário do IRaMuTeQ." \
-            --executado "Workflow 'Análises', run $RUN: $linha. $redes. $venda" \
+            --executado "Workflow 'Análises', run $RUN: $linha. $redes. $venda. $coment. $jama" \
             --pendente "Nomes das classes da CHD (dados pelo pesquisador) e conferência no IRaMuTeQ com o corpus exportado." \
             --evidencia "https://github.com/$REPO/actions/runs/$RUN e data/corpus/chd.json."
           python scripts/changelog_auto.py --arquivo "$RUNNER_TEMP/privado/CHANGELOG.md" \
-            --titulo "Códigos de autor e corpus original (run $RUN)" --mudou "codigos/autores.json, terceiros/corpus_iramuteq_original.txt e terceiros/venda_irregular/ (candidatos para revisão, com texto e autor)." \
+            --titulo "Códigos de autor e corpus original (run $RUN)" --mudou "codigos/autores.json, terceiros/corpus_iramuteq_original.txt, terceiros/venda_irregular/ (candidatos para revisão, com texto e autor) e terceiros/comentarios/sentimento.csv (cache do tom por comentário)." \
             --porque "A tabela autor → código e o texto sem anonimização ficam só aqui." --executado "Run $RUN do repositório público." \
             --pendente "Nenhuma." --evidencia "https://github.com/$REPO/actions/runs/$RUN."
       - name: Gravar no privado
@@ -63,4 +70,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           "$GITHUB_WORKSPACE/scripts/gravar_no_privado.sh" "Códigos de autor e corpus original (run $RUN)"
       - name: Gravar no público
-        run: scripts/gravar_no_main.sh "Análises de texto e redes (run $RUN)" "$RUNNER_TEMP/entrada.md" data/corpus data/redes data/emojis.json data/venda data/manifestos
+        run: scripts/gravar_no_main.sh "Análises de texto e redes (run $RUN)" "$RUNNER_TEMP/entrada.md" data/corpus data/redes data/emojis.json data/venda data/comentarios data/jama data/manifestos

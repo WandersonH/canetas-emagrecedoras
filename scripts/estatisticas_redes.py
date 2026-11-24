@@ -95,8 +95,8 @@ def estatisticas(arq: str) -> tuple[dict, list[dict]]:
                 "pct_maior": round(pct[0], 2), "pct_segunda": round(pct[1], 2) if len(pct) > 1 else None,
                 "pct_terceira": round(pct[2], 2) if len(pct) > 2 else None,
                 "pct_nos_em_comunidades_1pct": round(sum(p for p in pct if p >= 1), 2)})
-    # 07/11/2026: a mesma leitura só no componente gigante. Em redes fragmentadas (ex.: respostas do 026, 472 componentes),
-    # o Q da rede inteira é puxado por pares soltos e o E-I das duas maiores dá −1 só porque estão em componentes diferentes.
+    # A mesma leitura só no componente gigante: em rede fragmentada, o Q da rede inteira é puxado por pares soltos
+    # e o E-I das duas maiores dá −1 só porque elas estão em componentes diferentes.
     if len(comps[0]) > 2:
         hg = u.subgraph(comps[0]).copy()
         cg = sorted(nx.community.louvain_communities(hg, weight="weight", resolution=1.0, seed=SEMENTE), key=len, reverse=True)
@@ -170,7 +170,7 @@ def main(argv=None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     so = argv[argv.index("--rede") + 1] if "--rede" in argv else "*"
     maxn = int(argv[argv.index("--max-nos") + 1]) if "--max-nos" in argv else 200000
-    arqs = sorted(glob.glob(f"data/redes/{so}.gexf"))
+    arqs = sorted(glob.glob(f"data/redes/{so}.gexf")) + (["data/corpus/similitude.gexf"] if so == "*" and Path("data/corpus/similitude.gexf").exists() else [])
     linhas, coms, erros, cents = [], [], [], []
     for a in arqs:
         try:

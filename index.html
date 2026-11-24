@@ -26,6 +26,10 @@
 .ce-leg{display:flex;flex-wrap:wrap;gap:12px;font-size:11.5px;color:#33465a;margin-top:6px}.ce-leg i{display:inline-block;width:12px;height:3px;vertical-align:middle;margin-right:5px}
 .ce-barra{cursor:pointer}.ce-barra:hover{opacity:.75}.ce-barra.on{fill:#9c2b20}
 .ce-noticias{list-style:none;margin:8px 0 0;padding:0;max-height:520px;overflow:auto}.ce-noticias li{border-top:1px solid #edf1f5;padding:8px 0;font-size:12.5px;line-height:1.45}.ce-noticias small{display:block;color:#6b7a8c;font-size:11px}
+.ce-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}.ce-chips button{border:1px solid #c9d2dc;background:#fff;padding:7px 16px;font:700 12.5px system-ui,sans-serif;cursor:pointer;color:#172238}.ce-chips button[aria-pressed="true"]{background:#172238;border-color:#172238;color:#fff}
+.ce-nuvem{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:center;padding:14px 8px;background:#fbfdff;border:1px solid #edf1f5;line-height:1.15}.ce-nuvem span{cursor:pointer;font-weight:700}.ce-nuvem span:hover{text-decoration:underline}
+.ce-tom{display:flex;height:26px;margin:8px 0 6px;overflow:hidden}.ce-tom i{display:flex;align-items:center;justify-content:center;color:#fff;font:700 11px system-ui,sans-serif;font-style:normal;white-space:nowrap}
+.ce-med{margin-top:16px;border-top:1px solid #e6e1d6;padding-top:12px}.ce-med .datatable td,.ce-med .datatable th{padding:5px 9px;font-size:12px}.ce-med h3{font-size:15px;margin:2px 0 8px}.ce-med table{min-width:0}.ce-cent{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:10px}.ce-cent>div{border:1px solid #edf1f5;background:#fbfdff;padding:9px 11px}.ce-cent ol{font-size:12.5px;line-height:1.7;margin:6px 0 0;padding-left:18px}.ce-cent small{color:#7d8997}
 .ce-duas{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:17px}.ce-duas .card{margin-top:0}
 .ce-leitor{position:fixed;inset:0;background:rgba(23,34,56,.45);z-index:9999;display:flex;justify-content:center;align-items:flex-start;overflow:auto;padding:40px 12px}.ce-leitor[hidden]{display:none}
 .ce-leitor-caixa{background:#fffdf8;max-width:860px;width:100%;padding:22px 24px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.25)}
@@ -71,6 +75,7 @@
 <button class="navbutton" data-tab="termos"><span class="navicon">≡</span> Termos de busca</button>
 <button class="navbutton" data-tab="perfis"><span class="navicon">▶</span> Perfis monitorados</button>
 <button class="navbutton" data-tab="codigos"><span class="navicon">↗</span> Promessa e risco</button>
+<button class="navbutton" data-tab="jama"><span class="navicon">✓</span> Qualidade da informação (JAMA)</button>
 <button class="navbutton" data-tab="venda"><span class="navicon">⚠</span> Venda irregular</button>
 <button class="navbutton" data-tab="comentarios"><span class="navicon">❝</span> Comentários</button>
 <button class="navbutton" data-tab="trends"><span class="navicon">❏</span> Trends, imprensa e checagens</button>
@@ -84,8 +89,9 @@
 <section class="panel active" id="panorama" aria-label="Panorama">
   <div class="paper-ribbon"><span id="rib-panorama"></span><span>UNIVERSO E AMOSTRA</span></div>
   <div class="intro"><div class="eyebrow">YouTube · TikTok · Instagram · X · Kwai · imprensa · Google Trends · checagens · dados públicos</div>
-    <h1>Como as canetas emagrecedoras aparecem nas redes, na imprensa e nas buscas no Brasil.<br><em id="pan-janela"></em></h1>
-    <p>Para cada frente de coleta, quanto a plataforma informa que existe, quanto foi lido e até onde a leitura chegou.</p></div>
+    <h1>Como as canetas emagrecedoras aparecem nas redes, na imprensa e nas buscas no Brasil.</h1>
+    <p>Para cada frente de coleta, quanto a plataforma informa que existe, quanto foi lido e até onde a leitura chegou.</p>
+    <p class="ce-nota" id="pan-janela" style="margin-top:6px"></p></div>
   <div class="kpigrid" id="pan-kpis"></div>
   <div class="card" style="margin-top:17px"><div class="eyebrow">Linha do tempo · desde a primeira aprovação no mundo</div><h2 class="tk-h2">Marcos regulatórios e de mercado</h2><div id="pan-tempo"><div class="ce-vazio"><b>⛔ Sem marcos.</b></div></div></div>
   <div class="card"><div class="eyebrow">Volume no tempo · com os marcos</div><h2 class="tk-h2">Quanto se publicou e se leu, mês a mês</h2><div id="pan-volume"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
@@ -123,6 +129,20 @@
   <div id="cod-eixos"></div>
 </section>
 
+<section class="panel" id="jama" aria-label="Qualidade da informação">
+  <div class="paper-ribbon"><span id="rib-jama"></span><span>QUALIDADE DA INFORMAÇÃO · CRITÉRIOS JAMA</span></div>
+  <div class="intro"><div class="eyebrow">Silberg et al. · aplicação a vídeos de Zhang et al. · codificação manual</div><h1>A informação cumpre os critérios de qualidade?</h1><p>Autoria, atribuição, divulgação de interesses e atualidade: um ponto por critério presente. Codificação manual dos vídeos do TikTok da planilha-semente, feita pelo grupo de pesquisadores. Só agregados: perfil, link, legenda e justificativa ficam no repositório privado.</p></div>
+  <div class="kpigrid" id="jm-kpis"></div>
+  <div class="ce-duas" style="margin-top:17px"><div class="card"><div class="eyebrow">Por critério</div><h2 class="tk-h2">% dos vídeos com cada critério</h2><div id="jm-criterios"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
+  <div class="card"><div class="eyebrow">Pontuação JAMA</div><h2 class="tk-h2">Distribuição da pontuação</h2><div id="jm-pontos"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div></div>
+  <div class="card" style="margin-top:17px"><div class="eyebrow">Por tipo de perfil</div><h2 class="tk-h2">Quem publica e quanto pontua</h2><div id="jm-perfil"></div></div>
+  <div class="card"><div class="eyebrow">Por substância</div><h2 class="tk-h2">Tirzepatida, semaglutida e outras</h2><div id="jm-caneta"></div></div>
+  <div class="card"><div class="eyebrow">Codificação manual × modelos de linguagem</div><h2 class="tk-h2">Comparação com a classificação por IA</h2><div id="jm-ia"></div></div>
+  <div class="card"><div class="eyebrow">Fala completa dos vídeos · Whisper</div><h2 class="tk-h2">Transcrição dos vídeos da planilha</h2><div id="jm-fala"></div></div>
+  <div class="card"><div class="eyebrow">Situação</div><h2 class="tk-h2">O que ainda precisa ser resolvido</h2><div id="jm-situacao"></div></div>
+  <div class="card"><div class="eyebrow">Protocolo</div><h2 class="tk-h2">O que conta como presente</h2><div id="jm-protocolo"></div></div>
+</section>
+
 <section class="panel" id="venda" aria-label="Venda irregular">
   <div class="paper-ribbon"><span id="rib-venda"></span><span>VENDA IRREGULAR</span></div>
   <div class="intro"><div class="eyebrow">Oferta sem receita · produto sem registro · manipulado · golpe</div><h1>Venda irregular nas redes</h1><p>Registrada e contada. Link de venda, endereço de loja e perfil de vendedor ficam fora desta página.</p></div>
@@ -134,11 +154,10 @@
 </section>
 
 <section class="panel" id="comentarios" aria-label="Comentários">
-  <div class="paper-ribbon"><span id="rib-comentarios"></span><span>COMENTÁRIOS</span></div>
-  <div class="intro"><div class="eyebrow">Público</div><h1>O que o público diz</h1><p>Comentários das publicações coletadas, sem identificar quem escreveu.</p></div>
-  <div class="card"><div class="eyebrow">Privacidade</div><h2 class="tk-h2">Como os comentários aparecem aqui</h2><div id="com-regra"></div></div>
-  <div class="card"><div class="eyebrow">Comentários · amostra das publicações com mais conversa</div><h2 class="tk-h2">Comentários coletados por rede</h2><p class="ce-nota" id="com-nota"></p><div id="com-resumo"><div class="ce-vazio"><b>⛔ Sem dado.</b> Nenhum comentário foi coletado.</div></div></div>
-  <div class="card"><div class="eyebrow">Fala dos vídeos · Whisper</div><h2 class="tk-h2">Vídeos transcritos</h2><p class="ce-nota" id="tra-nota"></p><div id="tra-resumo"><div class="ce-vazio"><b>⛔ Sem dado.</b> Nenhum vídeo foi transcrito.</div></div></div>
+  <div class="paper-ribbon"><span id="rib-comentarios"></span><span>COMENTÁRIOS · SÓ AGREGADOS E TEXTO ANONIMIZADO</span></div>
+  <div class="intro"><div class="eyebrow">Público · um caderno por rede</div><h1>O que a audiência responde.</h1><p>Comentários das publicações coletadas com mais conversa, uma rede por vez: tom, palavras, marcas do livro de códigos, aderência ao tema, série no tempo com os marcos, classes de discurso (CHD), rede de palavras, rede de quem marca quem e o corpus anonimizado. As contagens da coleta ficam no fim de cada caderno.</p></div>
+  <div class="ce-chips" id="com-abas" role="group" aria-label="Rede"></div>
+  <div id="com-caderno"><div class="ce-vazio"><b>⛔ Sem dado.</b> Nenhum comentário foi coletado.</div></div>
 </section>
 
 <section class="panel" id="trends" aria-label="Trends, imprensa e checagens">
@@ -158,11 +177,11 @@
   <div class="intro"><div class="eyebrow">IRaMuTeQ · Gephi · emojis</div><h1>Quem fala com quem e o que se diz</h1><p>Classes de texto (CHD de Reinert), similitude, redes para o Gephi e mapa de emojis. Cada forma, nó, classe e emoji abre os segmentos do corpus que os originaram.</p></div>
   <div class="card"><div class="eyebrow">Corpus</div><h2 class="tk-h2">O que entrou na análise</h2><div id="cp-resumo"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div><div class="ce-downloads" id="cp-downloads"></div></div>
   <div class="card"><div class="eyebrow">IRaMuTeQ · CHD de Reinert</div><h2 class="tk-h2">Classes de texto</h2><p class="ce-nota" id="chd-nota"></p><div class="ce-classes" id="chd-classes"></div></div>
-  <div class="card"><div class="eyebrow">IRaMuTeQ · análise de similitude</div><h2 class="tk-h2">Árvore de similitude</h2><p class="ce-nota" id="sim-nota"></p><div id="sim-grafo"></div></div>
-  <div class="card"><div class="eyebrow">Gephi · rede de palavras</div><h2 class="tk-h2">Palavras que aparecem juntas</h2><p class="ce-nota" id="rp-nota"></p><div id="rp-grafo"></div></div>
-  <div class="card"><div class="eyebrow">Gephi · rede de fontes e termos</div><h2 class="tk-h2">Quem publicou sobre cada termo</h2><p class="ce-nota" id="rf-nota"></p><div id="rf-grafo"></div></div>
-  <div class="card"><div class="eyebrow">Gephi · rede de hashtags</div><h2 class="tk-h2">Hashtags que andam juntas</h2><p class="ce-nota" id="rh-nota"></p><div id="rh-grafo"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
-  <div class="card"><div class="eyebrow">Gephi · estatísticas</div><h2 class="tk-h2">Medidas das redes</h2><p class="ce-nota" id="re-nota"></p><div class="tablewrap"><table class="datatable" id="re-tabela"></table></div></div>
+  <div class="card"><div class="eyebrow">IRaMuTeQ · análise de similitude</div><h2 class="tk-h2">Árvore de similitude</h2><p class="ce-nota" id="sim-nota"></p><div id="sim-grafo"></div><div id="sim-med"></div></div>
+  <div class="card"><div class="eyebrow">Gephi · rede de palavras</div><h2 class="tk-h2">Palavras que aparecem juntas</h2><p class="ce-nota" id="rp-nota"></p><div id="rp-grafo"></div><div id="rp-med"></div></div>
+  <div class="card"><div class="eyebrow">Gephi · rede de fontes e termos</div><h2 class="tk-h2">Quem publicou sobre cada termo</h2><p class="ce-nota" id="rf-nota"></p><div id="rf-grafo"></div><div id="rf-med"></div></div>
+  <div class="card"><div class="eyebrow">Gephi · rede de hashtags</div><h2 class="tk-h2">Hashtags que andam juntas</h2><p class="ce-nota" id="rh-nota"></p><div id="rh-grafo"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div><div id="rh-med"></div></div>
+  <div class="card"><div class="eyebrow">Gephi · estatísticas</div><h2 class="tk-h2">Medidas das redes, lado a lado</h2><p class="ce-nota" id="re-nota"></p><div class="tablewrap"><table class="datatable" id="re-tabela"></table></div></div>
   <div class="card"><div class="eyebrow">Emojis</div><h2 class="tk-h2">Mapa de emojis</h2><p class="ce-nota" id="em-nota"></p><div class="ce-emojis" id="em-grade"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
 </section>
 
@@ -280,11 +299,6 @@
     por("cod-eixos",(l.eixos||[]).map(function(e){
       return '<div class="card"><div class="eyebrow">'+esc(e.origem)+'</div><h2 class="tk-h2">'+esc(e.titulo)+"</h2><p>"+esc(e.pergunta)+'</p><div class="tablewrap"><table class="datatable"><thead><tr><th>Código</th><th>Definição</th><th class="ce-num">Publicações</th></tr></thead><tbody>'+(e.codigos||[]).map(function(c){return "<tr><td><b>"+esc(c.codigo)+"</b></td><td>"+esc(c.definicao)+'</td><td class="ce-num">'+AUS+"</td></tr>";}).join("")+'</tbody></table></div><p class="ce-nota">Regras de aplicação: '+val(e.operacao)+"</p>"+(e.popularidade?'<p class="ce-nota">Popularidade: '+esc(e.popularidade.medida)+". "+esc(e.popularidade.nota)+"</p>":"")+"</div>";
     }).join(""));
-  }
-
-  function comentarios(c){
-    var r=c.comentarios_no_publico||{};
-    por("com-regra","<p>Modo de exibição: <b>"+val(r.modo)+'</b>.</p><ul class="ce-lista">'+(r.mascaras||[]).map(function(m){return "<li>"+esc(m)+"</li>";}).join("")+"</ul>"+(vazio(r.limite_conhecido)?"":'<p class="ce-nota"><b>Limite conhecido.</b> '+esc(r.limite_conhecido)+"</p>"));
   }
 
   function dados(d){
@@ -472,19 +486,6 @@
     por("ag-lista",xs.length?'<div class="tablewrap" style="max-height:420px;overflow:auto"><table class="datatable"><thead><tr><th>Data</th><th>Agência</th><th>Título</th></tr></thead><tbody>'+xs.map(function(x){return "<tr><td>"+val(dataBR(x.data))+"</td><td>"+val(x.agencia)+"</td><td>"+link(x.link,x.titulo||x.link)+"</td></tr>";}).join("")+"</tbody></table></div>":'<div class="ce-vazio"><b>⛔ Nenhuma checagem no período.</b></div>');
   }
 
-  function comResumo(r){
-    if(!r||!r.redes){return;}
-    var ks=Object.keys(r.redes);if(!ks.length){return;}
-    por("com-nota",esc(r.nota||"")+" Universo: os comentários que a rede informa nas publicações escolhidas.");
-    por("com-resumo",'<div class="tablewrap"><table class="datatable"><thead><tr><th>Rede</th><th class="ce-num">Publicações escolhidas</th><th class="ce-num">Comentários informados (universo)</th><th class="ce-num">Comentários lidos</th><th class="ce-num">Autores distintos</th><th>Coleta</th><th>Corpus</th></tr></thead><tbody>'+ks.map(function(k){var x=r.redes[k];return "<tr><td><b>"+esc(FONTE_NOME[k]||k)+'</b></td><td class="ce-num">'+num(x.publicacoes_escolhidas)+'</td><td class="ce-num">'+num(x.comentarios_informados_nas_escolhidas)+'</td><td class="ce-num">'+num(x.comentarios_lidos)+'</td><td class="ce-num">'+num(x.autores_distintos)+"</td><td>"+val(dataBR(x.obtido_em))+"</td><td>"+botao("abrir","fonte",k==="x"?"comentario_x":"comentario_"+k)+"</td></tr>";}).join("")+"</tbody></table></div>");
-  }
-
-  function traResumo(r){
-    if(!r||!r.redes){return;}
-    var ks=Object.keys(r.redes);if(!ks.length){return;}
-    por("tra-nota",esc(r.nota||"")+" Universo: vídeos da rede já coletados no período. Amostra: os mais vistos.");
-    por("tra-resumo",'<div class="tablewrap"><table class="datatable"><thead><tr><th>Rede</th><th class="ce-num">Vídeos no período (universo)</th><th class="ce-num">Tentados nesta execução</th><th class="ce-num">Transcritos (total)</th><th class="ce-num">Palavras (total)</th><th>Falhas por motivo</th><th>Corpus</th></tr></thead><tbody>'+ks.map(function(k){var x=r.redes[k],f=x.falhas_por_motivo||{};return "<tr><td><b>"+esc(FONTE_NOME[k]||k)+'</b></td><td class="ce-num">'+num(x.videos_no_periodo)+'</td><td class="ce-num">'+num(x.tentados)+'</td><td class="ce-num">'+num(vazio(x.transcritos_no_total)?x.transcritos:x.transcritos_no_total)+'</td><td class="ce-num">'+num(vazio(x.palavras_no_total)?x.palavras:x.palavras_no_total)+"</td><td>"+(Object.keys(f).map(function(m){return esc(m)+": "+num(f[m]);}).join("<br>")||"nenhuma")+"</td><td>"+botao("abrir","fonte","transcricao_"+k)+"</td></tr>";}).join("")+"</tbody></table></div>");
-  }
   var SEG=null,SEG_P=null,FONTE_NOME={youtube:"YouTube",tiktok:"TikTok",instagram:"Instagram",x:"X",kwai:"Kwai",comentario_youtube:"Comentários do YouTube",comentario_tiktok:"Comentários do TikTok",comentario_instagram:"Comentários do Instagram",comentario_x:"Respostas no X",transcricao_tiktok:"Fala dos vídeos do TikTok",transcricao_kwai:"Fala dos vídeos do Kwai",transcricao_youtube:"Fala dos vídeos do YouTube",imprensa:"Imprensa",checagens:"Checagens"};
   function segmentos(){if(!SEG_P){SEG_P=fetch("./data/corpus/segmentos.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(x){SEG=x;return x;});}return SEG_P;}
   var LEITOR={itens:[],fonte:null,busca:"",limite:100};
@@ -492,8 +493,8 @@
     var xs=LEITOR.itens.filter(function(s){return (!LEITOR.fonte||s.f===LEITOR.fonte)&&(!LEITOR.busca||s.t.toLowerCase().indexOf(LEITOR.busca)>=0);});
     var fontes={};LEITOR.itens.forEach(function(s){fontes[s.f]=(fontes[s.f]||0)+1;});
     por("ce-leitor-filtros",'<input type="search" id="ce-busca" placeholder="buscar no texto" value="'+esc(LEITOR.busca)+'"> <button data-f="" class="'+(LEITOR.fonte?"":"on")+'">todas ('+num(LEITOR.itens.length)+")</button>"+Object.keys(fontes).map(function(f){return '<button data-f="'+f+'" class="'+(LEITOR.fonte===f?"on":"")+'">'+esc(FONTE_NOME[f]||f)+" ("+num(fontes[f])+")</button>";}).join(""));
-    por("ce-leitor-lista",'<p class="ce-nota">'+num(xs.length)+" segmentos"+(xs.length>LEITOR.limite?", mostrando "+num(LEITOR.limite):"")+".</p>"+xs.slice(0,LEITOR.limite).map(function(s){
-      return '<div class="ce-seg"><small>'+esc(FONTE_NOME[s.f]||s.f)+" · "+val(dataBR(s.d))+" · "+(s.u?link(s.u,s.a||"fonte"):val(s.a))+(s.k?" · termos: "+esc(s.k.split("|").join(", ")):"")+(s.c>0?" · classe "+s.c:"")+"</small><p>"+esc(s.t)+"</p></div>";
+    por("ce-leitor-lista",'<p class="ce-nota">'+num(xs.length)+" "+(LEITOR.unidade||"segmentos")+(xs.length>LEITOR.limite?", mostrando "+num(LEITOR.limite):"")+".</p>"+xs.slice(0,LEITOR.limite).map(function(s){
+      return '<div class="ce-seg"><small>'+esc(FONTE_NOME[s.f]||s.f)+" · "+val(dataBR(s.d))+" · "+(s.u?link(s.u,s.a||"fonte"):val(s.a))+(s.k?" · termos: "+esc(s.k.split("|").join(", ")):"")+(s.c>0?" · classe "+s.c:"")+(s.m&&s.m.length?" · marcas: "+esc(s.m.join(", ")):"")+(s.s?" · tom "+esc(s.s):"")+"</small><p>"+esc(s.t)+"</p></div>";
     }).join("")+(xs.length>LEITOR.limite?'<button class="ce-abre" id="ce-mais">mostrar mais</button>':""));
   }
   function abrirSegmentos(titulo,nota,filtro){
@@ -575,7 +576,7 @@
     if(!itens.length){return '<div class="ce-vazio"><b>⛔ Sem dado.</b></div>';}
     var max=Math.max.apply(null,itens.map(function(x){return typeof x.valor==="number"?x.valor:0;}).concat([1]));
     return (o.titulo?'<div class="vis-tit">'+esc(o.titulo)+"</div>":"")+'<div class="vis-barras">'+itens.map(function(x,i){var num_=typeof x.valor==="number",p=num_?Math.max(0.6,x.valor/max*100):0.6;
-      return '<div class="vis-linha"'+(x.abre?' data-abre="'+x.abre[0]+'" data-v="'+esc(x.abre[1])+'"':"")+'><span class="vis-rot" title="'+esc(x.rotulo)+'">'+esc(x.rotulo)+'</span><span class="vis-trilho"><i style="width:'+p.toFixed(1)+"%;background:"+(x.cor||o.cor||"#165ebd")+'"></i></span><span class="vis-val">'+(num_?x.valor.toLocaleString("pt-BR"):esc(x.valor))+"</span></div>";}).join("")+"</div>";
+      return '<div class="vis-linha"'+(x.abre?' data-abre="'+x.abre[0]+'" data-v="'+esc(x.abre[1])+'"':"")+'><span class="vis-rot" title="'+esc(x.rotulo)+'">'+esc(x.rotulo)+'</span><span class="vis-trilho"><i style="width:'+p.toFixed(1)+"%;background:"+(x.cor||o.cor||"#165ebd")+'"></i></span><span class="vis-val">'+(num_?x.valor.toLocaleString("pt-BR")+(o.sufixo||""):esc(x.valor))+"</span></div>";}).join("")+"</div>";
   }
   function deContagem(xs,cor){return (xs||[]).map(function(x){var r=String(x.valor);return {rotulo:(r==="None"||r==="null"||r==="")?"não informado no arquivo":r,valor:x.n,cor:cor};});}
 
@@ -684,6 +685,7 @@
   }
 
   function analises(chd,des,est,emo){
+    EST=est;
     if(chd){CHD=chd;
       var am=chd.amostra||{},pf=am.por_fonte||{};
       por("cp-resumo",'<p class="ce-nota">Período '+esc(chd.periodo.inicio)+" a "+esc(chd.periodo.fim)+". Textos lidos: <b>"+num(chd.textos_lidos)+"</b>; fora por idioma (inglês ou espanhol): <b>"+num(chd.fora_por_idioma.total)+"</b>; no corpus: <b>"+num(chd.textos)+"</b>. Segmentos: universo "+num(am.universo_segmentos)+", analisados "+num(am.analisados)+" ("+esc(am.como)+'). Dicionário: '+esc(chd.lematizacao.dicionario)+" ("+num(chd.lematizacao.formas_no_dicionario)+' formas).</p><div class="tablewrap"><table class="datatable" style="min-width:0"><thead><tr><th>Fonte</th><th class="ce-num">Textos no corpus</th><th class="ce-num">Segmentos</th><th class="ce-num">Na análise</th></tr></thead><tbody>'+Object.keys(chd.textos_por_fonte).map(function(f){var x=pf[f]||{};return "<tr><td>"+esc(FONTE_NOME[f]||f)+'</td><td class="ce-num">'+num(chd.textos_por_fonte[f])+'</td><td class="ce-num">'+num(x.universo)+'</td><td class="ce-num">'+botao(num(x.analisados),"fonte",f)+"</td></tr>";}).join("")+"</tbody></table></div>");
@@ -694,15 +696,15 @@
         return '<div class="card"><div class="eyebrow">Classe '+c.classe+" · nome: "+val(c.nome)+'</div><h2 class="tk-h2" style="font-size:16px">'+botao(num(c.segmentos)+" segmentos · "+esc(c.pct)+"%","classe",String(c.classe))+'</h2><div class="ce-pct"><i style="width:'+c.pct+"%;background:"+cor+'"></i></div><div>'+c.formas.slice(0,18).map(function(f){return '<span class="ce-forma" data-abre="forma" data-v="'+c.classe+"|"+esc(f[0])+'">'+esc(f[0])+"<small>χ² "+esc(f[1])+"</small></span>";}).join("")+'</div><p class="ce-nota">Fontes associadas: '+(vars.join(", ")||"nenhuma com χ² ≥ 3,84")+"</p></div>";}).join(""));
       var sim=chd.similitude||{};
       por("sim-nota",sim.erro?"⛔ "+esc(sim.erro):esc(sim.indice||"")+" · "+num(sim.formas)+" formas mais frequentes, frequência mínima "+num(sim.frequencia_minima_das_formas)+". Cor = comunidade. Clique numa forma para ler os segmentos.");
-      if(sim.nos){redeViva("sim-grafo",{nos:sim.nos.map(function(n){return {id:n.id,rotulo:n.id,tipo:"forma",n:n.freq,grupo:n.grupo,x:n.x,y:n.y,seg:(sim.segmentos_por_forma||{})[n.id]||[]};}),arestas:sim.arestas},{chave:"sim",gexf:"./data/corpus/similitude.gexf",rotulos:60});}
+      if(sim.nos){por("sim-med",medidas("similitude"));redeViva("sim-grafo",{nos:sim.nos.map(function(n){return {id:n.id,rotulo:n.id,tipo:"forma",n:n.freq,grupo:n.grupo,x:n.x,y:n.y,seg:(sim.segmentos_por_forma||{})[n.id]||[]};}),arestas:sim.arestas},{chave:"sim",gexf:"./data/corpus/similitude.gexf",rotulos:60});}
     }
     if(des){DES=des;
       por("rp-nota",des.palavras?"Mostrando "+num(des.palavras.nos.length)+" de "+num(des.palavras.total_nos)+" palavras (as mais frequentes), "+num(des.palavras.comunidades)+" comunidades. Formas lematizadas pelo dicionário do IRaMuTeQ. O arquivo completo abre no Gephi.":"");
-      redeViva("rp-grafo",des.palavras,{chave:"no",grafo:"palavras",gexf:"./data/redes/palavras.gexf",rotulos:45});
+      por("rp-med",medidas("palavras"));redeViva("rp-grafo",des.palavras,{chave:"no",grafo:"palavras",gexf:"./data/redes/palavras.gexf",rotulos:45});
       por("rf-nota",des.fontes_termos?"Mostrando "+num(des.fontes_termos.nos.length)+" de "+num(des.fontes_termos.total_nos)+" nós. "+esc(des.nota):"");
-      redeViva("rf-grafo",des.fontes_termos,{chave:"no",grafo:"fontes_termos",gexf:"./data/redes/fontes_termos.gexf",cor:"tipo",rotulos:40});
+      por("rf-med",medidas("fontes_termos"));redeViva("rf-grafo",des.fontes_termos,{chave:"no",grafo:"fontes_termos",gexf:"./data/redes/fontes_termos.gexf",cor:"tipo",rotulos:40});
       por("rh-nota",des.hashtags?"Mostrando "+num(des.hashtags.nos.length)+" de "+num(des.hashtags.total_nos)+" hashtags usadas em 5 textos ou mais, por 3 autores ou mais. Aresta: as duas hashtags no mesmo texto. "+num(des.hashtags.comunidades)+" comunidades.":"");
-      redeViva("rh-grafo",des.hashtags,{chave:"no",grafo:"hashtags",gexf:"./data/redes/hashtags.gexf",rotulos:40});
+      por("rh-med",medidas("hashtags"));redeViva("rh-grafo",des.hashtags,{chave:"no",grafo:"hashtags",gexf:"./data/redes/hashtags.gexf",rotulos:40});
     }
     if(est){
       por("re-nota",esc(est.nota));
@@ -714,12 +716,154 @@
     }
   }
 
+  /* Medidas da rede: indicadores do painel Statistics do Gephi, comunidades (Louvain) e as 5 maiores centralidades por medida. */
+  var EST=null;
+  var ROT_EST=[["nos","Nós"],["arestas","Arestas"],["densidade","Densidade"],["grau_medio","Grau médio"],["grau_ponderado_medio","Grau ponderado médio"],["componentes","Componentes"],["pct_nos_maior_componente","% de nós no maior componente"],["clustering_medio","Clustering médio"],["assortatividade_grau","Assortatividade de grau"],["reciprocidade","Reciprocidade"],["diametro_maior_componente","Diâmetro (maior componente)"],["caminho_medio_maior_componente","Caminho médio (maior componente)"],["modularidade_q","Modularidade Q (Louvain)"],["comunidades","Comunidades"],["comunidades_1pct_ou_mais","Comunidades com 1% dos nós ou mais"],["pct_maior","% de nós na maior"],["pct_segunda","% na segunda"],["pct_terceira","% na terceira"],["ei_duas_maiores","E-I das duas maiores (−1 bolhas · +1 cruzado)"],["gc_modularidade_q","Q no maior componente"],["gc_comunidades_1pct_ou_mais","Comunidades ≥1% no maior componente"],["gc_polarizacao_ei_2_maiores","E-I no maior componente"]];
+  function nBR(v){return typeof v==="number"?v.toLocaleString("pt-BR",{maximumFractionDigits:4}):val(v);}
+  function medidas(rede){
+    if(!EST||!EST.redes){return "";}
+    var e=EST.redes.filter(function(r){return r.rede===rede;})[0];
+    if(!e){return '<div class="ce-med"><div class="ce-vazio"><b>⛔ Medidas ainda não calculadas para esta rede.</b></div></div>';}
+    var coms=(EST.comunidades||[]).filter(function(c){return c.rede===rede;}).sort(function(a,b){return b.nos-a.nos;});
+    var cent=(EST.centralidades||[]).filter(function(c){return c.rede===rede;}),ms=[];
+    cent.forEach(function(c){if(ms.indexOf(c.medida)<0){ms.push(c.medida);}});
+    var ind='<table class="datatable"><tbody><tr><td>Rede dirigida</td><td class="ce-num">'+(e.dirigida?"sim":"não")+"</td></tr>"+ROT_EST.filter(function(k){return k[0] in e;}).map(function(k){var v=e[k[0]];
+      return "<tr><td>"+k[1]+'</td><td class="ce-num">'+(v===null&&k[0]==="reciprocidade"&&!e.dirigida?"não se aplica":nBR(v))+"</td></tr>";}).join("")+"</tbody></table>";
+    var com=coms.length?'<table class="datatable"><thead><tr><th>Comunidade</th><th class="ce-num">Nós</th><th class="ce-num">% dos nós</th><th class="ce-num">% do peso interno</th><th>Nós de maior grau</th></tr></thead><tbody>'+coms.slice(0,12).map(function(c){return "<tr><td>"+esc(c.comunidade)+'</td><td class="ce-num">'+num(c.nos)+'</td><td class="ce-num">'+nBR(c.pct_nos)+'%</td><td class="ce-num">'+(vazio(c.pct_peso_interno)?AUS:nBR(c.pct_peso_interno)+"%")+"</td><td>"+esc(c.nos_de_maior_grau||"")+"</td></tr>";}).join("")+"</tbody></table>"+(coms.length>12?'<p class="ce-nota">Mostrando as 12 maiores de '+num(coms.length)+" comunidades com 1% dos nós ou mais. Todas estão no arquivo de comunidades (.csv).</p>":""):'<div class="ce-vazio"><b>⛔ Sem comunidade com 1% dos nós ou mais.</b></div>';
+    var cs=ms.length?'<div class="ce-cent">'+ms.map(function(m){return '<div><div class="eyebrow">'+esc(m)+"</div><ol>"+cent.filter(function(c){return c.medida===m;}).sort(function(a,b){return a.posicao-b.posicao;}).map(function(c){return "<li>"+esc(c.no)+" <small>"+nBR(c.valor)+" · com. "+esc(c.comunidade)+"</small></li>";}).join("")+"</ol></div>";}).join("")+"</div>":"";
+    return '<div class="ce-med"><div class="eyebrow">Gephi · Statistics · '+esc(rede.replace(/_/g," "))+'</div><h3>Medidas da rede inteira (arquivo .gexf, não só o desenho)</h3><div class="ce-duas"><div><div class="tablewrap">'+ind+'</div></div><div><div class="vis-tit">Comunidades (Louvain, resolução 1,0, semente 42)</div><div class="tablewrap">'+com+"</div></div></div>"+(cs?'<div class="vis-tit" style="margin-top:12px">Centralidades: os 5 maiores por medida</div>'+cs:"")+'<p class="ce-nota">'+esc(EST.nota||"")+' <a href="./data/redes/estatisticas_redes.csv" download>estatísticas (.csv)</a> · <a href="./data/redes/comunidades_redes.csv" download>comunidades (.csv)</a> · <a href="./data/redes/centralidades_redes.csv" download>centralidades (.csv)</a></p></div>';
+  }
+
+  /* Cadernos de comentários: um por rede, como no Atlas. As contagens da coleta ficam no fim de cada caderno. */
+  var COM={resumo:null,tra:null,regra:{},coleta:{},transcricao:{},dados:{},corpus:{},atual:null};
+  var REDES_COM=[["youtube","YouTube"],["tiktok","TikTok"],["instagram","Instagram"],["x","X"],["kwai","Kwai"]];
+  var COR_TOM={positivo:"#2f8f4e",neutro:"#5b6b7c",negativo:"#9c2b20"};
+  function deRede(o,r){return ((o||{}).redes||{})[r];}
+  function cadernos(){
+    var tem=REDES_COM.filter(function(r){return deRede(COM.resumo,r[0])||deRede(COM.tra,r[0]);});
+    if(!tem.length){return;}
+    por("com-abas",tem.map(function(r,i){return '<button type="button" data-com="'+r[0]+'" aria-pressed="'+(i===0)+'">'+r[1]+"</button>";}).join(""));
+    caderno(tem[0][0]);
+  }
+  document.addEventListener("click",function(ev){var b=ev.target.closest&&ev.target.closest("[data-com]");if(!b){return;}
+    [].forEach.call(document.querySelectorAll("[data-com]"),function(x){x.setAttribute("aria-pressed",String(x===b));});caderno(b.getAttribute("data-com"));});
+  function caderno(rede){
+    COM.atual=rede;por("com-caderno",'<p class="ce-nota">Lendo os comentários do '+esc(FONTE_NOME[rede]||rede)+"…</p>");
+    var pr=COM.dados.hasOwnProperty(rede)?Promise.resolve(COM.dados[rede]):lerOpcional("comentarios/"+rede).then(function(d){COM.dados[rede]=d;return d;});
+    pr.then(function(C){if(COM.atual===rede){desenhaCaderno(rede,C);}});
+  }
+  function corpusCom(rede){if(!COM.corpus[rede]){COM.corpus[rede]=fetch("./data/comentarios/"+rede+"_corpus.json",{cache:"no-store"}).then(function(r){if(!r.ok){throw new Error(rede);}return r.json();});}return COM.corpus[rede];}
+  function abrirComentarios(titulo,nota,sel){
+    var rede=COM.atual,C=COM.dados[rede]||{},P=$("ce-leitor");P.hidden=false;
+    P.innerHTML='<div class="ce-leitor-caixa" role="dialog" aria-label="Comentários"><button class="ce-fecha" type="button">Fechar ✕</button><div class="eyebrow">Comentários do '+esc(FONTE_NOME[rede]||rede)+'</div><h2 class="tk-h2" style="margin:4px 0 6px">'+esc(titulo)+'</h2><p class="ce-nota">'+(nota||"")+' Texto de terceiros anonimizado: sem perfil, link, telefone e números; autor e publicação como código.</p><div class="ce-filtros" id="ce-leitor-filtros"></div><div id="ce-leitor-lista"><p class="ce-nota">Lendo o corpus…</p></div></div>';
+    corpusCom(rede).then(function(cs){var xs=Array.isArray(sel)?sel.map(function(i){return cs[i];}).filter(Boolean):(sel?cs.filter(sel):cs);
+      LEITOR={unidade:"comentários",itens:xs.map(function(c){return {f:"comentario_"+rede,d:c.d,a:c.a+" · publicação "+c.p+(c.k?" · "+c.k.toLocaleString("pt-BR")+" curtidas":""),t:c.t,m:(c.c||[]).map(function(i){return ((C.marcas||[])[i]||{}).rotulo;}).filter(Boolean),s:c.s};}),fonte:null,busca:"",limite:100};desenhaLeitor();})
+      .catch(function(){por("ce-leitor-lista",'<div class="ce-vazio"><b>⛔ Corpus de comentários não encontrado.</b></div>');});
+  }
+  ABRIR.cno=function(v,el){var g=(COM.dados[COM.atual]||{})[el.dataset.g]||{},n=(g.nos||[]).filter(function(x){return x.id===v;})[0];if(n){abrirComentarios("“"+(n.rotulo||v)+"”","Até 400 comentários com a forma lematizada.",n.seg||[]);}};
+  ABRIR.cforma=function(v){var n=(((COM.dados[COM.atual]||{}).rede_palavras||{}).nos||[]).filter(function(x){return x.id===v;})[0];if(n){abrirComentarios("“"+v+"”","Até 400 comentários com a forma lematizada.",n.seg||[]);}};
+  ABRIR.cmarca=function(v){var C=COM.dados[COM.atual],m=C.marcas[+v];abrirComentarios("Marca: "+m.rotulo,num(m.n)+" comentários ("+esc(m.pct)+"%). Pré-codificação por dicionário: candidato, não decisão.",function(c){return (c.c||[]).indexOf(+v)>=0;});};
+  ABRIR.ctom=function(v){abrirComentarios("Tom "+v,"Rótulo do modelo de sentimento.",function(c){return c.s===v;});};
+  ABRIR.ctodos=function(){abrirComentarios("Todos os comentários analisados","",null);};
+  ABRIR.ccl=function(v){var c=COM.dados[COM.atual].chd.classes.filter(function(x){return String(x.classe)===v;})[0];abrirComentarios("Classe "+v+" da CHD",num(c.segmentos)+" comentários ("+esc(c.pct)+"%) da amostra.",c.comentarios_da_classe||[]);};
+  ABRIR.cfo=function(v){var p=v.split("|"),c=COM.dados[COM.atual].chd.classes.filter(function(x){return String(x.classe)===p[0];})[0];abrirComentarios("“"+p[1]+"” na classe "+p[0],"Forma lematizada pelo dicionário do IRaMuTeQ.",(c.comentarios_por_forma||{})[p[1]]||[]);};
+  ABRIR.cdia=function(v){abrirComentarios("Comentários de "+dataBR(v),"",function(c){return c.d===v;});};
+
+  /* Série diária com os marcos numerados. */
+  function serieDiaria(pd){
+    var dias=Object.keys(pd||{}).sort();if(!dias.length){return '<div class="ce-vazio"><b>⛔ Sem data nos comentários.</b></div>';}
+    var t0=new Date(dias[0]+"T12:00:00Z").getTime(),t1=new Date(dias[dias.length-1]+"T12:00:00Z").getTime(),dia=864e5,L=920,A=240,m={e:46,d:12,t:24,b:26},w=L-m.e-m.d,h=A-m.t-m.b;
+    var max=Math.max.apply(null,dias.map(function(d){return pd[d];}).concat([1]));
+    function X(t){return m.e+(t1>t0?(t-t0)/(t1-t0)*w:w/2);} function Y(v){return m.t+h-(v/max)*h;}
+    var g='<svg class="ce-graf vis-serie" viewBox="0 0 '+L+" "+A+'" role="img" aria-label="comentários por dia">';
+    [0,.5,1].forEach(function(f){var v=max*f;g+='<line x1="'+m.e+'" x2="'+(L-m.d)+'" y1="'+Y(v).toFixed(1)+'" y2="'+Y(v).toFixed(1)+'" stroke="#edf1f5"/><text x="'+(m.e-6)+'" y="'+(Y(v)+3).toFixed(1)+'" text-anchor="end">'+abrev(Math.round(v))+"</text>";});
+    var y0=new Date(t0).getUTCFullYear(),y1=new Date(t1).getUTCFullYear();
+    for(var y=y0;y<=y1;y++){for(var mm=0;mm<12;mm+=3){var tm=Date.UTC(y,mm,1,12);if(tm<t0||tm>t1){continue;}g+='<line x1="'+X(tm).toFixed(1)+'" x2="'+X(tm).toFixed(1)+'" y1="'+m.t+'" y2="'+(m.t+h)+'" stroke="#dfe6ee"/><text x="'+(X(tm)+2).toFixed(1)+'" y="'+(A-8)+'">'+(mm===0?y:MES_NOME[mm]+"/"+String(y).slice(2))+"</text>";}}
+    var bw=Math.max(1,w/((t1-t0)/dia+1)-0.4);
+    dias.forEach(function(d){var t=new Date(d+"T12:00:00Z").getTime();g+='<rect class="ce-barra" data-abre="cdia" data-v="'+d+'" x="'+(X(t)-bw/2).toFixed(1)+'" y="'+Y(pd[d]).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(m.t+h-Y(pd[d])).toFixed(1)+'" fill="#165ebd"><title>'+dataBR(d)+": "+pd[d].toLocaleString("pt-BR")+" comentários</title></rect>";});
+    MARCOS.forEach(function(mc,idx){var t=new Date(isoBR(mc.data)+"T12:00:00Z").getTime();if(t<t0||t>t1){return;}var x=X(t),cor=TIPO_COR[mc.tipo]||"#5b6b7c";
+      g+='<g class="vis-marco" data-marco="'+idx+'"><line x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+(m.t-4)+'" y2="'+(m.t+h)+'" stroke="'+cor+'" stroke-dasharray="3 3"/><circle cx="'+x.toFixed(1)+'" cy="'+(m.t-12)+'" r="7.5" fill="'+cor+'"/><text x="'+x.toFixed(1)+'" y="'+(m.t-9)+'" text-anchor="middle" style="fill:#fff;font-weight:700;font-size:9px">'+(idx+1)+"</text><title>"+esc(mc.data+" · "+mc.descricao)+"</title></g>";});
+    return g+'</svg><div class="ce-leg"><span><i style="background:#165ebd;height:10px"></i>comentários por dia de publicação (clique numa barra para ler)</span>'+(MARCOS.length?'<span class="ce-nota" style="margin:0">● números = marcos da linha do tempo</span>':"")+"</div>";
+  }
+  function cartaoC(eyebrow,titulo,corpo,nota){return '<div class="card"><div class="eyebrow">'+eyebrow+'</div><h2 class="tk-h2">'+titulo+"</h2>"+corpo+(nota?'<p class="ce-nota">'+nota+"</p>":"")+"</div>";}
+  function kpisC(xs){return '<div class="kpigrid" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin:17px 0">'+xs.map(function(k){return '<div class="kpi"><div class="klabel">'+k[0]+'</div><div class="kval">'+k[1]+'</div><div class="knote">'+k[2]+"</div></div>";}).join("")+"</div>";}
+  function pctDe(a,b){return (typeof a==="number"&&typeof b==="number"&&b>0)?(100*a/b).toLocaleString("pt-BR",{maximumFractionDigits:1})+"%":null;}
+  function desenhaCaderno(rede,C){
+    var nome=FONTE_NOME[rede]||rede,R=deRede(COM.resumo,rede),T=deRede(COM.tra,rede),cfg=COM.coleta[rede]||{},h="";
+    var hero='<div class="card"><div class="eyebrow">Caderno · comentários do '+esc(nome)+'</div><h2 class="tk-h2">O que a audiência responde no '+esc(nome)+"</h2><p>";
+    if(R){hero+="Comentários das "+num(R.publicacoes_escolhidas)+" publicações do período com mais comentários informados (amostra intencional)"+(vazio(cfg.por_publicacao)?"":", até "+num(cfg.por_publicacao)+" por publicação")+". A rede informa "+num(R.comentarios_informados_nas_escolhidas)+" comentários nessas publicações (universo); foram lidos "+num(R.comentarios_lidos)+" ("+val(pctDe(R.comentarios_lidos,R.comentarios_informados_nas_escolhidas))+" do universo). A amostra não representa todos os comentários: privilegia as conversas maiores.";}
+    else{hero+="⛔ Nenhum comentário desta rede foi coletado. "+(T?"Esta rede tem só a fala dos vídeos transcrita, contada no fim do caderno.":"");}
+    h+=hero+"</p></div>";
+    if(R){h+=kpisC([["Comentários informados (universo)",num(R.comentarios_informados_nas_escolhidas),"nas "+num(R.publicacoes_escolhidas)+" publicações escolhidas"],["Comentários lidos",num(R.comentarios_lidos),val(pctDe(R.comentarios_lidos,R.comentarios_informados_nas_escolhidas))+" do universo"],["Na análise",C?num(C.comentarios):AUS,C&&C.fora_por_idioma?"fora por idioma: "+Object.keys(C.fora_por_idioma).map(function(k){return {en:"inglês",es:"espanhol"}[k]+" "+num(C.fora_por_idioma[k]);}).join(", "):"comentários em português"],["Autores distintos",C?num(C.autores_distintos):num(R.autores_distintos),"só como código"],["Citam o tema",C&&C.aderencia?val(C.aderencia.pct)+"%":AUS,C&&C.aderencia?num(C.aderencia.comentarios_que_citam_o_tema)+" comentários com termo do estudo":""],["Período",C&&C.periodo?esc(dataBR(C.periodo[0]).slice(3))+" a "+esc(dataBR(C.periodo[1]).slice(3)):AUS,"mês/ano dos comentários"]]);}
+    if(R&&!C){h+=cartaoC("Análise","Comentários ainda não analisados",'<div class="ce-vazio"><b>⛔ Sem análise.</b> A análise dos comentários roda no workflow Análises.</div>');}
+    if(C){
+      var tm=C.tom;
+      if(tm&&tm.distribuicao){var tot=tm.classificados||1,ord=["positivo","neutro","negativo"];
+        var barra='<div class="ce-tom">'+ord.filter(function(k){return tm.distribuicao[k];}).map(function(k){var p=100*tm.distribuicao[k]/tot;return '<i data-abre="ctom" data-v="'+k+'" style="cursor:pointer;width:'+p.toFixed(2)+"%;background:"+COR_TOM[k]+'" title="'+k+": "+num(tm.distribuicao[k])+'">'+(p>=7?k+" "+p.toLocaleString("pt-BR",{maximumFractionDigits:1})+"%":"")+"</i>";}).join("")+"</div>";
+        var meses=Object.keys(tm.por_mes||{}).sort();
+        h+=cartaoC("Sentimento · modelo em português","Tom geral dos comentários",barra+(meses.length>1?serieMensal({meses:mesesEntre(meses[0],meses[meses.length-1]),tipo:"barras",series:ord.map(function(k){var v={};meses.forEach(function(mm){if(tm.por_mes[mm][k]){v[mm]=tm.por_mes[mm][k];}});return {nome:k,valores:v,cor:COR_TOM[k]};}),altura:200}):""),"Modelo "+esc(tm.modelo)+": "+num(tm.classificados)+" de "+num(C.comentarios)+" comentários classificados. O modelo erra com ironia e gíria; é leitura de conjunto, não de comentário isolado. Clique numa cor para ler os comentários.");}
+      else{h+=cartaoC("Sentimento · modelo em português","Tom geral dos comentários",'<div class="ce-vazio"><b>⛔ Tom ainda não classificado.</b> O modelo de sentimento em português roda na próxima execução das Análises; o resultado fica em cache no repositório privado.</div>');}
+      var nv=C.nuvem||[];if(nv.length){var mx=nv[0].n,mn=nv[nv.length-1].n;
+        h+=cartaoC("Nuvem · formas lematizadas","O que a audiência escreve",'<div class="ce-nuvem">'+nv.slice().sort(function(a,b){return a.forma<b.forma?-1:1;}).map(function(x){var f=mx>mn?Math.sqrt((x.n-mn)/(mx-mn)):1,cor=f>.6?"#172238":f>.3?"#165ebd":f>.12?"#15909f":"#6b7a8c";return '<span data-abre="cforma" data-v="'+esc(x.forma)+'" style="font-size:'+(12+26*f).toFixed(1)+"px;color:"+cor+'" title="'+esc(x.forma)+": "+num(x.n)+' comentários">'+esc(x.forma)+"</span>";}).join("")+"</div>",num(nv.length)+" formas mais frequentes, sem palavras vazias; tamanho = comentários com a forma. Clique para ler.");}
+      var mk=(C.marcas||[]).slice().map(function(m,i){return {m:m,i:i};}).sort(function(a,b){return (b.m.pct||0)-(a.m.pct||0);});
+      h+=cartaoC("Livro de códigos dos comentários · dicionário aberto","% dos comentários com cada marca",barrasH(mk.map(function(x){return {rotulo:x.m.rotulo+" ("+num(x.m.n)+")",valor:x.m.pct,abre:["cmarca",String(x.i)],cor:x.m.id==="efeito_colateral"||x.m.id==="risco_medo"?"#9c2b20":x.m.id==="venda"?"#d7a14a":"#165ebd"};}),{sufixo:"%"}),"Curtidas medianas por marca: "+mk.filter(function(x){return !vazio(x.m.curtidas_medianas);}).map(function(x){return esc(x.m.rotulo)+" "+num(x.m.curtidas_medianas);}).join(" · ")+". Um comentário pode ter várias marcas. As expressões estão no livro de códigos dos comentários; a marca indica candidato, a validação é humana. Clique numa barra para ler.");
+      var ad=C.aderencia||{};
+      h+=cartaoC("Aderência ao tema","A publicação fala das canetas; a audiência fala do quê?",barrasH([{rotulo:"comentário cita termo do estudo",valor:ad.pct,cor:"#165ebd"},{rotulo:"comentário em publicação que cita termo",valor:typeof ad.comentarios_em_publicacao_que_cita_o_tema==="number"&&C.comentarios?Math.round(1000*ad.comentarios_em_publicacao_que_cita_o_tema/C.comentarios)/10:null,cor:"#15909f"}].filter(function(x){return typeof x.valor==="number";}),{sufixo:"%"}),num(ad.comentarios_que_citam_o_tema)+" comentários citam ao menos um termo da lista do estudo (substância, marca ou nome popular); "+num(ad.comentarios_em_publicacao_que_cita_o_tema)+" estão em publicações cujo texto cita um termo. A diferença é a conversa que segue sem nomear o produto.");
+      h+=cartaoC("Série diária","Volume de comentários por dia de publicação",serieDiaria(C.por_dia),"A coleta privilegia as publicações com mais comentários e o que a rede entrega primeiro; dias antigos ficam sub-representados. O dia da coleta pode estar incompleto.");
+      var ch=C.chd;
+      if(ch&&ch.classes){h+=cartaoC("CHD de Reinert · amostra de "+num(ch.amostra)+" comentários com 8+ palavras (de "+num(ch.elegiveis)+")","Classes de discurso da audiência",'<div class="ce-classes">'+ch.classes.map(function(c,i){var cor=GRUPO_CORES[i%GRUPO_CORES.length];
+          return '<div class="card"><div class="eyebrow">Classe '+c.classe+" · nome: "+val(c.nome)+'</div><h2 class="tk-h2" style="font-size:16px">'+botao(num(c.segmentos)+" comentários · "+esc(c.pct)+"%","ccl",String(c.classe))+'</h2><div class="ce-pct"><i style="width:'+c.pct+"%;background:"+cor+'"></i></div><div>'+c.formas.slice(0,18).map(function(f){return '<span class="ce-forma" data-abre="cfo" data-v="'+c.classe+"|"+esc(f[0])+'">'+esc(f[0])+"<small>χ² "+esc(f[1])+"</small></span>";}).join("")+"</div></div>";}).join("")+"</div>",esc(ch.metodo||"")+" Classificados: "+esc(ch.pct_classificados)+"%"+(ch.aproveitamento&&ch.aproveitamento.atinge_minimo===false?" ⛔ abaixo de 75%":"")+". Os nomes das classes ficam para o pesquisador. Clique numa classe ou forma para ler os comentários.");}
+      else{h+=cartaoC("CHD de Reinert","Classes de discurso da audiência",'<div class="ce-vazio"><b>⛔ CHD não roda nesta rede.</b> '+(ch&&ch.erro?esc(ch.erro):"Há menos de 500 comentários com 8 palavras ou mais; a classificação não se sustenta com tão pouco texto.")+"</div>");}
+      var rp=C.rede_palavras;
+      h+=cartaoC("Gephi · rede de coocorrência de palavras","Que palavras a audiência usa juntas",'<p class="ce-nota">'+(rp?"Mostrando "+num(rp.nos.length)+" de "+num(rp.total_nos)+" palavras e "+num(rp.arestas.length)+" de "+num(rp.total_arestas)+" ligações; "+num(rp.comunidades)+" comunidades. Aresta: as duas palavras no mesmo comentário. Clique numa palavra para ler os comentários.":"")+'</p><div id="com-rp"></div><div id="com-rp-med"></div>');
+      var rm=C.mencoes;
+      h+=cartaoC("Gephi · rede de conversação por menções","Quem marca quem nos comentários",(rm?kpisC([["Menções",num(C.mencoes_total),"comentário que marca uma conta com @"],["Contas na rede",num(rm.total_nos),"comentaristas e contas marcadas"],["Ligações",num(rm.total_arestas),"pares quem marca → quem é marcado"]]):"")+'<div id="com-rm" style="margin-top:12px"></div><div id="com-rm-med"></div>',"A ligação vai de quem comenta para a conta marcada no texto. As duas aparecem só como código: A e C são comentaristas (C, quem ficou fora do corpus geral), M é conta marcada que não comentou. A rede é tratada como não dirigida nas medidas.");
+      h+=cartaoC("Corpus","Ler os comentários",'<p>'+botao("Abrir os "+num(C.comentarios)+" comentários anonimizados","ctodos","1")+'</p><p class="ce-nota">O leitor busca no texto e mostra data, código do autor, código da publicação, curtidas, marcas e tom. Os mesmos comentários entram no corpus geral da página Redes e no arquivo do IRaMuTeQ como fonte própria.</p>');
+    }
+    var rg=COM.regra||{},dl=[];
+    if(C){dl.push('<a href="./data/comentarios/'+rede+'_corpus.json" download>Corpus anonimizado (.json)</a>','<a href="./data/comentarios/'+rede+'.json" download>Agregados (.json)</a>');if(C.rede_palavras){dl.push('<a href="./data/redes/comentarios_'+rede+'_palavras.gexf" download>Rede de palavras (.gexf)</a>');}if(C.mencoes){dl.push('<a href="./data/redes/comentarios_'+rede+'_mencoes.gexf" download>Rede de menções (.gexf)</a>');}}
+    dl.push('<a href="./data/config/livro_comentarios.json" download>Livro de códigos dos comentários (.json)</a>','<a href="./data/corpus/canetas_iramuteq.txt" download>Corpus geral para o IRaMuTeQ (.txt)</a>');
+    h+=cartaoC("Método","Como este caderno foi feito","<p>"+esc(COM.coleta.nota||"")+"</p><p>Modo de exibição: <b>"+val(rg.modo)+'</b>.</p><ul class="ce-lista">'+(rg.mascaras||[]).map(function(m){return "<li>"+esc(m)+"</li>";}).join("")+"</ul>"+(vazio(rg.limite_conhecido)?"":'<p class="ce-nota"><b>Limite conhecido.</b> '+esc(rg.limite_conhecido)+"</p>")+'<div class="ce-downloads">'+dl.join("")+"</div>");
+    var fim="";
+    if(R){fim+='<div class="vis-tit">Comentários</div><div class="tablewrap"><table class="datatable"><thead><tr><th class="ce-num">Publicações escolhidas</th><th class="ce-num">Com comentário lido</th><th class="ce-num">Comentários informados (universo)</th><th class="ce-num">Comentários lidos</th><th class="ce-num">Autores distintos</th><th>Coleta</th><th>Run</th><th>Corpus</th></tr></thead><tbody><tr><td class="ce-num">'+num(R.publicacoes_escolhidas)+'</td><td class="ce-num">'+num(R.publicacoes_com_comentario_lido)+'</td><td class="ce-num">'+num(R.comentarios_informados_nas_escolhidas)+'</td><td class="ce-num">'+num(R.comentarios_lidos)+'</td><td class="ce-num">'+num(R.autores_distintos)+"</td><td>"+val(dataBR(R.obtido_em))+"</td><td>"+val(R.run_id)+"</td><td>"+botao("abrir no corpus geral","fonte","comentario_"+rede)+"</td></tr></tbody></table></div>";}
+    if(T){var f=T.falhas_por_motivo||{};fim+='<div class="vis-tit" style="margin-top:12px">Fala dos vídeos · Whisper</div><div class="tablewrap"><table class="datatable"><thead><tr><th class="ce-num">Vídeos no período (universo)</th><th class="ce-num">Tentados na última execução</th><th class="ce-num">Transcritos (total)</th><th class="ce-num">Palavras (total)</th><th>Falhas por motivo</th><th>Coleta</th><th>Corpus</th></tr></thead><tbody><tr><td class="ce-num">'+num(T.videos_no_periodo)+'</td><td class="ce-num">'+num(T.tentados)+'</td><td class="ce-num">'+num(vazio(T.transcritos_no_total)?T.transcritos:T.transcritos_no_total)+'</td><td class="ce-num">'+num(vazio(T.palavras_no_total)?T.palavras:T.palavras_no_total)+"</td><td>"+(Object.keys(f).map(function(m){return esc(m)+": "+num(f[m]);}).join("<br>")||"nenhuma")+"</td><td>"+val(dataBR(T.obtido_em))+(vazio(T.run_id)?"":" · run "+esc(T.run_id))+"</td><td>"+botao("abrir no corpus geral","fonte","transcricao_"+rede)+'</td></tr></tbody></table></div><p class="ce-nota">'+esc((COM.tra||{}).nota||COM.transcricao.nota||"")+" Universo: vídeos da rede já coletados no período. Amostra: os mais vistos.</p>";}
+    h+=cartaoC("Coleta · "+esc(nome),"Contagens da coleta desta rede",fim||'<div class="ce-vazio"><b>⛔ Sem dado.</b></div>',R?esc((COM.resumo||{}).nota||"")+" Universo: os comentários que a rede informa nas publicações escolhidas.":"");
+    por("com-caderno",h);
+    if(C){
+      if(C.rede_palavras){redeViva("com-rp",C.rede_palavras,{chave:"cno",grafo:"rede_palavras",gexf:"./data/redes/comentarios_"+rede+"_palavras.gexf",rotulos:45});}else{por("com-rp",'<div class="ce-vazio"><b>⛔ Sem rede de palavras.</b></div>');}
+      por("com-rp-med",C.rede_palavras?medidas("comentarios_"+rede+"_palavras"):"");
+      if(C.mencoes){redeViva("com-rm",C.mencoes,{gexf:"./data/redes/comentarios_"+rede+"_mencoes.gexf",rotulos:25});por("com-rm-med",medidas("comentarios_"+rede+"_mencoes"));}
+      else{por("com-rm",'<div class="ce-vazio"><b>⛔ Nenhuma menção.</b> Nenhum comentário lido desta rede marca outra conta com @.</div>');}
+    }
+  }
+
+
+  /* Qualidade da informação: critérios JAMA, codificação manual da planilha-semente (só agregados). */
+  function jama(J,livro,tra){
+    var eixo=((livro||{}).eixos||[]).filter(function(e){return e.id==="qualidade_da_informacao";})[0]||{};
+    por("jm-protocolo",'<p class="ce-nota">'+esc(eixo.origem||"")+". "+val(eixo.operacao)+'</p><ul class="ce-lista">'+(eixo.codigos||[]).map(function(c){return "<li><b>"+esc(c.codigo)+"</b>: "+esc(c.definicao)+"</li>";}).join("")+"</ul>"+(eixo.popularidade?'<p class="ce-nota"><b>Popularidade.</b> '+esc(eixo.popularidade.medida)+". "+esc(eixo.popularidade.nota)+"</p>":""));
+    var S=deRede(tra,"semente");
+    por("jm-fala",S?'<div class="tablewrap"><table class="datatable" style="min-width:0"><thead><tr><th class="ce-num">Endereços na planilha (universo)</th><th class="ce-num">Tentados na última execução</th><th class="ce-num">Transcritos (total)</th><th class="ce-num">Palavras (total)</th><th>Falhas por motivo</th><th>Coleta</th></tr></thead><tbody><tr><td class="ce-num">'+num(S.videos_no_periodo)+'</td><td class="ce-num">'+num(S.tentados)+'</td><td class="ce-num">'+num(S.transcritos_no_total)+'</td><td class="ce-num">'+num(S.palavras_no_total)+"</td><td>"+(Object.keys(S.falhas_por_motivo||{}).map(function(m){return esc(m)+": "+num(S.falhas_por_motivo[m]);}).join("<br>")||"nenhuma")+"</td><td>"+val(dataBR(S.obtido_em))+(vazio(S.run_id)?"":" · run "+esc(S.run_id))+'</td></tr></tbody></table></div><p class="ce-nota">A planilha traz só um trecho da fala de cada vídeo. A fala completa, transcrita sem custo com Whisper, fica no repositório privado e serve de base para a comparação com os modelos. Não entra no corpus geral.</p>':'<div class="ce-vazio"><b>⛔ Ainda não transcrito.</b> A fala completa dos endereços da planilha sai do workflow de transcrição (rede “semente”). A planilha traz só um trecho de cada fala, curto demais para comparar com a classificação por IA.</div>');
+    if(!J){por("jm-kpis","");por("jm-ia",'<div class="ce-vazio"><b>⛔ Sem dado.</b></div>');return;}
+    var cr=J.criterios||[],pt=J.pontuacao||{},d=pt.distribuicao||{},altos=(d["3"]||0)+(d["4"]||0);
+    por("jm-kpis",[["Vídeos codificados",num(J.videos),num(J.linhas_na_planilha)+" linhas; "+num(J.linhas_repetidas)+" repetem endereço"],["Pontuação média",vazio(pt.media)?AUS:esc(pt.media.toLocaleString("pt-BR"))+" <small>de 4</small>","soma dos critérios confere em "+num(pt.soma_confere)+" de "+num(J.videos)],["Com 3 ou 4 pontos",num(altos),val(pctDe(altos,J.videos))+" dos vídeos"],["Na coleta do projeto",num(J.na_coleta_do_projeto),"de "+num(J.com_id)+" vídeos com ID; universo da busca ⛔"]].map(function(k){return '<div class="kpi"><div class="klabel">'+k[0]+'</div><div class="kval">'+k[1]+'</div><div class="knote">'+k[2]+"</div></div>";}).join(""));
+    var CORC={autoria:"#165ebd",atribuicao:"#9c2b20",divulgacao:"#d7a14a",atualidade:"#15909f"};
+    por("jm-criterios",barrasH(cr.map(function(c){return {rotulo:c.rotulo+" ("+num(c.presente)+" de "+num(J.videos)+")",valor:c.pct,cor:CORC[c.id]};}),{sufixo:"%"})+'<p class="ce-nota">Atualidade é quase sempre presente porque a plataforma mostra a data. A diferença de qualidade está em autoria, atribuição de fonte e divulgação de interesses.</p>');
+    por("jm-pontos",barrasH(["0","1","2","3","4"].map(function(k){return {rotulo:k+(k==="1"?" ponto":" pontos"),valor:d[k]||0,cor:k<"2"?"#9c2b20":k==="2"?"#d7a14a":"#2f8f4e"};}))+'<p class="ce-nota">Número de vídeos em cada pontuação. Média '+val(pt.media)+".</p>");
+    function tab(xs,rot){return '<div class="tablewrap"><table class="datatable"><thead><tr><th>'+rot+'</th><th class="ce-num">Vídeos</th><th class="ce-num">Pontuação média</th>'+cr.map(function(c){return '<th class="ce-num">% '+esc(c.rotulo.toLowerCase())+"</th>";}).join("")+"</tr></thead><tbody>"+xs.map(function(x){return "<tr><td><b>"+esc(x.grupo)+'</b></td><td class="ce-num">'+num(x.videos)+'</td><td class="ce-num">'+nBR(x.pontuacao_media)+"</td>"+cr.map(function(c){return '<td class="ce-num">'+(vazio(x[c.id])?AUS:esc(x[c.id].toLocaleString("pt-BR"))+"%")+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>";}
+    por("jm-perfil",barrasH((J.por_tipo_de_perfil||[]).map(function(x){return {rotulo:x.grupo+" ("+x.videos+")",valor:x.pontuacao_media,cor:"#165ebd"};}),{titulo:"Pontuação média por tipo de perfil"})+tab(J.por_tipo_de_perfil||[],"Tipo de perfil")+'<p class="ce-nota">A planilha usa '+num((J.rotulos_distintos||{})["Tipo de perfil"])+" rótulos livres de tipo de perfil, agrupados nos códigos do livro de códigos. O agrupamento está em data/config/jama.json para revisão. Grupo com poucos vídeos não sustenta comparação.</p>");
+    por("jm-caneta",tab(J.por_tipo_de_caneta||[],"Substância")+'<p class="ce-nota">Mounjaro conta como tirzepatida; Ozempic e Wegovy, como semaglutida. “Outros” na planilha fica como outra ou não especificada.</p>');
+    var ia=J.ia||{};
+    por("jm-ia",'<div class="ce-vazio"><b>'+esc(ia.situacao||"⛔")+".</b></div><p>"+esc(ia.decisao||"")+'</p><p class="ce-nota">Comparação prevista: '+esc(ia.comparacao_prevista||"")+". As sete categorias de tipo de conteúdo são as do livro de códigos (Promessa e risco). A planilha manual ainda não traz essas sete categorias: só "+num((J.rotulos_distintos||{})["Tipo de conteúdo"])+" descrições livres. Sem elas, a comparação por categoria fica ⛔ também do lado manual.</p>");
+    por("jm-situacao",'<ul class="ce-lista"><li><b>Universo ⛔.</b> Nem a planilha nem o artigo de referência informam quantos vídeos a plataforma tinha para os termos buscados.</li><li><b>Linhas repetidas.</b> '+num(J.linhas_na_planilha)+" linhas e "+num(J.videos)+" endereços distintos; aqui cada endereço conta uma vez.</li>"+(vazio(J.aba_resumo_declara)?"":"<li><b>Aba de resumo desatualizada.</b> A aba Resumo da planilha declara "+num(J.aba_resumo_declara)+" vídeos analisados; a aba principal tem "+num(J.videos)+" endereços pontuados. Os números desta página vêm da aba principal.</li>")+"<li><b>Datas.</b> "+num((J.datas||{}).com_data)+" vídeos com data, de "+val(dataBR((J.datas||{}).primeira))+" a "+val(dataBR((J.datas||{}).ultima))+".</li><li><b>Codificadores.</b> O livro de códigos pede dois codificadores e acordo entre eles. A planilha traz uma codificação consolidada, sem a concordância entre codificadores: kappa ⛔.</li><li><b>Popularidade.</b> Visualizações por dia ⛔: a planilha não traz visualizações.</li></ul>"+'<p class="ce-nota">Planilha conferida pelo SHA-256 '+esc(String(J.sha256||"").slice(0,16))+"… · leitura de "+val(dataBR(J.obtido_em))+".</p>");
+  }
+
   function referencias(p){
     por("met-refs",'<ul class="ce-lista">'+(p.referencias||[]).map(function(r){return "<li>"+esc(r.citacao)+'<br><span class="ce-nota">Uso: '+esc(r.uso)+".</span></li>";}).join("")+"</ul>");
   }
 
-  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis"),lerOpcional("dados_publicos/registro"),lerOpcional("dados_publicos/cmed"),lerOpcional("dados_publicos/vigimed"),lerOpcional("dados_publicos/sngpc_industrializados"),lerOpcional("dados_publicos/sngpc_manipulados"),lerOpcional("checagens/agencias"),lerOpcional("comentarios/resumo"),lerOpcional("transcricoes/resumo"),lerOpcional("dados_publicos/camara"),lerOpcional("youtube/historico"),lerOpcional("corpus/volume"),lerOpcional("venda/agregado")])
-    .then(function(r){MARCOS=((r[0].linha_do_tempo||{}).marcos)||[];venda(r[27],r[5]);linhaTempo(r[0].linha_do_tempo,"rec-tempo");linhaTempo(r[0].linha_do_tempo,"pan-tempo",true);volumeGeral(r[0],r[25],r[8],r[10],r[26]);analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);dadosResultados(r[16],r[17],r[18],r[19],r[20],r[24]);agencias(r[21]);comResumo(r[22]);traResumo(r[23]);})
+  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis"),lerOpcional("dados_publicos/registro"),lerOpcional("dados_publicos/cmed"),lerOpcional("dados_publicos/vigimed"),lerOpcional("dados_publicos/sngpc_industrializados"),lerOpcional("dados_publicos/sngpc_manipulados"),lerOpcional("checagens/agencias"),lerOpcional("comentarios/resumo"),lerOpcional("transcricoes/resumo"),lerOpcional("dados_publicos/camara"),lerOpcional("youtube/historico"),lerOpcional("corpus/volume"),lerOpcional("venda/agregado"),lerOpcional("jama/manual")])
+    .then(function(r){MARCOS=((r[0].linha_do_tempo||{}).marcos)||[];venda(r[27],r[5]);linhaTempo(r[0].linha_do_tempo,"rec-tempo");linhaTempo(r[0].linha_do_tempo,"pan-tempo",true);volumeGeral(r[0],r[25],r[8],r[10],r[26]);analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);COM.regra=(r[1]||{}).comentarios_no_publico||{};COM.coleta=(r[1]||{}).comentarios||{};COM.transcricao=(r[1]||{}).transcricao||{};termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);dadosResultados(r[16],r[17],r[18],r[19],r[20],r[24]);agencias(r[21]);COM.resumo=r[22];COM.tra=r[23];cadernos();jama(r[28],r[5],r[23]);})
     .catch(function(){por("aviso",'<p class="ce-erro">Esta página lê arquivos de dados e não conseguiu abri-los. Abra pelo endereço publicado do projeto.</p>');});
 })();
 </script>

@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       redes:
-        description: "Redes separadas por espaço"
+        description: "Redes separadas por espaço (tiktok kwai youtube; semente = vídeos da planilha JAMA)"
         default: "tiktok kwai"
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
       - name: Dependências
         run: |
           sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
-          pip install -q numpy scipy networkx emoji faster-whisper yt-dlp
+          pip install -q numpy scipy networkx emoji faster-whisper yt-dlp openpyxl
       - name: Testes
         run: python -m unittest discover -s tests
 

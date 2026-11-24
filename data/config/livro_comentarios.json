@@ -1,0 +1,17 @@
+{
+  "nota": "Pré-codificação dos comentários por dicionário aberto: indica candidatos, não decide. Expressões aplicadas ao texto em minúsculas e sem acento; um comentário pode ter várias marcas. A validação é humana. Relato de uso, peso, doença ou efeito colateral aparece só em percentuais e no texto anonimizado.",
+  "decisao": "Proposta de 24/11/2026, a validar com o pesquisador.",
+  "marcas": [
+    {"id": "efeito_colateral", "rotulo": "efeito colateral", "expressoes": ["\\benjo", "\\bnause", "\\bvomit", "\\bdiarr", "\\bprisao de ventre\\b", "\\bpancreat", "\\bgastrite\\b", "\\bqueda de cabelo\\b", "\\bcolateral", "\\bpassei mal\\b", "\\bmal estar\\b", "\\btontura", "\\brefluxo\\b", "\\bcalculo", "\\bvesicula\\b"]},
+    {"id": "resultado", "rotulo": "resultado e perda de peso", "expressoes": ["\\bperdi\\b", "\\bemagreci\\b", "\\bperdeu\\b", "\\b\\d+ ?(kg|quilos|kilos)\\b", "\\bquilos\\b", "\\bkg\\b", "\\beliminei\\b", "\\bsequei\\b", "\\bresultado"]},
+    {"id": "preco", "rotulo": "preço e acesso", "expressoes": ["\\bcaro\\b", "\\bcara demais\\b", "\\bpreco\\b", "\\bvalor\\b", "\\bcusta\\b", "\\breais\\b", "r\\$", "\\bsus\\b", "\\bplano de saude\\b", "\\bgenerico", "\\bbarat"]},
+    {"id": "receita_medico", "rotulo": "receita e acompanhamento médico", "expressoes": ["\\breceita\\b", "\\bmedic[oa]s?\\b", "\\bendocrino", "\\bnutricionista", "\\bprescri", "\\bconsulta\\b", "\\bacompanhamento\\b"]},
+    {"id": "risco_medo", "rotulo": "risco e medo", "expressoes": ["\\bmedo\\b", "\\bperigos", "\\brisco", "\\bmorte\\b", "\\bmorreu\\b", "\\bcuidado\\b", "\\bcancer\\b", "\\bhospital", "\\buti\\b"]},
+    {"id": "desconfianca", "rotulo": "desconfiança e desinformação", "expressoes": ["\\bmentira\\b", "\\bfake\\b", "\\bindustria farmaceutica\\b", "\\bbig pharma\\b", "\\benganacao\\b", "\\bgolpe", "\\bfalsificad", "\\bnao acredito\\b", "\\bpropaganda\\b"]},
+    {"id": "venda", "rotulo": "venda e indicação de compra", "expressoes": ["\\bvendo\\b", "\\bonde compr", "\\bpix\\b", "\\bwhats", "\\bme chama\\b", "\\bparaguai", "\\bmanipulad", "\\bsem receita\\b"]},
+    {"id": "corpo_estetica", "rotulo": "corpo e aparência", "expressoes": ["\\bbarriga\\b", "\\bmagr[ao]s?\\b", "\\bgord[ao]s?\\b", "\\bcorpo\\b", "\\bflacid", "\\bbonit[ao]\\b", "\\bpeso ideal\\b", "\\bautoestima\\b"]},
+    {"id": "alternativas", "rotulo": "alternativas (dieta, exercício, natural)", "expressoes": ["\\bdieta\\b", "\\bacademia\\b", "\\bexercicio", "\\bjejum\\b", "\\bnatural\\b", "\\bcha\\b", "\\breeducacao alimentar\\b", "\\bcaminhada\\b"]},
+    {"id": "fe_religiao", "rotulo": "fé e religião", "expressoes": ["\\bdeus\\b", "\\bamem\\b", "\\bgloria\\b", "\\bjesus\\b", "\\bse deus quiser\\b", "\\bbencao\\b"]},
+    {"id": "apoio_criador", "rotulo": "elogio ou agradecimento a quem publicou", "expressoes": ["\\bparabens\\b", "\\bobrigad[oa]\\b", "\\botimo video\\b", "\\bexcelente\\b", "\\bmuito bom\\b", "\\badorei\\b", "\\bque explicacao\\b"]}
+  ]
+}

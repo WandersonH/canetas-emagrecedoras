@@ -340,6 +340,8 @@ def main(argumentos=None) -> int:
     redes.gexf(nos_p, ar_p, pasta_redes / "palavras.gexf")
     nos_f, ar_f = {}, collections.Counter()
     for t, p in zip(ts, pub):
+        if not any(t["termos"]):  # comentário e fala transcrita não vêm de busca por termo: ficam fora desta rede
+            continue
         fonte_no = f"{t['fonte']}:{p['autor'] or '?'}"
         rotulo = p["autor"] if t["fonte"] in ("imprensa", "checagens") else f"{t['fonte']} {p['autor'] or '(sem autor informado)'}"
         nos_f.setdefault(fonte_no, {"rotulo": rotulo, "tipo": t["fonte"], "n": 0})["n"] += 1
