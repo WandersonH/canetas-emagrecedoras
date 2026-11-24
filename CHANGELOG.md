@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Carga histórica do YouTube: diagnóstico do run interrompido
+
+**O que mudou**
+
+- scripts/collect_youtube_historico.py: reconhece também os erros de limite diário (dailyLimitExceeded, rateLimitExceeded), usa tempo de espera de 20 s com 2 tentativas, mostra cada erro no log e encerra o run após 5 erros seguidos.
+
+**Por quê**
+
+- O run 45288852742 gravou só 53 buscas termo × mês em 90 minutos e foi cancelado. A ordem dos arquivos mostra meses pulados, sinal de erros seguidos que o coletor não reconhecia como fim de cota e que consumiam tempo em novas tentativas.
+
+**O que foi executado de verdade**
+
+- Run 45288852742: 53 arquivos brutos guardados no privado (bruto/youtube_historico/20261123T232749Z/), que o próximo run recupera sem nova consulta. python3 -m unittest discover -s tests: todos passaram, 1 pulado.
+
+**O que ficou pendente**
+
+- Próximo run com a cota renovada (por volta das 5h de Brasília) mostra no log a causa exata dos erros.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45288852742.
+
 ## 23/11/2026 · YouTube histórico (run 45288852742)
 
 **O que mudou**

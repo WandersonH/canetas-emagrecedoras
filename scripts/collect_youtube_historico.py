@@ -49,11 +49,13 @@ def meses(inicio: datetime.date, fim: datetime.date) -> list[tuple[str, datetime
 
 
 def cota(erro: Exception) -> bool:
-    if isinstance(erro, urllib.error.HTTPError) and erro.code == 403:
+    """403 de cota ou de limite diário (quotaExceeded, dailyLimitExceeded, rateLimitExceeded)."""
+    if isinstance(erro, urllib.error.HTTPError) and erro.code in (403, 429):
         try:
-            return "quota" in erro.read().decode("utf-8", "replace").lower()
+            corpo = erro.read().decode("utf-8", "replace").lower()
         except Exception:
             return True
+        return any(p in corpo for p in ("quota", "limitexceeded", "limit exceeded"))
     return False
 
 
@@ -61,7 +63,7 @@ def buscar_mes(chave, termo, de, ate, paginas, leitor=rede.pegar_json) -> dict:
     respostas, ids, token = [], [], None
     for _ in range(paginas):
         try:
-            r = leitor(cy.url_busca(chave, termo, de, ate, token))
+            r = leitor(cy.url_busca(chave, termo, de, ate, token), tentativas=2, tempo=20)
         except Exception as erro:
             if cota(erro):
                 raise CotaEsgotada() from erro
@@ -115,7 +117,7 @@ def main(argumentos=None) -> int:
     manifesto = rede.Manifesto("youtube_historico", {"termos": termos, "inicio": inicio.isoformat(), "fim": fim.isoformat(),
                                                      "paginas_por_mes": opcoes.paginas, "ordem": "date"}, opcoes.run_id)
     pasta = privado / "bruto" / "youtube_historico" / rede.carimbo(manifesto.dados["iniciado_em"])
-    feitos_agora, esgotou = [], False
+    feitos_agora, esgotou, erros_seguidos = [], False, 0
     if not chave:
         manifesto.bloqueio("YOUTUBE_API_KEY ausente")
         esgotou = True
@@ -128,11 +130,19 @@ def main(argumentos=None) -> int:
             try:
                 r = buscar_mes(chave, termo, de, ate, opcoes.paginas)
             except CotaEsgotada:
+                print(f"cota esgotada em '{termo}' {mes}", flush=True)
                 esgotou = True
                 break
             except Exception as erro:
                 manifesto.bloqueio(f"'{termo}' {mes}: {type(erro).__name__}: {erro}")
+                print(f"erro em '{termo}' {mes}: {rede.sem_chave(f'{type(erro).__name__}: {erro}')[:160]}", flush=True)
+                erros_seguidos += 1
+                if erros_seguidos >= 5:
+                    manifesto.bloqueio("5 erros seguidos: run encerrado para não gastar tempo")
+                    esgotou = True
+                    break
                 continue
+            erros_seguidos = 0
             pasta.mkdir(parents=True, exist_ok=True)
             arquivo = pasta / f"{len(feitos_agora):04d}.json"
             arquivo.write_text(json.dumps({"termo": termo, "mes": mes, "paginas": r.pop("bruto")}, ensure_ascii=False), encoding="utf-8")

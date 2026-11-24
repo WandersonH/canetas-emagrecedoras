@@ -227,14 +227,14 @@ class YouTubeHistorico(unittest.TestCase):
         import io
         import urllib.error
         import collect_youtube_historico as h
-        def leitor(url):
-            raise urllib.error.HTTPError(url, 403, "x", {}, io.BytesIO(b'{"error":{"errors":[{"reason":"quotaExceeded"}]}}'))
+        def leitor(url, **kw):
+            raise urllib.error.HTTPError(url, 403, "x", {}, io.BytesIO(b'{"error":{"errors":[{"reason":"dailyLimitExceeded"}]}}'))
         with self.assertRaises(h.CotaEsgotada):
             h.buscar_mes("k", "Ozempic", INICIO, FIM, 1, leitor=leitor)
 
     def test_uma_pagina_marca_limite(self):
         import collect_youtube_historico as h
-        r = h.buscar_mes("k", "Ozempic", INICIO, FIM, 1, leitor=lambda url: {"pageInfo": {"totalResults": 800}, "items": [{"id": {"videoId": "a"}}], "nextPageToken": "p"})
+        r = h.buscar_mes("k", "Ozempic", INICIO, FIM, 1, leitor=lambda url, **kw: {"pageInfo": {"totalResults": 800}, "items": [{"id": {"videoId": "a"}}], "nextPageToken": "p"})
         self.assertEqual((r["estimativa"], r["ids"], r["no_limite"]), (800, ["a"], True))
 
 
