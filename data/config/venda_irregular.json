@@ -1,0 +1,30 @@
+{
+  "nota": "Expressões da triagem automática de venda irregular (scripts/venda_irregular.py). Aplicadas ao texto em minúsculas e sem acento. É proposta a validar com o pesquisador; cada candidato pede revisão de contexto antes de virar contagem final (regra 11).",
+  "fonte_dos_produtos": "Produtos e expressões citados em atos e notas da Anvisa noticiados em 21/01/2026 e 16/09/2026 (data/config/termos.json, família venda_irregular).",
+  "sinais": {
+    "oferta": [
+      "\\bvendo\\b", "\\bvendemos\\b", "\\ba venda\\b", "\\bpix\\b", "\\bwhats ?app\\b", "\\bwhats\\b", "\\bzap\\b",
+      "\\bme chama\\b", "\\bchama (no|na) (privado|pv|direct|dm|inbox|zap|whats)\\b", "\\binbox\\b", "\\bno direct\\b",
+      "\\blink na bio\\b", "\\bpronta entrega\\b", "\\benvio (para|pra) todo", "\\bentrego\\b", "\\bentregamos\\b", "\\bfrete\\b",
+      "\\bencomenda", "\\bestoque\\b", "r\\$ ?\\d", "wa\\.me", "https?://", "\\(?\\b\\d{2}\\)? ?9\\d{4}[- ]?\\d{4}\\b",
+      "\\bcompre (aqui|ja|agora|comigo)\\b", "\\bcompra comigo\\b", "\\bfaco (o )?envio\\b"
+    ],
+    "sem_receita": [
+      "\\bsem receita\\b", "\\bsem prescricao\\b", "\\bsem precisar de receita\\b", "\\bnao precisa de receita\\b",
+      "\\bsem (consulta|medico)\\b"
+    ],
+    "produto_sem_registro": [
+      "\\bcanetas? do paraguai\\b", "\\bparaguai", "\\btg\\b", "\\bt\\.g\\.?", "\\bt36\\b", "\\bsynedica\\b", "\\btirzec\\b",
+      "\\blipo ?less\\b", "\\bretatrutida\\b", "\\bimportad[oa]s?\\b", "\\bsem registro\\b", "\\bgluconex\\b"
+    ],
+    "manipulado": ["\\bmanipulad[oa]s?\\b", "\\bfarmacia de manipulacao\\b", "\\bmanipulacao\\b"],
+    "golpe": [
+      "\\bgolpes?\\b", "\\bfraudes?\\b", "\\bfalsificad[oa]s?\\b", "\\bfalsificacao\\b", "\\bcanetas? falsas?\\b",
+      "\\bproduto falso\\b", "\\bozempic falso\\b", "\\bpirata\\b", "\\bestelionat"
+    ],
+    "tema": [
+      "\\bcanetas?\\b", "emagrec", "\\bglp", "ozempic", "mounjaro", "wegovy", "saxenda", "semaglutida", "tirzepatida",
+      "liraglutida", "retatrutida", "\\btirze\\b"
+    ]
+  }
+}

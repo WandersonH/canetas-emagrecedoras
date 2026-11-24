@@ -87,15 +87,16 @@ def segmentar(texto: str, n: int = PALAVRAS_SEGMENTO) -> list[str]:
     return segs
 
 
-def textos(privado: pathlib.Path, inicio: str, fim: str) -> list[dict]:
-    """Um registro por publicação, sem repetição, dentro do período lido."""
+def textos(privado: pathlib.Path, inicio: str, fim: str, limpo: bool = True) -> list[dict]:
+    """Um registro por publicação, sem repetição, dentro do período lido. limpo=False guarda o texto cru
+    (com links e cifrões), para quem precisa dos sinais de venda."""
     vistos, saida = set(), []
 
     def add(fonte, chave, data, texto, autor, termos, publico_url=None, veiculo=None):
         data = (data or "")[:10]
         if not data or not (inicio <= data <= fim) or (fonte, chave) in vistos:
             return
-        texto = limpar(texto)
+        texto = limpar(texto) if limpo else " ".join((texto or "").split())
         if len(texto.split()) < 3:
             return
         vistos.add((fonte, chave))

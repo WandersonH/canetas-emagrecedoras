@@ -126,7 +126,11 @@
 <section class="panel" id="venda" aria-label="Venda irregular">
   <div class="paper-ribbon"><span id="rib-venda"></span><span>VENDA IRREGULAR</span></div>
   <div class="intro"><div class="eyebrow">Oferta sem receita · produto sem registro · manipulado · golpe</div><h1>Venda irregular nas redes</h1><p>Registrada e contada. Link de venda, endereço de loja e perfil de vendedor ficam fora desta página.</p></div>
-  <div class="card"><div class="eyebrow">Registros</div><h2 class="tk-h2">Ofertas por tipo, rede e mês</h2><div class="ce-vazio"><b>⛔ Sem dado.</b> Nenhuma coleta de redes foi executada.</div></div>
+  <div class="kpigrid" id="ven-kpis"></div>
+  <div class="card" style="margin-top:17px"><div class="eyebrow">Triagem automática · candidatos à revisão</div><h2 class="tk-h2">Ofertas e menções por tipo e rede</h2><p class="ce-nota" id="ven-nota"></p><div id="ven-tipos"><div class="ce-vazio"><b>⛔ Sem dado.</b> A triagem ainda não rodou.</div></div></div>
+  <div class="card"><div class="eyebrow">No tempo · com os marcos</div><h2 class="tk-h2">Candidatos por mês e tipo</h2><div id="ven-meses"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
+  <div class="card"><div class="eyebrow">Sinais</div><h2 class="tk-h2">O que a triagem encontrou nos textos</h2><p class="ce-nota">Expressões que mais apareceram nos candidatos. Link, telefone e preço aparecem só como rótulo: o endereço e o número nunca saem do repositório privado.</p><div id="ven-sinais"></div></div>
+  <div class="card"><div class="eyebrow">Regra</div><h2 class="tk-h2">Como a triagem decide</h2><div id="ven-regra"></div></div>
 </section>
 
 <section class="panel" id="comentarios" aria-label="Comentários">
@@ -660,6 +664,25 @@
     aplica();rotulos();REDES_VIVAS[id]={seleciona:seleciona};
   }
 
+
+  function venda(v,livro){
+    var eixo=((livro||{}).eixos||[]).filter(function(e){return e.id==="venda_irregular";})[0]||{};
+    por("ven-regra",'<p class="ce-nota">'+val(eixo.operacao)+'</p><ul class="ce-lista">'+(eixo.codigos||[]).map(function(c){return "<li><b>"+esc(c.codigo)+"</b>: "+esc(c.definicao)+"</li>";}).join("")+"</ul>");
+    if(!v){return;}
+    var TV={"produto sem registro":"#9c2b20","manipulado":"#d7a14a","oferta sem receita":"#165ebd","menção a golpe ou falsificação":"#5b6b7c"};
+    var porTipo={},porFonte={};(v.por_tipo_e_fonte||[]).forEach(function(r){porTipo[r.tipo]=(porTipo[r.tipo]||0)+r.n;(porFonte[r.tipo]=porFonte[r.tipo]||{})[r.fonte]=r.n;});
+    var ofertas=["produto sem registro","manipulado","oferta sem receita"].reduce(function(s,t){return s+(porTipo[t]||0);},0);
+    por("ven-kpis",[["Textos examinados (universo)",num(v.textos_examinados),"publicações, comentários e falas das redes"],["Candidatos",num(v.candidatos),"triagem automática"],["Ofertas por tipo (soma)",num(ofertas),"um texto pode ter mais de um tipo"],["Revisados",num(v.revisados),"revisão de contexto pendente"]].map(function(k){return '<div class="kpi"><div class="klabel">'+k[0]+'</div><div class="kval">'+k[1]+'</div><div class="knote">'+k[2]+"</div></div>";}).join(""));
+    por("ven-nota","Coleta de "+val(dataBR(v.obtido_em))+(vazio(v.run_id)?"":" (run "+esc(v.run_id)+")")+", período "+esc(dataBR(v.periodo.inicio))+" a "+esc(dataBR(v.periodo.fim))+". "+esc(v.nota));
+    var fontes=Object.keys(v.textos_examinados_por_fonte||{});
+    var h='<div class="ce-duas">'+Object.keys(TV).map(function(t){var pf=porFonte[t]||{};return "<div>"+barrasH(fontes.filter(function(f){return pf[f];}).sort(function(a,b){return pf[b]-pf[a];}).map(function(f){return {rotulo:(FONTE_NOME[f]||f)+" · de "+num(v.textos_examinados_por_fonte[f]),valor:pf[f],cor:TV[t]};}),{titulo:t+" · "+num(porTipo[t]||0)})+"</div>";}).join("")+"</div>";
+    por("ven-tipos",h);
+    var pm={},ms=[];(v.por_tipo_e_mes||[]).forEach(function(r){(pm[r.tipo]=pm[r.tipo]||{})[r.mes]=r.n;ms.push(r.mes);});ms.sort();
+    por("ven-meses",ms.length?serieMensal({meses:mesesEntre(anoMes(dataBR(v.periodo.inicio))||ms[0],hojeMes()),series:Object.keys(TV).filter(function(t){return pm[t];}).map(function(t){return {nome:t,valores:pm[t],cor:TV[t]};}),tipo:"barras"}):'<div class="ce-vazio"><b>⛔ Sem dado.</b></div>');
+    var GR={oferta:"sinal de venda",sem_receita:"sem receita",produto_sem_registro:"produto sem registro",manipulado:"manipulado",golpe:"golpe ou falsificação"},CG={oferta:"#15909f",sem_receita:"#165ebd",produto_sem_registro:"#9c2b20",manipulado:"#d7a14a",golpe:"#5b6b7c"};
+    por("ven-sinais",barrasH((v.sinais||[]).map(function(x){return {rotulo:x.sinal+" · "+(GR[x.grupo]||x.grupo),valor:x.n,cor:CG[x.grupo]};}),{max:30}));
+  }
+
   function analises(chd,des,est,emo){
     if(chd){CHD=chd;
       var am=chd.amostra||{},pf=am.por_fonte||{};
@@ -695,8 +718,8 @@
     por("met-refs",'<ul class="ce-lista">'+(p.referencias||[]).map(function(r){return "<li>"+esc(r.citacao)+'<br><span class="ce-nota">Uso: '+esc(r.uso)+".</span></li>";}).join("")+"</ul>");
   }
 
-  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis"),lerOpcional("dados_publicos/registro"),lerOpcional("dados_publicos/cmed"),lerOpcional("dados_publicos/vigimed"),lerOpcional("dados_publicos/sngpc_industrializados"),lerOpcional("dados_publicos/sngpc_manipulados"),lerOpcional("checagens/agencias"),lerOpcional("comentarios/resumo"),lerOpcional("transcricoes/resumo"),lerOpcional("dados_publicos/camara"),lerOpcional("youtube/historico"),lerOpcional("corpus/volume")])
-    .then(function(r){MARCOS=((r[0].linha_do_tempo||{}).marcos)||[];linhaTempo(r[0].linha_do_tempo,"rec-tempo");linhaTempo(r[0].linha_do_tempo,"pan-tempo",true);volumeGeral(r[0],r[25],r[8],r[10],r[26]);analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);dadosResultados(r[16],r[17],r[18],r[19],r[20],r[24]);agencias(r[21]);comResumo(r[22]);traResumo(r[23]);})
+  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis"),lerOpcional("dados_publicos/registro"),lerOpcional("dados_publicos/cmed"),lerOpcional("dados_publicos/vigimed"),lerOpcional("dados_publicos/sngpc_industrializados"),lerOpcional("dados_publicos/sngpc_manipulados"),lerOpcional("checagens/agencias"),lerOpcional("comentarios/resumo"),lerOpcional("transcricoes/resumo"),lerOpcional("dados_publicos/camara"),lerOpcional("youtube/historico"),lerOpcional("corpus/volume"),lerOpcional("venda/agregado")])
+    .then(function(r){MARCOS=((r[0].linha_do_tempo||{}).marcos)||[];venda(r[27],r[5]);linhaTempo(r[0].linha_do_tempo,"rec-tempo");linhaTempo(r[0].linha_do_tempo,"pan-tempo",true);volumeGeral(r[0],r[25],r[8],r[10],r[26]);analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);dadosResultados(r[16],r[17],r[18],r[19],r[20],r[24]);agencias(r[21]);comResumo(r[22]);traResumo(r[23]);})
     .catch(function(){por("aviso",'<p class="ce-erro">Esta página lê arquivos de dados e não conseguiu abri-los. Abra pelo endereço publicado do projeto.</p>');});
 })();
 </script>

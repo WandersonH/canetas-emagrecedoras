@@ -162,9 +162,13 @@
         {
           "codigo": "suspeita de golpe",
           "definicao": "Pede pagamento adiantado ou usa identidade de terceiro."
+        },
+        {
+          "codigo": "menção a golpe ou falsificação",
+          "definicao": "Fala de golpe, fraude, falsificação ou produto falso, como relato ou alerta, com ou sem oferta. Categoria da triagem automática; a revisão separa a suspeita de golpe propriamente dita."
         }
       ],
-      "operacao": null
+      "operacao": "Triagem automática (scripts/venda_irregular.py, expressões em data/config/venda_irregular.json) sobre publicações, comentários e falas transcritas: conta como oferta o texto com sinal forte de venda (Pix, WhatsApp, chamar no privado, entrega, telefone de contato); link, preço e 'a venda' sozinhos não bastam. Sigla com homônimo (TG, T.G., T36) só conta com o tema por perto. Cada candidato passa por revisão de contexto antes da contagem final."
     }
   ]
 }

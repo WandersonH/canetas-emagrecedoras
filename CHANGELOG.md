@@ -2,6 +2,37 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Venda irregular: triagem automática e caderno com números
+
+**O que mudou**
+
+- scripts/venda_irregular.py e data/config/venda_irregular.json: triagem das publicações, comentários e falas transcritas das redes desde 13/05/2022.
+  - Oferta: texto com sinal forte de venda (Pix, WhatsApp, chamar no privado, entrega, telefone de contato); link, preço e "a venda" sozinhos não bastam, porque aparecem em notícia e em descrição de vídeo.
+  - Tipos da oferta: oferta sem receita, produto sem registro, manipulado. À parte, "menção a golpe ou falsificação", que é relato ou alerta e não oferta.
+  - Sigla com homônimo (TG, T.G., T36) só conta com o tema por perto.
+  - Link, telefone e preço aparecem no público só como rótulo.
+- Saídas: data/venda/agregado.json (contagens por tipo, rede e mês e frequência dos sinais) e, no privado, terceiros/venda_irregular/ com texto e autor de cada candidato para a revisão de contexto. Roda no workflow Análises.
+- data/config/livro_de_codigos.json: regra de aplicação do eixo venda irregular e o código "menção a golpe ou falsificação".
+- index.html: caderno Venda irregular com universo examinado, candidatos, ofertas por tipo e rede, candidatos por mês com os marcos, sinais e a regra.
+- scripts/build_corpus.py: textos(limpo=False) devolve o texto cru, com links e cifrões, para a triagem.
+- tests/test_venda_irregular.py.
+
+**Por quê**
+
+- O caderno dizia "Nenhuma coleta de redes foi executada", o que já não era verdade; o pesquisador apontou a seção em 24/11/2026 11h00.
+
+**O que foi executado de verdade**
+
+- Teste local com clone do privado (36.666 textos, 458 candidatos) só para conferir a regra e o desenho; saídas locais descartadas. `python -m unittest discover -s tests`. Os números publicados vêm do workflow Análises.
+
+**O que ficou pendente**
+
+- Revisão de contexto dos candidatos (regra 11); até lá o caderno mostra "revisados: 0".
+
+**Onde está a evidência**
+
+- data/config/venda_irregular.json e este commit.
+
 ## 24/11/2026 · Análises de texto e redes (run 45356332517)
 
 **O que mudou**
