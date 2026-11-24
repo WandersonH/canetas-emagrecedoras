@@ -1,6 +1,6 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": 41,
+  "manifestos_lidos": 44,
   "frentes": [
     {
       "id": "youtube",
@@ -24,16 +24,17 @@
       "nome": "Google Trends",
       "via": "consulta pública",
       "paga": false,
-      "coletas": 1,
+      "coletas": 2,
       "universo": null,
       "universo_fonte": "O Google Trends dá índice relativo de 0 a 100, sem total de buscas.",
-      "lido": 400,
+      "lido": 952,
       "amostra": 4,
       "amostra_como": "grupos de termos com série semanal no Brasil (índice 0-100)",
       "cobertura": "completa",
-      "ultima_coleta": "2026-11-23T20:58:34Z",
+      "ultima_coleta": "2026-11-24T05:14:56Z",
       "runs": [
-        "45264522808"
+        "45264522808",
+        "45331537196"
       ]
     },
     {
@@ -41,16 +42,17 @@
       "nome": "Imprensa",
       "via": "Google Notícias (RSS)",
       "paga": false,
-      "coletas": 1,
+      "coletas": 2,
       "universo": null,
       "universo_fonte": "O Google Notícias não informa o total de resultados.",
-      "lido": 5316,
-      "amostra": 3970,
+      "lido": 10436,
+      "amostra": 7417,
       "amostra_como": "notícias distintas (link) do RSS, por termo e mês, até 100 por consulta",
       "cobertura": "parcial",
-      "ultima_coleta": "2026-11-23T21:06:20Z",
+      "ultima_coleta": "2026-11-24T05:33:48Z",
       "runs": [
-        "45264522808"
+        "45264522808",
+        "45331537196"
       ]
     },
     {
@@ -58,16 +60,17 @@
       "nome": "Checagens",
       "via": "Google Fact Check Tools API",
       "paga": false,
-      "coletas": 1,
+      "coletas": 2,
       "universo": null,
       "universo_fonte": "A Fact Check Tools API não informa quantas checagens existem.",
-      "lido": 6,
-      "amostra": 6,
+      "lido": 8,
+      "amostra": 8,
       "amostra_como": "checagens distintas (link da agência) com data dentro do período lido",
       "cobertura": "parcial",
-      "ultima_coleta": "2026-11-23T21:06:26Z",
+      "ultima_coleta": "2026-11-24T05:33:54Z",
       "runs": [
-        "45264522808"
+        "45264522808",
+        "45331537196"
       ]
     },
     {

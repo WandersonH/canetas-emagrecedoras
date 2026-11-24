@@ -2,6 +2,32 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Coletas grátis (run 45331537196)
+
+**O que mudou**
+
+- Manifestos em data/manifestos/, resultados públicos em data/youtube, data/trends, data/imprensa e data/checagens, e data/estado.json.
+
+**Por quê**
+
+- Coletas grátis pedidas pelo pesquisador em 23/11/2026, no período lido de data/config/projeto.json.
+
+**O que foi executado de verdade**
+
+- Workflow 'Coletas grátis', disparo manual, run 45331537196, frentes: trends imprensa checagens.
+- gravado data/manifestos/trends_20261124T051150Z.json: 4 de 4 grupos
+- gravado data/manifestos/imprensa_20261124T051456Z.json: 7417 notícias, 29 consultas no limite
+- gravado data/manifestos/checagens_20261124T053348Z.json: 8 checagens no período
+- gravado data/estado.json: 9 frentes, 9 com coleta
+
+**O que ficou pendente**
+
+- Escolha do marco e das janelas; leitura e codificação do conteúdo coletado.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45331537196 e os manifestos deste run em data/manifestos/.
+
 ## 24/11/2026 · Página no padrão do Atlas: linha do tempo, gráficos e redes vivas
 
 **O que mudou**

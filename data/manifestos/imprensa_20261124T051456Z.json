@@ -1,0 +1,54 @@
+{
+  "frente": "imprensa",
+  "etapa": "gratis",
+  "run_id": "45331537196",
+  "iniciado_em": "2026-11-24T05:14:56Z",
+  "terminado_em": "2026-11-24T05:33:48Z",
+  "consulta": {
+    "termos": [
+      "semaglutida",
+      "tirzepatida",
+      "liraglutida",
+      "Ozempic",
+      "Wegovy",
+      "Mounjaro",
+      "Saxenda",
+      "caneta emagrecedora",
+      "caneta para emagrecer",
+      "caneta do Paraguai",
+      "tirzepatida manipulada",
+      "semaglutida manipulada",
+      "Ozempic sem receita",
+      "Mounjaro sem receita",
+      "retatrutida"
+    ],
+    "inicio": "2022-05-13",
+    "fim": "2026-11-24",
+    "fatia": "mês",
+    "limite_por_consulta": 100,
+    "fonte": "https://news.google.com/rss/search",
+    "regiao": "BR",
+    "idioma": "pt-BR"
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "O Google Notícias não informa o total de resultados."
+  },
+  "lido": 10436,
+  "amostra": {
+    "n": 7417,
+    "como": "notícias distintas (link) do RSS, por termo e mês, até 100 por consulta"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/imprensa/resultados.json",
+      "sha256": "cd56ce4d71fdf7f71ac02ed9c8a93ca9cdd00c1b306d07e0fd4dac71506de361",
+      "bytes": 5044419,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}

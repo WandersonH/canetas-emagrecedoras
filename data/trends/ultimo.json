@@ -1,8 +1,8 @@
 {
-  "obtido_em": "2026-11-23T20:56:40Z",
-  "run_id": "45264522808",
-  "periodo": "2025-01-01 2026-11-23",
-  "pasta": "data/trends/20261123T205640Z",
+  "obtido_em": "2026-11-24T05:11:50Z",
+  "run_id": "45331537196",
+  "periodo": "2022-05-13 2026-11-24",
+  "pasta": "data/trends/20261124T051150Z",
   "grupos": [
     {
       "nome": "marcas",
@@ -15,9 +15,9 @@
       "serie": "marcas__serie.csv",
       "uf": "marcas__uf.csv",
       "relacionados": "marcas__relacionados.csv",
-      "pontos": 100,
+      "pontos": 238,
       "ufs": 27,
-      "linhas_relacionadas": 179,
+      "linhas_relacionadas": 187,
       "situacao": "ok"
     },
     {
@@ -30,7 +30,7 @@
       "serie": "substancias__serie.csv",
       "uf": "substancias__uf.csv",
       "relacionados": null,
-      "pontos": 100,
+      "pontos": 238,
       "ufs": 27,
       "situacao": "ok"
     },
@@ -44,7 +44,7 @@
       "serie": "nomes_populares__serie.csv",
       "uf": "nomes_populares__uf.csv",
       "relacionados": null,
-      "pontos": 100,
+      "pontos": 238,
       "ufs": 27,
       "situacao": "ok"
     },
@@ -59,9 +59,9 @@
       "serie": "venda_irregular__serie.csv",
       "uf": "venda_irregular__uf.csv",
       "relacionados": "venda_irregular__relacionados.csv",
-      "pontos": 100,
+      "pontos": 238,
       "ufs": 27,
-      "linhas_relacionadas": 87,
+      "linhas_relacionadas": 90,
       "situacao": "ok"
     }
   ]
