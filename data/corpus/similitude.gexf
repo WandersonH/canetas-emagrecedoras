@@ -3,206 +3,206 @@
 <graph defaultedgetype="undirected">
 <attributes class="node"><attribute id="0" title="tipo" type="string"/><attribute id="1" title="peso" type="double"/><attribute id="2" title="comunidade" type="string"/></attributes>
 <nodes>
-<node id="caneta" label="caneta"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="2022"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="mounjaro" label="mounjaro"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="1464"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="ozempic" label="ozempic"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="1313"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="anvisa" label="anvisa"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="832"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="tirzepatida" label="tirzepatida"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="805"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="novo" label="novo"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="708"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="emagrecedora" label="emagrecedora"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="696"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="wegovy" label="wegovy"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="656"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="semaglutida" label="semaglutida"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="636"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="emagrecedoras" label="emagrecedoras"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="575"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="paraguai" label="paraguai"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="423"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="retatrutida" label="retatrutida"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="418"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="emagrecer" label="emagrecer"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="417"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="obesidade" label="obesidade"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="415"/><attvalue for="2" value="G5"/></attvalues></node>
-<node id="medicamento" label="medicamento"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="394"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="aprovar" label="aprovar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="392"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="brasil" label="brasil"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="385"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="peso" label="peso"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="360"/><attvalue for="2" value="G4"/></attvalues></node>
-<node id="estudo" label="estudo"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="344"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="perda" label="perda"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="277"/><attvalue for="2" value="G4"/></attvalues></node>
-<node id="risco" label="risco"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="272"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="uso" label="uso"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="270"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="efeito" label="efeito"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="238"/><attvalue for="2" value="G6"/></attvalues></node>
-<node id="tratamento" label="tratamento"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="224"/><attvalue for="2" value="G5"/></attvalues></node>
-<node id="remedio" label="remedio"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="219"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="medico" label="medico"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="211"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="entender" label="entender"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="201"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="diabetes" label="diabetes"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="198"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="chegar" label="chegar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="197"/><attvalue for="2" value="G7"/></attvalues></node>
-<node id="receita" label="receita"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="196"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="liraglutida" label="liraglutida"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="195"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="alerta" label="alerta"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="190"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="comprimido" label="comprimido"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="186"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="sus" label="sus"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="185"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="generico" label="generico"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="184"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="preco" label="preco"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="184"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="manipular" label="manipular"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="183"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="farmacia" label="farmacia"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="177"/><attvalue for="2" value="G7"/></attvalues></node>
-<node id="proibir" label="proibir"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="166"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="brasileiro" label="brasileiro"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="161"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="perder" label="perder"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="159"/><attvalue for="2" value="G4"/></attvalues></node>
-<node id="patente" label="patente"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="154"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="reduzir" label="reduzir"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="151"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="venda" label="venda"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="147"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="saxenda" label="saxenda"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="146"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="nordisk" label="nordisk"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="142"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="saude" label="saude"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="138"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="dose" label="dose"><attvalues><attvalue for="0" value="kwai"/><attvalue for="1" value="137"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="emagrecimento" label="emagrecimento"><attvalues><attvalue for="0" value="comum"/><attvalue for="1" value="132"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="paciente" label="paciente"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="132"/><attvalue for="2" value="G5"/></attvalues></node>
-<node id="saber" label="saber"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="128"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="vender" label="vender"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="127"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="glp" label="glp"><attvalues><attvalue for="0" value="comum"/><attvalue for="1" value="123"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="usar" label="usar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="115"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="apreender" label="apreender"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="111"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="funcionar" label="funcionar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="105"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="dia" label="dia"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="104"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="mercado" label="mercado"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="99"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="eua" label="eua"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="98"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="versao" label="versao"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="98"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="colateral" label="colateral"><attvalues><attvalue for="0" value="comum"/><attvalue for="1" value="97"/><attvalue for="2" value="G6"/></attvalues></node>
-<node id="ems" label="ems"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="89"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="mulher" label="mulher"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="89"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="mostrar" label="mostrar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="88"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="registro" label="registro"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="88"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="tomar" label="tomar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="86"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="fabricante" label="fabricante"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="85"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="visao" label="visao"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="84"/><attvalue for="2" value="G4"/></attvalues></node>
-<node id="mg" label="mg"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="83"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="nacional" label="nacional"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="83"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="comprar" label="comprar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="81"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="diferenca" label="diferenca"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="78"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="farmaceutico" label="farmaceutico"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="78"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="justica" label="justica"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="78"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="revelar" label="revelar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="78"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="lilly" label="lilly"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="75"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="tratar" label="tratar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="74"/><attvalue for="2" value="G5"/></attvalues></node>
-<node id="ozivy" label="ozivy"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="73"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="ano" label="ano"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="72"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="barato" label="barato"><attvalues><attvalue for="0" value="comum"/><attvalue for="1" value="71"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="corpo" label="corpo"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="70"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="ilegal" label="ilegal"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="69"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="resultado" label="resultado"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="69"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="natural" label="natural"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="68"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="precisar" label="precisar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="68"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="apontar" label="apontar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="67"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="explicar" label="explicar"><attvalues><attvalue for="0" value="comum"/><attvalue for="1" value="66"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="melhor" label="melhor"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="66"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="custar" label="custar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="65"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="kg" label="kg"><attvalues><attvalue for="0" value="kwai"/><attvalue for="1" value="65"/><attvalue for="2" value="G4"/></attvalues></node>
-<node id="ampola" label="ampola"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="64"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="comecar" label="comecar"><attvalues><attvalue for="0" value="kwai"/><attvalue for="1" value="64"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="contar" label="contar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="64"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="falsificado" label="falsificado"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="64"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="irregular" label="irregular"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="64"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="mes" label="mes"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="62"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="vs" label="vs"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="62"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="oral" label="oral"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="61"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="queda" label="queda"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="61"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="conhecer" label="conhecer"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="60"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="caneta" label="caneta"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="3070"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="mounjaro" label="mounjaro"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="2207"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="ozempic" label="ozempic"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="2090"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="tirzepatida" label="tirzepatida"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="1423"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="semaglutida" label="semaglutida"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="1318"/><attvalue for="2" value="G5"/></attvalues></node>
+<node id="medicamento" label="medicamento"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="1240"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="wegovy" label="wegovy"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="1097"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="anvisa" label="anvisa"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="1069"/><attvalue for="2" value="G8"/></attvalues></node>
+<node id="emagrecedora" label="emagrecedora"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="1035"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="novo" label="novo"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="1016"/><attvalue for="2" value="G9"/></attvalues></node>
+<node id="medico" label="medico"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="884"/><attvalue for="2" value="G6"/></attvalues></node>
+<node id="tratamento" label="tratamento"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="837"/><attvalue for="2" value="G4"/></attvalues></node>
+<node id="emagrecer" label="emagrecer"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="830"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="peso" label="peso"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="825"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="emagrecedoras" label="emagrecedoras"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="807"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="obesidade" label="obesidade"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="800"/><attvalue for="2" value="G4"/></attvalues></node>
+<node id="brasil" label="brasil"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="707"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="uso" label="uso"><attvalues><attvalue for="0" value="comum"/><attvalue for="1" value="660"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="saude" label="saude"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="631"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="paraguai" label="paraguai"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="597"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="retatrutida" label="retatrutida"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="595"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="perda" label="perda"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="594"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="estudo" label="estudo"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="588"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="efeito" label="efeito"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="561"/><attvalue for="2" value="G10"/></attvalues></node>
+<node id="risco" label="risco"><attvalues><attvalue for="0" value="tiktok"/><attvalue for="1" value="534"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="emagrecimento" label="emagrecimento"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="520"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="aprovar" label="aprovar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="504"/><attvalue for="2" value="G8"/></attvalues></node>
+<node id="video" label="video"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="481"/><attvalue for="2" value="G7"/></attvalues></node>
+<node id="diabetes" label="diabetes"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="471"/><attvalue for="2" value="G4"/></attvalues></node>
+<node id="glp" label="glp"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="451"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="perder" label="perder"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="449"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="dia" label="dia"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="446"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="usar" label="usar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="437"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="remedio" label="remedio"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="413"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="so" label="so"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="413"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="tomar" label="tomar"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="413"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="precisar" label="precisar"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="410"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="receita" label="receita"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="405"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="dose" label="dose"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="404"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="estar" label="estar"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="402"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="ano" label="ano"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="391"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="liraglutida" label="liraglutida"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="391"/><attvalue for="2" value="G5"/></attvalues></node>
+<node id="entender" label="entender"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="376"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="querer" label="querer"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="371"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="chegar" label="chegar"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="370"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="sus" label="sus"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="368"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="preco" label="preco"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="363"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="paciente" label="paciente"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="347"/><attvalue for="2" value="G4"/></attvalues></node>
+<node id="ficar" label="ficar"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="341"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="farmacia" label="farmacia"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="339"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="saxenda" label="saxenda"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="334"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="acompanhamento" label="acompanhamento"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="328"/><attvalue for="2" value="G6"/></attvalues></node>
+<node id="saber" label="saber"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="322"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="resultado" label="resultado"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="302"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="comprar" label="comprar"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="289"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="brasileiro" label="brasileiro"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="287"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="dar" label="dar"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="286"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="alerta" label="alerta"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="284"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="mercado" label="mercado"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="283"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="patente" label="patente"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="272"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="reduzir" label="reduzir"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="265"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="contar" label="contar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="263"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="corpo" label="corpo"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="262"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="produto" label="produto"><attvalues><attvalue for="0" value="tiktok"/><attvalue for="1" value="259"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="generico" label="generico"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="256"/><attvalue for="2" value="G5"/></attvalues></node>
+<node id="manipular" label="manipular"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="253"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="vender" label="vender"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="252"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="comer" label="comer"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="249"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="comecar" label="comecar"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="247"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="conteudo" label="conteudo"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="245"/><attvalue for="2" value="G6"/></attvalues></node>
+<node id="falar" label="falar"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="245"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="semana" label="semana"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="241"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="colateral" label="colateral"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="239"/><attvalue for="2" value="G10"/></attvalues></node>
+<node id="mostrar" label="mostrar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="238"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="mes" label="mes"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="236"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="passar" label="passar"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="235"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="melhor" label="melhor"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="234"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="importante" label="importante"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="230"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="venda" label="venda"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="228"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="funcionar" label="funcionar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="224"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="massa" label="massa"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="222"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="caso" label="caso"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="220"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="medicacao" label="medicacao"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="219"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="nordisk" label="nordisk"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="213"/><attvalue for="2" value="G9"/></attvalues></node>
+<node id="proibir" label="proibir"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="213"/><attvalue for="2" value="G8"/></attvalues></node>
+<node id="ajudar" label="ajudar"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="210"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="mg" label="mg"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="204"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="real" label="real"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="204"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="nacional" label="nacional"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="203"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="seguir" label="seguir"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="203"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="controlo" label="controlo"><attvalues><attvalue for="0" value="instagram"/><attvalue for="1" value="202"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="vir" label="vir"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="202"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="comprimido" label="comprimido"><attvalues><attvalue for="0" value="imprensa"/><attvalue for="1" value="200"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="explicar" label="explicar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="200"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="gente" label="gente"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="200"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="vez" label="vez"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="199"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="canal" label="canal"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="198"/><attvalue for="2" value="G7"/></attvalues></node>
+<node id="acompanhar" label="acompanhar"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="195"/><attvalue for="2" value="G7"/></attvalues></node>
+<node id="farmaceutico" label="farmaceutico"><attvalues><attvalue for="0" value="x"/><attvalue for="1" value="193"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="gordura" label="gordura"><attvalues><attvalue for="0" value="youtube"/><attvalue for="1" value="193"/><attvalue for="2" value="G3"/></attvalues></node>
 </nodes><edges>
-<edge id="0" source="caneta" target="emagrecedora" weight="691"/>
-<edge id="1" source="caneta" target="emagrecedoras" weight="573"/>
-<edge id="2" source="caneta" target="anvisa" weight="346"/>
-<edge id="3" source="caneta" target="novo" weight="271"/>
-<edge id="4" source="caneta" target="semaglutida" weight="221"/>
-<edge id="5" source="caneta" target="emagrecer" weight="219"/>
-<edge id="6" source="caneta" target="ozempic" weight="196"/>
-<edge id="7" source="caneta" target="paraguai" weight="173"/>
-<edge id="8" source="caneta" target="brasil" weight="149"/>
-<edge id="9" source="caneta" target="obesidade" weight="119"/>
-<edge id="10" source="caneta" target="uso" weight="107"/>
-<edge id="11" source="caneta" target="chegar" weight="93"/>
-<edge id="12" source="caneta" target="brasileiro" weight="92"/>
-<edge id="13" source="caneta" target="efeito" weight="77"/>
-<edge id="14" source="caneta" target="preco" weight="77"/>
-<edge id="15" source="caneta" target="sus" weight="74"/>
-<edge id="16" source="caneta" target="vender" weight="67"/>
-<edge id="17" source="caneta" target="medico" weight="65"/>
-<edge id="18" source="caneta" target="ems" weight="60"/>
-<edge id="19" source="caneta" target="liraglutida" weight="59"/>
-<edge id="20" source="caneta" target="nacional" weight="56"/>
-<edge id="21" source="caneta" target="saude" weight="51"/>
-<edge id="22" source="caneta" target="usar" weight="50"/>
-<edge id="23" source="caneta" target="mulher" weight="43"/>
-<edge id="24" source="caneta" target="mercado" weight="41"/>
-<edge id="25" source="caneta" target="saber" weight="40"/>
-<edge id="26" source="caneta" target="funcionar" weight="39"/>
-<edge id="27" source="caneta" target="ozivy" weight="35"/>
-<edge id="28" source="caneta" target="emagrecimento" weight="31"/>
-<edge id="29" source="caneta" target="comecar" weight="29"/>
-<edge id="30" source="caneta" target="revelar" weight="28"/>
-<edge id="31" source="caneta" target="barato" weight="26"/>
-<edge id="32" source="caneta" target="contar" weight="25"/>
-<edge id="33" source="caneta" target="ano" weight="23"/>
-<edge id="34" source="caneta" target="custar" weight="23"/>
-<edge id="35" source="caneta" target="conhecer" weight="21"/>
-<edge id="36" source="caneta" target="ilegal" weight="20"/>
-<edge id="37" source="caneta" target="explicar" weight="19"/>
-<edge id="38" source="caneta" target="dia" weight="15"/>
-<edge id="39" source="caneta" target="resultado" weight="14"/>
-<edge id="40" source="mounjaro" target="ozempic" weight="381"/>
-<edge id="41" source="mounjaro" target="receita" weight="80"/>
-<edge id="42" source="mounjaro" target="tomar" weight="44"/>
-<edge id="43" source="mounjaro" target="dose" weight="39"/>
-<edge id="44" source="mounjaro" target="melhor" weight="37"/>
-<edge id="45" source="mounjaro" target="falsificado" weight="37"/>
-<edge id="46" source="mounjaro" target="diferenca" weight="33"/>
-<edge id="47" source="mounjaro" target="justica" weight="33"/>
-<edge id="48" source="mounjaro" target="lilly" weight="30"/>
-<edge id="49" source="mounjaro" target="precisar" weight="27"/>
-<edge id="50" source="mounjaro" target="corpo" weight="24"/>
-<edge id="51" source="mounjaro" target="vs" weight="19"/>
-<edge id="52" source="ozempic" target="wegovy" weight="257"/>
-<edge id="53" source="ozempic" target="medicamento" weight="125"/>
-<edge id="54" source="ozempic" target="estudo" weight="121"/>
-<edge id="55" source="ozempic" target="perda" weight="98"/>
-<edge id="56" source="ozempic" target="risco" weight="98"/>
-<edge id="57" source="ozempic" target="patente" weight="83"/>
-<edge id="58" source="ozempic" target="remedio" weight="73"/>
-<edge id="59" source="ozempic" target="entender" weight="73"/>
-<edge id="60" source="ozempic" target="saxenda" weight="52"/>
-<edge id="61" source="ozempic" target="fabricante" weight="44"/>
-<edge id="62" source="ozempic" target="natural" weight="43"/>
-<edge id="63" source="ozempic" target="glp" weight="28"/>
-<edge id="64" source="ozempic" target="farmaceutico" weight="26"/>
-<edge id="65" source="ozempic" target="queda" weight="25"/>
-<edge id="66" source="anvisa" target="aprovar" weight="300"/>
-<edge id="67" source="anvisa" target="proibir" weight="143"/>
-<edge id="68" source="anvisa" target="tirzepatida" weight="119"/>
-<edge id="69" source="anvisa" target="generico" weight="94"/>
-<edge id="70" source="anvisa" target="diabetes" weight="86"/>
-<edge id="71" source="anvisa" target="registro" weight="75"/>
-<edge id="72" source="anvisa" target="retatrutida" weight="67"/>
-<edge id="73" source="anvisa" target="venda" weight="61"/>
-<edge id="74" source="anvisa" target="irregular" weight="32"/>
-<edge id="75" source="tirzepatida" target="manipular" weight="95"/>
-<edge id="76" source="tirzepatida" target="apreender" weight="51"/>
-<edge id="77" source="tirzepatida" target="ampola" weight="51"/>
-<edge id="78" source="tirzepatida" target="mg" weight="27"/>
-<edge id="79" source="tirzepatida" target="mes" weight="14"/>
-<edge id="80" source="novo" target="nordisk" weight="142"/>
-<edge id="81" source="wegovy" target="comprimido" weight="117"/>
-<edge id="82" source="wegovy" target="eua" weight="37"/>
-<edge id="83" source="wegovy" target="versao" weight="30"/>
-<edge id="84" source="wegovy" target="oral" weight="30"/>
-<edge id="85" source="paraguai" target="comprar" weight="44"/>
-<edge id="86" source="obesidade" target="tratamento" weight="100"/>
-<edge id="87" source="obesidade" target="tratar" weight="42"/>
-<edge id="88" source="obesidade" target="paciente" weight="35"/>
-<edge id="89" source="peso" target="perda" weight="182"/>
-<edge id="90" source="peso" target="perder" weight="74"/>
-<edge id="91" source="estudo" target="reduzir" weight="54"/>
-<edge id="92" source="estudo" target="mostrar" weight="49"/>
-<edge id="93" source="estudo" target="apontar" weight="47"/>
-<edge id="94" source="perda" target="visao" weight="68"/>
-<edge id="95" source="risco" target="alerta" weight="75"/>
-<edge id="96" source="efeito" target="colateral" weight="87"/>
-<edge id="97" source="chegar" target="farmacia" weight="77"/>
-<edge id="98" source="perder" target="kg" weight="27"/>
+<edge id="0" source="caneta" target="emagrecedora" weight="1029"/>
+<edge id="1" source="caneta" target="emagrecedoras" weight="802"/>
+<edge id="2" source="caneta" target="anvisa" weight="462"/>
+<edge id="3" source="caneta" target="emagrecer" weight="436"/>
+<edge id="4" source="caneta" target="semaglutida" weight="427"/>
+<edge id="5" source="caneta" target="ozempic" weight="372"/>
+<edge id="6" source="caneta" target="novo" weight="358"/>
+<edge id="7" source="caneta" target="brasil" weight="286"/>
+<edge id="8" source="caneta" target="paraguai" weight="253"/>
+<edge id="9" source="caneta" target="obesidade" weight="245"/>
+<edge id="10" source="caneta" target="uso" weight="230"/>
+<edge id="11" source="caneta" target="medico" weight="220"/>
+<edge id="12" source="caneta" target="saude" weight="191"/>
+<edge id="13" source="caneta" target="usar" weight="175"/>
+<edge id="14" source="caneta" target="risco" weight="171"/>
+<edge id="15" source="caneta" target="emagrecimento" weight="164"/>
+<edge id="16" source="caneta" target="chegar" weight="160"/>
+<edge id="17" source="caneta" target="sus" weight="154"/>
+<edge id="18" source="caneta" target="efeito" weight="148"/>
+<edge id="19" source="caneta" target="preco" weight="144"/>
+<edge id="20" source="caneta" target="brasileiro" weight="141"/>
+<edge id="21" source="caneta" target="farmacia" weight="132"/>
+<edge id="22" source="caneta" target="video" weight="131"/>
+<edge id="23" source="caneta" target="precisar" weight="123"/>
+<edge id="24" source="caneta" target="nacional" weight="109"/>
+<edge id="25" source="caneta" target="mercado" weight="106"/>
+<edge id="26" source="caneta" target="alerta" weight="104"/>
+<edge id="27" source="caneta" target="so" weight="103"/>
+<edge id="28" source="caneta" target="entender" weight="103"/>
+<edge id="29" source="caneta" target="querer" weight="103"/>
+<edge id="30" source="caneta" target="vender" weight="101"/>
+<edge id="31" source="caneta" target="ano" weight="94"/>
+<edge id="32" source="caneta" target="contar" weight="93"/>
+<edge id="33" source="caneta" target="saber" weight="88"/>
+<edge id="34" source="caneta" target="dia" weight="87"/>
+<edge id="35" source="caneta" target="comprar" weight="85"/>
+<edge id="36" source="caneta" target="venda" weight="84"/>
+<edge id="37" source="caneta" target="ficar" weight="81"/>
+<edge id="38" source="caneta" target="comer" weight="75"/>
+<edge id="39" source="caneta" target="comecar" weight="73"/>
+<edge id="40" source="caneta" target="funcionar" weight="73"/>
+<edge id="41" source="caneta" target="corpo" weight="70"/>
+<edge id="42" source="caneta" target="explicar" weight="68"/>
+<edge id="43" source="caneta" target="falar" weight="67"/>
+<edge id="44" source="caneta" target="reduzir" weight="66"/>
+<edge id="45" source="caneta" target="caso" weight="65"/>
+<edge id="46" source="caneta" target="passar" weight="64"/>
+<edge id="47" source="caneta" target="gente" weight="62"/>
+<edge id="48" source="caneta" target="dar" weight="59"/>
+<edge id="49" source="caneta" target="vez" weight="59"/>
+<edge id="50" source="caneta" target="mes" weight="53"/>
+<edge id="51" source="caneta" target="ajudar" weight="52"/>
+<edge id="52" source="caneta" target="vir" weight="52"/>
+<edge id="53" source="caneta" target="real" weight="50"/>
+<edge id="54" source="caneta" target="seguir" weight="40"/>
+<edge id="55" source="mounjaro" target="ozempic" weight="606"/>
+<edge id="56" source="mounjaro" target="tirzepatida" weight="320"/>
+<edge id="57" source="mounjaro" target="peso" weight="200"/>
+<edge id="58" source="mounjaro" target="tomar" weight="154"/>
+<edge id="59" source="mounjaro" target="receita" weight="143"/>
+<edge id="60" source="mounjaro" target="estar" weight="104"/>
+<edge id="61" source="mounjaro" target="dose" weight="95"/>
+<edge id="62" source="mounjaro" target="melhor" weight="61"/>
+<edge id="63" source="mounjaro" target="semana" weight="51"/>
+<edge id="64" source="ozempic" target="wegovy" weight="545"/>
+<edge id="65" source="ozempic" target="medicamento" weight="305"/>
+<edge id="66" source="ozempic" target="saxenda" weight="158"/>
+<edge id="67" source="ozempic" target="patente" weight="120"/>
+<edge id="68" source="ozempic" target="remedio" weight="104"/>
+<edge id="69" source="tirzepatida" target="manipular" weight="135"/>
+<edge id="70" source="tirzepatida" target="retatrutida" weight="110"/>
+<edge id="71" source="semaglutida" target="liraglutida" weight="175"/>
+<edge id="72" source="semaglutida" target="generico" weight="113"/>
+<edge id="73" source="medicamento" target="glp" weight="125"/>
+<edge id="74" source="medicamento" target="produto" weight="72"/>
+<edge id="75" source="medicamento" target="importante" weight="67"/>
+<edge id="76" source="medicamento" target="farmaceutico" weight="54"/>
+<edge id="77" source="wegovy" target="comprimido" weight="124"/>
+<edge id="78" source="anvisa" target="aprovar" weight="359"/>
+<edge id="79" source="anvisa" target="proibir" weight="170"/>
+<edge id="80" source="novo" target="nordisk" weight="213"/>
+<edge id="81" source="medico" target="acompanhamento" weight="179"/>
+<edge id="82" source="medico" target="conteudo" weight="118"/>
+<edge id="83" source="tratamento" target="obesidade" weight="291"/>
+<edge id="84" source="peso" target="perda" weight="392"/>
+<edge id="85" source="peso" target="perder" weight="183"/>
+<edge id="86" source="peso" target="estudo" weight="162"/>
+<edge id="87" source="peso" target="massa" weight="71"/>
+<edge id="88" source="peso" target="resultado" weight="67"/>
+<edge id="89" source="peso" target="controlo" weight="65"/>
+<edge id="90" source="obesidade" target="diabetes" weight="222"/>
+<edge id="91" source="obesidade" target="paciente" weight="75"/>
+<edge id="92" source="estudo" target="mostrar" weight="89"/>
+<edge id="93" source="efeito" target="colateral" weight="219"/>
+<edge id="94" source="emagrecimento" target="medicacao" weight="47"/>
+<edge id="95" source="video" target="canal" weight="72"/>
+<edge id="96" source="perder" target="gordura" weight="54"/>
+<edge id="97" source="dose" target="mg" weight="69"/>
+<edge id="98" source="canal" target="acompanhar" weight="47"/>
 </edges>
 </graph>
 </gexf>

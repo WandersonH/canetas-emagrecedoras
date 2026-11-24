@@ -1,18 +1,20 @@
 caso,rede,comunidade,nos,pct_nos,pct_peso_interno,nos_de_maior_grau
-redes,fontes_termos,1,451,21.77,21.9,Ozempic | Mounjaro | Wegovy | CNN Brasil | O GLOBO
-redes,fontes_termos,2,255,12.31,12.45,tirzepatida | semaglutida | G1 | Assine Abril | VEJA
-redes,fontes_termos,3,220,10.62,5.2,caneta emagrecedora | Terra | NeoFeed | youtube A0040 | Globo
-redes,fontes_termos,4,206,9.94,3.14,caneta para emagrecer | youtube A0074 | Tribuna Online | O POVO | Facebook
-redes,fontes_termos,5,206,9.94,3.23,Mounjaro sem receita | Ozempic sem receita | youtube A0059 | youtube A0255 | youtube A0773
-redes,fontes_termos,6,198,9.56,3.21,caneta do Paraguai | youtube A0065 | youtube A0100 | youtube A0380 | youtube A0887
-redes,fontes_termos,7,145,7.0,3.09,retatrutida | youtube A0084 | Diário do Nordeste | youtube A0828 | youtube A1386
-redes,fontes_termos,8,139,6.71,3.52,tirzepatida manipulada | ICTQ | semaglutida manipulada | UOL Notícias | ClickPB
-redes,fontes_termos,9,126,6.08,2.48,liraglutida | Agência Brasil | JOTA Info | Portal Drauzio Varella | youtube A0057
-redes,fontes_termos,10,126,6.08,2.17,Saxenda | Rádio Itatiaia | Correio Braziliense | youtube A0089 | youtube A0641
-redes,palavras,1,240,35.93,18.59,mounjaro | ozempic | novo | wegovy | peso
-redes,palavras,2,163,24.4,10.72,caneta | emagrecedora | emagrecedoras | paraguai | emagrecer
-redes,palavras,3,89,13.32,9.59,anvisa | semaglutida | aprovar | medicamento | obesidade
-redes,palavras,4,70,10.48,2.78,tirzepatida | manipular | apreender | justica | ilegal
-redes,palavras,5,47,7.04,4.47,dia | rocar | novembro | santo | joao
-redes,palavras,6,33,4.94,1.57,risco | uso | alerta | visao | doenca
-redes,palavras,7,25,3.74,0.62,sus | saude | oferecer | publico | inclusao
+redes,fontes_termos,1,663,13.1,6.2,Mounjaro | UOL | Poder360 | kwai ? | Migalhas
+redes,fontes_termos,2,590,11.66,6.41,caneta emagrecedora | youtube A0179 | NeoFeed | Terra | Globo
+redes,fontes_termos,3,553,10.93,7.2,Ozempic | CNN Brasil | O GLOBO | Exame | BBC
+redes,fontes_termos,4,533,10.53,6.69,liraglutida | Saxenda | x A2654 | x A2513 | JOTA Info
+redes,fontes_termos,5,447,8.83,6.35,tirzepatida | G1 | Campo Grande News | x A2708 | youtube A0266
+redes,fontes_termos,6,414,8.18,3.88,caneta para emagrecer | youtube A0259 | Tribuna Online | O POVO | Facebook
+redes,fontes_termos,7,363,7.17,3.37,caneta do Paraguai | youtube A0645 | youtube A0282 | youtube A0189 | youtube A0488
+redes,fontes_termos,8,357,7.05,5.75,Wegovy | Estadão | Metrópoles | InfoMoney | Valor Econômico
+redes,fontes_termos,9,338,6.68,3.04,Mounjaro sem receita | Ozempic sem receita | youtube A0812 | youtube A0602 | youtube A0647
+redes,fontes_termos,10,318,6.28,5.68,semaglutida | Assine Abril | VEJA | Folha de S.Paulo | Agência Brasil
+redes,fontes_termos,11,252,4.98,3.17,retatrutida | youtube A0254 | x A4473 | youtube A0235 | youtube A0223
+redes,fontes_termos,12,233,4.6,2.98,tirzepatida manipulada | ICTQ | semaglutida manipulada | UOL Notícias | ClickPB
+redes,palavras,1,591,29.33,16.87,caneta | medicamento | ozempic | semaglutida | anvisa
+redes,palavras,2,390,19.35,12.47,tratamento | medico | saude | uso | emagrecimento
+redes,palavras,3,341,16.92,5.35,mounjaro | emagrecer | perder | dia | usar
+redes,palavras,4,260,12.9,2.43,tirzepatida | paraguai | produto | comprar | manipular
+redes,palavras,5,240,11.91,3.39,peso | perda | estudo | glp | retatrutida
+redes,palavras,6,116,5.76,1.33,efeito | risco | alerta | caso | colateral
+redes,palavras,7,68,3.37,0.92,paciente | vida | instagram | rede | oferecer
