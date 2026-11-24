@@ -1,0 +1,36 @@
+{
+  "frente": "transcricao",
+  "etapa": "gratis",
+  "run_id": "45310677443",
+  "iniciado_em": "2026-11-24T02:30:21Z",
+  "terminado_em": "2026-11-24T02:35:09Z",
+  "consulta": {
+    "rede": "kwai",
+    "modelo": "faster-whisper small (int8, CPU)",
+    "idioma": "pt",
+    "como_escolhe": "os 20 vídeos do período com mais visualizações",
+    "duracao_maxima_s": 600,
+    "falhas": []
+  },
+  "universo": {
+    "valor": 82,
+    "fonte": "vídeos da rede já coletados no período lido (repositório privado)"
+  },
+  "lido": 20,
+  "amostra": {
+    "n": 20,
+    "como": "vídeos transcritos entre os mais vistos do período"
+  },
+  "parou_por": "lista_inteira",
+  "custo_usd": 0,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "terceiros/transcricoes/kwai/transcricoes_20261124T023021Z.csv",
+      "sha256": "6d57f688ab564425c5e9c19094c8f66b3a076876c40e4a07c478f7220055db58",
+      "bytes": 25308,
+      "linhas": 21
+    }
+  ],
+  "bloqueios": []
+}

@@ -2,6 +2,30 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Transcrição (run 45310677443)
+
+**O que mudou**
+
+- Manifestos em data/manifestos/ e contagens em data/transcricoes/resumo.json.
+
+**Por quê**
+
+- Transcrição pedida pelo pesquisador em 23/11/2026; feita sem custo no runner.
+
+**O que foi executado de verdade**
+
+- Workflow 'Transcrição (Whisper)', run 45310677443, redes: tiktok kwai.
+- gravado data/manifestos/transcricao_20261124T021332Z.json: tiktok, 59 de 60 vídeos transcritos
+- gravado data/manifestos/transcricao_20261124T023021Z.json: kwai, 20 de 20 vídeos transcritos
+
+**O que ficou pendente**
+
+- Rodar as análises para levar as transcrições anonimizadas ao corpus.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45310677443 e os manifestos deste run.
+
 ## 24/11/2026 · Transcrição: ffmpeg instalado no runner
 
 **O que mudou**

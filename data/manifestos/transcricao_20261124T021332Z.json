@@ -1,0 +1,41 @@
+{
+  "frente": "transcricao",
+  "etapa": "gratis",
+  "run_id": "45310677443",
+  "iniciado_em": "2026-11-24T02:13:32Z",
+  "terminado_em": "2026-11-24T02:30:21Z",
+  "consulta": {
+    "rede": "tiktok",
+    "modelo": "faster-whisper small (int8, CPU)",
+    "idioma": "pt",
+    "como_escolhe": "os 60 vídeos do período com mais visualizações",
+    "duracao_maxima_s": 600,
+    "falhas": [
+      {
+        "item_id": "7623897871888157965",
+        "motivo": "RuntimeError: ERROR: [TikTok] 7623897871888157965: This post may not be comfortable for some audiences. Log in for access. Use --cookies-from-browser or --cookies for the authentication. See  https://"
+      }
+    ]
+  },
+  "universo": {
+    "valor": 603,
+    "fonte": "vídeos da rede já coletados no período lido (repositório privado)"
+  },
+  "lido": 60,
+  "amostra": {
+    "n": 59,
+    "como": "vídeos transcritos entre os mais vistos do período"
+  },
+  "parou_por": "lista_inteira",
+  "custo_usd": 0,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "terceiros/transcricoes/tiktok/transcricoes_20261124T021332Z.csv",
+      "sha256": "d93de6d92f489f71c4c519b7e413925c6b40d7c36896ed722f0347d0d32f91ae",
+      "bytes": 35856,
+      "linhas": 60
+    }
+  ],
+  "bloqueios": []
+}
