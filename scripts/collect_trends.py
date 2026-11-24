@@ -109,7 +109,7 @@ def main(argumentos=None) -> int:
     leitor.add_argument("--run-id", default=None)
     opcoes = leitor.parse_args(argumentos)
     cfg = comum.config("trends")
-    inicio, fim = rede.periodo_lido()
+    inicio, fim = rede.periodo_lido(gratuita=True)
     periodo = f"{inicio.isoformat()} {fim.isoformat()}"
     manifesto = rede.Manifesto("trends", {"grupos": cfg["grupos"], "periodo": periodo, "geo": cfg["geo"],
                                           "aviso": "Índice de 0 a 100 relativo dentro de cada grupo; não é volume."},

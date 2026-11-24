@@ -2,6 +2,32 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Coletas gratuitas desde 13/05/2022; referência do critério de qualidade
+
+**O que mudou**
+
+- data/config/projeto.json: nova janela periodo_lido_gratuitas, de 13/05/2022 (primeira aprovação da tirzepatida no mundo, nos Estados Unidos) até a data da coleta, com a decisão registrada. A janela das redes pagas segue desde 01/01/2025.
+- scripts/rede.py: periodo_lido(gratuita=True) usa a janela das gratuitas. Usam essa janela: YouTube (recente e carga histórica), Google Trends, imprensa, Fact Check Tools, checagens das agências, Câmara e Anvisa. Redes pagas, comentários e transcrição seguem desde 01/01/2025.
+- A carga histórica do YouTube continua do mês mais recente para o mais antigo: termina 2025 e 2026 e depois desce até maio de 2022, conforme a cota diária.
+- index.html: o panorama e o caderno Recorte mostram as duas janelas.
+- data/config/livro_de_codigos.json e projeto.json: referência de aplicação dos critérios de qualidade a vídeos (Zhang et al., 2020, Annals of Translational Medicine), com a regra de 0 a 4 pontos e a medida de popularidade por visualizações por dia; o índice completo da referência pede descurtidas, que as plataformas não informam (⛔). O PDF ficou no repositório privado (semente/referencias/).
+
+**Por quê**
+
+- Decisão do pesquisador em 24/11/2026 02h09 (chat): "Sim, gratuitas desde 13/05/2022", e o envio do artigo como "referência do JAMA".
+
+**O que foi executado de verdade**
+
+- `python -m unittest discover -s tests`. Commit 756c242 no repositório privado com o PDF.
+
+**O que ficou pendente**
+
+- Coletar de novo Trends, imprensa, checagens, agências e Câmara com a janela nova. YouTube de 2022 a 2024: depois de sexta, pela cota.
+
+**Onde está a evidência**
+
+- data/config/projeto.json (janelas.periodo_lido_gratuitas) e este commit.
+
 ## 24/11/2026 · Transcrição (run 45313803598)
 
 **O que mudou**

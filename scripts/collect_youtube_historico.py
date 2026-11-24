@@ -106,7 +106,7 @@ def main(argumentos=None) -> int:
     opcoes = leitor.parse_args(argumentos)
     privado = pathlib.Path(opcoes.privado)
     chave = os.environ.get("YOUTUBE_API_KEY", "")
-    inicio, fim = rede.periodo_lido()
+    inicio, fim = rede.periodo_lido(gratuita=True)
     termos = [t["termo"] for t in rede.termos_de_busca()]
     estado_arq = privado / "historico" / "youtube_estado.json"
     estado = comum.carregar(estado_arq) if estado_arq.exists() else {"feitos": {}}

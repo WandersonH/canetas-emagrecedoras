@@ -72,7 +72,7 @@ def main(argumentos=None) -> int:
     leitor = argparse.ArgumentParser(description="Google Notícias por termo e mês.")
     leitor.add_argument("--run-id", default=None)
     opcoes = leitor.parse_args(argumentos)
-    inicio, fim = rede.periodo_lido()
+    inicio, fim = rede.periodo_lido(gratuita=True)
     termos = rede.termos_de_busca()
     fatias = meses(inicio, fim)
     manifesto = rede.Manifesto("imprensa", {"termos": [t["termo"] for t in termos], "inicio": inicio.isoformat(),

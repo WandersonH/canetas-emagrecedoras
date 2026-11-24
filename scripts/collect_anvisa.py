@@ -458,7 +458,7 @@ def main(argumentos=None) -> int:
     opcoes = leitor.parse_args(argumentos)
     chaves_ = chaves()
     pat = padrao(chaves_)
-    inicio, _ = rede.periodo_lido()
+    inicio, _ = rede.periodo_lido(gratuita=True)
     ok = 0
     for frente in opcoes.frentes:
         try:

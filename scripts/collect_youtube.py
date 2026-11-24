@@ -145,7 +145,7 @@ def reconstruir(privado: pathlib.Path, pasta: pathlib.Path, run_id: str | None) 
     buscas, videos = ler_bruto(pasta)
     carimbo = pasta.name  # AAAAMMDDTHHMMSSZ do início da coleta original
     iniciado = f"{carimbo[0:4]}-{carimbo[4:6]}-{carimbo[6:8]}T{carimbo[9:11]}:{carimbo[11:13]}:{carimbo[13:15]}Z"
-    inicio, fim = rede.periodo_lido(hoje=datetime.date.fromisoformat(iniciado[:10]))
+    inicio, fim = rede.periodo_lido(hoje=datetime.date.fromisoformat(iniciado[:10]), gratuita=True)
     manifesto = rede.Manifesto("youtube", {"termos": [b["termo"] for b in buscas], "inicio": inicio.isoformat(),
                                            "fim": fim.isoformat(), "ordem": "date", "regiao": "BR", "idioma": "pt",
                                            "max_paginas_por_termo": MAX_PAGINAS, "por_pagina": POR_PAGINA,
@@ -187,7 +187,7 @@ def main(argumentos=None) -> int:
     if opcoes.do_bruto:
         return reconstruir(privado, privado / opcoes.do_bruto, opcoes.run_id)
     chave = os.environ.get("YOUTUBE_API_KEY", "")
-    inicio, fim = rede.periodo_lido()
+    inicio, fim = rede.periodo_lido(gratuita=True)
     termos = rede.termos_de_busca()
     manifesto = rede.Manifesto("youtube", {"termos": [t["termo"] for t in termos], "inicio": inicio.isoformat(),
                                            "fim": fim.isoformat(), "ordem": "date", "regiao": "BR", "idioma": "pt",

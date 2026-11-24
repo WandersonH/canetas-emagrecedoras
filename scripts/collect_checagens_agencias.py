@@ -118,7 +118,7 @@ def main(argumentos=None, leitor=rede.pegar, raiz: pathlib.Path | None = None) -
     opcoes.add_argument("--run-id", default=None)
     opcoes = opcoes.parse_args(argumentos)
     raiz = raiz or comum.RAIZ
-    inicio, fim = rede.periodo_lido(raiz)
+    inicio, fim = rede.periodo_lido(raiz, gratuita=True)
     manifesto = rede.Manifesto("checagens_agencias", {"fonte": imprensa.URL, "agencias": AGENCIAS, "grupos": GRUPOS,
                                                       "inicio": inicio.isoformat(), "fim": fim.isoformat()},
                                opcoes.run_id)

@@ -102,6 +102,11 @@
       "fim": null,
       "decisao": "Coletas grátis pedidas pelo pesquisador em 23/11/2026 (chat) antes da escolha do marco. Período amplo, de 01/01/2025 até a data de cada coleta, que cobre todos os marcos candidatos; o marco escolhido depois divide este período em linha de base e núcleo, sem nova coleta."
     },
+    "periodo_lido_gratuitas": {
+      "inicio": "13/05/2022",
+      "fim": null,
+      "decisao": "Decisão do pesquisador em 24/11/2026 02h09 (chat): as coletas gratuitas (YouTube, Google Trends, imprensa, checagens e dados públicos) começam em 13/05/2022, data da primeira aprovação da tirzepatida no mundo, nos Estados Unidos; as pagas seguem desde 01/01/2025. A linha do tempo de marcos regulatórios também começa nessa data. O YouTube de 2022 a 2024 entra depois de fechar 2025 e 2026, conforme a cota diária."
+    },
     "base": {
       "inicio": null,
       "fim": null
@@ -119,6 +124,11 @@
     {
       "uso": "quatro critérios de qualidade da informação em saúde (autoria, atribuição, divulgação de interesses, atualidade)",
       "citacao": "SILBERG, William M.; LUNDBERG, George D.; MUSACCHIO, Robert A. Assessing, controlling, and assuring the quality of medical information on the Internet. JAMA, v. 277, n. 15, p. 1244-1245, 1997."
+    },
+    {
+      "uso": "aplicação dos quatro critérios de qualidade a vídeos de plataforma pública (um ponto por critério, 0 a 4) e medida de popularidade por visualizações por dia",
+      "citacao": "ZHANG, Shun et al. Concerns of quality, utility, and reliability of laparoscopic gastrectomy for gastric cancer in public video sharing platform. Annals of Translational Medicine, v. 8, n. 5, p. 196, 2020. DOI: 10.21037/atm.2020.01.78.",
+      "enviada_em": "24/11/2026, pelo pesquisador, como referência do critério de qualidade"
     }
   ]
 }

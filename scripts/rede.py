@@ -100,9 +100,13 @@ def termos_de_busca(raiz: pathlib.Path | None = None) -> list[dict]:
             for item in familia["itens"] if item.get("busca")]
 
 
-def periodo_lido(raiz: pathlib.Path | None = None, hoje: datetime.date | None = None) -> tuple[datetime.date, datetime.date]:
-    """Período lido do projeto, em datas. Fim ausente é a data da coleta."""
-    janela = comum.config("projeto", raiz)["janelas"]["periodo_lido"]
+def periodo_lido(raiz: pathlib.Path | None = None, hoje: datetime.date | None = None,
+                 gratuita: bool = False) -> tuple[datetime.date, datetime.date]:
+    """Período lido do projeto, em datas. Fim ausente é a data da coleta.
+
+    gratuita=True usa janelas.periodo_lido_gratuitas (coletas sem custo), quando existe."""
+    janelas = comum.config("projeto", raiz)["janelas"]
+    janela = janelas.get("periodo_lido_gratuitas") if gratuita and janelas.get("periodo_lido_gratuitas") else janelas["periodo_lido"]
     inicio = datetime.datetime.strptime(janela["inicio"], "%d/%m/%Y").date()
     fim = datetime.datetime.strptime(janela["fim"], "%d/%m/%Y").date() if janela.get("fim") else (
         hoje or datetime.datetime.now(datetime.timezone.utc).date())

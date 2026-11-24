@@ -44,7 +44,7 @@ def main(argumentos=None, abrir=collect_anvisa.abrir_remoto, raiz: pathlib.Path 
     opcoes.add_argument("--run-id", default=None)
     opcoes = opcoes.parse_args(argumentos)
     raiz = raiz or comum.RAIZ
-    inicio, fim = rede.periodo_lido(raiz)
+    inicio, fim = rede.periodo_lido(raiz, gratuita=True)
     chaves_ = chaves(raiz)
     pat = collect_anvisa.padrao(chaves_)
     anos = list(range(inicio.year, fim.year + 1))

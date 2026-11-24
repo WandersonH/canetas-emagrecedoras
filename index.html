@@ -198,8 +198,8 @@
     var lido=com.reduce(function(s,x){return s+(Number(x.lido)||0);},0);
     var ultima=com.map(function(x){return x.ultima_coleta;}).filter(Boolean).sort().pop();
     $("chipColeta").textContent=com.length?"● Última coleta "+dataBR(ultima):"● Nenhuma coleta executada";
-    var p=(projeto.janelas||{}).periodo_lido||{};
-    por("pan-janela",vazio(p.inicio)?"Período lido: ⛔":"Período lido: "+esc(p.inicio)+" a "+(vazio(p.fim)?"data da coleta":esc(p.fim))+". Marco: "+(vazio((projeto.marco||{}).escolhido)?"⛔ ainda não escolhido":esc(projeto.marco.escolhido))+".");
+    var p=(projeto.janelas||{}).periodo_lido||{},pg=(projeto.janelas||{}).periodo_lido_gratuitas||{};
+    por("pan-janela",vazio(p.inicio)?"Período lido: ⛔":"Coletas gratuitas: "+(vazio(pg.inicio)?esc(p.inicio):esc(pg.inicio))+" a "+(vazio(p.fim)?"data da coleta":esc(p.fim))+". Redes pagas: "+esc(p.inicio)+" a "+(vazio(p.fim)?"data da coleta":esc(p.fim))+". Marco: "+(vazio((projeto.marco||{}).escolhido)?"⛔ ainda não escolhido":esc(projeto.marco.escolhido))+".");
     por("pan-kpis",[
       ["Frentes de coleta",num(f.length),"grátis e pagas"],
       ["Frentes com coleta",com.length?num(com.length):AUS,"com manifesto gravado"],
@@ -217,10 +217,11 @@
   function recorte(p){
     por("rec-pergunta",vazio(p.pergunta)?'<div class="ce-vazio"><b>⛔ Ainda não definida.</b></div>':"<p>"+esc(p.pergunta)+"</p>");
     por("rec-hipoteses",vazio(p.hipoteses)?'<div class="ce-vazio"><b>⛔ Ainda não definidas.</b></div>':'<ul class="ce-lista">'+p.hipoteses.map(function(h){return "<li>"+esc(h)+"</li>";}).join("")+"</ul>");
-    var j=p.janelas||{},b=j.base||{},n=j.nucleo||{},l=j.periodo_lido||{},m=p.marco||{};
+    var j=p.janelas||{},b=j.base||{},n=j.nucleo||{},l=j.periodo_lido||{},lg=j.periodo_lido_gratuitas||{},m=p.marco||{};
     por("rec-janelas","<tbody>"+
       "<tr><th>Marco escolhido</th><td>"+val(m.escolhido)+"</td></tr>"+
-      "<tr><th>Período lido</th><td>"+val(l.inicio)+" a "+(vazio(l.fim)?"data da coleta":esc(l.fim))+(vazio(l.decisao)?"":'<br><small class="ce-nota">'+esc(l.decisao)+"</small>")+"</td></tr>"+
+      "<tr><th>Período lido · coletas gratuitas</th><td>"+val(lg.inicio)+" a "+(vazio(lg.fim)?"data da coleta":esc(lg.fim))+(vazio(lg.decisao)?"":'<br><small class="ce-nota">'+esc(lg.decisao)+"</small>")+"</td></tr>"+
+      "<tr><th>Período lido · redes pagas</th><td>"+val(l.inicio)+" a "+(vazio(l.fim)?"data da coleta":esc(l.fim))+(vazio(l.decisao)?"":'<br><small class="ce-nota">'+esc(l.decisao)+"</small>")+"</td></tr>"+
       "<tr><th>Linha de base</th><td>"+val(b.inicio)+" a "+val(b.fim)+"</td></tr>"+
       "<tr><th>Núcleo</th><td>"+val(n.inicio)+" a "+val(n.fim)+"</td></tr>"+
       "<tr><th>Data que conta</th><td>"+val(j.criterio)+"</td></tr>"+
@@ -247,7 +248,7 @@
 
   function codigos(l){
     por("cod-eixos",(l.eixos||[]).map(function(e){
-      return '<div class="card"><div class="eyebrow">'+esc(e.origem)+'</div><h2 class="tk-h2">'+esc(e.titulo)+"</h2><p>"+esc(e.pergunta)+'</p><div class="tablewrap"><table class="datatable"><thead><tr><th>Código</th><th>Definição</th><th class="ce-num">Publicações</th></tr></thead><tbody>'+(e.codigos||[]).map(function(c){return "<tr><td><b>"+esc(c.codigo)+"</b></td><td>"+esc(c.definicao)+'</td><td class="ce-num">'+AUS+"</td></tr>";}).join("")+'</tbody></table></div><p class="ce-nota">Regras de aplicação: '+val(e.operacao)+"</p></div>";
+      return '<div class="card"><div class="eyebrow">'+esc(e.origem)+'</div><h2 class="tk-h2">'+esc(e.titulo)+"</h2><p>"+esc(e.pergunta)+'</p><div class="tablewrap"><table class="datatable"><thead><tr><th>Código</th><th>Definição</th><th class="ce-num">Publicações</th></tr></thead><tbody>'+(e.codigos||[]).map(function(c){return "<tr><td><b>"+esc(c.codigo)+"</b></td><td>"+esc(c.definicao)+'</td><td class="ce-num">'+AUS+"</td></tr>";}).join("")+'</tbody></table></div><p class="ce-nota">Regras de aplicação: '+val(e.operacao)+"</p>"+(e.popularidade?'<p class="ce-nota">Popularidade: '+esc(e.popularidade.medida)+". "+esc(e.popularidade.nota)+"</p>":"")+"</div>";
     }).join(""));
   }
 

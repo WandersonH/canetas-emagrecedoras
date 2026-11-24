@@ -72,7 +72,7 @@ def main(argumentos=None) -> int:
     leitor.add_argument("--run-id", default=None)
     opcoes = leitor.parse_args(argumentos)
     chave = os.environ.get("FACTCHECK_API_KEY") or os.environ.get("YOUTUBE_API_KEY") or ""
-    inicio, fim = rede.periodo_lido()
+    inicio, fim = rede.periodo_lido(gratuita=True)
     dias = (datetime.datetime.now(datetime.timezone.utc).date() - inicio).days + 1
     termos = rede.termos_de_busca()
     manifesto = rede.Manifesto("checagens", {"termos": [t["termo"] for t in termos], "inicio": inicio.isoformat(),

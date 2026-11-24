@@ -116,7 +116,7 @@
       "id": "qualidade_da_informacao",
       "titulo": "Qualidade da informação",
       "pergunta": "A publicação cumpre os quatro critérios de referência? Cada critério vale um ponto.",
-      "origem": "critérios da referência",
+      "origem": "critérios de referência de qualidade da informação em saúde (Silberg et al., 1997), na forma aplicada a vídeos por Zhang et al. (2020)",
       "codigos": [
         {
           "codigo": "autoria",
@@ -135,7 +135,11 @@
           "definicao": "A data de publicação pode ser rastreada."
         }
       ],
-      "operacao": null
+      "operacao": "Um ponto por critério presente; a pontuação vai de 0 a 4. Dois codificadores; divergência resolvida em conjunto.",
+      "popularidade": {
+        "medida": "visualizações por dia desde a publicação",
+        "nota": "O índice da referência de aplicação a vídeos (Video Power Index) multiplica a razão de visualizações por dia pela razão de curtidas sobre curtidas e descurtidas. As plataformas não informam descurtidas, então o índice completo fica ⛔ e entra só a razão de visualizações por dia."
+      }
     },
     {
       "id": "venda_irregular",
