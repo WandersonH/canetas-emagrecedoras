@@ -1,25 +1,23 @@
 caso,rede,comunidade,nos,pct_nos,pct_peso_interno,nos_de_maior_grau
-redes,fontes_termos,1,681,10.22,5.97,Mounjaro | VEJA | UOL | Poder360 | kwai (sem autor informado)
-redes,fontes_termos,2,601,9.02,6.78,caneta emagrecedora | Metrópoles | Folha de S.Paulo | Terra | NeoFeed
-redes,fontes_termos,3,595,8.93,7.99,Ozempic | CNN Brasil | O GLOBO | Exame | Valor Econômico
-redes,fontes_termos,4,525,7.88,5.65,liraglutida | Saxenda | x A2654 | x A2513 | JOTA Info
-redes,fontes_termos,5,491,7.37,6.38,tirzepatida | G1 | Campo Grande News | Panorama Farmacêutico | x A2708
-redes,fontes_termos,6,415,6.23,3.31,caneta para emagrecer | youtube A0259 | O POVO | Facebook | Portal UAI
-redes,fontes_termos,7,393,5.9,4.73,Wegovy | Estadão | x A1935 | x A2426 | Olhar Digital
-redes,fontes_termos,8,359,5.39,2.86,caneta do Paraguai | youtube A0645 | youtube A0282 | youtube A0189 | youtube A0488
-redes,fontes_termos,9,338,5.07,5.25,semaglutida | Assine Abril | InfoMoney | Agência Brasil | Afya | Home
-redes,fontes_termos,10,337,5.06,2.6,Mounjaro sem receita | Ozempic sem receita | youtube A0812 | youtube A0602 | youtube A0631
-redes,fontes_termos,11,258,3.87,2.72,retatrutida | youtube A0254 | x A4473 | youtube A0235 | youtube A0223
-redes,fontes_termos,12,228,3.42,2.5,tirzepatida manipulada | ICTQ | semaglutida manipulada | ClickPB | Consultor Jurídico
-redes,hashtags,1,64,36.36,8.33,#shorts | #saude | #canetasemagrecedoras | #anvisa | #diabetes
-redes,hashtags,2,34,19.32,15.71,#emagrecimento | #mounjaro | #tirzepatida | #ozempic | #wegovy
-redes,hashtags,3,24,13.64,1.89,#dieta | #emagrecer | #fitness | #academia | #musculação
-redes,hashtags,4,22,12.5,8.05,#semaglutida | #canetaemagrecedora | #glp1 | #obesidade | #perdadepeso
-redes,hashtags,5,18,10.23,1.85,#retatrutida | #metabolismo | #ciencia | #vidasaudavel | #saudemetabolica
-redes,hashtags,6,12,6.82,1.45,#nutrição | #endocrinologia | #monjaro | #emagrecimentosaudável | #nutricionista
-redes,hashtags,7,2,1.14,0.03,#flaviomiliciano | #abreosigiloflávio
-redes,palavras,1,697,34.95,20.76,caneta | medicamento | ozempic | semaglutida | tirzepatida
-redes,palavras,2,556,27.88,16.15,mounjaro | emagrecer | emagrecimento | estar | so
-redes,palavras,3,352,17.65,6.51,medico | tratamento | saude | uso | video
-redes,palavras,4,315,15.8,5.25,peso | perda | efeito | risco | estudo
-redes,palavras,5,64,3.21,0.38,grande | rio | santo | novembro | rocar
+redes,fontes_termos,1,806,3.23,6.12,Mounjaro | VEJA | UOL | kwai (sem autor informado) | Instagram
+redes,fontes_termos,2,798,3.2,7.28,caneta emagrecedora | Metrópoles | Terra | NeoFeed | UOL Notícias
+redes,fontes_termos,3,685,2.75,7.69,Ozempic | CNN Brasil | O GLOBO | Exame | Valor Econômico
+redes,fontes_termos,4,601,2.41,6.89,tirzepatida | G1 | Campo Grande News | Panorama Farmacêutico | x A3655
+redes,fontes_termos,5,577,2.31,5.34,liraglutida | Saxenda | x A3601 | x A3460 | JOTA Info
+redes,fontes_termos,6,564,2.26,4.08,caneta para emagrecer | youtube A1410 | youtube A0259 | youtube A0781 | youtube A1047
+redes,fontes_termos,7,431,1.73,4.46,Wegovy | Estadão | x A2882 | x A3373 | Olhar Digital
+redes,fontes_termos,8,420,1.68,5.51,semaglutida | Assine Abril | Folha de S.Paulo | InfoMoney | Agência Brasil
+redes,fontes_termos,9,377,1.51,2.76,caneta do Paraguai | youtube A0282 | youtube A0488 | youtube A0132 | youtube A1051
+redes,fontes_termos,10,369,1.48,3.6,retatrutida | youtube A0254 | youtube A0223 | youtube A0448 | x A5420
+redes,fontes_termos,11,329,1.32,2.23,Mounjaro sem receita | Ozempic sem receita | youtube A0602 | youtube A1923 | youtube A1104
+redes,hashtags,1,79,24.09,22.24,#emagrecimento | #mounjaro | #tirzepatida | #ozempic | #semaglutida
+redes,hashtags,2,69,21.04,5.36,#saude | #shorts | #bemestar | #medicina | #viral
+redes,hashtags,3,65,19.82,4.52,#dieta | #nutrição | #emagrecer | #fitness | #vidasaudavel
+redes,hashtags,4,55,16.77,4.07,#obesidade | #perdadepeso | #retatrutida | #emagrecimentosaudavel | #endocrinologia
+redes,hashtags,5,55,16.77,3.81,#saúde | #canetasemagrecedoras | #anvisa | #diabetes | #medicamentos
+redes,hashtags,6,5,1.52,0.14,#toguro | #mansaomaromba | #slimex | #cimed | #shapeinexplicavel
+redes,palavras,1,670,34.18,16.41,caneta | medicamento | mounjaro | tratamento | ozempic
+redes,palavras,2,543,27.7,17.58,estar | perder | tomar | so | dia
+redes,palavras,3,364,18.57,8.71,medico | video | saude | acompanhamento | precisar
+redes,palavras,4,320,16.33,6.87,peso | emagrecer | efeito | emagrecimento | perda
+redes,palavras,5,37,1.89,0.25,sie | nie | ze | und | ich

@@ -1,61 +1,61 @@
 caso,rede,medida,posicao,no,valor,comunidade
-redes,fontes_termos,grau ponderado,1,Ozempic,2064.0,3
-redes,fontes_termos,grau ponderado,2,tirzepatida,1864.0,5
-redes,fontes_termos,grau ponderado,3,caneta emagrecedora,1858.0,2
-redes,fontes_termos,grau ponderado,4,semaglutida,1801.0,9
-redes,fontes_termos,grau ponderado,5,Mounjaro,1783.0,1
-redes,fontes_termos,PageRank,1,Ozempic,0.056225,3
-redes,fontes_termos,PageRank,2,caneta emagrecedora,0.053378,2
-redes,fontes_termos,PageRank,3,Mounjaro,0.051906,1
-redes,fontes_termos,PageRank,4,tirzepatida,0.049279,5
-redes,fontes_termos,PageRank,5,semaglutida,0.043988,9
-redes,fontes_termos,intermediação (betweenness),1,caneta emagrecedora,0.14989,2
-redes,fontes_termos,intermediação (betweenness),2,Mounjaro,0.135456,1
-redes,fontes_termos,intermediação (betweenness),3,Ozempic,0.131343,3
-redes,fontes_termos,intermediação (betweenness),4,tirzepatida,0.118861,5
-redes,fontes_termos,intermediação (betweenness),5,semaglutida,0.088556,9
-redes,fontes_termos,autovetor (eigenvector),1,Ozempic,0.362237,3
-redes,fontes_termos,autovetor (eigenvector),2,G1,0.328055,5
-redes,fontes_termos,autovetor (eigenvector),3,Mounjaro,0.30953,1
-redes,fontes_termos,autovetor (eigenvector),4,semaglutida,0.284298,9
-redes,fontes_termos,autovetor (eigenvector),5,CNN Brasil,0.282522,3
-redes,hashtags,grau ponderado,1,#emagrecimento,1942.0,2
-redes,hashtags,grau ponderado,2,#mounjaro,1796.0,2
-redes,hashtags,grau ponderado,3,#tirzepatida,1350.0,2
-redes,hashtags,grau ponderado,4,#ozempic,1168.0,2
-redes,hashtags,grau ponderado,5,#semaglutida,1037.0,4
-redes,hashtags,PageRank,1,#emagrecimento,0.070742,2
-redes,hashtags,PageRank,2,#mounjaro,0.066116,2
-redes,hashtags,PageRank,3,#tirzepatida,0.049254,2
-redes,hashtags,PageRank,4,#ozempic,0.04287,2
-redes,hashtags,PageRank,5,#semaglutida,0.036943,4
-redes,hashtags,intermediação (betweenness),1,#shorts,0.09914,1
-redes,hashtags,intermediação (betweenness),2,#mounjaro,0.098759,2
-redes,hashtags,intermediação (betweenness),3,#emagrecimento,0.072965,2
-redes,hashtags,intermediação (betweenness),4,#ozempic,0.062737,2
-redes,hashtags,intermediação (betweenness),5,#tirzepatida,0.050899,2
-redes,hashtags,autovetor (eigenvector),1,#emagrecimento,0.437993,2
-redes,hashtags,autovetor (eigenvector),2,#mounjaro,0.433053,2
-redes,hashtags,autovetor (eigenvector),3,#tirzepatida,0.364587,2
-redes,hashtags,autovetor (eigenvector),4,#ozempic,0.291826,2
-redes,hashtags,autovetor (eigenvector),5,#semaglutida,0.267451,4
-redes,palavras,grau ponderado,1,caneta,27873.0,1
-redes,palavras,grau ponderado,2,medicamento,15631.0,1
-redes,palavras,grau ponderado,3,mounjaro,15577.0,2
-redes,palavras,grau ponderado,4,ozempic,15388.0,1
-redes,palavras,grau ponderado,5,semaglutida,11317.0,1
-redes,palavras,PageRank,1,caneta,0.03054,1
-redes,palavras,PageRank,2,mounjaro,0.017283,2
-redes,palavras,PageRank,3,ozempic,0.016839,1
-redes,palavras,PageRank,4,medicamento,0.016355,1
-redes,palavras,PageRank,5,tirzepatida,0.011735,1
-redes,palavras,intermediação (betweenness),1,caneta,0.162948,1
-redes,palavras,intermediação (betweenness),2,mounjaro,0.077814,2
-redes,palavras,intermediação (betweenness),3,ozempic,0.06835,1
-redes,palavras,intermediação (betweenness),4,medicamento,0.064829,1
-redes,palavras,intermediação (betweenness),5,tirzepatida,0.042877,1
-redes,palavras,autovetor (eigenvector),1,caneta,0.398745,1
-redes,palavras,autovetor (eigenvector),2,ozempic,0.246442,1
-redes,palavras,autovetor (eigenvector),3,mounjaro,0.229749,2
-redes,palavras,autovetor (eigenvector),4,medicamento,0.213137,1
-redes,palavras,autovetor (eigenvector),5,semaglutida,0.197045,1
+redes,fontes_termos,grau ponderado,1,Ozempic,2244.0,3
+redes,fontes_termos,grau ponderado,2,caneta emagrecedora,2232.0,2
+redes,fontes_termos,grau ponderado,3,tirzepatida,2191.0,4
+redes,fontes_termos,grau ponderado,4,Mounjaro,2053.0,1
+redes,fontes_termos,grau ponderado,5,semaglutida,2001.0,8
+redes,fontes_termos,PageRank,1,caneta emagrecedora,0.042465,2
+redes,fontes_termos,PageRank,2,Ozempic,0.039674,3
+redes,fontes_termos,PageRank,3,Mounjaro,0.038439,1
+redes,fontes_termos,PageRank,4,tirzepatida,0.037235,4
+redes,fontes_termos,PageRank,5,semaglutida,0.031613,8
+redes,fontes_termos,intermediação (betweenness),1,caneta emagrecedora,0.016654,2
+redes,fontes_termos,intermediação (betweenness),2,Ozempic,0.015696,3
+redes,fontes_termos,intermediação (betweenness),3,Mounjaro,0.013848,1
+redes,fontes_termos,intermediação (betweenness),4,tirzepatida,0.013196,4
+redes,fontes_termos,intermediação (betweenness),5,caneta para emagrecer,0.01179,6
+redes,fontes_termos,autovetor (eigenvector),1,Ozempic,0.360497,3
+redes,fontes_termos,autovetor (eigenvector),2,G1,0.327215,4
+redes,fontes_termos,autovetor (eigenvector),3,Mounjaro,0.309687,1
+redes,fontes_termos,autovetor (eigenvector),4,semaglutida,0.284567,8
+redes,fontes_termos,autovetor (eigenvector),5,CNN Brasil,0.281254,3
+redes,hashtags,grau ponderado,1,#emagrecimento,4562.0,1
+redes,hashtags,grau ponderado,2,#mounjaro,4145.0,1
+redes,hashtags,grau ponderado,3,#tirzepatida,2992.0,1
+redes,hashtags,grau ponderado,4,#ozempic,2854.0,1
+redes,hashtags,grau ponderado,5,#obesidade,2117.0,4
+redes,hashtags,PageRank,1,#emagrecimento,0.064584,1
+redes,hashtags,PageRank,2,#mounjaro,0.059465,1
+redes,hashtags,PageRank,3,#tirzepatida,0.042473,1
+redes,hashtags,PageRank,4,#ozempic,0.041322,1
+redes,hashtags,PageRank,5,#shorts,0.029941,2
+redes,hashtags,intermediação (betweenness),1,#mounjaro,0.098338,1
+redes,hashtags,intermediação (betweenness),2,#shorts,0.091767,2
+redes,hashtags,intermediação (betweenness),3,#ozempic,0.085029,1
+redes,hashtags,intermediação (betweenness),4,#emagrecimento,0.069704,1
+redes,hashtags,intermediação (betweenness),5,#tirzepatida,0.054442,1
+redes,hashtags,autovetor (eigenvector),1,#emagrecimento,0.45108,1
+redes,hashtags,autovetor (eigenvector),2,#mounjaro,0.445736,1
+redes,hashtags,autovetor (eigenvector),3,#tirzepatida,0.362182,1
+redes,hashtags,autovetor (eigenvector),4,#ozempic,0.311595,1
+redes,hashtags,autovetor (eigenvector),5,#obesidade,0.229308,4
+redes,palavras,grau ponderado,1,caneta,17878.0,1
+redes,palavras,grau ponderado,2,estar,12541.0,2
+redes,palavras,grau ponderado,3,medicamento,11532.0,1
+redes,palavras,grau ponderado,4,mounjaro,11103.0,1
+redes,palavras,grau ponderado,5,medico,10390.0,3
+redes,palavras,PageRank,1,caneta,0.020783,1
+redes,palavras,PageRank,2,estar,0.014118,2
+redes,palavras,PageRank,3,medicamento,0.012676,1
+redes,palavras,PageRank,4,mounjaro,0.011806,1
+redes,palavras,PageRank,5,medico,0.010988,3
+redes,palavras,intermediação (betweenness),1,caneta,0.112236,1
+redes,palavras,intermediação (betweenness),2,estar,0.054822,2
+redes,palavras,intermediação (betweenness),3,medicamento,0.051891,1
+redes,palavras,intermediação (betweenness),4,mounjaro,0.041478,1
+redes,palavras,intermediação (betweenness),5,medico,0.039028,3
+redes,palavras,autovetor (eigenvector),1,caneta,0.279431,1
+redes,palavras,autovetor (eigenvector),2,estar,0.207782,2
+redes,palavras,autovetor (eigenvector),3,mounjaro,0.198223,1
+redes,palavras,autovetor (eigenvector),4,perder,0.180662,2
+redes,palavras,autovetor (eigenvector),5,medicamento,0.174764,1
