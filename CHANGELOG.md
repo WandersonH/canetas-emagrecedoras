@@ -32,7 +32,7 @@ Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que fi
 **Por quê**
 
 - Pedido do pesquisador em 24/11/2026, 11h12: página de comentários no formato do Atlas, separada por rede, com as contagens no fim, e as medidas de rede que faltavam na página de análise de texto.
-- Pedido do pesquisador em 24/11/2026, 11h27 e 11h33: painel da metodologia JAMA. Na escolha das 11h35 ele decidiu ficar só com a codificação manual e os agregados mais a planilha do outro pesquisador, sem IA até ela chegar com a validação dele.
+- Pedido do pesquisador em 24/11/2026, 11h27 e 11h33: painel da metodologia JAMA. Na resposta à pergunta sobre a IA, ele decidiu ficar só com a codificação manual e os agregados mais a planilha do outro pesquisador, sem IA até ela chegar com a validação dele.
 - Pedido do pesquisador em 24/11/2026, 11h37: tirar o período do título do Panorama.
 - O `estatisticas.json` tinha um NaN (assortatividade indefinida) e o navegador não lia o arquivo, o que deixava as medidas sem aparecer.
 
