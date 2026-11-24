@@ -2,6 +2,31 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Página: dados públicos, checagens das agências, comentários e fala dos vídeos
+
+**O que mudou**
+
+- index.html: caderno Dados públicos ganha um cartão por fonte da Anvisa lida (registro, CMED, VigiMed, SNGPC industrializados e manipulados), com o arquivo de origem, as linhas do arquivo (universo) e as que citam as substâncias. Contagem pequena aparece como "<5", como vem do coletor.
+- Caderno Trends, imprensa e checagens: cartão das checagens das agências brasileiras, com consultas no limite e com erro.
+- Caderno Comentários: tabela por rede (publicações escolhidas, comentários informados como universo, lidos, autores distintos) e tabela da fala transcrita; o botão "abrir" mostra os segmentos anonimizados do corpus.
+- A nota "Nenhum número foi lido ainda" saiu do caderno Dados públicos.
+
+**Por quê**
+
+- Mostrar o que as coletas novas trazem, sempre com universo e amostra.
+
+**O que foi executado de verdade**
+
+- `node --check` no script da página; `python -m unittest discover -s tests`.
+
+**O que ficou pendente**
+
+- Os cartões aparecem quando os arquivos existirem; até lá ficam fora ou em ⛔.
+
+**Onde está a evidência**
+
+- Este commit.
+
 ## 24/11/2026 · Transcrição com Whisper no runner
 
 **O que mudou**
