@@ -1,0 +1,60 @@
+name: Recuperar comentários no privado
+
+# Refaz no privado as tabelas de uma coleta de comentários já paga, a partir do conjunto de dados guardado pela
+# própria execução da Apify (sem rodar ator e sem custo). Confere o SHA-256 com o do manifesto. Disparo manual apenas.
+on:
+  workflow_dispatch:
+    inputs:
+      manifestos:
+        description: "Manifestos separados por espaço (caminho em data/manifestos/)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gravacao-no-main
+  cancel-in-progress: false
+
+jobs:
+  recuperar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      MANIFESTOS: ${{ inputs.manifestos }}
+      RUN: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependências
+        run: pip install -q numpy scipy networkx emoji
+      - name: Testes
+        run: python -m unittest discover -s tests
+      - name: Repositório privado
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then echo "::error::ODI_INTERNO_TOKEN ausente"; exit 1; fi
+          git clone -q --depth 1 "https://x-access-token:${TOKEN}@github.com/WandersonH/canetas-emagrecedoras-secret.git" "$RUNNER_TEMP/privado"
+      - name: Recuperar
+        env:
+          APIFY_TOKEN_CANETAS: ${{ secrets.APIFY_TOKEN_CANETAS }}
+        run: python -u scripts/recuperar_comentarios.py --privado "$RUNNER_TEMP/privado" $MANIFESTOS | tee resumo.txt
+      - name: Gravar no privado
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          args=()
+          while IFS= read -r linha; do args+=(--executado "$linha"); done < resumo.txt
+          cd "$RUNNER_TEMP/privado"
+          python "$GITHUB_WORKSPACE/scripts/changelog_auto.py" --arquivo CHANGELOG.md \
+            --titulo "Comentários recuperados da Apify (run $RUN)" \
+            --mudou "Tabelas de comentários em terceiros/comentarios/<rede>/ e bruto em bruto/comentarios/<rede>/, nos caminhos listados pelos manifestos." \
+            --porque "A gravação no privado do run de coleta falhou por conflito de CHANGELOG; a coleta já estava paga." \
+            --executado "Workflow 'Recuperar comentários no privado', run $RUN, manifestos: $MANIFESTOS." \
+            "${args[@]}" \
+            --pendente "Nenhuma." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN."
+          "$GITHUB_WORKSPACE/scripts/gravar_no_privado.sh" "Comentários recuperados da Apify (run $RUN)"

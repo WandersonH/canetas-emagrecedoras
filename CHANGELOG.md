@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Recuperação dos comentários pagos que não chegaram ao privado
+
+**O que mudou**
+
+- scripts/recuperar_comentarios.py e workflow manual recuperar_comentarios.yml: refazem no privado as tabelas de comentários a partir do conjunto de dados que cada execução da Apify guardou, sem rodar ator e sem custo, e conferem o SHA-256 com o do manifesto.
+
+**Por quê**
+
+- O run 45306225038 (Comentários) coletou TikTok (992 comentários), Instagram (298) e X (995), com o custo gravado nos manifestos, mas o envio ao privado falhou por conflito de CHANGELOG: o run começou antes da correção de scripts/gravar_no_privado.sh. O público recebeu manifestos e contagens; o texto dos comentários não ficou no privado.
+
+**O que foi executado de verdade**
+
+- `python -m unittest discover -s tests` antes do commit. A recuperação roda no workflow.
+
+**O que ficou pendente**
+
+- Conferir no log da recuperação se o SHA-256 bateu com o dos manifestos data/manifestos/comentarios_*_20261124T0*.json.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45306225038 (passo "Gravar no privado") e os manifestos citados.
+
 ## 23/11/2026 · Comentários (run 45306225038)
 
 **O que mudou**
