@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import collections
 import csv
+import gzip
 import io
 import json
 import pathlib
@@ -138,7 +139,15 @@ def contar(valores) -> list[dict]:
 
 
 def gravar_csv(destino: pathlib.Path, cabecalho: list[str], linhas: list[list[str]]) -> None:
+    """CSV em UTF-8; com final .gz, comprimido de forma reproduzível (sem data no cabeçalho do gzip)."""
     destino.parent.mkdir(parents=True, exist_ok=True)
+    if destino.suffix == ".gz":
+        with destino.open("wb") as bruto, gzip.GzipFile(fileobj=bruto, mode="wb", mtime=0) as comprimido, \
+                io.TextIOWrapper(comprimido, encoding="utf-8", newline="") as saida:
+            escritor = csv.writer(saida)
+            escritor.writerow(cabecalho)
+            escritor.writerows(linhas)
+        return
     with destino.open("w", encoding="utf-8", newline="") as saida:
         escritor = csv.writer(saida)
         escritor.writerow(cabecalho)
@@ -373,14 +382,15 @@ def frente_sngpc(tipo: str, chaves_: dict, pat: re.Pattern, run_id, privado: pat
             continue
         total_lido += total
         cab_final = cab
+        # um arquivo comprimido por mês: o GitHub recusa arquivo acima de 100 MB
+        gravar_csv(pasta / f"{aaaamm}.csv.gz", cab, linhas)
+        manifesto.arquivo(pasta / f"{aaaamm}.csv.gz", privado, privado=True)
         linhas_todas += [[aaaamm] + l for l in linhas]
         por_mes.append({"mes": aaaamm, "linhas_no_arquivo": total, "linhas_que_citam": len(linhas)})
         print(f"sngpc {tipo} {aaaamm}: {total} linhas, {len(linhas)} citam", flush=True)
     resultado = {"tipo": tipo, "meses": por_mes, "colunas": cab_final}
     if cab_final:
         cab = ["ARQUIVO_MES"] + cab_final
-        gravar_csv(pasta / "linhas.csv", cab, linhas_todas)
-        manifesto.arquivo(pasta / "linhas.csv", privado, privado=True)
         resultado.update(agregar_sngpc(cab, linhas_todas, chaves_, pat))
     destino = raiz / "data" / "dados_publicos" / f"sngpc_{tipo}.json"
     comum.gravar(destino, {"obtido_em": manifesto.dados["iniciado_em"], "run_id": run_id,

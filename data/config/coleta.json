@@ -124,11 +124,11 @@
     "caneta do Paraguai"
   ],
   "transcricao": {
-    "nota": "Whisper (faster-whisper) no runner do GitHub Actions, sem custo. Vídeos do período com mais visualizações, até N por rede e até a duração máxima. A etapa paga 'transcricao' da Apify fica de reserva.",
+    "nota": "Whisper (faster-whisper) no runner do GitHub Actions, sem custo. Vídeos do período com mais visualizações, até N por rede e até a duração máxima. A etapa paga 'transcricao' da Apify fica de reserva. Vídeo já transcrito não é baixado de novo; cada execução pega os próximos mais vistos.",
     "modelo": "small",
     "duracao_maxima_s": 600,
-    "tiktok": 60,
-    "kwai": 20,
+    "tiktok": 300,
+    "kwai": 82,
     "youtube": 30
   },
   "comentarios": {

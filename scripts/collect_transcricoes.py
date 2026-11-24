@@ -70,6 +70,16 @@ def videos(privado: pathlib.Path, rede_id: str, inicio: str, fim: str) -> list[d
     return sorted(lista, key=lambda v: (-(v["vistas"] or 0), v["item_id"]))
 
 
+def ja_transcritos(privado: pathlib.Path, rede_id: str) -> set[str]:
+    """Vídeos que já têm transcrição com texto no privado: não são baixados de novo."""
+    feitos = set()
+    for caminho in glob.glob(str(privado / "terceiros" / "transcricoes" / rede_id / "*.csv")):
+        for r in collect_comentarios.ler_csv(caminho):
+            if (r.get("texto") or "").strip():
+                feitos.add(r["item_id"])
+    return feitos
+
+
 def duracao_iso(texto: str | None) -> int | None:
     """'PT1M2S' -> 62."""
     import re
@@ -149,10 +159,12 @@ def main(argumentos=None) -> int:
     ok = 0
     for rede_id in opcoes.redes:
         todos = videos(privado, rede_id, inicio, fim)
-        alvo = todos[: int(cfg.get(rede_id) or 0)]
+        feitos = ja_transcritos(privado, rede_id)
+        alvo = [v for v in todos if v["item_id"] not in feitos][: int(cfg.get(rede_id) or 0)]
         manifesto = rede.Manifesto("transcricao", {"rede": rede_id, "modelo": f"faster-whisper {cfg['modelo']} (int8, CPU)",
                                                    "idioma": "pt", "como_escolhe": f"os {len(alvo)} vídeos do período com mais visualizações",
-                                                   "duracao_maxima_s": cfg["duracao_maxima_s"]}, opcoes.run_id)
+                                                   "duracao_maxima_s": cfg["duracao_maxima_s"],
+                                                   "ja_transcritos_antes": len(feitos)}, opcoes.run_id)
         linhas, falhas, parou = [], [], "lista_inteira"
         with tempfile.TemporaryDirectory() as tmp:
             for video in alvo:
@@ -184,13 +196,19 @@ def main(argumentos=None) -> int:
         for f in falhas:
             chave = f["motivo"].split(":")[0]
             motivos[chave] = motivos.get(chave, 0) + 1
+        anterior = resumo["redes"].get(rede_id) or {}
+        acumulado = len(feitos) + len(linhas)
         resumo["redes"][rede_id] = {"videos_no_periodo": len(todos), "tentados": len(alvo), "transcritos": len(linhas),
+                                    "transcritos_no_total": acumulado,
+                                    "palavras_no_total": ((anterior.get("palavras_no_total") or anterior.get("palavras") or 0) if feitos else 0)
+                                    + sum(len(l["texto"].split()) for l in linhas),
                                     "falhas_por_motivo": motivos, "palavras": sum(len(l["texto"].split()) for l in linhas),
                                     "segundos": round(sum(l["duracao_s"] or 0 for l in linhas)), "obtido_em": manifesto.dados["iniciado_em"],
                                     "run_id": opcoes.run_id}
         manifesto.dados["consulta"]["falhas"] = falhas
         manifesto.dados.update({
             "universo": {"valor": len(todos), "fonte": "vídeos da rede já coletados no período lido (repositório privado)"},
+            "transcritos_no_total": acumulado,
             "lido": len(alvo) if parou == "lista_inteira" else len(linhas) + len(falhas),
             "amostra": {"n": len(linhas), "como": "vídeos transcritos entre os mais vistos do período"},
             "parou_por": parou})

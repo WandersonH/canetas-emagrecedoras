@@ -2,6 +2,31 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · SNGPC em arquivos mensais comprimidos; transcrição continua de onde parou
+
+**O que mudou**
+
+- scripts/collect_anvisa.py: as linhas do SNGPC vão para o privado em um arquivo comprimido por mês (dados_publicos/sngpc_<tipo>/<aaaamm>.csv.gz), com gzip reproduzível.
+- scripts/collect_transcricoes.py: vídeo que já tem transcrição no privado não é baixado de novo; cada execução pega os próximos mais vistos. O resumo público traz o total acumulado. data/config/coleta.json: até 300 vídeos do TikTok e 82 do Kwai por execução.
+- index.html: a tabela da fala dos vídeos mostra o total acumulado.
+
+**Por quê**
+
+- No run 45310587332 o envio ao privado foi recusado pelo GitHub: dados_publicos/sngpc_industrializados/linhas.csv tinha 594,87 MB e o limite é 100 MB. Nada desse run chegou ao privado (nem as linhas do VigiMed); o público recebeu manifestos e agregados.
+- O run 45310677443 transcreveu 59 de 60 vídeos do TikTok e 20 de 20 do Kwai; sobram vídeos no período.
+
+**O que foi executado de verdade**
+
+- `python -m unittest discover -s tests`, com caso novo para o arquivo mensal comprimido.
+
+**O que ficou pendente**
+
+- Rodar de novo vigimed e sngpc; rodar a transcrição para os próximos vídeos.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45310587332 (passo "Gravar no privado") e data/transcricoes/resumo.json.
+
 ## 23/11/2026 · Dados públicos e checagens das agências (run 45310587332)
 
 **O que mudou**

@@ -114,6 +114,11 @@ class Anvisa(unittest.TestCase):
         self.assertEqual(linhas[("2026-01", "tirzepatida")]["linhas"], "<5")
         self.assertIsNone(linhas[("2026-01", "tirzepatida")]["quantidade"])
         (m,) = self.manifestos()
+        arquivo = self.privado / "dados_publicos" / "sngpc_industrializados" / "202601.csv.gz"
+        import gzip
+        with gzip.open(arquivo, "rt", encoding="utf-8") as f:
+            self.assertEqual(len(f.read().strip().splitlines()), 8)  # cabeçalho + 7 linhas
+        self.assertEqual([a["caminho"] for a in m["arquivos_privados"]], ["dados_publicos/sngpc_industrializados/202601.csv.gz"])
         self.assertEqual(m["universo"]["valor"], 8)
         self.assertEqual(m["amostra"]["n"], 7)
 
