@@ -1,9 +1,9 @@
 {
-  "obtido_em": "2026-11-24T05:33:48Z",
-  "run_id": "45331537196",
+  "obtido_em": "2026-11-23T21:06:21Z",
+  "run_id": "45264522808",
   "periodo": {
-    "inicio": "2022-05-13",
-    "fim": "2026-11-24"
+    "inicio": "2025-01-01",
+    "fim": "2026-11-23"
   },
   "nota": "Rótulo e texto são das agências. Quem fez a alegação é omitido.",
   "checagens": [
@@ -81,32 +81,6 @@
       "data": "2025-02-01",
       "idioma": "en",
       "link": "https://leadstories.com/hoax-alert/2025/01/fact-check-denmark-did-not-announce-500-percent-export-tariff-on-ozempic-to-us.html",
-      "termos": [
-        "Ozempic"
-      ]
-    },
-    {
-      "alegacao": "Oatzempic can replace Ozempic for weight loss",
-      "agencia": "First Coast News",
-      "site": "firstcoastnews.com",
-      "rotulo": "No, 'Oatzempic' cannot replace Ozempic for weight loss.",
-      "titulo": "No, Oatzempic cannot replace Ozempic for weight loss. Here's why ...",
-      "data": "2024-05-06",
-      "idioma": "en",
-      "link": "https://www.firstcoastnews.com/article/news/verify/no-oatzempic-cannot-replace-ozempic-for-weight-loss/77-fd0524a5-ce36-4334-911b-c5f2f897cfc3",
-      "termos": [
-        "Ozempic"
-      ]
-    },
-    {
-      "alegacao": "Ozempic could cause unplanned pregnancy",
-      "agencia": "WCNC",
-      "site": "wcnc.com",
-      "rotulo": "True",
-      "titulo": "Can taking Ozempic cause an unplanned pregnancy? | wcnc.com",
-      "data": "2024-04-02",
-      "idioma": "en",
-      "link": "https://www.wcnc.com/article/news/verify/ozempic-birth-control-pregnancy-women-health/275-d95e888d-5586-4ada-aee8-b52716c3d5cd",
       "termos": [
         "Ozempic"
       ]

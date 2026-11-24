@@ -1,0 +1,40 @@
+{
+  "frente": "dados_publicos",
+  "etapa": "gratis",
+  "run_id": "45331564217",
+  "iniciado_em": "2026-11-24T05:34:54Z",
+  "terminado_em": "2026-11-24T05:35:16Z",
+  "consulta": {
+    "subfrente": "camara",
+    "fonte": "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-{ano}.csv",
+    "anos": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "filtro": "ementa ou indexação que cita substância, marca, nome popular ou GLP-1"
+  },
+  "universo": {
+    "valor": 338429,
+    "fonte": "proposições dos arquivos anuais da Câmara, contadas na leitura"
+  },
+  "lido": 338429,
+  "amostra": {
+    "n": 60,
+    "como": "proposições do período que citam os termos"
+  },
+  "parou_por": "arquivo_inteiro",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/dados_publicos/camara.json",
+      "sha256": "1022033287227760c1af01f0b80de19a423277b6aaf3a3db407f9b66f5be87ac",
+      "bytes": 40416,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}

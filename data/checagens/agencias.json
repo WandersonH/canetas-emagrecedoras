@@ -1,8 +1,8 @@
 {
-  "obtido_em": "2026-11-24T03:26:19Z",
-  "run_id": "45319450848",
+  "obtido_em": "2026-11-24T05:34:28Z",
+  "run_id": "45331564217",
   "periodo": {
-    "inicio": "2025-01-01",
+    "inicio": "2022-05-13",
     "fim": "2026-11-24"
   },
   "nota": "Títulos e links das próprias agências, pelo Google Notícias. O estudo não dá veredito. Conta como checagem o título que cita o tema e vem de site só de checagem ou traz marca de checagem (falso, #FAKE, enganoso, golpe...). Filtro automático: pede revisão de contexto.",
@@ -11,7 +11,7 @@
       "agencia": "Agência Lupa",
       "restricao": "site:lupa.uol.com.br",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:lupa.uol.com.br after:2025-01-01 before:2026-11-25",
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:lupa.uol.com.br after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
@@ -20,7 +20,7 @@
       "agencia": "Agência Lupa",
       "restricao": "site:lupa.uol.com.br",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:lupa.uol.com.br after:2025-01-01 before:2026-11-25",
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:lupa.uol.com.br after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
@@ -29,7 +29,7 @@
       "agencia": "Agência Lupa",
       "restricao": "site:lupa.news",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:lupa.news after:2025-01-01 before:2026-11-25",
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:lupa.news after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
@@ -38,7 +38,7 @@
       "agencia": "Agência Lupa",
       "restricao": "site:lupa.news",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:lupa.news after:2025-01-01 before:2026-11-25",
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:lupa.news after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
@@ -47,8 +47,8 @@
       "agencia": "Aos Fatos",
       "restricao": "site:aosfatos.org",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:aosfatos.org after:2025-01-01 before:2026-11-25",
-      "lidos": 0,
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:aosfatos.org after:2022-05-13 before:2026-11-25",
+      "lidos": 2,
       "no_limite": false,
       "erro": null
     },
@@ -56,8 +56,8 @@
       "agencia": "Aos Fatos",
       "restricao": "site:aosfatos.org",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:aosfatos.org after:2025-01-01 before:2026-11-25",
-      "lidos": 4,
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:aosfatos.org after:2022-05-13 before:2026-11-25",
+      "lidos": 6,
       "no_limite": false,
       "erro": null
     },
@@ -65,7 +65,7 @@
       "agencia": "Estadão Verifica",
       "restricao": "\"Estadão Verifica\" site:estadao.com.br",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) \"Estadão Verifica\" site:estadao.com.br after:2025-01-01 before:2026-11-25",
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) \"Estadão Verifica\" site:estadao.com.br after:2022-05-13 before:2026-11-25",
       "lidos": 100,
       "no_limite": true,
       "erro": null
@@ -74,7 +74,7 @@
       "agencia": "Estadão Verifica",
       "restricao": "\"Estadão Verifica\" site:estadao.com.br",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") \"Estadão Verifica\" site:estadao.com.br after:2025-01-01 before:2026-11-25",
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") \"Estadão Verifica\" site:estadao.com.br after:2022-05-13 before:2026-11-25",
       "lidos": 100,
       "no_limite": true,
       "erro": null
@@ -83,8 +83,8 @@
       "agencia": "Fato ou Fake (g1)",
       "restricao": "\"Fato ou Fake\" site:g1.globo.com",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) \"Fato ou Fake\" site:g1.globo.com after:2025-01-01 before:2026-11-25",
-      "lidos": 74,
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) \"Fato ou Fake\" site:g1.globo.com after:2022-05-13 before:2026-11-25",
+      "lidos": 75,
       "no_limite": false,
       "erro": null
     },
@@ -92,7 +92,7 @@
       "agencia": "Fato ou Fake (g1)",
       "restricao": "\"Fato ou Fake\" site:g1.globo.com",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") \"Fato ou Fake\" site:g1.globo.com after:2025-01-01 before:2026-11-25",
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") \"Fato ou Fake\" site:g1.globo.com after:2022-05-13 before:2026-11-25",
       "lidos": 100,
       "no_limite": true,
       "erro": null
@@ -101,7 +101,7 @@
       "agencia": "AFP Checamos",
       "restricao": "site:checamos.afp.com",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:checamos.afp.com after:2025-01-01 before:2026-11-25",
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:checamos.afp.com after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
@@ -110,7 +110,7 @@
       "agencia": "AFP Checamos",
       "restricao": "site:checamos.afp.com",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:checamos.afp.com after:2025-01-01 before:2026-11-25",
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:checamos.afp.com after:2022-05-13 before:2026-11-25",
       "lidos": 1,
       "no_limite": false,
       "erro": null
@@ -119,7 +119,7 @@
       "agencia": "Projeto Comprova",
       "restricao": "site:projetocomprova.com.br",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:projetocomprova.com.br after:2025-01-01 before:2026-11-25",
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:projetocomprova.com.br after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
@@ -128,7 +128,7 @@
       "agencia": "Projeto Comprova",
       "restricao": "site:projetocomprova.com.br",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:projetocomprova.com.br after:2025-01-01 before:2026-11-25",
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:projetocomprova.com.br after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
@@ -137,7 +137,7 @@
       "agencia": "UOL Confere",
       "restricao": "\"UOL Confere\" site:uol.com.br",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) \"UOL Confere\" site:uol.com.br after:2025-01-01 before:2026-11-25",
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) \"UOL Confere\" site:uol.com.br after:2022-05-13 before:2026-11-25",
       "lidos": 100,
       "no_limite": true,
       "erro": null
@@ -146,7 +146,7 @@
       "agencia": "UOL Confere",
       "restricao": "\"UOL Confere\" site:uol.com.br",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") \"UOL Confere\" site:uol.com.br after:2025-01-01 before:2026-11-25",
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") \"UOL Confere\" site:uol.com.br after:2022-05-13 before:2026-11-25",
       "lidos": 100,
       "no_limite": true,
       "erro": null
@@ -155,7 +155,7 @@
       "agencia": "Boatos.org",
       "restricao": "site:boatos.org",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:boatos.org after:2025-01-01 before:2026-11-25",
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:boatos.org after:2022-05-13 before:2026-11-25",
       "lidos": 3,
       "no_limite": false,
       "erro": null
@@ -164,8 +164,8 @@
       "agencia": "Boatos.org",
       "restricao": "site:boatos.org",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:boatos.org after:2025-01-01 before:2026-11-25",
-      "lidos": 6,
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:boatos.org after:2022-05-13 before:2026-11-25",
+      "lidos": 7,
       "no_limite": false,
       "erro": null
     },
@@ -173,7 +173,7 @@
       "agencia": "E-farsas",
       "restricao": "site:e-farsas.com",
       "grupo": "substancias",
-      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:e-farsas.com after:2025-01-01 before:2026-11-25",
+      "consulta": "(semaglutida OR tirzepatida OR liraglutida OR retatrutida) site:e-farsas.com after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
@@ -182,21 +182,23 @@
       "agencia": "E-farsas",
       "restricao": "site:e-farsas.com",
       "grupo": "marcas_e_nomes",
-      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:e-farsas.com after:2025-01-01 before:2026-11-25",
+      "consulta": "(Ozempic OR Wegovy OR Mounjaro OR Saxenda OR \"caneta emagrecedora\" OR \"canetas emagrecedoras\") site:e-farsas.com after:2022-05-13 before:2026-11-25",
       "lidos": 0,
       "no_limite": false,
       "erro": null
     }
   ],
-  "links_lidos": 460,
+  "links_lidos": 481,
   "descartados": {
-    "sem_o_tema_no_titulo": 159,
-    "tema_sem_marca_de_checagem_em_veiculo_geral": 289
+    "sem_o_tema_no_titulo": 158,
+    "tema_sem_marca_de_checagem_em_veiculo_geral": 304
   },
   "por_agencia": {
-    "Boatos.org": 5,
-    "Fato ou Fake (g1)": 5,
-    "Estadão Verifica": 2
+    "Boatos.org": 6,
+    "UOL Confere": 1,
+    "Fato ou Fake (g1)": 9,
+    "Estadão Verifica": 1,
+    "Aos Fatos": 2
   },
   "checagens": [
     {
@@ -226,6 +228,20 @@
       ],
       "cita_tema": true,
       "marca_de_checagem": false,
+      "checagem": true
+    },
+    {
+      "titulo": "Anvisa apreende lotes falsos de Mounjaro; veja quais estão proibidos",
+      "veiculo": "UOL Notícias",
+      "site": "https://noticias.uol.com.br",
+      "data": "2026-04-02",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTFZmRjItaWhSX3RsVWRyc3oxQ0JOQVJTd3lmRlFtQ0UzVVV3TW9CTzN6WlNsdzV2OFlwUkxlR3RfSkQwRDFaZGlrZEpOSnRJelkxbG1lNzh2YmdURnhVaW5QWm5UeFMzbWdmSk1NOEhRemNpeDdPcEN6NDVxUFN3QWtsLTF3MlFIRURvZkNsVnQwaHJKVU9UcTZ4RXgxdFJyZHE1Szc2QjlIeENLT3ZtM1BWZVREbXA2NDR5MnRrdXFHemtoUmJrNE5oOXJfZGl2MWlLd0x3LTU5QQ?oc=5",
+      "agencia": "UOL Confere",
+      "grupos": [
+        "substancias"
+      ],
+      "cita_tema": true,
+      "marca_de_checagem": true,
       "checagem": true
     },
     {
@@ -294,8 +310,7 @@
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZ3FiWTd1ZHl1OFpVZ3NZTU05REp5dnJQUlNqSDkyR2hvUVJ4YlpjMWloRi1Ba1FzSEdQS3RycUdhX3hNejJibzNPMjZEM3VSdzBkTXhzQ1laVmFBYTE5OFJCY0kxcHpfcldONUVLbXBOWk9zSnZVeVAxU3pJLXBGVGszd0owMDBIX1FDQVFjUEFYV0lKZWQ1WkdFN2daek4yb3dGZHY4ZEhLb19TNEtCT3RZNnFlQy1jVU1uamhTeUx1X3ZBQVNLeHRFQ3hUczdzbXlzZ1lUMUItTjVkYW43RWpXRGHSAeoBQVVfeXFMTnlhaEh6T0Q0N2tXajYyV1hLVU1mZEFIQ3h5ZzlBREg4UlZQMXNPVDFQMlpPUTFraHJReTVkckRTRW5OLWxUWXVoeVluY2ZpNFRnNzN4X29TcmdqVWY2ZmxKYTRUV1JwNkdSZlg5MHFzYUp3UkNqOVk0WTlld25UMnFXNDFuZXhnTDNQMWhGMVUyNHNLU0FBell6NkZqMlBjVlM2eTBkejA0Rzc3ZHVZRVlnZktPNm1ydlFvazR1ZTNjUlJ2UXMzNkplc1d0RzFMMHBtWFp5eURfY25uanhqLXEzbU12NzFSbWhB?oc=5",
       "agencia": "Estadão Verifica",
       "grupos": [
-        "substancias",
-        "marcas_e_nomes"
+        "substancias"
       ],
       "cita_tema": true,
       "marca_de_checagem": true,
@@ -316,6 +331,20 @@
       "checagem": true
     },
     {
+      "titulo": "É #FAKE site que imita página da Anvisa e promete venda de Mounjaro",
+      "veiculo": "G1",
+      "site": "https://g1.globo.com",
+      "data": "2025-10-09",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNU5RS3ZsUmVzM3ptZkpsNGFCc3hERWRyaFRUVmNmdGNudXBxNjYxU2R3WlQ2NVdrdVNXTVpWa1lCM1h1MUNXMU1TOTE3dGRfRnVsMEZ4OW5FTHVjSVdXZGh2VXo0amJIYW9UTmczSWlaYm9fa1Y1YnA2eUpvUVFDUll3Z2RLemxfd3gzMzFZb1ZzTTNqMkRLQ0RWRExyUjMwQVpzU2t0LWhfeVRSVmpEUFkxM3hLV2VFNXprNmI4V0cyTGvSAdIBQVVfeXFMTmpVZG9OVW9Xd3R2R2ZwTnN6Q3JWZXpTOXhkM0x3Wkt6Ui11UlZuWk1xaEJhVXhVa2tRcWE3anFFM01TU3NpX0dLTGRmS1dXSm9xdU5RQzljMmFLYXd2c1Y1UkJDcmR6bHpWWmRkcV9XOThWVE5RYzJReXVYdllQUkx3ZV9ram9CODFFamFodVV1eVNZeC1ndkVERHFnZVRFY0Z1bHRsdnh6QlR2ZUNXa1dzZE9KLUgtdnlrMFZEMV9RazU3RmFMYVNaYjZYRHF2VmpB?oc=5",
+      "agencia": "Fato ou Fake (g1)",
+      "grupos": [
+        "marcas_e_nomes"
+      ],
+      "cita_tema": true,
+      "marca_de_checagem": true,
+      "checagem": true
+    },
+    {
       "titulo": "Site que imita página da Anvisa e promete venda de Mounjaro é falso",
       "veiculo": "G1",
       "site": "https://g1.globo.com",
@@ -323,8 +352,7 @@
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNU5RS3ZsUmVzM3ptZkpsNGFCc3hERWRyaFRUVmNmdGNudXBxNjYxU2R3WlQ2NVdrdVNXTVpWa1lCM1h1MUNXMU1TOTE3dGRfRnVsMEZ4OW5FTHVjSVdXZGh2VXo0amJIYW9UTmczSWlaYm9fa1Y1YnA2eUpvUVFDUll3Z2RLemxfd3gzMzFZb1ZzTTNqMkRLQ0RWRExyUjMwQVpzU2t0LWhfeVRSVmpEUFkxM3hLV2VFNXprNmI4V0cyTGs?oc=5",
       "agencia": "Fato ou Fake (g1)",
       "grupos": [
-        "substancias",
-        "marcas_e_nomes"
+        "substancias"
       ],
       "cita_tema": true,
       "marca_de_checagem": true,
@@ -345,12 +373,27 @@
       "checagem": true
     },
     {
-      "titulo": "Como a polícia descobriu laboratório de ‘Mounjaro fake’ em SP; veja vídeo",
-      "veiculo": "Estadão",
-      "site": "https://www.estadao.com.br",
-      "data": "2025-07-31",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdkhNd0FYeUFOVC1TSnowT25sZFRWaEpyZ29PeWxVYktidUxtVUEyVFdWNHIwR1l5cmhLaGNhSTNETTk2bjI0eVI2TWJ2a3l6Yk83Q1Z2ZnBZemh5WnZaMGpla2tYRUxVcEpjMlRpczAxZ21mNnlnN2xaYzZMMTNsMWl0WjNZMURxNU9vWDJtemdKYWQ2MGNtRnJIYVBZS3NERDM1YdIBqgFBVV95cUxNVy1GczNCVGZySU9Lb3hRY0NSa2RQVWxDeTdxTlB6aUE5WHlPeXFzaFJLaUxzcm9MNTNlblZvdDkyMENwZjE0TDN5N3pRR0ZJMnlZTmhfSVNObDJMV1hSSGh4R0xFamRabGpGandiVC1uWGtpSTVNV1JuLUhMcmh3MDdGZktFb3BGS1RHVWQ4QXJzUDRmYVNzTjNlSDdHV1VVRnJ5UUs2MktDdw?oc=5",
-      "agencia": "Estadão Verifica",
+      "titulo": "É #FAKE anúncio que imita o g1 e diz que Anvisa aprovou tratamento que emagrece 14 kg em 30 dias",
+      "veiculo": "G1",
+      "site": "https://g1.globo.com",
+      "data": "2025-06-04",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOLXVBazFqcF9aWjFXSUQ5NEVZcC1KZkp2YlFXczBLZkpjNDZoXzRMVU55VmVYRjN5SXVXNEtYS0UtTmtDWGJFQjc5MjM0a2I1MVFsbnl3VjRBVm5iX19TenJkemVaTmxibXJzT0oyYU9XMHhILW1oY2cxNjM2V19kWGhRUTJ1X2F3VVVPTFhKb0hFQWZhbngxN3NiazRsOFNiUVNUd18xakVnd1RObXJGaDQxejVaWVZwZ0VieDBvdmRwM2g4VmJnUEpNdUZzdG44UzQ3RXYtUkJlczN4ekFIcF9yZnNqTVItUHfSAfgBQVVfeXFMUDZBaEFxSldiLTJ5SE5WbW1UMkRkRzVZWmp5cHJkLTZKS1RfZ0NScFJ4MXRuZUpNMzl1ZmExRTAtNXR5ajEyV0owSTF4c25HcE42STA5QzctcVg1RmxuSlRNelNlYzFCVUVVdnVWUWI0bU5kZmV3WXpjYnhzclRCaTZ5bnJmdHZhMVd5UXh5Y0RUMUZaaU1XcmlNYlI1ZGR6SUZWeHZ6Ym5SLUI5QW1Ic3ZBU19WUURDSXBDMG85c1RsbUpuazNwMFFRRTQ0b1ZFT2dSWFhuLS1zdXpPWU85SVIyZGE5aENTSkxaeUZsZUZuNUgzeHBoQUs?oc=5",
+      "agencia": "Fato ou Fake (g1)",
+      "grupos": [
+        "substancias",
+        "marcas_e_nomes"
+      ],
+      "cita_tema": true,
+      "marca_de_checagem": true,
+      "checagem": true
+    },
+    {
+      "titulo": "Canetas emagrecedoras: médicas vão à polícia após terem nomes usados em site de venda; Anvisa alerta para golpes",
+      "veiculo": "G1",
+      "site": "https://g1.globo.com",
+      "data": "2025-05-14",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOYWFGRmVvTlpVVU5aME0zNU1jR1EzWVBYLTZ3c1l2dWJpNnMzXzJrTTV6b1E0OUl0REpIZGlXYjlLQkNYd2pkM1BpWWtvRUpWUHdKRXlfemF6NlEwaEpobndac2dkVTYzWGw0TzJXNDFtdkZsRXl6dWU1U2xnSmJxSTFjQXIySGtFTmxSbXB6ckJFWXQ2a3FHdmlsdXBaTHpsVUhkS1VLOUR5WU5xWmx1bW9mNGxXbnhvdmh4OGZWZ3RMb09tbV9iWVZDbENKX3VjTkxEdFE2TVRvM0g3ZDB1VzBSek1vaU1qUkNodjZ3RjFNb1RF0gGDAkFVX3lxTE1rOGMteFBGdE1CZnFBZ3NBT1pzSVhrVmJDbHBGU1h6MnJMN05DT2FZQ2VBUm9CMzIwSkNhTExvc0hmREo5UnVYOXF2dXJxUHVGXzhJbzRJa2ZObEVWWDZ6SXNmdVFHU0ZRSDI1d0w3M1RKMzFOWDZrbDRuYkZ6T3dTYklUSmdjb2Jhc3VCTHZCa3pYMVhrQm1YVFpXdGVvMklGZHM3TEtWSTZRclRiRm5KdHF2N3c1dGszTGp2OUNvTGx5c3U5ajE1QkJqUnRNY0RXbG5pd2ZnSEprQWpNNXNqWmRkd1g1QXdZQ3hUOXQ2dGtrclBvczFKb0ltcGhVVUNaYjA?oc=5",
+      "agencia": "Fato ou Fake (g1)",
       "grupos": [
         "marcas_e_nomes"
       ],
@@ -359,12 +402,69 @@
       "checagem": true
     },
     {
-      "titulo": "É #FAKE anúncio que imita o g1 e diz que Anvisa aprovou tratamento que emagrece 14 kg em 30 dias",
+      "titulo": "É #FAKE vídeo em que Drauzio Varella indica suposto emagrecedor",
       "veiculo": "G1",
       "site": "https://g1.globo.com",
-      "data": "2025-06-04",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOLXVBazFqcF9aWjFXSUQ5NEVZcC1KZkp2YlFXczBLZkpjNDZoXzRMVU55VmVYRjN5SXVXNEtYS0UtTmtDWGJFQjc5MjM0a2I1MVFsbnl3VjRBVm5iX19TenJkemVaTmxibXJzT0oyYU9XMHhILW1oY2cxNjM2V19kWGhRUTJ1X2F3VVVPTFhKb0hFQWZhbngxN3NiazRsOFNiUVNUd18xakVnd1RObXJGaDQxejVaWVZwZ0VieDBvdmRwM2g4VmJnUEpNdUZzdG44UzQ3RXYtUkJlczN4ekFIcF9yZnNqTVItUHfSAfgBQVVfeXFMUDZBaEFxSldiLTJ5SE5WbW1UMkRkRzVZWmp5cHJkLTZKS1RfZ0NScFJ4MXRuZUpNMzl1ZmExRTAtNXR5ajEyV0owSTF4c25HcE42STA5QzctcVg1RmxuSlRNelNlYzFCVUVVdnVWUWI0bU5kZmV3WXpjYnhzclRCaTZ5bnJmdHZhMVd5UXh5Y0RUMUZaaU1XcmlNYlI1ZGR6SUZWeHZ6Ym5SLUI5QW1Ic3ZBU19WUURDSXBDMG85c1RsbUpuazNwMFFRRTQ0b1ZFT2dSWFhuLS1zdXpPWU85SVIyZGE5aENTSkxaeUZsZUZuNUgzeHBoQUs?oc=5",
+      "data": "2024-11-21",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcDh6amJFRU9tVHFqYUhfUnZ1bnByeEFtNGR2LVlwYXIweVlXZ28wRTc4Z0Nqbkpuem9mdDVUeXMzUk9abXloVlU5aHQyOWZkWVprd1BldTdNV09PeUZ2b0dSVU9rZEd3cGpnMmxLY3piZjYwMmltd3gxdjhNbmNfREJVMFFqVTdWanVzVExGZnZ2U0hILWpYRTduV0RZdDJZV3ZfM0h6Q0JfNlFGbUlaWG5KdkVXQlQxdVIyU1FR0gHMAUFVX3lxTE9RejFlWUs0QlZ4U05xQUkyUEd2OFQ0enZyT3BfazY0V0tIUFhjX2hSYlBzdk9EaWlJTXhQNlZhM2VRTEdpWVBRTnVNaUF3d3g5ZmRleFVBZUNfY0JUN0l2YU8zY2hXaHlCQUJTYnh0STJoeGo5T01oVVFSY2tYbWU4LVdSWTh2SWt2cWl2SWRBRlVRTmFYN2pMeHJvN2picWVJWnZiekRJRlJGVW9IMEM2VVFvaUNPcmJlWW5BajhkQ3V5LU9pY082VHpEZQ?oc=5",
       "agencia": "Fato ou Fake (g1)",
+      "grupos": [
+        "marcas_e_nomes"
+      ],
+      "cita_tema": true,
+      "marca_de_checagem": true,
+      "checagem": true
+    },
+    {
+      "titulo": "Ozempic falso: polícia investiga novo golpe contra pacientes e farmácias",
+      "veiculo": "G1",
+      "site": "https://g1.globo.com",
+      "data": "2024-11-03",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUUxzUVN2REhMbU9kWDF2RlJOUUJHazZzNENPLUFkNjRidVQ0a003MjFNUTZTdlRGSTU0OVhWNWtSX3MyWGhTR3k3WkV4LW1RR3JZQkpVS05HcS04M0VBNkRjY29IbDRMYzRBb1h5YUFBdXg2a2RlYl9ZVUpwSlRPSUQ2VUo1SDJJM1FaTUtfTTRzM2pPNUR5MzZkTnVzTU14SzF5WlpOV0VsbHhFLThSVXgtd2xsQS11akh5a3VmUjF2T3NnZV9r0gHWAUFVX3lxTE50Q3lxc1Z2RHNHaXQ2TEF3eEVuQXRjV1RLY2hmUUVRRHlXbkVRZDBYRTlzaUxndnRtNGw3QjRaME5ZdXRiVHJlYU5PenRUSWRmVWpuaDRJSnRTRlBlZ2JqdXVyUkVGUjBlQnpaN2hCbm9JZFV2eUhJbmJPa3prNnFlLWZvMEJCMjdsZUplWTBYMGVjRmI1ZExZVHBxNXdPeWxVdTlJbUVwRDBSWXNVVDhoQV9vWGkzTVBZX1VBUjh4eE1jOXBhMHpDUDZoQ0hrOW9YN0dKd3c?oc=5",
+      "agencia": "Fato ou Fake (g1)",
+      "grupos": [
+        "marcas_e_nomes"
+      ],
+      "cita_tema": true,
+      "marca_de_checagem": true,
+      "checagem": true
+    },
+    {
+      "titulo": "Pague Menos vende Ozempic com desconto para quem responder a quiz na internet?",
+      "veiculo": "Boatos.org",
+      "site": "https://www.boatos.org",
+      "data": "2024-10-31",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNzg5NmFIek1CWDRFSk9BMjhnX2xtRmNmT2JRUU9yaC1DbV9YdG9iVXdVdVd0YldVdGZLS25COV9UNXVUdEJBSFpIbzVibi1CM1U3d2c2YTRVT0J4UVEzeHEzLTlkVFpIMGJyRXVoRC1oN1FzZ2JoaS1xTk40eUl5a1pob3J5M3lYMVdTcW9DTlhwWlNJX1NyRHFKamRWWXBCNVdXNTNzU3gyN28tazZjMQ?oc=5",
+      "agencia": "Boatos.org",
+      "grupos": [
+        "marcas_e_nomes"
+      ],
+      "cita_tema": true,
+      "marca_de_checagem": false,
+      "checagem": true
+    },
+    {
+      "titulo": "O que se sabe sobre a eficácia de produtos vendidos como ‘Ozempic natural’",
+      "veiculo": "Aos Fatos",
+      "site": "https://www.aosfatos.org",
+      "data": "2023-11-09",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA1V0VaVU5oV0haNk1jT1JjN1lnUEVNTXlTMWJBMWxiRlBFQUV5QVlXOEdNTXlTWnYtcUNVbzk4N3BMa2RrNC1LTFJDZEhkdzZ2cW80WGFKY2doU3FrM2dJaTNrV3RodTNUbmUwZjFwMV95QVpjMVVHYUx3cGhqQQ?oc=5",
+      "agencia": "Aos Fatos",
+      "grupos": [
+        "substancias",
+        "marcas_e_nomes"
+      ],
+      "cita_tema": true,
+      "marca_de_checagem": false,
+      "checagem": true
+    },
+    {
+      "titulo": "Rede de desinformação promoveu golpe da lipozepina e fez disparar busca por falso emagrecedor",
+      "veiculo": "Aos Fatos",
+      "site": "https://www.aosfatos.org",
+      "data": "2022-06-13",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRi1HcktvandNMDFGYWxSRnhzbUU5WUpPS3ZnazlFbzBGSjRVd1FBS0J3elYzTW9QdTNUUzc0bHh4UE1oX1c0bWN1bkhJV0FxbE9nd05OWUtCamtfMFJNTXM1TTN0cXRVVWJ1QVp0MHFMWXMwellRV2oxcDRGRUF0Ny1DaFlablNtZlpFODMzN2xPaHRjNDctUHA1ZVhRUXM1ZGIwdVV2elRINmdnUEhzcFV4bEc4Ry1VTTJPS0hkWmE4cmJt?oc=5",
+      "agencia": "Aos Fatos",
       "grupos": [
         "substancias"
       ],

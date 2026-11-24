@@ -1,6 +1,6 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": 44,
+  "manifestos_lidos": 46,
   "frentes": [
     {
       "id": "youtube",
@@ -78,14 +78,14 @@
       "nome": "Dados públicos oficiais",
       "via": "arquivos e páginas de órgãos públicos",
       "paga": false,
-      "coletas": 13,
-      "universo": 173027,
+      "coletas": 14,
+      "universo": 338429,
       "universo_fonte": "proposições dos arquivos anuais da Câmara, contadas na leitura",
-      "lido": 173027,
-      "amostra": 54,
+      "lido": 338429,
+      "amostra": 60,
       "amostra_como": "proposições do período que citam os termos",
       "cobertura": "parcial",
-      "ultima_coleta": "2026-11-24T03:06:04Z",
+      "ultima_coleta": "2026-11-24T05:35:16Z",
       "runs": [
         "45306221540",
         "45306221540",
@@ -99,7 +99,8 @@
         "45313800629",
         "45313800629",
         "45313922869",
-        "45317038053"
+        "45317038053",
+        "45331564217"
       ]
     },
     {

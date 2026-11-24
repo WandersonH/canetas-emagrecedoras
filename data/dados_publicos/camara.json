@@ -1,16 +1,133 @@
 {
-  "obtido_em": "2026-11-24T03:05:53Z",
-  "run_id": "45317038053",
+  "obtido_em": "2026-11-24T05:34:54Z",
+  "run_id": "45331564217",
   "periodo": {
-    "inicio": "2025-01-01",
+    "inicio": "2022-05-13",
     "fim": "2026-11-24"
   },
   "nota": "Proposições apresentadas no período cuja ementa ou indexação cita os termos.",
   "arquivos": [
     {
+      "ano": 2022,
+      "url": "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-2022.csv",
+      "linhas_no_arquivo": 31467,
+      "linhas_que_citam": 0,
+      "colunas": [
+        "id",
+        "uri",
+        "siglaTipo",
+        "numero",
+        "ano",
+        "codTipo",
+        "descricaoTipo",
+        "ementa",
+        "ementaDetalhada",
+        "keywords",
+        "dataApresentacao",
+        "uriOrgaoNumerador",
+        "uriPropAnterior",
+        "uriPropPrincipal",
+        "uriPropPosterior",
+        "urlInteiroTeor",
+        "urnFinal",
+        "ultimoStatus_dataHora",
+        "ultimoStatus_sequencia",
+        "ultimoStatus_uriRelator",
+        "ultimoStatus_idOrgao",
+        "ultimoStatus_siglaOrgao",
+        "ultimoStatus_uriOrgao",
+        "ultimoStatus_regime",
+        "ultimoStatus_descricaoTramitacao",
+        "ultimoStatus_idTipoTramitacao",
+        "ultimoStatus_descricaoSituacao",
+        "ultimoStatus_idSituacao",
+        "ultimoStatus_despacho",
+        "ultimoStatus_apreciacao",
+        "ultimoStatus_url"
+      ]
+    },
+    {
+      "ano": 2023,
+      "url": "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-2023.csv",
+      "linhas_no_arquivo": 67082,
+      "linhas_que_citam": 2,
+      "colunas": [
+        "id",
+        "uri",
+        "siglaTipo",
+        "numero",
+        "ano",
+        "codTipo",
+        "descricaoTipo",
+        "ementa",
+        "ementaDetalhada",
+        "keywords",
+        "dataApresentacao",
+        "uriOrgaoNumerador",
+        "uriPropAnterior",
+        "uriPropPrincipal",
+        "uriPropPosterior",
+        "urlInteiroTeor",
+        "urnFinal",
+        "ultimoStatus_dataHora",
+        "ultimoStatus_sequencia",
+        "ultimoStatus_uriRelator",
+        "ultimoStatus_idOrgao",
+        "ultimoStatus_siglaOrgao",
+        "ultimoStatus_uriOrgao",
+        "ultimoStatus_regime",
+        "ultimoStatus_descricaoTramitacao",
+        "ultimoStatus_idTipoTramitacao",
+        "ultimoStatus_descricaoSituacao",
+        "ultimoStatus_idSituacao",
+        "ultimoStatus_despacho",
+        "ultimoStatus_apreciacao",
+        "ultimoStatus_url"
+      ]
+    },
+    {
+      "ano": 2024,
+      "url": "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-2024.csv",
+      "linhas_no_arquivo": 66804,
+      "linhas_que_citam": 4,
+      "colunas": [
+        "id",
+        "uri",
+        "siglaTipo",
+        "numero",
+        "ano",
+        "codTipo",
+        "descricaoTipo",
+        "ementa",
+        "ementaDetalhada",
+        "keywords",
+        "dataApresentacao",
+        "uriOrgaoNumerador",
+        "uriPropAnterior",
+        "uriPropPrincipal",
+        "uriPropPosterior",
+        "urlInteiroTeor",
+        "urnFinal",
+        "ultimoStatus_dataHora",
+        "ultimoStatus_sequencia",
+        "ultimoStatus_uriRelator",
+        "ultimoStatus_idOrgao",
+        "ultimoStatus_siglaOrgao",
+        "ultimoStatus_uriOrgao",
+        "ultimoStatus_regime",
+        "ultimoStatus_descricaoTramitacao",
+        "ultimoStatus_idTipoTramitacao",
+        "ultimoStatus_descricaoSituacao",
+        "ultimoStatus_idSituacao",
+        "ultimoStatus_despacho",
+        "ultimoStatus_apreciacao",
+        "ultimoStatus_url"
+      ]
+    },
+    {
       "ano": 2025,
       "url": "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-2025.csv",
-      "linhas_no_arquivo": 113415,
+      "linhas_no_arquivo": 113410,
       "linhas_que_citam": 20,
       "colunas": [
         "id",
@@ -49,7 +166,7 @@
     {
       "ano": 2026,
       "url": "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-2026.csv",
-      "linhas_no_arquivo": 59612,
+      "linhas_no_arquivo": 59666,
       "linhas_que_citam": 34,
       "colunas": [
         "id",
@@ -87,12 +204,12 @@
     }
   ],
   "por_tipo": {
-    "PL": 15,
+    "INC": 12,
+    "PL": 18,
+    "REQ": 9,
     "SBT": 4,
     "RIC": 12,
-    "INC": 10,
     "SIT": 1,
-    "REQ": 8,
     "não informado": 1,
     "PDL": 3
   },
@@ -758,6 +875,84 @@
         "glp-1"
       ],
       "link": "https://www.camara.leg.br/propostas-legislativas/2483435"
+    },
+    {
+      "id": "2469604",
+      "tipo": "REQ",
+      "numero": "249",
+      "ano": "2024",
+      "apresentada_em": "2024-11-13",
+      "ementa": "Requer a realização de audiência pública para discutir os impactos do uso e venda indiscriminada de medicamentos análogos ao GLP-1, como semaglutida, liraglutida e tirzepatida, sem a solicitação, verificação e retenção de prescrição médica.",
+      "termos": [
+        "glp-1",
+        "semaglutida",
+        "liraglutida",
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2469604"
+    },
+    {
+      "id": "2445889",
+      "tipo": "PL",
+      "numero": "2725",
+      "ano": "2024",
+      "apresentada_em": "2024-07-03",
+      "ementa": "Dispõe sobre a inclusão do medicamento tirzepatida na Relação Nacional de Medicamentos Essenciais (RENAME), distribuídos de forma gratuita pelo Sistema Único de Saúde (SUS).",
+      "termos": [
+        "tirzepatida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2445889"
+    },
+    {
+      "id": "2439180",
+      "tipo": "PL",
+      "numero": "2264",
+      "ano": "2024",
+      "apresentada_em": "2024-06-10",
+      "ementa": "Dispõe sobre a disponibilização da Liraglutida e da Semaglutida pelo Sistema Único de Saúde (SUS).",
+      "termos": [
+        "liraglutida",
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2439180"
+    },
+    {
+      "id": "2437053",
+      "tipo": "PL",
+      "numero": "2115",
+      "ano": "2024",
+      "apresentada_em": "2024-05-28",
+      "ementa": "Altera a Lei nº 5.991, de 17 de dezembro de 1973, para submeter os medicamentos contendo semaglutida ao regime de controle sanitário especial.",
+      "termos": [
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2437053"
+    },
+    {
+      "id": "2377314",
+      "tipo": "INC",
+      "numero": "1138",
+      "ano": "2023",
+      "apresentada_em": "2023-08-09",
+      "ementa": "Sugere à Agência Nacional de Vigilância Sanitária que submeta ao controle sanitário especial as apresentações farmacêuticas que contenham na sua formulação o princípio ativo Semaglutida.",
+      "termos": [
+        "semaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2377314"
+    },
+    {
+      "id": "2348974",
+      "tipo": "INC",
+      "numero": "94",
+      "ano": "2023",
+      "apresentada_em": "2023-02-16",
+      "ementa": "Sugere à Agência Nacional de Vigilância Sanitária (ANVISA), que as substâncias análogas ao GLP1, tais como Semaglutida, Liraglutida e Dulaglutida, sejam incluídas no anexo I, lista C1 da Portaria nº 344, de 12 de maio de 1998, e, consequentemente, passem a ser dispensadas somente mediante apresentação de receituário especial tipo C1.",
+      "termos": [
+        "semaglutida",
+        "liraglutida",
+        "dulaglutida"
+      ],
+      "link": "https://www.camara.leg.br/propostas-legislativas/2348974"
     }
   ]
 }
