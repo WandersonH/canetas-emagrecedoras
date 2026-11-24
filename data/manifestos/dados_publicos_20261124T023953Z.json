@@ -1,0 +1,101 @@
+{
+  "frente": "dados_publicos",
+  "etapa": "gratis",
+  "run_id": "45313800629",
+  "iniciado_em": "2026-11-24T02:39:53Z",
+  "terminado_em": "2026-11-24T02:54:46Z",
+  "consulta": {
+    "subfrente": "sngpc_industrializados",
+    "fonte": "https://dados.anvisa.gov.br/dados/SNGPC/Industrializados/",
+    "filtro": "linha que cita substância ou marca",
+    "meses_desde": "202501"
+  },
+  "universo": {
+    "valor": 87296485,
+    "fonte": "linhas dos arquivos mensais do SNGPC (industrializados) publicados a partir de 202501, contadas na leitura"
+  },
+  "lido": 87296485,
+  "amostra": {
+    "n": 4221125,
+    "como": "linhas que citam substância ou marca"
+  },
+  "parou_por": "arquivo_inteiro",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/dados_publicos/sngpc_industrializados.json",
+      "sha256": "78cf967bc0d55ed806259034d8554881dbaee856b4e857639fe8ef66c8e4cacd",
+      "bytes": 12809,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202601.csv.gz",
+      "sha256": "31b21146d687569a7ea5d81a2e0bf76782f466419dc1cbd19c38dd5757f5c2db",
+      "bytes": 1507110,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202602.csv.gz",
+      "sha256": "47d3416e5f1e6e26d7ce6c46a1fb185ede2933ff8ccfdcfdb600729730d6eef3",
+      "bytes": 1408185,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202603.csv.gz",
+      "sha256": "be8c12297c5b9dbe1f0e9319cf2f01ee954a26b9cf6539d4f294baca1df08208",
+      "bytes": 1647957,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202604.csv.gz",
+      "sha256": "e546e604537049ba6138a9faccd600b5af1a5f3202164e713b4023fefc19d983",
+      "bytes": 1622160,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202605.csv.gz",
+      "sha256": "25b7d6863fd24f27d3f519599637690791ada36bd77fba62918c93ac2287530d",
+      "bytes": 1782901,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202606.csv.gz",
+      "sha256": "063a30b0628543dd410509854d533e3310653976d758735fbe5c8d9d886482b5",
+      "bytes": 1864434,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202607.csv.gz",
+      "sha256": "240e850a723e6fc1ce2b52e398cbeda13e4000426f1a1c60f7eb4f727f33e18c",
+      "bytes": 2098281,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202608.csv.gz",
+      "sha256": "5450a38b09091843927c6c2bcb0355ab7e55b5be40ea0d1204c90b04a645cb24",
+      "bytes": 2166818,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202609.csv.gz",
+      "sha256": "3e19ce047467115e41b2ada432a395aa29a45bbfb1e4b258bacbb1475588e04f",
+      "bytes": 2169755,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202610.csv.gz",
+      "sha256": "4c7cd01525c60663500611a3755f00625158620b97036e1cf07a40195c05543e",
+      "bytes": 2203325,
+      "linhas": null
+    },
+    {
+      "caminho": "dados_publicos/sngpc_industrializados/202611.csv.gz",
+      "sha256": "415af4499d406d97b7883133d7ca22f7d69259c32e31f34486876033bdeefc24",
+      "bytes": 1356047,
+      "linhas": null
+    }
+  ],
+  "bloqueios": []
+}

@@ -1,6 +1,6 @@
 {
   "nota": "Gerado por scripts/build_estado.py a partir dos manifestos. Campo null é dado ausente.",
-  "manifestos_lidos": 33,
+  "manifestos_lidos": 36,
   "frentes": [
     {
       "id": "youtube",
@@ -75,14 +75,14 @@
       "nome": "Dados públicos oficiais",
       "via": "arquivos e páginas de órgãos públicos",
       "paga": false,
-      "coletas": 8,
+      "coletas": 11,
       "universo": 4460483,
       "universo_fonte": "linhas dos arquivos mensais do SNGPC (manipulados) publicados a partir de 202501, contadas na leitura",
       "lido": 4460483,
       "amostra": 91056,
       "amostra_como": "linhas que citam substância ou marca",
       "cobertura": "parcial",
-      "ultima_coleta": "2026-11-24T02:34:40Z",
+      "ultima_coleta": "2026-11-24T02:58:04Z",
       "runs": [
         "45306221540",
         "45306221540",
@@ -91,7 +91,10 @@
         "45306221540",
         "45310587332",
         "45310587332",
-        "45310587332"
+        "45310587332",
+        "45313800629",
+        "45313800629",
+        "45313800629"
       ]
     },
     {
