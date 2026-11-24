@@ -130,5 +130,188 @@
       "citacao": "ZHANG, Shun et al. Concerns of quality, utility, and reliability of laparoscopic gastrectomy for gastric cancer in public video sharing platform. Annals of Translational Medicine, v. 8, n. 5, p. 196, 2020. DOI: 10.21037/atm.2020.01.78.",
       "enviada_em": "24/11/2026, pelo pesquisador, como referência do critério de qualidade"
     }
-  ]
+  ],
+  "linha_do_tempo": {
+    "inicio": "13/05/2022",
+    "nota": "Marcos regulatórios e de mercado desde a primeira aprovação da tirzepatida no mundo. Cada marco tem data e fonte; datas aproximadas estão marcadas. Levantamento de 24/11/2026; a lista é do projeto e não esgota os atos da Anvisa.",
+    "marcos": [
+      {
+        "data": "13/05/2022",
+        "lugar": "EUA",
+        "tipo": "aprovação",
+        "descricao": "A FDA aprova a tirzepatida (Mounjaro) para diabetes tipo 2: primeira aprovação do medicamento no mundo.",
+        "fonte": "Eli Lilly (comunicado)",
+        "url": "https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-mounjarotm-tirzepatide-injection-first-and"
+      },
+      {
+        "data": "02/01/2023",
+        "lugar": "Brasil",
+        "tipo": "aprovação",
+        "descricao": "A Anvisa aprova o Wegovy (semaglutida 2,4 mg), primeiro injetável semanal para obesidade no país.",
+        "fonte": "Canaltech",
+        "url": "https://canaltech.com.br/saude/anvisa-aprova-1o-tratamento-injetavel-para-obesidade-no-brasil-234822/"
+      },
+      {
+        "data": "25/09/2023",
+        "lugar": "Brasil",
+        "tipo": "aprovação",
+        "descricao": "A Anvisa aprova o Mounjaro (tirzepatida) para diabetes tipo 2 (publicação no Diário Oficial; resolução de 21/09/2023).",
+        "fonte": "Conselho Federal de Farmácia",
+        "url": "https://site.cff.org.br/noticia/Noticias-gerais/25/09/2023/tizerpatida-anvisa-aprova-novo-medicamento-promissor-para-o-tratamento-de-diabetes-tipo-2"
+      },
+      {
+        "data": "03/11/2023",
+        "lugar": "Brasil",
+        "tipo": "fiscalização",
+        "descricao": "A Anvisa alerta para lote falsificado de Ozempic e manda apreender (RE 3.945/2023).",
+        "fonte": "Agência Gov (Anvisa)",
+        "url": "https://agenciagov.ebc.com.br/noticias/202311/anvisa-alertasobre-falsificacao-dos-medicamentos-tysabri-r-e-ozempic-r"
+      },
+      {
+        "data": "19/07/2024",
+        "lugar": "Brasil",
+        "tipo": "mercado",
+        "descricao": "O Wegovy começa a ser vendido nas farmácias brasileiras.",
+        "fonte": "NSC Total",
+        "url": "https://www.nsctotal.com.br/?p=7233832"
+      },
+      {
+        "data": "23/12/2024",
+        "lugar": "Brasil",
+        "tipo": "aprovação",
+        "descricao": "A Anvisa autoriza a EMS a produzir liraglutida (Olire, para obesidade, e Lirux, para diabetes), primeiras canetas de GLP-1 de farmacêutica brasileira.",
+        "fonte": "TNH1",
+        "url": "https://www.tnh1.com.br/noticia/nid/primeiro-concorrente-nacional-do-ozempic-tem-producao-aprovada-pela-anvisa/"
+      },
+      {
+        "data": "16/04/2025",
+        "lugar": "Brasil",
+        "tipo": "regra",
+        "descricao": "A diretoria da Anvisa aprova a retenção de receita para os agonistas de GLP-1.",
+        "fonte": "Conselho Federal de Farmácia",
+        "url": "https://site.cff.org.br/noticia/Noticias-gerais/16/04/2025/anvisa-torna-obrigatoria-a-retencao-de-receita-para-compra-de-canetas-emagrecedoras"
+      },
+      {
+        "data": "15/05/2025",
+        "lugar": "Brasil",
+        "tipo": "mercado",
+        "descricao": "O Mounjaro chega às farmácias brasileiras.",
+        "fonte": "CNN Brasil",
+        "url": "https://www.cnnbrasil.com.br/saude/mounjaro-chega-as-farmacias-em-maio-saiba-o-preco/",
+        "aproximada": "a fabricante anunciou a chegada na primeira quinzena de maio de 2025"
+      },
+      {
+        "data": "09/06/2025",
+        "lugar": "Brasil",
+        "tipo": "aprovação",
+        "descricao": "A Anvisa aprova a tirzepatida (Mounjaro) para obesidade; a venda no país tinha começado em maio de 2025.",
+        "fonte": "Band Jornalismo (Estadão Conteúdo)",
+        "url": "https://www.band.com.br/noticias/anvisa-aprova-mounjaro-para-tratamento-de-obesidade-e-sobrepeso-com-comorbidades-202506090930"
+      },
+      {
+        "data": "23/06/2025",
+        "lugar": "Brasil",
+        "tipo": "regra",
+        "descricao": "A retenção de receita passa a valer nas farmácias.",
+        "fonte": "Agência Brasil",
+        "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2025-06/receitas-de-canetas-emagrecedoras-serao-retidas-partir-desta-segunda/"
+      },
+      {
+        "data": "20/08/2025",
+        "lugar": "Brasil",
+        "tipo": "SUS",
+        "descricao": "A Conitec nega a incorporação de semaglutida e liraglutida ao SUS.",
+        "fonte": "Conselho Federal de Farmácia",
+        "url": "https://site.cff.org.br/noticia/Noticias-gerais/21/08/2025/conitec-rejeita-inclusao-de-medicamentos-contra-diabetes-e-obesidade-no-sus"
+      },
+      {
+        "data": "22/08/2025",
+        "lugar": "Brasil",
+        "tipo": "regra",
+        "descricao": "A Anvisa proíbe a manipulação de semaglutida e fixa regras para importar e manipular tirzepatida (Despacho 97/2025 e Nota Técnica 200/2025).",
+        "fonte": "Agência Gov (Anvisa)",
+        "url": "https://agenciagov.ebc.com.br/noticias/202508/anvisa-esclarece-e-determina-regras-para-manipulacao-de-canetas-de-glp-1"
+      },
+      {
+        "data": "16/01/2026",
+        "lugar": "Brasil",
+        "tipo": "regra",
+        "descricao": "A Anvisa estabelece novas regras para prescrição e dispensação dos agonistas de GLP-1.",
+        "fonte": "Conselho Federal de Farmácia",
+        "url": "https://site.cff.org.br/noticia/Noticias-gerais/16/01/2026/anvisa-estabelece-novas-regras-para-prescricao-e-dispensacao-de-medicamentos-agonistas-de-glp-1"
+      },
+      {
+        "data": "21/01/2026",
+        "lugar": "Brasil",
+        "tipo": "fiscalização",
+        "descricao": "A Anvisa proíbe e manda apreender canetas sem registro conhecidas como canetas do Paraguai.",
+        "fonte": "Sindpd (com base em nota da Anvisa)",
+        "url": "https://sindpd.org.br/2026/01/21/anvisa-proibe-venda-canetas-emagrecedoras/"
+      },
+      {
+        "data": "20/03/2026",
+        "lugar": "Brasil",
+        "tipo": "patente",
+        "descricao": "Termina a patente da semaglutida no Brasil.",
+        "fonte": "Metro 1 (decisão do STJ)",
+        "url": "https://www.metro1.com.br/noticias/saude/174932,stj-decide-que-patente-de-semaglutida-vencera-em-2026"
+      },
+      {
+        "data": "27/04/2026",
+        "lugar": "Brasil",
+        "tipo": "regra",
+        "descricao": "A Anvisa apresenta um plano de farmacovigilância ativa para os agonistas de GLP-1.",
+        "fonte": "Anvisa",
+        "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-apresenta-plano-de-monitoramento-ativo-para-canetas-glp-1/resolveuid/5849d230b32b451fa654975ce29cf744"
+      },
+      {
+        "data": "29/07/2026",
+        "lugar": "Brasil",
+        "tipo": "aprovação",
+        "descricao": "A Anvisa registra cinco novas canetas de semaglutida.",
+        "fonte": "Agência Gov",
+        "url": "https://agenciagov.ebc.com.br/noticias/202607/anvisa-registra-cinco-novas-canetas-de-semaglutida"
+      },
+      {
+        "data": "17/08/2026",
+        "lugar": "Brasil",
+        "tipo": "aprovação",
+        "descricao": "Registro dos primeiros genéricos de semaglutida.",
+        "fonte": "Blog Voy Saúde",
+        "url": "https://www.voysaude.com.br/blog/semaglutida-generica-guia-completo-2026"
+      },
+      {
+        "data": "08/09/2026",
+        "lugar": "Brasil",
+        "tipo": "aprovação",
+        "descricao": "A Anvisa aprova dois genéricos de liraglutida da EMS.",
+        "fonte": "Agência Brasil",
+        "url": "https://agenciabrasil.ebc.com.br/es/node/1701866"
+      },
+      {
+        "data": "16/09/2026",
+        "lugar": "Brasil",
+        "tipo": "fiscalização",
+        "descricao": "A Anvisa proíbe mais uma caneta sem registro vinda do Paraguai.",
+        "fonte": "Agência Brasil",
+        "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-09/anvisa-proibe-caneta-emagrecedora-vinda-do-paraguai"
+      },
+      {
+        "data": "24/09/2026",
+        "lugar": "Brasil",
+        "tipo": "SUS",
+        "descricao": "O Ministério da Saúde pede à Conitec a análise de semaglutida e liraglutida para o SUS.",
+        "fonte": "Ministério da Saúde",
+        "url": "https://www.gov.br/saude/pt-br/assuntos/noticias/2026/setembro/ministerio-da-saude-protocola-na-conitec-pedido-de-analise-para-incorporacao-de-canetas-emagrecedoras-no-sus"
+      },
+      {
+        "data": "04/11/2026",
+        "lugar": "Brasil",
+        "tipo": "aprovação",
+        "descricao": "A Anvisa aprova o Wegovy em comprimido, primeiro agonista de GLP-1 oral para obesidade no país.",
+        "fonte": "Diário de Pernambuco (Agência Brasil)",
+        "url": "https://www.diariodepernambuco.com.br/brasil/2026/11/11728319-anvisa-aprova-primeiro-comprimido-de-semaglutida-para-combater-obesidade.html"
+      }
+    ]
+  }
 }

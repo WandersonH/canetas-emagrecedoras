@@ -41,6 +41,28 @@
 .ce-emojis{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin-top:10px}.ce-emojis button{border:1px solid #d9e3ec;background:#fff;padding:8px 4px;cursor:pointer;text-align:center}.ce-emojis b{display:block;font-size:24px;line-height:1.2}.ce-emojis small{display:block;color:#6b7a8c;font-size:10.5px}
 .ce-downloads a{display:inline-block;margin:0 14px 6px 0;font-size:12.5px}
 @media(max-width:700px){.ce-marcos li{grid-template-columns:1fr}}
+.vis-tit{font:700 11px/1.3 monospace;letter-spacing:.06em;text-transform:uppercase;color:#33465a;margin:14px 0 4px}
+.vis-barras{display:grid;gap:4px;margin:6px 0 10px}.vis-linha{display:grid;grid-template-columns:minmax(90px,38%) minmax(0,1fr) 72px;gap:8px;align-items:center;font-size:12px}
+.vis-linha[data-abre]{cursor:pointer}.vis-rot{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#273447}.vis-trilho{background:#f0f3f6;height:12px;display:block}.vis-trilho i{display:block;height:12px}.vis-val{text-align:right;font-variant-numeric:tabular-nums;color:#172238;font-weight:700}
+.vis-marco{cursor:pointer}.vis-marco:hover circle{stroke:#172238;stroke-width:2}
+.vis-marcos{list-style:none;margin:10px 0 0;padding:0}.vis-marcos li{display:grid;grid-template-columns:28px 92px minmax(0,1fr);gap:4px 12px;padding:9px 6px;border-top:1px solid #edf1f5;font-size:13px;align-items:start;transition:background .4s}
+.vis-marcos li.on{background:#fff4d6}.vis-marcos time{font-weight:800;font-variant-numeric:tabular-nums}.vis-marcos small{display:block;color:#6b7a8c;margin-top:3px;font-size:11px}
+.vis-n{display:inline-flex;width:22px;height:22px;border-radius:50%;color:#fff;font-size:11px;align-items:center;justify-content:center}
+.vis-det{margin-top:12px;border-top:1px solid #edf1f5;padding-top:8px}.vis-det summary{cursor:pointer;font-size:12.5px;color:#165ebd}
+.rv-ctl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font:11.5px monospace;color:#53606b;margin:6px 0}.rv-ctl input[type=search]{border:1px solid #c9d1d6;padding:6px 9px;font:12px monospace;min-width:200px;background:#fffdf8}
+.rv-ctl button{border:1px solid #c9d1d6;background:#fff;padding:5px 10px;font:11.5px monospace;cursor:pointer}.rv-ctl button.on{background:#172238;color:#fff}.rv-ctl a{font-size:12px}
+.rv-leg{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}.rv-chip{border:1px solid #d9e3ec;background:#fff;padding:3px 8px;font:11px monospace;cursor:pointer;opacity:.45}.rv-chip.on{opacity:1}.rv-chip i{display:inline-block;width:9px;height:9px;margin-right:5px;vertical-align:-1px}.rv-chip small{opacity:.7}
+.rv-corpo{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:14px;border-top:2px solid #172238;padding-top:10px}
+.rv-tela{position:relative;background:#fffdf8;border:1px solid #e3e6e8}.rv-tela svg{width:100%;height:auto;display:block;cursor:grab;touch-action:none;max-height:720px}.rv-tela svg.arr{cursor:grabbing}
+.rv-tela line{stroke:#9aa5ae;stroke-opacity:.3}.rv-tela circle{stroke:#fffdf8;stroke-width:1;cursor:pointer}.rv-tela text{font:700 10.5px monospace;fill:#172238;paint-order:stroke;stroke:#fffdf8;stroke-width:3px;pointer-events:none;display:none}
+.rv-tela .rv-no.rot text{display:block}.rv-tela .fora{display:none}
+.rv-foco line{stroke-opacity:.04}.rv-foco .rv-no{opacity:.14}.rv-foco .rv-no.on{opacity:1}.rv-foco .rv-no.on text{display:block}.rv-foco line.on{stroke-opacity:.8;stroke:#172238}
+.rv-zoom{position:absolute;right:8px;top:8px;display:flex;flex-direction:column;gap:4px}.rv-zoom button{width:28px;height:28px;border:1px solid #c9d2dc;background:#fff;font-size:15px;cursor:pointer}
+.rv-lado{font-size:12px;color:#3c4a58}.rv-lado h4{margin:0 0 4px;font:700 17px/1.2 Georgia,serif;color:#172238}.rv-lado h4 i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px}
+.rv-lado dl{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;margin:8px 0}.rv-lado dt{color:#6b7a8c}.rv-lado dd{margin:0;font-weight:700}.rv-lado h5{margin:12px 0 4px;font:700 11px monospace;text-transform:uppercase}.rv-lado ol{margin:0;padding-left:18px}.rv-meta{font:11px monospace;color:#6b7a8c}
+.rv-viz{background:none;border:0;padding:0;color:#165ebd;cursor:pointer;font:inherit;text-align:left}
+.rv-tab{margin-top:10px;max-height:480px;overflow:auto}.rv-tab th{cursor:pointer}
+@media(max-width:800px){.rv-corpo{grid-template-columns:1fr}.vis-marcos li{grid-template-columns:28px 1fr}.vis-marcos li div{grid-column:1/-1}}
 </style>
 </head>
 <body><div class="layout"><aside class="side"><div class="mark" aria-label="Canetas emagrecedoras"><div class="brand-head"><img class="odi-brand-img" alt="Logotipo" src="./assets/marca.jpg"><div class="brand-name"><strong>ATLAS</strong><span>Canetas emagrecedoras<br>agonistas de GLP-1</span></div></div><div class="brand-footer"><span>CANETAS</span><span id="anoMarca"></span></div></div><div class="navcaption" id="navCaption">ÍNDICE</div><nav class="nav" id="nav">
@@ -65,6 +87,8 @@
     <h1>Como as canetas emagrecedoras aparecem nas redes, na imprensa e nas buscas no Brasil.<br><em id="pan-janela"></em></h1>
     <p>Para cada frente de coleta, quanto a plataforma informa que existe, quanto foi lido e até onde a leitura chegou.</p></div>
   <div class="kpigrid" id="pan-kpis"></div>
+  <div class="card" style="margin-top:17px"><div class="eyebrow">Linha do tempo · desde a primeira aprovação no mundo</div><h2 class="tk-h2">Marcos regulatórios e de mercado</h2><div id="pan-tempo"><div class="ce-vazio"><b>⛔ Sem marcos.</b></div></div></div>
+  <div class="card"><div class="eyebrow">Volume no tempo · com os marcos</div><h2 class="tk-h2">Quanto se publicou e se leu, mês a mês</h2><div id="pan-volume"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
   <div class="card" style="margin-top:17px"><div class="eyebrow">Universo e amostra</div><h2 class="tk-h2">Quanto existe, quanto foi lido e como</h2>
     <div class="tablewrap"><table class="datatable" id="pan-tabela"></table></div>
     <p class="ce-nota">Universo é o total que a plataforma informa, com a fonte; quando ela não informa, fica ⛔ e nunca é estimado. Lido é quanto a coleta leu de fato. Amostra é o que entrou na análise e como foi tirada. Cobertura <b>completa</b> só quando a leitura parou pela data inicial do recorte, e não pelo limite da coleta.</p></div>
@@ -77,7 +101,8 @@
   <div class="card"><div class="eyebrow">Pergunta</div><h2 class="tk-h2">Pergunta de pesquisa</h2><div id="rec-pergunta"></div></div>
   <div class="card"><div class="eyebrow">Hipóteses</div><h2 class="tk-h2">Hipóteses</h2><div id="rec-hipoteses"></div></div>
   <div class="card"><div class="eyebrow">Janelas</div><h2 class="tk-h2">Marco, período lido e janelas</h2><div class="tablewrap"><table class="datatable" id="rec-janelas"></table></div></div>
-  <div class="card"><div class="eyebrow">Linha do tempo</div><h2 class="tk-h2">Marcos candidatos</h2><p class="ce-nota" id="rec-marcos-nota"></p><ul class="ce-marcos" id="rec-marcos"></ul></div>
+  <div class="card"><div class="eyebrow">Linha do tempo · desde a primeira aprovação no mundo</div><h2 class="tk-h2">Marcos regulatórios e de mercado, com fonte</h2><div id="rec-tempo"><div class="ce-vazio"><b>⛔ Sem marcos.</b></div></div></div>
+  <div class="card"><div class="eyebrow">Marco do estudo</div><h2 class="tk-h2">Marcos candidatos à divisão do período</h2><p class="ce-nota" id="rec-marcos-nota"></p><ul class="ce-marcos" id="rec-marcos"></ul></div>
 </section>
 
 <section class="panel" id="termos" aria-label="Termos de busca">
@@ -132,6 +157,7 @@
   <div class="card"><div class="eyebrow">IRaMuTeQ · análise de similitude</div><h2 class="tk-h2">Árvore de similitude</h2><p class="ce-nota" id="sim-nota"></p><div id="sim-grafo"></div></div>
   <div class="card"><div class="eyebrow">Gephi · rede de palavras</div><h2 class="tk-h2">Palavras que aparecem juntas</h2><p class="ce-nota" id="rp-nota"></p><div id="rp-grafo"></div></div>
   <div class="card"><div class="eyebrow">Gephi · rede de fontes e termos</div><h2 class="tk-h2">Quem publicou sobre cada termo</h2><p class="ce-nota" id="rf-nota"></p><div id="rf-grafo"></div></div>
+  <div class="card"><div class="eyebrow">Gephi · rede de hashtags</div><h2 class="tk-h2">Hashtags que andam juntas</h2><p class="ce-nota" id="rh-nota"></p><div id="rh-grafo"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
   <div class="card"><div class="eyebrow">Gephi · estatísticas</div><h2 class="tk-h2">Medidas das redes</h2><p class="ce-nota" id="re-nota"></p><div class="tablewrap"><table class="datatable" id="re-tabela"></table></div></div>
   <div class="card"><div class="eyebrow">Emojis</div><h2 class="tk-h2">Mapa de emojis</h2><p class="ce-nota" id="em-nota"></p><div class="ce-emojis" id="em-grade"><div class="ce-vazio"><b>⛔ Sem dado.</b></div></div></div>
 </section>
@@ -281,6 +307,7 @@
     var passo=Math.max(1,Math.round(n/8));
     rotulos.forEach(function(r,i){if(i%passo===0){g+='<text x="'+x(i)+'" y="'+(A-6)+'" text-anchor="middle">'+esc(dataBR(r))+"</text>";}});
     series.forEach(function(s,k){g+='<polyline fill="none" stroke="'+CORES[k%CORES.length]+'" stroke-width="1.8" points="'+s.valores.map(function(v,i){return x(i).toFixed(1)+","+y(v).toFixed(1);}).join(" ")+'"><title>'+esc(s.nome)+"</title></polyline>";});
+    MARCOS.forEach(function(mc,idx){var d=isoBR(mc.data),i=-1;for(var j=0;j<n;j++){if(String(rotulos[j]).slice(0,10)>=d){i=j;break;}}if(i<0||(i===0&&String(rotulos[0]).slice(0,10)>d)){return;}var cor=TIPO_COR[mc.tipo]||"#5b6b7c";g+='<g class="vis-marco" data-marco="'+idx+'"><line x1="'+x(i).toFixed(1)+'" x2="'+x(i).toFixed(1)+'" y1="'+m.t+'" y2="'+(m.t+h)+'" stroke="'+cor+'" stroke-dasharray="3 3"/><circle cx="'+x(i).toFixed(1)+'" cy="'+(m.t+6)+'" r="6.5" fill="'+cor+'"/><text x="'+x(i).toFixed(1)+'" y="'+(m.t+9)+'" text-anchor="middle" style="fill:#fff;font-size:8.5px;font-weight:700">'+(idx+1)+"</text><title>"+esc(mc.data+" · "+mc.descricao)+"</title></g>";});
     return g+'</svg><div class="ce-leg">'+series.map(function(s,k){return '<span><i style="background:'+CORES[k%CORES.length]+'"></i>'+esc(s.nome)+"</span>";}).join("")+"</div>";
   }
   function barras(chaves,valores,id){
@@ -318,7 +345,7 @@
     por("im-nota","Coleta de "+val(dataBR(im.obtido_em))+(vazio(im.run_id)?"":" (run "+esc(im.run_id)+")")+": "+num(im.consultas)+" consultas (termo × mês), "+num(noticias.length)+" notícias distintas. O Google não informa o total (universo ⛔); consultas que chegaram ao limite de cem itens: "+num((im.consultas_no_limite||[]).length)+". Clique num mês para ver as notícias.");
     var porMes={};noticias.forEach(function(n){if(n.data){var k=n.data.slice(0,7);porMes[k]=(porMes[k]||0)+1;}});
     var meses=Object.keys(porMes).sort();
-    por("im-meses",barras(meses,meses.map(function(m){return porMes[m];}),"mes"));
+    por("im-meses",meses.length?serieMensal({meses:mesesEntre(meses[0],hojeMes()),series:[{nome:"Notícias distintas por mês",valores:porMes,cor:"#165ebd"}],tipo:"barras",dataAttr:"mes"}):'<div class="ce-vazio"><b>⛔ Sem dado.</b></div>');
     function lista(mes){
       var xs=noticias.filter(function(n){return !mes||(n.data||"").indexOf(mes)===0;});
       $("im-titulo-lista").textContent=mes?"Notícias de "+mes+" ("+xs.length.toLocaleString("pt-BR")+")":"Notícias mais recentes";
@@ -353,43 +380,83 @@
     var h="";
     function cartao(eyebrow,titulo,nota,corpo){return '<div class="card"><div class="eyebrow">'+eyebrow+'</div><h2 class="tk-h2">'+titulo+'</h2><p class="ce-nota">'+nota+"</p>"+corpo+"</div>";}
     function quando(x){return "Leitura de "+val(dataBR(x.obtido_em))+(vazio(x.run_id)?"":" no run "+esc(x.run_id))+". ";}
-    [[reg,"Anvisa · registro","Medicamentos registrados com as substâncias",["NOME_PRODUTO","PRINCIPIO","EMPRESA","SITUACAO","CATEGORIA","VENCIMENTO"]],
-     [cmed,"CMED · preços","Preços publicados para as substâncias",["SUBSTANCIA","PRODUTO","LABORATORIO","APRESENTACAO","PMC 0","PF 0","PMC","PF"]]].forEach(function(z){
-      var x=z[0];if(!x){return;}
-      var corpo=arquivosLidos(x.arquivos);
-      (x.arquivos||[]).forEach(function(a){
-        if(!a.linhas||!a.linhas.length){return;}
-        var cols=colunasDe(a.linhas,z[3]).slice(0,6);
-        corpo+='<div class="ce-duas" style="margin-top:12px"><div>'+tabelaContagem(a.por_substancia,"Substância ou marca citada")+"</div><div>"+(a.por_situacao?tabelaContagem(a.por_situacao,"Situação do registro"):"")+"</div></div>";
-        corpo+='<h3 class="tk-h2" style="font-size:15px;margin-top:12px">'+esc(a.arquivo)+" · "+num(a.linhas.length)+' linhas</h3><div class="tablewrap" style="max-height:360px;overflow:auto"><table class="datatable"><thead><tr>'+cols.map(function(c){return "<th>"+esc(c)+"</th>";}).join("")+"</tr></thead><tbody>"+a.linhas.slice(0,300).map(function(l){return "<tr>"+cols.map(function(c){return "<td>"+val(l[c])+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>";
-      });
-      h+=cartao(z[1],z[2],quando(x)+esc(x.nota||""),corpo);
-    });
+    function detalhe(rotulo,corpo){return '<details class="vis-det"><summary>'+esc(rotulo)+"</summary>"+corpo+"</details>";}
+    function kpis(xs){return '<div class="kpigrid" style="margin:12px 0">'+xs.map(function(k){return '<div class="kpi"><div class="klabel">'+k[0]+'</div><div class="kval">'+k[1]+'</div><div class="knote">'+k[2]+"</div></div>";}).join("")+"</div>";}
+    function universo(arqs){var u=0,c=0,ok=false;(arqs||[]).forEach(function(a){if(!vazio(a.linhas_no_arquivo)){ok=true;u+=a.linhas_no_arquivo;c+=a.linhas_que_citam||0;}});return ok?[u,c]:[null,null];}
+    function arquivosLidos(arqs){return '<div class="tablewrap"><table class="datatable" style="min-width:0"><thead><tr><th>Arquivo</th><th class="ce-num">Linhas no arquivo (universo)</th><th class="ce-num">Que citam as substâncias</th></tr></thead><tbody>'+(arqs||[]).map(function(a){return "<tr><td>"+link(a.url,a.arquivo||String(a.ano))+(a.erro?'<br><small class="ce-nota">⛔ '+esc(a.erro)+"</small>":"")+'</td><td class="ce-num">'+num(a.linhas_no_arquivo)+'</td><td class="ce-num">'+num(a.linhas_que_citam)+"</td></tr>";}).join("")+"</tbody></table></div>";}
+    function tabelaLinhas(a,pedacos){var cols=colunasDe(a.linhas,pedacos).slice(0,6);return '<div class="tablewrap" style="max-height:360px;overflow:auto"><table class="datatable"><thead><tr>'+cols.map(function(c){return "<th>"+esc(c)+"</th>";}).join("")+"</tr></thead><tbody>"+a.linhas.slice(0,400).map(function(l){return "<tr>"+cols.map(function(c){return "<td>"+val(l[c])+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>";}
     if(vig){
-      var corpo=arquivosLidos(vig.arquivos)+'<div class="kpigrid" style="margin:12px 0"><div class="kpi"><div class="klabel">Notificações com as substâncias</div><div class="kval">'+num(vig.notificacoes)+'</div><div class="knote">suspeita de evento adverso; não prova causa</div></div></div>';
-      corpo+='<div class="ce-duas">'+"<div>"+tabelaContagem(vig.por_substancia,"Substância ou marca")+"</div><div>"+tabelaContagem(vig.por_ano,"Ano")+"</div></div>";
-      corpo+='<div class="ce-duas">'+"<div>"+tabelaContagem(vig.por_gravidade,"Grave")+"</div><div>"+tabelaContagem(vig.por_faixa_etaria,"Faixa etária")+"</div></div>";
-      corpo+='<div class="ce-duas">'+"<div>"+tabelaContagem(vig.por_sexo,"Sexo")+"</div><div>"+tabelaContagem(vig.por_uf,"UF")+"</div></div>";
-      corpo+=tabelaContagem(vig.reacoes_mais_notificadas,"Reação notificada ("+(vig.coluna_da_reacao||"⛔")+")");
+      var anos=(vig.por_ano||[]).filter(function(x){return /^\d{4}$/.test(x.valor);});
+      var anoIni=anos.length?anos[0].valor:null,anoFim=anos.length?anos[anos.length-1].valor:null;
+      var corpo=kpis([["Notificações com as substâncias",num(vig.notificacoes),"suspeita de evento adverso; não prova causa"],["Linhas de medicamentos lidas (universo)",num((vig.arquivos||[])[0]&&vig.arquivos[0].linhas_no_arquivo),"arquivo inteiro do VigiMed"],["Período das notificações",anoIni?esc(anoIni)+"–"+esc(anoFim):AUS,"pela "+esc((vig.colunas_usadas||{}).por_ano||"data")],["Reação mais notificada",(vig.reacoes_mais_notificadas||[])[0]?esc(vig.reacoes_mais_notificadas[0].valor):AUS,(vig.reacoes_mais_notificadas||[])[0]?num(vig.reacoes_mais_notificadas[0].n)+" registros de reação":""]]);
+      var porAnoSub={};(vig.por_ano_e_substancia||[]).forEach(function(r){if(/^\d{4}$/.test(r.ano)&&typeof r.n==="number"){(porAnoSub[r.substancia]=porAnoSub[r.substancia]||{})[r.ano]=r.n;}});
+      var subs=Object.keys(porAnoSub);
+      var rotAno={};anos.forEach(function(x){rotAno[x.valor]=x.n;});
+      corpo+='<div class="vis-tit">Notificações por ano e substância</div>'+barrasAno(anos.map(function(x){return x.valor;}),subs.map(function(s,j){return {nome:s,valores:porAnoSub[s],cor:CORES_SUB[s]||CORES[j%CORES.length]};}),rotAno);
+      corpo+='<div class="ce-duas" style="margin-top:14px"><div>'+barrasH(deContagem(vig.reacoes_mais_notificadas,"#9c2b20"),{titulo:"Reações mais notificadas ("+(vig.coluna_da_reacao||"⛔")+")",max:20})+"</div><div>"+barrasH(deContagem(vig.por_substancia),{titulo:"Notificações por substância"})+barrasH(deContagem(vig.por_gravidade,"#d7a14a"),{titulo:"Grave",max:6})+"</div></div>";
+      corpo+='<div class="ce-duas" style="margin-top:14px"><div>'+barrasH(deContagem(vig.por_faixa_etaria,"#15909f"),{titulo:"Faixa etária",max:10})+barrasH(deContagem(vig.por_sexo,"#5b6b7c"),{titulo:"Sexo",max:4})+"</div><div>"+barrasH(deContagem(vig.por_uf,"#165ebd"),{titulo:"UF da notificação",max:27})+"</div></div>";
+      corpo+=detalhe("Arquivos lidos",arquivosLidos(vig.arquivos));
       h+=cartao("Anvisa · VigiMed","Notificações de suspeita de evento adverso",quando(vig)+esc(vig.nota||""),corpo);
     }
-    [[sind,"industrializados"],[sman,"manipulados"]].forEach(function(z){
+    [[sind,"industrializados","unidades vendidas (caixas e canetas)"],[sman,"manipulados","unidades farmacotécnicas manipuladas"]].forEach(function(z){
       var x=z[0];if(!x){return;}
-      var meses=x.meses||[];
-      var corpo='<div class="tablewrap"><table class="datatable" style="min-width:0"><thead><tr><th>Mês do arquivo</th><th class="ce-num">Linhas no arquivo (universo)</th><th class="ce-num">Linhas que citam</th></tr></thead><tbody>'+meses.map(function(m){return "<tr><td>"+esc(m.mes)+(m.erro?'<br><small class="ce-nota">⛔ '+esc(m.erro)+"</small>":"")+'</td><td class="ce-num">'+num(m.linhas_no_arquivo)+'</td><td class="ce-num">'+num(m.linhas_que_citam)+"</td></tr>";}).join("")+"</tbody></table></div>";
-      if(!meses.length){corpo='<div class="ce-vazio"><b>⛔ Nenhum mês publicado no período lido.</b></div>';}
-      var ms=x.por_mes_e_substancia||[];
-      if(ms.length){corpo+='<div class="tablewrap" style="margin-top:12px"><table class="datatable" style="min-width:0"><thead><tr><th>Mês</th><th>Substância</th><th class="ce-num">Linhas</th><th class="ce-num">Quantidade vendida</th></tr></thead><tbody>'+ms.map(function(r){return "<tr><td>"+esc(r.mes)+"</td><td>"+esc(r.substancia)+'</td><td class="ce-num">'+(typeof r.linhas==="number"?num(r.linhas):esc(r.linhas))+'</td><td class="ce-num">'+num(r.quantidade)+"</td></tr>";}).join("")+"</tbody></table></div>";}
+      var meses=x.meses||[],ms=x.por_mes_e_substancia||[],u=0,c=0;meses.forEach(function(m){u+=m.linhas_no_arquivo||0;c+=m.linhas_que_citam||0;});
+      var porSub={};ms.forEach(function(r){if(typeof r.quantidade==="number"){(porSub[r.substancia]=porSub[r.substancia]||{})[r.mes]=r.quantidade;}});
+      var todos=ms.map(function(r){return r.mes;}).sort(),corpo=kpis([["Linhas lidas (universo)",num(u),num(meses.length)+" arquivos mensais"],["Linhas que citam as substâncias",num(c),"vendas registradas"],["Meses publicados no período",meses.length?esc(meses[0].mes)+" a "+esc(meses[meses.length-1].mes):AUS,"2025 não está publicado pela Anvisa"]]);
+      corpo+=todos.length?'<div class="vis-tit">Quantidade por mês e substância · '+esc(z[2])+"</div>"+serieMensal({meses:mesesEntre(todos[0],todos[todos.length-1]),series:Object.keys(porSub).map(function(s,j){return {nome:s,valores:porSub[s],cor:CORES_SUB[s]||CORES[j%CORES.length]};}),tipo:"linha"}):'<div class="ce-vazio"><b>⛔ Nenhum mês publicado no período lido.</b></div>';
+      var uf=(x.quantidade_por_uf||[]).map(function(r){return {rotulo:r.uf,valor:r.quantidade};});
+      corpo+='<div class="ce-duas" style="margin-top:14px"><div>'+barrasH(uf,{titulo:"Quantidade por UF",max:27})+"</div><div>"+barrasH(deContagem(x.por_sexo,"#5b6b7c"),{titulo:"Sexo (linhas)",max:4})+barrasH(deContagem(x.por_idade,"#15909f"),{titulo:"Idade (linhas, valores mais frequentes)",max:12})+"</div></div>";
+      corpo+=detalhe("Arquivos mensais lidos",'<div class="tablewrap"><table class="datatable" style="min-width:0"><thead><tr><th>Mês do arquivo</th><th class="ce-num">Linhas (universo)</th><th class="ce-num">Que citam</th></tr></thead><tbody>'+meses.map(function(m){return "<tr><td>"+esc(m.mes)+(m.erro?" ⛔ "+esc(m.erro):"")+'</td><td class="ce-num">'+num(m.linhas_no_arquivo)+'</td><td class="ce-num">'+num(m.linhas_que_citam)+"</td></tr>";}).join("")+"</tbody></table></div>");
       h+=cartao("Anvisa · SNGPC · "+z[1],"Vendas em farmácias, "+z[1],quando(x)+esc(x.nota||""),corpo);
     });
     if(cam){
-      var pt=cam.por_tipo||{},ps=cam.proposicoes||[];
-      var corpo='<div class="tablewrap" style="min-width:0"><table class="datatable" style="min-width:0"><thead><tr><th>Arquivo anual da Câmara</th><th class="ce-num">Proposições no arquivo (universo)</th><th class="ce-num">Que citam os termos</th></tr></thead><tbody>'+(cam.arquivos||[]).map(function(a){return "<tr><td>"+link(a.url,String(a.ano))+(a.erro?'<br><small class="ce-nota">⛔ '+esc(a.erro)+"</small>":"")+'</td><td class="ce-num">'+num(a.linhas_no_arquivo)+'</td><td class="ce-num">'+num(a.linhas_que_citam)+"</td></tr>";}).join("")+"</tbody></table></div>";
-      corpo+='<ul class="ce-chips">'+Object.keys(pt).map(function(k){return "<li>"+esc(k)+"<small>"+num(pt[k])+"</small></li>";}).join("")+"</ul>";
-      corpo+=ps.length?'<div class="tablewrap" style="max-height:360px;overflow:auto"><table class="datatable"><thead><tr><th>Proposição</th><th>Apresentada em</th><th>Ementa</th><th>Termos</th></tr></thead><tbody>'+ps.map(function(p){return "<tr><td>"+link(p.link,esc(p.tipo)+" "+esc(p.numero)+"/"+esc(p.ano))+"</td><td>"+val(dataBR(p.apresentada_em))+"</td><td>"+val(p.ementa)+"</td><td>"+esc((p.termos||[]).join(", "))+"</td></tr>";}).join("")+"</tbody></table></div>":'<div class="ce-vazio"><b>⛔ Nenhuma proposição no período.</b></div>';
+      var ps=cam.proposicoes||[],uc=universo(cam.arquivos),porMes={},porTipo={};
+      ps.forEach(function(p){if(p.apresentada_em){var k=p.apresentada_em.slice(0,7);(porTipo[p.tipo||"—"]=porTipo[p.tipo||"—"]||{})[k]=((porTipo[p.tipo||"—"]||{})[k]||0)+1;porMes[k]=1;}});
+      var ini=anoMes((cam.periodo&&cam.periodo.inicio)?cam.periodo.inicio.split("-").reverse().join("/"):"13/05/2022")||"2022-05";
+      var corpo=kpis([["Proposições lidas (universo)",num(uc[0]),"arquivos anuais da Câmara"],["Citam os termos",num(ps.length),"ementa ou indexação"],["Tipos",num(Object.keys(cam.por_tipo||{}).length),esc(Object.keys(cam.por_tipo||{}).join(", "))]]);
+      corpo+='<div class="vis-tit">Proposições por mês de apresentação e tipo</div>'+serieMensal({meses:mesesEntre(ini,hojeMes()),series:Object.keys(porTipo).map(function(t,j){return {nome:t,valores:porTipo[t]};}),tipo:"barras"});
+      corpo+=detalhe("Lista das proposições",'<div class="tablewrap" style="max-height:420px;overflow:auto"><table class="datatable"><thead><tr><th>Proposição</th><th>Apresentada em</th><th>Ementa</th><th>Termos</th></tr></thead><tbody>'+ps.map(function(p){return "<tr><td>"+link(p.link,esc(p.tipo)+" "+esc(p.numero)+"/"+esc(p.ano))+"</td><td>"+val(dataBR(p.apresentada_em))+"</td><td>"+val(p.ementa)+"</td><td>"+esc((p.termos||[]).join(", "))+"</td></tr>";}).join("")+"</tbody></table></div>")+detalhe("Arquivos lidos",arquivosLidos(cam.arquivos));
       h+=cartao("Câmara dos Deputados","Proposições sobre as substâncias e as canetas",quando(cam)+esc(cam.nota||""),corpo);
     }
+    [[reg,"Anvisa · registro","Medicamentos registrados com as substâncias",["NOME_PRODUTO","PRINCIPIO","EMPRESA","SITUACAO","CATEGORIA","VENCIMENTO"]],
+     [cmed,"CMED · preços","Apresentações com preço publicado",["SUBSTANCIA","PRODUTO","LABORATORIO","APRESENTACAO","PMC 0","PF 0"]]].forEach(function(z){
+      var x=z[0];if(!x){return;}var uc=universo(x.arquivos),corpo=kpis([["Linhas lidas (universo)",num(uc[0]),"arquivos inteiros da Anvisa"],["Citam as substâncias",num(uc[1]),"filtro por substância e marca"]]);
+      (x.arquivos||[]).forEach(function(a){if(!a.linhas||!a.linhas.length){return;}
+        corpo+='<div class="ce-duas"><div>'+barrasH(deContagem(a.por_substancia),{titulo:esc(a.arquivo)+" · por substância"})+"</div><div>"+(a.por_situacao?barrasH(deContagem(a.por_situacao,"#5b6b7c"),{titulo:"Situação do registro",max:8}):barrasH(empresas(a),{titulo:"Linhas por empresa ou laboratório",max:12,cor:"#15909f"}))+"</div></div>";
+        corpo+=detalhe(a.arquivo+" · "+a.linhas.length.toLocaleString("pt-BR")+" linhas",tabelaLinhas(a,z[3]));});
+      corpo+=detalhe("Arquivos lidos",arquivosLidos(x.arquivos));
+      h+=cartao(z[1],z[2],quando(x)+esc(x.nota||""),corpo);
+    });
     por("dad-resultados",h);
+  }
+  var CORES_SUB={"semaglutida":"#165ebd","tirzepatida":"#9c2b20","liraglutida":"#15909f","dulaglutida":"#d7a14a","lixisenatida":"#7a4fb3","exenatida":"#5b6b7c","liraglutida com insulina":"#2f8f4e","lixisenatida com insulina":"#c2577a"};
+  function empresas(a){var ks=colunasDe(a.linhas,["EMPRESA","LABORATORIO"]);if(!ks.length){return [];}var c={};a.linhas.forEach(function(l){var v=l[ks[0]]||"—";c[v]=(c[v]||0)+1;});return Object.keys(c).sort(function(x,y){return c[y]-c[x];}).map(function(k){return {rotulo:k,valor:c[k]};});}
+  function barrasAno(anos,series,rotulos){
+    if(!anos.length){return '<div class="ce-vazio"><b>⛔ Sem dado.</b></div>';}
+    var L=920,A=230,m={e:46,d:12,t:12,b:26},w=L-m.e-m.d,h=A-m.t-m.b,n=anos.length,bw=w/n;
+    var tot=anos.map(function(a){return series.reduce(function(s,x){return s+(x.valores[a]||0);},0);}),max=Math.max.apply(null,tot.concat([1]));
+    function Y(v){return m.t+h-(v/max)*h;}
+    var g='<svg class="ce-graf" viewBox="0 0 '+L+" "+A+'" role="img" aria-label="por ano">';
+    [0,.5,1].forEach(function(f){g+='<line x1="'+m.e+'" x2="'+(L-m.d)+'" y1="'+Y(max*f)+'" y2="'+Y(max*f)+'" stroke="#edf1f5"/><text x="'+(m.e-6)+'" y="'+(Y(max*f)+3)+'" text-anchor="end">'+abrev(Math.round(max*f))+"</text>";});
+    anos.forEach(function(a,i){var base=0;series.forEach(function(s){var v=s.valores[a]||0;if(!v){return;}g+='<rect x="'+(m.e+i*bw+bw*0.15).toFixed(1)+'" y="'+Y(base+v).toFixed(1)+'" width="'+(bw*0.7).toFixed(1)+'" height="'+(Y(base)-Y(base+v)).toFixed(1)+'" fill="'+s.cor+'"><title>'+esc(s.nome)+" · "+a+": "+v.toLocaleString("pt-BR")+"</title></rect>";base+=v;});
+      g+='<text x="'+(m.e+i*bw+bw/2).toFixed(1)+'" y="'+(Y(tot[i])-4).toFixed(1)+'" text-anchor="middle" style="fill:#172238;font-weight:700">'+esc(rotulos&&rotulos[a]!==undefined?(typeof rotulos[a]==="number"?rotulos[a].toLocaleString("pt-BR"):rotulos[a]):tot[i].toLocaleString("pt-BR"))+'</text><text x="'+(m.e+i*bw+bw/2).toFixed(1)+'" y="'+(A-8)+'" text-anchor="middle">'+a+"</text>";});
+    return g+'</svg><div class="ce-leg">'+series.map(function(s){return '<span><i style="background:'+s.cor+';height:10px"></i>'+esc(s.nome)+"</span>";}).join("")+'<span class="ce-nota" style="margin:0">contagens menores que 5 ficam fora do gráfico</span></div>';
+  }
+
+  /* Panorama: volume mês a mês desde 13/05/2022 e o que as plataformas informam. */
+  function volumeGeral(projeto,ytHist,ytAg,im,vol){
+    var ini=anoMes((projeto.janelas.periodo_lido_gratuitas||projeto.janelas.periodo_lido).inicio)||"2022-05",meses=mesesEntre(ini,hojeMes());
+    var lidos=[];
+    if(im&&im.noticias){var c={};im.noticias.forEach(function(n){if(n.data){var k=n.data.slice(0,7);c[k]=(c[k]||0)+1;}});lidos.push({nome:"Imprensa · notícias distintas",valores:c,cor:"#165ebd",grossa:true});}
+    var ytl={};
+    if(ytHist&&ytHist.por_termo){ytHist.por_termo.forEach(function(t){(t.meses||[]).forEach(function(m){if(m.feito&&typeof m.lidos==="number"){ytl[m.mes]=(ytl[m.mes]||0)+m.lidos;}});});}
+    if(Object.keys(ytl).length){lidos.push({nome:"YouTube · vídeos lidos (carga histórica)",valores:ytl,cor:"#c4302b"});}
+    var pf=(vol&&vol.por_fonte)||{},CT={tiktok:"#111111",instagram:"#c13584",x:"#5b6b7c",kwai:"#ff7a00",comentario_tiktok:"#555",comentario_instagram:"#e08ab8",comentario_x:"#9aa5ae"};
+    ["tiktok","instagram","x","kwai"].forEach(function(f){if(pf[f]){lidos.push({nome:(FONTE_NOME[f]||f)+" · publicações no corpus",valores:pf[f],cor:CT[f]});}});
+    var est={};if(ytHist&&ytHist.por_termo){ytHist.por_termo.forEach(function(t){(t.meses||[]).forEach(function(m){if(m.feito&&typeof m.estimativa==="number"){est[m.mes]=(est[m.mes]||0)+m.estimativa;}});});}
+    por("pan-volume",'<div class="vis-tit">O que foi lido, mês a mês</div>'+serieMensal({meses:meses,series:lidos,tipo:"linha",titulo:"lido por mês"})+
+      '<div class="vis-tit" style="margin-top:18px">YouTube · total que a plataforma informa por mês (soma dos termos, estimativa aproximada)</div>'+(Object.keys(est).length?serieMensal({meses:meses,series:[{nome:"YouTube · estimativa da plataforma",valores:est,cor:"#c4302b"}],tipo:"barras"}):'<div class="ce-vazio"><b>⛔ Ainda sem meses concluídos na carga histórica.</b></div>')+
+      '<p class="ce-nota">Coletas gratuitas desde '+esc((projeto.janelas.periodo_lido_gratuitas||{}).inicio||"")+"; redes pagas desde "+esc(projeto.janelas.periodo_lido.inicio)+". Meses sem dado ficam em branco, nunca como zero. A carga histórica do YouTube avança um pouco por dia, conforme a cota.</p>");
   }
 
   function agencias(a){
@@ -462,6 +529,137 @@
       h+='<g data-abre="'+chave+'" data-v="'+esc(n.id)+'" data-g="'+(rotulos||"")+'"><circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="'+r.toFixed(1)+'" fill="'+cor+'" fill-opacity=".8"><title>'+esc(n.rotulo||n.id)+": "+esc(n.n||n.freq)+"</title></circle>"+(r>5.5?'<text x="'+(p[0]+r+2).toFixed(1)+'" y="'+(p[1]+3).toFixed(1)+'">'+esc(String(n.rotulo||n.id).slice(0,22))+"</text>":"")+"</g>";});
     return h+"</svg>";
   }
+
+  /* ------------------------------------------------------------------ gráficos, linha do tempo e redes vivas */
+  var MARCOS=[],TIPO_COR={"aprovação":"#165ebd","mercado":"#15909f","regra":"#9c2b20","fiscalização":"#d7a14a","SUS":"#2f8f4e","patente":"#7a4fb3"};
+  function anoMes(br){var p=String(br||"").split("/");return p.length===3?p[2]+"-"+p[1]:null;}
+  function isoBR(br){var p=String(br||"").split("/");return p.length===3?p[2]+"-"+p[1]+"-"+p[0]:null;}
+  function mesesEntre(a,b){var out=[],y=+a.slice(0,4),m=+a.slice(5,7),Y=+b.slice(0,4),M=+b.slice(5,7);while(y<Y||(y===Y&&m<=M)){out.push(y+"-"+(m<10?"0":"")+m);m++;if(m>12){m=1;y++;}}return out;}
+  function hojeMes(){var d=new Date();return d.getFullYear()+"-"+(d.getMonth()<9?"0":"")+(d.getMonth()+1);}
+  function abrev(v){v=Number(v)||0;return v>=1e6?(v/1e6).toLocaleString("pt-BR",{maximumFractionDigits:1})+" mi":v>=1e3?(v/1e3).toLocaleString("pt-BR",{maximumFractionDigits:1})+" mil":v.toLocaleString("pt-BR");}
+  var MES_NOME=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+  function rotMes(m){return MES_NOME[+m.slice(5,7)-1]+"/"+m.slice(2,4);}
+
+  /* Série mensal: linhas ou barras empilhadas, com os marcos como linhas verticais numeradas. */
+  function serieMensal(o){
+    var meses=o.meses,S=o.series.filter(function(s){return s&&Object.keys(s.valores||{}).length;});
+    if(!meses.length||!S.length){return '<div class="ce-vazio"><b>⛔ Sem dado para o gráfico.</b></div>';}
+    var L=920,A=o.altura||240,m={e:46,d:12,t:o.marcos===false?10:22,b:26},w=L-m.e-m.d,h=A-m.t-m.b,n=meses.length,bw=w/n;
+    var tot=meses.map(function(k){return o.tipo==="barras"?S.reduce(function(s,x){return s+(Number(x.valores[k])||0);},0):Math.max.apply(null,S.map(function(x){return Number(x.valores[k])||0;}));});
+    var max=Math.max.apply(null,tot.concat([1]));
+    function X(i){return m.e+i*bw+bw/2;} function Y(v){return m.t+h-(v/max)*h;}
+    var g='<svg class="ce-graf vis-serie" viewBox="0 0 '+L+" "+A+'" role="img" aria-label="'+esc(o.titulo||"série mensal")+'">';
+    [0,.25,.5,.75,1].forEach(function(f){var v=max*f;g+='<line x1="'+m.e+'" x2="'+(L-m.d)+'" y1="'+Y(v).toFixed(1)+'" y2="'+Y(v).toFixed(1)+'" stroke="#edf1f5"/><text x="'+(m.e-6)+'" y="'+(Y(v)+3).toFixed(1)+'" text-anchor="end">'+abrev(Math.round(v))+"</text>";});
+    meses.forEach(function(k,i){if(k.slice(5,7)==="01"||i===0){g+='<line x1="'+(m.e+i*bw).toFixed(1)+'" x2="'+(m.e+i*bw).toFixed(1)+'" y1="'+m.t+'" y2="'+(m.t+h)+'" stroke="#dfe6ee"/><text x="'+(m.e+i*bw+2).toFixed(1)+'" y="'+(A-8)+'">'+(k.slice(5,7)==="01"?k.slice(0,4):rotMes(k))+"</text>";}});
+    if(o.tipo==="barras"){
+      meses.forEach(function(k,i){var base=0;S.forEach(function(s,j){var v=Number(s.valores[k])||0;if(!v){return;}var y1=Y(base),y2=Y(base+v);base+=v;
+        g+='<rect class="ce-barra"'+(o.dataAttr?' data-'+o.dataAttr+'="'+k+'"':"")+' x="'+(m.e+i*bw+0.6).toFixed(1)+'" y="'+y2.toFixed(1)+'" width="'+Math.max(0.8,bw-1.2).toFixed(1)+'" height="'+(y1-y2).toFixed(1)+'" fill="'+(s.cor||CORES[j%CORES.length])+'"><title>'+esc(s.nome)+" · "+rotMes(k)+": "+v.toLocaleString("pt-BR")+"</title></rect>";});});
+    }else{
+      S.forEach(function(s,j){var pts=[],seg=[];meses.forEach(function(k,i){var v=s.valores[k];if(v===undefined||v===null){if(seg.length){pts.push(seg);seg=[];}return;}seg.push(X(i).toFixed(1)+","+Y(Number(v)).toFixed(1));});if(seg.length){pts.push(seg);}
+        pts.forEach(function(p){g+='<polyline fill="none" stroke="'+(s.cor||CORES[j%CORES.length])+'" stroke-width="'+(s.grossa?2.4:1.7)+'" '+(s.tracejada?'stroke-dasharray="4 3" ':"")+'points="'+p.join(" ")+'"/>';});
+        meses.forEach(function(k,i){var v=s.valores[k];if(v!==undefined&&v!==null){g+='<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(Number(v)).toFixed(1)+'" r="2.6" fill="'+(s.cor||CORES[j%CORES.length])+'"><title>'+esc(s.nome)+" · "+rotMes(k)+": "+Number(v).toLocaleString("pt-BR")+"</title></circle>";}});});
+    }
+    if(o.marcos!==false){MARCOS.forEach(function(mc,idx){var k=anoMes(mc.data),i=meses.indexOf(k);if(i<0){return;}var x=X(i),cor=TIPO_COR[mc.tipo]||"#5b6b7c";
+      g+='<g class="vis-marco" data-marco="'+idx+'"><line x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+(m.t-4)+'" y2="'+(m.t+h)+'" stroke="'+cor+'" stroke-dasharray="3 3" stroke-width="1"/><circle cx="'+x.toFixed(1)+'" cy="'+(m.t-10)+'" r="7.5" fill="'+cor+'"/><text x="'+x.toFixed(1)+'" y="'+(m.t-7)+'" text-anchor="middle" style="fill:#fff;font-weight:700;font-size:9px">'+(idx+1)+"</text><title>"+esc(mc.data+" · "+mc.descricao)+"</title></g>";});}
+    g+="</svg>";
+    return g+'<div class="ce-leg">'+S.map(function(s,j){return '<span><i style="background:'+(s.cor||CORES[j%CORES.length])+(o.tipo==="barras"?";height:10px":"")+'"></i>'+esc(s.nome)+"</span>";}).join("")+(o.marcos!==false&&MARCOS.length?'<span class="ce-nota" style="margin:0">● números = marcos da linha do tempo</span>':"")+"</div>";
+  }
+
+  /* Barras horizontais com rótulo e valor; contagem "<5" aparece como texto. */
+  function barrasH(itens,o){
+    o=o||{};itens=(itens||[]).slice(0,o.max||25);
+    if(!itens.length){return '<div class="ce-vazio"><b>⛔ Sem dado.</b></div>';}
+    var max=Math.max.apply(null,itens.map(function(x){return typeof x.valor==="number"?x.valor:0;}).concat([1]));
+    return (o.titulo?'<div class="vis-tit">'+esc(o.titulo)+"</div>":"")+'<div class="vis-barras">'+itens.map(function(x,i){var num_=typeof x.valor==="number",p=num_?Math.max(0.6,x.valor/max*100):0.6;
+      return '<div class="vis-linha"'+(x.abre?' data-abre="'+x.abre[0]+'" data-v="'+esc(x.abre[1])+'"':"")+'><span class="vis-rot" title="'+esc(x.rotulo)+'">'+esc(x.rotulo)+'</span><span class="vis-trilho"><i style="width:'+p.toFixed(1)+"%;background:"+(x.cor||o.cor||"#165ebd")+'"></i></span><span class="vis-val">'+(num_?x.valor.toLocaleString("pt-BR"):esc(x.valor))+"</span></div>";}).join("")+"</div>";
+  }
+  function deContagem(xs,cor){return (xs||[]).map(function(x){var r=String(x.valor);return {rotulo:(r==="None"||r==="null"||r==="")?"não informado no arquivo":r,valor:x.n,cor:cor};});}
+
+  /* Linha do tempo dos marcos, de 13/05/2022 até hoje. */
+  function linhaTempo(lt,alvo,semLista){
+    if(!lt||!(lt.marcos||[]).length){por(alvo,'<div class="ce-vazio"><b>⛔ Sem marcos.</b></div>');return;}
+    var ms=lt.marcos,ini=new Date(isoBR(lt.inicio)),fim=new Date(),L=920,A=210,m=30,w=L-2*m,eixo=118;
+    function X(d){return m+(new Date(isoBR(d))-ini)/(fim-ini)*w;}
+    var g='<svg class="ce-graf vis-tempo" viewBox="0 0 '+L+" "+A+'" role="img" aria-label="linha do tempo dos marcos">';
+    g+='<line x1="'+m+'" x2="'+(L-m)+'" y1="'+eixo+'" y2="'+eixo+'" stroke="#172238" stroke-width="2"/>';
+    for(var y=ini.getFullYear();y<=fim.getFullYear();y++){var dj=new Date(y,0,1);if(dj<ini){continue;}var x=m+(dj-ini)/(fim-ini)*w;g+='<line x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+(eixo-6)+'" y2="'+(eixo+6)+'" stroke="#172238"/><text x="'+x.toFixed(1)+'" y="'+(eixo+22)+'" text-anchor="middle" style="font-weight:700;fill:#172238">'+y+"</text>";}
+    var nivel=[];
+    ms.forEach(function(mc,i){var x=X(mc.data),cima=mc.lugar!=="EUA"&&i%2===0,cor=TIPO_COR[mc.tipo]||"#5b6b7c";
+      var k=0;while(nivel.some(function(p){return p.cima===cima&&p.k===k&&Math.abs(p.x-x)<22;})){k++;}nivel.push({x:x,k:k,cima:cima});
+      var yy=cima?eixo-26-k*21:eixo+40+k*21;if(yy<10){yy=10;}if(yy>A-10){yy=A-10;}
+      g+='<g class="vis-marco" data-marco="'+i+'"><line x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+eixo+'" y2="'+yy+'" stroke="'+cor+'" stroke-width="1"/><circle cx="'+x.toFixed(1)+'" cy="'+eixo+'" r="4" fill="'+cor+'"/><circle cx="'+x.toFixed(1)+'" cy="'+yy+'" r="9" fill="'+cor+'"'+(mc.lugar==="EUA"?' stroke="#172238" stroke-width="2"':"")+'/><text x="'+x.toFixed(1)+'" y="'+(yy+3.5)+'" text-anchor="middle" style="fill:#fff;font-weight:700;font-size:9.5px">'+(i+1)+"</text><title>"+esc(mc.data+" · "+mc.lugar+" · "+mc.descricao)+"</title></g>";});
+    g+="</svg>";
+    var leg='<div class="ce-leg">'+Object.keys(TIPO_COR).map(function(t){return '<span><i style="background:'+TIPO_COR[t]+';height:10px;width:10px;border-radius:50%"></i>'+esc(t)+"</span>";}).join("")+'<span><i style="background:#fff;border:2px solid #172238;height:8px;width:8px;border-radius:50%"></i>fora do Brasil</span></div>';
+    var lista='<ol class="vis-marcos">'+ms.map(function(mc,i){return '<li id="marco-'+i+'" data-marco="'+i+'"><b class="vis-n" style="background:'+(TIPO_COR[mc.tipo]||"#5b6b7c")+'">'+(i+1)+'</b><time>'+esc(mc.data)+(mc.aproximada?" *":"")+'</time><div><span class="ce-sit">'+esc(mc.lugar)+'</span> <span class="ce-sit pend">'+esc(mc.tipo)+"</span> "+esc(mc.descricao)+"<small>Fonte: "+link(mc.url,mc.fonte)+(mc.aproximada?" · * data aproximada: "+esc(mc.aproximada):"")+"</small></div></li>";}).join("")+"</ol>";
+    por(alvo,g+leg+(semLista?'<p class="ce-nota">Clique num número para ler o marco e a fonte.</p>':'<p class="ce-nota">'+esc(lt.nota||"")+"</p>"+lista));
+  }
+  document.addEventListener("click",function(ev){var g=ev.target.closest&&ev.target.closest("[data-marco]");if(!g||g.tagName==="LI"){return;}var li=document.getElementById("marco-"+g.getAttribute("data-marco"));
+    if(!li||!li.offsetParent){var bt=document.querySelector('.navbutton[data-tab="recorte"]');if(bt){bt.click();}li=document.getElementById("marco-"+g.getAttribute("data-marco"));}
+    if(li){li.scrollIntoView({behavior:"smooth",block:"center"});li.classList.add("on");setTimeout(function(){li.classList.remove("on");},1800);}});
+
+  /* Rede viva: zoom, arraste, foco nos vizinhos, painel do nó, legenda, busca, rótulos e tabela. */
+  var REDES_VIVAS={};
+  function redeViva(alvo,g,o){
+    var el=$(alvo);if(!el){return;}
+    if(!g||!g.nos||!g.nos.length){el.innerHTML='<div class="ce-vazio"><b>⛔ Sem dado.</b></div>';return;}
+    o=o||{};var id=alvo,nos=g.nos,ar=g.arestas||[],por_id={},viz={},forca={};
+    nos.forEach(function(n){por_id[n.id]=n;viz[n.id]={};forca[n.id]=0;});
+    ar.forEach(function(a){if(!por_id[a[0]]||!por_id[a[1]]){return;}var w=+a[2]||1;viz[a[0]][a[1]]=w;viz[a[1]][a[0]]=w;forca[a[0]]+=w;forca[a[1]]+=w;});
+    var tipos={};nos.forEach(function(n){tipos[n.tipo||"—"]=1;});
+    var corPor=o.cor||"grupo",grupos={};nos.forEach(function(n){grupos[n.grupo||0]=(grupos[n.grupo||0]||0)+1;});
+    var CT={youtube:"#c4302b",tiktok:"#111111",instagram:"#c13584",x:"#5b6b7c",kwai:"#ff7a00",imprensa:"#165ebd",checagens:"#2f8f4e",termo:"#d7a14a"};
+    function cor(n){if(corPor==="tipo"){return CT[n.tipo]||CT[(n.tipo||"").replace("comentario_","")]||"#7a4fb3";}return GRUPO_CORES[(n.grupo||0)%GRUPO_CORES.length];}
+    var xs=nos.map(function(n){return n.x;}),ys=nos.map(function(n){return n.y;}),x0=Math.min.apply(null,xs),x1=Math.max.apply(null,xs),y0=Math.min.apply(null,ys),y1=Math.max.apply(null,ys);
+    var L=1000,A=Math.max(520,Math.min(760,Math.round(1000*((y1-y0)||1)/((x1-x0)||1)))),m=40,pos={},maxn=Math.max.apply(null,nos.map(function(n){return n.n||1;}));
+    nos.forEach(function(n){pos[n.id]=[m+(n.x-x0)/((x1-x0)||1)*(L-2*m),m+(n.y-y0)/((y1-y0)||1)*(A-2*m)];});
+    function raio(n){return 3.5+12*Math.sqrt((n.n||1)/maxn);}
+    var ordem=nos.slice().sort(function(a,b){return (b.n||0)-(a.n||0);});
+    var legenda=corPor==="tipo"?Object.keys(tipos).map(function(t){return '<button class="rv-chip on" data-rv-tipo="'+esc(t)+'"><i style="background:'+(CT[t]||CT[t.replace("comentario_","")]||"#7a4fb3")+'"></i>'+esc(FONTE_NOME[t]||t)+"</button>";}).join(""):Object.keys(grupos).sort(function(a,b){return grupos[b]-grupos[a];}).map(function(k){return '<button class="rv-chip on" data-rv-grupo="'+k+'"><i style="background:'+GRUPO_CORES[k%GRUPO_CORES.length]+'"></i>comunidade '+(+k+1)+" <small>"+grupos[k]+"</small></button>";}).join("");
+    var h='<div class="rv" id="rv-'+id+'"><div class="rv-ctl"><input type="search" placeholder="buscar nó" data-rv="busca"><label>rótulos <input type="range" min="0" max="'+nos.length+'" value="'+Math.min(nos.length,o.rotulos||30)+'" data-rv="rotulos"></label><button data-rv="tabela">Tabela</button><button data-rv="centro">Centralizar</button>'+(o.gexf?'<a href="'+esc(o.gexf)+'" download>.gexf para o Gephi</a>':"")+'</div><div class="rv-leg">'+legenda+'</div><div class="rv-corpo"><div class="rv-tela"><svg viewBox="0 0 '+L+" "+A+'" data-rv="svg"><g data-rv="mundo">';
+    ar.forEach(function(a,i){var p=pos[a[0]],q=pos[a[1]];if(p&&q){h+='<line data-a="'+esc(a[0])+'" data-b="'+esc(a[1])+'" x1="'+p[0].toFixed(1)+'" y1="'+p[1].toFixed(1)+'" x2="'+q[0].toFixed(1)+'" y2="'+q[1].toFixed(1)+'" stroke-width="'+(0.4+Math.log(1+(+a[2]||1))*0.5).toFixed(2)+'"/>';}});
+    nos.forEach(function(n){var p=pos[n.id];h+='<g class="rv-no" data-no="'+esc(n.id)+'" data-tipo="'+esc(n.tipo||"—")+'" data-grupo="'+(n.grupo||0)+'"><circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="'+raio(n).toFixed(1)+'" fill="'+cor(n)+'"/><text x="'+(p[0]+raio(n)+2).toFixed(1)+'" y="'+(p[1]+3.5).toFixed(1)+'">'+esc(String(n.rotulo||n.id).slice(0,26))+"</text><title>"+esc((n.rotulo||n.id)+" · "+(n.n||0))+"</title></g>";});
+    h+='</g></svg><div class="rv-zoom"><button data-rv="mais">+</button><button data-rv="menos">−</button></div></div><aside class="rv-lado" data-rv="lado"><h4>Clique num nó</h4><p>O painel mostra frequência, grau, comunidade e os vizinhos mais fortes. Roda do mouse aproxima; arraste para mover; passe o mouse para ver os vizinhos.</p><p class="ce-nota">'+num(nos.length)+" nós e "+num(ar.length)+" arestas desenhados"+(g.total_nos?" de "+num(g.total_nos)+" nós no arquivo completo":"")+"."+(g.desenho?" Desenho: "+esc(g.desenho)+". O .gexf tem a rede inteira.":"")+"</p></aside></div>";
+    h+='<div class="rv-tab" data-rv="tab" hidden><table class="datatable"><thead><tr><th data-k="rotulo">Nó</th><th data-k="tipo">Tipo</th><th data-k="grupo" class="ce-num">Comunidade</th><th data-k="n" class="ce-num">Frequência</th><th data-k="grau" class="ce-num">Grau</th><th data-k="forca" class="ce-num">Força</th></tr></thead><tbody></tbody></table></div></div>';
+    el.innerHTML=h;
+    var raiz=$("rv-"+id),svg=raiz.querySelector('[data-rv="svg"]'),mundo=raiz.querySelector('[data-rv="mundo"]'),lado=raiz.querySelector('[data-rv="lado"]');
+    var est={k:1,tx:0,ty:0,sel:null,ocultos:{}};
+    function aplica(){mundo.setAttribute("transform","translate("+est.tx+","+est.ty+") scale("+est.k+")");[].forEach.call(mundo.querySelectorAll("text"),function(t){t.style.fontSize=(10.5/Math.sqrt(est.k)).toFixed(2)+"px";});}
+    function rotulos(){var lim=+raiz.querySelector('[data-rv="rotulos"]').value,vis={};ordem.slice(0,lim).forEach(function(n){vis[n.id]=1;});if(est.sel){vis[est.sel]=1;Object.keys(viz[est.sel]).forEach(function(k){vis[k]=1;});}
+      [].forEach.call(mundo.querySelectorAll(".rv-no"),function(gn){gn.classList.toggle("rot",!!vis[gn.getAttribute("data-no")]);});}
+    function foco(idn){svg.classList.toggle("rv-foco",!!idn);var vs=idn?viz[idn]:{};
+      [].forEach.call(mundo.querySelectorAll(".rv-no"),function(gn){var k=gn.getAttribute("data-no");gn.classList.toggle("on",!!idn&&(k===idn||vs[k]!==undefined));});
+      [].forEach.call(mundo.querySelectorAll("line"),function(l){l.classList.toggle("on",!!idn&&(l.getAttribute("data-a")===idn||l.getAttribute("data-b")===idn));});}
+    function seleciona(idn){est.sel=idn;var n=por_id[idn];if(!n){return;}foco(idn);rotulos();
+      var vs=Object.keys(viz[idn]).sort(function(a,b){return viz[idn][b]-viz[idn][a];});
+      lado.innerHTML='<h4><i style="background:'+cor(n)+'"></i>'+esc(n.rotulo||n.id)+'</h4><div class="rv-meta">'+esc(FONTE_NOME[n.tipo]||n.tipo||"")+" · comunidade "+((n.grupo||0)+1)+'</div><dl><dt>Frequência</dt><dd>'+num(n.n)+"</dd><dt>Grau</dt><dd>"+num(vs.length)+"</dd><dt>Força</dt><dd>"+num(forca[idn])+"</dd></dl>"+((n.seg||[]).length&&o.chave?'<button class="ce-abre" data-abre="'+o.chave+'" data-v="'+esc(idn)+'" data-g="'+esc(o.grafo||"")+'">Ler '+num(n.seg.length)+" segmentos</button>":"")+'<h5>Vizinhos mais fortes</h5><ol>'+vs.slice(0,14).map(function(k){return '<li><button class="rv-viz" data-rv-ir="'+esc(k)+'">'+esc(por_id[k].rotulo||k)+"</button> <small>"+viz[idn][k]+"</small></li>";}).join("")+"</ol>";}
+    function centro(){est.k=1;est.tx=0;est.ty=0;aplica();}
+    function zoom(f,cx,cy){var k2=Math.max(0.5,Math.min(12,est.k*f));cx=cx===undefined?L/2:cx;cy=cy===undefined?A/2:cy;est.tx=cx-(cx-est.tx)*(k2/est.k);est.ty=cy-(cy-est.ty)*(k2/est.k);est.k=k2;aplica();}
+    function ponto(ev){var r=svg.getBoundingClientRect();return [(ev.clientX-r.left)/r.width*L,(ev.clientY-r.top)/r.height*A];}
+    svg.addEventListener("wheel",function(ev){ev.preventDefault();var p=ponto(ev);zoom(ev.deltaY<0?1.18:1/1.18,p[0],p[1]);},{passive:false});
+    var arr=null;
+    svg.addEventListener("pointerdown",function(ev){if(ev.target.closest(".rv-no")){return;}arr={x:ev.clientX,y:ev.clientY,tx:est.tx,ty:est.ty};svg.setPointerCapture(ev.pointerId);svg.classList.add("arr");});
+    svg.addEventListener("pointermove",function(ev){if(!arr){var gn=ev.target.closest&&ev.target.closest(".rv-no");if(!est.sel){foco(gn?gn.getAttribute("data-no"):null);}return;}var r=svg.getBoundingClientRect();est.tx=arr.tx+(ev.clientX-arr.x)/r.width*L;est.ty=arr.ty+(ev.clientY-arr.y)/r.height*A;aplica();});
+    svg.addEventListener("pointerup",function(){arr=null;svg.classList.remove("arr");});
+    svg.addEventListener("click",function(ev){var gn=ev.target.closest(".rv-no");if(gn){seleciona(gn.getAttribute("data-no"));}else if(est.sel){est.sel=null;foco(null);rotulos();}});
+    raiz.addEventListener("click",function(ev){var b=ev.target.closest("button");if(!b){return;}
+      var acao=b.getAttribute("data-rv");if(acao==="mais"){zoom(1.4);}else if(acao==="menos"){zoom(1/1.4);}else if(acao==="centro"){centro();}
+      else if(acao==="tabela"){var t=raiz.querySelector('[data-rv="tab"]');t.hidden=!t.hidden;b.classList.toggle("on",!t.hidden);if(!t.hidden){tabela("forca");}}
+      if(b.hasAttribute("data-rv-ir")){seleciona(b.getAttribute("data-rv-ir"));}
+      var gk=b.getAttribute("data-rv-grupo"),tk=b.getAttribute("data-rv-tipo");
+      if(gk!==null||tk!==null){b.classList.toggle("on");var chave=gk!==null?"g"+gk:"t"+tk;est.ocultos[chave]=!b.classList.contains("on");
+        [].forEach.call(mundo.querySelectorAll(".rv-no"),function(gn){var off=est.ocultos["g"+gn.getAttribute("data-grupo")]||est.ocultos["t"+gn.getAttribute("data-tipo")];gn.classList.toggle("fora",!!off);});
+        [].forEach.call(mundo.querySelectorAll("line"),function(l){var a=por_id[l.getAttribute("data-a")],c=por_id[l.getAttribute("data-b")];var off=[a,c].some(function(n){return n&&(est.ocultos["g"+(n.grupo||0)]||est.ocultos["t"+(n.tipo||"—")]);});l.classList.toggle("fora",off);});}});
+    raiz.querySelector('[data-rv="rotulos"]').addEventListener("input",rotulos);
+    raiz.querySelector('[data-rv="busca"]').addEventListener("input",function(ev){var q=ev.target.value.toLowerCase().trim();if(!q){return;}var n=ordem.filter(function(x){return String(x.rotulo||x.id).toLowerCase().indexOf(q)>=0;})[0];if(n){seleciona(n.id);}});
+    var ordemTab={k:"forca",d:-1};
+    function tabela(k){if(k){ordemTab.d=ordemTab.k===k?-ordemTab.d:-1;ordemTab.k=k;}
+      var linhas=nos.map(function(n){return {id:n.id,rotulo:n.rotulo||n.id,tipo:FONTE_NOME[n.tipo]||n.tipo||"",grupo:(n.grupo||0)+1,n:n.n||0,grau:Object.keys(viz[n.id]).length,forca:forca[n.id]};});
+      linhas.sort(function(a,b){var x=a[ordemTab.k],y=b[ordemTab.k];return (x<y?-1:x>y?1:0)*ordemTab.d;});
+      raiz.querySelector('[data-rv="tab"] tbody').innerHTML=linhas.map(function(r){return '<tr><td><button class="rv-viz" data-rv-ir="'+esc(r.id)+'">'+esc(r.rotulo)+"</button></td><td>"+esc(r.tipo)+'</td><td class="ce-num">'+r.grupo+'</td><td class="ce-num">'+num(r.n)+'</td><td class="ce-num">'+num(r.grau)+'</td><td class="ce-num">'+num(r.forca)+"</td></tr>";}).join("");}
+    raiz.querySelector('[data-rv="tab"] thead').addEventListener("click",function(ev){var k=ev.target.getAttribute("data-k");if(k){tabela(k);}});
+    aplica();rotulos();REDES_VIVAS[id]={seleciona:seleciona};
+  }
+
   function analises(chd,des,est,emo){
     if(chd){CHD=chd;
       var am=chd.amostra||{},pf=am.por_fonte||{};
@@ -473,13 +671,15 @@
         return '<div class="card"><div class="eyebrow">Classe '+c.classe+" · nome: "+val(c.nome)+'</div><h2 class="tk-h2" style="font-size:16px">'+botao(num(c.segmentos)+" segmentos · "+esc(c.pct)+"%","classe",String(c.classe))+'</h2><div class="ce-pct"><i style="width:'+c.pct+"%;background:"+cor+'"></i></div><div>'+c.formas.slice(0,18).map(function(f){return '<span class="ce-forma" data-abre="forma" data-v="'+c.classe+"|"+esc(f[0])+'">'+esc(f[0])+"<small>χ² "+esc(f[1])+"</small></span>";}).join("")+'</div><p class="ce-nota">Fontes associadas: '+(vars.join(", ")||"nenhuma com χ² ≥ 3,84")+"</p></div>";}).join(""));
       var sim=chd.similitude||{};
       por("sim-nota",sim.erro?"⛔ "+esc(sim.erro):esc(sim.indice||"")+" · "+num(sim.formas)+" formas mais frequentes, frequência mínima "+num(sim.frequencia_minima_das_formas)+". Cor = comunidade. Clique numa forma para ler os segmentos.");
-      if(sim.nos){$("sim-grafo").innerHTML=grafo({nos:sim.nos.map(function(n){return {id:n.id,rotulo:n.id,n:n.freq,grupo:n.grupo,x:n.x,y:n.y};}),arestas:sim.arestas},"sim");}
+      if(sim.nos){redeViva("sim-grafo",{nos:sim.nos.map(function(n){return {id:n.id,rotulo:n.id,tipo:"forma",n:n.freq,grupo:n.grupo,x:n.x,y:n.y,seg:(sim.segmentos_por_forma||{})[n.id]||[]};}),arestas:sim.arestas},{chave:"sim",gexf:"./data/corpus/similitude.gexf",rotulos:60});}
     }
     if(des){DES=des;
       por("rp-nota",des.palavras?"Mostrando "+num(des.palavras.nos.length)+" de "+num(des.palavras.total_nos)+" palavras (as mais frequentes), "+num(des.palavras.comunidades)+" comunidades. Formas lematizadas pelo dicionário do IRaMuTeQ. O arquivo completo abre no Gephi.":"");
-      $("rp-grafo").innerHTML=grafo(des.palavras,"no","palavras");
+      redeViva("rp-grafo",des.palavras,{chave:"no",grafo:"palavras",gexf:"./data/redes/palavras.gexf",rotulos:45});
       por("rf-nota",des.fontes_termos?"Mostrando "+num(des.fontes_termos.nos.length)+" de "+num(des.fontes_termos.total_nos)+" nós. "+esc(des.nota):"");
-      $("rf-grafo").innerHTML=grafo(des.fontes_termos,"no","fontes_termos");
+      redeViva("rf-grafo",des.fontes_termos,{chave:"no",grafo:"fontes_termos",gexf:"./data/redes/fontes_termos.gexf",cor:"tipo",rotulos:40});
+      por("rh-nota",des.hashtags?"Mostrando "+num(des.hashtags.nos.length)+" de "+num(des.hashtags.total_nos)+" hashtags usadas em 5 textos ou mais, por 3 autores ou mais. Aresta: as duas hashtags no mesmo texto. "+num(des.hashtags.comunidades)+" comunidades.":"");
+      redeViva("rh-grafo",des.hashtags,{chave:"no",grafo:"hashtags",gexf:"./data/redes/hashtags.gexf",rotulos:40});
     }
     if(est){
       por("re-nota",esc(est.nota));
@@ -495,8 +695,8 @@
     por("met-refs",'<ul class="ce-lista">'+(p.referencias||[]).map(function(r){return "<li>"+esc(r.citacao)+'<br><span class="ce-nota">Uso: '+esc(r.uso)+".</span></li>";}).join("")+"</ul>");
   }
 
-  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis"),lerOpcional("dados_publicos/registro"),lerOpcional("dados_publicos/cmed"),lerOpcional("dados_publicos/vigimed"),lerOpcional("dados_publicos/sngpc_industrializados"),lerOpcional("dados_publicos/sngpc_manipulados"),lerOpcional("checagens/agencias"),lerOpcional("comentarios/resumo"),lerOpcional("transcricoes/resumo"),lerOpcional("dados_publicos/camara")])
-    .then(function(r){analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);dadosResultados(r[16],r[17],r[18],r[19],r[20],r[24]);agencias(r[21]);comResumo(r[22]);traResumo(r[23]);})
+  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis"),lerOpcional("dados_publicos/registro"),lerOpcional("dados_publicos/cmed"),lerOpcional("dados_publicos/vigimed"),lerOpcional("dados_publicos/sngpc_industrializados"),lerOpcional("dados_publicos/sngpc_manipulados"),lerOpcional("checagens/agencias"),lerOpcional("comentarios/resumo"),lerOpcional("transcricoes/resumo"),lerOpcional("dados_publicos/camara"),lerOpcional("youtube/historico"),lerOpcional("corpus/volume")])
+    .then(function(r){MARCOS=((r[0].linha_do_tempo||{}).marcos)||[];linhaTempo(r[0].linha_do_tempo,"rec-tempo");linhaTempo(r[0].linha_do_tempo,"pan-tempo",true);volumeGeral(r[0],r[25],r[8],r[10],r[26]);analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);dadosResultados(r[16],r[17],r[18],r[19],r[20],r[24]);agencias(r[21]);comResumo(r[22]);traResumo(r[23]);})
     .catch(function(){por("aviso",'<p class="ce-erro">Esta página lê arquivos de dados e não conseguiu abri-los. Abra pelo endereço publicado do projeto.</p>');});
 })();
 </script>

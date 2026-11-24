@@ -2,6 +2,38 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Página no padrão do Atlas: linha do tempo, gráficos e redes vivas
+
+**O que mudou**
+
+- data/config/projeto.json: linha_do_tempo com 22 marcos desde 13/05/2022 (aprovação da tirzepatida pela FDA), cada um com data, lugar, tipo (aprovação, mercado, regra, fiscalização, SUS, patente), descrição e fonte. Marcos novos, conferidos na fonte em 24/11/2026: FDA aprova Mounjaro (13/05/2022); Anvisa aprova Wegovy (02/01/2023) e Mounjaro (25/09/2023); alerta de Ozempic falsificado (03/11/2023); Wegovy nas farmácias (19/07/2024); liraglutida da EMS autorizada (23/12/2024); Mounjaro nas farmácias (maio de 2025, data aproximada marcada); proibição da manipulação de semaglutida (22/08/2025); novas regras de prescrição (16/01/2026); genéricos de liraglutida (08/09/2026); Wegovy em comprimido (04/11/2026). Os demais vêm dos marcos candidatos já levantados.
+- index.html:
+  - linha do tempo no Panorama e no Recorte (números clicáveis que levam ao marco e à fonte);
+  - gráfico mensal do que foi lido desde 13/05/2022 e do total que o YouTube informa por mês, com os marcos sobrepostos; marcos também sobre o Trends e a imprensa;
+  - dados públicos em gráficos: VigiMed por ano e substância, reações, gravidade, faixa etária, sexo e UF; SNGPC por mês e substância e por UF; Câmara por mês e tipo; registro e CMED por substância e empresa. As tabelas ficam em blocos recolhíveis;
+  - redes vivas (similitude, palavras, fontes e termos, hashtags): zoom pela roda do mouse, arraste, foco nos vizinhos ao passar o mouse, painel do nó (frequência, grau, força, comunidade, vizinhos mais fortes, botão que abre os segmentos), legenda que liga e desliga comunidades ou redes, busca, controle de rótulos, tabela ordenável e o .gexf para o Gephi.
+- scripts/redes.py: o desenho guarda, para cada nó, as quatro ligações mais fortes (o .gexf continua com a rede inteira) e diz isso no arquivo.
+- scripts/build_corpus.py:
+  - rede de hashtags (hashtag usada em 5 textos ou mais, por 3 autores ou mais), em data/redes/hashtags.gexf e no desenho;
+  - data/corpus/volume.json com textos por fonte e mês;
+  - a rede de fontes e termos mostra todos os termos e as 14 contas ou veículos com mais textos de cada rede.
+
+**Por quê**
+
+- Pedido do pesquisador em 24/11/2026 02h06: "cadê a rede gephi", "dado aberto tá formatado só em tabela, gráficos", "cadê a essência do ODI Atlas", "primeira aprovação mundial nos Estados Unidos em 13 de maio de 2022 ... com marcos regulatórios Brasil linha do tempo", "redes da coleta pesquisa até o momento".
+
+**O que foi executado de verdade**
+
+- Corpus montado localmente com clone do privado (12.785 textos; 10 classes; 75,7% classificados) para conferir o desenho; página aberta em navegador sem cabeça, sem erro de script, com clique num nó, abertura dos segmentos e clique num marco. As saídas locais foram descartadas; o corpus publicado é o do workflow Análises. `node --check` e `python -m unittest discover -s tests`.
+
+**O que ficou pendente**
+
+- Rodar Análises depois das coletas gratuitas desde 2022, para a página trazer os dados novos.
+
+**Onde está a evidência**
+
+- data/config/projeto.json (linha_do_tempo, com a fonte de cada marco) e este commit.
+
 ## 24/11/2026 · Coletas gratuitas desde 13/05/2022; referência do critério de qualidade
 
 **O que mudou**

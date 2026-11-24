@@ -68,23 +68,31 @@ def gexf(nos: dict, arestas: dict, caminho: Path, dirigida: bool = False) -> Non
     caminho.write_text("\n".join(l), encoding="utf-8")
 
 
-def _desenho(nos: dict, arestas: dict, top: int = 90) -> dict | None:
+def _desenho(nos: dict, arestas: dict, top: int = 90, espinha: int = 4, manter: list | None = None) -> dict | None:
     import networkx as nx
     G = nx.Graph()
     for (a, b), w in arestas.items():
         G.add_edge(a, b, weight=w)
     if not G.number_of_nodes():
         return None
-    manter = sorted(G.nodes, key=lambda k: -(nos.get(k, {}).get("n") or 0))[:top]
+    manter = [k for k in manter if k in G] if manter else sorted(G.nodes, key=lambda k: -(nos.get(k, {}).get("n") or 0))[:top]
     H = G.subgraph(manter).copy()
+    if espinha and H.number_of_edges() > espinha * H.number_of_nodes():
+        # espinha dorsal: cada nó fica com as suas `espinha` ligações mais fortes (desenho legível; o .gexf tem tudo)
+        fica = set()
+        for n in H.nodes:
+            for v, d in sorted(H[n].items(), key=lambda x: -x[1]["weight"])[:espinha]:
+                fica.add(tuple(sorted((n, v))))
+        H = nx.Graph([(a, b, H[a][b]) for a, b in fica])
     H.remove_nodes_from([n for n in list(H.nodes) if H.degree(n) == 0])
     if not H.number_of_nodes():
         return None
     com, pos = _layout(H)
     return {"nos": [{"id": n, "rotulo": nos.get(n, {}).get("rotulo", n), "tipo": nos.get(n, {}).get("tipo", ""), "n": nos.get(n, {}).get("n") or 0,
                      "grupo": com.get(n, 0), "x": round(float(pos[n][0]), 4), "y": round(float(pos[n][1]), 4)} for n in H.nodes],
-            "arestas": [[a, b, d["weight"]] for a, b, d in H.edges(data=True)][:700],
-            "total_nos": len(nos), "total_arestas": len(arestas), "comunidades": len(set(com.values())) if com else 0}
+            "arestas": sorted(([a, b, d["weight"]] for a, b, d in H.edges(data=True)), key=lambda e: -e[2])[:1500],
+            "total_nos": len(nos), "total_arestas": len(arestas), "comunidades": len(set(com.values())) if com else 0,
+            "desenho": f"os {top} nós mais frequentes; cada um com as suas {espinha} ligações mais fortes" if espinha else f"os {top} nós mais frequentes"}
 
 
 

@@ -226,6 +226,38 @@ def emojis(segs: list[dict]) -> dict:
                         "seg": onde[e][:400]} for e, n in contagem.most_common(120)]}
 
 
+HASHTAG = re.compile(r"#([0-9a-zà-ÿ_]*[a-zà-ÿ][0-9a-zà-ÿ_]*)", re.IGNORECASE)
+
+
+def hashtags(ts: list[dict], minimo_textos: int = 5, minimo_autores: int = 3, top: int = 120):
+    """Nós = hashtags; aresta = as duas no mesmo texto. Fica a hashtag com uso amplo (textos e autores)."""
+    por_texto = [(t, sorted({h.lower() for h in HASHTAG.findall(t["texto"] or "")})) for t in ts]
+    n_textos, autores = collections.Counter(), collections.defaultdict(set)
+    for t, hs in por_texto:
+        for h in hs:
+            n_textos[h] += 1
+            autores[h].add((t["fonte"], t.get("autor") or ""))
+    ficam = {h for h, n in n_textos.items() if n >= minimo_textos and len(autores[h]) >= minimo_autores}
+    nos = {h: {"rotulo": "#" + h, "tipo": "hashtag", "n": n_textos[h]} for h in ficam}
+    ar = collections.Counter()
+    for _, hs in por_texto:
+        hs = [h for h in hs if h in ficam]
+        for i, a in enumerate(hs):
+            for b in hs[i + 1:]:
+                ar[(a, b)] += 1
+    return nos, dict(ar), (redes._desenho(nos, ar, top) if ar else None)
+
+
+def volume(ts: list[dict]) -> dict:
+    """Textos do corpus por fonte e mês (agregado)."""
+    saida: dict = collections.defaultdict(collections.Counter)
+    for t in ts:
+        if t.get("data"):
+            saida[t["fonte"]][t["data"][:7]] += 1
+    return {"nota": "Textos do corpus (depois do filtro de idioma) por fonte e mês de publicação.",
+            "por_fonte": {f: dict(sorted(c.items())) for f, c in saida.items()}}
+
+
 def main(argumentos=None) -> int:
     leitor = argparse.ArgumentParser(description="Corpus, CHD, similitude, redes e emojis.")
     leitor.add_argument("--privado", required=True)
@@ -303,19 +335,27 @@ def main(argumentos=None) -> int:
     # redes
     pasta_redes = comum.RAIZ / "data" / "redes"
     pasta_redes.mkdir(parents=True, exist_ok=True)
-    nos_p, ar_p, des_p = redes.palavras([sem_disfarce(s["t"]) for s in segs], minimo=10, top=90)
+    nos_p, ar_p, des_p = redes.palavras([sem_disfarce(s["t"]) for s in segs], minimo=10, top=130)
     redes.gexf(nos_p, ar_p, pasta_redes / "palavras.gexf")
     nos_f, ar_f = {}, collections.Counter()
     for t, p in zip(ts, pub):
         fonte_no = f"{t['fonte']}:{p['autor'] or '?'}"
-        rotulo = p["autor"] if t["fonte"] in ("imprensa", "checagens") else f"{t['fonte']} {p['autor'] or '?'}"
+        rotulo = p["autor"] if t["fonte"] in ("imprensa", "checagens") else f"{t['fonte']} {p['autor'] or '(sem autor informado)'}"
         nos_f.setdefault(fonte_no, {"rotulo": rotulo, "tipo": t["fonte"], "n": 0})["n"] += 1
         for termo in t["termos"]:
             if termo:
                 nos_f.setdefault(f"termo:{termo}", {"rotulo": termo, "tipo": "termo", "n": 0})["n"] += 1
                 ar_f[(fonte_no, f"termo:{termo}")] += 1
     redes.gexf(nos_f, dict(ar_f), pasta_redes / "fontes_termos.gexf")
-    des_f = redes._desenho(nos_f, ar_f, 120)
+    # todos os termos e, de cada fonte, as 14 contas ou veículos com mais textos: todas as redes aparecem no desenho
+    por_tipo = collections.defaultdict(list)
+    for k, v in nos_f.items():
+        por_tipo[v["tipo"]].append(k)
+    escolhidos = [k for tipo, ks in por_tipo.items()
+                  for k in (ks if tipo == "termo" else sorted(ks, key=lambda x: -nos_f[x]["n"])[:14])]
+    des_f = redes._desenho(nos_f, ar_f, len(escolhidos), manter=escolhidos)
+    if des_f:
+        des_f["desenho"] = "todos os termos e, de cada fonte, as 14 contas ou veículos com mais textos; cada nó com as suas 4 ligações mais fortes"
     # para o clique abrir o corpus: índices dos segmentos (da CHD) ligados a cada nó desenhado
     tokens_seg = [set(cr.tokens(sem_disfarce(s["t"]))) for s in segs]
     if des_p:
@@ -328,8 +368,17 @@ def main(argumentos=None) -> int:
                 no["seg"] = [s["i"] for s in segs if valor in s["k"].split("|")][:400]
             else:
                 no["seg"] = [s["i"] for s in segs if s["f"] == tipo and s["a"] == (valor if valor != "?" else "")][:400]
-    comum.gravar(pasta_redes / "desenhos.json", {"palavras": des_p, "fontes_termos": des_f,
+    # rede de hashtags: só hashtag usada em 5 textos ou mais, por 3 autores ou mais (agregado, não identifica pessoa)
+    nos_h, ar_h, des_h = hashtags(ts)
+    if nos_h:
+        redes.gexf(nos_h, ar_h, pasta_redes / "hashtags.gexf")
+    if des_h:
+        for no in des_h["nos"]:
+            marca = "#" + no["id"]
+            no["seg"] = [s["i"] for s in segs if marca in s["t"].lower()][:400]
+    comum.gravar(pasta_redes / "desenhos.json", {"palavras": des_p, "fontes_termos": des_f, "hashtags": des_h,
                                                  "nota": "Contas de terceiros aparecem como código. Veículos e agências com o nome."})
+    comum.gravar(pasta / "volume.json", volume(ts))
     try:
         comum.gravar(comum.RAIZ / "data" / "emojis.json", emojis(segs))
     except Exception as erro:
