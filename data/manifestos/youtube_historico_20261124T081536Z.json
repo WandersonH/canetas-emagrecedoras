@@ -1,0 +1,52 @@
+{
+  "frente": "youtube_historico",
+  "etapa": "gratis",
+  "run_id": "45354486107",
+  "iniciado_em": "2026-11-24T08:15:36Z",
+  "terminado_em": "2026-11-24T08:17:04Z",
+  "consulta": {
+    "termos": [
+      "semaglutida",
+      "tirzepatida",
+      "liraglutida",
+      "Ozempic",
+      "Wegovy",
+      "Mounjaro",
+      "Saxenda",
+      "caneta emagrecedora",
+      "caneta para emagrecer",
+      "caneta do Paraguai",
+      "tirzepatida manipulada",
+      "semaglutida manipulada",
+      "Ozempic sem receita",
+      "Mounjaro sem receita",
+      "retatrutida"
+    ],
+    "inicio": "2022-05-13",
+    "fim": "2026-11-24",
+    "paginas_por_mes": 1,
+    "ordem": "date",
+    "feitos_neste_run": 105
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "estimativa do YouTube por termo e mês em data/youtube/historico.json; os termos se sobrepõem"
+  },
+  "lido": 5722,
+  "amostra": {
+    "n": 5011,
+    "como": "vídeos distintos, até 50 por termo e mês, ordem por data"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/youtube/historico.json",
+      "sha256": "b5ec05206804fa0b4b1f13f9473437d90a5a4fc3f4f0c22ac3b9b753441927df",
+      "bytes": 131558,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}

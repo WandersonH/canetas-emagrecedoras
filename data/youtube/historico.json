@@ -1,22 +1,246 @@
 {
-  "obtido_em": "2026-11-24T00:59:04Z",
-  "run_id": "45301471096",
+  "obtido_em": "2026-11-24T08:15:36Z",
+  "run_id": "45354486107",
   "periodo": {
-    "inicio": "2025-01-01",
+    "inicio": "2022-05-13",
     "fim": "2026-11-24"
   },
   "progresso": {
-    "feitos": 53,
-    "total": 345,
+    "feitos": 158,
+    "total": 825,
     "esgotou_cota_neste_run": true
   },
-  "videos_distintos": 1744,
-  "canais_distintos": 1256,
+  "videos_distintos": 5011,
+  "canais_distintos": 3066,
   "nota": "Estimativa = total que o YouTube informa para o termo naquele mês (aproximado). Lidos = até 50 vídeos por termo e mês.",
   "por_termo": [
     {
       "termo": "semaglutida",
       "meses": [
+        {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
         {
           "mes": "2025-01",
           "feito": false,
@@ -103,52 +327,52 @@
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 176619,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 195233,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 207296,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 106037,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 224281,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 239127,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 161525,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
@@ -184,6 +408,230 @@
       "termo": "tirzepatida",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -269,59 +717,59 @@
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 135484,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 148531,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 157569,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 95766,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 180614,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 183468,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 120330,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 187506,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-09",
@@ -350,6 +798,230 @@
       "termo": "liraglutida",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -435,52 +1107,52 @@
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1433,
+          "lidos": 11,
+          "no_limite": false
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1171,
+          "lidos": 15,
+          "no_limite": false
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1196,
+          "lidos": 4,
+          "no_limite": false
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 457,
+          "lidos": 7,
+          "no_limite": false
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1247,
+          "lidos": 3,
+          "no_limite": false
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1749,
+          "lidos": 7,
+          "no_limite": false
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 664,
+          "lidos": 7,
+          "no_limite": false
         },
         {
           "mes": "2026-08",
@@ -516,6 +1188,230 @@
       "termo": "Ozempic",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -601,52 +1497,52 @@
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 918907,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 923424,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 923123,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 887291,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 923434,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 923434,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 917475,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
@@ -682,6 +1578,230 @@
       "termo": "Wegovy",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -767,24 +1887,24 @@
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 171880,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 180748,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 179471,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
@@ -795,24 +1915,24 @@
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 188491,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 191570,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 160501,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
@@ -848,6 +1968,230 @@
       "termo": "Mounjaro",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -933,59 +2277,59 @@
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 439464,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 467170,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 477446,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 333899,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 490424,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 492391,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 444995,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 493331,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-09",
@@ -1014,6 +2358,230 @@
       "termo": "Saxenda",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -1099,59 +2667,59 @@
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 20925,
+          "lidos": 37,
+          "no_limite": false
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 23840,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 21693,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 4099,
+          "lidos": 31,
+          "no_limite": false
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 6569,
+          "lidos": 46,
+          "no_limite": false
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 26964,
+          "lidos": 34,
+          "no_limite": false
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 6250,
+          "lidos": 37,
+          "no_limite": false
         },
         {
           "mes": "2026-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 21610,
+          "lidos": 44,
+          "no_limite": false
         },
         {
           "mes": "2026-09",
@@ -1180,6 +2748,230 @@
       "termo": "caneta emagrecedora",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -1265,59 +3057,59 @@
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 15951,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 24687,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 22135,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1398,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 28962,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 37323,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 13800,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 44667,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-09",
@@ -1346,6 +3138,230 @@
       "termo": "caneta para emagrecer",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -1438,45 +3454,45 @@
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 54400,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 45530,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 5733,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 52508,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 25098,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 22817,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
@@ -1512,6 +3528,230 @@
       "termo": "caneta do Paraguai",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -1604,45 +3844,45 @@
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 56196,
+          "lidos": 33,
+          "no_limite": false
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 52835,
+          "lidos": 40,
+          "no_limite": false
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 6870,
+          "lidos": 35,
+          "no_limite": false
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 154674,
+          "lidos": 35,
+          "no_limite": false
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 289833,
+          "lidos": 39,
+          "no_limite": false
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 77286,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
@@ -1678,6 +3918,230 @@
       "termo": "tirzepatida manipulada",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -1770,52 +4234,52 @@
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 677,
+          "lidos": 15,
+          "no_limite": false
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 589,
+          "lidos": 15,
+          "no_limite": false
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 128,
+          "lidos": 15,
+          "no_limite": false
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 757,
+          "lidos": 13,
+          "no_limite": false
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1730,
+          "lidos": 24,
+          "no_limite": false
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 217,
+          "lidos": 36,
+          "no_limite": false
         },
         {
           "mes": "2026-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 2684,
+          "lidos": 30,
+          "no_limite": false
         },
         {
           "mes": "2026-09",
@@ -1844,6 +4308,230 @@
       "termo": "semaglutida manipulada",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -1936,45 +4624,45 @@
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 141,
+          "lidos": 3,
+          "no_limite": false
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 126,
+          "lidos": 8,
+          "no_limite": false
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 50,
+          "lidos": 4,
+          "no_limite": false
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 122,
+          "lidos": 1,
+          "no_limite": false
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 223,
+          "lidos": 3,
+          "no_limite": false
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 142,
+          "lidos": 2,
+          "no_limite": false
         },
         {
           "mes": "2026-08",
@@ -2010,6 +4698,230 @@
       "termo": "Ozempic sem receita",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -2102,59 +5014,59 @@
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 7267,
+          "lidos": 7,
+          "no_limite": false
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 7978,
+          "lidos": 5,
+          "no_limite": false
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 2286,
+          "lidos": 8,
+          "no_limite": false
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 22653,
+          "lidos": 7,
+          "no_limite": false
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 23371,
+          "lidos": 16,
+          "no_limite": false
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 2991,
+          "lidos": 15,
+          "no_limite": false
         },
         {
           "mes": "2026-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 23975,
+          "lidos": 9,
+          "no_limite": false
         },
         {
           "mes": "2026-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 25628,
+          "lidos": 5,
+          "no_limite": false
         },
         {
           "mes": "2026-10",
@@ -2176,6 +5088,230 @@
       "termo": "Mounjaro sem receita",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -2268,45 +5404,45 @@
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 12289,
+          "lidos": 21,
+          "no_limite": false
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 18510,
+          "lidos": 14,
+          "no_limite": false
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 2527,
+          "lidos": 11,
+          "no_limite": false
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 22528,
+          "lidos": 9,
+          "no_limite": false
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 33046,
+          "lidos": 8,
+          "no_limite": false
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 5775,
+          "lidos": 24,
+          "no_limite": false
         },
         {
           "mes": "2026-08",
@@ -2342,6 +5478,230 @@
       "termo": "retatrutida",
       "meses": [
         {
+          "mes": "2022-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2022-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2023-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-01",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-02",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-03",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-04",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-05",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-06",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-07",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-08",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-09",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-10",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-11",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
+          "mes": "2024-12",
+          "feito": false,
+          "estimativa": null,
+          "lidos": null,
+          "no_limite": null
+        },
+        {
           "mes": "2025-01",
           "feito": false,
           "estimativa": null,
@@ -2434,52 +5794,52 @@
         },
         {
           "mes": "2026-02",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 28431,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-03",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 29728,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-04",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 13207,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-05",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 32595,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 32573,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 22830,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 32414,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-09",
