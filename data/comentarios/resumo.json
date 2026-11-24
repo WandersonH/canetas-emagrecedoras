@@ -70,6 +70,42 @@
       "situacao": "ok",
       "obtido_em": "2026-11-24T02:01:06Z",
       "run_id": "45306225038"
+    },
+    "youtube": {
+      "rede": "youtube",
+      "publicacoes_escolhidas": 300,
+      "comentarios_informados_nas_escolhidas": 140455,
+      "comentarios_lidos": 24854,
+      "publicacoes_com_comentario_lido": 300,
+      "autores_distintos": 22047,
+      "por_mes": {
+        "2025-01": 1,
+        "2025-02": 1,
+        "2025-03": 15,
+        "2025-04": 32,
+        "2025-05": 139,
+        "2025-06": 144,
+        "2025-07": 90,
+        "2025-08": 187,
+        "2025-09": 209,
+        "2025-10": 376,
+        "2025-11": 574,
+        "2025-12": 666,
+        "2026-01": 705,
+        "2026-02": 440,
+        "2026-03": 1025,
+        "2026-04": 709,
+        "2026-05": 1120,
+        "2026-06": 1163,
+        "2026-07": 1836,
+        "2026-08": 2232,
+        "2026-09": 3720,
+        "2026-10": 3507,
+        "2026-11": 5963
+      },
+      "situacao": "ok",
+      "obtido_em": "2026-11-24T08:13:24Z",
+      "run_id": "45354189151"
     }
   },
   "nota": "Só contagens. Texto e autor dos comentários ficam no repositório privado; os textos entram no corpus público anonimizados."
