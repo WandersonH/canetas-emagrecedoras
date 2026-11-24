@@ -87,13 +87,7 @@ jobs:
         if: always()
         run: |
           cd "$RUNNER_TEMP/privado"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
-          git commit -q -m "Bruto das coletas pagas, etapa $ETAPA (run $RUN)"
-          for t in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main || exit 1; sleep $((t * 10)); done
-          exit 1
+          "$GITHUB_WORKSPACE/scripts/gravar_no_privado.sh" "Bruto das coletas pagas, etapa $ETAPA (run $RUN)"
 
       - name: Gravar no público
         if: always()

@@ -70,26 +70,14 @@ jobs:
           cd "$RUNNER_TEMP/privado"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for t in 1 2 3 4; do
-            git stash -q -u || true
-            git pull -q --rebase origin main
-            git stash pop -q || true
-            git checkout -q -- CHANGELOG.md 2>/dev/null || true
-            python "$GITHUB_WORKSPACE/scripts/changelog_auto.py" --arquivo CHANGELOG.md \
-              --titulo "Transcrições de terceiros (run $RUN)" \
-              --mudou "Transcrições em terceiros/transcricoes/<rede>/." \
-              --porque "Texto de terceiros fica só neste repositório." \
-              --executado "Workflow 'Transcrição (Whisper)' do repositório público, run $RUN." \
-              --pendente "Nenhuma." \
-              --evidencia "https://github.com/$GITHUB_REPOSITORY/actions/runs/$RUN."
-            git add -A
-            if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
-            git commit -q -m "Transcrições de terceiros (run $RUN)"
-            git push -q origin HEAD:main && exit 0
-            git reset -q --soft HEAD~1
-            sleep $((t * 15))
-          done
-          exit 1
+          python "$GITHUB_WORKSPACE/scripts/changelog_auto.py" --arquivo CHANGELOG.md \
+            --titulo "Transcrições de terceiros (run $RUN)" \
+            --mudou "Transcrições em terceiros/transcricoes/<rede>/." \
+            --porque "Texto de terceiros fica só neste repositório." \
+            --executado "Workflow 'Transcrição (Whisper)' do repositório público, run $RUN." \
+            --pendente "Nenhuma." \
+            --evidencia "https://github.com/$GITHUB_REPOSITORY/actions/runs/$RUN."
+          "$GITHUB_WORKSPACE/scripts/gravar_no_privado.sh" "Transcrições de terceiros (run $RUN)"
 
       - name: Gravar no público
         if: always()

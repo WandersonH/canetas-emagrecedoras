@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Gravação no privado sem perder entrada de CHANGELOG; falha do run 45306221540 no privado
+
+**O que mudou**
+
+- scripts/gravar_no_privado.sh e scripts/mesclar_changelog.py: todos os workflows gravam no privado por este script. Se outro workflow gravou ao mesmo tempo, o conflito no CHANGELOG.md é resolvido mantendo as duas entradas; conflito em qualquer outro arquivo para o workflow com erro.
+- tests/test_mesclar_changelog.py.
+
+**Por quê**
+
+- O run 45306221540 (Dados públicos e checagens das agências) coletou tudo e gravou no público, mas o envio ao privado falhou por conflito de CHANGELOG com o run 45306501163 (Transcrição), que gravou no privado ao mesmo tempo. Consequência: as linhas filtradas do VigiMed e do SNGPC desse run não ficaram no privado, embora os manifestos dele as listem em arquivos_privados. Os manifestos ficam como estão (nada é apagado); a nova execução grava as linhas e manifestos novos.
+
+**O que foi executado de verdade**
+
+- Simulação local com dois clones e um repositório de origem: o segundo envio entrou em conflito no CHANGELOG, o script manteve as duas entradas e gravou na segunda tentativa. `python -m unittest discover -s tests`.
+
+**O que ficou pendente**
+
+- Rodar de novo as frentes vigimed e sngpc para gravar as linhas no privado.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45306221540 (passo "Gravar no privado") e este commit.
+
 ## 23/11/2026 · Dados públicos e checagens das agências (run 45306221540)
 
 **O que mudou**
