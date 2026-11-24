@@ -1,9 +1,10 @@
-"""Proposições da Câmara dos Deputados sobre as canetas emagrecedoras (API de dados abertos, sem custo).
+"""Proposições da Câmara dos Deputados sobre as canetas emagrecedoras (arquivos anuais de dados abertos, sem custo).
 
-Fonte: https://dadosabertos.camara.leg.br/api/v2/proposicoes, com keywords = cada termo de busca e substância,
-apresentadas a partir do início do período lido. A API informa o total de cada consulta no cabeçalho
-x-total-count: esse é o universo da consulta.
+Fonte: https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-<ano>.csv, um arquivo por ano do
+período lido. Cada arquivo é lido inteiro; ficam as proposições cuja ementa ou indexação cita substância, marca,
+nome popular ou "GLP-1". (A busca por palavra-chave da API v2 recusou a consulta com HTTP 400 no run 45313922869.)
 
+Universo: proposições do arquivo do ano (linhas lidas). Amostra: as que citam os termos.
 Saída pública: data/dados_publicos/camara.json (proposições são documentos públicos do Legislativo).
 
 Uso:
@@ -12,105 +13,87 @@ Uso:
 from __future__ import annotations
 
 import argparse
-import json
+import csv
 import pathlib
+import re
 import sys
-import time
-import urllib.parse
-import urllib.request
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import collect_anvisa  # noqa: E402
 import comum  # noqa: E402
 import rede  # noqa: E402
 
-URL = "https://dadosabertos.camara.leg.br/api/v2/proposicoes"
-POR_PAGINA = 100
-MAX_PAGINAS = 10
+URL = "https://dadosabertos.camara.leg.br/arquivos/proposicoes/csv/proposicoes-{ano}.csv"
+EXTRAS = ["GLP-1", "caneta emagrecedora", "canetas emagrecedoras", "caneta para emagrecer", "canetas para emagrecer"]
 
 
-def palavras(raiz: pathlib.Path | None = None) -> list[str]:
-    familias = comum.config("termos", raiz)["familias"]
-    saida = [i["termo"] for i in familias["substancias"]["itens"]]
-    saida += [t["termo"] for t in rede.termos_de_busca(raiz) if t["termo"] not in saida]
+def chaves(raiz: pathlib.Path | None = None) -> dict[str, str]:
+    saida = collect_anvisa.chaves(raiz)
+    for termo in EXTRAS:
+        saida[collect_anvisa.normal(termo)] = termo.lower()
     return saida
 
 
-def pedir(url: str, tentativas: int = 3) -> tuple[dict, int | None]:
-    pedido = urllib.request.Request(url, headers={"User-Agent": rede.AGENTE, "Accept": "application/json"})
-    for tentativa in range(tentativas):
-        try:
-            with urllib.request.urlopen(pedido, timeout=60) as resposta:
-                total = resposta.headers.get("x-total-count")
-                return json.loads(resposta.read()), int(total) if total and total.isdigit() else None
-        except Exception:
-            if tentativa == tentativas - 1:
-                raise
-            time.sleep(5 * (tentativa + 1))
-    raise RuntimeError("inalcançável")
+def ler_ano(ano: int, pat: re.Pattern, abrir=collect_anvisa.abrir_remoto):
+    with abrir(URL.format(ano=ano), tempo=300) as texto:
+        return collect_anvisa.filtrar(texto, lambda maiuscula, _crua: pat.search(collect_anvisa.normal(maiuscula)) is not None)
 
 
-def consultar(termo: str, inicio: str, fim: str, leitor=pedir) -> tuple[list[dict], int | None, str]:
-    itens, total, parou = [], None, "fim_dos_resultados"
-    for pagina in range(1, MAX_PAGINAS + 1):
-        q = {"keywords": termo, "dataApresentacaoInicio": inicio, "dataApresentacaoFim": fim, "itens": POR_PAGINA,
-             "pagina": pagina, "ordem": "DESC", "ordenarPor": "id"}
-        corpo, t = leitor(f"{URL}?{urllib.parse.urlencode(q)}")
-        total = t if t is not None else total
-        lote = corpo.get("dados") or []
-        itens += lote
-        if len(lote) < POR_PAGINA:
-            break
-    else:
-        parou = "limite"
-    return itens, total, parou
-
-
-def main(argumentos=None, leitor=pedir, raiz: pathlib.Path | None = None) -> int:
+def main(argumentos=None, abrir=collect_anvisa.abrir_remoto, raiz: pathlib.Path | None = None) -> int:
     opcoes = argparse.ArgumentParser(description="Proposições da Câmara sobre o tema.")
     opcoes.add_argument("--run-id", default=None)
     opcoes = opcoes.parse_args(argumentos)
     raiz = raiz or comum.RAIZ
-    inicio, fim = (d.isoformat() for d in rede.periodo_lido(raiz))
-    termos = palavras(raiz)
-    manifesto = rede.Manifesto("dados_publicos", {"subfrente": "camara", "fonte": URL, "termos": termos,
-                                                  "inicio": inicio, "fim": fim, "por_pagina": POR_PAGINA,
-                                                  "max_paginas": MAX_PAGINAS}, opcoes.run_id)
-    por_id, consultas = {}, []
-    for termo in termos:
+    inicio, fim = rede.periodo_lido(raiz)
+    chaves_ = chaves(raiz)
+    pat = collect_anvisa.padrao(chaves_)
+    anos = list(range(inicio.year, fim.year + 1))
+    manifesto = rede.Manifesto("dados_publicos", {"subfrente": "camara", "fonte": URL, "anos": anos,
+                                                  "filtro": "ementa ou indexação que cita substância, marca, nome popular ou GLP-1"},
+                               opcoes.run_id)
+    arquivos, proposicoes, total = [], [], 0
+    for ano in anos:
         try:
-            itens, total, parou = consultar(termo, inicio, fim, leitor)
+            cab, linhas, n, _ = ler_ano(ano, pat, abrir)
         except Exception as erro:
-            manifesto.bloqueio(f"'{termo}': {type(erro).__name__}: {erro}")
-            consultas.append({"termo": termo, "total_informado": None, "lidos": None, "parou_por": None})
+            manifesto.bloqueio(f"{ano}: {type(erro).__name__}: {erro}")
+            arquivos.append({"ano": ano, "url": URL.format(ano=ano), "linhas_no_arquivo": None, "erro": str(erro)[:200]})
             continue
-        consultas.append({"termo": termo, "total_informado": total, "lidos": len(itens), "parou_por": parou})
-        for p in itens:
-            linha = por_id.setdefault(p["id"], {"id": p["id"], "tipo": p.get("siglaTipo"), "numero": p.get("numero"),
-                                                "ano": p.get("ano"), "ementa": p.get("ementa"),
-                                                "link": f"https://www.camara.leg.br/propostas-legislativas/{p['id']}",
-                                                "termos": []})
-            linha["termos"].append(termo)
-        print(f"camara '{termo}': {len(itens)} de {total} informadas", flush=True)
-    proposicoes = sorted(por_id.values(), key=lambda p: -int(p["id"]))
+        total += n
+        arquivos.append({"ano": ano, "url": URL.format(ano=ano), "linhas_no_arquivo": n, "linhas_que_citam": len(linhas),
+                         "colunas": cab})
+        col = {nome: collect_anvisa.coluna(cab, nome) for nome in ("SIGLATIPO", "NUMERO", "ANO", "EMENTA", "KEYWORDS",
+                                                                  "DATAAPRESENTACAO", "URI")}
+        col["ID"] = collect_anvisa._ou(collect_anvisa.coluna(cab, "ID", evitar=("TIPO", "ORGAO", "SITUACAO", "AUTOR")), 0)
+        pega = lambda l, k: (l[col[k]].strip() if col.get(k) is not None and col[k] < len(l) else None)  # noqa: E731
+        for l in linhas:
+            data = (pega(l, "DATAAPRESENTACAO") or "")[:10]
+            if data and not (inicio.isoformat() <= data <= fim.isoformat()):
+                continue
+            ident = pega(l, "ID")
+            proposicoes.append({"id": ident, "tipo": pega(l, "SIGLATIPO"), "numero": pega(l, "NUMERO"), "ano": pega(l, "ANO"),
+                                "apresentada_em": data or None, "ementa": pega(l, "EMENTA"),
+                                "termos": collect_anvisa.substancias_da_linha([pega(l, "EMENTA") or "", pega(l, "KEYWORDS") or ""], chaves_, pat),
+                                "link": f"https://www.camara.leg.br/propostas-legislativas/{ident}" if ident else None})
+        print(f"camara {ano}: {n} proposições no arquivo, {len(linhas)} citam os termos", flush=True)
     por_tipo: dict[str, int] = {}
     for p in proposicoes:
         por_tipo[p["tipo"] or "não informado"] = por_tipo.get(p["tipo"] or "não informado", 0) + 1
     destino = raiz / "data" / "dados_publicos" / "camara.json"
     comum.gravar(destino, {"obtido_em": manifesto.dados["iniciado_em"], "run_id": opcoes.run_id,
-                           "periodo": {"inicio": inicio, "fim": fim},
-                           "nota": "Proposições apresentadas no período cuja busca por palavra-chave da Câmara devolve o termo.",
-                           "consultas": consultas, "por_tipo": por_tipo, "proposicoes": proposicoes})
+                           "periodo": {"inicio": inicio.isoformat(), "fim": fim.isoformat()},
+                           "nota": "Proposições apresentadas no período cuja ementa ou indexação cita os termos.",
+                           "arquivos": arquivos, "por_tipo": por_tipo,
+                           "proposicoes": sorted(proposicoes, key=lambda p: p["apresentada_em"] or "", reverse=True)})
     manifesto.arquivo(destino, raiz)
-    respondidas = [c for c in consultas if c["lidos"] is not None]
-    totais = [c["total_informado"] for c in respondidas if c["total_informado"] is not None]
+    leu = any(a.get("linhas_no_arquivo") is not None for a in arquivos)
     manifesto.dados.update({
-        "universo": {"valor": sum(totais) if respondidas and len(totais) == len(respondidas) else None,
-                     "fonte": "soma do x-total-count de cada consulta (as consultas se sobrepõem)"},
-        "lido": sum(c["lidos"] for c in respondidas) if respondidas else None,
-        "amostra": {"n": len(proposicoes) if respondidas else None, "como": "proposições distintas"},
-        "parou_por": ("limite" if any(c["parou_por"] == "limite" for c in respondidas) else "fim_dos_resultados") if respondidas else None})
+        "universo": {"valor": total if leu else None, "fonte": "proposições dos arquivos anuais da Câmara, contadas na leitura"},
+        "lido": total if leu else None,
+        "amostra": {"n": len(proposicoes) if leu else None, "como": "proposições do período que citam os termos"},
+        "parou_por": "arquivo_inteiro" if leu else None})
     print(f"gravado {manifesto.gravar(raiz).relative_to(raiz)}: camara, {len(proposicoes)} proposições")
-    return 0 if respondidas else 1
+    return 0 if leu else 1
 
 
 if __name__ == "__main__":

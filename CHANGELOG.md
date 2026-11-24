@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Câmara: arquivos anuais no lugar da busca da API
+
+**O que mudou**
+
+- scripts/collect_camara.py lê os arquivos anuais de proposições da Câmara (2025 e 2026) e filtra ementa e indexação pelos termos, em vez da busca por palavra-chave da API v2. Universo = proposições do arquivo do ano.
+- index.html: o cartão da Câmara mostra os arquivos lidos e a data de apresentação.
+
+**Por quê**
+
+- No run 45313922869 todas as 18 consultas à API voltaram com HTTP 400 (manifesto com bloqueios); nada foi lido.
+
+**O que foi executado de verdade**
+
+- `node --check` e `python -m unittest discover -s tests`.
+
+**O que ficou pendente**
+
+- Rodar a frente "camara" de novo.
+
+**Onde está a evidência**
+
+- O manifesto do run 45313922869 em data/manifestos/ (campo bloqueios).
+
 ## 24/11/2026 · Dados públicos e checagens das agências (run 45313922869)
 
 **O que mudou**
