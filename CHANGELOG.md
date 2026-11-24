@@ -2,6 +2,35 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Tom dos comentários com limite de tempo por execução
+
+**O que mudou**
+
+- `analise_comentarios.py`: o modelo de tom roda até `--tom-minutos` (padrão 25) e grava no cache o que classificou; o resto fica para a próxima execução. Comentário em inglês ou espanhol não passa mais pelo modelo, porque já fica fora da análise.
+
+**Por quê**
+
+- No run 45417321597 o modelo classificou 27.129 comentários de uma vez, em CPU, e o passo das análises levou cerca de 70 minutos. Sem limite, um lote grande de comentários novos estouraria o tempo do workflow e perderia o cache, que só é gravado no fim.
+
+**O que foi executado de verdade**
+
+- Análises, run 45417321597 (sucesso):
+  - tom em 21.326 comentários do YouTube, 443 do TikTok, 284 do Instagram e 990 do X;
+  - JAMA: 115 vídeos (117 linhas), média 1,52;
+  - 11 redes com medidas e 0 erros.
+  Página conferida no navegador com os dados gravados.
+- Transcrição, run 45417327341, rede "semente": 87 de 115 vídeos transcritos e 14.208 palavras. As 28 falhas são do TikTok: IP bloqueado, post que pede login ou post indisponível. Lista no manifesto do run.
+- `python -m unittest discover -s tests` antes deste commit.
+
+**O que ficou pendente**
+
+- Os 28 vídeos da planilha que o TikTok bloqueou para o runner.
+- O que já estava pendente na entrada dos cadernos de comentários.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45417321597, https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45417327341 e `data/manifestos/transcricao_*` deste run.
+
 ## 24/11/2026 · Análises de texto e redes (run 45417321597)
 
 **O que mudou**

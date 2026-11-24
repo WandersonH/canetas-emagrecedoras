@@ -20,10 +20,12 @@ import collections
 import csv
 import glob
 import json
+import os
 import pathlib
 import random
 import re
 import sys
+import time
 import unicodedata
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -86,13 +88,16 @@ def tema() -> re.Pattern:
 # ------------------------------------------------------------------------------------------------ tom
 
 
-def tom(privado: pathlib.Path, linhas: list[dict], usar_modelo: bool) -> dict[str, str]:
-    """Rótulo de tom por comentário, com cache no privado. Sem modelo, devolve só o que já está no cache."""
+def tom(privado: pathlib.Path, linhas: list[dict], usar_modelo: bool, minutos: float = 25) -> dict[str, str]:
+    """Rótulo de tom por comentário, com cache no privado. Sem modelo, devolve só o que já está no cache.
+
+    O modelo roda em CPU: cada execução classifica até o limite de minutos e grava o cache; o resto fica para a próxima.
+    Comentário em inglês ou espanhol não passa pelo modelo (fica fora da análise)."""
     cache_arq = privado / "terceiros" / "comentarios" / "sentimento.csv"
     cache = {}
     if cache_arq.exists():
         cache = {r["comentario_id"]: r["rotulo"] for r in ler(str(cache_arq))}
-    falta = [r for r in linhas if r["comentario_id"] not in cache]
+    falta = [r for r in linhas if r["comentario_id"] not in cache and build_corpus.idioma(r["texto"]) == "pt"]
     if falta and usar_modelo:
         try:
             import emoji
@@ -110,9 +115,13 @@ def tom(privado: pathlib.Path, linhas: list[dict], usar_modelo: bool) -> dict[st
             t = re.sub(r"@[\w.\-]+", "@usuario", t)
             t = emoji.demojize(t, language="pt", delimiters=(" emoji ", " emoji "))
             return re.sub(r"\s+", " ", re.sub(r"(.)\1{3,}", r"\1\1\1", t)).replace("_", " ").strip()
-        novos = []
+        novos, comeco = [], time.monotonic()
+        torch.set_num_threads(max(1, os.cpu_count() or 1))
         with torch.inference_mode():
             for i in range(0, len(falta), 64):
+                if (time.monotonic() - comeco) / 60 > minutos:
+                    print(f"tom: limite de {minutos:g} minutos; {len(falta) - i} comentários ficam para a próxima execução", flush=True)
+                    break
                 lote = falta[i:i + 64]
                 enc = tok([preparar(r["texto"]) for r in lote], padding=True, truncation=True, max_length=128, return_tensors="pt")
                 for r, j in zip(lote, modelo(**enc).logits.argmax(-1).tolist()):
@@ -238,13 +247,14 @@ def main(argumentos=None) -> int:
     leitor = argparse.ArgumentParser(description="Comentários por rede.")
     leitor.add_argument("--privado", required=True)
     leitor.add_argument("--tom", action="store_true", help="classifica o tom dos comentários ainda sem rótulo")
+    leitor.add_argument("--tom-minutos", type=float, default=25, help="tempo máximo do modelo de tom nesta execução")
     opcoes = leitor.parse_args(argumentos)
     privado = pathlib.Path(opcoes.privado)
     codigos = comum.carregar(privado / "codigos" / "autores.json") if (privado / "codigos" / "autores.json").exists() else {}
     livro = comum.config("livro_comentarios")
     ms, pat_tema = marcas(livro), tema()
     todos = {r: comentarios(privado, r) for r in REDES}
-    rotulos_tom = tom(privado, [c for cs in todos.values() for c in cs], opcoes.tom)
+    rotulos_tom = tom(privado, [c for cs in todos.values() for c in cs], opcoes.tom, opcoes.tom_minutos)
     pasta = comum.RAIZ / "data" / "comentarios"
     indice = {"nota": livro["nota"], "redes": {}}
     for rede_id, linhas in todos.items():
