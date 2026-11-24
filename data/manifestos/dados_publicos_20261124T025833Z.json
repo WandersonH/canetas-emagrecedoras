@@ -1,0 +1,75 @@
+{
+  "frente": "dados_publicos",
+  "etapa": "gratis",
+  "run_id": "45313922869",
+  "iniciado_em": "2026-11-24T02:58:33Z",
+  "terminado_em": "2026-11-24T03:03:43Z",
+  "consulta": {
+    "subfrente": "camara",
+    "fonte": "https://dadosabertos.camara.leg.br/api/v2/proposicoes",
+    "termos": [
+      "semaglutida",
+      "tirzepatida",
+      "liraglutida",
+      "dulaglutida",
+      "exenatida",
+      "lixisenatida",
+      "Ozempic",
+      "Wegovy",
+      "Mounjaro",
+      "Saxenda",
+      "caneta emagrecedora",
+      "caneta para emagrecer",
+      "caneta do Paraguai",
+      "tirzepatida manipulada",
+      "semaglutida manipulada",
+      "Ozempic sem receita",
+      "Mounjaro sem receita",
+      "retatrutida"
+    ],
+    "inicio": "2025-01-01",
+    "fim": "2026-11-24",
+    "por_pagina": 100,
+    "max_paginas": 10
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "soma do x-total-count de cada consulta (as consultas se sobrepõem)"
+  },
+  "lido": null,
+  "amostra": {
+    "n": null,
+    "como": "proposições distintas"
+  },
+  "parou_por": null,
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/dados_publicos/camara.json",
+      "sha256": "e3a979113d5bb1fa6b1d07b17c8e1bfa1a15b45ea6f87f208ebbf29422855fbd",
+      "bytes": 2499,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": [
+    "'semaglutida': HTTPError: HTTP Error 400: Bad Request",
+    "'tirzepatida': HTTPError: HTTP Error 400: Bad Request",
+    "'liraglutida': HTTPError: HTTP Error 400: Bad Request",
+    "'dulaglutida': HTTPError: HTTP Error 400: Bad Request",
+    "'exenatida': HTTPError: HTTP Error 400: Bad Request",
+    "'lixisenatida': HTTPError: HTTP Error 400: Bad Request",
+    "'Ozempic': HTTPError: HTTP Error 400: Bad Request",
+    "'Wegovy': HTTPError: HTTP Error 400: Bad Request",
+    "'Mounjaro': HTTPError: HTTP Error 400: Bad Request",
+    "'Saxenda': HTTPError: HTTP Error 400: Bad Request",
+    "'caneta emagrecedora': HTTPError: HTTP Error 400: Bad Request",
+    "'caneta para emagrecer': HTTPError: HTTP Error 400: Bad Request",
+    "'caneta do Paraguai': HTTPError: HTTP Error 400: Bad Request",
+    "'tirzepatida manipulada': HTTPError: HTTP Error 400: Bad Request",
+    "'semaglutida manipulada': HTTPError: HTTP Error 400: Bad Request",
+    "'Ozempic sem receita': HTTPError: HTTP Error 400: Bad Request",
+    "'Mounjaro sem receita': HTTPError: HTTP Error 400: Bad Request",
+    "'retatrutida': HTTPError: HTTP Error 400: Bad Request"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "obtido_em": "2026-11-24T02:58:33Z",
+  "run_id": "45313922869",
+  "periodo": {
+    "inicio": "2025-01-01",
+    "fim": "2026-11-24"
+  },
+  "nota": "Proposições apresentadas no período cuja busca por palavra-chave da Câmara devolve o termo.",
+  "consultas": [
+    {
+      "termo": "semaglutida",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "tirzepatida",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "liraglutida",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "dulaglutida",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "exenatida",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "lixisenatida",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "Ozempic",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "Wegovy",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "Mounjaro",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "Saxenda",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "caneta emagrecedora",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "caneta para emagrecer",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "caneta do Paraguai",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "tirzepatida manipulada",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "semaglutida manipulada",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "Ozempic sem receita",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "Mounjaro sem receita",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    },
+    {
+      "termo": "retatrutida",
+      "total_informado": null,
+      "lidos": null,
+      "parou_por": null
+    }
+  ],
+  "por_tipo": {},
+  "proposicoes": []
+}
