@@ -34,7 +34,7 @@ jobs:
       - name: Coleta
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: python scripts/collect_youtube_historico.py --privado "$RUNNER_TEMP/privado" --run-id "$RUN" | tee resumo.txt
+        run: python -u scripts/collect_youtube_historico.py --privado "$RUNNER_TEMP/privado" --run-id "$RUN" | tee resumo.txt
       - name: CHANGELOG
         if: always()
         env:

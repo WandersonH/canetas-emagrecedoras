@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import time
 import csv
 import datetime
 import json
@@ -74,11 +75,32 @@ def buscar_mes(chave, termo, de, ate, paginas, leitor=rede.pegar_json) -> dict:
             "ids": ids, "no_limite": bool(token), "bruto": respostas}
 
 
+def recuperar_do_bruto(privado: pathlib.Path, estado: dict) -> int:
+    """Refaz o estado a partir dos arquivos brutos já guardados (run interrompido antes de gravar o estado)."""
+    n = 0
+    for caminho in sorted((privado / "bruto" / "youtube_historico").glob("*/*.json")):
+        try:
+            dado = json.loads(caminho.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        chave = f"{dado['termo']}|{dado['mes']}"
+        if chave in estado["feitos"] or not dado.get("paginas"):
+            continue
+        paginas = dado["paginas"]
+        estado["feitos"][chave] = {"estimativa": (paginas[0].get("pageInfo") or {}).get("totalResults"),
+                                   "ids": [i["id"]["videoId"] for p in paginas for i in p.get("items", []) if (i.get("id") or {}).get("videoId")],
+                                   "no_limite": bool(paginas[-1].get("nextPageToken")),
+                                   "arquivo": str(caminho.relative_to(privado)), "run_id": "recuperado do bruto"}
+        n += 1
+    return n
+
+
 def main(argumentos=None) -> int:
     leitor = argparse.ArgumentParser(description="Carga histórica do YouTube, mês a mês.")
     leitor.add_argument("--privado", required=True)
     leitor.add_argument("--run-id", default=None)
     leitor.add_argument("--paginas", type=int, default=1)
+    leitor.add_argument("--minutos", type=int, default=50, help="tempo máximo de busca neste run")
     opcoes = leitor.parse_args(argumentos)
     privado = pathlib.Path(opcoes.privado)
     chave = os.environ.get("YOUTUBE_API_KEY", "")
@@ -86,6 +108,10 @@ def main(argumentos=None) -> int:
     termos = [t["termo"] for t in rede.termos_de_busca()]
     estado_arq = privado / "historico" / "youtube_estado.json"
     estado = comum.carregar(estado_arq) if estado_arq.exists() else {"feitos": {}}
+    recuperados = recuperar_do_bruto(privado, estado)
+    if recuperados:
+        print(f"recuperados do bruto: {recuperados} pares termo × mês", flush=True)
+    comeco = time.monotonic()
     manifesto = rede.Manifesto("youtube_historico", {"termos": termos, "inicio": inicio.isoformat(), "fim": fim.isoformat(),
                                                      "paginas_por_mes": opcoes.paginas, "ordem": "date"}, opcoes.run_id)
     pasta = privado / "bruto" / "youtube_historico" / rede.carimbo(manifesto.dados["iniciado_em"])
@@ -113,6 +139,13 @@ def main(argumentos=None) -> int:
             estado["feitos"][chave_estado] = {"estimativa": r["estimativa"], "ids": r["ids"], "no_limite": r["no_limite"],
                                               "arquivo": str(arquivo.relative_to(privado)), "run_id": opcoes.run_id}
             feitos_agora.append(chave_estado)
+            if len(feitos_agora) % 10 == 0:
+                comum.gravar(estado_arq, estado)
+                print(f"{len(feitos_agora)} pares neste run (último: {termo} {mes})", flush=True)
+            if time.monotonic() - comeco > opcoes.minutos * 60:
+                manifesto.bloqueio(f"tempo de {opcoes.minutos} minutos atingido; o resto fica para o próximo run")
+                esgotou = True
+                break
         if esgotou:
             break
     comum.gravar(estado_arq, estado)
@@ -122,11 +155,16 @@ def main(argumentos=None) -> int:
     faltam = [v for f in estado["feitos"].values() for v in f["ids"] if v not in videos]
     faltam = list(dict.fromkeys(faltam))
     if chave and faltam:
-        try:
-            for v in cy.detalhes(chave, faltam):
-                videos[v["id"]] = v
-        except Exception as erro:
-            manifesto.bloqueio(f"detalhes: {type(erro).__name__}")
+        print(f"detalhes de {len(faltam)} vídeos", flush=True)
+        for i in range(0, len(faltam), 50):
+            try:
+                for v in cy.detalhes(chave, faltam[i:i + 50]):
+                    videos[v["id"]] = v
+            except Exception as erro:
+                manifesto.bloqueio(f"detalhes: {type(erro).__name__}")
+                break
+            if i % 2500 == 0:
+                comum.gravar(videos_arq, videos)
     comum.gravar(videos_arq, videos)
     tabela = privado / "terceiros" / "youtube" / "historico_videos.csv"
     tabela.parent.mkdir(parents=True, exist_ok=True)

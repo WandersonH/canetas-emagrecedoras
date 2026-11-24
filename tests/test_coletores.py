@@ -267,3 +267,18 @@ class Corpus(unittest.TestCase):
         a = bc.amostra_estratificada({"youtube": 800, "imprensa": 200}, 100, random.Random(1))
         self.assertEqual((len(a["youtube"]), len(a["imprensa"])), (80, 20))
         self.assertEqual(bc.amostra_estratificada({"x": 5}, 100, random.Random(1)), {"x": [0, 1, 2, 3, 4]})
+
+
+class YouTubeHistoricoRetomada(unittest.TestCase):
+    def test_recupera_estado_do_bruto(self):
+        import collect_youtube_historico as h
+        with tempfile.TemporaryDirectory() as pasta:
+            pasta = pathlib.Path(pasta)
+            (pasta / "bruto" / "youtube_historico" / "X").mkdir(parents=True)
+            (pasta / "bruto" / "youtube_historico" / "X" / "0000.json").write_text(json.dumps(
+                {"termo": "Ozempic", "mes": "2025-03", "paginas": [{"pageInfo": {"totalResults": 90}, "items": [{"id": {"videoId": "v1"}}], "nextPageToken": "p"}]}), encoding="utf-8")
+            estado = {"feitos": {}}
+            self.assertEqual(h.recuperar_do_bruto(pasta, estado), 1)
+            self.assertEqual(estado["feitos"]["Ozempic|2025-03"]["ids"], ["v1"])
+            self.assertTrue(estado["feitos"]["Ozempic|2025-03"]["no_limite"])
+            self.assertEqual(h.recuperar_do_bruto(pasta, estado), 0)

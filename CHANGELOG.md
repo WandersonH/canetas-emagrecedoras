@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Kwai coletado; carga histórica do YouTube retomável
+
+**O que mudou**
+
+- scripts/collect_youtube_historico.py: recupera o estado a partir dos arquivos brutos guardados, grava o estado a cada 10 pares termo × mês, limita a busca a 50 minutos por run e mostra o progresso; workflow com saída sem buffer.
+
+**Por quê**
+
+- O primeiro run da carga histórica (45288852742) passou de 50 minutos sem gravar o estado, que só era salvo no fim; se fosse interrompido, a cota gasta se perderia.
+
+**O que foi executado de verdade**
+
+- Run 45288801297 (Coletas pagas, Kwai): 82 publicações no período; nos outros termos a busca do Kwai não devolveu resultado. Run 45288538468 (Reconciliar Apify): TikTok 603, Instagram 512 e X 3.386 publicações recuperadas, US$ 2,15 registrados.
+- python3 -m unittest discover -s tests: todos passaram, 1 pulado.
+
+**O que ficou pendente**
+
+- Carga histórica do YouTube: uma rodada por dia até sexta 27/11.
+
+**Onde está a evidência**
+
+- Manifestos em data/manifestos/ dos runs citados.
+
 ## 23/11/2026 · Coletas pagas, etapa publicacoes (run 45288801297)
 
 **O que mudou**
