@@ -4,38 +4,38 @@ redes,fontes_termos,grau ponderado,2,Ozempic,1527.0,3
 redes,fontes_termos,grau ponderado,3,semaglutida,1481.0,10
 redes,fontes_termos,grau ponderado,4,Mounjaro,1417.0,1
 redes,fontes_termos,grau ponderado,5,caneta emagrecedora,1403.0,2
-redes,fontes_termos,PageRank,1,Ozempic,0.05345,3
-redes,fontes_termos,PageRank,2,Mounjaro,0.052117,1
-redes,fontes_termos,PageRank,3,caneta emagrecedora,0.051571,2
-redes,fontes_termos,PageRank,4,tirzepatida,0.048883,5
-redes,fontes_termos,PageRank,5,semaglutida,0.043946,10
-redes,fontes_termos,intermediação (betweenness),1,caneta emagrecedora,0.225997,2
-redes,fontes_termos,intermediação (betweenness),2,Ozempic,0.21901,3
-redes,fontes_termos,intermediação (betweenness),3,Mounjaro,0.209684,1
-redes,fontes_termos,intermediação (betweenness),4,tirzepatida,0.187855,5
-redes,fontes_termos,intermediação (betweenness),5,caneta para emagrecer,0.147426,6
+redes,fontes_termos,PageRank,1,Ozempic,0.051511,3
+redes,fontes_termos,PageRank,2,Mounjaro,0.050225,1
+redes,fontes_termos,PageRank,3,caneta emagrecedora,0.049699,2
+redes,fontes_termos,PageRank,4,tirzepatida,0.047113,5
+redes,fontes_termos,PageRank,5,semaglutida,0.042358,10
+redes,fontes_termos,intermediação (betweenness),1,caneta emagrecedora,0.146763,2
+redes,fontes_termos,intermediação (betweenness),2,Mounjaro,0.138906,1
+redes,fontes_termos,intermediação (betweenness),3,Ozempic,0.135785,3
+redes,fontes_termos,intermediação (betweenness),4,tirzepatida,0.123083,5
+redes,fontes_termos,intermediação (betweenness),5,caneta para emagrecer,0.093692,6
 redes,fontes_termos,autovetor (eigenvector),1,Ozempic,0.324551,3
 redes,fontes_termos,autovetor (eigenvector),2,G1,0.3199,5
 redes,fontes_termos,autovetor (eigenvector),3,semaglutida,0.302939,10
 redes,fontes_termos,autovetor (eigenvector),4,tirzepatida,0.291118,5
 redes,fontes_termos,autovetor (eigenvector),5,Mounjaro,0.281859,1
-redes,palavras,grau ponderado,1,caneta,30672.0,1
-redes,palavras,grau ponderado,2,mounjaro,19113.0,3
-redes,palavras,grau ponderado,3,medicamento,18126.0,1
-redes,palavras,grau ponderado,4,ozempic,18054.0,1
-redes,palavras,grau ponderado,5,semaglutida,14764.0,1
-redes,palavras,PageRank,1,caneta,0.028518,1
-redes,palavras,PageRank,2,mounjaro,0.017987,3
-redes,palavras,PageRank,3,ozempic,0.016929,1
-redes,palavras,PageRank,4,medicamento,0.016054,1
-redes,palavras,PageRank,5,tirzepatida,0.013254,4
-redes,palavras,intermediação (betweenness),1,caneta,0.150105,1
-redes,palavras,intermediação (betweenness),2,mounjaro,0.084565,3
-redes,palavras,intermediação (betweenness),3,ozempic,0.070777,1
-redes,palavras,intermediação (betweenness),4,medicamento,0.060025,1
-redes,palavras,intermediação (betweenness),5,tirzepatida,0.055056,4
-redes,palavras,autovetor (eigenvector),1,caneta,0.378962,1
-redes,palavras,autovetor (eigenvector),2,ozempic,0.25425,1
-redes,palavras,autovetor (eigenvector),3,mounjaro,0.242052,3
-redes,palavras,autovetor (eigenvector),4,medicamento,0.219833,1
-redes,palavras,autovetor (eigenvector),5,semaglutida,0.21494,1
+redes,palavras,grau ponderado,1,caneta,27307.0,1
+redes,palavras,grau ponderado,2,mounjaro,16608.0,4
+redes,palavras,grau ponderado,3,ozempic,15789.0,1
+redes,palavras,grau ponderado,4,medicamento,15514.0,1
+redes,palavras,grau ponderado,5,semaglutida,13135.0,1
+redes,palavras,PageRank,1,caneta,0.029072,1
+redes,palavras,PageRank,2,mounjaro,0.017901,4
+redes,palavras,PageRank,3,ozempic,0.016842,1
+redes,palavras,PageRank,4,medicamento,0.015755,1
+redes,palavras,PageRank,5,tirzepatida,0.012957,5
+redes,palavras,intermediação (betweenness),1,caneta,0.152745,1
+redes,palavras,intermediação (betweenness),2,mounjaro,0.084664,4
+redes,palavras,intermediação (betweenness),3,ozempic,0.069293,1
+redes,palavras,intermediação (betweenness),4,medicamento,0.060394,1
+redes,palavras,intermediação (betweenness),5,tirzepatida,0.051394,5
+redes,palavras,autovetor (eigenvector),1,caneta,0.382098,1
+redes,palavras,autovetor (eigenvector),2,ozempic,0.250345,1
+redes,palavras,autovetor (eigenvector),3,mounjaro,0.238592,4
+redes,palavras,autovetor (eigenvector),4,semaglutida,0.218786,1
+redes,palavras,autovetor (eigenvector),5,medicamento,0.213481,1
