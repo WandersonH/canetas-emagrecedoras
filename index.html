@@ -348,7 +348,7 @@
     return '<div class="tablewrap"><table class="datatable" style="min-width:0"><thead><tr><th>Arquivo da Anvisa</th><th class="ce-num">Linhas no arquivo (universo)</th><th class="ce-num">Linhas que citam as substâncias</th></tr></thead><tbody>'+(arqs||[]).map(function(a){return "<tr><td>"+link(a.url,a.arquivo)+(a.erro?'<br><small class="ce-nota">⛔ '+esc(a.erro)+"</small>":"")+'</td><td class="ce-num">'+num(a.linhas_no_arquivo)+'</td><td class="ce-num">'+num(a.linhas_que_citam)+"</td></tr>";}).join("")+"</tbody></table></div>";
   }
   function colunasDe(linhas,pedacos){var ks=Object.keys(linhas[0]||{}).filter(function(k){return k.charAt(0)!=="_";});return pedacos.map(function(p){return ks.filter(function(k){return k.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").indexOf(p)>=0;})[0];}).filter(Boolean).filter(function(k,i,a){return a.indexOf(k)===i;});}
-  function dadosResultados(reg,cmed,vig,sind,sman){
+  function dadosResultados(reg,cmed,vig,sind,sman,cam){
     var h="";
     function cartao(eyebrow,titulo,nota,corpo){return '<div class="card"><div class="eyebrow">'+eyebrow+'</div><h2 class="tk-h2">'+titulo+'</h2><p class="ce-nota">'+nota+"</p>"+corpo+"</div>";}
     function quando(x){return "Leitura de "+val(dataBR(x.obtido_em))+(vazio(x.run_id)?"":" no run "+esc(x.run_id))+". ";}
@@ -381,6 +381,13 @@
       if(ms.length){corpo+='<div class="tablewrap" style="margin-top:12px"><table class="datatable" style="min-width:0"><thead><tr><th>Mês</th><th>Substância</th><th class="ce-num">Linhas</th><th class="ce-num">Quantidade vendida</th></tr></thead><tbody>'+ms.map(function(r){return "<tr><td>"+esc(r.mes)+"</td><td>"+esc(r.substancia)+'</td><td class="ce-num">'+(typeof r.linhas==="number"?num(r.linhas):esc(r.linhas))+'</td><td class="ce-num">'+num(r.quantidade)+"</td></tr>";}).join("")+"</tbody></table></div>";}
       h+=cartao("Anvisa · SNGPC · "+z[1],"Vendas em farmácias, "+z[1],quando(x)+esc(x.nota||""),corpo);
     });
+    if(cam){
+      var pt=cam.por_tipo||{},ps=cam.proposicoes||[];
+      var corpo='<div class="tablewrap" style="min-width:0"><table class="datatable" style="min-width:0"><thead><tr><th>Consulta</th><th class="ce-num">Total informado pela Câmara</th><th class="ce-num">Lidas</th></tr></thead><tbody>'+(cam.consultas||[]).map(function(c){return "<tr><td>"+esc(c.termo)+'</td><td class="ce-num">'+num(c.total_informado)+'</td><td class="ce-num">'+num(c.lidos)+"</td></tr>";}).join("")+"</tbody></table></div>";
+      corpo+='<ul class="ce-chips">'+Object.keys(pt).map(function(k){return "<li>"+esc(k)+"<small>"+num(pt[k])+"</small></li>";}).join("")+"</ul>";
+      corpo+=ps.length?'<div class="tablewrap" style="max-height:360px;overflow:auto"><table class="datatable"><thead><tr><th>Proposição</th><th>Ementa</th><th>Termos</th></tr></thead><tbody>'+ps.map(function(p){return "<tr><td>"+link(p.link,esc(p.tipo)+" "+esc(p.numero)+"/"+esc(p.ano))+"</td><td>"+val(p.ementa)+"</td><td>"+esc((p.termos||[]).join(", "))+"</td></tr>";}).join("")+"</tbody></table></div>":'<div class="ce-vazio"><b>⛔ Nenhuma proposição no período.</b></div>';
+      h+=cartao("Câmara dos Deputados","Proposições sobre as substâncias e as canetas",quando(cam)+esc(cam.nota||""),corpo);
+    }
     por("dad-resultados",h);
   }
 
@@ -487,8 +494,8 @@
     por("met-refs",'<ul class="ce-lista">'+(p.referencias||[]).map(function(r){return "<li>"+esc(r.citacao)+'<br><span class="ce-nota">Uso: '+esc(r.uso)+".</span></li>";}).join("")+"</ul>");
   }
 
-  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis"),lerOpcional("dados_publicos/registro"),lerOpcional("dados_publicos/cmed"),lerOpcional("dados_publicos/vigimed"),lerOpcional("dados_publicos/sngpc_industrializados"),lerOpcional("dados_publicos/sngpc_manipulados"),lerOpcional("checagens/agencias"),lerOpcional("comentarios/resumo"),lerOpcional("transcricoes/resumo")])
-    .then(function(r){analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);dadosResultados(r[16],r[17],r[18],r[19],r[20]);agencias(r[21]);comResumo(r[22]);traResumo(r[23]);})
+  Promise.all([ler("config/projeto"),ler("config/coleta"),ler("config/termos"),ler("config/atores"),ler("config/dados_publicos"),ler("config/livro_de_codigos"),ler("estado"),lerOpcional("fontes/sondagem"),lerOpcional("youtube/agregado"),lerOpcional("trends/ultimo"),lerOpcional("imprensa/resultados"),lerOpcional("checagens/checagens"),lerOpcional("corpus/chd"),lerOpcional("redes/desenhos"),lerOpcional("redes/estatisticas"),lerOpcional("emojis"),lerOpcional("dados_publicos/registro"),lerOpcional("dados_publicos/cmed"),lerOpcional("dados_publicos/vigimed"),lerOpcional("dados_publicos/sngpc_industrializados"),lerOpcional("dados_publicos/sngpc_manipulados"),lerOpcional("checagens/agencias"),lerOpcional("comentarios/resumo"),lerOpcional("transcricoes/resumo"),lerOpcional("dados_publicos/camara")])
+    .then(function(r){analises(r[12],r[13],r[14],r[15]);recorte(r[0]);referencias(r[0]);comentarios(r[1]);termos(r[2]);perfis(r[3]);dados(r[4]);codigos(r[5]);panorama(r[6],r[0]);sondagem(r[7]);youtube(r[8]);trends(r[9]);imprensa(r[10]);checagens(r[11]);dadosResultados(r[16],r[17],r[18],r[19],r[20],r[24]);agencias(r[21]);comResumo(r[22]);traResumo(r[23]);})
     .catch(function(){por("aviso",'<p class="ce-erro">Esta página lê arquivos de dados e não conseguiu abri-los. Abra pelo endereço publicado do projeto.</p>');});
 })();
 </script>

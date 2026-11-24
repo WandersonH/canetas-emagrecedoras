@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Proposições da Câmara dos Deputados
+
+**O que mudou**
+
+- scripts/collect_camara.py: busca por palavra-chave na API de dados abertos da Câmara (substâncias e termos de busca), proposições apresentadas no período lido. O universo de cada consulta é o x-total-count que a própria API informa. Saída pública em data/dados_publicos/camara.json; frente "camara" no workflow de dados públicos.
+- index.html: cartão da Câmara no caderno Dados públicos. tests/test_camara.py.
+
+**Por quê**
+
+- A frente "camara" estava como "não verificado" em data/config/dados_publicos.json; pedido do pesquisador para prosseguir com o que faltava coletar.
+
+**O que foi executado de verdade**
+
+- `node --check` no script da página e `python -m unittest discover -s tests`.
+
+**O que ficou pendente**
+
+- Rodar a frente no workflow. Senado: ⛔, não coletado.
+
+**Onde está a evidência**
+
+- Este commit e o run do workflow.
+
 ## 24/11/2026 · SNGPC em arquivos mensais comprimidos; transcrição continua de onde parou
 
 **O que mudou**

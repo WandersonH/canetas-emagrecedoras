@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
     inputs:
       frentes:
-        description: "Frentes separadas por espaço (registro cmed vigimed sngpc agencias)"
-        default: "registro cmed vigimed sngpc agencias"
+        description: "Frentes separadas por espaço (registro cmed vigimed sngpc agencias camara)"
+        default: "registro cmed vigimed sngpc agencias camara"
 
 permissions:
   contents: write
@@ -45,6 +45,10 @@ jobs:
       - name: Checagens das agências
         if: always() && contains(env.FRENTES, 'agencias')
         run: python -u scripts/collect_checagens_agencias.py --run-id "$RUN" | tee -a resumo.txt
+
+      - name: Câmara dos Deputados
+        if: always() && contains(env.FRENTES, 'camara')
+        run: python -u scripts/collect_camara.py --run-id "$RUN" | tee -a resumo.txt
 
       - name: Anvisa
         if: always()
