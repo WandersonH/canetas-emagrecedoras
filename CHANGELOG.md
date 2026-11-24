@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Checagens das agências: só conta o que é checagem sobre o tema
+
+**O que mudou**
+
+- scripts/collect_checagens_agencias.py: cada link lido é classificado. Conta como checagem o título que cita o tema (substância, marca, caneta, emagrecer, GLP-1, obesidade) e que vem de site só de checagem (Lupa, Aos Fatos, AFP Checamos, Comprova, Boatos.org, E-farsas) ou traz marca de checagem no título (falso, #FAKE, enganoso, golpe, imita, boato...). O arquivo público traz quantos links foram lidos e quantos ficaram fora, por motivo.
+- index.html mostra os descartes; scripts/build_corpus.py só leva ao corpus o que conta como checagem.
+
+**Por quê**
+
+- No run 45306221540 a restrição por site no g1, no Estadão e no UOL trouxe notícia comum desses veículos, muitas sem relação com o tema: os 461 links não eram 461 checagens. Reclassificados os mesmos 461 links, ficam 13 checagens (7 do Fato ou Fake, 5 do Boatos.org e 1 do Estadão Verifica) e 143 links sem o tema no título.
+
+**O que foi executado de verdade**
+
+- Reclassificação local de data/checagens/agencias.json do run 45306221540 com a regra nova (números acima); `python -m unittest discover -s tests`.
+
+**O que ficou pendente**
+
+- Nova coleta das agências com a regra; revisão de contexto das checagens contadas, que é filtro automático (regra 11).
+
+**Onde está a evidência**
+
+- data/checagens/agencias.json do run 45306221540 e este commit.
+
 ## 24/11/2026 · Análises de texto e redes (run 45318541315)
 
 **O que mudou**

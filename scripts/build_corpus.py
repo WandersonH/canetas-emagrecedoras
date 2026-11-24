@@ -125,6 +125,8 @@ def textos(privado: pathlib.Path, inicio: str, fim: str) -> list[dict]:
     ag = comum.RAIZ / "data" / "checagens" / "agencias.json"
     if ag.exists():
         for c in comum.carregar(ag)["checagens"]:
+            if c.get("checagem") is False:
+                continue
             add("checagens", c["link"], c.get("data"), c.get("titulo"), c.get("agencia"), c.get("grupos") or [], c["link"],
                 c.get("agencia"))
     chk = comum.RAIZ / "data" / "checagens" / "checagens.json"

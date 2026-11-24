@@ -32,6 +32,15 @@ class Agencias(unittest.TestCase):
         self.assertEqual([c["link"] for c in checagens], ["https://news.google.com/a1"])
         self.assertEqual(sorted(checagens[0]["grupos"]), sorted(agencias.GRUPOS))
 
+    def test_classifica_checagem_e_noticia_comum(self):
+        pat = agencias.tema(RAIZ)
+        c = lambda ag, t: agencias.classificar({"agencia": ag, "titulo": t}, pat)  # noqa: E731
+        self.assertTrue(c("Fato ou Fake (g1)", "É #FAKE anúncio de caneta emagrecedora")["checagem"])
+        self.assertFalse(c("Fato ou Fake (g1)", "Anvisa aprova genérico de liraglutida")["checagem"])
+        self.assertFalse(c("UOL Confere", "Dívida das famílias sobe")["cita_tema"])
+        self.assertTrue(c("Aos Fatos", "O que se sabe sobre o Mounjaro")["checagem"])
+        self.assertFalse(c("Aos Fatos", "Lula não disse frase sobre gasolina")["checagem"])
+
     def test_erro_fica_registrado_sem_zero(self):
         def falha(url):
             raise TimeoutError("tempo")

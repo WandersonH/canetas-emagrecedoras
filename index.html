@@ -395,7 +395,7 @@
     if(!a){return;}
     var xs=a.checagens||[],pa=a.por_agencia||{};
     var limite=(a.consultas||[]).filter(function(c){return c.no_limite;}).length,erros=(a.consultas||[]).filter(function(c){return c.erro;}).length;
-    por("ag-nota","Coleta de "+val(dataBR(a.obtido_em))+(vazio(a.run_id)?"":" (run "+esc(a.run_id)+")")+". "+esc(a.nota||"")+" O Google Notícias não informa o total (universo ⛔). "+num((a.consultas||[]).length)+" consultas; "+num(limite)+" no limite de itens; "+num(erros)+" com erro.");
+    por("ag-nota","Coleta de "+val(dataBR(a.obtido_em))+(vazio(a.run_id)?"":" (run "+esc(a.run_id)+")")+". "+esc(a.nota||"")+" O Google Notícias não informa o total (universo ⛔). "+num((a.consultas||[]).length)+" consultas; "+num(limite)+" no limite de itens; "+num(erros)+" com erro. Links lidos: "+num(a.links_lidos)+(a.descartados?"; fora da contagem: "+num(a.descartados.sem_o_tema_no_titulo)+" sem o tema no título e "+num(a.descartados.tema_sem_marca_de_checagem_em_veiculo_geral)+" notícias comuns de veículo geral":"")+".");
     por("ag-agencias",'<ul class="ce-chips">'+Object.keys(pa).sort(function(x,y){return pa[y]-pa[x];}).map(function(k){return "<li>"+esc(k)+"<small>"+num(pa[k])+"</small></li>";}).join("")+"</ul>");
     por("ag-lista",xs.length?'<div class="tablewrap" style="max-height:420px;overflow:auto"><table class="datatable"><thead><tr><th>Data</th><th>Agência</th><th>Título</th></tr></thead><tbody>'+xs.map(function(x){return "<tr><td>"+val(dataBR(x.data))+"</td><td>"+val(x.agencia)+"</td><td>"+link(x.link,x.titulo||x.link)+"</td></tr>";}).join("")+"</tbody></table></div>":'<div class="ce-vazio"><b>⛔ Nenhuma checagem no período.</b></div>');
   }
