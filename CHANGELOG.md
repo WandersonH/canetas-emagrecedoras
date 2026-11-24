@@ -2,6 +2,31 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 23/11/2026 · Comentários (run 45306225038)
+
+**O que mudou**
+
+- Manifestos em data/manifestos/ (com o custo de cada execução paga) e contagens em data/comentarios/resumo.json.
+
+**Por quê**
+
+- Decisão do pesquisador em 23/11/2026: comentários no público como texto anonimizado inteiro; autorização de gasto de 23/11/2026 18h13.
+
+**O que foi executado de verdade**
+
+- Workflow 'Comentários (YouTube e Apify)', run 45306225038, redes: tiktok instagram x.
+- gravado data/manifestos/comentarios_tiktok_20261124T015840Z.json: tiktok, 992 comentários de 40 publicações
+- gravado data/manifestos/comentarios_instagram_20261124T020001Z.json: instagram, 298 comentários de 15 publicações
+- gravado data/manifestos/comentarios_x_20261124T020106Z.json: x, 995 comentários de 40 publicações
+
+**O que ficou pendente**
+
+- Rodar as análises para levar os comentários anonimizados ao corpus.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45306225038 e os manifestos deste run.
+
 ## 23/11/2026 · Transcrição (run 45309396335)
 
 **O que mudou**

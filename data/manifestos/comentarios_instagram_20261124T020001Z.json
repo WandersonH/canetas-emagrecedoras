@@ -1,0 +1,76 @@
+{
+  "frente": "comentarios_instagram",
+  "etapa": "comentarios",
+  "run_id": "45306225038",
+  "iniciado_em": "2026-11-24T02:00:01Z",
+  "terminado_em": "2026-11-24T02:01:06Z",
+  "consulta": {
+    "rede": "instagram",
+    "como_escolhe": "as 15 publicações do período com mais comentários informados",
+    "por_publicacao": 20,
+    "ator": "apify~instagram-comment-scraper",
+    "publicacoes": [
+      "DQ9e5o8gc4k",
+      "DWW2CpMgI89",
+      "DfaP0KMoLiU",
+      "De5UveKOZhW",
+      "Dcs159us5jL",
+      "DdUseIyv34B",
+      "DdbdYqXHNpd",
+      "DbAXR4MMcEJ",
+      "DeUrcJZBOkU",
+      "DdILoaHuukh",
+      "DdEnf7YAG3h",
+      "DezMxaUhlnh",
+      "DH9nYfQyLNj",
+      "DgETgz_Mw3j",
+      "DUQ0TOgkRnO"
+    ],
+    "run": "GmQjhonvURc6mB5ZK",
+    "status": "SUCCEEDED",
+    "publicacoes_pedidas": 15,
+    "previsto_usd": 0.69,
+    "teto_exec_usd": 0.917,
+    "itens": 300,
+    "chaves": [
+      "commentUrl",
+      "id",
+      "likesCount",
+      "owner",
+      "ownerProfilePicUrl",
+      "ownerUsername",
+      "postUrl",
+      "replies",
+      "repliesCount",
+      "text",
+      "timestamp"
+    ]
+  },
+  "universo": {
+    "valor": 152027,
+    "fonte": "soma dos comentários que a rede informa nas publicações escolhidas"
+  },
+  "lido": 298,
+  "amostra": {
+    "n": 298,
+    "como": "até 20 comentários por publicação, nas 15 publicações do período com mais comentários informados"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0.667,
+  "arquivos": [],
+  "arquivos_privados": [
+    {
+      "caminho": "terceiros/comentarios/instagram/comentarios_20261124T020001Z.csv",
+      "sha256": "069596b29235f08f3aa3770b295f14d55a97ddcfde4ee41f2fc61d7edb967881",
+      "bytes": 31071,
+      "linhas": 299
+    },
+    {
+      "caminho": "bruto/comentarios/instagram/20261124T020001Z.json",
+      "sha256": "2f8a355601aaa749c5a7458ce2cae34ae41e11b8ff7adcc6a973e0a8dafd096f",
+      "bytes": 549028,
+      "linhas": null
+    }
+  ],
+  "bloqueios": []
+}
