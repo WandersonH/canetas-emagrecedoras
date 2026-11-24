@@ -17,13 +17,13 @@ REGISTRO = ("TIPO_PRODUTO;NOME_PRODUTO;PRINCIPIO_ATIVO;EMPRESA_DETENTORA_REGISTR
             "MEDICAMENTO;MOUNJARO;TIRZEPATIDA;EMPRESA C;VÁLIDO\n")
 MEDICAMENTOS = ("IDENTIFICACAO_NOTIFICACAO;NOME_MEDICAMENTO_WHODRUG;RELACAO_MEDICAMENTO_EVENTO\n"
                 "N1;Ozempic;Suspeito\nN2;Paracetamol;Suspeito\nN3;Saxenda;Concomitante\nN1;Losartana;Concomitante\n")
-NOTIFICACOES = ("IDENTIFICACAO_NOTIFICACAO;UF;SEXO;GRUPO_IDADE;DATA_RECEBIMENTO_CASO;GRAVE\n"
-                "N1;SP;Feminino;Adulto;15/03/2025;Não\nN2;RJ;Masculino;Idoso;01/02/2025;Sim\nN3;MG;Feminino;Adulto;10/07/2026;Sim\n")
+NOTIFICACOES = ("UF;IDENTIFICACAO_NOTIFICACAO;DATA_INCLUSAO_SISTEMA;DATA_NOTIFICACAO;SEXO;GRUPO_IDADE;GRAVE\n"
+                "SP;N1;15/03/2025;;Feminino;Adulto;Não\nRJ;N2;01/02/2025;;Masculino;Idoso;Sim\nMG;N3;01/01/2026;10/07/2026;Feminino;Adulto;Sim\n")
 REACOES = "IDENTIFICACAO_NOTIFICACAO;PT\nN1;Náusea\nN2;Cefaleia\nN3;Náusea\nN3;Vômito\n"
 INDICE = ('<a href="?C=N">Name</a><a href="/dados/SNGPC/">Parent Directory</a>'
           '<a href="EDA_Industrializados_202412.csv">EDA_Industrializados_202412.csv</a> 2026-06-14 16:25 1G'
           '<a href="EDA_Industrializados_202601.csv">EDA_Industrializados_202601.csv</a> 2026-11-22 15:26 1G')
-SNGPC = ("ANO_VENDA;MES_VENDA;UF_VENDA;PRINCIPIO_ATIVO;QTD_VENDIDA;SEXO;IDADE\n"
+SNGPC = ("NU_ANO_VENDA;NU_MES_VENDA;SG_UF_VENDA;DS_PRINCIPIO_ATIVO;QT_VENDIDA;SG_SEXO;NU_IDADE\n"
          + "".join(f"2026;1;SP;SEMAGLUTIDA;2;2;40\n" for _ in range(6))
          + "2026;1;RJ;TIRZEPATIDA;1;1;35\n2026;1;SP;AMOXICILINA;9;1;20\n")
 
@@ -97,6 +97,10 @@ class Anvisa(unittest.TestCase):
         # contagens pequenas mascaradas
         self.assertIn('"<5"', publico)
         self.assertEqual(saida["coluna_da_reacao"], "PT")
+        # data da notificação vazia: vale a data de inclusão no sistema
+        self.assertEqual({x["valor"] for x in saida["por_ano"]}, {"2025", "2026"})
+        # marca conta pela substância
+        self.assertEqual({x["valor"] for x in saida["por_substancia"]}, {"semaglutida", "liraglutida"})
 
     def test_sngpc_le_so_meses_do_periodo_e_agrega(self):
         pagina = {"http": 200, "corpo": INDICE.encode()}

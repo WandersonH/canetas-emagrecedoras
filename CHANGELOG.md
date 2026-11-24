@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Correções depois da primeira execução real: Anvisa e transcrição
+
+**O que mudou**
+
+- scripts/collect_anvisa.py: no SNGPC a quantidade vendida estava vazia porque a coluna se chama QT_VENDIDA (manipulados: QT_UNIDADE_FARMACOTECNICA) e o coletor procurava QTD; agora acha as duas formas. No VigiMed o ano vinha quase todo "não informado" porque DATA_NOTIFICACAO está vazia na maior parte das linhas; agora vale a primeira data preenchida entre DATA_NOTIFICACAO, data de recebimento e DATA_INCLUSAO_SISTEMA, e o agregado diz qual coluna usou. Marca passa a contar pela substância que data/config/termos.json informa (Ozempic conta como semaglutida), para não contar a mesma notificação duas vezes.
+- scripts/collect_transcricoes.py: o áudio passa pelo ffmpeg a 16 kHz antes do Whisper. No run 45306501163 os 80 vídeos baixados do TikTok e do Kwai falharam ao decodificar (TypeError: a versão do PyAV instalada não aceita um argumento que o faster-whisper usa). O YouTube recusou o download dos 16 vídeos tentados ("confirme que não é um robô") e 14 passaram de 10 minutos; ele sai da lista padrão do workflow.
+
+**Por quê**
+
+- Execução real dos runs 45306221540 e 45306501163 (manifestos em data/manifestos/).
+
+**O que foi executado de verdade**
+
+- `python -m unittest discover -s tests`, com casos novos para as colunas reais do SNGPC e para a data do VigiMed.
+
+**O que ficou pendente**
+
+- Rodar de novo a transcrição (TikTok e Kwai) e as frentes vigimed e sngpc.
+
+**Onde está a evidência**
+
+- data/manifestos/transcricao_20261124T013851Z.json (campo consulta.falhas), data/dados_publicos/vigimed.json e sngpc_*.json (campo colunas_usadas).
+
 ## 24/11/2026 · Gravação no privado sem perder entrada de CHANGELOG; falha do run 45306221540 no privado
 
 **O que mudou**

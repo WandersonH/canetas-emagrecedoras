@@ -54,8 +54,8 @@ def chaves(raiz: pathlib.Path | None = None) -> dict[str, str]:
     familias = comum.config("termos", raiz)["familias"]
     saida = {normal(i["termo"]): i["termo"].lower() for i in familias["substancias"]["itens"]}
     saida["RETATRUTIDA"] = "retatrutida"
-    for item in familias["marcas"]["itens"]:
-        saida[normal(item["termo"])] = item["termo"]
+    for item in familias["marcas"]["itens"]:  # marca conta pela substância quando o arquivo de termos a informa
+        saida[normal(item["termo"])] = (item.get("substancia") or item["termo"]).lower() if item.get("substancia") else item["termo"]
     return saida
 
 
@@ -282,6 +282,16 @@ def _com_cabecalho(primeira: str, resto):
     yield from resto
 
 
+def _ano_da_linha(linha: list[str], indices: list[int]) -> str | None:
+    """Ano da primeira coluna de data preenchida, na ordem dada."""
+    for i in indices:
+        if i < len(linha):
+            ano = _ano(linha[i])
+            if ano:
+                return ano
+    return None
+
+
 def _ano(texto: str) -> str | None:
     m = re.search(r"(19|20)\d{2}", texto or "")
     if not m:
@@ -294,7 +304,9 @@ def agregar_vigimed(por_id: dict[str, set], tabelas: dict) -> dict:
     saida: dict = {"notificacoes": len(por_id), "por_substancia": contar(s for v in por_id.values() for s in v)}
     if "notificacoes" in tabelas:
         cab, linhas, ind = tabelas["notificacoes"]
-        data = _ou(coluna(cab, "DATA", "RECEB"), coluna(cab, "DATA", "NOTIFICACAO"), coluna(cab, "DATA", evitar=("NASC",)))
+        datas = [i for i in (coluna(cab, "DATA", "NOTIFICACAO"), coluna(cab, "DATA", "RECEB"), coluna(cab, "DATA", "INCLUSAO"))
+                 if i is not None]
+        data = datas[0] if datas else None
         campos = {"por_ano": data, "por_uf": coluna(cab, "UF"), "por_sexo": coluna(cab, "SEXO"),
                   "por_faixa_etaria": _ou(coluna(cab, "GRUPO", "IDADE"), coluna(cab, "FAIXA")),
                   "por_gravidade": coluna(cab, "GRAVE", evitar=("DESCR",)), "por_quem_notificou": _ou(coluna(cab, "NOTIFICADOR"), coluna(cab, "RECEBIDO"))}
@@ -302,17 +314,18 @@ def agregar_vigimed(por_id: dict[str, set], tabelas: dict) -> dict:
             if i is None:
                 saida[rotulo] = None
                 continue
-            valores = (_ano(l[i]) if rotulo == "por_ano" else l[i].strip() for l in linhas if len(l) > i)
+            valores = (_ano_da_linha(l, datas) if rotulo == "por_ano" else l[i].strip() for l in linhas if len(l) > i)
             saida[rotulo] = sorted(contar(valores), key=lambda x: x["valor"]) if rotulo == "por_ano" else contar(valores)
         if data is not None:
             ano_sub = collections.Counter()
             for l in linhas:
                 if len(l) > max(ind, data):
                     for s in por_id.get(l[ind].strip(), ()):
-                        ano_sub[(_ano(l[data]) or "não informado", s)] += 1
+                        ano_sub[(_ano_da_linha(l, datas) or "não informado", s)] += 1
             saida["por_ano_e_substancia"] = [{"ano": a, "substancia": s, "n": n if n >= MINIMO_PUBLICO else f"<{MINIMO_PUBLICO}"}
                                              for (a, s), n in sorted(ano_sub.items())]
         saida["colunas_usadas"] = {k: (cab[v] if v is not None else None) for k, v in campos.items()}
+        saida["colunas_usadas"]["por_ano"] = " , senão ".join(cab[i] for i in datas) if datas else None
     if "reacoes" in tabelas:
         cab, linhas, _ = tabelas["reacoes"]
         pt = _ou(coluna(cab, "PT"), coluna(cab, "REACAO", evitar=("DATA", "DESF", "GRAV")), coluna(cab, "EVENTO"))
@@ -395,7 +408,7 @@ def _numero(texto: str) -> float:
 def agregar_sngpc(cab: list[str], linhas: list[list[str]], chaves_: dict, pat: re.Pattern) -> dict:
     ano = coluna(cab, "ANO")
     mes = coluna(cab, "MES", evitar=("ARQUIVO",))
-    qtd = _ou(coluna(cab, "QTD", "VEND"), coluna(cab, "QTD_UNIDADE"), coluna(cab, "QTD"))
+    qtd = _ou(coluna(cab, "QT", "VENDIDA"), coluna(cab, "QT_UNIDADE"), coluna(cab, "QTD", "VEND"), coluna(cab, "QTD"))
     ativo = coluna(cab, "PRINCIPIO")
     uf = _ou(coluna(cab, "UF", "VENDA"), coluna(cab, "UF", evitar=("CONSELHO",)))
     sexo, idade = coluna(cab, "SEXO"), coluna(cab, "IDADE", evitar=("UNIDADE",))

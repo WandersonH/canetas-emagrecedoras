@@ -114,10 +114,21 @@ def baixar_audio(video: dict, pasta: pathlib.Path, duracao_maxima: int) -> pathl
     return achados[0]
 
 
+def audio_16k(arquivo: pathlib.Path):
+    """Áudio mono a 16 kHz pelo ffmpeg, sem depender do decodificador embutido do faster-whisper."""
+    import numpy as np
+    r = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", str(arquivo), "-f", "s16le", "-ac", "1",
+                        "-ar", "16000", "-"], capture_output=True, timeout=600)
+    if r.returncode != 0 or not r.stdout:
+        raise RuntimeError("ffmpeg: " + (r.stderr.decode("utf-8", "replace").strip().splitlines() or ["sem áudio"])[-1][:150])
+    return np.frombuffer(r.stdout, np.int16).astype(np.float32) / 32768.0
+
+
 def transcrever(modelo, arquivo: pathlib.Path) -> tuple[str, str, float]:
-    segmentos, info = modelo.transcribe(str(arquivo), language="pt", vad_filter=True, beam_size=1)
+    audio = audio_16k(arquivo)
+    segmentos, info = modelo.transcribe(audio, language="pt", vad_filter=True, beam_size=1)
     texto = " ".join(s.text.strip() for s in segmentos)
-    return " ".join(texto.split()), info.language, round(float(info.duration or 0), 1)
+    return " ".join(texto.split()), info.language, round(len(audio) / 16000, 1)
 
 
 def main(argumentos=None) -> int:

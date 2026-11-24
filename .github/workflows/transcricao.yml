@@ -8,7 +8,7 @@ on:
     inputs:
       redes:
         description: "Redes separadas por espaço"
-        default: "tiktok kwai youtube"
+        default: "tiktok kwai"
 
 permissions:
   contents: write
