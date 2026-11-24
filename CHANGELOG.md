@@ -2,6 +2,29 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Dados públicos e checagens das agências (run 45319450848)
+
+**O que mudou**
+
+- Manifestos em data/manifestos/, resultados em data/dados_publicos/ e data/checagens/agencias.json.
+
+**Por quê**
+
+- Frentes de dados públicos e checagens brasileiras pendentes; pedido do pesquisador em 23/11/2026 para prosseguir com o que faltava coletar.
+
+**O que foi executado de verdade**
+
+- Workflow 'Dados públicos e checagens das agências', run 45319450848, frentes: agencias.
+- gravado data/manifestos/checagens_agencias_20261124T032619Z.json: 12 checagens de agências brasileiras
+
+**O que ficou pendente**
+
+- Conferir as colunas usadas em cada agregado (campo colunas_usadas) com o dicionário de dados da Anvisa.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45319450848 e os manifestos deste run.
+
 ## 24/11/2026 · Checagens das agências: só conta o que é checagem sobre o tema
 
 **O que mudou**

@@ -1,0 +1,91 @@
+{
+  "frente": "checagens_agencias",
+  "etapa": "gratis",
+  "run_id": "45319450848",
+  "iniciado_em": "2026-11-24T03:26:19Z",
+  "terminado_em": "2026-11-24T03:26:46Z",
+  "consulta": {
+    "fonte": "https://news.google.com/rss/search",
+    "agencias": [
+      [
+        "Agência Lupa",
+        "site:lupa.uol.com.br"
+      ],
+      [
+        "Agência Lupa",
+        "site:lupa.news"
+      ],
+      [
+        "Aos Fatos",
+        "site:aosfatos.org"
+      ],
+      [
+        "Estadão Verifica",
+        "\"Estadão Verifica\" site:estadao.com.br"
+      ],
+      [
+        "Fato ou Fake (g1)",
+        "\"Fato ou Fake\" site:g1.globo.com"
+      ],
+      [
+        "AFP Checamos",
+        "site:checamos.afp.com"
+      ],
+      [
+        "Projeto Comprova",
+        "site:projetocomprova.com.br"
+      ],
+      [
+        "UOL Confere",
+        "\"UOL Confere\" site:uol.com.br"
+      ],
+      [
+        "Boatos.org",
+        "site:boatos.org"
+      ],
+      [
+        "E-farsas",
+        "site:e-farsas.com"
+      ]
+    ],
+    "grupos": {
+      "substancias": [
+        "semaglutida",
+        "tirzepatida",
+        "liraglutida",
+        "retatrutida"
+      ],
+      "marcas_e_nomes": [
+        "Ozempic",
+        "Wegovy",
+        "Mounjaro",
+        "Saxenda",
+        "caneta emagrecedora",
+        "canetas emagrecedoras"
+      ]
+    },
+    "inicio": "2025-01-01",
+    "fim": "2026-11-24"
+  },
+  "universo": {
+    "valor": null,
+    "fonte": "O Google Notícias não informa o total de resultados."
+  },
+  "lido": 588,
+  "amostra": {
+    "n": 12,
+    "como": "links distintos com data no período, título que cita o tema e vem de site só de checagem ou traz marca de checagem"
+  },
+  "parou_por": "limite",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/checagens/agencias.json",
+      "sha256": "fe1b513b1677e0a7784bdc83a4bf57710d0e9c47e0f98ac44f530b170a67d87f",
+      "bytes": 18085,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [],
+  "bloqueios": []
+}
