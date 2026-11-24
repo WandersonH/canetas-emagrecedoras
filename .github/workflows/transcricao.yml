@@ -1,0 +1,96 @@
+name: Transcrição (Whisper)
+
+# Fala dos vídeos mais vistos, transcrita com Whisper no próprio runner (sem custo).
+# Transcrição só no privado; no público, contagens (o texto entra anonimizado no corpus).
+# Disparo manual apenas.
+on:
+  workflow_dispatch:
+    inputs:
+      redes:
+        description: "Redes separadas por espaço"
+        default: "tiktok kwai youtube"
+
+permissions:
+  contents: write
+
+# Sem grupo de concorrência: a transcrição é longa e não pode segurar nem cancelar as outras coletas.
+# A gravação no público usa scripts/gravar_no_main.sh (parte do main mais recente a cada tentativa) e a do
+# privado sincroniza antes de escrever o CHANGELOG.
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      REDES: ${{ inputs.redes }}
+      RUN: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependências
+        run: pip install -q numpy scipy networkx emoji faster-whisper yt-dlp
+      - name: Testes
+        run: python -m unittest discover -s tests
+
+      - name: Repositório privado
+        env:
+          TOKEN: ${{ secrets.ODI_INTERNO_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then echo "::error::ODI_INTERNO_TOKEN ausente"; exit 1; fi
+          git clone -q --depth 1 "https://x-access-token:${TOKEN}@github.com/WandersonH/canetas-emagrecedoras-secret.git" "$RUNNER_TEMP/privado"
+
+      - name: Coleta
+        run: python -u scripts/collect_transcricoes.py --privado "$RUNNER_TEMP/privado" --run-id "$RUN" --redes $REDES --minutos 230 | tee resumo.txt
+
+      - name: Resumo e CHANGELOG
+        if: always()
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          python scripts/build_estado.py
+          args=()
+          while IFS= read -r linha; do
+            case "$linha" in gravado*|BLOQUEADO*|ERRO*) args+=(--executado "$linha");; esac
+          done < resumo.txt
+          [ ${#args[@]} -eq 0 ] && args=(--executado "Nenhuma rede gravou resultado; ver o log do run.")
+          python scripts/changelog_auto.py --saida "$RUNNER_TEMP/entrada.md" \
+            --titulo "Transcrição (run $RUN)" \
+            --mudou "Manifestos em data/manifestos/ e contagens em data/transcricoes/resumo.json." \
+            --porque "Transcrição pedida pelo pesquisador em 23/11/2026; feita sem custo no runner." \
+            --executado "Workflow 'Transcrição (Whisper)', run $RUN, redes: $REDES." \
+            "${args[@]}" \
+            --pendente "Rodar as análises para levar as transcrições anonimizadas ao corpus." \
+            --evidencia "https://github.com/$REPO/actions/runs/$RUN e os manifestos deste run."
+      - name: Gravar no privado
+        if: always()
+        run: |
+          cd "$RUNNER_TEMP/privado"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for t in 1 2 3 4; do
+            git stash -q -u || true
+            git pull -q --rebase origin main
+            git stash pop -q || true
+            git checkout -q -- CHANGELOG.md 2>/dev/null || true
+            python "$GITHUB_WORKSPACE/scripts/changelog_auto.py" --arquivo CHANGELOG.md \
+              --titulo "Transcrições de terceiros (run $RUN)" \
+              --mudou "Transcrições em terceiros/transcricoes/<rede>/." \
+              --porque "Texto de terceiros fica só neste repositório." \
+              --executado "Workflow 'Transcrição (Whisper)' do repositório público, run $RUN." \
+              --pendente "Nenhuma." \
+              --evidencia "https://github.com/$GITHUB_REPOSITORY/actions/runs/$RUN."
+            git add -A
+            if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
+            git commit -q -m "Transcrições de terceiros (run $RUN)"
+            git push -q origin HEAD:main && exit 0
+            git reset -q --soft HEAD~1
+            sleep $((t * 15))
+          done
+          exit 1
+
+      - name: Gravar no público
+        if: always()
+        run: scripts/gravar_no_main.sh "Transcrição (run $RUN)" "$RUNNER_TEMP/entrada.md" data/manifestos data/transcricoes

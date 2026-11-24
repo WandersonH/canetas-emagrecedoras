@@ -43,7 +43,7 @@ PALAVRAS_SEGMENTO = 40
 MAX_SEGMENTOS = 12000
 SEMENTE = 2026
 FONTES = ("youtube", "tiktok", "instagram", "x", "kwai", "comentario_youtube", "comentario_tiktok", "comentario_instagram",
-          "comentario_x", "imprensa", "checagens")
+          "comentario_x", "transcricao_tiktok", "transcricao_kwai", "transcricao_youtube", "imprensa", "checagens")
 csv.field_size_limit(10 ** 8)
 
 
@@ -118,6 +118,10 @@ def textos(privado: pathlib.Path, inicio: str, fim: str) -> list[dict]:
         for caminho in sorted(glob.glob(str(privado / "terceiros" / "comentarios" / rede_id / "*.csv"))):
             for r in ler_csv(caminho):
                 add(f"comentario_{rede_id}", r["comentario_id"], r.get("publicado_em"), r.get("texto"), r.get("autor"), [])
+    for rede_id in ("tiktok", "kwai", "youtube"):  # fala transcrita dos vídeos: só no privado
+        for caminho in sorted(glob.glob(str(privado / "terceiros" / "transcricoes" / rede_id / "*.csv"))):
+            for r in ler_csv(caminho):
+                add(f"transcricao_{rede_id}", r["item_id"], r.get("publicado_em"), r.get("texto"), r.get("conta"), [])
     ag = comum.RAIZ / "data" / "checagens" / "agencias.json"
     if ag.exists():
         for c in comum.carregar(ag)["checagens"]:

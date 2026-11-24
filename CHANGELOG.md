@@ -2,6 +2,31 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 24/11/2026 · Transcrição com Whisper no runner
+
+**O que mudou**
+
+- scripts/collect_transcricoes.py: baixa o áudio dos vídeos do período com mais visualizações (TikTok 60, Kwai 20, YouTube 30, até 10 minutos cada) e transcreve com faster-whisper, modelo small, em português, sem custo. Universo = vídeos da rede já coletados no período; amostra = vídeos transcritos. Vídeo que não baixa fica no manifesto com o motivo.
+- Transcrições só no privado (terceiros/transcricoes/); no público, contagens em data/transcricoes/resumo.json. O texto entra anonimizado no corpus como fonte "Fala dos vídeos".
+- Workflow manual transcricao.yml, sem grupo de concorrência para não segurar as outras coletas; a gravação no privado sincroniza antes de escrever o CHANGELOG.
+- data/config/coleta.json: bloco "transcricao". tests/test_transcricoes.py.
+
+**Por quê**
+
+- Pedido do pesquisador em 23/11/2026 ("caso precise transcrever algo") e em 23/11/2026 22h26 ("prossiga"). A etapa paga de transcrição da Apify fica de reserva.
+
+**O que foi executado de verdade**
+
+- `python -m unittest discover -s tests` antes do commit. A transcrição roda no workflow.
+
+**O que ficou pendente**
+
+- Rodar o workflow; o YouTube costuma recusar download a partir do runner, o que fica registrado como falha por vídeo.
+
+**Onde está a evidência**
+
+- Este commit e o run do workflow.
+
 ## 24/11/2026 · Coletores de dados públicos da Anvisa, checagens das agências e comentários
 
 **O que mudou**
