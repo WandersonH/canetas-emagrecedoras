@@ -2,6 +2,28 @@
 
 Cada entrada diz o que mudou, por quê, o que foi executado de verdade, o que ficou pendente e onde está a evidência. As mais recentes ficam em cima.
 
+## 25/11/2026 · Análises de texto e redes (run 45575831115)
+
+**O que mudou**
+
+- data/corpus (corpus para o IRaMuTeQ, segmentos, CHD, similitude), data/redes (GEXF, desenhos, estatísticas) data/emojis.json, data/venda (triagem de venda irregular, só contagens), data/comentarios (cadernos por rede, corpus anonimizado) e data/jama (agregados da codificação manual JAMA).
+
+**Por quê**
+
+- Análises de IRaMuTeQ e Gephi com corpus interativo, pedido do pesquisador em 23/11/2026 18h23, normalizadas pelo dicionário do IRaMuTeQ.
+
+**O que foi executado de verdade**
+
+- Workflow 'Análises', run 45575831115: gravado data/corpus: 37572 textos, 51679 segmentos, 11999 na CHD, 90.1% classificados, 10 classes, 3000 formas. 11 redes, 115 comunidades ≥1%, 215 centralidades, 0 erros. gravado data/manifestos/venda_irregular_20261125T083018Z.json: venda irregular, 574 candidatos em 39185 textos. comentarios youtube: 21326 comentários, 18735 autores, tom 21326, CHD sim comentarios tiktok: 443 comentários, 441 autores, tom 443, CHD não comentarios instagram: 284 comentários, 277 autores, tom 284, CHD não comentarios x: 990 comentários, 785 autores, tom 990, CHD sim . jama: 115 vídeos (117 linhas), média 1.52, na coleta 2
+
+**O que ficou pendente**
+
+- Nomes das classes da CHD (dados pelo pesquisador) e conferência no IRaMuTeQ com o corpus exportado.
+
+**Onde está a evidência**
+
+- https://github.com/WandersonH/canetas-emagrecedoras/actions/runs/45575831115 e data/corpus/chd.json.
+
 ## 25/11/2026 · YouTube histórico (run 45575501971)
 
 **O que mudou**

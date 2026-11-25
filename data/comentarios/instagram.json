@@ -193,15 +193,15 @@
   },
   "nuvem": [
     {
+      "forma": "fibra",
+      "n": 19
+    },
+    {
       "forma": "protocolo",
       "n": 19
     },
     {
       "forma": "listar",
-      "n": 19
-    },
-    {
-      "forma": "fibra",
       "n": 19
     },
     {
@@ -225,6 +225,10 @@
       "n": 11
     },
     {
+      "forma": "bom",
+      "n": 8
+    },
+    {
       "forma": "querer",
       "n": 8
     },
@@ -233,23 +237,19 @@
       "n": 8
     },
     {
-      "forma": "bom",
-      "n": 8
-    },
-    {
       "forma": "estar",
       "n": 8
-    },
-    {
-      "forma": "lula",
-      "n": 7
     },
     {
       "forma": "picanha",
       "n": 7
     },
     {
-      "forma": "comer",
+      "forma": "lula",
+      "n": 7
+    },
+    {
+      "forma": "ficar",
       "n": 6
     },
     {
@@ -257,19 +257,15 @@
       "n": 6
     },
     {
-      "forma": "ficar",
+      "forma": "comer",
       "n": 6
     },
     {
-      "forma": "precisar",
-      "n": 5
-    },
-    {
-      "forma": "prometer",
-      "n": 5
-    },
-    {
       "forma": "emagrecer",
+      "n": 5
+    },
+    {
+      "forma": "agua",
       "n": 5
     },
     {
@@ -281,7 +277,11 @@
       "n": 5
     },
     {
-      "forma": "agua",
+      "forma": "prometer",
+      "n": 5
+    },
+    {
+      "forma": "precisar",
       "n": 5
     }
   ],
@@ -460,13 +460,13 @@
   "mencoes": {
     "nos": [
       {
-        "id": "A23201",
-        "rotulo": "A23201",
+        "id": "A24000",
+        "rotulo": "A24000",
         "tipo": "comentarista",
         "n": 0,
         "grupo": 1,
-        "x": 2.15,
-        "y": 0.4369
+        "x": 2.9059,
+        "y": 0.319
       },
       {
         "id": "M0001",
@@ -474,8 +474,8 @@
         "tipo": "marcada",
         "n": 1,
         "grupo": 1,
-        "x": 2.9059,
-        "y": 0.319
+        "x": 2.15,
+        "y": 0.4369
       },
       {
         "id": "C01468",
@@ -505,22 +505,22 @@
         "y": 1.2217
       },
       {
-        "id": "A23140",
-        "rotulo": "A23140",
+        "id": "A23939",
+        "rotulo": "A23939",
         "tipo": "comentarista",
         "n": 0,
         "grupo": 2,
-        "x": 3.8119,
-        "y": 0.319
+        "x": 3.0559,
+        "y": 0.4369
       },
       {
-        "id": "A3315",
-        "rotulo": "A3315",
+        "id": "A4119",
+        "rotulo": "A4119",
         "tipo": "comentarista",
         "n": 1,
         "grupo": 2,
-        "x": 3.0559,
-        "y": 0.4369
+        "x": 3.8119,
+        "y": 0.319
       },
       {
         "id": "C01479",
@@ -624,7 +624,7 @@
     ],
     "arestas": [
       [
-        "A23201",
+        "A24000",
         "M0001",
         1
       ],
@@ -694,8 +694,8 @@
         1
       ],
       [
-        "A23140",
-        "A3315",
+        "A23939",
+        "A4119",
         1
       ]
     ],

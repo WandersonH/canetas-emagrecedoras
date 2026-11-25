@@ -2,7 +2,7 @@
   "nota": "Critérios de qualidade da informação em saúde (Silberg et al., 1997, JAMA), na forma aplicada a vídeos por Zhang et al. (2020): um ponto por critério presente, de 0 a 4.",
   "fonte": "codificação manual do grupo de pesquisadores, planilha-semente no repositório privado",
   "sha256": "e131ccfcd392eb153f116ff0d3c7282a0cbdcc609d6b389ce5e433be8e3383f3",
-  "obtido_em": "2026-11-24T15:48:55Z",
+  "obtido_em": "2026-11-25T08:26:56Z",
   "linhas_na_planilha": 117,
   "videos": 115,
   "linhas_repetidas": 2,

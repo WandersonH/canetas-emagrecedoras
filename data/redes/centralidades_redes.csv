@@ -1,16 +1,16 @@
 caso,rede,medida,posicao,no,valor,comunidade
 redes,comentarios_instagram_mencoes,grau ponderado,1,M0002,13.0,1
-redes,comentarios_instagram_mencoes,grau ponderado,2,A23201,1.0,2
+redes,comentarios_instagram_mencoes,grau ponderado,2,A24000,1.0,2
 redes,comentarios_instagram_mencoes,grau ponderado,3,M0001,1.0,2
 redes,comentarios_instagram_mencoes,grau ponderado,4,C01468,1.0,1
 redes,comentarios_instagram_mencoes,grau ponderado,5,C01469,1.0,1
 redes,comentarios_instagram_mencoes,PageRank,1,M0002,0.361866,1
-redes,comentarios_instagram_mencoes,PageRank,2,A23201,0.055556,2
+redes,comentarios_instagram_mencoes,PageRank,2,A24000,0.055556,2
 redes,comentarios_instagram_mencoes,PageRank,3,M0001,0.055556,2
-redes,comentarios_instagram_mencoes,PageRank,4,A23140,0.055556,3
-redes,comentarios_instagram_mencoes,PageRank,5,A3315,0.055556,3
+redes,comentarios_instagram_mencoes,PageRank,4,A23939,0.055556,3
+redes,comentarios_instagram_mencoes,PageRank,5,A4119,0.055556,3
 redes,comentarios_instagram_mencoes,intermediação (betweenness),1,M0002,0.573529,1
-redes,comentarios_instagram_mencoes,intermediação (betweenness),2,A23201,0.0,2
+redes,comentarios_instagram_mencoes,intermediação (betweenness),2,A24000,0.0,2
 redes,comentarios_instagram_mencoes,intermediação (betweenness),3,M0001,0.0,2
 redes,comentarios_instagram_mencoes,intermediação (betweenness),4,C01468,0.0,1
 redes,comentarios_instagram_mencoes,intermediação (betweenness),5,C01469,0.0,1
@@ -21,8 +21,8 @@ redes,comentarios_instagram_mencoes,autovetor (eigenvector),4,C01479,0.196116,1
 redes,comentarios_instagram_mencoes,autovetor (eigenvector),5,C01481,0.196116,1
 redes,comentarios_instagram_palavras,grau ponderado,1,prometer,10.0,1
 redes,comentarios_instagram_palavras,grau ponderado,2,picanha,7.0,1
-redes,comentarios_instagram_palavras,grau ponderado,3,risada,6.0,1
-redes,comentarios_instagram_palavras,grau ponderado,4,caneta,6.0,3
+redes,comentarios_instagram_palavras,grau ponderado,3,caneta,6.0,3
+redes,comentarios_instagram_palavras,grau ponderado,4,risada,6.0,1
 redes,comentarios_instagram_palavras,grau ponderado,5,tomar,3.0,2
 redes,comentarios_instagram_palavras,PageRank,1,prometer,0.156001,1
 redes,comentarios_instagram_palavras,PageRank,2,picanha,0.109662,1
@@ -31,9 +31,9 @@ redes,comentarios_instagram_palavras,PageRank,4,tomar,0.106382,2
 redes,comentarios_instagram_palavras,PageRank,5,agua,0.106382,2
 redes,comentarios_instagram_palavras,intermediação (betweenness),1,prometer,0.017316,1
 redes,comentarios_instagram_palavras,intermediação (betweenness),2,caneta,0.012987,3
-redes,comentarios_instagram_palavras,intermediação (betweenness),3,risada,0.0,1
-redes,comentarios_instagram_palavras,intermediação (betweenness),4,precisar,0.0,4
-redes,comentarios_instagram_palavras,intermediação (betweenness),5,lula,0.0,5
+redes,comentarios_instagram_palavras,intermediação (betweenness),3,tomar,0.0,2
+redes,comentarios_instagram_palavras,intermediação (betweenness),4,emagrecer,0.0,3
+redes,comentarios_instagram_palavras,intermediação (betweenness),5,picanha,0.0,1
 redes,comentarios_instagram_palavras,autovetor (eigenvector),1,prometer,0.615979,1
 redes,comentarios_instagram_palavras,autovetor (eigenvector),2,picanha,0.534503,1
 redes,comentarios_instagram_palavras,autovetor (eigenvector),3,risada,0.474544,1
@@ -59,158 +59,158 @@ redes,comentarios_tiktok_palavras,autovetor (eigenvector),2,estar,0.453133,2
 redes,comentarios_tiktok_palavras,autovetor (eigenvector),3,dose,0.391915,2
 redes,comentarios_tiktok_palavras,autovetor (eigenvector),4,dor,0.244342,2
 redes,comentarios_tiktok_palavras,autovetor (eigenvector),5,mes,0.242719,4
-redes,comentarios_x_mencoes,grau ponderado,1,A4175,316.0,1
-redes,comentarios_x_mencoes,grau ponderado,2,A4193,192.0,2
-redes,comentarios_x_mencoes,grau ponderado,3,A4056,184.0,3
-redes,comentarios_x_mencoes,grau ponderado,4,A5309,109.0,4
-redes,comentarios_x_mencoes,grau ponderado,5,A3976,99.0,5
-redes,comentarios_x_mencoes,PageRank,1,A4175,0.083375,1
-redes,comentarios_x_mencoes,PageRank,2,A4193,0.045724,2
-redes,comentarios_x_mencoes,PageRank,3,A5309,0.039594,4
-redes,comentarios_x_mencoes,PageRank,4,A4056,0.037263,3
-redes,comentarios_x_mencoes,PageRank,5,A3976,0.036557,5
-redes,comentarios_x_mencoes,intermediação (betweenness),1,A4175,0.090967,1
-redes,comentarios_x_mencoes,intermediação (betweenness),2,A3601,0.063055,4
-redes,comentarios_x_mencoes,intermediação (betweenness),3,A5309,0.053748,4
-redes,comentarios_x_mencoes,intermediação (betweenness),4,A3976,0.051054,5
-redes,comentarios_x_mencoes,intermediação (betweenness),5,A4193,0.046775,2
-redes,comentarios_x_mencoes,autovetor (eigenvector),1,A4558,0.46856,6
-redes,comentarios_x_mencoes,autovetor (eigenvector),2,A23867,0.428051,6
-redes,comentarios_x_mencoes,autovetor (eigenvector),3,A23869,0.399143,6
-redes,comentarios_x_mencoes,autovetor (eigenvector),4,A23906,0.285975,6
-redes,comentarios_x_mencoes,autovetor (eigenvector),5,A23899,0.275376,6
-redes,comentarios_x_palavras,grau ponderado,1,estar,345.0,2
-redes,comentarios_x_palavras,grau ponderado,2,so,319.0,1
-redes,comentarios_x_palavras,grau ponderado,3,vc,229.0,3
-redes,comentarios_x_palavras,grau ponderado,4,risada,180.0,3
-redes,comentarios_x_palavras,grau ponderado,5,brasil,153.0,6
-redes,comentarios_x_palavras,PageRank,1,estar,0.047904,2
-redes,comentarios_x_palavras,PageRank,2,so,0.038954,1
-redes,comentarios_x_palavras,PageRank,3,vc,0.02909,3
-redes,comentarios_x_palavras,PageRank,4,risada,0.024151,3
-redes,comentarios_x_palavras,PageRank,5,brasil,0.021669,6
-redes,comentarios_x_palavras,intermediação (betweenness),1,estar,0.127045,2
-redes,comentarios_x_palavras,intermediação (betweenness),2,so,0.09293,1
-redes,comentarios_x_palavras,intermediação (betweenness),3,vc,0.046351,3
-redes,comentarios_x_palavras,intermediação (betweenness),4,brasil,0.045338,6
-redes,comentarios_x_palavras,intermediação (betweenness),5,risada,0.043526,3
-redes,comentarios_x_palavras,autovetor (eigenvector),1,estar,0.367901,2
-redes,comentarios_x_palavras,autovetor (eigenvector),2,so,0.350752,1
-redes,comentarios_x_palavras,autovetor (eigenvector),3,vc,0.297965,3
-redes,comentarios_x_palavras,autovetor (eigenvector),4,risada,0.263762,3
-redes,comentarios_x_palavras,autovetor (eigenvector),5,falar,0.227064,1
-redes,comentarios_youtube_mencoes,grau ponderado,1,A10145,2.0,12
+redes,comentarios_x_mencoes,grau ponderado,1,A4979,316.0,1
+redes,comentarios_x_mencoes,grau ponderado,2,A4997,192.0,2
+redes,comentarios_x_mencoes,grau ponderado,3,A4860,184.0,3
+redes,comentarios_x_mencoes,grau ponderado,4,A6113,109.0,4
+redes,comentarios_x_mencoes,grau ponderado,5,A4780,99.0,5
+redes,comentarios_x_mencoes,PageRank,1,A4979,0.083375,1
+redes,comentarios_x_mencoes,PageRank,2,A4997,0.045724,2
+redes,comentarios_x_mencoes,PageRank,3,A6113,0.039594,4
+redes,comentarios_x_mencoes,PageRank,4,A4860,0.037263,3
+redes,comentarios_x_mencoes,PageRank,5,A4780,0.036557,5
+redes,comentarios_x_mencoes,intermediação (betweenness),1,A4979,0.090967,1
+redes,comentarios_x_mencoes,intermediação (betweenness),2,A4405,0.063055,4
+redes,comentarios_x_mencoes,intermediação (betweenness),3,A6113,0.053748,4
+redes,comentarios_x_mencoes,intermediação (betweenness),4,A4780,0.051054,5
+redes,comentarios_x_mencoes,intermediação (betweenness),5,A4997,0.046775,2
+redes,comentarios_x_mencoes,autovetor (eigenvector),1,A5362,0.46856,6
+redes,comentarios_x_mencoes,autovetor (eigenvector),2,A24666,0.428051,6
+redes,comentarios_x_mencoes,autovetor (eigenvector),3,A24668,0.399143,6
+redes,comentarios_x_mencoes,autovetor (eigenvector),4,A24705,0.285975,6
+redes,comentarios_x_mencoes,autovetor (eigenvector),5,A24698,0.275376,6
+redes,comentarios_x_palavras,grau ponderado,1,estar,345.0,1
+redes,comentarios_x_palavras,grau ponderado,2,so,319.0,3
+redes,comentarios_x_palavras,grau ponderado,3,vc,229.0,2
+redes,comentarios_x_palavras,grau ponderado,4,risada,180.0,2
+redes,comentarios_x_palavras,grau ponderado,5,brasil,153.0,1
+redes,comentarios_x_palavras,PageRank,1,estar,0.047904,1
+redes,comentarios_x_palavras,PageRank,2,so,0.038954,3
+redes,comentarios_x_palavras,PageRank,3,vc,0.02909,2
+redes,comentarios_x_palavras,PageRank,4,risada,0.024151,2
+redes,comentarios_x_palavras,PageRank,5,brasil,0.021669,1
+redes,comentarios_x_palavras,intermediação (betweenness),1,estar,0.127045,1
+redes,comentarios_x_palavras,intermediação (betweenness),2,so,0.09293,3
+redes,comentarios_x_palavras,intermediação (betweenness),3,vc,0.046351,2
+redes,comentarios_x_palavras,intermediação (betweenness),4,brasil,0.045338,1
+redes,comentarios_x_palavras,intermediação (betweenness),5,risada,0.043526,2
+redes,comentarios_x_palavras,autovetor (eigenvector),1,estar,0.367901,1
+redes,comentarios_x_palavras,autovetor (eigenvector),2,so,0.350752,3
+redes,comentarios_x_palavras,autovetor (eigenvector),3,vc,0.297965,2
+redes,comentarios_x_palavras,autovetor (eigenvector),4,risada,0.263762,2
+redes,comentarios_x_palavras,autovetor (eigenvector),5,falar,0.227064,3
+redes,comentarios_youtube_mencoes,grau ponderado,1,A10949,2.0,12
 redes,comentarios_youtube_mencoes,grau ponderado,2,M0012,2.0,12
 redes,comentarios_youtube_mencoes,grau ponderado,3,C00045,1.0,1
 redes,comentarios_youtube_mencoes,grau ponderado,4,M0001,1.0,1
-redes,comentarios_youtube_mencoes,grau ponderado,5,A5684,1.0,2
+redes,comentarios_youtube_mencoes,grau ponderado,5,A6488,1.0,2
 redes,comentarios_youtube_mencoes,PageRank,1,C00045,0.02381,1
 redes,comentarios_youtube_mencoes,PageRank,2,M0001,0.02381,1
-redes,comentarios_youtube_mencoes,PageRank,3,A5684,0.02381,2
+redes,comentarios_youtube_mencoes,PageRank,3,A6488,0.02381,2
 redes,comentarios_youtube_mencoes,PageRank,4,M0002,0.02381,2
-redes,comentarios_youtube_mencoes,PageRank,5,A8834,0.02381,3
+redes,comentarios_youtube_mencoes,PageRank,5,A9638,0.02381,3
 redes,comentarios_youtube_mencoes,intermediação (betweenness),1,C00045,0.0,1
 redes,comentarios_youtube_mencoes,intermediação (betweenness),2,M0001,0.0,1
-redes,comentarios_youtube_mencoes,intermediação (betweenness),3,A5684,0.0,2
+redes,comentarios_youtube_mencoes,intermediação (betweenness),3,A6488,0.0,2
 redes,comentarios_youtube_mencoes,intermediação (betweenness),4,M0002,0.0,2
-redes,comentarios_youtube_mencoes,intermediação (betweenness),5,A8834,0.0,3
-redes,comentarios_youtube_palavras,grau ponderado,1,estar,39508.0,2
-redes,comentarios_youtube_palavras,grau ponderado,2,tomar,26813.0,2
-redes,comentarios_youtube_palavras,grau ponderado,3,perder,25873.0,2
-redes,comentarios_youtube_palavras,grau ponderado,4,kg,21733.0,2
-redes,comentarios_youtube_palavras,grau ponderado,5,so,21217.0,1
-redes,comentarios_youtube_palavras,PageRank,1,estar,0.021498,2
-redes,comentarios_youtube_palavras,PageRank,2,tomar,0.014601,2
-redes,comentarios_youtube_palavras,PageRank,3,perder,0.013954,2
-redes,comentarios_youtube_palavras,PageRank,4,so,0.01203,1
-redes,comentarios_youtube_palavras,PageRank,5,kg,0.011788,2
-redes,comentarios_youtube_palavras,intermediação (betweenness),1,so,0.010766,1
-redes,comentarios_youtube_palavras,intermediação (betweenness),2,dar,0.010016,4
-redes,comentarios_youtube_palavras,intermediação (betweenness),3,estar,0.009329,2
-redes,comentarios_youtube_palavras,intermediação (betweenness),4,video,0.008481,4
-redes,comentarios_youtube_palavras,intermediação (betweenness),5,ficar,0.00821,1
-redes,comentarios_youtube_palavras,autovetor (eigenvector),1,estar,0.334005,2
-redes,comentarios_youtube_palavras,autovetor (eigenvector),2,perder,0.247149,2
-redes,comentarios_youtube_palavras,autovetor (eigenvector),3,tomar,0.244319,2
-redes,comentarios_youtube_palavras,autovetor (eigenvector),4,kg,0.212457,2
-redes,comentarios_youtube_palavras,autovetor (eigenvector),5,mes,0.190738,2
-redes,fontes_termos,grau ponderado,1,Ozempic,2244.0,3
-redes,fontes_termos,grau ponderado,2,caneta emagrecedora,2232.0,2
-redes,fontes_termos,grau ponderado,3,tirzepatida,2191.0,4
-redes,fontes_termos,grau ponderado,4,Mounjaro,2053.0,1
-redes,fontes_termos,grau ponderado,5,semaglutida,2001.0,7
-redes,fontes_termos,PageRank,1,caneta emagrecedora,0.060674,2
-redes,fontes_termos,PageRank,2,Ozempic,0.05669,3
-redes,fontes_termos,PageRank,3,Mounjaro,0.054949,1
-redes,fontes_termos,PageRank,4,tirzepatida,0.053151,4
-redes,fontes_termos,PageRank,5,semaglutida,0.045078,7
-redes,fontes_termos,intermediação (betweenness),1,caneta emagrecedora,0.2627,2
-redes,fontes_termos,intermediação (betweenness),2,Ozempic,0.221947,3
-redes,fontes_termos,intermediação (betweenness),3,Mounjaro,0.218778,1
-redes,fontes_termos,intermediação (betweenness),4,tirzepatida,0.19339,4
-redes,fontes_termos,intermediação (betweenness),5,caneta para emagrecer,0.153134,6
-redes,fontes_termos,autovetor (eigenvector),1,Ozempic,0.360497,3
-redes,fontes_termos,autovetor (eigenvector),2,G1,0.327215,4
-redes,fontes_termos,autovetor (eigenvector),3,Mounjaro,0.309687,1
-redes,fontes_termos,autovetor (eigenvector),4,semaglutida,0.284567,7
-redes,fontes_termos,autovetor (eigenvector),5,CNN Brasil,0.281254,3
-redes,hashtags,grau ponderado,1,#emagrecimento,4562.0,1
-redes,hashtags,grau ponderado,2,#mounjaro,4145.0,1
-redes,hashtags,grau ponderado,3,#tirzepatida,2992.0,1
-redes,hashtags,grau ponderado,4,#ozempic,2854.0,3
-redes,hashtags,grau ponderado,5,#obesidade,2117.0,1
-redes,hashtags,PageRank,1,#emagrecimento,0.064584,1
-redes,hashtags,PageRank,2,#mounjaro,0.059465,1
-redes,hashtags,PageRank,3,#tirzepatida,0.042473,1
-redes,hashtags,PageRank,4,#ozempic,0.041322,3
-redes,hashtags,PageRank,5,#shorts,0.029941,2
-redes,hashtags,intermediação (betweenness),1,#mounjaro,0.098338,1
-redes,hashtags,intermediação (betweenness),2,#shorts,0.091767,2
-redes,hashtags,intermediação (betweenness),3,#ozempic,0.085029,3
-redes,hashtags,intermediação (betweenness),4,#emagrecimento,0.069704,1
-redes,hashtags,intermediação (betweenness),5,#tirzepatida,0.054442,1
-redes,hashtags,autovetor (eigenvector),1,#emagrecimento,0.45108,1
-redes,hashtags,autovetor (eigenvector),2,#mounjaro,0.445736,1
-redes,hashtags,autovetor (eigenvector),3,#tirzepatida,0.362182,1
-redes,hashtags,autovetor (eigenvector),4,#ozempic,0.311595,3
-redes,hashtags,autovetor (eigenvector),5,#obesidade,0.229308,1
-redes,palavras,grau ponderado,1,caneta,17878.0,1
-redes,palavras,grau ponderado,2,estar,12541.0,2
-redes,palavras,grau ponderado,3,medicamento,11532.0,1
-redes,palavras,grau ponderado,4,mounjaro,11103.0,1
-redes,palavras,grau ponderado,5,medico,10390.0,3
-redes,palavras,PageRank,1,caneta,0.020783,1
-redes,palavras,PageRank,2,estar,0.014118,2
-redes,palavras,PageRank,3,medicamento,0.012676,1
-redes,palavras,PageRank,4,mounjaro,0.011806,1
-redes,palavras,PageRank,5,medico,0.010988,3
-redes,palavras,intermediação (betweenness),1,caneta,0.112236,1
-redes,palavras,intermediação (betweenness),2,estar,0.054822,2
-redes,palavras,intermediação (betweenness),3,medicamento,0.051891,1
-redes,palavras,intermediação (betweenness),4,mounjaro,0.041478,1
-redes,palavras,intermediação (betweenness),5,medico,0.039028,3
-redes,palavras,autovetor (eigenvector),1,caneta,0.279431,1
-redes,palavras,autovetor (eigenvector),2,estar,0.207782,2
-redes,palavras,autovetor (eigenvector),3,mounjaro,0.198223,1
-redes,palavras,autovetor (eigenvector),4,perder,0.180662,2
-redes,palavras,autovetor (eigenvector),5,medicamento,0.174764,1
-corpus,similitude,grau ponderado,1,caneta,4083.0,1
-corpus,similitude,grau ponderado,2,estar,2801.0,2
-corpus,similitude,grau ponderado,3,perder,782.0,4
-corpus,similitude,grau ponderado,4,mounjaro,779.0,4
-corpus,similitude,grau ponderado,5,peso,735.0,4
-corpus,similitude,PageRank,1,caneta,0.153586,1
-corpus,similitude,PageRank,2,estar,0.133872,2
-corpus,similitude,PageRank,3,medico,0.033321,3
-corpus,similitude,PageRank,4,video,0.032709,3
-corpus,similitude,PageRank,5,perder,0.029274,4
-corpus,similitude,intermediação (betweenness),1,caneta,0.765203,1
-corpus,similitude,intermediação (betweenness),2,mounjaro,0.543805,4
-corpus,similitude,intermediação (betweenness),3,estar,0.543187,2
-corpus,similitude,intermediação (betweenness),4,peso,0.505257,4
-corpus,similitude,intermediação (betweenness),5,perder,0.475572,4
-corpus,similitude,autovetor (eigenvector),1,caneta,0.702283,1
-corpus,similitude,autovetor (eigenvector),2,emagrecedora,0.378933,1
-corpus,similitude,autovetor (eigenvector),3,emagrecedoras,0.322626,1
-corpus,similitude,autovetor (eigenvector),4,emagrecer,0.187213,1
-corpus,similitude,autovetor (eigenvector),5,anvisa,0.15859,1
+redes,comentarios_youtube_mencoes,intermediação (betweenness),5,A9638,0.0,3
+redes,comentarios_youtube_palavras,grau ponderado,1,estar,39508.0,1
+redes,comentarios_youtube_palavras,grau ponderado,2,tomar,26813.0,1
+redes,comentarios_youtube_palavras,grau ponderado,3,perder,25873.0,1
+redes,comentarios_youtube_palavras,grau ponderado,4,kg,21733.0,1
+redes,comentarios_youtube_palavras,grau ponderado,5,so,21217.0,2
+redes,comentarios_youtube_palavras,PageRank,1,estar,0.021498,1
+redes,comentarios_youtube_palavras,PageRank,2,tomar,0.014601,1
+redes,comentarios_youtube_palavras,PageRank,3,perder,0.013954,1
+redes,comentarios_youtube_palavras,PageRank,4,so,0.01203,2
+redes,comentarios_youtube_palavras,PageRank,5,kg,0.011788,1
+redes,comentarios_youtube_palavras,intermediação (betweenness),1,so,0.010766,2
+redes,comentarios_youtube_palavras,intermediação (betweenness),2,dar,0.010016,3
+redes,comentarios_youtube_palavras,intermediação (betweenness),3,estar,0.009329,1
+redes,comentarios_youtube_palavras,intermediação (betweenness),4,video,0.008481,3
+redes,comentarios_youtube_palavras,intermediação (betweenness),5,ficar,0.00821,2
+redes,comentarios_youtube_palavras,autovetor (eigenvector),1,estar,0.334005,1
+redes,comentarios_youtube_palavras,autovetor (eigenvector),2,perder,0.247149,1
+redes,comentarios_youtube_palavras,autovetor (eigenvector),3,tomar,0.244319,1
+redes,comentarios_youtube_palavras,autovetor (eigenvector),4,kg,0.212457,1
+redes,comentarios_youtube_palavras,autovetor (eigenvector),5,mes,0.190738,1
+redes,fontes_termos,grau ponderado,1,caneta emagrecedora,2553.0,1
+redes,fontes_termos,grau ponderado,2,Ozempic,2432.0,4
+redes,fontes_termos,grau ponderado,3,tirzepatida,2428.0,3
+redes,fontes_termos,grau ponderado,4,Mounjaro,2281.0,2
+redes,fontes_termos,grau ponderado,5,semaglutida,2199.0,8
+redes,fontes_termos,PageRank,1,caneta emagrecedora,0.062242,1
+redes,fontes_termos,PageRank,2,Ozempic,0.056345,4
+redes,fontes_termos,PageRank,3,Mounjaro,0.054714,2
+redes,fontes_termos,PageRank,4,tirzepatida,0.053157,3
+redes,fontes_termos,PageRank,5,semaglutida,0.044984,8
+redes,fontes_termos,intermediação (betweenness),1,caneta emagrecedora,0.256105,1
+redes,fontes_termos,intermediação (betweenness),2,Mounjaro,0.217329,2
+redes,fontes_termos,intermediação (betweenness),3,Ozempic,0.209514,4
+redes,fontes_termos,intermediação (betweenness),4,tirzepatida,0.202452,3
+redes,fontes_termos,intermediação (betweenness),5,caneta para emagrecer,0.17109,6
+redes,fontes_termos,autovetor (eigenvector),1,Ozempic,0.358243,4
+redes,fontes_termos,autovetor (eigenvector),2,G1,0.325692,3
+redes,fontes_termos,autovetor (eigenvector),3,Mounjaro,0.309739,2
+redes,fontes_termos,autovetor (eigenvector),4,semaglutida,0.285013,8
+redes,fontes_termos,autovetor (eigenvector),5,CNN Brasil,0.279604,4
+redes,hashtags,grau ponderado,1,#emagrecimento,6495.0,2
+redes,hashtags,grau ponderado,2,#mounjaro,6149.0,2
+redes,hashtags,grau ponderado,3,#ozempic,4685.0,2
+redes,hashtags,grau ponderado,4,#tirzepatida,3990.0,2
+redes,hashtags,grau ponderado,5,#obesidade,2952.0,4
+redes,hashtags,PageRank,1,#emagrecimento,0.059602,2
+redes,hashtags,PageRank,2,#mounjaro,0.056754,2
+redes,hashtags,PageRank,3,#ozempic,0.043471,2
+redes,hashtags,PageRank,4,#tirzepatida,0.036791,2
+redes,hashtags,PageRank,5,#obesidade,0.026759,4
+redes,hashtags,intermediação (betweenness),1,#mounjaro,0.093839,2
+redes,hashtags,intermediação (betweenness),2,#ozempic,0.091771,2
+redes,hashtags,intermediação (betweenness),3,#shorts,0.080177,1
+redes,hashtags,intermediação (betweenness),4,#emagrecimento,0.072991,2
+redes,hashtags,intermediação (betweenness),5,#tirzepatida,0.054733,2
+redes,hashtags,autovetor (eigenvector),1,#mounjaro,0.457493,2
+redes,hashtags,autovetor (eigenvector),2,#emagrecimento,0.445821,2
+redes,hashtags,autovetor (eigenvector),3,#ozempic,0.348506,2
+redes,hashtags,autovetor (eigenvector),4,#tirzepatida,0.337691,2
+redes,hashtags,autovetor (eigenvector),5,#obesidade,0.221142,4
+redes,palavras,grau ponderado,1,caneta,19227.0,1
+redes,palavras,grau ponderado,2,mounjaro,12500.0,1
+redes,palavras,grau ponderado,3,medico,12435.0,3
+redes,palavras,grau ponderado,4,medicamento,12381.0,1
+redes,palavras,grau ponderado,5,estar,11561.0,2
+redes,palavras,PageRank,1,caneta,0.019846,1
+redes,palavras,PageRank,2,medicamento,0.012138,1
+redes,palavras,PageRank,3,mounjaro,0.012008,1
+redes,palavras,PageRank,4,estar,0.011833,2
+redes,palavras,PageRank,5,medico,0.011625,3
+redes,palavras,intermediação (betweenness),1,caneta,0.109685,1
+redes,palavras,intermediação (betweenness),2,medicamento,0.049127,1
+redes,palavras,intermediação (betweenness),3,mounjaro,0.045832,1
+redes,palavras,intermediação (betweenness),4,estar,0.045698,2
+redes,palavras,intermediação (betweenness),5,medico,0.044015,3
+redes,palavras,autovetor (eigenvector),1,caneta,0.284529,1
+redes,palavras,autovetor (eigenvector),2,mounjaro,0.206875,1
+redes,palavras,autovetor (eigenvector),3,medicamento,0.180442,1
+redes,palavras,autovetor (eigenvector),4,medico,0.17833,3
+redes,palavras,autovetor (eigenvector),5,peso,0.172738,2
+corpus,similitude,grau ponderado,1,caneta,4463.0,1
+corpus,similitude,grau ponderado,2,estar,2110.0,2
+corpus,similitude,grau ponderado,3,medico,873.0,4
+corpus,similitude,grau ponderado,4,mounjaro,862.0,3
+corpus,similitude,grau ponderado,5,video,820.0,3
+corpus,similitude,PageRank,1,caneta,0.161642,1
+corpus,similitude,PageRank,2,estar,0.093727,2
+corpus,similitude,PageRank,3,video,0.046915,3
+corpus,similitude,PageRank,4,medico,0.035853,4
+corpus,similitude,PageRank,5,mounjaro,0.031466,3
+corpus,similitude,intermediação (betweenness),1,caneta,0.857555,1
+corpus,similitude,intermediação (betweenness),2,peso,0.444032,5
+corpus,similitude,intermediação (betweenness),3,estar,0.42651,2
+corpus,similitude,intermediação (betweenness),4,perder,0.396413,5
+corpus,similitude,intermediação (betweenness),5,mounjaro,0.313131,3
+corpus,similitude,autovetor (eigenvector),1,caneta,0.699905,1
+corpus,similitude,autovetor (eigenvector),2,emagrecedora,0.347878,1
+corpus,similitude,autovetor (eigenvector),3,emagrecedoras,0.329872,1
+corpus,similitude,autovetor (eigenvector),4,emagrecer,0.189929,1
+corpus,similitude,autovetor (eigenvector),5,mounjaro,0.162266,3
