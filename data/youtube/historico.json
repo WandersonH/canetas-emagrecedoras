@@ -1,17 +1,17 @@
 {
-  "obtido_em": "2026-11-24T08:15:36Z",
-  "run_id": "45354486107",
+  "obtido_em": "2026-11-25T08:21:35Z",
+  "run_id": "45575501971",
   "periodo": {
     "inicio": "2022-05-13",
-    "fim": "2026-11-24"
+    "fim": "2026-11-25"
   },
   "progresso": {
-    "feitos": 158,
+    "feitos": 264,
     "total": 825,
     "esgotou_cota_neste_run": true
   },
-  "videos_distintos": 5011,
-  "canais_distintos": 3066,
+  "videos_distintos": 7871,
+  "canais_distintos": 4475,
   "nota": "Estimativa = total que o YouTube informa para o termo naquele mês (aproximado). Lidos = até 50 vídeos por termo e mês.",
   "por_termo": [
     {
@@ -278,52 +278,52 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 163328,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 187905,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 101071,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 213439,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 203918,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 167665,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 64212,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-01",
@@ -668,52 +668,52 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 154159,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 167571,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 103334,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 177119,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 172319,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 139245,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 52275,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-01",
@@ -1058,52 +1058,52 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1672,
+          "lidos": 10,
+          "no_limite": false
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 3351,
+          "lidos": 12,
+          "no_limite": false
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1019,
+          "lidos": 41,
+          "no_limite": false
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 2746,
+          "lidos": 25,
+          "no_limite": false
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1668,
+          "lidos": 11,
+          "no_limite": false
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1330,
+          "lidos": 17,
+          "no_limite": false
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 552,
+          "lidos": 16,
+          "no_limite": false
         },
         {
           "mes": "2026-01",
@@ -1448,52 +1448,52 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 922053,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 914771,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 805845,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 924151,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 924933,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 921845,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 796552,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-01",
@@ -1838,52 +1838,52 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 180059,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 182709,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 135504,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 185696,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 184153,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 168108,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 85487,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-01",
@@ -2228,52 +2228,52 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 459927,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 482735,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 359122,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 487324,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 477301,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 451103,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 233711,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-01",
@@ -2618,52 +2618,52 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 27419,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 33973,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 2308,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 37461,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 29251,
+          "lidos": 42,
+          "no_limite": false
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 19365,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 3096,
+          "lidos": 35,
+          "no_limite": false
         },
         {
           "mes": "2026-01",
@@ -3008,52 +3008,52 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1258,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 12796,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 2335,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 17649,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 20723,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 14631,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1631,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-01",
@@ -3398,59 +3398,59 @@
         },
         {
           "mes": "2025-06",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 46780,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 49954,
+          "lidos": 39,
+          "no_limite": false
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 12564,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 76217,
+          "lidos": 46,
+          "no_limite": false
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 66542,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 41816,
+          "lidos": 41,
+          "no_limite": false
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1586,
+          "lidos": 47,
+          "no_limite": false
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 32924,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
@@ -3795,52 +3795,52 @@
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 77418,
+          "lidos": 11,
+          "no_limite": false
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 12704,
+          "lidos": 15,
+          "no_limite": false
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 101228,
+          "lidos": 6,
+          "no_limite": false
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 86563,
+          "lidos": 16,
+          "no_limite": false
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 46821,
+          "lidos": 27,
+          "no_limite": false
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 292,
+          "lidos": 14,
+          "no_limite": false
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 34405,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
@@ -4185,52 +4185,52 @@
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 133,
+          "lidos": 6,
+          "no_limite": false
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 82,
+          "lidos": 12,
+          "no_limite": false
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 197,
+          "lidos": 9,
+          "no_limite": false
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1627,
+          "lidos": 21,
+          "no_limite": false
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 227,
+          "lidos": 11,
+          "no_limite": false
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 108,
+          "lidos": 14,
+          "no_limite": false
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 865,
+          "lidos": 23,
+          "no_limite": false
         },
         {
           "mes": "2026-02",
@@ -4575,52 +4575,52 @@
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 73,
+          "lidos": 2,
+          "no_limite": false
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 42,
+          "lidos": 3,
+          "no_limite": false
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 87,
+          "lidos": 3,
+          "no_limite": false
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 115,
+          "lidos": 5,
+          "no_limite": false
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 114,
+          "lidos": 2,
+          "no_limite": false
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 47,
+          "lidos": 2,
+          "no_limite": false
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 112,
+          "lidos": 4,
+          "no_limite": false
         },
         {
           "mes": "2026-02",
@@ -4965,52 +4965,52 @@
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 14567,
+          "lidos": 9,
+          "no_limite": false
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 1533,
+          "lidos": 11,
+          "no_limite": false
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 21695,
+          "lidos": 2,
+          "no_limite": false
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 22257,
+          "lidos": 6,
+          "no_limite": false
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 5495,
+          "lidos": 5,
+          "no_limite": false
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 422,
+          "lidos": 3,
+          "no_limite": false
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 3077,
+          "lidos": 2,
+          "no_limite": false
         },
         {
           "mes": "2026-02",
@@ -5355,52 +5355,52 @@
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 27191,
+          "lidos": 23,
+          "no_limite": false
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 2713,
+          "lidos": 15,
+          "no_limite": false
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 53136,
+          "lidos": 18,
+          "no_limite": false
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 42036,
+          "lidos": 22,
+          "no_limite": false
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 9986,
+          "lidos": 17,
+          "no_limite": false
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 505,
+          "lidos": 13,
+          "no_limite": false
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 6157,
+          "lidos": 20,
+          "no_limite": false
         },
         {
           "mes": "2026-02",
@@ -5745,52 +5745,52 @@
         },
         {
           "mes": "2025-07",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 9206,
+          "lidos": 28,
+          "no_limite": false
         },
         {
           "mes": "2025-08",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 3374,
+          "lidos": 35,
+          "no_limite": false
         },
         {
           "mes": "2025-09",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 15022,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-10",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 6632,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-11",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 20404,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2025-12",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 4267,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-01",
-          "feito": false,
-          "estimativa": null,
-          "lidos": null,
-          "no_limite": null
+          "feito": true,
+          "estimativa": 29177,
+          "lidos": 50,
+          "no_limite": true
         },
         {
           "mes": "2026-02",
