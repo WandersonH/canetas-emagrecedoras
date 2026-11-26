@@ -1,0 +1,54 @@
+{
+  "frente": "venda_irregular",
+  "etapa": "gratis",
+  "run_id": "45782734966",
+  "iniciado_em": "2026-11-26T08:31:19Z",
+  "terminado_em": "2026-11-26T08:31:27Z",
+  "consulta": {
+    "fontes": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "x",
+      "kwai",
+      "comentario_youtube",
+      "comentario_tiktok",
+      "comentario_instagram",
+      "comentario_x",
+      "transcricao_tiktok",
+      "transcricao_kwai",
+      "transcricao_youtube"
+    ],
+    "inicio": "2022-05-13",
+    "fim": "2026-11-26",
+    "regras": "data/config/venda_irregular.json"
+  },
+  "universo": {
+    "valor": 41187,
+    "fonte": "textos de redes já coletados no período (publicações, comentários e falas)"
+  },
+  "lido": 41187,
+  "amostra": {
+    "n": 591,
+    "como": "candidatos da triagem automática, revisão pendente"
+  },
+  "parou_por": "lista_inteira",
+  "custo_usd": 0,
+  "arquivos": [
+    {
+      "caminho": "data/venda/agregado.json",
+      "sha256": "6f2dd753d26e2927273696fad7481dadb04e809ccb4e6d44685e94c0da492d82",
+      "bytes": 16221,
+      "linhas": null
+    }
+  ],
+  "arquivos_privados": [
+    {
+      "caminho": "terceiros/venda_irregular/candidatos_20261126T083119Z.csv",
+      "sha256": "e6e500dd12495f04d7ceca2b8d718c4906f09342255a543213627f963b852039",
+      "bytes": 787182,
+      "linhas": 592
+    }
+  ],
+  "bloqueios": []
+}

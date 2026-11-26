@@ -1,13 +1,13 @@
 {
-  "obtido_em": "2026-11-25T08:30:18Z",
-  "run_id": "45575831115",
+  "obtido_em": "2026-11-26T08:31:19Z",
+  "run_id": "45782734966",
   "periodo": {
     "inicio": "2022-05-13",
-    "fim": "2026-11-25"
+    "fim": "2026-11-26"
   },
   "nota": "Triagem automática por palavras e sinais de venda (data/config/venda_irregular.json). São candidatos: a revisão de contexto de cada um está pendente. Link de venda, endereço de loja e perfil de vendedor ficam fora desta página.",
   "textos_examinados_por_fonte": {
-    "youtube": 9272,
+    "youtube": 11274,
     "tiktok": 443,
     "instagram": 492,
     "x": 3384,
@@ -19,8 +19,8 @@
     "transcricao_tiktok": 268,
     "transcricao_kwai": 67
   },
-  "textos_examinados": 39185,
-  "candidatos": 574,
+  "textos_examinados": 41187,
+  "candidatos": 591,
   "por_tipo_e_fonte": [
     {
       "tipo": "manipulado",
@@ -55,7 +55,7 @@
     {
       "tipo": "manipulado",
       "fonte": "youtube",
-      "n": 42
+      "n": 47
     },
     {
       "tipo": "menção a golpe ou falsificação",
@@ -95,7 +95,7 @@
     {
       "tipo": "menção a golpe ou falsificação",
       "fonte": "youtube",
-      "n": 156
+      "n": 162
     },
     {
       "tipo": "oferta sem receita",
@@ -125,7 +125,7 @@
     {
       "tipo": "oferta sem receita",
       "fonte": "youtube",
-      "n": 16
+      "n": 20
     },
     {
       "tipo": "produto sem registro",
@@ -165,7 +165,7 @@
     {
       "tipo": "produto sem registro",
       "fonte": "youtube",
-      "n": 200
+      "n": 203
     }
   ],
   "por_tipo_e_mes": [
@@ -176,7 +176,22 @@
     },
     {
       "tipo": "manipulado",
+      "mes": "2025-02",
+      "n": 1
+    },
+    {
+      "tipo": "manipulado",
       "mes": "2025-03",
+      "n": 2
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2025-04",
+      "n": 2
+    },
+    {
+      "tipo": "manipulado",
+      "mes": "2025-06",
       "n": 1
     },
     {
@@ -277,7 +292,12 @@
     {
       "tipo": "menção a golpe ou falsificação",
       "mes": "2025-04",
-      "n": 1
+      "n": 3
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2025-05",
+      "n": 4
     },
     {
       "tipo": "menção a golpe ou falsificação",
@@ -371,8 +391,13 @@
     },
     {
       "tipo": "oferta sem receita",
-      "mes": "2025-04",
+      "mes": "2024-12",
       "n": 1
+    },
+    {
+      "tipo": "oferta sem receita",
+      "mes": "2025-04",
+      "n": 4
     },
     {
       "tipo": "oferta sem receita",
@@ -441,7 +466,17 @@
     },
     {
       "tipo": "produto sem registro",
+      "mes": "2025-01",
+      "n": 1
+    },
+    {
+      "tipo": "produto sem registro",
       "mes": "2025-02",
+      "n": 2
+    },
+    {
+      "tipo": "produto sem registro",
+      "mes": "2025-04",
       "n": 1
     },
     {
@@ -539,17 +574,17 @@
     {
       "grupo": "oferta",
       "sinal": "link",
-      "n": 266
+      "n": 276
     },
     {
       "grupo": "produto_sem_registro",
       "sinal": "paraguai",
-      "n": 202
+      "n": 205
     },
     {
       "grupo": "oferta",
       "sinal": "whatsapp",
-      "n": 153
+      "n": 160
     },
     {
       "grupo": "produto_sem_registro",
@@ -559,22 +594,22 @@
     {
       "grupo": "oferta",
       "sinal": "link de WhatsApp",
-      "n": 58
+      "n": 61
     },
     {
       "grupo": "golpe",
       "sinal": "falsificados",
-      "n": 55
-    },
-    {
-      "grupo": "golpe",
-      "sinal": "falsificadas",
-      "n": 55
+      "n": 58
     },
     {
       "grupo": "golpe",
       "sinal": "falsificacao",
-      "n": 55
+      "n": 57
+    },
+    {
+      "grupo": "golpe",
+      "sinal": "falsificadas",
+      "n": 56
     },
     {
       "grupo": "golpe",
@@ -582,29 +617,29 @@
       "n": 52
     },
     {
+      "grupo": "oferta",
+      "sinal": "preço em reais",
+      "n": 47
+    },
+    {
       "grupo": "golpe",
       "sinal": "golpe",
       "n": 45
     },
     {
-      "grupo": "oferta",
-      "sinal": "preço em reais",
-      "n": 44
-    },
-    {
       "grupo": "golpe",
       "sinal": "falsificada",
-      "n": 39
+      "n": 40
     },
     {
       "grupo": "sem_receita",
       "sinal": "sem receita",
-      "n": 36
+      "n": 39
     },
     {
       "grupo": "oferta",
       "sinal": "telefone",
-      "n": 35
+      "n": 37
     },
     {
       "grupo": "oferta",
@@ -612,14 +647,14 @@
       "n": 31
     },
     {
-      "grupo": "produto_sem_registro",
-      "sinal": "lipoless",
+      "grupo": "manipulado",
+      "sinal": "manipulada",
       "n": 29
     },
     {
-      "grupo": "manipulado",
-      "sinal": "manipulada",
-      "n": 26
+      "grupo": "produto_sem_registro",
+      "sinal": "lipoless",
+      "n": 29
     },
     {
       "grupo": "produto_sem_registro",
@@ -629,16 +664,16 @@
     {
       "grupo": "oferta",
       "sinal": "pix",
-      "n": 24
-    },
-    {
-      "grupo": "oferta",
-      "sinal": "a venda",
-      "n": 21
+      "n": 26
     },
     {
       "grupo": "manipulado",
       "sinal": "manipulacao",
+      "n": 22
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "a venda",
       "n": 21
     },
     {
@@ -648,22 +683,27 @@
     },
     {
       "grupo": "manipulado",
-      "sinal": "farmacia de manipulacao",
-      "n": 18
-    },
-    {
-      "grupo": "manipulado",
       "sinal": "manipulados",
-      "n": 18
+      "n": 19
     },
     {
       "grupo": "sem_receita",
       "sinal": "sem prescricao",
-      "n": 17
+      "n": 18
+    },
+    {
+      "grupo": "manipulado",
+      "sinal": "farmacia de manipulacao",
+      "n": 18
     },
     {
       "grupo": "oferta",
       "sinal": "frete",
+      "n": 17
+    },
+    {
+      "grupo": "manipulado",
+      "sinal": "manipuladas",
       "n": 17
     },
     {
@@ -682,24 +722,19 @@
       "n": 14
     },
     {
-      "grupo": "manipulado",
-      "sinal": "manipuladas",
-      "n": 14
-    },
-    {
       "grupo": "produto_sem_registro",
       "sinal": "t36",
       "n": 13
     },
     {
-      "grupo": "produto_sem_registro",
-      "sinal": "canetas do paraguai",
+      "grupo": "manipulado",
+      "sinal": "manipulado",
       "n": 12
     },
     {
-      "grupo": "manipulado",
-      "sinal": "manipulado",
-      "n": 11
+      "grupo": "produto_sem_registro",
+      "sinal": "canetas do paraguai",
+      "n": 12
     },
     {
       "grupo": "oferta",
@@ -717,13 +752,18 @@
       "n": 10
     },
     {
-      "grupo": "produto_sem_registro",
-      "sinal": "gluconex",
+      "grupo": "golpe",
+      "sinal": "fraude",
+      "n": 10
+    },
+    {
+      "grupo": "oferta",
+      "sinal": "link na bio",
       "n": 9
     },
     {
-      "grupo": "golpe",
-      "sinal": "fraude",
+      "grupo": "produto_sem_registro",
+      "sinal": "gluconex",
       "n": 9
     },
     {
@@ -734,11 +774,6 @@
     {
       "grupo": "oferta",
       "sinal": "encomenda",
-      "n": 8
-    },
-    {
-      "grupo": "oferta",
-      "sinal": "link na bio",
       "n": 8
     },
     {

@@ -193,11 +193,11 @@
   },
   "nuvem": [
     {
-      "forma": "fibra",
+      "forma": "protocolo",
       "n": 19
     },
     {
-      "forma": "protocolo",
+      "forma": "fibra",
       "n": 19
     },
     {
@@ -225,7 +225,7 @@
       "n": 11
     },
     {
-      "forma": "bom",
+      "forma": "so",
       "n": 8
     },
     {
@@ -233,11 +233,11 @@
       "n": 8
     },
     {
-      "forma": "so",
+      "forma": "estar",
       "n": 8
     },
     {
-      "forma": "estar",
+      "forma": "bom",
       "n": 8
     },
     {
@@ -249,7 +249,7 @@
       "n": 7
     },
     {
-      "forma": "ficar",
+      "forma": "comer",
       "n": 6
     },
     {
@@ -257,19 +257,15 @@
       "n": 6
     },
     {
-      "forma": "comer",
+      "forma": "ficar",
       "n": 6
-    },
-    {
-      "forma": "emagrecer",
-      "n": 5
     },
     {
       "forma": "agua",
       "n": 5
     },
     {
-      "forma": "passar",
+      "forma": "precisar",
       "n": 5
     },
     {
@@ -281,7 +277,11 @@
       "n": 5
     },
     {
-      "forma": "precisar",
+      "forma": "passar",
+      "n": 5
+    },
+    {
+      "forma": "emagrecer",
       "n": 5
     }
   ],
@@ -293,8 +293,8 @@
         "tipo": "palavra",
         "n": 5,
         "grupo": 1,
-        "x": 3.4149,
-        "y": 0.5339,
+        "x": 2.15,
+        "y": 0.7311,
         "seg": [
           16,
           33,
@@ -309,8 +309,8 @@
         "tipo": "palavra",
         "n": 11,
         "grupo": 1,
-        "x": 2.15,
-        "y": 0.7311,
+        "x": 3.4149,
+        "y": 0.5339,
         "seg": [
           16,
           17,
@@ -460,8 +460,8 @@
   "mencoes": {
     "nos": [
       {
-        "id": "A24000",
-        "rotulo": "A24000",
+        "id": "A24420",
+        "rotulo": "A24420",
         "tipo": "comentarista",
         "n": 0,
         "grupo": 1,
@@ -505,22 +505,22 @@
         "y": 1.2217
       },
       {
-        "id": "A23939",
-        "rotulo": "A23939",
+        "id": "A24359",
+        "rotulo": "A24359",
         "tipo": "comentarista",
         "n": 0,
         "grupo": 2,
-        "x": 3.0559,
-        "y": 0.4369
+        "x": 3.8119,
+        "y": 0.319
       },
       {
-        "id": "A4119",
-        "rotulo": "A4119",
+        "id": "A4539",
+        "rotulo": "A4539",
         "tipo": "comentarista",
         "n": 1,
         "grupo": 2,
-        "x": 3.8119,
-        "y": 0.319
+        "x": 3.0559,
+        "y": 0.4369
       },
       {
         "id": "C01479",
@@ -624,7 +624,7 @@
     ],
     "arestas": [
       [
-        "A24000",
+        "A24420",
         "M0001",
         1
       ],
@@ -694,8 +694,8 @@
         1
       ],
       [
-        "A23939",
-        "A4119",
+        "A24359",
+        "A4539",
         1
       ]
     ],

@@ -3,29 +3,29 @@
 <graph defaultedgetype="undirected">
 <attributes class="node"><attribute id="0" title="tipo" type="string"/><attribute id="1" title="peso" type="double"/><attribute id="2" title="comunidade" type="string"/></attributes>
 <nodes>
-<node id="tomar" label="tomar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="11"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="emagrecer" label="emagrecer"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="picanha" label="picanha"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="7"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="so" label="so"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="8"/><attvalue for="2" value="G4"/></attvalues></node>
+<node id="comer" label="comer"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="6"/><attvalue for="2" value="G5"/></attvalues></node>
+<node id="semana" label="semana"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="17"/><attvalue for="2" value="G6"/></attvalues></node>
+<node id="protocolo" label="protocolo"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="19"/><attvalue for="2" value="G7"/></attvalues></node>
 <node id="agua" label="agua"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G2"/></attvalues></node>
-<node id="receita" label="receita"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="13"/><attvalue for="2" value="G4"/></attvalues></node>
-<node id="passar" label="passar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G5"/></attvalues></node>
-<node id="fibra" label="fibra"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="19"/><attvalue for="2" value="G6"/></attvalues></node>
-<node id="bom" label="bom"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="8"/><attvalue for="2" value="G7"/></attvalues></node>
-<node id="ficar" label="ficar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="6"/><attvalue for="2" value="G8"/></attvalues></node>
-<node id="semana" label="semana"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="17"/><attvalue for="2" value="G9"/></attvalues></node>
-<node id="protocolo" label="protocolo"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="19"/><attvalue for="2" value="G10"/></attvalues></node>
-<node id="caneta" label="caneta"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="6"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="dormir" label="dormir"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G11"/></attvalues></node>
-<node id="querer" label="querer"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="8"/><attvalue for="2" value="G12"/></attvalues></node>
 <node id="risada" label="risada"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="16"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="precisar" label="precisar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G8"/></attvalues></node>
+<node id="receita" label="receita"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="13"/><attvalue for="2" value="G9"/></attvalues></node>
+<node id="caneta" label="caneta"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="6"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="suplemento" label="suplemento"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="17"/><attvalue for="2" value="G10"/></attvalues></node>
+<node id="fibra" label="fibra"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="19"/><attvalue for="2" value="G11"/></attvalues></node>
+<node id="dormir" label="dormir"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G12"/></attvalues></node>
+<node id="listar" label="listar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="19"/><attvalue for="2" value="G13"/></attvalues></node>
+<node id="querer" label="querer"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="8"/><attvalue for="2" value="G14"/></attvalues></node>
+<node id="picanha" label="picanha"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="7"/><attvalue for="2" value="G1"/></attvalues></node>
+<node id="ficar" label="ficar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="6"/><attvalue for="2" value="G15"/></attvalues></node>
+<node id="tomar" label="tomar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="11"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="estar" label="estar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="8"/><attvalue for="2" value="G16"/></attvalues></node>
 <node id="prometer" label="prometer"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="so" label="so"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="8"/><attvalue for="2" value="G13"/></attvalues></node>
-<node id="listar" label="listar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="19"/><attvalue for="2" value="G14"/></attvalues></node>
-<node id="lula" label="lula"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="7"/><attvalue for="2" value="G15"/></attvalues></node>
-<node id="suplemento" label="suplemento"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="17"/><attvalue for="2" value="G16"/></attvalues></node>
-<node id="comer" label="comer"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="6"/><attvalue for="2" value="G17"/></attvalues></node>
-<node id="estar" label="estar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="8"/><attvalue for="2" value="G18"/></attvalues></node>
-<node id="precisar" label="precisar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G19"/></attvalues></node>
+<node id="passar" label="passar"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G17"/></attvalues></node>
+<node id="lula" label="lula"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="7"/><attvalue for="2" value="G18"/></attvalues></node>
+<node id="bom" label="bom"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="8"/><attvalue for="2" value="G19"/></attvalues></node>
+<node id="emagrecer" label="emagrecer"><attvalues><attvalue for="0" value="palavra"/><attvalue for="1" value="5"/><attvalue for="2" value="G3"/></attvalues></node>
 </nodes><edges>
 <edge id="0" source="agua" target="tomar" weight="3"/>
 <edge id="1" source="picanha" target="prometer" weight="4"/>

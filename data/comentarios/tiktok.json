@@ -396,11 +396,7 @@
       "n": 12
     },
     {
-      "forma": "paraguai",
-      "n": 11
-    },
-    {
-      "forma": "ficar",
+      "forma": "anvisa",
       "n": 11
     },
     {
@@ -408,23 +404,23 @@
       "n": 11
     },
     {
-      "forma": "anvisa",
+      "forma": "ficar",
       "n": 11
     },
     {
-      "forma": "dose",
-      "n": 10
+      "forma": "paraguai",
+      "n": 11
     },
     {
       "forma": "morar",
       "n": 10
     },
     {
-      "forma": "medico",
-      "n": 9
+      "forma": "dose",
+      "n": 10
     },
     {
-      "forma": "chifre",
+      "forma": "deus",
       "n": 9
     },
     {
@@ -432,11 +428,15 @@
       "n": 9
     },
     {
-      "forma": "deus",
+      "forma": "chifre",
       "n": 9
     },
     {
-      "forma": "emagrecer",
+      "forma": "medico",
+      "n": 9
+    },
+    {
+      "forma": "brasil",
       "n": 8
     },
     {
@@ -444,35 +444,11 @@
       "n": 8
     },
     {
-      "forma": "brasil",
+      "forma": "emagrecer",
       "n": 8
     },
     {
-      "forma": "usar",
-      "n": 7
-    },
-    {
       "forma": "dinheiro",
-      "n": 7
-    },
-    {
-      "forma": "falar",
-      "n": 7
-    },
-    {
-      "forma": "voltar",
-      "n": 7
-    },
-    {
-      "forma": "ne",
-      "n": 7
-    },
-    {
-      "forma": "dar",
-      "n": 7
-    },
-    {
-      "forma": "governo",
       "n": 7
     },
     {
@@ -480,11 +456,35 @@
       "n": 7
     },
     {
+      "forma": "ne",
+      "n": 7
+    },
+    {
+      "forma": "voltar",
+      "n": 7
+    },
+    {
+      "forma": "falar",
+      "n": 7
+    },
+    {
+      "forma": "usar",
+      "n": 7
+    },
+    {
+      "forma": "governo",
+      "n": 7
+    },
+    {
+      "forma": "dar",
+      "n": 7
+    },
+    {
       "forma": "sentir",
       "n": 7
     },
     {
-      "forma": "preco",
+      "forma": "tg",
       "n": 6
     },
     {
@@ -492,11 +492,7 @@
       "n": 6
     },
     {
-      "forma": "farmacia",
-      "n": 6
-    },
-    {
-      "forma": "passar",
+      "forma": "imposto",
       "n": 6
     },
     {
@@ -504,47 +500,31 @@
       "n": 6
     },
     {
-      "forma": "dor",
-      "n": 6
-    },
-    {
-      "forma": "tg",
-      "n": 6
-    },
-    {
       "forma": "ozempic",
       "n": 6
     },
     {
-      "forma": "imposto",
+      "forma": "farmacia",
       "n": 6
     },
     {
-      "forma": "vir",
-      "n": 5
+      "forma": "dor",
+      "n": 6
     },
     {
-      "forma": "precisar",
-      "n": 5
+      "forma": "passar",
+      "n": 6
     },
     {
-      "forma": "causar",
-      "n": 5
+      "forma": "preco",
+      "n": 6
     },
     {
       "forma": "vc",
       "n": 5
     },
     {
-      "forma": "uso",
-      "n": 5
-    },
-    {
-      "forma": "perder",
-      "n": 5
-    },
-    {
-      "forma": "melhor",
+      "forma": "parar",
       "n": 5
     },
     {
@@ -552,19 +532,7 @@
       "n": 5
     },
     {
-      "forma": "saude",
-      "n": 5
-    },
-    {
       "forma": "visao",
-      "n": 5
-    },
-    {
-      "forma": "ver",
-      "n": 5
-    },
-    {
-      "forma": "caro",
       "n": 5
     },
     {
@@ -572,11 +540,11 @@
       "n": 5
     },
     {
-      "forma": "forma",
+      "forma": "nie",
       "n": 5
     },
     {
-      "forma": "nie",
+      "forma": "precisar",
       "n": 5
     },
     {
@@ -584,7 +552,39 @@
       "n": 5
     },
     {
-      "forma": "parar",
+      "forma": "melhor",
+      "n": 5
+    },
+    {
+      "forma": "ver",
+      "n": 5
+    },
+    {
+      "forma": "uso",
+      "n": 5
+    },
+    {
+      "forma": "vir",
+      "n": 5
+    },
+    {
+      "forma": "forma",
+      "n": 5
+    },
+    {
+      "forma": "causar",
+      "n": 5
+    },
+    {
+      "forma": "saude",
+      "n": 5
+    },
+    {
+      "forma": "caro",
+      "n": 5
+    },
+    {
+      "forma": "perder",
       "n": 5
     }
   ],
@@ -1082,8 +1082,8 @@
         "tipo": "palavra",
         "n": 7,
         "grupo": 4,
-        "x": 2.15,
-        "y": 0.2803,
+        "x": 2.6351,
+        "y": 0.2047,
         "seg": [
           56,
           67,
@@ -1100,8 +1100,8 @@
         "tipo": "palavra",
         "n": 7,
         "grupo": 4,
-        "x": 2.6351,
-        "y": 0.2047,
+        "x": 2.15,
+        "y": 0.2803,
         "seg": [
           73,
           106,
@@ -1316,8 +1316,8 @@
         "tipo": "palavra",
         "n": 7,
         "grupo": 6,
-        "x": 3.2701,
-        "y": 0.2047,
+        "x": 2.7851,
+        "y": 0.2803,
         "seg": [
           129,
           136,
@@ -1334,8 +1334,8 @@
         "tipo": "palavra",
         "n": 6,
         "grupo": 6,
-        "x": 2.7851,
-        "y": 0.2803,
+        "x": 3.2701,
+        "y": 0.2047,
         "seg": [
           129,
           136,

@@ -3,13 +3,13 @@
 <graph defaultedgetype="undirected">
 <attributes class="node"><attribute id="0" title="tipo" type="string"/><attribute id="1" title="peso" type="double"/><attribute id="2" title="comunidade" type="string"/></attributes>
 <nodes>
-<node id="A24000" label="A24000"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="0"/><attvalue for="2" value="G2"/></attvalues></node>
+<node id="A24420" label="A24420"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="0"/><attvalue for="2" value="G2"/></attvalues></node>
 <node id="M0001" label="M0001"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="1"/><attvalue for="2" value="G2"/></attvalues></node>
 <node id="C01468" label="C01468"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
 <node id="M0002" label="M0002"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="13"/><attvalue for="2" value="G1"/></attvalues></node>
 <node id="C01469" label="C01469"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
-<node id="A23939" label="A23939"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="0"/><attvalue for="2" value="G3"/></attvalues></node>
-<node id="A4119" label="A4119"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="1"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="A24359" label="A24359"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="0"/><attvalue for="2" value="G3"/></attvalues></node>
+<node id="A4539" label="A4539"><attvalues><attvalue for="0" value="comentarista"/><attvalue for="1" value="1"/><attvalue for="2" value="G3"/></attvalues></node>
 <node id="C01479" label="C01479"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
 <node id="C01481" label="C01481"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
 <node id="C01482" label="C01482"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
@@ -22,10 +22,10 @@
 <node id="C01537" label="C01537"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
 <node id="C01553" label="C01553"><attvalues><attvalue for="0" value="marcada"/><attvalue for="1" value="0"/><attvalue for="2" value="G1"/></attvalues></node>
 </nodes><edges>
-<edge id="0" source="A24000" target="M0001" weight="1"/>
+<edge id="0" source="A24420" target="M0001" weight="1"/>
 <edge id="1" source="C01468" target="M0002" weight="1"/>
 <edge id="2" source="C01469" target="M0002" weight="1"/>
-<edge id="3" source="A23939" target="A4119" weight="1"/>
+<edge id="3" source="A24359" target="A4539" weight="1"/>
 <edge id="4" source="C01479" target="M0002" weight="1"/>
 <edge id="5" source="C01481" target="M0002" weight="1"/>
 <edge id="6" source="C01482" target="M0002" weight="1"/>
