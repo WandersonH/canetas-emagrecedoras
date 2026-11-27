@@ -68,16 +68,16 @@
       "reciprocidade": null,
       "diametro_maior_componente": 6,
       "caminho_medio_maior_componente": 2.957,
-      "modularidade_q": 0.4918,
+      "modularidade_q": 0.4942,
       "comunidades": 27,
       "comunidades_1pct_ou_mais": 27,
-      "pct_maior": 22.41,
-      "pct_segunda": 20.69,
+      "pct_maior": 24.14,
+      "pct_segunda": 18.97,
       "pct_terceira": 6.9,
       "ei_duas_maiores": -0.8898,
-      "gc_modularidade_q": 0.4655,
+      "gc_modularidade_q": 0.4717,
       "gc_comunidades_1pct_ou_mais": 5,
-      "gc_polarizacao_ei_2_maiores": -0.8803
+      "gc_polarizacao_ei_2_maiores": -0.8971
     },
     {
       "rede": "comentarios_x_mencoes",
@@ -101,8 +101,8 @@
       "pct_segunda": 20.8,
       "pct_terceira": 16.27,
       "ei_duas_maiores": -1.0,
-      "gc_modularidade_q": 0.6806,
-      "gc_comunidades_1pct_ou_mais": 7,
+      "gc_modularidade_q": 0.681,
+      "gc_comunidades_1pct_ou_mais": 8,
       "gc_polarizacao_ei_2_maiores": -1.0
     },
     {
@@ -120,16 +120,16 @@
       "reciprocidade": null,
       "diametro_maior_componente": 6,
       "caminho_medio_maior_componente": 2.798,
-      "modularidade_q": 0.4248,
-      "comunidades": 100,
-      "comunidades_1pct_ou_mais": 7,
-      "pct_maior": 17.15,
+      "modularidade_q": 0.4276,
+      "comunidades": 101,
+      "comunidades_1pct_ou_mais": 8,
+      "pct_maior": 13.92,
       "pct_segunda": 12.94,
-      "pct_terceira": 11.33,
-      "ei_duas_maiores": -0.5547,
-      "gc_modularidade_q": 0.4158,
-      "gc_comunidades_1pct_ou_mais": 8,
-      "gc_polarizacao_ei_2_maiores": -0.7273
+      "pct_terceira": 11.65,
+      "ei_duas_maiores": -0.755,
+      "gc_modularidade_q": 0.4177,
+      "gc_comunidades_1pct_ou_mais": 7,
+      "gc_polarizacao_ei_2_maiores": -0.587
     },
     {
       "rede": "comentarios_youtube_mencoes",
@@ -172,16 +172,16 @@
       "reciprocidade": null,
       "diametro_maior_componente": 3,
       "caminho_medio_maior_componente": 1.593,
-      "modularidade_q": 0.0921,
+      "modularidade_q": 0.0892,
       "comunidades": 4,
       "comunidades_1pct_ou_mais": 4,
-      "pct_maior": 37.97,
-      "pct_segunda": 24.41,
-      "pct_terceira": 22.71,
-      "ei_duas_maiores": -0.2185,
-      "gc_modularidade_q": 0.0921,
+      "pct_maior": 36.95,
+      "pct_segunda": 25.25,
+      "pct_terceira": 24.75,
+      "ei_duas_maiores": -0.2018,
+      "gc_modularidade_q": 0.0892,
       "gc_comunidades_1pct_ou_mais": 4,
-      "gc_polarizacao_ei_2_maiores": -0.2185
+      "gc_polarizacao_ei_2_maiores": -0.2018
     },
     {
       "rede": "fontes_termos",
@@ -224,16 +224,16 @@
       "reciprocidade": null,
       "diametro_maior_componente": 5,
       "caminho_medio_maior_componente": 1.939,
-      "modularidade_q": 0.1629,
+      "modularidade_q": 0.1614,
       "comunidades": 6,
-      "comunidades_1pct_ou_mais": 5,
-      "pct_maior": 31.35,
-      "pct_segunda": 24.21,
-      "pct_terceira": 24.01,
-      "ei_duas_maiores": -0.252,
-      "gc_modularidade_q": 0.1629,
-      "gc_comunidades_1pct_ou_mais": 5,
-      "gc_polarizacao_ei_2_maiores": -0.252
+      "comunidades_1pct_ou_mais": 4,
+      "pct_maior": 30.16,
+      "pct_segunda": 27.18,
+      "pct_terceira": 20.83,
+      "ei_duas_maiores": -0.3838,
+      "gc_modularidade_q": 0.1614,
+      "gc_comunidades_1pct_ou_mais": 4,
+      "gc_polarizacao_ei_2_maiores": -0.3838
     },
     {
       "rede": "palavras",
@@ -250,16 +250,16 @@
       "reciprocidade": null,
       "diametro_maior_componente": 5,
       "caminho_medio_maior_componente": 2.174,
-      "modularidade_q": 0.2555,
+      "modularidade_q": 0.2584,
       "comunidades": 26,
-      "comunidades_1pct_ou_mais": 7,
-      "pct_maior": 31.12,
-      "pct_segunda": 28.27,
-      "pct_terceira": 17.01,
-      "ei_duas_maiores": -0.4893,
-      "gc_modularidade_q": 0.2561,
+      "comunidades_1pct_ou_mais": 6,
+      "pct_maior": 31.83,
+      "pct_segunda": 26.75,
+      "pct_terceira": 17.87,
+      "ei_duas_maiores": -0.5086,
+      "gc_modularidade_q": 0.2592,
       "gc_comunidades_1pct_ou_mais": 6,
-      "gc_polarizacao_ei_2_maiores": -0.5161
+      "gc_polarizacao_ei_2_maiores": -0.5247
     },
     {
       "rede": "similitude",
@@ -296,7 +296,7 @@
       "nos": 14,
       "pct_nos": 77.78,
       "pct_peso_interno": 86.67,
-      "nos_de_maior_grau": "M0002 | C01479 | C01537 | C01484 | C01512"
+      "nos_de_maior_grau": "M0002 | C01512 | C01479 | C01484 | C01481"
     },
     {
       "caso": "redes",
@@ -305,7 +305,7 @@
       "nos": 2,
       "pct_nos": 11.11,
       "pct_peso_interno": 6.67,
-      "nos_de_maior_grau": "M0001 | A24420"
+      "nos_de_maior_grau": "A24420 | M0001"
     },
     {
       "caso": "redes",
@@ -332,7 +332,7 @@
       "nos": 2,
       "pct_nos": 8.7,
       "pct_peso_interno": 15.79,
-      "nos_de_maior_grau": "agua | tomar"
+      "nos_de_maior_grau": "tomar | agua"
     },
     {
       "caso": "redes",
@@ -350,7 +350,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "so"
+      "nos_de_maior_grau": "querer"
     },
     {
       "caso": "redes",
@@ -368,7 +368,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "semana"
+      "nos_de_maior_grau": "lula"
     },
     {
       "caso": "redes",
@@ -377,7 +377,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "protocolo"
+      "nos_de_maior_grau": "dormir"
     },
     {
       "caso": "redes",
@@ -386,7 +386,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "precisar"
+      "nos_de_maior_grau": "listar"
     },
     {
       "caso": "redes",
@@ -395,7 +395,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "receita"
+      "nos_de_maior_grau": "bom"
     },
     {
       "caso": "redes",
@@ -404,7 +404,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "suplemento"
+      "nos_de_maior_grau": "so"
     },
     {
       "caso": "redes",
@@ -413,7 +413,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "fibra"
+      "nos_de_maior_grau": "passar"
     },
     {
       "caso": "redes",
@@ -422,7 +422,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "dormir"
+      "nos_de_maior_grau": "suplemento"
     },
     {
       "caso": "redes",
@@ -431,7 +431,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "listar"
+      "nos_de_maior_grau": "fibra"
     },
     {
       "caso": "redes",
@@ -440,7 +440,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "querer"
+      "nos_de_maior_grau": "semana"
     },
     {
       "caso": "redes",
@@ -449,7 +449,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "ficar"
+      "nos_de_maior_grau": "precisar"
     },
     {
       "caso": "redes",
@@ -458,7 +458,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "estar"
+      "nos_de_maior_grau": "receita"
     },
     {
       "caso": "redes",
@@ -467,7 +467,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "passar"
+      "nos_de_maior_grau": "ficar"
     },
     {
       "caso": "redes",
@@ -476,7 +476,7 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "lula"
+      "nos_de_maior_grau": "estar"
     },
     {
       "caso": "redes",
@@ -485,25 +485,25 @@
       "nos": 1,
       "pct_nos": 4.35,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "bom"
+      "nos_de_maior_grau": "protocolo"
     },
     {
       "caso": "redes",
       "rede": "comentarios_tiktok_palavras",
       "comunidade": 1,
-      "nos": 13,
-      "pct_nos": 22.41,
-      "pct_peso_interno": 30.86,
+      "nos": 14,
+      "pct_nos": 24.14,
+      "pct_peso_interno": 32.57,
       "nos_de_maior_grau": "so | gente | comprar | saber | medico"
     },
     {
       "caso": "redes",
       "rede": "comentarios_tiktok_palavras",
       "comunidade": 2,
-      "nos": 12,
-      "pct_nos": 20.69,
-      "pct_peso_interno": 37.71,
-      "nos_de_maior_grau": "tomar | estar | dose | dor | risada"
+      "nos": 11,
+      "pct_nos": 18.97,
+      "pct_peso_interno": 36.0,
+      "nos_de_maior_grau": "tomar | estar | dose | dor | chifre"
     },
     {
       "caso": "redes",
@@ -530,7 +530,7 @@
       "nos": 2,
       "pct_nos": 3.45,
       "pct_peso_interno": 1.71,
-      "nos_de_maior_grau": "to | nie"
+      "nos_de_maior_grau": "dar | falar"
     },
     {
       "caso": "redes",
@@ -539,7 +539,7 @@
       "nos": 2,
       "pct_nos": 3.45,
       "pct_peso_interno": 1.71,
-      "nos_de_maior_grau": "falar | dar"
+      "nos_de_maior_grau": "to | nie"
     },
     {
       "caso": "redes",
@@ -557,7 +557,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "tg"
+      "nos_de_maior_grau": "dinheiro"
     },
     {
       "caso": "redes",
@@ -566,7 +566,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "dinheiro"
+      "nos_de_maior_grau": "perder"
     },
     {
       "caso": "redes",
@@ -575,7 +575,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "proibir"
+      "nos_de_maior_grau": "voltar"
     },
     {
       "caso": "redes",
@@ -584,7 +584,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "visao"
+      "nos_de_maior_grau": "ne"
     },
     {
       "caso": "redes",
@@ -593,7 +593,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "levar"
+      "nos_de_maior_grau": "caro"
     },
     {
       "caso": "redes",
@@ -602,7 +602,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "ne"
+      "nos_de_maior_grau": "tg"
     },
     {
       "caso": "redes",
@@ -611,7 +611,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "morar"
+      "nos_de_maior_grau": "melhor"
     },
     {
       "caso": "redes",
@@ -620,7 +620,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "voltar"
+      "nos_de_maior_grau": "saude"
     },
     {
       "caso": "redes",
@@ -638,7 +638,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "melhor"
+      "nos_de_maior_grau": "forma"
     },
     {
       "caso": "redes",
@@ -647,7 +647,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "ver"
+      "nos_de_maior_grau": "levar"
     },
     {
       "caso": "redes",
@@ -656,7 +656,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "uso"
+      "nos_de_maior_grau": "vir"
     },
     {
       "caso": "redes",
@@ -665,7 +665,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "vir"
+      "nos_de_maior_grau": "causar"
     },
     {
       "caso": "redes",
@@ -674,7 +674,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "ozempic"
+      "nos_de_maior_grau": "uso"
     },
     {
       "caso": "redes",
@@ -683,7 +683,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "forma"
+      "nos_de_maior_grau": "ver"
     },
     {
       "caso": "redes",
@@ -692,7 +692,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "causar"
+      "nos_de_maior_grau": "visao"
     },
     {
       "caso": "redes",
@@ -701,7 +701,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "saude"
+      "nos_de_maior_grau": "morar"
     },
     {
       "caso": "redes",
@@ -710,7 +710,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "caro"
+      "nos_de_maior_grau": "ozempic"
     },
     {
       "caso": "redes",
@@ -719,7 +719,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "perder"
+      "nos_de_maior_grau": "emagrecer"
     },
     {
       "caso": "redes",
@@ -728,7 +728,7 @@
       "nos": 1,
       "pct_nos": 1.72,
       "pct_peso_interno": 0.0,
-      "nos_de_maior_grau": "emagrecer"
+      "nos_de_maior_grau": "proibir"
     },
     {
       "caso": "redes",
@@ -764,7 +764,7 @@
       "nos": 115,
       "pct_nos": 12.39,
       "pct_peso_interno": 8.2,
-      "nos_de_maior_grau": "A6533 | A4825 | A24607 | M0109 | A25132"
+      "nos_de_maior_grau": "A6533 | A4825 | A24607 | A24584 | A25132"
     },
     {
       "caso": "redes",
@@ -773,7 +773,7 @@
       "nos": 93,
       "pct_nos": 10.02,
       "pct_peso_interno": 6.56,
-      "nos_de_maior_grau": "A5200 | A24892 | A24928 | A24905 | A24918"
+      "nos_de_maior_grau": "A5200 | A24892 | A24905 | A24918 | A24970"
     },
     {
       "caso": "redes",
@@ -788,10 +788,10 @@
       "caso": "redes",
       "rede": "comentarios_x_palavras",
       "comunidade": 1,
-      "nos": 53,
-      "pct_nos": 17.15,
-      "pct_peso_interno": 9.18,
-      "nos_de_maior_grau": "estar | brasil | ficar | achar | cara"
+      "nos": 43,
+      "pct_nos": 13.92,
+      "pct_peso_interno": 15.37,
+      "nos_de_maior_grau": "so | cocaina | falar | usar | ficar"
     },
     {
       "caso": "redes",
@@ -799,53 +799,62 @@
       "comunidade": 2,
       "nos": 40,
       "pct_nos": 12.94,
-      "pct_peso_interno": 8.99,
-      "nos_de_maior_grau": "vc | risada | pq | saber | dar"
+      "pct_peso_interno": 10.44,
+      "nos_de_maior_grau": "brasil | querer | sus | bolsonaro | familia"
     },
     {
       "caso": "redes",
       "rede": "comentarios_x_palavras",
       "comunidade": 3,
-      "nos": 35,
-      "pct_nos": 11.33,
-      "pct_peso_interno": 12.07,
-      "nos_de_maior_grau": "so | cocaina | falar | usar | rico"
+      "nos": 36,
+      "pct_nos": 11.65,
+      "pct_peso_interno": 7.7,
+      "nos_de_maior_grau": "vc | risada | pq | saber | dar"
     },
     {
       "caso": "redes",
       "rede": "comentarios_x_palavras",
       "comunidade": 4,
-      "nos": 27,
-      "pct_nos": 8.74,
-      "pct_peso_interno": 7.24,
-      "nos_de_maior_grau": "querer | sus | bolsonaro | familia | flavio"
+      "nos": 33,
+      "pct_nos": 10.68,
+      "pct_peso_interno": 4.13,
+      "nos_de_maior_grau": "estar | cara | trump | igual | perder"
     },
     {
       "caso": "redes",
       "rede": "comentarios_x_palavras",
       "comunidade": 5,
-      "nos": 22,
-      "pct_nos": 7.12,
-      "pct_peso_interno": 3.45,
-      "nos_de_maior_grau": "danilo | dinheiro | politico | caso | cobrar"
+      "nos": 17,
+      "pct_nos": 5.5,
+      "pct_peso_interno": 13.61,
+      "nos_de_maior_grau": "lula | campanha | direito | confiavel | bastidor"
     },
     {
       "caso": "redes",
       "rede": "comentarios_x_palavras",
       "comunidade": 6,
-      "nos": 18,
-      "pct_nos": 5.83,
-      "pct_peso_interno": 3.42,
-      "nos_de_maior_grau": "ano | emagrecer | ozempic | dia | mundo"
+      "nos": 15,
+      "pct_nos": 4.85,
+      "pct_peso_interno": 3.02,
+      "nos_de_maior_grau": "ano | emagrecer | ozempic | dia | deputado"
     },
     {
       "caso": "redes",
       "rede": "comentarios_x_palavras",
       "comunidade": 7,
-      "nos": 17,
-      "pct_nos": 5.5,
-      "pct_peso_interno": 13.61,
-      "nos_de_maior_grau": "lula | campanha | direito | bastidor | fonte"
+      "nos": 15,
+      "pct_nos": 4.85,
+      "pct_peso_interno": 2.0,
+      "nos_de_maior_grau": "dinheiro | deixar | caso | pais | ovo"
+    },
+    {
+      "caso": "redes",
+      "rede": "comentarios_x_palavras",
+      "comunidade": 8,
+      "nos": 13,
+      "pct_nos": 4.21,
+      "pct_peso_interno": 2.19,
+      "nos_de_maior_grau": "danilo | politico | cobrar | concordar | gentili"
     },
     {
       "caso": "redes",
@@ -854,7 +863,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "M0001 | C00045"
+      "nos_de_maior_grau": "C00045 | M0001"
     },
     {
       "caso": "redes",
@@ -863,7 +872,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "A6908 | M0002"
+      "nos_de_maior_grau": "M0002 | A6908"
     },
     {
       "caso": "redes",
@@ -872,7 +881,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "M0003 | A10058"
+      "nos_de_maior_grau": "A10058 | M0003"
     },
     {
       "caso": "redes",
@@ -881,7 +890,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "M0004 | A1726"
+      "nos_de_maior_grau": "A1726 | M0004"
     },
     {
       "caso": "redes",
@@ -899,7 +908,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "A18464 | M0006"
+      "nos_de_maior_grau": "M0006 | A18464"
     },
     {
       "caso": "redes",
@@ -926,7 +935,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "A18561 | M0009"
+      "nos_de_maior_grau": "M0009 | A18561"
     },
     {
       "caso": "redes",
@@ -980,7 +989,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "A23942 | M0015"
+      "nos_de_maior_grau": "M0015 | A23942"
     },
     {
       "caso": "redes",
@@ -989,7 +998,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "A8796 | M0016"
+      "nos_de_maior_grau": "M0016 | A8796"
     },
     {
       "caso": "redes",
@@ -1016,7 +1025,7 @@
       "nos": 2,
       "pct_nos": 4.76,
       "pct_peso_interno": 4.55,
-      "nos_de_maior_grau": "M0019 | C00980"
+      "nos_de_maior_grau": "C00980 | M0019"
     },
     {
       "caso": "redes",
@@ -1040,37 +1049,37 @@
       "caso": "redes",
       "rede": "comentarios_youtube_palavras",
       "comunidade": 1,
-      "nos": 224,
-      "pct_nos": 37.97,
-      "pct_peso_interno": 13.91,
+      "nos": 218,
+      "pct_nos": 36.95,
+      "pct_peso_interno": 12.81,
       "nos_de_maior_grau": "so | ficar | medico | querer | caneta"
     },
     {
       "caso": "redes",
       "rede": "comentarios_youtube_palavras",
       "comunidade": 2,
-      "nos": 144,
-      "pct_nos": 24.41,
-      "pct_peso_interno": 7.84,
-      "nos_de_maior_grau": "comer | ano | vida | conseguir | emagrecer"
+      "nos": 149,
+      "pct_nos": 25.25,
+      "pct_peso_interno": 11.09,
+      "nos_de_maior_grau": "perder | kg | mes | peso | ano"
     },
     {
       "caso": "redes",
       "rede": "comentarios_youtube_palavras",
       "comunidade": 3,
-      "nos": 134,
-      "pct_nos": 22.71,
-      "pct_peso_interno": 13.2,
-      "nos_de_maior_grau": "estar | tomar | perder | kg | mes"
+      "nos": 146,
+      "pct_nos": 24.75,
+      "pct_peso_interno": 11.05,
+      "nos_de_maior_grau": "estar | tomar | dia | dose | comecar"
     },
     {
       "caso": "redes",
       "rede": "comentarios_youtube_palavras",
       "comunidade": 4,
-      "nos": 88,
-      "pct_nos": 14.92,
-      "pct_peso_interno": 2.38,
-      "nos_de_maior_grau": "dar | video | bom | melhor | vc"
+      "nos": 77,
+      "pct_nos": 13.05,
+      "pct_peso_interno": 2.11,
+      "nos_de_maior_grau": "video | bom | melhor | vc | obrigar"
     },
     {
       "caso": "redes",
@@ -1166,108 +1175,90 @@
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": 1,
-      "nos": 158,
-      "pct_nos": 31.35,
-      "pct_peso_interno": 12.89,
-      "nos_de_maior_grau": "#obesidade | #shorts | #saude | #canetaemagrecedora | #saúde"
+      "nos": 152,
+      "pct_nos": 30.16,
+      "pct_peso_interno": 9.19,
+      "nos_de_maior_grau": "#dieta | #emagrecer | #bemestar | #nutrição | #fitness"
     },
     {
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": 2,
-      "nos": 122,
-      "pct_nos": 24.21,
-      "pct_peso_interno": 12.58,
-      "nos_de_maior_grau": "#emagrecimento | #mounjaro | #tirzepatida | #perdadepeso | #retatrutida"
+      "nos": 137,
+      "pct_nos": 27.18,
+      "pct_peso_interno": 18.01,
+      "nos_de_maior_grau": "#emagrecimento | #tirzepatida | #obesidade | #shorts | #saude"
     },
     {
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": 3,
-      "nos": 121,
-      "pct_nos": 24.01,
-      "pct_peso_interno": 7.07,
-      "nos_de_maior_grau": "#dieta | #emagrecer | #nutrição | #fitness | #vidasaudavel"
+      "nos": 105,
+      "pct_nos": 20.83,
+      "pct_peso_interno": 4.2,
+      "nos_de_maior_grau": "#saúde | #canetasemagrecedoras | #anvisa | #medicamentos | #paraguai"
     },
     {
       "caso": "redes",
       "rede": "hashtags",
       "comunidade": 4,
-      "nos": 84,
-      "pct_nos": 16.67,
-      "pct_peso_interno": 7.27,
-      "nos_de_maior_grau": "#ozempic | #semaglutida | #glp1 | #wegovy | #saxenda"
-    },
-    {
-      "caso": "redes",
-      "rede": "hashtags",
-      "comunidade": 5,
-      "nos": 17,
-      "pct_nos": 3.37,
-      "pct_peso_interno": 1.06,
-      "nos_de_maior_grau": "#emagrecimentosaudavel | #perderpeso | #antesedepois | #reeducaçãoalimentar | #foodnoise"
+      "nos": 102,
+      "pct_nos": 20.24,
+      "pct_peso_interno": 13.3,
+      "nos_de_maior_grau": "#mounjaro | #ozempic | #semaglutida | #glp1 | #wegovy"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": 1,
-      "nos": 613,
-      "pct_nos": 31.12,
-      "pct_peso_interno": 14.22,
+      "nos": 627,
+      "pct_nos": 31.83,
+      "pct_peso_interno": 14.76,
       "nos_de_maior_grau": "caneta | mounjaro | medicamento | tratamento | ozempic"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": 2,
-      "nos": 557,
-      "pct_nos": 28.27,
-      "pct_peso_interno": 17.14,
-      "nos_de_maior_grau": "estar | perder | emagrecer | tomar | so"
+      "nos": 527,
+      "pct_nos": 26.75,
+      "pct_peso_interno": 14.36,
+      "nos_de_maior_grau": "estar | perder | tomar | so | dose"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": 3,
-      "nos": 335,
-      "pct_nos": 17.01,
-      "pct_peso_interno": 7.28,
-      "nos_de_maior_grau": "medico | video | saude | emagrecimento | acompanhamento"
+      "nos": 352,
+      "pct_nos": 17.87,
+      "pct_peso_interno": 9.13,
+      "nos_de_maior_grau": "video | peso | emagrecimento | emagrecer | efeito"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": 4,
-      "nos": 221,
-      "pct_nos": 11.22,
-      "pct_peso_interno": 2.81,
-      "nos_de_maior_grau": "peso | efeito | perda | resultado | glp"
+      "nos": 236,
+      "pct_nos": 11.98,
+      "pct_peso_interno": 3.62,
+      "nos_de_maior_grau": "medico | saude | canal | conteudo | instagram"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": 5,
-      "nos": 99,
-      "pct_nos": 5.03,
-      "pct_peso_interno": 3.92,
-      "nos_de_maior_grau": "doenca | informacao | consulta | atuar | neurocirurgia"
+      "nos": 135,
+      "pct_nos": 6.85,
+      "pct_peso_interno": 6.49,
+      "nos_de_maior_grau": "paciente | vida | doenca | informacao | consulta"
     },
     {
       "caso": "redes",
       "rede": "palavras",
       "comunidade": 6,
-      "nos": 70,
-      "pct_nos": 3.55,
-      "pct_peso_interno": 2.61,
-      "nos_de_maior_grau": "paciente | vida | instagram | seguir | qualidade"
-    },
-    {
-      "caso": "redes",
-      "rede": "palavras",
-      "comunidade": 7,
-      "nos": 56,
-      "pct_nos": 2.84,
-      "pct_peso_interno": 0.28,
+      "nos": 55,
+      "pct_nos": 2.79,
+      "pct_peso_interno": 0.27,
       "nos_de_maior_grau": "po | nie | und | sie | ze"
     },
     {
@@ -1475,24 +1466,6 @@
       "rede": "comentarios_instagram_mencoes",
       "medida": "autovetor (eigenvector)",
       "posicao": 2,
-      "no": "C01537",
-      "valor": 0.196116,
-      "comunidade": 1
-    },
-    {
-      "caso": "redes",
-      "rede": "comentarios_instagram_mencoes",
-      "medida": "autovetor (eigenvector)",
-      "posicao": 3,
-      "no": "C01553",
-      "valor": 0.196116,
-      "comunidade": 1
-    },
-    {
-      "caso": "redes",
-      "rede": "comentarios_instagram_mencoes",
-      "medida": "autovetor (eigenvector)",
-      "posicao": 4,
       "no": "C01468",
       "valor": 0.196116,
       "comunidade": 1
@@ -1501,8 +1474,26 @@
       "caso": "redes",
       "rede": "comentarios_instagram_mencoes",
       "medida": "autovetor (eigenvector)",
-      "posicao": 5,
+      "posicao": 3,
       "no": "C01469",
+      "valor": 0.196116,
+      "comunidade": 1
+    },
+    {
+      "caso": "redes",
+      "rede": "comentarios_instagram_mencoes",
+      "medida": "autovetor (eigenvector)",
+      "posicao": 4,
+      "no": "C01479",
+      "valor": 0.196116,
+      "comunidade": 1
+    },
+    {
+      "caso": "redes",
+      "rede": "comentarios_instagram_mencoes",
+      "medida": "autovetor (eigenvector)",
+      "posicao": 5,
+      "no": "C01481",
       "valor": 0.196116,
       "comunidade": 1
     },
@@ -1619,7 +1610,7 @@
       "rede": "comentarios_instagram_palavras",
       "medida": "intermediação (betweenness)",
       "posicao": 3,
-      "no": "so",
+      "no": "querer",
       "valor": 0.0,
       "comunidade": 4
     },
@@ -1637,7 +1628,7 @@
       "rede": "comentarios_instagram_palavras",
       "medida": "intermediação (betweenness)",
       "posicao": 5,
-      "no": "semana",
+      "no": "lula",
       "valor": 0.0,
       "comunidade": 6
     },
@@ -2053,7 +2044,7 @@
       "posicao": 1,
       "no": "estar",
       "valor": 345.0,
-      "comunidade": 1
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2062,7 +2053,7 @@
       "posicao": 2,
       "no": "so",
       "valor": 319.0,
-      "comunidade": 3
+      "comunidade": 1
     },
     {
       "caso": "redes",
@@ -2071,7 +2062,7 @@
       "posicao": 3,
       "no": "vc",
       "valor": 229.0,
-      "comunidade": 2
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2080,7 +2071,7 @@
       "posicao": 4,
       "no": "risada",
       "valor": 180.0,
-      "comunidade": 2
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2089,7 +2080,7 @@
       "posicao": 5,
       "no": "brasil",
       "valor": 153.0,
-      "comunidade": 1
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2098,7 +2089,7 @@
       "posicao": 1,
       "no": "estar",
       "valor": 0.047904,
-      "comunidade": 1
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2107,7 +2098,7 @@
       "posicao": 2,
       "no": "so",
       "valor": 0.038954,
-      "comunidade": 3
+      "comunidade": 1
     },
     {
       "caso": "redes",
@@ -2116,7 +2107,7 @@
       "posicao": 3,
       "no": "vc",
       "valor": 0.02909,
-      "comunidade": 2
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2125,7 +2116,7 @@
       "posicao": 4,
       "no": "risada",
       "valor": 0.024151,
-      "comunidade": 2
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2134,7 +2125,7 @@
       "posicao": 5,
       "no": "brasil",
       "valor": 0.021669,
-      "comunidade": 1
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2143,7 +2134,7 @@
       "posicao": 1,
       "no": "estar",
       "valor": 0.127045,
-      "comunidade": 1
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2152,7 +2143,7 @@
       "posicao": 2,
       "no": "so",
       "valor": 0.09293,
-      "comunidade": 3
+      "comunidade": 1
     },
     {
       "caso": "redes",
@@ -2161,7 +2152,7 @@
       "posicao": 3,
       "no": "vc",
       "valor": 0.046351,
-      "comunidade": 2
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2170,7 +2161,7 @@
       "posicao": 4,
       "no": "brasil",
       "valor": 0.045338,
-      "comunidade": 1
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2179,7 +2170,7 @@
       "posicao": 5,
       "no": "risada",
       "valor": 0.043526,
-      "comunidade": 2
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2188,7 +2179,7 @@
       "posicao": 1,
       "no": "estar",
       "valor": 0.367901,
-      "comunidade": 1
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2197,7 +2188,7 @@
       "posicao": 2,
       "no": "so",
       "valor": 0.350752,
-      "comunidade": 3
+      "comunidade": 1
     },
     {
       "caso": "redes",
@@ -2206,7 +2197,7 @@
       "posicao": 3,
       "no": "vc",
       "valor": 0.297965,
-      "comunidade": 2
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2215,7 +2206,7 @@
       "posicao": 4,
       "no": "risada",
       "valor": 0.263762,
-      "comunidade": 2
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2224,7 +2215,7 @@
       "posicao": 5,
       "no": "falar",
       "valor": 0.227064,
-      "comunidade": 3
+      "comunidade": 1
     },
     {
       "caso": "redes",
@@ -2386,7 +2377,7 @@
       "posicao": 3,
       "no": "perder",
       "valor": 25873.0,
-      "comunidade": 3
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2395,7 +2386,7 @@
       "posicao": 4,
       "no": "kg",
       "valor": 21733.0,
-      "comunidade": 3
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2431,7 +2422,7 @@
       "posicao": 3,
       "no": "perder",
       "valor": 0.013954,
-      "comunidade": 3
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2449,7 +2440,7 @@
       "posicao": 5,
       "no": "kg",
       "valor": 0.011788,
-      "comunidade": 3
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2467,7 +2458,7 @@
       "posicao": 2,
       "no": "dar",
       "valor": 0.010016,
-      "comunidade": 4
+      "comunidade": 3
     },
     {
       "caso": "redes",
@@ -2512,7 +2503,7 @@
       "posicao": 2,
       "no": "perder",
       "valor": 0.247149,
-      "comunidade": 3
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2530,7 +2521,7 @@
       "posicao": 4,
       "no": "kg",
       "valor": 0.212457,
-      "comunidade": 3
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2539,7 +2530,7 @@
       "posicao": 5,
       "no": "mes",
       "valor": 0.190738,
-      "comunidade": 3
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2737,7 +2728,7 @@
       "posicao": 2,
       "no": "#mounjaro",
       "valor": 7073.0,
-      "comunidade": 2
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2764,7 +2755,7 @@
       "posicao": 5,
       "no": "#obesidade",
       "valor": 3331.0,
-      "comunidade": 1
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2782,7 +2773,7 @@
       "posicao": 2,
       "no": "#mounjaro",
       "valor": 0.054971,
-      "comunidade": 2
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2809,7 +2800,7 @@
       "posicao": 5,
       "no": "#obesidade",
       "valor": 0.025272,
-      "comunidade": 1
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2827,7 +2818,7 @@
       "posicao": 2,
       "no": "#mounjaro",
       "valor": 0.099443,
-      "comunidade": 2
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2845,7 +2836,7 @@
       "posicao": 4,
       "no": "#shorts",
       "valor": 0.073248,
-      "comunidade": 1
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2863,7 +2854,7 @@
       "posicao": 1,
       "no": "#mounjaro",
       "valor": 0.4548,
-      "comunidade": 2
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2899,7 +2890,7 @@
       "posicao": 5,
       "no": "#obesidade",
       "valor": 0.216598,
-      "comunidade": 1
+      "comunidade": 2
     },
     {
       "caso": "redes",
@@ -2926,7 +2917,7 @@
       "posicao": 3,
       "no": "medico",
       "valor": 12707.0,
-      "comunidade": 3
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -2980,7 +2971,7 @@
       "posicao": 4,
       "no": "medico",
       "valor": 0.011594,
-      "comunidade": 3
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -3016,7 +3007,7 @@
       "posicao": 3,
       "no": "medico",
       "valor": 0.045589,
-      "comunidade": 3
+      "comunidade": 4
     },
     {
       "caso": "redes",
@@ -3070,7 +3061,7 @@
       "posicao": 4,
       "no": "peso",
       "valor": 0.176104,
-      "comunidade": 4
+      "comunidade": 3
     },
     {
       "caso": "redes",

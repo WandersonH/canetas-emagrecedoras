@@ -1,13 +1,13 @@
 {
-  "obtido_em": "2026-11-26T08:31:19Z",
-  "run_id": "45782734966",
+  "obtido_em": "2026-11-27T08:34:11Z",
+  "run_id": "45965312190",
   "periodo": {
     "inicio": "2022-05-13",
-    "fim": "2026-11-26"
+    "fim": "2026-11-27"
   },
   "nota": "Triagem automática por palavras e sinais de venda (data/config/venda_irregular.json). São candidatos: a revisão de contexto de cada um está pendente. Link de venda, endereço de loja e perfil de vendedor ficam fora desta página.",
   "textos_examinados_por_fonte": {
-    "youtube": 11274,
+    "youtube": 13311,
     "tiktok": 443,
     "instagram": 492,
     "x": 3384,
@@ -19,8 +19,8 @@
     "transcricao_tiktok": 268,
     "transcricao_kwai": 67
   },
-  "textos_examinados": 41187,
-  "candidatos": 591,
+  "textos_examinados": 43224,
+  "candidatos": 605,
   "por_tipo_e_fonte": [
     {
       "tipo": "manipulado",
@@ -55,7 +55,7 @@
     {
       "tipo": "manipulado",
       "fonte": "youtube",
-      "n": 47
+      "n": 48
     },
     {
       "tipo": "menção a golpe ou falsificação",
@@ -95,7 +95,7 @@
     {
       "tipo": "menção a golpe ou falsificação",
       "fonte": "youtube",
-      "n": 162
+      "n": 170
     },
     {
       "tipo": "oferta sem receita",
@@ -165,10 +165,15 @@
     {
       "tipo": "produto sem registro",
       "fonte": "youtube",
-      "n": 203
+      "n": 208
     }
   ],
   "por_tipo_e_mes": [
+    {
+      "tipo": "manipulado",
+      "mes": "2024-06",
+      "n": 1
+    },
     {
       "tipo": "manipulado",
       "mes": "2025-01",
@@ -273,6 +278,31 @@
       "tipo": "manipulado",
       "mes": "2026-11",
       "n": 9
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2024-06",
+      "n": 2
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2024-08",
+      "n": 3
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2024-09",
+      "n": 1
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2024-10",
+      "n": 1
+    },
+    {
+      "tipo": "menção a golpe ou falsificação",
+      "mes": "2024-11",
+      "n": 1
     },
     {
       "tipo": "menção a golpe ou falsificação",
@@ -466,6 +496,11 @@
     },
     {
       "tipo": "produto sem registro",
+      "mes": "2024-07",
+      "n": 5
+    },
+    {
+      "tipo": "produto sem registro",
       "mes": "2025-01",
       "n": 1
     },
@@ -574,17 +609,17 @@
     {
       "grupo": "oferta",
       "sinal": "link",
-      "n": 276
+      "n": 284
     },
     {
       "grupo": "produto_sem_registro",
       "sinal": "paraguai",
-      "n": 205
+      "n": 210
     },
     {
       "grupo": "oferta",
       "sinal": "whatsapp",
-      "n": 160
+      "n": 167
     },
     {
       "grupo": "produto_sem_registro",
@@ -592,13 +627,18 @@
       "n": 134
     },
     {
+      "grupo": "golpe",
+      "sinal": "falsificados",
+      "n": 62
+    },
+    {
       "grupo": "oferta",
       "sinal": "link de WhatsApp",
-      "n": 61
+      "n": 62
     },
     {
       "grupo": "golpe",
-      "sinal": "falsificados",
+      "sinal": "falsificadas",
       "n": 58
     },
     {
@@ -608,13 +648,8 @@
     },
     {
       "grupo": "golpe",
-      "sinal": "falsificadas",
-      "n": 56
-    },
-    {
-      "grupo": "golpe",
       "sinal": "falsificado",
-      "n": 52
+      "n": 53
     },
     {
       "grupo": "oferta",
@@ -629,7 +664,7 @@
     {
       "grupo": "golpe",
       "sinal": "falsificada",
-      "n": 40
+      "n": 41
     },
     {
       "grupo": "sem_receita",
@@ -729,7 +764,7 @@
     {
       "grupo": "manipulado",
       "sinal": "manipulado",
-      "n": 12
+      "n": 13
     },
     {
       "grupo": "produto_sem_registro",
@@ -777,6 +812,11 @@
       "n": 8
     },
     {
+      "grupo": "golpe",
+      "sinal": "pirata",
+      "n": 6
+    },
+    {
       "grupo": "oferta",
       "sinal": "no direct",
       "n": 6
@@ -785,11 +825,6 @@
       "grupo": "golpe",
       "sinal": "estelionat",
       "n": 6
-    },
-    {
-      "grupo": "golpe",
-      "sinal": "pirata",
-      "n": 5
     },
     {
       "grupo": "golpe",

@@ -193,7 +193,7 @@
   },
   "nuvem": [
     {
-      "forma": "protocolo",
+      "forma": "listar",
       "n": 19
     },
     {
@@ -201,15 +201,15 @@
       "n": 19
     },
     {
-      "forma": "listar",
+      "forma": "protocolo",
       "n": 19
     },
     {
-      "forma": "semana",
+      "forma": "suplemento",
       "n": 17
     },
     {
-      "forma": "suplemento",
+      "forma": "semana",
       "n": 17
     },
     {
@@ -225,15 +225,7 @@
       "n": 11
     },
     {
-      "forma": "so",
-      "n": 8
-    },
-    {
       "forma": "querer",
-      "n": 8
-    },
-    {
-      "forma": "estar",
       "n": 8
     },
     {
@@ -241,11 +233,19 @@
       "n": 8
     },
     {
-      "forma": "picanha",
-      "n": 7
+      "forma": "so",
+      "n": 8
+    },
+    {
+      "forma": "estar",
+      "n": 8
     },
     {
       "forma": "lula",
+      "n": 7
+    },
+    {
+      "forma": "picanha",
       "n": 7
     },
     {
@@ -261,7 +261,15 @@
       "n": 6
     },
     {
+      "forma": "dormir",
+      "n": 5
+    },
+    {
       "forma": "agua",
+      "n": 5
+    },
+    {
+      "forma": "passar",
       "n": 5
     },
     {
@@ -269,15 +277,7 @@
       "n": 5
     },
     {
-      "forma": "dormir",
-      "n": 5
-    },
-    {
       "forma": "prometer",
-      "n": 5
-    },
-    {
-      "forma": "passar",
       "n": 5
     },
     {
@@ -293,8 +293,8 @@
         "tipo": "palavra",
         "n": 5,
         "grupo": 1,
-        "x": 2.15,
-        "y": 0.7311,
+        "x": 3.4149,
+        "y": 0.5339,
         "seg": [
           16,
           33,
@@ -309,8 +309,8 @@
         "tipo": "palavra",
         "n": 11,
         "grupo": 1,
-        "x": 3.4149,
-        "y": 0.5339,
+        "x": 2.15,
+        "y": 0.7311,
         "seg": [
           16,
           17,
@@ -465,8 +465,8 @@
         "tipo": "comentarista",
         "n": 0,
         "grupo": 1,
-        "x": 2.9059,
-        "y": 0.319
+        "x": 2.15,
+        "y": 0.4369
       },
       {
         "id": "M0001",
@@ -474,8 +474,8 @@
         "tipo": "marcada",
         "n": 1,
         "grupo": 1,
-        "x": 2.15,
-        "y": 0.4369
+        "x": 2.9059,
+        "y": 0.319
       },
       {
         "id": "C01468",
